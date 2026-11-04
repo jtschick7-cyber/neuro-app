@@ -1,0 +1,6 @@
+.claude/handoff_backups/
+
+node_modules/
+dist/
+dev-dist/
+*.local
