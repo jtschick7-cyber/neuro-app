@@ -16,3 +16,19 @@ export function saveJson<T>(key: string, value: T): void {
     // Ignore: persistence is best-effort.
   }
 }
+
+const NOTE_PREFIX = 'neurohosp.note.v1.';
+
+export function loadNote(noteId: string): string {
+  return loadJson<string>(NOTE_PREFIX + noteId, '');
+}
+
+/** Saves a note; an empty note removes the key so storage doesn't fill with blanks. */
+export function saveNote(noteId: string, text: string): void {
+  try {
+    if (text.trim() === '') localStorage.removeItem(NOTE_PREFIX + noteId);
+    else saveJson(NOTE_PREFIX + noteId, text);
+  } catch {
+    // best-effort
+  }
+}

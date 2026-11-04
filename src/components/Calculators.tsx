@@ -21,7 +21,7 @@ function parseNonNegative(v: string): number | null {
 
 function Anticonvulsants({ weightKg }: { weightKg: number | null }) {
   return (
-    <CalculatorCard title="Anticonvulsant loading" subtitle="Rounded to 10 mg; capped at max single load" icon={<Zap size={18} />}>
+    <CalculatorCard noteId="calc-anticonvulsants" title="Anticonvulsant loading" subtitle="Rounded to 10 mg; capped at max single load" icon={<Zap size={18} />}>
       {weightKg === null ? (
         <NeedWeight />
       ) : (
@@ -57,7 +57,7 @@ function IcpCard({ weightKg, creatinine }: { weightKg: number | null; creatinine
   const mannitol = weightKg === null ? null : mannitolDose({ weightKg, serumOsmolality: osmVal, severeAki: aki });
 
   return (
-    <CalculatorCard title="Cerebral edema / ICP" subtitle="3% saline and 20% mannitol" icon={<Droplets size={18} />}>
+    <CalculatorCard noteId="calc-icp" title="Cerebral edema / ICP" subtitle="3% saline and 20% mannitol" icon={<Droplets size={18} />}>
       {saline === null || mannitol === null ? (
         <NeedWeight />
       ) : (
@@ -118,6 +118,7 @@ function CsfCard() {
 
   return (
     <CalculatorCard
+      noteId="calc-csf"
       title="CSF traumatic tap correction"
       subtitle="Exact if blood RBC + protein entered; else 1.1 mg/dL per 1000 RBC"
       icon={<FlaskConical size={18} />}
@@ -152,7 +153,7 @@ function LeddCard() {
   const result = calculateLedd(numeric);
 
   return (
-    <CalculatorCard title="Parkinson's LEDD converter" subtitle="Total daily doses" icon={<Pill size={18} />}>
+    <CalculatorCard noteId="calc-ledd" title="Parkinson's LEDD converter" subtitle="Total daily doses" icon={<Pill size={18} />}>
       <div className="grid grid-cols-2 gap-2">
         {LEDD_DRUGS.map((d) => (
           <NumberField

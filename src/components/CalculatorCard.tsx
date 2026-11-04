@@ -1,13 +1,16 @@
 import type { ReactNode } from 'react';
+import BedsideNotes from './BedsideNotes';
 
 interface Props {
+  /** Stable id used to persist this card's bedside note. */
+  noteId: string;
   title: string;
   subtitle?: string;
   icon?: ReactNode;
   children: ReactNode;
 }
 
-export default function CalculatorCard({ title, subtitle, icon, children }: Props) {
+export default function CalculatorCard({ noteId, title, subtitle, icon, children }: Props) {
   return (
     <section className="rounded-xl border border-slate-700 bg-slate-900 p-4">
       <div className="mb-3 flex items-center gap-2">
@@ -18,6 +21,7 @@ export default function CalculatorCard({ title, subtitle, icon, children }: Prop
         </div>
       </div>
       {children}
+      <BedsideNotes noteId={noteId} />
     </section>
   );
 }

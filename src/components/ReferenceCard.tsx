@@ -1,3 +1,4 @@
+import BedsideNotes from './BedsideNotes';
 import type { MgEntry, MgTier } from '../lib/registry';
 
 const TIER_STYLES: Record<MgTier, string> = {
@@ -35,6 +36,7 @@ export default function ReferenceCard({ entry }: { entry: MgEntry }) {
           </ul>
         </div>
       )}
+      <BedsideNotes noteId={`mg-${entry.id}`} />
     </article>
   );
 }
