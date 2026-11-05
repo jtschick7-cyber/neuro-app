@@ -13,12 +13,16 @@ const inputCls =
 export default function ContextBar({ context, onChange, onClear }: Props) {
   return (
     <header
-      className="sticky top-0 z-20 border-b border-slate-700 bg-slate-900/95 px-3 pb-2 backdrop-blur"
-      style={{ paddingTop: 'max(0.5rem, env(safe-area-inset-top))' }}
+      className="sticky top-0 z-20 border-b border-slate-700 bg-slate-900/95 pb-2 backdrop-blur"
+      style={{
+        paddingTop: 'max(0.5rem, env(safe-area-inset-top))',
+        paddingLeft: 'max(0.75rem, env(safe-area-inset-left))',
+        paddingRight: 'max(0.75rem, env(safe-area-inset-right))',
+      }}
       aria-label="Patient context"
     >
       <div className="mx-auto flex max-w-3xl items-end gap-2">
-        <label className="flex-1 text-xs text-slate-400">
+        <label className="min-w-0 flex-1 text-xs text-slate-400">
           Weight (kg)
           <input
             type="number"
@@ -31,7 +35,7 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
             placeholder="70"
           />
         </label>
-        <label className="w-16 text-xs text-slate-400">
+        <label className="w-14 shrink-0 text-xs text-slate-400">
           Age
           <input
             type="number"
@@ -44,7 +48,7 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
             placeholder="65"
           />
         </label>
-        <label className="w-16 text-xs text-slate-400">
+        <label className="w-14 shrink-0 text-xs text-slate-400">
           Sex
           <select
             className={inputCls}
@@ -56,7 +60,7 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
             <option value="F">F</option>
           </select>
         </label>
-        <label className="flex-1 text-xs text-slate-400">
+        <label className="min-w-0 flex-1 text-xs text-slate-400">
           Cr (mg/dL)
           <input
             type="number"
@@ -72,7 +76,7 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
         <button
           type="button"
           onClick={onClear}
-          className="rounded-md border border-slate-600 p-2 text-slate-300 hover:bg-slate-800"
+          className="shrink-0 rounded-md border border-slate-600 p-2 text-slate-300 hover:bg-slate-800"
           aria-label="Clear patient context"
           title="Clear"
         >
