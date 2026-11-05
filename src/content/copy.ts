@@ -71,6 +71,12 @@ export const NORMAL_LIKELIHOOD_LEGEND = [
   ["UNKNOWN", "Frequency not reported"],
 ] as const;
 
+export const INTERACTION_TIER_LEGEND = [
+  ["AVOID", "Avoid the combination"],
+  ["HIGH_RISK", "Use only if no alternative; monitor closely"],
+  ["CAUTION", "Use with caution; monitor"],
+] as const;
+
 export const MG_TIER_LEGEND = [
   ["AVOID", "Avoid / should not be used (ICG 2016, MGFA)"],
   ["HIGH_RISK", "Use only if no alternative or absolutely necessary; monitor closely"],

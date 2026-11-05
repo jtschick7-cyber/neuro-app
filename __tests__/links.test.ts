@@ -8,6 +8,7 @@ import acute from '../data/acute-neuro.json';
 import consults from '../data/consult-workups.json';
 import vascular from '../data/vascular-antithrombotics.json';
 import antibodies from '../data/neural-antibodies.json';
+import asm from '../data/asm-interactions.json';
 import { getRegistry } from '../src/lib/nav';
 import manifest from '../data/calculators.manifest.json';
 
@@ -33,10 +34,10 @@ describe('resolveRef', () => {
     expect(r.href).toBe(`#/${list.id}/${e.id}`);
     expect(r.label).toBe(e.title);
   });
-  it('does not link to an unknown entry or to registries without a screen', () => {
+  it('does not link to an unknown entry or an unknown registry', () => {
     expect(resolveRef('mg-contraindications:not-a-real-entry').href).toBeNull();
-    expect(resolveRef('asm-interactions:valproate-lamotrigine').href).toBeNull();
-    expect(resolveRef('asm-interactions:valproate-lamotrigine').label).toBe('Valproate lamotrigine');
+    expect(resolveRef('not-a-registry:some-entry').href).toBeNull();
+    expect(resolveRef('not-a-registry:some-entry').label).toBe('Some entry');
   });
 });
 
@@ -84,9 +85,10 @@ describe('cross-links into the lazy-loaded registries', () => {
       'consult-workups': new Set(consults.entries.map((e) => e.id)),
       'vascular-antithrombotics': new Set(vascular.entries.map((e) => e.id)),
       'neural-antibodies': new Set(antibodies.entries.map((e) => e.id)),
+      'asm-interactions': new Set(asm.entries.map((e) => e.id)),
     };
     for (const l of CAUTION_LISTS) ids[l.id] = new Set(l.list.entries.map((e) => e.id));
-    const refs = [...acute.entries, ...consults.entries, ...vascular.entries, ...antibodies.entries].flatMap((e) => e.relatedIds);
+    const refs = [...acute.entries, ...consults.entries, ...vascular.entries, ...antibodies.entries, ...asm.entries].flatMap((e) => e.relatedIds);
     for (const ref of refs) {
       const [reg, id] = ref.split(':');
       if (reg === 'calc' || !getRegistry(reg)?.built) continue;
