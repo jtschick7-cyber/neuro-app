@@ -38,8 +38,10 @@ export default function About() {
           <dd>{about.appVersion}</dd>
           <dt className="text-slate-400">Content</dt>
           <dd>{about.contentVersion}</dd>
-          <dt className="text-slate-400">Built</dt>
+          <dt className="text-slate-400">Content built</dt>
           <dd>{about.builtAt}</dd>
+          <dt className="text-slate-400">Build</dt>
+          <dd>{__BUILD_ID__}</dd>
         </dl>
       </Block>
       <Block title={ABOUT.sections.review}>

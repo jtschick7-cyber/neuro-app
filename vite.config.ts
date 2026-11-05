@@ -4,11 +4,22 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { readFileSync } from 'node:fs';
+import { execSync } from 'node:child_process';
 
 // Cache names carry the content version, so shipping new content always starts a fresh cache and drops the old one.
 const { contentVersion } = JSON.parse(readFileSync('./generated/about.json', 'utf8')) as { contentVersion: string };
 
+// Short git commit of this build, shown in About and the footer so a phone can be compared with the latest commit on GitHub.
+function gitShortSha(): string {
+  try {
+    return execSync('git rev-parse --short HEAD', { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim() || 'dev';
+  } catch {
+    return 'dev';
+  }
+}
+
 export default defineConfig({
+  define: { __BUILD_ID__: JSON.stringify(gitShortSha()) },
   // GitHub Pages serves the site from /neuro-app/
   base: '/neuro-app/',
   plugins: [
