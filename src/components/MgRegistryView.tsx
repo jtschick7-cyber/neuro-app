@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { ArrowLeft, Search } from 'lucide-react';
+import DrugTabs from './DrugTabs';
 import ReferenceCard from './ReferenceCard';
 import { CAUTION_LISTS, searchCautionEntries } from '../lib/registry';
 import type { CautionListId } from '../lib/nav';
@@ -31,18 +32,7 @@ export default function MgRegistryView({ listId, entryId }: { listId: CautionLis
 
   return (
     <div className="space-y-3">
-      <div className="flex gap-1 rounded-lg bg-slate-900 p-1" aria-label="Caution list">
-        {CAUTION_LISTS.map((l) => (
-          <a
-            key={l.id}
-            href={toHash({ kind: 'registry', registry: l.id })}
-            aria-current={l.id === info.id ? 'page' : undefined}
-            className={`flex min-h-10 flex-1 items-center justify-center rounded-md px-2 py-1.5 text-center text-xs font-medium ${l.id === info.id ? 'bg-slate-700 text-slate-100' : 'text-slate-400'}`}
-          >
-            {l.label}
-          </a>
-        ))}
-      </div>
+      <DrugTabs active={info.id} />
       <div className="relative">
         <Search size={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
         <input

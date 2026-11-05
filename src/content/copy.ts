@@ -56,6 +56,21 @@ export const FORMULARY_LEGEND = [
   ["NOT_STOCKED_LOCAL", "Not stocked locally — shown for completeness and transfers"],
 ] as const;
 
+export const PNS_RISK_LEGEND = [
+  ["HIGH", "PNS-Care 2021: cancer association >70%"],
+  ["INTERMEDIATE", "PNS-Care 2021: cancer association 30–70%"],
+  ["LOW", "PNS-Care 2021: cancer association <30%"],
+  ["NOT_CLASSIFIED", "Not classified by PNS-Care 2021"],
+] as const;
+
+/** App convention, not from a guideline. */
+export const NORMAL_LIKELIHOOD_LEGEND = [
+  ["OFTEN_NORMAL", "Result normal in more than 50% of cases (app convention)"],
+  ["SOMETIMES_NORMAL", "Result normal in 20–50% of cases (app convention)"],
+  ["RARELY_NORMAL", "Result normal in fewer than 20% of cases (app convention)"],
+  ["UNKNOWN", "Frequency not reported"],
+] as const;
+
 export const MG_TIER_LEGEND = [
   ["AVOID", "Avoid / should not be used (ICG 2016, MGFA)"],
   ["HIGH_RISK", "Use only if no alternative or absolutely necessary; monitor closely"],

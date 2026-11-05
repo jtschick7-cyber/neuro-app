@@ -1,9 +1,14 @@
 import type { z } from 'zod';
 import type { AcuteNeuroEntry as AcuteSchema, AcuteNeuroRegistry } from '../../schema/acute-neuro';
+import type { NeuralAntibodyEntry as AntibodySchema } from '../../schema/neural-antibodies';
+import type { VascularAntithromboticEntry as VascularSchema } from '../../schema/vascular-antithrombotics';
 import type { ConsultWorkupEntry as ConsultSchema } from '../../schema/consult-workups';
 
 export type AcuteEntry = z.infer<typeof AcuteSchema>;
 export type ConsultEntry = z.infer<typeof ConsultSchema>;
+export type VascularEntry = z.infer<typeof VascularSchema> & { category: string };
+/** Antibody entries gain `title` (the antigen) and `category` (antigen class) so they fit the shared list screen. */
+export type AntibodyEntry = z.infer<typeof AntibodySchema> & { title: string; category: string };
 export interface ProtocolRegistry<E> {
   title: string;
   version: string;
@@ -17,6 +22,17 @@ export const loadAcute = (): Promise<ProtocolRegistry<AcuteEntry>> =>
   import('../../data/acute-neuro.json').then((m) => m.default as unknown as ProtocolRegistry<AcuteEntry>);
 export const loadConsults = (): Promise<ProtocolRegistry<ConsultEntry>> =>
   import('../../data/consult-workups.json').then((m) => m.default as unknown as ProtocolRegistry<ConsultEntry>);
+
+export const loadVascular = (): Promise<ProtocolRegistry<VascularEntry>> =>
+  import('../../data/vascular-antithrombotics.json').then((m) => {
+    const d = m.default as unknown as ProtocolRegistry<z.infer<typeof VascularSchema>>;
+    return { ...d, entries: d.entries.map((e) => ({ ...e, category: e.kind === 'AGENT' ? e.drugClass : 'DECISION' })) };
+  });
+export const loadAntibodies = (): Promise<ProtocolRegistry<AntibodyEntry>> =>
+  import('../../data/neural-antibodies.json').then((m) => {
+    const d = m.default as unknown as ProtocolRegistry<z.infer<typeof AntibodySchema>>;
+    return { ...d, entries: d.entries.map((e) => ({ ...e, title: e.antigen, category: e.antigenClass })) };
+  });
 
 /** Enum → display label. Badges are always derived from these enums, never free text. */
 export const CATEGORY_LABEL: Record<string, string> = {
@@ -35,6 +51,15 @@ export const CATEGORY_LABEL: Record<string, string> = {
   INFLAMMATORY_DEMYELINATING: 'Inflammatory / demyelinating',
   PROGNOSIS_DEATH: 'Prognosis / death',
   FUNCTIONAL: 'Functional',
+  ANTIPLATELET: 'Antiplatelets',
+  ANTICOAGULANT: 'Anticoagulants',
+  THROMBOLYTIC: 'Thrombolytics',
+  REVERSAL: 'Reversal agents',
+  DECISION: 'Decision guides',
+  NEURONAL_SURFACE: 'Neuronal surface antigens',
+  INTRACELLULAR: 'Intracellular antigens',
+  INTRACELLULAR_SYNAPTIC: 'Intracellular synaptic antigens',
+  GLIAL: 'Glial antigens',
 };
 
 export const ROLE_LABEL: Record<string, string> = {

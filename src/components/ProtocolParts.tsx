@@ -1,6 +1,9 @@
 import type { ReactNode } from 'react';
+import RelatedLinks from './RelatedLinks';
 import { EVIDENCE_LEGEND, FORMULARY_LEGEND } from '../content/copy';
 import { EVIDENCE_LABEL, FORMULARY_LABEL, PRIORITY_LABEL, ROLE_LABEL } from '../lib/protocols';
+import type { TreatmentItem } from '../../schema/acute-neuro';
+import type { z } from 'zod';
 
 const EVIDENCE_HELP = Object.fromEntries(EVIDENCE_LEGEND) as Record<string, string>;
 const FORMULARY_HELP = Object.fromEntries(FORMULARY_LEGEND) as Record<string, string>;
@@ -96,3 +99,35 @@ export function Sources({ items }: { items: string[] }) {
     </details>
   );
 }
+
+/** Treatment / use rows: role, agent, routes, dose text (as signed off), notes, evidence and formulary badges. */
+export function TreatmentList({ items }: { items: z.infer<typeof TreatmentItem>[] }) {
+  return (
+    <ul className="space-y-3">
+      {items.map((t) => (
+        <li key={`${t.role}-${t.agent}`} className={t.role === 'NOT_RECOMMENDED' ? 'opacity-60' : ''}>
+          <div className="flex flex-wrap items-center gap-2">
+            <RoleBadge role={t.role} />
+            <span className="text-sm font-semibold text-slate-100">{t.agent}</span>
+            <span className="text-xs text-slate-500">{t.routes.join(', ')}</span>
+          </div>
+          <p className="text-sm text-slate-200">{t.doseText}</p>
+          <Bullets items={t.notes} tone="text-slate-400" />
+          <div className="mt-1 flex flex-wrap items-center gap-2">
+            <EvidenceBadge level={t.evidenceLevel} />
+            <FormularyBadge status={t.formularyStatus} />
+          </div>
+          <Bullets items={t.evidenceNote} tone="text-xs text-slate-500" />
+          <RelatedLinks relatedIds={[]} calculatorIds={t.calculatorIds} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/** Generic enum badge with optional legend tooltip. */
+export const EnumBadge = ({ label, help, tone = 'border border-slate-600 text-slate-300' }: { label: string; help?: string; tone?: string }) => (
+  <Pill tone={tone} title={help}>
+    {label}
+  </Pill>
+);

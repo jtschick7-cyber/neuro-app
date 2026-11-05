@@ -4,7 +4,7 @@ import BannerList from './BannerList';
 import BedsideNotes from './BedsideNotes';
 import EntryFooter from './EntryFooter';
 import RelatedLinks from './RelatedLinks';
-import { Bullets, EvidenceBadge, FormularyBadge, RoleBadge, Section, Sources, WorkupList } from './ProtocolParts';
+import { Bullets, EvidenceBadge, Section, Sources, TreatmentList, WorkupList } from './ProtocolParts';
 import {
   CATEGORY_LABEL,
   groupByCategory,
@@ -45,7 +45,7 @@ interface ScreenProps<E extends Searchable & { id: string }> {
   renderEntry: (e: E) => ReactNode;
 }
 
-function RegistryScreen<E extends Searchable & { id: string }>({ registry, noun, placeholder, load, entryId, renderEntry }: ScreenProps<E>) {
+export function RegistryScreen<E extends Searchable & { id: string }>({ registry, noun, placeholder, load, entryId, renderEntry }: ScreenProps<E>) {
   const state = useLoaded(load);
   const [query, setQuery] = useState('');
   const entries = state.status === 'ready' ? state.data.entries : [];
@@ -105,7 +105,7 @@ function RegistryScreen<E extends Searchable & { id: string }>({ registry, noun,
   );
 }
 
-function EntryShell({
+export function EntryShell({
   registry,
   entry,
   children,
@@ -153,25 +153,7 @@ function AcuteEntryView({ e }: { e: AcuteEntry }) {
         <WorkupList items={e.workup} />
       </Section>
       <Section title="Treatment" open>
-        <ul className="space-y-3">
-          {e.treatment.map((t) => (
-            <li key={`${t.role}-${t.agent}`} className={t.role === 'NOT_RECOMMENDED' ? 'opacity-60' : ''}>
-              <div className="flex flex-wrap items-center gap-2">
-                <RoleBadge role={t.role} />
-                <span className="text-sm font-semibold text-slate-100">{t.agent}</span>
-                <span className="text-xs text-slate-500">{t.routes.join(', ')}</span>
-              </div>
-              <p className="text-sm text-slate-200">{t.doseText}</p>
-              <Bullets items={t.notes} tone="text-slate-400" />
-              <div className="mt-1 flex flex-wrap items-center gap-2">
-                <EvidenceBadge level={t.evidenceLevel} />
-                <FormularyBadge status={t.formularyStatus} />
-              </div>
-              <Bullets items={t.evidenceNote} tone="text-xs text-slate-500" />
-              <RelatedLinks relatedIds={[]} calculatorIds={t.calculatorIds} />
-            </li>
-          ))}
-        </ul>
+        <TreatmentList items={e.treatment} />
       </Section>
       {e.pitfalls.length > 0 && (
         <Section title="Pitfalls" open>
