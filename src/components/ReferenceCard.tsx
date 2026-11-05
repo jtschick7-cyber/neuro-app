@@ -60,7 +60,8 @@ export default function ReferenceCard({ entry, listId }: { entry: CautionEntry; 
       <p className="mt-2 text-[11px] text-slate-600">
         {listId}:{entry.id} · reviewed {entry.lastReviewed}
       </p>
-      <BedsideNotes noteId={`${listId}-${entry.id}`} />
+      {/* MG notes keep their original key (`mg-<id>`) so notes saved by earlier builds still appear. */}
+      <BedsideNotes noteId={listId === 'mg-contraindications' ? `mg-${entry.id}` : `${listId}-${entry.id}`} />
     </article>
   );
 }
