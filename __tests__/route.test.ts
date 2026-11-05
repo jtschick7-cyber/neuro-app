@@ -18,6 +18,10 @@ describe('parseHash', () => {
     expect(parseHash('#/calc')).toEqual({ kind: 'calc', calcId: undefined });
     expect(parseHash('#/calc/tnk-dose')).toEqual({ kind: 'calc', calcId: 'tnk-dose' });
   });
+  it('parses the about route', () => {
+    expect(parseHash('#/about')).toEqual({ kind: 'about' });
+    expect(toHash({ kind: 'about' })).toBe('#/about');
+  });
   it('ignores a query string and a trailing slash', () => {
     expect(parseHash('#/calc/ledd/?x=1')).toEqual({ kind: 'calc', calcId: 'ledd' });
     expect(parseHash('#/rcvs-triggers/')).toEqual({ kind: 'registry', registry: 'rcvs-triggers' });

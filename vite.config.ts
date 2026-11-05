@@ -3,6 +3,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { readFileSync } from 'node:fs';
+
+// Cache names carry the content version, so shipping new content always starts a fresh cache and drops the old one.
+const { contentVersion } = JSON.parse(readFileSync('./generated/about.json', 'utf8')) as { contentVersion: string };
 
 export default defineConfig({
   // GitHub Pages serves the site from /neuro-app/
@@ -14,6 +18,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       workbox: {
+        cacheId: `neurohosp-${contentVersion}`,
+        cleanupOutdatedCaches: true,
         // Precache everything (JS, CSS, HTML, JSON registries are bundled into JS) for offline use.
         globPatterns: ['**/*.{js,css,html,svg,png,ico,json,webmanifest}'],
         navigateFallback: 'index.html',
