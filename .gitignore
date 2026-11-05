@@ -5,3 +5,7 @@ dist/
 dev-dist/
 *.local
 generated/review/
+.claude/handoff_current.md
+.claude/handoff_history/
+.claude/handoff_pinned.md
+.DS_Store
