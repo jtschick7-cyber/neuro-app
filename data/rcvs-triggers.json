@@ -1,0 +1,308 @@
+{
+  "title": "RCVS triggers to avoid",
+  "condition": "Reversible cerebral vasoconstriction syndrome (current or prior)",
+  "scopeNotes": [
+    "Drug and substance triggers only — postpartum, procedural and physiologic triggers are in the thunderclap headache workup",
+    "Evidence is mostly case reports and series (Sousa 2026 Table 1)"
+  ],
+  "version": "0.1.1",
+  "schemaVersion": "3.0.0",
+  "lastUpdated": "2026-11-05",
+  "entries": [
+    {
+      "id": "sympathomimetics",
+      "title": "Sympathomimetics and decongestants",
+      "searchTerms": [
+        "Sudafed",
+        "decongestant",
+        "nasal spray",
+        "pseudoephedrine"
+      ],
+      "drugClass": "Sympathomimetic",
+      "generics": [
+        "pseudoephedrine",
+        "phenylephrine",
+        "phenylpropanolamine",
+        "epinephrine",
+        "naphazoline",
+        "midodrine",
+        "isometheptene"
+      ],
+      "brands": [],
+      "tier": "AVOID",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Reported RCVS trigger (vasoconstrictive)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Includes OTC cold remedies and nasal decongestant sprays"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "ergots-dopamine-agonists",
+      "title": "Ergots and dopamine agonists",
+      "searchTerms": [
+        "Methergine",
+        "postpartum hemorrhage",
+        "bromocriptine lactation"
+      ],
+      "drugClass": "Ergot alkaloids / dopamine agonists",
+      "generics": [
+        "ergotamine",
+        "methylergonovine",
+        "bromocriptine",
+        "lisuride"
+      ],
+      "brands": [
+        "Methergine"
+      ],
+      "tier": "AVOID",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Reported RCVS trigger (vasoconstrictive)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Postpartum use (methylergonovine, bromocriptine) overlaps with the postpartum RCVS window"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:pres"
+      ],
+      "sources": [
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "triptans",
+      "title": "Triptans",
+      "searchTerms": [
+        "sumatriptan",
+        "migraine abortive"
+      ],
+      "drugClass": "5-HT1B/1D agonist",
+      "generics": [
+        "sumatriptan",
+        "rizatriptan",
+        "zolmitriptan",
+        "eletriptan",
+        "naratriptan",
+        "almotriptan",
+        "frovatriptan"
+      ],
+      "brands": [],
+      "tier": "AVOID",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Reported RCVS trigger (serotonergic, vasoconstrictive)"
+      ],
+      "mechanism": [],
+      "pearls": [],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "illicit-recreational",
+      "title": "Illicit and recreational substances",
+      "searchTerms": [
+        "marijuana",
+        "THC",
+        "cocaine",
+        "vaping"
+      ],
+      "drugClass": "Recreational substances",
+      "generics": [
+        "cannabis",
+        "cocaine",
+        "amphetamines",
+        "MDMA (ecstasy)",
+        "LSD",
+        "nicotine patches/e-cigarettes",
+        "binge alcohol"
+      ],
+      "brands": [],
+      "tier": "AVOID",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Reported RCVS triggers; cannabis is the most commonly implicated substance"
+      ],
+      "mechanism": [],
+      "pearls": [],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "serotonergic-antidepressants",
+      "title": "Serotonergic antidepressants",
+      "searchTerms": [
+        "SSRI",
+        "SNRI",
+        "sertraline",
+        "escitalopram"
+      ],
+      "drugClass": "Antidepressants",
+      "generics": [
+        "SSRIs",
+        "SNRIs",
+        "bupropion"
+      ],
+      "brands": [],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Reported RCVS triggers; serotonergic mechanisms likely contribute"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Sousa 2026: avoid vasoconstrictive drugs after RCVS, but continuation may be essential in psychiatric illness — reintroduce slowly and gradually (expert opinion)"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "immunomodulators",
+      "title": "Immunosuppressants and biologics",
+      "searchTerms": [
+        "tacrolimus",
+        "transplant",
+        "CGRP antibody"
+      ],
+      "drugClass": "Immunosuppressants / immunomodulators",
+      "generics": [
+        "tacrolimus",
+        "cyclosporine",
+        "cyclophosphamide",
+        "interferon",
+        "fingolimod",
+        "mycophenolate",
+        "etanercept",
+        "tocilizumab",
+        "ustekinumab",
+        "adalimumab",
+        "galcanezumab"
+      ],
+      "brands": [],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Reported associations with RCVS (case reports)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Weigh necessity; PRES is also associated with immunosuppression and post-transplant states (Sousa 2026)"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:pres"
+      ],
+      "sources": [
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "hormonal-agents",
+      "title": "Hormonal agents",
+      "searchTerms": [
+        "oral contraceptive",
+        "IVF",
+        "IUD"
+      ],
+      "drugClass": "Hormonal",
+      "generics": [
+        "combined oral contraceptives",
+        "ovarian stimulation agents",
+        "levonorgestrel IUD",
+        "anastrozole",
+        "leuprolide"
+      ],
+      "brands": [],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Reported associations with RCVS (case reports)"
+      ],
+      "mechanism": [],
+      "pearls": [],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "other-reported-triggers",
+      "title": "Other reported triggers",
+      "searchTerms": [
+        "EPO",
+        "IVIG RCVS",
+        "transfusion"
+      ],
+      "drugClass": "Miscellaneous",
+      "generics": [
+        "erythropoietin",
+        "IVIG",
+        "red blood cell transfusion",
+        "indomethacin",
+        "phenytoin (intoxication)",
+        "ephedra/Hydroxycut",
+        "khat",
+        "licorice",
+        "caffeine withdrawal"
+      ],
+      "brands": [],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Reported associations with RCVS (case reports)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Evidence is case reports with likely reporting bias; patients often have several exposures"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+      ],
+      "lastReviewed": "2026-11-05"
+    }
+  ]
+}

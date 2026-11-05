@@ -1,0 +1,2238 @@
+{
+  "title": "Neural antibodies",
+  "version": "0.4.3",
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-11-05",
+  "entries": [
+    {
+      "id": "nmdar",
+      "antigen": "NMDA receptor (GluN1 subunit)",
+      "searchTerms": [
+        "anti-NMDAR",
+        "NMDA receptor encephalitis",
+        "GluN1",
+        "NR1"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "INTERMEDIATE",
+      "syndromes": [
+        {
+          "syndrome": "Anti-NMDAR encephalitis: psychiatric symptoms, memory/speech deficits, seizures, dyskinesias, decreased consciousness, autonomic instability, central hypoventilation",
+          "typical": true
+        },
+        {
+          "syndrome": "Isolated psychiatric episodes",
+          "typical": false
+        },
+        {
+          "syndrome": "Post-HSV encephalitis autoimmune relapse",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "95% younger than 45 y and 37% younger than 18 y; female:male ~4:1, less marked in children <12 and adults >45 (Graus 2016, citing Titulaer 2013)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Ovarian teratoma (mostly mature)",
+          "frequencyText": "Overall 38% (PNS-Care); 58% in women >18 y; 0–5% in children <12 y (Graus 2016)"
+        },
+        {
+          "tumor": "Carcinomas (older adults)",
+          "frequencyText": "Tumors in 23% of adults >45 y, usually carcinomas rather than teratomas (Graus 2016)"
+        }
+      ],
+      "cancerScreening": [
+        "Women: screen for ovarian teratoma (pelvic imaging per local protocol)",
+        "Adults >45 y: screen for carcinoma",
+        "Consider rescreening in relapsing or refractory disease (PNS-Care 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "CSF",
+        "rationale": [
+          "CSF positive in 250/250 vs serum 214/250 (sensitivity 100% vs 85.6%) on paired samples (Gresa-Arribas 2014)",
+          "Test both serum and CSF; CSF screening is obligatory for suspected surface-antibody encephalitis (PNS-Care 2021)"
+        ],
+        "methodNotes": [
+          "Surface antibody positive in serum only (CSF negative): confirm with tissue IHC or a research laboratory before calling it definite (PNS-Care 2021)",
+          "IgG against GluN1 is the relevant antibody (Graus 2016)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 79% (418/532) (Titulaer 2013)"
+        ],
+        "typicalFindings": [
+          "Lymphocytic pleocytosis, elevated protein, or oligoclonal bands"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 33% (180/540) (Titulaer 2013)"
+        ],
+        "typicalFindings": [
+          "Often normal or nonspecific; may show transient cortical/subcortical FLAIR changes"
+        ]
+      },
+      "otherTests": [
+        "EEG: abnormal in 90% (432/482) (Titulaer 2013); extreme delta brush supports the diagnosis (Graus 2016 criteria)"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Good outcome (mRS 0–2) in 81% (203/252) at 24 months; recovery can continue for up to 18 months",
+        "Second-line immunotherapy (rituximab, cyclophosphamide) is usually effective when first-line fails; early treatment and no ICU admission predict good outcome",
+        "Relapse risk 12% within 2 years; 67% of relapses milder than the first episode (Titulaer 2013)",
+        "Titers fall with recovery but often stay positive (24/28 CSF, 17/23 serum after recovery) — persistent positivity alone doesn't define activity",
+        "CSF titer change tracks relapse better than serum (14/19 vs 7/16); higher titers with teratoma or poor outcome (Gresa-Arribas 2014)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis"
+      ],
+      "sources": [
+        "Titulaer MJ, et al. Treatment and prognostic factors for long-term outcome in patients with anti-NMDA receptor encephalitis: an observational cohort study. Lancet Neurol 2013;12(2):157-165. doi:10.1016/S1474-4422(12)70310-1",
+        "Gresa-Arribas N, et al. Antibody titres at diagnosis and during follow-up of anti-NMDA receptor encephalitis: a retrospective study. Lancet Neurol 2014;13(2):167-177. doi:10.1016/S1474-4422(13)70282-5",
+        "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "lgi1",
+      "antigen": "LGI1 (leucine-rich glioma-inactivated 1)",
+      "searchTerms": [
+        "anti-LGI1",
+        "VGKC",
+        "faciobrachial dystonic seizures",
+        "FBDS"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Limbic encephalitis (34/38, 90%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Faciobrachial dystonic seizures (47%) and subtle focal seizures (66%), usually before memory loss",
+          "typical": true
+        },
+        {
+          "syndrome": "Cognitive impairment without encephalitis criteria (up to 13%)",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "66% male (25/38); median onset 64 y (range 31–84) (van Sonderen 2016)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Thymoma, neuroendocrine and other tumors",
+          "frequencyText": "11% (4/36) in van Sonderen 2016, relation to LGI1 uncertain; <10%, mainly Morvan with LGI1 + CASPR2 (PNS-Care)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Serum positive in 38/38 by CBA and IHC; CSF positive in only 9/17 (53%) by CBA and 15/17 by IHC (van Sonderen 2016)",
+          "CSF-only positivity in 8% of paired samples (Ariño 2016) — send both, but never rely on CSF alone"
+        ],
+        "methodNotes": [
+          "Antibodies are IgG4 (Ariño 2016)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Pleocytosis >5 cells/μL in 16% (5/32) and protein >0.58 g/L in 16% (5/32) (van Sonderen 2016)"
+        ],
+        "typicalFindings": [
+          "When abnormal: mild pleocytosis (max 88 cells/μL) or mildly raised protein",
+          "Intrathecal IgG synthesis rare (Graus 2016)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal at presentation in 26% (9/35) (van Sonderen 2016)"
+        ],
+        "typicalFindings": [
+          "Unilateral (60%) or bilateral (14%) hippocampal T2 lesions; mesial temporal sclerosis at follow-up in 7/16 (44%) with initial hippocampal lesions (text; Table 1 lists denominator 17)",
+          "Initial MRI can be normal with later limbic changes (Ariño 2016)"
+        ]
+      },
+      "otherTests": [
+        "Serum sodium: hyponatremia in 65% (24/37) (van Sonderen 2016)",
+        "EEG: epileptic activity 31%, focal slowing 25% (11/36, 9/36); FBDS have no EEG correlate"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "FBDS often precede memory loss — treating early is the window",
+        "Substantial response in 80%, but relapses in 35% (up to 8 y later); 86% have persistent amnesia for the illness, most survivors have mild residual cognitive deficit; 2-y case fatality 19% (van Sonderen 2016)",
+        "VGKC-complex antibodies without LGI1/CASPR2 are not syndrome-specific and don't prove autoimmunity (Graus 2016)",
+        "Serum LGI1 antibodies can persist after full recovery (Ariño 2016)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:caspr2"
+      ],
+      "sources": [
+        "van Sonderen A, et al. Anti-LGI1 encephalitis: clinical syndrome and long-term follow-up. Neurology 2016;87(14):1449-1456. doi:10.1212/WNL.0000000000003173",
+        "Ariño H, et al. Anti-LGI1-associated cognitive impairment: presentation and long-term outcome. Neurology 2016;87(8):759-765. doi:10.1212/WNL.0000000000003009",
+        "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "caspr2",
+      "antigen": "CASPR2 (contactin-associated protein-like 2)",
+      "searchTerms": [
+        "anti-CASPR2",
+        "Caspr2",
+        "Morvan syndrome",
+        "neuromyotonia",
+        "Isaacs syndrome",
+        "VGKC"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Limbic encephalitis (42%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Morvan syndrome (29%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Peripheral nerve hyperexcitability (acquired neuromyotonia)",
+          "typical": true
+        },
+        {
+          "syndrome": "Cerebellar dysfunction, neuropathic pain, insomnia, dysautonomia, weight loss",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "89% male (34/38); median onset 66 y; women younger (median 49 vs 68 y) (van Sonderen 2016)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Thymoma (mostly)",
+          "frequencyText": "19% overall (van Sonderen 2016); ~50% malignant thymoma in Morvan syndrome, LE almost always nonparaneoplastic (PNS-Care)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)",
+        "Morvan syndrome: treated as intermediate risk by PNS-Care — screen for thymoma"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Serum positive with both CBA and IHC in all 38 patients (van Sonderen 2016)",
+          "CSF IHC was negative in 3 patients, all with tumor and Morvan syndrome"
+        ],
+        "methodNotes": [
+          "IgG4 in all; IgG1 also in 63% (van Sonderen 2016)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Normal in 65% (van Sonderen 2016)"
+        ],
+        "typicalFindings": [
+          "Mild pleocytosis (6–20 cells/μL) in 7 patients"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Unremarkable in 70% of patients with cognitive decline or seizures (van Sonderen 2016)"
+        ],
+        "typicalFindings": [
+          "Bilateral medial temporal T2 hyperintensity in 24%"
+        ]
+      },
+      "otherTests": [
+        "EMG/nerve conduction for peripheral nerve hyperexcitability"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Seven core features: encephalopathy (cognitive/seizures), cerebellar dysfunction, peripheral nerve hyperexcitability, dysautonomia, insomnia, neuropathic pain, weight loss — ≥3 in 77%",
+        "Slow course: median time to nadir 4 months, >1 year in 30%",
+        "Treatment response 93%; relapses 25% (van Sonderen 2016)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:lgi1"
+      ],
+      "sources": [
+        "van Sonderen A, et al. The clinical spectrum of Caspr2 antibody-associated disease. Neurology 2016;87(5):521-528. doi:10.1212/WNL.0000000000002917",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "gabab-r",
+      "antigen": "GABA-B receptor",
+      "searchTerms": [
+        "anti-GABAB",
+        "GABABR",
+        "GABA-B receptor encephalitis",
+        "KCTD16"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "INTERMEDIATE",
+      "syndromes": [
+        {
+          "syndrome": "Limbic encephalitis with prominent seizures (95% eventually)",
+          "typical": true
+        },
+        {
+          "syndrome": "Status epilepticus, ataxia, opsoclonus-myoclonus",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Male:female 12:8; patients without SCLC younger (median 39 y) than those with SCLC (median 67.5 y) (Höftberger 2013)",
+        "Paraneoplastic cases mostly older men who smoke; most young patients are not paraneoplastic (PNS-Care)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Small-cell lung cancer",
+          "frequencyText": ">50% (PNS-Care); 10/20 (50%), all with LE (Höftberger 2013)"
+        }
+      ],
+      "cancerScreening": [
+        "Screen at diagnosis; if negative, repeat every 4–6 months for 2 years when a high-risk phenotype (e.g., limbic encephalitis) occurs with older age, smoking, or a concurrent high-risk antibody (PNS-Care 2021)",
+        "Chest CT (± PET) for SCLC"
+      ],
+      "testing": {
+        "preferredSpecimen": "CSF",
+        "rationale": [
+          "Paired samples: CSF positive 12/12 vs serum 8/12 (Höftberger 2013)",
+          "Pooled: CSF 98.3% (71/72) vs serum 88.1% (69/77) (McKay 2019)"
+        ],
+        "methodNotes": [
+          "Surface antibody positive in serum only (CSF negative): confirm with tissue IHC or a research laboratory before calling it definite (PNS-Care 2021)",
+          "Co-occurring KCTD16 antibodies point to a paraneoplastic case (PNS-Care)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal in 26% (5/19) (Höftberger 2013, Table 1)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis + raised protein 7/19, pleocytosis only 6/19, protein only 1/19 (Höftberger 2013)",
+          "Pooled: pleocytosis 59.3%, raised protein 43.9% (McKay 2019)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal in 37% (7/19) (Höftberger 2013, Table 1)"
+        ],
+        "typicalFindings": [
+          "Hippocampal/amygdala FLAIR/T2 signal (LE pattern) 9/19; pial/cortical enhancement 2/19; leukoencephalopathy 1/19",
+          "Pooled: temporal T2 hyperintensity 54.8% (McKay 2019)"
+        ]
+      },
+      "otherTests": [
+        "EEG: abnormal in 9/15, epileptiform 6/15 (Höftberger 2013)",
+        "Onconeuronal antibody panel"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "SCLC patients often carry additional onconeuronal antibodies (Ri, amphiphysin, SOX1) (Höftberger 2013)",
+        "Long-term prognosis is driven by the tumor; most improve with immunotherapy ± oncologic treatment (15/19)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis"
+      ],
+      "sources": [
+        "Höftberger R, et al. Encephalitis and GABAB receptor antibodies: novel findings in a new case series of 20 patients. Neurology 2013;81(17):1500-1506. doi:10.1212/WNL.0b013e3182a9585f",
+        "McKay JH, Dimberg EL, Lopez Chiriboga AS. A systematic review of gamma-aminobutyric acid receptor type B autoimmunity. Neurol Neurochir Pol 2019;53(1):1-7. doi:10.5603/PJNNS.a2018.0005",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "ampar",
+      "antigen": "AMPA receptor (GluA1/GluA2)",
+      "searchTerms": [
+        "anti-AMPAR",
+        "AMPA receptor encephalitis"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "INTERMEDIATE",
+      "syndromes": [
+        {
+          "syndrome": "Limbic encephalitis (55%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Limbic dysfunction with multifocal/diffuse encephalopathy (36%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Psychosis with bipolar features",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median 62 y (23–81); 14/22 female (Höftberger 2015)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Lung cancer (incl. SCLC), thymoma, breast, ovarian teratoma",
+          "frequencyText": "64% (14/22): 5 lung, 4 thymoma, 2 breast, 2 ovarian teratoma pathologic + 1 lung radiologic (Höftberger 2015); >50% SCLC and malignant thymoma (PNS-Care)"
+        }
+      ],
+      "cancerScreening": [
+        "Screen at diagnosis; if negative, repeat every 4–6 months for 2 years when a high-risk phenotype (e.g., limbic encephalitis) occurs with older age, smoking, or a concurrent high-risk antibody (PNS-Care 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "CSF",
+        "rationale": [
+          "Paired samples: CSF 14/14 vs serum 10/14 positive (Höftberger 2015)"
+        ],
+        "methodNotes": [
+          "Surface antibody positive in serum only (CSF negative): confirm with tissue IHC or a research laboratory before calling it definite (PNS-Care 2021)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal cell count and protein in 27% (6/22) (Höftberger 2015, Table 1)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 11/22 (median 23 cells/μL); isolated protein elevation 5/22"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Initial MRI normal in 18% (4/22) (Höftberger 2015, Table 1)"
+        ],
+        "typicalFindings": [
+          "LE: unilateral or bilateral mesiotemporal FLAIR/T2 hyperintensity (11/12)",
+          "Diffuse encephalitis: multifocal cortical, basal ganglia, thalamic, hypothalamic, or callosal lesions"
+        ]
+      },
+      "otherTests": [
+        "Onconeuronal antibody panel (coexisting antibodies in 7/22)"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "Coexisting onconeuronal antibodies predicted poor outcome; all 5 deaths had tumor or additional paraneoplastic symptoms",
+        "Response: 5 good, 10 partial, 6 none (n=21)",
+        "Relapses occurred only without aggressive therapy (0/19 vs 6/18) (Höftberger 2015)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis"
+      ],
+      "sources": [
+        "Höftberger R, et al. Encephalitis and AMPA receptor antibodies: novel findings in a case series of 22 patients. Neurology 2015;84(24):2403-2412. doi:10.1212/WNL.0000000000001682",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "gabaa-r",
+      "antigen": "GABA-A receptor (α1/β3 ± γ2 subunits)",
+      "searchTerms": [
+        "anti-GABAA",
+        "GABAAR",
+        "GABA-A receptor encephalitis"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Encephalitis with seizures (88%) and refractory status epilepticus",
+          "typical": true
+        },
+        {
+          "syndrome": "Cognitive, behavioral, consciousness changes; movement disorders (more in children)",
+          "typical": true
+        }
+      ],
+      "demographics": [
+        "Children and adults: median 40.5 y; children median 13 y, adults median 59 y; 50% female (Spatola 2017)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Malignant thymoma (mostly)",
+          "frequencyText": "<30% overall (PNS-Care); 9/15 adults vs 1/10 children (Spatola 2017)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)",
+        "Adults: screen for thymoma"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Paired samples: both positive 14/16, serum-only 2/16, none CSF-only (Spatola 2017)"
+        ],
+        "methodNotes": []
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 58% (15/26); children 10/11, adults 5/15 (Spatola 2017)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis, elevated protein, or oligoclonal bands"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 88% (23/26) (Spatola 2017)"
+        ],
+        "typicalFindings": [
+          "Multifocal, asynchronous cortical-subcortical T2/FLAIR lesions in 77% — temporal (95%) and frontal (65%), also basal ganglia"
+        ]
+      },
+      "otherTests": [
+        "EEG: epileptiform activity in 16/21 (Spatola 2017)",
+        "Evaluate for myasthenia/thymoma"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Multifocal cortical-subcortical MRI lesions are the diagnostic clue",
+        "Children: more often post-viral (post-HSV, HHV6, with coexisting NMDAR antibodies); adults: tumor-related",
+        "Substantial improvement in 18/21; 3 died (Spatola 2017)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "acute-neuro:refractory-super-refractory-se"
+      ],
+      "sources": [
+        "Spatola M, et al. Investigations in GABAA receptor antibody-associated encephalitis. Neurology 2017;88(11):1012-1020. doi:10.1212/WNL.0000000000003713",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "dppx",
+      "antigen": "DPPX (dipeptidyl-peptidase-like protein 6)",
+      "searchTerms": [
+        "anti-DPPX",
+        "DPP6",
+        "hyperekplexia",
+        "PERM"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Prodromal weight loss/diarrhea → cognitive-mental dysfunction + CNS hyperexcitability (hyperekplexia, myoclonus, tremor, seizures); triad in 67%",
+          "typical": true
+        },
+        {
+          "syndrome": "Brainstem/cerebellar dysfunction; PERM",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median 57 y, 8/9 male (Hara 2017); median 53 y, 12/20 men (Tobin 2014)"
+      ],
+      "tumors": [
+        {
+          "tumor": "B-cell neoplasms (lymphoma)",
+          "frequencyText": "<10% (PNS-Care); mantle cell lymphoma in 1/9 (Hara 2017)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Serum positive in 20/20; CSF positive in all 7 tested (Tobin 2014)"
+        ],
+        "methodNotes": [
+          "IgG4 and IgG1 in all (Hara 2017)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "No pleocytosis or oligoclonal bands in 4/9 (Hara 2017, table)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 5/9 (6–130 cells/μL; median 12); intrathecal IgG synthesis 2/5"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Normal in 5/9 (Hara 2017; small series)"
+        ],
+        "typicalFindings": [
+          "Nonspecific white-matter T2/FLAIR changes in 3/9; temporal atrophy 1/9"
+        ]
+      },
+      "otherTests": [
+        "EEG (slow background 5/7)",
+        "GI evaluation for unexplained diarrhea/weight loss"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Unexplained weight loss (median 20 kg) or diarrhea preceding neurologic symptoms (median 4 months) is the clue",
+        "Peak may come late (median 8 months); relapses in 23%, immunotherapy-responsive (Hara 2017)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:glyr"
+      ],
+      "sources": [
+        "Hara M, et al. DPPX antibody-associated encephalitis: main syndrome and antibody effects. Neurology 2017;88(14):1340-1348. doi:10.1212/WNL.0000000000003796",
+        "Tobin WO, et al. DPPX potassium channel antibody: frequency, clinical accompaniments, and outcomes in 20 patients. Neurology 2014;83(20):1797-1803. doi:10.1212/WNL.0000000000000991",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "glyr",
+      "antigen": "Glycine receptor (α1 subunit)",
+      "searchTerms": [
+        "anti-GlyR",
+        "glycine receptor",
+        "PERM",
+        "stiff person"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Progressive encephalomyelitis with rigidity and myoclonus (PERM) — majority",
+          "typical": true
+        },
+        {
+          "syndrome": "Stiff-person syndrome, limbic encephalitis/epileptic encephalopathy, brainstem syndromes",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "24 male / 21 female; age 1–75 y (median 50) (Carvajal-González 2014)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Thymoma, lymphoma",
+          "frequencyText": "<10% (PNS-Care); new tumors in 4/45: 3 thymoma, 1 B-cell marginal zone lymphoma (Carvajal-González 2014)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Serum levels higher than (10/11) or equal to (1/11) CSF; intrathecal synthesis in all 6 pairs studied (Carvajal-González 2014)"
+        ],
+        "methodNotes": [
+          "Brain IHC isn't useful for GlyR — rely on CBA (PNS-Care 2021)",
+          "Very low serum titers with alternative diagnoses were excluded from the cohort — interpret low titers with caution"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal in 40% (12/30) (Carvajal-González 2014)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 13/30, raised protein 4/30, oligoclonal bands 6/30"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Brain MRI normal in 72% (26/36); spinal MRI normal in 18/23 (Carvajal-González 2014)"
+        ],
+        "typicalFindings": [
+          "Generally uninformative: white-matter lesions, atrophy, small-vessel disease",
+          "Spinal cord: short/patchy lesions 4/23, one longitudinally extensive"
+        ]
+      },
+      "otherTests": [],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Most improve markedly with immunotherapy (median mRS 5 → 1), but 4/45 died acutely and relapses occur — maintenance immunosuppression may be needed",
+        "Can coexist with high-titer GAD65 antibodies (4 patients)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:dppx"
+      ],
+      "sources": [
+        "Carvajal-González A, et al. Glycine receptor antibodies in PERM and related syndromes: characteristics, clinical features and outcomes. Brain 2014;137(8):2178-2192. doi:10.1093/brain/awu142",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "mglur5",
+      "antigen": "Metabotropic glutamate receptor 5 (mGluR5)",
+      "searchTerms": [
+        "anti-mGluR5",
+        "Ophelia syndrome",
+        "Hodgkin encephalitis"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "INTERMEDIATE",
+      "syndromes": [
+        {
+          "syndrome": "Encephalitis with psychiatric (10/11) and cognitive (10/11) symptoms, movement disorders (7/11), sleep dysfunction (7/11), seizures (6/11) — not restricted to LE",
+          "typical": true
+        },
+        {
+          "syndrome": "Limbic encephalitis with Hodgkin lymphoma (Ophelia syndrome)",
+          "typical": true
+        }
+      ],
+      "demographics": [
+        "Median 29 y (6–75); 5/11 female (Spatola 2018)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Hodgkin lymphoma",
+          "frequencyText": "~50% (PNS-Care); 5/11 Hodgkin + 1/11 SCLC (Spatola 2018)"
+        }
+      ],
+      "cancerScreening": [
+        "Screen at diagnosis; if negative, repeat every 4–6 months for 2 years when a high-risk phenotype occurs with older age, smoking, or a concurrent high-risk antibody (PNS-Care 2021)",
+        "Screen for Hodgkin lymphoma (CT chest/abdomen/pelvis ± PET per local protocol)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "No paired serum/CSF sensitivity data in the sources read; PNS-Care recommends testing both for surface antibodies"
+        ],
+        "methodNotes": [
+          "Surface antibody positive in serum only (CSF negative): confirm with tissue IHC or a research laboratory before calling it definite (PNS-Care 2021)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Pleocytosis in 11/11 (median 22 cells/mm³) (Spatola 2018)"
+        ],
+        "typicalFindings": []
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 5/11 — normal in 6/11 (Spatola 2018)"
+        ],
+        "typicalFindings": [
+          "Limbic (1/5) or extralimbic (4/5) involvement"
+        ]
+      },
+      "otherTests": [],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Median peak mRS 4; 4/11 needed ICU care, yet at median 48 months 6 recovered completely and 5 partially",
+        "Relapses in 2/11 (Spatola 2018)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis"
+      ],
+      "sources": [
+        "Spatola M, et al. Encephalitis with mGluR5 antibodies: symptoms and antibody effects. Neurology 2018;90(22):e1964-e1972. doi:10.1212/WNL.0000000000005614",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "mglur1",
+      "antigen": "Metabotropic glutamate receptor 1 (mGluR1)",
+      "searchTerms": [
+        "anti-mGluR1",
+        "autoimmune cerebellar ataxia"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Subacute cerebellar syndrome",
+          "typical": true
+        },
+        {
+          "syndrome": "Cerebellar syndrome with behavioral/cognitive or other neurologic symptoms (86%)",
+          "typical": true
+        }
+      ],
+      "demographics": [
+        "Median onset 55 y (IQR 43–64); 43% female (n=30) (Spatola 2020)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Mostly hematologic malignancies",
+          "frequencyText": "~30% (PNS-Care); 3/26 (11%) (Spatola 2020)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "No paired serum/CSF sensitivity data in the sources read; PNS-Care recommends testing both"
+        ],
+        "methodNotes": [
+          "Surface antibody positive in serum only (CSF negative): confirm with tissue IHC or a research laboratory before calling it definite (PNS-Care 2021)",
+          "Antibodies mainly IgG1 (Spatola 2020)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 76% (19/25) (Spatola 2020)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 11/25 (median 27 cells/mm³); oligoclonal bands or raised IgG index 11/20"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Normal at onset in 12/19 (63%) (Spatola 2020)"
+        ],
+        "typicalFindings": [
+          "Cerebellar atrophy at follow-up in 10/12 (83%)"
+        ]
+      },
+      "otherTests": [
+        "EEG rarely obtained; abnormal in 5/8 (Spatola 2020)"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "Outcome (n=25): stabilization 52%, significant improvement 40%, 2 died — long-term disability and cerebellar atrophy are common",
+        "Worse initial disability (needing walking assistance, higher SARA) predicted bad outcome — treat early (Spatola 2020)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis"
+      ],
+      "sources": [
+        "Spatola M, et al. Clinical features, prognostic factors, and antibody effects in anti-mGluR1 encephalitis. Neurology 2020;95(22):e3012-e3025. doi:10.1212/WNL.0000000000010854",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "iglon5",
+      "antigen": "IgLON5",
+      "searchTerms": [
+        "anti-IgLON5",
+        "IgLON5 disease",
+        "parasomnia",
+        "PSP-like"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Sleep disorder: NREM/REM parasomnia with sleep-breathing difficulty (36% at diagnosis; all eventually had sleep problems)",
+          "typical": true
+        },
+        {
+          "syndrome": "Bulbar syndrome: dysphagia, sialorrhea, stridor, acute respiratory insufficiency (27%)",
+          "typical": true
+        },
+        {
+          "syndrome": "PSP-like syndrome (23%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Cognitive decline ± chorea (14%)",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median 64 y (46–83) (Gaig 2017)"
+      ],
+      "tumors": [],
+      "cancerScreening": [
+        "No cancer association established (1 hypernephroma in 22)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Paired samples: both positive 14/16, serum-only 2/16 (both PSP-like) (Gaig 2017)"
+        ],
+        "methodNotes": [
+          "IgG4 predominates (16/21); IgG1 + IgG4 in 20/21"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Pleocytosis 6/20 (30%); raised protein 10/20 (50%, median 64 mg/dL); intrathecal oligoclonal bands 1/14 (Gaig 2017)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Normal or nonspecific in 82% (18/22) (Gaig 2017)"
+        ],
+        "typicalFindings": [
+          "Mild brainstem/cerebellar atrophy 3/22; bilateral hippocampal atrophy with FLAIR signal 1/22"
+        ]
+      },
+      "otherTests": [
+        "Video-polysomnography: undifferentiated NREM parasomnia, RBD in 8/9, obstructive sleep apnea in 16/16 (median AHI 33), stridor in 10/12 (Gaig 2017)",
+        "HLA typing: DRB1*10:01 and DQB1*05:01 in 13/15 (87%)"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Mimics a neurodegenerative disorder (PSP, chronic sleep disorder) — the antibody is missed unless considered",
+        "Only 2/20 treated patients had mild, transient improvement; 13/22 (59%) died — 6 suddenly, 6 from aspiration pneumonia (Gaig 2017)",
+        "Stridor and sleep apnea are near-universal — PSG with audio; consider airway/CPAP planning"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis"
+      ],
+      "sources": [
+        "Gaig C, et al. Clinical manifestations of the anti-IgLON5 disease. Neurology 2017;88(18):1736-1743. doi:10.1212/WNL.0000000000003887"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "p-q-vgcc",
+      "antigen": "P/Q-type voltage-gated calcium channel (VGCC)",
+      "searchTerms": [
+        "VGCC",
+        "P/Q",
+        "Lambert-Eaton",
+        "LEMS",
+        "DELTA-P",
+        "paraneoplastic cerebellar degeneration"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "INTERMEDIATE",
+      "syndromes": [
+        {
+          "syndrome": "Lambert-Eaton myasthenic syndrome: proximal leg-predominant weakness, autonomic dysfunction (~90%), reduced reflexes that improve after exercise",
+          "typical": true
+        },
+        {
+          "syndrome": "Rapidly progressive cerebellar syndrome",
+          "typical": true
+        }
+      ],
+      "demographics": [],
+      "tumors": [
+        {
+          "tumor": "Small-cell lung cancer",
+          "frequencyText": "~50% in LEMS; nearly 90% with rapidly progressive cerebellar syndrome (PNS-Care)"
+        }
+      ],
+      "cancerScreening": [
+        "Screen at diagnosis; if negative, repeat every 4–6 months for 2 years when a high-risk phenotype occurs with older age, smoking, or a concurrent high-risk antibody (PNS-Care 2021)",
+        "LEMS (Titulaer 2011): CT thorax + FDG-PET at diagnosis, then repeat; DELTA-P 0–1 → stop after two adequate negative screens (second at 6 months); 2 → every 6 months for 2 years; 3–6 → second screen at 3 months, then every 6 months for 2 years"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Present in nearly 90% of LEMS, similarly in paraneoplastic and nonparaneoplastic forms (PNS-Care)"
+        ],
+        "methodNotes": [
+          "Brain IHC isn't useful for P/Q VGCC antibodies (PNS-Care)",
+          "SOX1 antibodies in LEMS strongly suggest SCLC; N-type VGCC co-occurrence may be slightly more common in paraneoplastic LEMS (PNS-Care)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": []
+      },
+      "mri": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": []
+      },
+      "otherTests": [
+        "Electrodiagnostic confirmation of LEMS is required (PNS-Care)",
+        "SOX1 antibodies"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "DELTA-P (1 point each, at or within 3 months of onset): age ≥50, smoking at diagnosis, weight loss ≥5%, bulbar involvement, erectile dysfunction, Karnofsky <70 — 0–1 points = 0–2.6% SCLC; 4, 5, 6 points = 93.5%, 96.6%, 100% (Titulaer 2011)",
+        "LEMS + VGCC without cancer is 'probable' PNS; upgrade if SCLC appears within 2 years, downgrade to 'possible' after >2 years without cancer (PNS-Care)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:neuromuscular-respiratory-failure",
+        "neural-antibodies:sox1"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Titulaer MJ, et al. Clinical Dutch-English Lambert-Eaton myasthenic syndrome (LEMS) tumor association prediction score accurately predicts small-cell lung cancer in the LEMS. J Clin Oncol 2011;29(7):902-908. doi:10.1200/JCO.2010.32.0440"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "gad65",
+      "antigen": "Glutamic acid decarboxylase 65 (GAD65)",
+      "searchTerms": [
+        "anti-GAD",
+        "GAD65",
+        "stiff person syndrome",
+        "SPS",
+        "autoimmune epilepsy"
+      ],
+      "antigenClass": "INTRACELLULAR_SYNAPTIC",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Stiff-person syndrome",
+          "typical": true
+        },
+        {
+          "syndrome": "Cerebellar ataxia",
+          "typical": true
+        },
+        {
+          "syndrome": "Chronic (temporal lobe) epilepsy",
+          "typical": true
+        },
+        {
+          "syndrome": "Limbic encephalitis",
+          "typical": true
+        },
+        {
+          "syndrome": "Overlap of the above",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Paraneoplastic cases are older, more often male, with associated neuronal antibodies and atypical presentations (PNS-Care)"
+      ],
+      "tumors": [
+        {
+          "tumor": "SCLC, other neuroendocrine tumors, malignant thymoma",
+          "frequencyText": "<15% (PNS-Care); cancer association mainly with LE, men >50 (Graus 2016)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)",
+        "GAD65-associated SPS: call it paraneoplastic only if the tumor expresses GAD65 (PNS-Care)"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "High-concentration group defined as serum >10,000 IU/mL (ELISA) or CSF >100 IU/mL; classic syndromes in 34/36 (94%) (Muñoz-Lopetegi 2020)",
+          "Above these cutoffs, ELISA agreed with IHC and CBA (CSF 100 IU/mL: 100% concordance; serum 10,000 IU/mL: 97–100%)",
+          "Low titers, especially with atypical phenotypes, make alternative diagnoses more likely"
+        ],
+        "methodNotes": [
+          "Low-titer GAD65 is common in type 1 diabetes — interpret with titer and phenotype",
+          "Confirm commercial line-blot/CBA positives with brain IHC, especially with low titer, serum-only testing, or a mismatched phenotype (PNS-Care 2021)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "High-titer group: oligoclonal bands 12/18 (67%), pleocytosis 6/27 (22%), raised protein 8/24 (33%) (Muñoz-Lopetegi 2020)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "High-titer group: abnormal in 15/32 (47%) (Muñoz-Lopetegi 2020)"
+        ],
+        "typicalFindings": []
+      },
+      "otherTests": [
+        "Serum titer (quantitative ELISA)",
+        "EMG for stiff-person syndrome"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "High-titer patients mostly improve with immunotherapy but rarely recover completely",
+        "Falling serum concentration tracked clinical improvement (15/17 fell, 14 improved; the 2 unchanged didn't improve) (Muñoz-Lopetegi 2020)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:amphiphysin",
+        "neural-antibodies:glyr"
+      ],
+      "sources": [
+        "Muñoz-Lopetegi A, et al. Neurologic syndromes related to anti-GAD65: clinical and serologic response to treatment. Neurol Neuroimmunol Neuroinflamm 2020;7(3):e696. doi:10.1212/NXI.0000000000000696",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "amphiphysin",
+      "antigen": "Amphiphysin",
+      "searchTerms": [
+        "anti-amphiphysin",
+        "paraneoplastic stiff person",
+        "breast cancer"
+      ],
+      "antigenClass": "INTRACELLULAR_SYNAPTIC",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Neuropathy / polyradiculoneuropathy, sensory neuronopathy (most frequent)",
+          "typical": true
+        },
+        {
+          "syndrome": "Encephalomyelitis, myelopathy",
+          "typical": true
+        },
+        {
+          "syndrome": "Stiff-person phenomena (39% of women, 12% of men; full SPS criteria in 10% and 4%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Cerebellar syndrome",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Isolated amphiphysin-IgG (19/63): more often women with breast cancer, myelopathy, or stiff-person phenomena (Pittock 2005)"
+      ],
+      "tumors": [
+        {
+          "tumor": "SCLC, breast cancer",
+          "frequencyText": "~80% (PNS-Care); cancer in 50/63: SCLC 27, breast 16, NSCLC 1, melanoma 2 (Pittock 2005)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Chest CT and breast imaging"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Cohort identified by serum testing (Pittock 2005); PNS-Care recommends testing both serum and CSF"
+        ],
+        "methodNotes": [
+          "Intracellular antigen: confirm with immunoblot after tissue IHC (PNS-Care)",
+          "Coexisting paraneoplastic antibodies in 74% — they predict the tumor (Pittock 2005)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 61% (17/28) (Pittock 2005)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 13/28 (mean 22 cells/μL); raised protein 10/28 (mean 104 mg/dL); oligoclonal bands 5/28"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Head MRI abnormal in only 2/27 (Pittock 2005)"
+        ],
+        "typicalFindings": [
+          "Spinal cord: intrinsic lesions in 5/25 with symptomatic myelopathy, 4 longitudinally extensive (3 enhancing); normal spinal MRI doesn't exclude myelopathy (2/20)"
+        ]
+      },
+      "otherTests": [
+        "Full onconeuronal panel",
+        "EMG/nerve conduction"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "Paraneoplastic SPS with amphiphysin: older patients, more neck and upper-limb involvement than GAD65 SPS (PNS-Care)",
+        "Amphiphysin or CV2/CRMP5 can replace Hu in some LE with SCLC (Graus 2016)",
+        "Improvement documented with tumor therapy in some and with IV steroids/IVIG in a few; 13/63 died during follow-up (Pittock 2005)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:gad65"
+      ],
+      "sources": [
+        "Pittock SJ, et al. Amphiphysin autoimmunity: paraneoplastic accompaniments. Ann Neurol 2005;58(1):96-107. doi:10.1002/ana.20529",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "anti-hu",
+      "antigen": "Hu (ANNA-1)",
+      "searchTerms": [
+        "anti-Hu",
+        "ANNA-1",
+        "HuD",
+        "sensory neuronopathy",
+        "encephalomyelitis"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Sensory neuronopathy",
+          "typical": true
+        },
+        {
+          "syndrome": "Encephalomyelitis",
+          "typical": true
+        },
+        {
+          "syndrome": "Limbic encephalitis",
+          "typical": true
+        },
+        {
+          "syndrome": "Chronic gastrointestinal pseudo-obstruction",
+          "typical": true
+        },
+        {
+          "syndrome": "Brainstem encephalitis",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median 63 y (28–82); 75% men (Graus 2001, n=200)",
+        "LE with Hu antibodies is usually nonparaneoplastic in patients <18 y (PNS-Care)"
+      ],
+      "tumors": [
+        {
+          "tumor": "SCLC >> NSCLC, other neuroendocrine tumors, neuroblastoma",
+          "frequencyText": "85% (PNS-Care); >85% of Hu-positive patients have SCLC"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Chest CT ± FDG-PET for SCLC"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Onconeuronal antibodies are usually detected in serum; PNS-Care recommends testing serum and CSF"
+        ],
+        "methodNotes": [
+          "Intracellular antigen: tissue IHC/IF with confirmatory immunoblot; confirm commercial line-blot positives with IHC, especially at low titer or with a mismatched phenotype (PNS-Care 2021)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Pooled Hu/Yo/CV2/Ri/Ma/Tr cohort: CSF abnormal in 93% (n=295); profile similar across antibody types (Psimaras 2010)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis more often early: 47% before vs 28% after month 3; oligoclonal bands the only abnormality in 10%"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Brainstem encephalitis subgroup: MRI normal in 22/22; pleocytosis in only 2/19 (Saiz 2009)",
+          "Overall MRI frequencies not reported in Graus 2001"
+        ]
+      },
+      "otherTests": [
+        "Nerve conduction studies (sensory neuronopathy)",
+        "Full onconeuronal panel"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Improvement or stabilization: 37.5% with tumor treatment ± immunotherapy, 20.6% with immunotherapy alone, 11.6% untreated; tumor treatment was the independent predictor (OR 4.56) (Graus 2001)",
+        "Treat the cancer early while the patient is still independent"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:cv2-crmp5",
+        "neural-antibodies:amphiphysin"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Graus F, et al. Anti-Hu-associated paraneoplastic encephalomyelitis: analysis of 200 patients. Brain 2001;124(6):1138-1148. doi:10.1093/brain/124.6.1138",
+        "Saiz A, et al. Anti-Hu-associated brainstem encephalitis. J Neurol Neurosurg Psychiatry 2009;80(4):404",
+        "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "cv2-crmp5",
+      "antigen": "CV2 / CRMP5 (collapsin response-mediator protein 5)",
+      "searchTerms": [
+        "anti-CV2",
+        "CRMP-5",
+        "CRMP5-IgG",
+        "paraneoplastic chorea",
+        "optic neuropathy"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Encephalomyelitis, sensory neuronopathy",
+          "typical": true
+        },
+        {
+          "syndrome": "Painful asymmetric axonal polyradiculoneuropathy (65% of CRMP5 neuropathy), often months before the cancer",
+          "typical": true
+        },
+        {
+          "syndrome": "Peripheral neuropathy (47%), autonomic neuropathy (31%), cerebellar ataxia (26%), subacute dementia (25%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Chorea (11%); cranial neuropathy (17%) incl. loss of smell/taste and optic neuropathy",
+          "typical": true
+        },
+        {
+          "syndrome": "Neuromuscular junction disorders (12%)",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Patients with thymoma are younger and more often have myasthenia gravis, less often neuropathy (PNS-Care)"
+      ],
+      "tumors": [
+        {
+          "tumor": "SCLC and thymoma",
+          "frequencyText": ">80% (PNS-Care); lung carcinoma (mostly limited SCLC) 77%, thymoma 6% (Yu 2001)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Chest CT ± FDG-PET (SCLC, thymoma)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "CSF positive in 27/27 tested; CSF titer equaled or exceeded paired serum in 10 (Yu 2001)"
+        ],
+        "methodNotes": [
+          "Intracellular antigen: tissue IHC/IF with confirmatory immunoblot; confirm commercial line-blot positives with IHC, especially at low titer or with a mismatched phenotype (PNS-Care 2021)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Normal in 11% (6/56); grossly abnormal in 86% (Yu 2001)"
+        ],
+        "typicalFindings": [
+          "Lymphocytic pleocytosis (8–370/mm³), raised protein (47–400 mg/dL), raised IgG index or synthesis rate",
+          "CRMP5 neuropathy: inflammatory CSF in 92% vs 60% with Hu alone (Dubey 2018)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Brain MRI frequencies not reported in Yu 2001"
+        ]
+      },
+      "otherTests": [
+        "Ophthalmology exam (optic neuropathy)",
+        "Acetylcholine receptor antibodies if thymoma"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Multifocal neuraxis involvement; chorea or vision loss in a smoker should prompt testing",
+        "Can replace Hu in some LE with SCLC (Graus 2016)",
+        "Neuropathy: impairment score worsened in 71%; improved in 21% (NIS) and 7% (mRS). Only high-dose IV steroids were linked to improvement/stabilization (63% vs 15%); immunotherapy relieved neuropathic pain (80% vs 20%) — Class IV (Dubey 2018)",
+        "Better 5-year survival than ANNA-1/Hu (67% vs 32%) (Dubey 2018)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:anti-hu"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Yu Z, et al. CRMP-5 neuronal autoantibody: marker of lung cancer and thymoma-related autoimmunity. Ann Neurol 2001;49(2):146-154",
+        "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483",
+        "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9",
+        "Dubey D, et al. Autoimmune CRMP5 neuropathy phenotype and outcome defined from 105 cases. Neurology 2018;90:e103-e110. doi:10.1212/WNL.0000000000004803"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "anti-ri",
+      "antigen": "Ri (ANNA-2; NOVA1/NOVA2)",
+      "searchTerms": [
+        "anti-Ri",
+        "ANNA-2",
+        "opsoclonus-myoclonus",
+        "jaw dystonia",
+        "laryngospasm"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Brainstem/cerebellar syndrome — gait instability is the commonest first symptom (86%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Opsoclonus-myoclonus",
+          "typical": true
+        },
+        {
+          "syndrome": "Jaw-opening dystonia and/or laryngospasm (25% in Pittock 2003; 19% in Pittock 2010)",
+          "typical": true
+        },
+        {
+          "syndrome": "Myelopathy, peripheral neuropathy, seizures",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "10 men / 18 women (Pittock 2003); breast cancer in women, lung cancer in men (PNS-Care)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Breast > lung (SCLC and NSCLC)",
+          "frequencyText": ">70% (PNS-Care)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Breast imaging in women; chest CT ± FDG-PET"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Cohort defined by serum immunofluorescence screening (Pittock 2003); PNS-Care recommends serum and CSF"
+        ],
+        "methodNotes": [
+          "Intracellular antigen: tissue IHC/IF with confirmatory immunoblot; confirm commercial line-blot positives with IHC, especially at low titer or with a mismatched phenotype (PNS-Care 2021)",
+          "Coexisting paraneoplastic antibodies in 73% (Hu, ANNA-3, CRMP5, P/Q and N-type VGCC, AChR) (Pittock 2003)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Ri cohort (n=19): raised protein 37%, mild lymphocytosis 42% (Pittock 2003)",
+          "Pooled Hu/Yo/CV2/Ri/Ma/Tr cohort: abnormal in 93% (Psimaras 2010) — the Ri-specific cohort looked less inflammatory"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Brain MRI abnormal in 4/21; CT normal in 14/14 (Pittock 2003)"
+        ],
+        "typicalFindings": [
+          "Pontine T2 signal 2/21; one medial temporal/white matter/pontine enhancing pattern",
+          "Spinal MRI: cauda equina/lumbar root enhancement in 1/9"
+        ]
+      },
+      "otherTests": [
+        "Swallow/airway assessment if jaw dystonia or laryngospasm"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "32% wheelchair-bound 1 month after onset, yet most improved after immunomodulatory or tumor-directed therapy (Pittock 2003)",
+        "Jaw dystonia can cause severe malnutrition; laryngospasm is an airway risk (Pittock 2010)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:anti-hu",
+        "neural-antibodies:p-q-vgcc"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Pittock SJ, Lucchinetti CF, Lennon VA. Anti-neuronal nuclear autoantibody type 2: paraneoplastic accompaniments. Ann Neurol 2003;53(5):580-587. doi:10.1002/ana.10518",
+        "Pittock SJ, et al. Paraneoplastic jaw dystonia and laryngospasm with antineuronal nuclear autoantibody type 2 (anti-Ri). Arch Neurol 2010. doi:10.1001/archneurol.2010.209",
+        "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "anti-yo",
+      "antigen": "Yo (PCA-1; CDR2/CDR2L)",
+      "searchTerms": [
+        "anti-Yo",
+        "PCA-1",
+        "paraneoplastic cerebellar degeneration",
+        "PCD"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Rapidly progressive cerebellar syndrome",
+          "typical": true
+        }
+      ],
+      "demographics": [
+        "Median onset 61 y (26–85) (Peterson 1992, as cited by Jarius 2015)",
+        "Almost all female; in men, antigen expression by the tumor should be proven (PNS-Care)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Ovarian and breast cancer",
+          "frequencyText": ">90% (PNS-Care); 30/34: breast 12 (all node-positive), gynecologic 18 incl. ovary 13 (Rojas 2000)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Breast and pelvic (gynecologic) imaging; FDG-PET if conventional imaging is negative",
+        "PCD led to the cancer diagnosis in 63% (Rojas 2000)"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Serum detection standard; PNS-Care recommends serum and CSF"
+        ],
+        "methodNotes": [
+          "Intracellular antigen: tissue IHC/IF with confirmatory immunoblot; confirm commercial line-blot positives with IHC, especially at low titer or with a mismatched phenotype (PNS-Care 2021)",
+          "Yo in a man or with an incongruent phenotype (e.g., seizures) — seek expert confirmatory testing (PNS-Care Table 4)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Pooled Hu/Yo/CV2/Ri/Ma/Tr cohort: CSF abnormal in 93% (n=295); profile similar across antibody types (Psimaras 2010)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis more often early: 47% before vs 28% after month 3; oligoclonal bands the only abnormality in 10%",
+          "Intrathecal anti-Yo synthesis (raised antibody index) in 5/5; CSF-restricted CDR2-specific oligoclonal bands in 9/9 (Jarius 2015)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal at onset in 17/55 (31%) — Peterson 1992 cohort, as cited by Jarius 2015"
+        ],
+        "typicalFindings": [
+          "Acute MRI mostly normal; cerebellar atrophy at follow-up (Sanvito 2024 review table)"
+        ]
+      },
+      "otherTests": [],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "94% became nonambulatory; no patient improved with cancer treatment or immunotherapy (Rojas 2000)",
+        "Median survival 100 months with breast vs 22 months with gynecologic cancer — tumor type drives survival",
+        "PCD progresses over weeks to months and stabilizes within ~6 months (Shams'ili 2003)"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Rojas I, et al. Long-term clinical outcome of paraneoplastic cerebellar degeneration and anti-Yo antibodies. Neurology 2000;55(5):713-715. doi:10.1212/WNL.55.5.713",
+        "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483",
+        "Shams'ili S, et al. Paraneoplastic cerebellar degeneration associated with antineuronal antibodies: analysis of 50 patients. Brain 2003;126:1409-1418. doi:10.1093/brain/awg133",
+        "Jarius S, Wildemann B. Medusa head ataxia: the expanding spectrum of Purkinje cell antibodies in autoimmune cerebellar ataxia. Part 3: anti-Yo/CDR2, anti-Nb/AP3B2, PCA-2, anti-Tr/DNER, other antibodies, diagnostic pitfalls, summary and outlook. J Neuroinflammation 2015;12:168. doi:10.1186/s12974-015-0358-9",
+        "Sanvito F, et al. Autoimmune encephalitis: what the radiologist needs to know. Neuroradiology 2024;66:653-675. doi:10.1007/s00234-024-03318-x"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "ma2",
+      "antigen": "Ma2 (± Ma1)",
+      "searchTerms": [
+        "anti-Ma2",
+        "anti-Ta",
+        "Ma1",
+        "diencephalic encephalitis",
+        "testicular"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Limbic, diencephalic, or brainstem encephalitis (95% over follow-up); classic LE alone only 26%",
+          "typical": true
+        },
+        {
+          "syndrome": "Excessive daytime sleepiness (32%), sometimes narcolepsy-cataplexy with low CSF hypocretin",
+          "typical": true
+        },
+        {
+          "syndrome": "Hypothalamic-diencephalic involvement (34%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Eye movement abnormalities with brainstem involvement",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Young men → testicular tumors and isolated Ma2; older patients → lung cancer, often with Ma1 + Ma2 (PNS-Care; Dalmau 2004)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Testicular germ-cell tumor, NSCLC",
+          "frequencyText": ">75% (PNS-Care); 34/38 had cancer, 53% testicular germ-cell (Dalmau 2004)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Men: testicular ultrasound (microcalcification and cryptorchidism were risk markers in 2 patients without cancer); chest CT",
+        "Neurologic symptoms preceded tumor diagnosis in 62% (Dalmau 2004)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Antibodies present in serum and in all 13 CSF samples available (Dalmau 2004)"
+        ],
+        "methodNotes": [
+          "Intracellular antigen: tissue IHC/IF with confirmatory immunoblot; confirm commercial line-blot positives with IHC, especially at low titer or with a mismatched phenotype (PNS-Care 2021)",
+          "Additional Ma1 antibodies (15/38): more non-testicular tumors, ataxia, and worse prognosis"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 78% (25/32); normal cell count and protein in 7/32, 2 of whom had oligoclonal bands (Dalmau 2004)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 5–113 WBC/mm³ (median 20); protein 47–747 mg/dL (median 71)",
+          "CSF hypocretin can be low with hypersomnolence"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 74% overall; 89% with limbic or diencephalic dysfunction (Dalmau 2004)"
+        ],
+        "typicalFindings": [
+          "T2/FLAIR changes in medial temporal lobes, diencephalon/hypothalamus, or upper brainstem"
+        ]
+      },
+      "otherTests": [
+        "Endocrine panel (hypothalamic involvement)",
+        "Sleep study / CSF hypocretin if hypersomnolent"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "Better outcome with male sex, age <45, testicular tumor with complete response, no Ma1 antibodies, limited CNS involvement",
+        "Immunosuppression wasn't associated with improvement overall but clearly helped some (Dalmau 2004)",
+        "MRI can mimic a tumor — test for Ma2 before biopsy"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:klhl11"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Dalmau J, et al. Clinical analysis of anti-Ma2-associated encephalitis. Brain 2004;127(8):1831-1844. doi:10.1093/brain/awh203",
+        "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "tr-dner",
+      "antigen": "Tr (DNER, delta/notch-like EGF-related receptor)",
+      "searchTerms": [
+        "anti-Tr",
+        "DNER",
+        "PCA-Tr",
+        "Hodgkin cerebellar"
+      ],
+      "antigenClass": "NEURONAL_SURFACE",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Rapidly progressive cerebellar syndrome (27/28)",
+          "typical": true
+        },
+        {
+          "syndrome": "Possible limbic encephalitis",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median 61 y (14–75); 22/28 male (Bernal 2003)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Hodgkin lymphoma",
+          "frequencyText": "90% (PNS-Care); 25/28 (Bernal 2003)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "CT chest/abdomen/pelvis ± FDG-PET for Hodgkin lymphoma"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "CSF positive with serum negative in 2/28 — send CSF (Bernal 2003)"
+        ],
+        "methodNotes": [
+          "DNER cell-based assay available (de Graaff 2012)",
+          "Antibodies disappeared spontaneously in all patients without tumor and in 10/10 after successful Hodgkin treatment — a negative later test doesn't exclude Tr-PCD"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal in 9/22 (41%) (Bernal 2003)"
+        ],
+        "typicalFindings": [
+          "Mild pleocytosis in 13/22 (median 50 cells, range 14–150)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Not reported systematically in Bernal 2003; cerebellar atrophy described in a late case"
+        ]
+      },
+      "otherTests": [],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "22/28 had a subacute, irreversible severe cerebellar syndrome; 4 improved clearly",
+        "Age matters: complete remission in 3/7 aged ≤40 vs 1 partial remission among 21 older patients (Bernal 2003)",
+        "Tr immunoreactivity is usually absent in the tumor itself"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:mglur1"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Bernal F, et al. Anti-Tr antibodies as markers of paraneoplastic cerebellar degeneration and Hodgkin's disease. Neurology 2003;60(2):230-234",
+        "de Graaff E, et al. Identification of delta/notch-like epidermal growth factor-related receptor as the Tr antigen in paraneoplastic cerebellar degeneration. Ann Neurol 2012;71(6):815-824. doi:10.1002/ana.23550",
+        "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "sox1",
+      "antigen": "SOX1 (anti-glial nuclear antibody, AGNA)",
+      "searchTerms": [
+        "anti-SOX1",
+        "AGNA",
+        "anti-glial nuclear",
+        "LEMS SCLC"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Lambert-Eaton myasthenic syndrome with or without rapidly progressive cerebellar syndrome",
+          "typical": true
+        }
+      ],
+      "demographics": [],
+      "tumors": [
+        {
+          "tumor": "Small-cell lung cancer",
+          "frequencyText": ">90% (PNS-Care)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Chest CT + FDG-PET for SCLC"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "LEMS: present in 64% with SCLC vs 0/50 idiopathic LEMS; also in 32% of Hu-positive SCLC and 22% of SCLC without a neurologic syndrome (Sabater 2008)"
+        ],
+        "methodNotes": [
+          "Utility of tissue IHC is unclear for SOX1 (PNS-Care)",
+          "Correlates with SCLC more than with any particular neurologic syndrome (PNS-Care)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": []
+      },
+      "mri": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": []
+      },
+      "otherTests": [
+        "Electrodiagnostic testing for LEMS",
+        "P/Q VGCC antibodies"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "SOX1 in a patient with LEMS strongly suggests SCLC — screen intensively even if the first search is negative",
+        "SOX1 is an independent SCLC predictor in LEMS alongside the DELTA-P items (Titulaer 2011)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:p-q-vgcc",
+        "neural-antibodies:anti-hu"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Sabater L, et al. SOX1 antibodies are markers of paraneoplastic Lambert-Eaton myasthenic syndrome. Neurology 2008;70(12):924-928",
+        "Titulaer MJ, et al. Clinical Dutch-English Lambert-Eaton myasthenic syndrome (LEMS) tumor association prediction score accurately predicts small-cell lung cancer in the LEMS. J Clin Oncol 2011;29(7):902-908. doi:10.1200/JCO.2010.32.0440"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "klhl11",
+      "antigen": "Kelch-like protein 11 (KLHL11)",
+      "searchTerms": [
+        "anti-KLHL11",
+        "rhombencephalitis",
+        "seminoma",
+        "hearing loss",
+        "tinnitus"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Rhombencephalitis (brainstem/cerebellar): ataxia 82%, diplopia 56%, vertigo 54%, hearing loss 39%, tinnitus 36%, dysarthria 28%",
+          "typical": true
+        },
+        {
+          "syndrome": "Limbic encephalitis; seizures (23%)",
+          "typical": false
+        },
+        {
+          "syndrome": "Myeloneuropathy, cervical amyotrophy, neuropsychiatric dysfunction",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "All men; median 46 y (28–73) (Dubey 2020)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Testicular germ-cell tumor (mostly seminoma)",
+          "frequencyText": "80% (PNS-Care); of 36 screened: germ-cell tumor 64%, microlithiasis/fibrosis suggesting regressed tumor 19% (Dubey 2020)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Testicular ultrasound (look for microlithiasis/fibrosis as well as tumor); CT chest/abdomen/pelvis ± FDG-PET"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "PNS-Care recommends serum and CSF"
+        ],
+        "methodNotes": [
+          "Intracellular antigen: tissue IHC/IF with confirmatory immunoblot; confirm commercial line-blot positives with IHC, especially at low titer or with a mismatched phenotype (PNS-Care 2021)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Inflammatory in 85% (29/34) (Dubey 2020)"
+        ],
+        "typicalFindings": [
+          "Median 10 cells/μL (0–86); median protein 65 mg/dL; supernumerary oligoclonal bands in 18/22 (82%)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Normal at diagnosis in 7/37 (19%) (Dubey 2020)"
+        ],
+        "typicalFindings": [
+          "T2/FLAIR hyperintensity in 76%: temporal 12, cerebellum 9, brainstem 3, diencephalon 3; enhancement in 3",
+          "Can look like a mass lesion → misdiagnosed as tumor/metastasis",
+          "Follow-up >2 y: cerebellar atrophy 6/12; hypertrophic olivary degeneration 3"
+        ]
+      },
+      "otherTests": [
+        "Audiometry",
+        "HLA: DQB1*02:01 in 7/10, DRB1*03:01 in 6/10 (Dubey 2020)"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Hearing loss or tinnitus preceded other deficits by 1–8 months in 26% — think of it in a young man with new sensorineural loss plus ataxia",
+        "Often refractory; wheelchair dependence more likely when no testicular cancer is found; outcomes similar to Ma2 (Dubey 2020)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:ma2"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Dubey D, et al. Expanded clinical phenotype, oncological associations, and immunopathologic insights of paraneoplastic Kelch-like protein-11 encephalitis. JAMA Neurol 2020;77(11):1420-1429. doi:10.1001/jamaneurol.2020.2231"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "pca2-map1b",
+      "antigen": "PCA-2 (MAP1B, microtubule-associated protein 1B)",
+      "searchTerms": [
+        "PCA-2",
+        "PCA2",
+        "MAP1B",
+        "Purkinje cell antibody type 2"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "HIGH",
+      "syndromes": [
+        {
+          "syndrome": "Peripheral (sensorimotor) neuropathy (53%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Cerebellar ataxia/dysmetria/dysarthria (38%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Encephalopathy / encephalomyelitis (27%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Optic neuropathy, retinopathy, myelopathy, LEMS",
+          "typical": false
+        }
+      ],
+      "demographics": [],
+      "tumors": [
+        {
+          "tumor": "SCLC (majority), NSCLC, breast cancer",
+          "frequencyText": "~80% (PNS-Care); cancer in 66/84 (79%), mostly SCLC (Gadoth 2017)"
+        }
+      ],
+      "cancerScreening": [
+        "High-risk antibody: if initial screening is negative, repeat every 4–6 months for 2 years (PNS-Care 2021)",
+        "Chest CT ± FDG-PET for SCLC"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Cohort defined mainly by serum (92 of 96 archived specimens) (Gadoth 2017)"
+        ],
+        "methodNotes": [
+          "Intracellular antigen: tissue IHC with confirmatory testing (PNS-Care)",
+          "Often accompanied by other SCLC markers: CRMP5 26%, VGCC 22%, Hu 13% (Gadoth 2017)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Pleocytosis in 15/29 (52%, median 20 cells); raised protein in 21/29 (74%, median 60 mg/dL) (Gadoth 2017)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Brain/spine MRI normal in 15/43 (35%); nonspecific white-matter change in 8 more (Gadoth 2017)"
+        ],
+        "typicalFindings": [
+          "Pathologic in 46%: spinal cord T2 lesions/enhancement, cerebral atrophy, optic nerve or temporal lobe involvement, meningeal enhancement"
+        ]
+      },
+      "otherTests": [
+        "Full onconeuronal panel (CRMP5, Hu, VGCC)",
+        "Nerve conduction studies"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "Physician-reported benefit from immunotherapy in 14/26; some neurologic benefit after chemotherapy in 11/15 (Gadoth 2017)",
+        "Detection rate similar to amphiphysin and higher than Ri or Tr — worth including in paraneoplastic panels"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:cv2-crmp5",
+        "neural-antibodies:anti-hu",
+        "neural-antibodies:p-q-vgcc"
+      ],
+      "sources": [
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Gadoth A, et al. Microtubule-associated protein 1B: novel paraneoplastic biomarker. Ann Neurol 2017;81(2):266-277. doi:10.1002/ana.24872"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "aqp4",
+      "antigen": "Aquaporin-4 (AQP4)",
+      "searchTerms": [
+        "AQP4-IgG",
+        "NMO-IgG",
+        "NMOSD",
+        "neuromyelitis optica"
+      ],
+      "antigenClass": "GLIAL",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Optic neuritis (often severe, posterior, bilateral; chiasm/tract)",
+          "typical": true
+        },
+        {
+          "syndrome": "Acute myelitis — single longitudinally extensive lesion across the cord's transverse diameter",
+          "typical": true
+        },
+        {
+          "syndrome": "Area postrema syndrome (intractable hiccups, nausea, vomiting)",
+          "typical": true
+        },
+        {
+          "syndrome": "Acute brainstem, diencephalic (symptomatic narcolepsy), or cerebral syndromes",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Female > male; pediatric onset extremely rare (Banwell 2023 Table 1)",
+        "Paraneoplastic AQP4: older age, male, severe nausea/vomiting at onset (PNS-Care)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Adenocarcinomas",
+          "frequencyText": "<5% (PNS-Care)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Diagnosis rests on positive serum AQP4-IgG by cell-based assay plus ≥1 core clinical characteristic (Wingerchuk 2015)"
+        ],
+        "methodNotes": [
+          "Cell-based assay recommended (Wingerchuk 2015)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "CSF-restricted oligoclonal bands infrequent (5–20%) vs >80% in MS (Banwell 2023 Table 1)",
+          "Pleocytosis can be marked"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Brain MRI might be normal with optic neuritis or myelitis presentations (Banwell 2023 Table 1)",
+          "Lesions in AQP4-rich regions: peri-third/fourth ventricle, splenium, internal capsule, dorsal medulla; patchy cloud-like or pencil-thin ependymal enhancement",
+          "Spinal cord: bright spotty lesions; residual T1-hypointense lesions might be present (21–50%)",
+          "Banwell 2023 Table 1 frequency bands: infrequent 5–20%, might be present 21–50%"
+        ]
+      },
+      "otherTests": [
+        "MOG-IgG if AQP4 negative",
+        "MRI orbits and whole spine with contrast"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "Risk of poor visual recovery and of worsening motor impairment with relapses (Banwell 2023 Table 1) — treat attacks urgently",
+        "Interferon-beta, natalizumab, and fingolimod can worsen NMOSD"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:nmosd-mogad-attack",
+        "neural-antibodies:mog",
+        "neural-antibodies:gfap"
+      ],
+      "sources": [
+        "Wingerchuk DM, et al. International consensus diagnostic criteria for neuromyelitis optica spectrum disorders. Neurology 2015;85(2):177-189. doi:10.1212/WNL.0000000000001729",
+        "Banwell B, et al. Diagnosis of myelin oligodendrocyte glycoprotein antibody-associated disease: International MOGAD Panel proposed criteria. Lancet Neurol 2023;22:268-282",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "mog",
+      "antigen": "Myelin oligodendrocyte glycoprotein (MOG)",
+      "searchTerms": [
+        "MOG-IgG",
+        "MOGAD",
+        "ADEM",
+        "optic neuritis",
+        "cortical encephalitis"
+      ],
+      "antigenClass": "GLIAL",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Optic neuritis — frequently bilateral, anterior, longitudinally extensive, with optic nerve sheath enhancement and disc edema",
+          "typical": true
+        },
+        {
+          "syndrome": "Myelitis — longitudinally extensive or multiple; gray-matter H-sign; conus lesions",
+          "typical": true
+        },
+        {
+          "syndrome": "ADEM (especially children)",
+          "typical": true
+        },
+        {
+          "syndrome": "Cerebral cortical encephalitis with seizures; brainstem/cerebellar syndromes",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Female = male; pediatric onset frequent (Banwell 2023 Table 1)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Ovarian teratoma (mostly)",
+          "frequencyText": "5 cases reported (PNS-Care)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "SERUM",
+        "rationale": [
+          "Serum is the preferred specimen; CSF positivity in seropositive MOGAD ranged 42–61% in cited series (Banwell 2023)",
+          "CSF-only positives occur rarely and can support MOGAD in seronegative patients with supportive clinical/MRI features"
+        ],
+        "methodNotes": [
+          "Live cell-based assay preferred; fixed CBA acceptable; ELISA not recommended (Banwell 2023)",
+          "Fixed CBA: clear positive ≥1:100; low positive 1:10 to <1:100 — low positives need AQP4-IgG negativity plus ≥1 supporting clinical or MRI feature",
+          "Test before steroids/IVIG/PLEX when possible; if negative but suspicion high, repeat ≥3 months later or at relapse",
+          "Titers usually fall over time but can stay positive for years"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "CSF-restricted oligoclonal bands infrequent (5–20%) vs >80% in MS (Banwell 2023 Table 1)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Brain MRI might be normal with optic neuritis or myelitis presentations",
+          "Fluffy, poorly demarcated T2 lesions in white matter, deep gray matter, middle cerebellar peduncle; partial or complete resolution expected; T1-hypointense residua extremely rare (<5%)",
+          "Leptomeningeal enhancement around brainstem; unilateral/bilateral cortical leptomeningeal enhancement with cortical encephalitis",
+          "Banwell 2023 Table 1 frequency bands: infrequent 5–20%, might be present 21–50%"
+        ]
+      },
+      "otherTests": [
+        "AQP4-IgG (negative result needed to interpret low-positive MOG)",
+        "Fundoscopy / OCT"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Course monophasic or relapsing; recovery after attacks typically favorable (vision, motor), though residual sphincter/erectile dysfunction can follow myelitis (Banwell 2023 Table 1)",
+        "False positives more likely with low titers — don't diagnose MOGAD from a low positive in an MS-like picture"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:nmosd-mogad-attack",
+        "neural-antibodies:aqp4"
+      ],
+      "sources": [
+        "Banwell B, et al. Diagnosis of myelin oligodendrocyte glycoprotein antibody-associated disease: International MOGAD Panel proposed criteria. Lancet Neurol 2023;22:268-282",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "gfap",
+      "antigen": "Glial fibrillary acidic protein (GFAPα)",
+      "searchTerms": [
+        "GFAP-IgG",
+        "autoimmune GFAP astrocytopathy",
+        "meningoencephalomyelitis",
+        "radial enhancement"
+      ],
+      "antigenClass": "GLIAL",
+      "pnsRisk": "LOW",
+      "syndromes": [
+        {
+          "syndrome": "Meningoencephalomyelitis — meningitis, encephalitis, myelitis, or combinations (81%)",
+          "typical": true
+        },
+        {
+          "syndrome": "Optic neuritis/papillitis, tremor/ataxia, dysautonomia, neuropathy",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median onset 44 y (8–103); 54% women (Flanagan 2017)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Ovarian teratoma (most common), adenocarcinomas, others",
+          "frequencyText": "≈20% (PNS-Care); neoplasm found prospectively in 22% (Flanagan 2017)"
+        }
+      ],
+      "cancerScreening": [
+        "Comprehensive cancer screening at initial diagnosis is sufficient for lower-risk antibodies (PNS-Care 2021)",
+        "Pelvic imaging for ovarian teratoma — predicted best when NMDAR-IgG and AQP4-IgG coexist (71%) (Flanagan 2017)"
+      ],
+      "testing": {
+        "preferredSpecimen": "CSF",
+        "rationale": [
+          "Paired samples: CSF positive 45/49 (92%) vs serum 22/49 (45%); CSF testing had the highest specificity for meningoencephalomyelitis (94%) (Flanagan 2017)"
+        ],
+        "methodNotes": [
+          "GFAPα-IgG is the most sensitive isoform (100%)",
+          "Rare false positives in controls: serum tissue assay 0.5%, serum CBA 1.5%, CSF CBA 0.9% — serum-only positives are less specific"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Pleocytosis >5/μL in 45/51 (88%) (Flanagan 2017)"
+        ],
+        "typicalFindings": [
+          "Median 78.5 cells (13–550), lymphocyte-predominant; protein raised in 30/36 (median 80 mg/dL); low glucose in 4/22; CSF-restricted OCB in 13/24"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Normal imaging in 7 patients (18%) (Flanagan 2017)"
+        ],
+        "typicalFindings": [
+          "Linear perivascular radial enhancement extending from the ventricles in 53%; also leptomeningeal (22%), serpentine (19%), ependymal (9%)",
+          "Spinal cord: longitudinally extensive lesions common; central canal enhancement in 21%",
+          "DWI normal in all evaluated; lesions often resolve with steroids"
+        ]
+      },
+      "otherTests": [
+        "NMDAR-IgG and AQP4-IgG (coexist; affect tumor risk)",
+        "Vessel imaging if vasculitis is suspected — angiography was normal in all tested"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Improved with corticosteroids in 14/16 — but relapses during taper (often below prednisone 20 mg/day) or after stopping steroid-sparing therapy; plan steroid-sparing maintenance (Flanagan 2017)",
+        "Mimics CNS vasculitis on imaging (32% considered) — angiography was uniformly negative"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis",
+        "neural-antibodies:nmdar",
+        "neural-antibodies:aqp4"
+      ],
+      "sources": [
+        "Flanagan EP, et al. Glial fibrillary acidic protein immunoglobulin G as biomarker of autoimmune astrocytopathy: analysis of 102 patients. Ann Neurol 2017;81(2):298-309. doi:10.1002/ana.24881",
+        "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    }
+  ]
+}

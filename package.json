@@ -1,14 +1,22 @@
 {
   "name": "neurohospitalist-pwa",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "npm run validate:release && tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "validate": "tsx scripts/validate.ts data/*.json",
+    "validate:release": "tsx scripts/validate.ts --release data/*.json",
+    "build:schema": "tsx scripts/build-json-schema.ts",
+    "build:calc-doc": "tsx scripts/build-calc-doc.ts",
+    "build:about": "tsx scripts/build-about.ts",
+    "release": "npm run validate:release && npm test && npm run build:schema && npm run build:calc-doc && npm run build:about",
+    "signoff": "tsx scripts/signoff.ts",
+    "review-sheets": "tsx scripts/build-review-sheets.ts"
   },
   "dependencies": {
     "lucide-react": "^1.68.0",
@@ -22,9 +30,11 @@
     "@types/react-dom": "^18.3.7",
     "@vitejs/plugin-react": "^6.2.1",
     "tailwindcss": "^4.3.4",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.5",
     "vite-plugin-pwa": "^2.0.0",
-    "vitest": "^5.1.0"
+    "vitest": "^5.1.0",
+    "zod": "^4.6.7"
   }
 }

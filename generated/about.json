@@ -1,0 +1,1686 @@
+{
+  "appVersion": "1.1.0",
+  "contentVersion": "1.1.0+d510f50c",
+  "builtAt": "2026-11-05",
+  "registries": [
+    {
+      "id": "acute-neuro",
+      "title": "Acute Non-Vascular Neurologic Emergencies",
+      "version": "0.7.1",
+      "schemaVersion": "1.0.0",
+      "lastUpdated": "2026-11-05",
+      "entries": 21,
+      "reviewed": 21,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-05",
+      "newestReview": "2026-11-05"
+    },
+    {
+      "id": "asm-interactions",
+      "title": "Antiseizure medication interactions",
+      "version": "0.1.1",
+      "schemaVersion": "1.0.0",
+      "lastUpdated": "2026-11-05",
+      "entries": 6,
+      "reviewed": 6,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-05",
+      "newestReview": "2026-11-05"
+    },
+    {
+      "id": "consult-workups",
+      "title": "Consult workups",
+      "version": "0.7.1",
+      "schemaVersion": "1.0.0",
+      "lastUpdated": "2026-11-05",
+      "entries": 26,
+      "reviewed": 26,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-05",
+      "newestReview": "2026-11-05"
+    },
+    {
+      "id": "mg-contraindications",
+      "title": "Myasthenia gravis: drugs to avoid or use with caution",
+      "version": "2.3.2",
+      "schemaVersion": "3.0.0",
+      "lastUpdated": "2026-11-05",
+      "entries": 17,
+      "reviewed": 17,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-05",
+      "newestReview": "2026-11-05"
+    },
+    {
+      "id": "neural-antibodies",
+      "title": "Neural antibodies",
+      "version": "0.4.3",
+      "schemaVersion": "1.0.0",
+      "lastUpdated": "2026-11-05",
+      "entries": 26,
+      "reviewed": 26,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-05",
+      "newestReview": "2026-11-05"
+    },
+    {
+      "id": "rcvs-triggers",
+      "title": "RCVS triggers to avoid",
+      "version": "0.1.1",
+      "schemaVersion": "3.0.0",
+      "lastUpdated": "2026-11-05",
+      "entries": 8,
+      "reviewed": 8,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-05",
+      "newestReview": "2026-11-05"
+    },
+    {
+      "id": "seizure-threshold",
+      "title": "Drugs that lower the seizure threshold",
+      "version": "0.2.1",
+      "schemaVersion": "3.0.0",
+      "lastUpdated": "2026-11-05",
+      "entries": 9,
+      "reviewed": 9,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-05",
+      "newestReview": "2026-11-05"
+    },
+    {
+      "id": "vascular-antithrombotics",
+      "title": "Vascular antithrombotics",
+      "version": "0.7.1",
+      "schemaVersion": "1.0.0",
+      "lastUpdated": "2026-11-05",
+      "entries": 35,
+      "reviewed": 35,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-05",
+      "newestReview": "2026-11-05"
+    }
+  ],
+  "calculators": [
+    {
+      "id": "levetiracetam-load",
+      "title": "Levetiracetam load",
+      "openVerify": 0
+    },
+    {
+      "id": "valproate-load",
+      "title": "Valproate load",
+      "openVerify": 0
+    },
+    {
+      "id": "fosphenytoin-load",
+      "title": "Fosphenytoin load",
+      "openVerify": 0
+    },
+    {
+      "id": "lacosamide-load",
+      "title": "Lacosamide load",
+      "openVerify": 0
+    },
+    {
+      "id": "hypertonic-saline-bolus",
+      "title": "Hypertonic saline (ICP)",
+      "openVerify": 0
+    },
+    {
+      "id": "mannitol-dose",
+      "title": "Mannitol 20%",
+      "openVerify": 0
+    },
+    {
+      "id": "ledd",
+      "title": "Levodopa equivalent daily dose",
+      "openVerify": 0
+    },
+    {
+      "id": "cockcroft-gault",
+      "title": "Creatinine clearance (Cockcroft-Gault)",
+      "openVerify": 0
+    },
+    {
+      "id": "ich-score",
+      "title": "ICH score",
+      "openVerify": 0
+    },
+    {
+      "id": "abcd2",
+      "title": "ABCD2",
+      "openVerify": 0
+    },
+    {
+      "id": "cha2ds2-vasc",
+      "title": "CHA₂DS₂-VASc",
+      "openVerify": 0
+    },
+    {
+      "id": "has-bled",
+      "title": "HAS-BLED",
+      "openVerify": 0
+    },
+    {
+      "id": "tnk-dose",
+      "title": "Tenecteplase (stroke)",
+      "openVerify": 0
+    },
+    {
+      "id": "alteplase-dose",
+      "title": "Alteplase (stroke)",
+      "openVerify": 0
+    },
+    {
+      "id": "ivig-dose",
+      "title": "IVIG",
+      "openVerify": 0
+    },
+    {
+      "id": "sodium-correction",
+      "title": "Hyponatremia: 3% bolus and correction limits",
+      "openVerify": 0
+    }
+  ],
+  "sources": [
+    {
+      "citation": "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372",
+      "year": 2023,
+      "citedBy": [
+        "asm-interactions:cns-polypharmacy-falls",
+        "asm-interactions:gabapentinoids-opioids",
+        "asm-interactions:tmp-smx-phenytoin",
+        "seizure-threshold:fluoroquinolones",
+        "seizure-threshold:meperidine",
+        "seizure-threshold:theophylline",
+        "seizure-threshold:tramadol"
+      ]
+    },
+    {
+      "citation": "Abboud H, et al. Autoimmune encephalitis: proposed best practice recommendations for diagnosis and acute management. J Neurol Neurosurg Psychiatry 2021;92(7):757-768. doi:10.1136/jnnp-2020-325300",
+      "year": 2021,
+      "citedBy": [
+        "acute-neuro:autoimmune-encephalitis"
+      ]
+    },
+    {
+      "citation": "Abboud H, et al. Autoimmune encephalitis: proposed recommendations for symptomatic and long-term management. J Neurol Neurosurg Psychiatry 2021;92:897-907. doi:10.1136/jnnp-2020-325302",
+      "year": 2021,
+      "citedBy": [
+        "acute-neuro:autoimmune-encephalitis"
+      ]
+    },
+    {
+      "citation": "Activase (alteplase) US prescribing information. Genentech; revised 9/2022 (user-supplied label)",
+      "year": 2022,
+      "citedBy": [
+        "calc:alteplase-dose",
+        "vascular-antithrombotics:alteplase"
+      ]
+    },
+    {
+      "citation": "Aggrastat (tirofiban) US prescribing information. Medicure; revised 1/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "vascular-antithrombotics:gp-iib-iiia-inhibitors"
+      ]
+    },
+    {
+      "citation": "Alkhachroum A, et al. Ketamine to treat super-refractory status epilepticus. Neurology 2020;95(16):e2286-e2294. doi:10.1212/WNL.0000000000010611",
+      "year": 2020,
+      "citedBy": [
+        "acute-neuro:refractory-super-refractory-se"
+      ]
+    },
+    {
+      "citation": "Allenbach Y, Benveniste O. Inflammatory Myopathies. N Engl J Med 2026;394:1925-1938. doi:10.1056/NEJMra2415426",
+      "year": 2026,
+      "citedBy": [
+        "consult-workups:elevated-ck-myopathy"
+      ]
+    },
+    {
+      "citation": "Allenbach Y, et al. 224th ENMC International Workshop: Clinico-sero-pathological classification of immune-mediated necrotizing myopathies. Neuromuscul Disord 2018;28:87-99",
+      "year": 2018,
+      "citedBy": [
+        "consult-workups:elevated-ck-myopathy"
+      ]
+    },
+    {
+      "citation": "American College of Obstetricians and Gynecologists. Practice Bulletin No. 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135(6):e237-e260",
+      "year": 2020,
+      "citedBy": [
+        "acute-neuro:pres",
+        "mg-contraindications:magnesium"
+      ]
+    },
+    {
+      "citation": "Amin HP, et al. Diagnosis, Workup, Risk Reduction of Transient Ischemic Attack in the Emergency Department Setting: A Scientific Statement From the AHA. Stroke 2023;54:e109-e121. doi:10.1161/STR.0000000000000418",
+      "year": 2023,
+      "citedBy": [
+        "calc:abcd2",
+        "consult-workups:tga-vs-tia",
+        "consult-workups:tia-workup"
+      ]
+    },
+    {
+      "citation": "Ariño H, et al. Anti-LGI1-associated cognitive impairment: presentation and long-term outcome. Neurology 2016;87(8):759-765. doi:10.1212/WNL.0000000000003009",
+      "year": 2016,
+      "citedBy": [
+        "neural-antibodies:lgi1"
+      ]
+    },
+    {
+      "citation": "Aspirin 325 mg tablets, OTC Drug Facts label. Trifecta Pharmaceuticals USA; revised 7/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "vascular-antithrombotics:aspirin"
+      ]
+    },
+    {
+      "citation": "Aspirin and extended-release dipyridamole capsules US prescribing information. Amneal; revised 6/2021 (user-supplied label)",
+      "year": 2021,
+      "citedBy": [
+        "vascular-antithrombotics:aspirin",
+        "vascular-antithrombotics:aspirin-dipyridamole"
+      ]
+    },
+    {
+      "citation": "Aybek S, Perez DL. Diagnosis and management of functional neurological disorder. BMJ 2022;376:o64. doi:10.1136/bmj.o64",
+      "year": 2022,
+      "citedBy": [
+        "consult-workups:functional-neurologic-symptoms"
+      ]
+    },
+    {
+      "citation": "Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519",
+      "year": 2021,
+      "citedBy": [
+        "acute-neuro:hyponatremia-ods",
+        "calc:sodium-correction"
+      ]
+    },
+    {
+      "citation": "Banwell B, et al. Diagnosis of myelin oligodendrocyte glycoprotein antibody-associated disease: International MOGAD Panel proposed criteria. Lancet Neurol 2023;22:268-282",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:nmosd-mogad-attack",
+        "neural-antibodies:aqp4",
+        "neural-antibodies:mog"
+      ]
+    },
+    {
+      "citation": "Bernal F, et al. Anti-Tr antibodies as markers of paraneoplastic cerebellar degeneration and Hodgkin's disease. Neurology 2003;60(2):230-234",
+      "year": 2003,
+      "citedBy": [
+        "neural-antibodies:tr-dner"
+      ]
+    },
+    {
+      "citation": "Bhalla P, Dingman JS, Aysenne A. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 6.0. Neurocritical Care Society; 2024",
+      "year": 2024,
+      "citedBy": [
+        "acute-neuro:elevated-icp-herniation",
+        "calc:hypertonic-saline-bolus",
+        "calc:mannitol-dose"
+      ]
+    },
+    {
+      "citation": "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352(11):1112-1120. doi:10.1056/NEJMra041867",
+      "year": 2005,
+      "citedBy": [
+        "acute-neuro:serotonin-syndrome"
+      ]
+    },
+    {
+      "citation": "Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z",
+      "year": 2012,
+      "citedBy": [
+        "acute-neuro:convulsive-status-epilepticus",
+        "acute-neuro:nonconvulsive-status-epilepticus",
+        "acute-neuro:refractory-super-refractory-se",
+        "calc:lacosamide-load",
+        "consult-workups:altered-mental-status"
+      ]
+    },
+    {
+      "citation": "Bupropion hydrochloride tablets US prescribing information. Cipla; revised 3/2023 (user-supplied label)",
+      "year": 2023,
+      "citedBy": [
+        "seizure-threshold:bupropion"
+      ]
+    },
+    {
+      "citation": "Carvajal-González A, et al. Glycine receptor antibodies in PERM and related syndromes: characteristics, clinical features and outcomes. Brain 2014;137(8):2178-2192. doi:10.1093/brain/awu142",
+      "year": 2014,
+      "citedBy": [
+        "neural-antibodies:glyr"
+      ]
+    },
+    {
+      "citation": "Cilostazol tablets US prescribing information. Apotex; revised 5/2017 (user-supplied label)",
+      "year": 2017,
+      "citedBy": [
+        "vascular-antithrombotics:cilostazol"
+      ]
+    },
+    {
+      "citation": "Clopidogrel bisulfate tablets US prescribing information. ACI Healthcare USA; revised 6/2020 (user-supplied label)",
+      "year": 2020,
+      "citedBy": [
+        "vascular-antithrombotics:clopidogrel"
+      ]
+    },
+    {
+      "citation": "CLOTS Trials Collaboration. Effectiveness of intermittent pneumatic compression in reduction of risk of deep vein thrombosis in patients who have had a stroke (CLOTS 3). Lancet 2013. doi:10.1016/S0140-6736(13)61050-8 (protocol exclusion criteria, user-supplied)",
+      "year": 2013,
+      "citedBy": [
+        "vascular-antithrombotics:vte-prophylaxis-stroke-ich"
+      ]
+    },
+    {
+      "citation": "Clozapine tablets US prescribing information. Accord; revised 10/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "seizure-threshold:clozapine"
+      ]
+    },
+    {
+      "citation": "Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron 1976;16:31-41",
+      "year": 1976,
+      "citedBy": [
+        "calc:cockcroft-gault"
+      ]
+    },
+    {
+      "citation": "Collins MP, et al. Peripheral Nerve Society Guideline on the classification, diagnosis, investigation, and immunosuppressive therapy of non-systemic vasculitic neuropathy: executive summary. J Peripher Nerv Syst 2010;15:176-184. doi:10.1111/j.1529-8027.2010.00281.x",
+      "year": 2010,
+      "citedBy": [
+        "consult-workups:inpatient-neuropathy"
+      ]
+    },
+    {
+      "citation": "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (MG fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:myasthenic-crisis"
+      ]
+    },
+    {
+      "citation": "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (NMOSD fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:nmosd-mogad-attack"
+      ]
+    },
+    {
+      "citation": "Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7",
+      "year": 2020,
+      "citedBy": [
+        "acute-neuro:elevated-icp-herniation",
+        "acute-neuro:hyponatremia-ods",
+        "calc:hypertonic-saline-bolus",
+        "calc:mannitol-dose"
+      ]
+    },
+    {
+      "citation": "Cortese I, et al. Evidence-based guideline update: plasmapheresis in neurologic disorders (AAN; since retired). Neurology 2011;76(3):294-300. doi:10.1212/WNL.0b013e318207b1f6",
+      "year": 2011,
+      "citedBy": [
+        "acute-neuro:ms-relapse",
+        "acute-neuro:nmosd-mogad-attack"
+      ]
+    },
+    {
+      "citation": "Cranial imaging before lumbar puncture in adults with community-acquired meningitis: clinical utility and adherence to the IDSA guidelines. Clin Infect Dis 2017;64(12):1657-1662. doi:10.1093/cid/cix240",
+      "year": 2017,
+      "citedBy": [
+        "acute-neuro:bacterial-meningitis"
+      ]
+    },
+    {
+      "citation": "Dalmau J, et al. Clinical analysis of anti-Ma2-associated encephalitis. Brain 2004;127(8):1831-1844. doi:10.1093/brain/awh203",
+      "year": 2004,
+      "citedBy": [
+        "neural-antibodies:ma2"
+      ]
+    },
+    {
+      "citation": "de Gans J, van de Beek D. Dexamethasone in adults with bacterial meningitis. N Engl J Med 2002;347(20):1549-1556",
+      "year": 2002,
+      "citedBy": [
+        "acute-neuro:bacterial-meningitis"
+      ]
+    },
+    {
+      "citation": "de Graaff E, et al. Identification of delta/notch-like epidermal growth factor-related receptor as the Tr antigen in paraneoplastic cerebellar degeneration. Ann Neurol 2012;71(6):815-824. doi:10.1002/ana.23550",
+      "year": 2012,
+      "citedBy": [
+        "neural-antibodies:tr-dner"
+      ]
+    },
+    {
+      "citation": "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048",
+      "year": 2026,
+      "citedBy": [
+        "consult-workups:cns-vasculitis-workup",
+        "consult-workups:thunderclap-headache",
+        "rcvs-triggers:ergots-dopamine-agonists",
+        "rcvs-triggers:hormonal-agents",
+        "rcvs-triggers:illicit-recreational",
+        "rcvs-triggers:immunomodulators",
+        "rcvs-triggers:other-reported-triggers",
+        "rcvs-triggers:serotonergic-antidepressants",
+        "rcvs-triggers:sympathomimetics",
+        "rcvs-triggers:triptans"
+      ]
+    },
+    {
+      "citation": "Debette S, et al. ESO guideline for the management of extracranial and intracranial artery dissection. Eur Stroke J 2021;6(3):XXXIX-LXXXVIII. doi:10.1177/23969873211046475",
+      "year": 2021,
+      "citedBy": [
+        "vascular-antithrombotics:cervical-artery-dissection"
+      ]
+    },
+    {
+      "citation": "Dejaco C, et al. EULAR recommendations for the use of imaging in large vessel vasculitis in clinical practice: 2023 update. Ann Rheum Dis 2024;83:741-751. doi:10.1136/ard-2023-224543",
+      "year": 2024,
+      "citedBy": [
+        "consult-workups:acute-vision-loss"
+      ]
+    },
+    {
+      "citation": "Demerol (meperidine hydrochloride) injection US prescribing information. Hospira; revised 12/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "seizure-threshold:meperidine"
+      ]
+    },
+    {
+      "citation": "Devlin JW, et al. Clinical practice guidelines for the prevention and management of pain, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU (PADIS). Crit Care Med 2018;46(9):e825-e873",
+      "year": 2018,
+      "citedBy": [
+        "acute-neuro:delirium-vs-encephalopathy"
+      ]
+    },
+    {
+      "citation": "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2024. doi:10.1016/j.jtha.2024.10.022",
+      "year": 2024,
+      "citedBy": [
+        "consult-workups:young-stroke-workup"
+      ]
+    },
+    {
+      "citation": "Do TP, et al. Red and orange flags for secondary headaches in clinical practice: SNNOOP10 list. Neurology 2019;92:134-144. doi:10.1212/WNL.0000000000006697",
+      "year": 2019,
+      "citedBy": [
+        "consult-workups:secondary-headache-red-flags"
+      ]
+    },
+    {
+      "citation": "Douglas AG, Xu DJ, Shah MP. Approach to Myelopathy and Myelitis. Neurol Clin 2022;40:133-156. doi:10.1016/j.ncl.2021.08.009",
+      "year": 2022,
+      "citedBy": [
+        "consult-workups:acute-generalized-weakness",
+        "consult-workups:inpatient-neuropathy",
+        "consult-workups:myelopathy-workup"
+      ]
+    },
+    {
+      "citation": "Dubey D, et al. Autoimmune CRMP5 neuropathy phenotype and outcome defined from 105 cases. Neurology 2018;90:e103-e110. doi:10.1212/WNL.0000000000004803",
+      "year": 2018,
+      "citedBy": [
+        "neural-antibodies:cv2-crmp5"
+      ]
+    },
+    {
+      "citation": "Dubey D, et al. Expanded clinical phenotype, oncological associations, and immunopathologic insights of paraneoplastic Kelch-like protein-11 encephalitis. JAMA Neurol 2020;77(11):1420-1429. doi:10.1001/jamaneurol.2020.2231",
+      "year": 2020,
+      "citedBy": [
+        "neural-antibodies:klhl11"
+      ]
+    },
+    {
+      "citation": "Dunkley EJC, et al. The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity. QJM 2003;96(9):635-642. doi:10.1093/qjmed/hcg109",
+      "year": 2003,
+      "citedBy": [
+        "acute-neuro:serotonin-syndrome"
+      ]
+    },
+    {
+      "citation": "Edlow JA, Carpenter C, et al. Guidelines for reasonable and appropriate care in the emergency department 3 (GRACE-3): Acute dizziness and vertigo in the emergency department. Acad Emerg Med 2023;30:442-486. doi:10.1111/acem.14728",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:acute-vertigo-hints"
+      ]
+    },
+    {
+      "citation": "Eggenberger E. Optic Neuritis. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):407-435",
+      "year": 2025,
+      "citedBy": [
+        "consult-workups:acute-vision-loss",
+        "consult-workups:new-demyelinating-lesion"
+      ]
+    },
+    {
+      "citation": "Eliquis (apixaban) US prescribing information. Bristol-Myers Squibb; revised 6/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "asm-interactions:inducing-asm-apixaban-rivaroxaban",
+        "vascular-antithrombotics:apixaban"
+      ]
+    },
+    {
+      "citation": "Eptifibatide injection US prescribing information. Baxter; revised 5/2024 (user-supplied label)",
+      "year": 2024,
+      "citedBy": [
+        "vascular-antithrombotics:gp-iib-iiia-inhibitors"
+      ]
+    },
+    {
+      "citation": "Fan E, et al. An Official American Thoracic Society Clinical Practice Guideline: The Diagnosis of Intensive Care Unit-acquired Weakness in Adults. Am J Respir Crit Care Med 2014;190:1437-1446. doi:10.1164/rccm.201411-2011ST",
+      "year": 2014,
+      "citedBy": [
+        "consult-workups:icu-acquired-weakness"
+      ]
+    },
+    {
+      "citation": "FDA Drug Safety Communication on cefepime and non-convulsive status epilepticus (2012), as summarized in: Song JC. Cefepime: FDA Drug Safety Communication on non-convulsive status epilepticus risk. Infect Dis Alert 2012;31(11)",
+      "year": 2012,
+      "citedBy": [
+        "seizure-threshold:beta-lactams-carbapenems",
+        "seizure-threshold:cefepime",
+        "seizure-threshold:fluoroquinolones"
+      ]
+    },
+    {
+      "citation": "Fischer M, Schmutzhard E. Posterior reversible encephalopathy syndrome. J Neurol 2017;264:1608-1616. doi:10.1007/s00415-016-8377-8",
+      "year": 2017,
+      "citedBy": [
+        "acute-neuro:pres"
+      ]
+    },
+    {
+      "citation": "Fischer U, et al. Early versus Later Anticoagulation for Stroke with Atrial Fibrillation (ELAN). N Engl J Med 2023;388:2411-2421. doi:10.1056/NEJMoa2303048",
+      "year": 2023,
+      "citedBy": [
+        "vascular-antithrombotics:af-stroke-anticoag-timing"
+      ]
+    },
+    {
+      "citation": "Flanagan EP, et al. Glial fibrillary acidic protein immunoglobulin G as biomarker of autoimmune astrocytopathy: analysis of 102 patients. Ann Neurol 2017;81(2):298-309. doi:10.1002/ana.24881",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:gfap"
+      ]
+    },
+    {
+      "citation": "Flumazenil injection US prescribing information. Akorn-Strides; revised 5/2008 (user-supplied label)",
+      "year": 2008,
+      "citedBy": [
+        "seizure-threshold:flumazenil"
+      ]
+    },
+    {
+      "citation": "Frohman EM, Wingerchuk DM. Transverse Myelitis. N Engl J Med 2010;363:564-572",
+      "year": 2010,
+      "citedBy": [
+        "consult-workups:acute-generalized-weakness",
+        "consult-workups:myelopathy-workup"
+      ]
+    },
+    {
+      "citation": "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
+      "year": 2016,
+      "citedBy": [
+        "vascular-antithrombotics:anticoag-reversal-ich",
+        "vascular-antithrombotics:antiplatelet-ich",
+        "vascular-antithrombotics:apixaban",
+        "vascular-antithrombotics:aspirin",
+        "vascular-antithrombotics:aspirin-dipyridamole",
+        "vascular-antithrombotics:clopidogrel",
+        "vascular-antithrombotics:dabigatran",
+        "vascular-antithrombotics:edoxaban",
+        "vascular-antithrombotics:four-factor-pcc",
+        "vascular-antithrombotics:gp-iib-iiia-inhibitors",
+        "vascular-antithrombotics:protamine",
+        "vascular-antithrombotics:rivaroxaban",
+        "vascular-antithrombotics:sich-after-thrombolysis",
+        "vascular-antithrombotics:ticagrelor",
+        "vascular-antithrombotics:vitamin-k"
+      ]
+    },
+    {
+      "citation": "Gadoth A, et al. Microtubule-associated protein 1B: novel paraneoplastic biomarker. Ann Neurol 2017;81(2):266-277. doi:10.1002/ana.24872",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:pca2-map1b"
+      ]
+    },
+    {
+      "citation": "Gaig C, et al. Clinical manifestations of the anti-IgLON5 disease. Neurology 2017;88(18):1736-1743. doi:10.1212/WNL.0000000000003887",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:iglon5"
+      ]
+    },
+    {
+      "citation": "Galvin R, et al. EFNS guidelines for diagnosis, therapy and prevention of Wernicke encephalopathy. Eur J Neurol 2010;17(12):1408-1418. doi:10.1111/j.1468-1331.2010.03153.x",
+      "year": 2010,
+      "citedBy": [
+        "acute-neuro:wernicke-encephalopathy"
+      ]
+    },
+    {
+      "citation": "Gilhus NE, et al. Generalized myasthenia gravis with acetylcholine receptor antibodies: a guidance for treatment. Eur J Neurol 2024;31:e16229. doi:10.1111/ene.16229",
+      "year": 2024,
+      "citedBy": [
+        "acute-neuro:myasthenic-crisis",
+        "mg-contraindications:corticosteroids",
+        "mg-contraindications:magnesium"
+      ]
+    },
+    {
+      "citation": "Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48",
+      "year": 2016,
+      "citedBy": [
+        "acute-neuro:convulsive-status-epilepticus",
+        "calc:fosphenytoin-load",
+        "calc:levetiracetam-load",
+        "calc:valproate-load"
+      ]
+    },
+    {
+      "citation": "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9",
+      "year": 2016,
+      "citedBy": [
+        "acute-neuro:autoimmune-encephalitis",
+        "acute-neuro:viral-encephalitis",
+        "consult-workups:paraneoplastic-workup",
+        "neural-antibodies:amphiphysin",
+        "neural-antibodies:caspr2",
+        "neural-antibodies:cv2-crmp5",
+        "neural-antibodies:gad65",
+        "neural-antibodies:lgi1",
+        "neural-antibodies:nmdar"
+      ]
+    },
+    {
+      "citation": "Graus F, et al. Anti-Hu-associated paraneoplastic encephalomyelitis: analysis of 200 patients. Brain 2001;124(6):1138-1148. doi:10.1093/brain/124.6.1138",
+      "year": 2001,
+      "citedBy": [
+        "neural-antibodies:anti-hu"
+      ]
+    },
+    {
+      "citation": "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+      "year": 2021,
+      "citedBy": [
+        "acute-neuro:autoimmune-encephalitis",
+        "consult-workups:paraneoplastic-workup",
+        "neural-antibodies:ampar",
+        "neural-antibodies:amphiphysin",
+        "neural-antibodies:anti-hu",
+        "neural-antibodies:anti-ri",
+        "neural-antibodies:anti-yo",
+        "neural-antibodies:aqp4",
+        "neural-antibodies:caspr2",
+        "neural-antibodies:cv2-crmp5",
+        "neural-antibodies:dppx",
+        "neural-antibodies:gabaa-r",
+        "neural-antibodies:gabab-r",
+        "neural-antibodies:gad65",
+        "neural-antibodies:gfap",
+        "neural-antibodies:glyr",
+        "neural-antibodies:klhl11",
+        "neural-antibodies:lgi1",
+        "neural-antibodies:ma2",
+        "neural-antibodies:mglur1",
+        "neural-antibodies:mglur5",
+        "neural-antibodies:mog",
+        "neural-antibodies:nmdar",
+        "neural-antibodies:p-q-vgcc",
+        "neural-antibodies:pca2-map1b",
+        "neural-antibodies:sox1",
+        "neural-antibodies:tr-dner"
+      ]
+    },
+    {
+      "citation": "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
+      "year": 2022,
+      "citedBy": [
+        "consult-workups:ich-etiology-workup",
+        "vascular-antithrombotics:anticoag-reversal-ich",
+        "vascular-antithrombotics:antiplatelet-ich",
+        "vascular-antithrombotics:apixaban",
+        "vascular-antithrombotics:aspirin",
+        "vascular-antithrombotics:aspirin-dipyridamole",
+        "vascular-antithrombotics:clopidogrel",
+        "vascular-antithrombotics:dabigatran",
+        "vascular-antithrombotics:edoxaban",
+        "vascular-antithrombotics:enoxaparin",
+        "vascular-antithrombotics:four-factor-pcc",
+        "vascular-antithrombotics:heparin-ufh",
+        "vascular-antithrombotics:mechanical-valve-stroke",
+        "vascular-antithrombotics:protamine",
+        "vascular-antithrombotics:restart-antithrombotic-after-ich",
+        "vascular-antithrombotics:rivaroxaban",
+        "vascular-antithrombotics:ticagrelor",
+        "vascular-antithrombotics:vitamin-k",
+        "vascular-antithrombotics:vte-prophylaxis-stroke-ich",
+        "vascular-antithrombotics:warfarin"
+      ]
+    },
+    {
+      "citation": "Gresa-Arribas N, et al. Antibody titres at diagnosis and during follow-up of anti-NMDA receptor encephalitis: a retrospective study. Lancet Neurol 2014;13(2):167-177. doi:10.1016/S1474-4422(13)70282-5",
+      "year": 2014,
+      "citedBy": [
+        "neural-antibodies:nmdar"
+      ]
+    },
+    {
+      "citation": "Gurrera RJ, et al. An international consensus study of neuroleptic malignant syndrome diagnostic criteria using the Delphi method. J Clin Psychiatry 2011;72(9):1222-1228. doi:10.4088/JCP.10m06438",
+      "year": 2011,
+      "citedBy": [
+        "acute-neuro:nms-parkinsonism-hyperpyrexia"
+      ]
+    },
+    {
+      "citation": "Hara M, et al. DPPX antibody-associated encephalitis: main syndrome and antibody effects. Neurology 2017;88(14):1340-1348. doi:10.1212/WNL.0000000000003796",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:dppx"
+      ]
+    },
+    {
+      "citation": "Hemphill JC 3rd, et al. The ICH score: a simple, reliable grading scale for intracerebral hemorrhage. Stroke 2001;32:891-897",
+      "year": 2001,
+      "citedBy": [
+        "calc:ich-score"
+      ]
+    },
+    {
+      "citation": "Heparin Sodium in 0.45% Sodium Chloride Injection US prescribing information. B. Braun; revised 12/2023 (user-supplied label)",
+      "year": 2023,
+      "citedBy": [
+        "vascular-antithrombotics:heparin-ufh"
+      ]
+    },
+    {
+      "citation": "Heparin Sodium Injection (vial) US prescribing information, §2.6 low-dose prophylaxis (label text via PrescriberPoint, accessed 2026-11-04)",
+      "year": 2026,
+      "citedBy": [
+        "vascular-antithrombotics:heparin-ufh"
+      ]
+    },
+    {
+      "citation": "Hermann P, et al. Biomarkers and diagnostic guidelines for sporadic Creutzfeldt-Jakob disease. Lancet Neurol 2021;20:235-246. doi:10.1016/S1474-4422(20)30477-4",
+      "year": 2021,
+      "citedBy": [
+        "consult-workups:rapidly-progressive-dementia"
+      ]
+    },
+    {
+      "citation": "Hinduja A. Posterior reversible encephalopathy syndrome: clinical features and outcome. Front Neurol 2020;11:71. doi:10.3389/fneur.2020.00071",
+      "year": 2020,
+      "citedBy": [
+        "acute-neuro:pres"
+      ]
+    },
+    {
+      "citation": "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806",
+      "year": 2021,
+      "citedBy": [
+        "acute-neuro:convulsive-status-epilepticus",
+        "acute-neuro:nonconvulsive-status-epilepticus"
+      ]
+    },
+    {
+      "citation": "Hirsch LJ, et al. Proposed consensus definitions for NORSE, FIRES, and related conditions. Epilepsia 2018;59(4):739-744. doi:10.1111/epi.14016",
+      "year": 2018,
+      "citedBy": [
+        "acute-neuro:refractory-super-refractory-se"
+      ]
+    },
+    {
+      "citation": "Höftberger R, et al. Encephalitis and AMPA receptor antibodies: novel findings in a case series of 22 patients. Neurology 2015;84(24):2403-2412. doi:10.1212/WNL.0000000000001682",
+      "year": 2015,
+      "citedBy": [
+        "neural-antibodies:ampar"
+      ]
+    },
+    {
+      "citation": "Höftberger R, et al. Encephalitis and GABAB receptor antibodies: novel findings in a new case series of 20 patients. Neurology 2013;81(17):1500-1506. doi:10.1212/WNL.0b013e3182a9585f",
+      "year": 2013,
+      "citedBy": [
+        "neural-antibodies:gabab-r"
+      ]
+    },
+    {
+      "citation": "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:sah-workup",
+        "consult-workups:thunderclap-headache"
+      ]
+    },
+    {
+      "citation": "Husain AM, et al. Randomized trial of lacosamide versus fosphenytoin for nonconvulsive seizures (TRENdS). Ann Neurol 2018;83(6):1174-1185. doi:10.1002/ana.25249",
+      "year": 2018,
+      "citedBy": [
+        "acute-neuro:nonconvulsive-status-epilepticus"
+      ]
+    },
+    {
+      "citation": "Jarius S, Wildemann B. Medusa head ataxia: the expanding spectrum of Purkinje cell antibodies in autoimmune cerebellar ataxia. Part 3: anti-Yo/CDR2, anti-Nb/AP3B2, PCA-2, anti-Tr/DNER, other antibodies, diagnostic pitfalls, summary and outlook. J Neuroinflammation 2015;12:168. doi:10.1186/s12974-015-0358-9",
+      "year": 2015,
+      "citedBy": [
+        "neural-antibodies:anti-yo"
+      ]
+    },
+    {
+      "citation": "Jauregui Larrañaga C, et al. Stroke secondary to cancer-associated coagulopathy: a systematic review. J Neurol 2026;273:609. doi:10.1007/s00415-026-14119-y",
+      "year": 2026,
+      "citedBy": [
+        "vascular-antithrombotics:cancer-associated-stroke"
+      ]
+    },
+    {
+      "citation": "Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252",
+      "year": 2023,
+      "citedBy": [
+        "calc:ledd"
+      ]
+    },
+    {
+      "citation": "Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795",
+      "year": 2019,
+      "citedBy": [
+        "acute-neuro:convulsive-status-epilepticus",
+        "calc:fosphenytoin-load",
+        "calc:levetiracetam-load",
+        "calc:valproate-load"
+      ]
+    },
+    {
+      "citation": "Kcentra (prothrombin complex concentrate, human) US prescribing information. CSL Behring (label text via Drugs.com, accessed 2026-11-04)",
+      "year": 2026,
+      "citedBy": [
+        "vascular-antithrombotics:four-factor-pcc"
+      ]
+    },
+    {
+      "citation": "Keene KR, et al. Clinical and imaging clues to the diagnosis and follow-up of ptosis and ophthalmoparesis. J Cachexia Sarcopenia Muscle 2022. doi:10.1002/jcsm.13089",
+      "year": 2022,
+      "citedBy": [
+        "consult-workups:diplopia-ptosis"
+      ]
+    },
+    {
+      "citation": "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+      "year": 2021,
+      "citedBy": [
+        "consult-workups:inpatient-stroke-etiology-workup",
+        "consult-workups:tia-workup",
+        "consult-workups:young-stroke-workup",
+        "vascular-antithrombotics:af-stroke-anticoag-timing",
+        "vascular-antithrombotics:apixaban",
+        "vascular-antithrombotics:aspirin",
+        "vascular-antithrombotics:aspirin-dipyridamole",
+        "vascular-antithrombotics:cervical-artery-dissection",
+        "vascular-antithrombotics:cilostazol",
+        "vascular-antithrombotics:clopidogrel",
+        "vascular-antithrombotics:dabigatran",
+        "vascular-antithrombotics:dapt-minor-stroke-tia",
+        "vascular-antithrombotics:edoxaban",
+        "vascular-antithrombotics:esus-antithrombotic",
+        "vascular-antithrombotics:icad-symptomatic",
+        "vascular-antithrombotics:mechanical-valve-stroke",
+        "vascular-antithrombotics:rivaroxaban",
+        "vascular-antithrombotics:ticagrelor",
+        "vascular-antithrombotics:warfarin"
+      ]
+    },
+    {
+      "citation": "Kleiter I, et al. Neuromyelitis optica: evaluation of 871 attacks and 1,153 treatment courses. Ann Neurol 2016;79(2):206-216. doi:10.1002/ana.24554",
+      "year": 2016,
+      "citedBy": [
+        "acute-neuro:nmosd-mogad-attack"
+      ]
+    },
+    {
+      "citation": "Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: ASRA Pain Medicine evidence-based guidelines (fifth edition). Reg Anesth Pain Med 2025;0:1-29. doi:10.1136/rapm-2024-105766",
+      "year": 2025,
+      "citedBy": [
+        "vascular-antithrombotics:periprocedural-holds-lp-evd",
+        "vascular-antithrombotics:pregnancy-antithrombotics"
+      ]
+    },
+    {
+      "citation": "Krumholz A, et al. Evidence-based guideline: management of an unprovoked first seizure in adults (AAN/AES). Neurology 2015;84:1705-1713",
+      "year": 2015,
+      "citedBy": [
+        "consult-workups:first-unprovoked-seizure"
+      ]
+    },
+    {
+      "citation": "Lawn ND, et al. Anticipating mechanical ventilation in Guillain-Barré syndrome. Arch Neurol 2001;58(6):893-898.",
+      "year": 2001,
+      "citedBy": [
+        "acute-neuro:neuromuscular-respiratory-failure"
+      ]
+    },
+    {
+      "citation": "Le Page E, et al. Oral versus intravenous high-dose methylprednisolone for treatment of relapses in MS (COPOUSEP). Lancet 2015;386(9997):974-981. doi:10.1016/S0140-6736(15)61137-0",
+      "year": 2015,
+      "citedBy": [
+        "acute-neuro:ms-relapse"
+      ]
+    },
+    {
+      "citation": "Lee DW, et al. ASTCT consensus grading for cytokine release syndrome and neurologic toxicity associated with immune effector cells. Biol Blood Marrow Transplant 2019;25(4):625-638",
+      "year": 2019,
+      "citedBy": [
+        "acute-neuro:icans-car-t-neurotoxicity"
+      ]
+    },
+    {
+      "citation": "Lewis A, Kirschen MP, Greer D. The 2023 AAN/AAP/CNS/SCCM Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline: A Comparison With the 2010 and 2011 Guidelines. Neurol Clin Pract 2023;13:e200189. doi:10.1212/CPJ.0000000000200189",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:brain-death-determination"
+      ]
+    },
+    {
+      "citation": "Lewis K, et al. A focused update to the clinical practice guidelines for the prevention and management of pain, anxiety, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU (PADIS). Crit Care Med 2025;53(3):e711-e727. doi:10.1097/CCM.0000000000006574",
+      "year": 2025,
+      "citedBy": [
+        "acute-neuro:delirium-vs-encephalopathy"
+      ]
+    },
+    {
+      "citation": "Li M, Frontera JA. Emergency reversal of antithrombotics in intracerebral hemorrhage: an update. Curr Neurol Neurosci Rep 2025;25:81. doi:10.1007/s11910-025-01469-9",
+      "year": 2025,
+      "citedBy": [
+        "vascular-antithrombotics:anticoag-reversal-ich",
+        "vascular-antithrombotics:antiplatelet-ich"
+      ]
+    },
+    {
+      "citation": "Lip GYH, et al. CHA2DS2-VASc risk scheme: response. Chest 2010;138(4):1020-1021",
+      "year": 2010,
+      "citedBy": [
+        "calc:cha2ds2-vasc"
+      ]
+    },
+    {
+      "citation": "Lip GYH, et al. Refining clinical risk stratification for predicting stroke and thromboembolism in AF. Chest 2010;137(2):263-272",
+      "year": 2010,
+      "citedBy": [
+        "calc:cha2ds2-vasc"
+      ]
+    },
+    {
+      "citation": "Lovenox (enoxaparin sodium) US prescribing information. Sanofi; revised 5/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "vascular-antithrombotics:enoxaparin"
+      ]
+    },
+    {
+      "citation": "Luijten LWG, et al. Modified Erasmus GBS Respiratory Insufficiency Score: a simplified clinical tool to predict the risk of mechanical ventilation in GBS. J Neurol Neurosurg Psychiatry 2023;94:300-308",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:guillain-barre-syndrome"
+      ]
+    },
+    {
+      "citation": "Mac Grory B, et al. Management of Central Retinal Artery Occlusion: A Scientific Statement From the AHA. Stroke 2021;52:e282-e294. doi:10.1161/STR.0000000000000366",
+      "year": 2021,
+      "citedBy": [
+        "consult-workups:acute-vision-loss"
+      ]
+    },
+    {
+      "citation": "Mackay DD. Approach to Diplopia. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):463-478",
+      "year": 2025,
+      "citedBy": [
+        "consult-workups:diplopia-ptosis"
+      ]
+    },
+    {
+      "citation": "McKay JH, Dimberg EL, Lopez Chiriboga AS. A systematic review of gamma-aminobutyric acid receptor type B autoimmunity. Neurol Neurochir Pol 2019;53(1):1-7. doi:10.5603/PJNNS.a2018.0005",
+      "year": 2019,
+      "citedBy": [
+        "neural-antibodies:gabab-r"
+      ]
+    },
+    {
+      "citation": "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
+      "year": 2026,
+      "citedBy": [
+        "consult-workups:young-stroke-workup",
+        "vascular-antithrombotics:apixaban",
+        "vascular-antithrombotics:aspirin",
+        "vascular-antithrombotics:clopidogrel",
+        "vascular-antithrombotics:dabigatran",
+        "vascular-antithrombotics:edoxaban",
+        "vascular-antithrombotics:enoxaparin",
+        "vascular-antithrombotics:heparin-ufh",
+        "vascular-antithrombotics:pregnancy-antithrombotics",
+        "vascular-antithrombotics:rivaroxaban",
+        "vascular-antithrombotics:ticagrelor",
+        "vascular-antithrombotics:warfarin"
+      ]
+    },
+    {
+      "citation": "Montalban X, et al. Diagnosis of multiple sclerosis: 2024 revisions of the McDonald criteria. Lancet Neurol 2025;24:850-865",
+      "year": 2025,
+      "citedBy": [
+        "acute-neuro:ms-relapse",
+        "consult-workups:new-demyelinating-lesion"
+      ]
+    },
+    {
+      "citation": "Morrison C, et al. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 5.0. Neurocritical Care Society; 2022",
+      "year": 2022,
+      "citedBy": [
+        "acute-neuro:elevated-icp-herniation"
+      ]
+    },
+    {
+      "citation": "Muñoz-Lopetegi A, et al. Neurologic syndromes related to anti-GAD65: clinical and serologic response to treatment. Neurol Neuroimmunol Neuroinflamm 2020;7(3):e696. doi:10.1212/NXI.0000000000000696",
+      "year": 2020,
+      "citedBy": [
+        "neural-antibodies:gad65"
+      ]
+    },
+    {
+      "citation": "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+      "year": 2016,
+      "citedBy": [
+        "mg-contraindications:aminoglycosides",
+        "mg-contraindications:beta-blockers",
+        "mg-contraindications:botulinum-toxin",
+        "mg-contraindications:class-ia-antiarrhythmics",
+        "mg-contraindications:corticosteroids",
+        "mg-contraindications:d-penicillamine",
+        "mg-contraindications:desferrioxamine",
+        "mg-contraindications:fluoroquinolones",
+        "mg-contraindications:immune-checkpoint-inhibitors",
+        "mg-contraindications:iodinated-contrast",
+        "mg-contraindications:macrolides",
+        "mg-contraindications:magnesium",
+        "mg-contraindications:quinine-antimalarials",
+        "mg-contraindications:statins",
+        "mg-contraindications:telithromycin"
+      ]
+    },
+    {
+      "citation": "Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. Neurology 2021;96(3):114-122. doi:10.1212/WNL.0000000000011124",
+      "year": 2021,
+      "citedBy": [
+        "acute-neuro:myasthenic-crisis",
+        "consult-workups:acute-generalized-weakness"
+      ]
+    },
+    {
+      "citation": "Navi BB, et al. Classification and Management of Ischemic Stroke in Patients With Active Cancer: A Scientific Statement From the AHA. Stroke 2026;57:e160-e173. doi:10.1161/STR.0000000000000517",
+      "year": 2026,
+      "citedBy": [
+        "consult-workups:inpatient-stroke-etiology-workup",
+        "vascular-antithrombotics:cancer-associated-stroke"
+      ]
+    },
+    {
+      "citation": "NICE. Spinal metastases and metastatic spinal cord compression (NG234). 2023",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:spinal-cord-compression"
+      ]
+    },
+    {
+      "citation": "Nolan JP, Sandroni C, et al. European Resuscitation Council and European Society of Intensive Care Medicine Guidelines 2025: Post-Resuscitation Care. Resuscitation 2025;215:110809",
+      "year": 2025,
+      "citedBy": [
+        "consult-workups:post-cardiac-arrest-prognostication"
+      ]
+    },
+    {
+      "citation": "Osmitrol (mannitol injection) US prescribing information. Baxter; revised 8/2025",
+      "year": 2025,
+      "citedBy": [
+        "calc:mannitol-dose"
+      ]
+    },
+    {
+      "citation": "Otto CM, et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227. doi:10.1161/CIR.0000000000000923",
+      "year": 2021,
+      "citedBy": [
+        "vascular-antithrombotics:mechanical-valve-stroke",
+        "vascular-antithrombotics:pregnancy-antithrombotics"
+      ]
+    },
+    {
+      "citation": "Panel on Guidelines for the Prevention and Treatment of Opportunistic Infections in Adults and Adolescents with HIV. Cryptococcosis (updated 2024-10-29, reviewed 2026-03-16) and Toxoplasma gondii encephalitis (updated 2025-09-09, reviewed 2026-06-23). clinicalinfo.hiv.gov",
+      "year": 2024,
+      "citedBy": [
+        "acute-neuro:cns-infection-immunocompromised"
+      ]
+    },
+    {
+      "citation": "Patwa HS, et al. Evidence-based guideline: intravenous immunoglobulin in the treatment of neuromuscular disorders (AAN). Neurology 2012;78(13):1009-1015.",
+      "year": 2012,
+      "citedBy": [
+        "acute-neuro:myasthenic-crisis"
+      ]
+    },
+    {
+      "citation": "Perfect JR, et al. Clinical practice guidelines for the management of cryptococcal disease: 2010 update by the IDSA. Clin Infect Dis 2010;50(3):291-322",
+      "year": 2010,
+      "citedBy": [
+        "acute-neuro:cns-infection-immunocompromised"
+      ]
+    },
+    {
+      "citation": "Pileggi DJ, Cook AM. Neuroleptic malignant syndrome: focus on treatment and rechallenge. Ann Pharmacother 2016;50(11):973-981. doi:10.1177/1060028016657553",
+      "year": 2016,
+      "citedBy": [
+        "acute-neuro:nms-parkinsonism-hyperpyrexia"
+      ]
+    },
+    {
+      "citation": "Pisters R, et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest 2010;138:1093-1100 (as summarized by MDCalc; primary article not reviewed)",
+      "year": 2010,
+      "citedBy": [
+        "calc:has-bled"
+      ]
+    },
+    {
+      "citation": "Pittock SJ, et al. Amphiphysin autoimmunity: paraneoplastic accompaniments. Ann Neurol 2005;58(1):96-107. doi:10.1002/ana.20529",
+      "year": 2005,
+      "citedBy": [
+        "neural-antibodies:amphiphysin"
+      ]
+    },
+    {
+      "citation": "Pittock SJ, et al. Paraneoplastic jaw dystonia and laryngospasm with antineuronal nuclear autoantibody type 2 (anti-Ri). Arch Neurol 2010. doi:10.1001/archneurol.2010.209",
+      "year": 2010,
+      "citedBy": [
+        "neural-antibodies:anti-ri"
+      ]
+    },
+    {
+      "citation": "Pittock SJ, Lucchinetti CF, Lennon VA. Anti-neuronal nuclear autoantibody type 2: paraneoplastic accompaniments. Ann Neurol 2003;53(5):580-587. doi:10.1002/ana.10518",
+      "year": 2003,
+      "citedBy": [
+        "neural-antibodies:anti-ri"
+      ]
+    },
+    {
+      "citation": "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
+      "year": 2026,
+      "citedBy": [
+        "calc:alteplase-dose",
+        "calc:tnk-dose",
+        "consult-workups:acute-vision-loss",
+        "consult-workups:inpatient-stroke-etiology-workup",
+        "consult-workups:tia-workup",
+        "vascular-antithrombotics:af-stroke-anticoag-timing",
+        "vascular-antithrombotics:alteplase",
+        "vascular-antithrombotics:antithrombotic-after-reperfusion",
+        "vascular-antithrombotics:aspirin",
+        "vascular-antithrombotics:aspirin-dipyridamole",
+        "vascular-antithrombotics:cervical-artery-dissection",
+        "vascular-antithrombotics:clopidogrel",
+        "vascular-antithrombotics:dapt-minor-stroke-tia",
+        "vascular-antithrombotics:esus-antithrombotic",
+        "vascular-antithrombotics:gp-iib-iiia-inhibitors",
+        "vascular-antithrombotics:heparin-ufh",
+        "vascular-antithrombotics:icad-symptomatic",
+        "vascular-antithrombotics:sich-after-thrombolysis",
+        "vascular-antithrombotics:tenecteplase",
+        "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics",
+        "vascular-antithrombotics:ticagrelor",
+        "vascular-antithrombotics:vte-prophylaxis-stroke-ich"
+      ]
+    },
+    {
+      "citation": "Pradaxa (dabigatran etexilate) US prescribing information. Boehringer Ingelheim; revised 6/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "vascular-antithrombotics:dabigatran"
+      ]
+    },
+    {
+      "citation": "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483",
+      "year": 2010,
+      "citedBy": [
+        "neural-antibodies:anti-hu",
+        "neural-antibodies:anti-ri",
+        "neural-antibodies:anti-yo",
+        "neural-antibodies:cv2-crmp5",
+        "neural-antibodies:ma2",
+        "neural-antibodies:tr-dner"
+      ]
+    },
+    {
+      "citation": "Rajajee V, et al. Guidelines for Neuroprognostication in Comatose Adult Survivors of Cardiac Arrest (NCS). Neurocrit Care 2023. doi:10.1007/s12028-023-01688-3",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:post-cardiac-arrest-prognostication"
+      ]
+    },
+    {
+      "citation": "Rao AK, et al. Clinical guidelines for diagnosis and treatment of botulism, 2021. MMWR Recomm Rep 2021;70(2):1-30. doi:10.15585/mmwr.rr7002a1",
+      "year": 2021,
+      "citedBy": [
+        "acute-neuro:neuromuscular-respiratory-failure",
+        "consult-workups:acute-generalized-weakness"
+      ]
+    },
+    {
+      "citation": "Reulbach U, et al. Managing an effective treatment for neuroleptic malignant syndrome. Crit Care 2007;11(1):R4. doi:10.1186/cc5148",
+      "year": 2007,
+      "citedBy": [
+        "acute-neuro:nms-parkinsonism-hyperpyrexia"
+      ]
+    },
+    {
+      "citation": "Rojas I, et al. Long-term clinical outcome of paraneoplastic cerebellar degeneration and anti-Yo antibodies. Neurology 2000;55(5):713-715. doi:10.1212/WNL.55.5.713",
+      "year": 2000,
+      "citedBy": [
+        "neural-antibodies:anti-yo"
+      ]
+    },
+    {
+      "citation": "Ropper AH. Transient Global Amnesia. N Engl J Med 2023;388:635-640. doi:10.1056/NEJMra2213867",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:tga-vs-tia"
+      ]
+    },
+    {
+      "citation": "Sabater L, et al. SOX1 antibodies are markers of paraneoplastic Lambert-Eaton myasthenic syndrome. Neurology 2008;70(12):924-928",
+      "year": 2008,
+      "citedBy": [
+        "neural-antibodies:sox1"
+      ]
+    },
+    {
+      "citation": "Saiz A, et al. Anti-Hu-associated brainstem encephalitis. J Neurol Neurosurg Psychiatry 2009;80(4):404",
+      "year": 2009,
+      "citedBy": [
+        "neural-antibodies:anti-hu"
+      ]
+    },
+    {
+      "citation": "Salvarani C, Brown RD Jr, Hunder GG. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1056/NEJMra2314942",
+      "year": 2024,
+      "citedBy": [
+        "consult-workups:cns-vasculitis-workup"
+      ]
+    },
+    {
+      "citation": "Sanders DB, et al. International consensus guidance for management of myasthenia gravis: executive summary. Neurology 2016;87(4):419-425. doi:10.1212/WNL.0000000000002790",
+      "year": 2016,
+      "citedBy": [
+        "acute-neuro:myasthenic-crisis"
+      ]
+    },
+    {
+      "citation": "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+      "year": 2016,
+      "citedBy": [
+        "mg-contraindications:aminoglycosides",
+        "mg-contraindications:beta-blockers",
+        "mg-contraindications:botulinum-toxin",
+        "mg-contraindications:class-ia-antiarrhythmics",
+        "mg-contraindications:corticosteroids",
+        "mg-contraindications:d-penicillamine",
+        "mg-contraindications:desferrioxamine",
+        "mg-contraindications:fluoroquinolones",
+        "mg-contraindications:iodinated-contrast",
+        "mg-contraindications:macrolides",
+        "mg-contraindications:magnesium",
+        "mg-contraindications:quinine-antimalarials",
+        "mg-contraindications:statins",
+        "mg-contraindications:telithromycin"
+      ]
+    },
+    {
+      "citation": "Santomasso BD, et al. Management of immune-related adverse events in patients treated with CAR T-cell therapy: ASCO guideline. J Clin Oncol 2021;39(35):3978-3992",
+      "year": 2021,
+      "citedBy": [
+        "acute-neuro:icans-car-t-neurotoxicity"
+      ]
+    },
+    {
+      "citation": "Sanvito F, et al. Autoimmune encephalitis: what the radiologist needs to know. Neuroradiology 2024;66:653-675. doi:10.1007/s00234-024-03318-x",
+      "year": 2024,
+      "citedBy": [
+        "neural-antibodies:anti-yo"
+      ]
+    },
+    {
+      "citation": "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
+      "year": 2024,
+      "citedBy": [
+        "consult-workups:thunderclap-headache",
+        "consult-workups:young-stroke-workup",
+        "vascular-antithrombotics:apixaban",
+        "vascular-antithrombotics:cvt-anticoagulation",
+        "vascular-antithrombotics:dabigatran",
+        "vascular-antithrombotics:edoxaban",
+        "vascular-antithrombotics:enoxaparin",
+        "vascular-antithrombotics:pregnancy-antithrombotics",
+        "vascular-antithrombotics:rivaroxaban",
+        "vascular-antithrombotics:warfarin"
+      ]
+    },
+    {
+      "citation": "Satyadev N, et al. Standardizing 'Rapid': Applying the CDR to Define Rapidly Progressive Dementia. Neurology 2026;106:e214439. doi:10.1212/WNL.0000000000214439",
+      "year": 2026,
+      "citedBy": [
+        "consult-workups:rapidly-progressive-dementia"
+      ]
+    },
+    {
+      "citation": "Savaysa (edoxaban) US prescribing information. Daiichi Sankyo; revised 10/2023 (user-supplied label)",
+      "year": 2023,
+      "citedBy": [
+        "vascular-antithrombotics:edoxaban"
+      ]
+    },
+    {
+      "citation": "Schilsky ML, et al. A multidisciplinary approach to the diagnosis and management of Wilson disease: executive summary of the 2022 practice guidance on Wilson disease from the AASLD. Hepatology 2023;77:1428-1455. doi:10.1002/hep.32805",
+      "year": 2023,
+      "citedBy": [
+        "mg-contraindications:d-penicillamine"
+      ]
+    },
+    {
+      "citation": "Seneviratne J, et al. Noninvasive ventilation in myasthenic crisis. Arch Neurol 2008;65(1):54-58.",
+      "year": 2008,
+      "citedBy": [
+        "acute-neuro:myasthenic-crisis"
+      ]
+    },
+    {
+      "citation": "Shams'ili S, et al. Paraneoplastic cerebellar degeneration associated with antineuronal antibodies: analysis of 50 patients. Brain 2003;126:1409-1418. doi:10.1093/brain/awg133",
+      "year": 2003,
+      "citedBy": [
+        "neural-antibodies:anti-yo"
+      ]
+    },
+    {
+      "citation": "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537",
+      "year": 2021,
+      "citedBy": [
+        "mg-contraindications:aminoglycosides",
+        "mg-contraindications:beta-blockers",
+        "mg-contraindications:botulinum-toxin",
+        "mg-contraindications:calcium-channel-blockers",
+        "mg-contraindications:class-ia-antiarrhythmics",
+        "mg-contraindications:d-penicillamine",
+        "mg-contraindications:fluoroquinolones",
+        "mg-contraindications:immune-checkpoint-inhibitors",
+        "mg-contraindications:lithium",
+        "mg-contraindications:macrolides",
+        "mg-contraindications:magnesium",
+        "mg-contraindications:quinine-antimalarials",
+        "mg-contraindications:statins",
+        "mg-contraindications:telithromycin"
+      ]
+    },
+    {
+      "citation": "Shen WK, et al. 2017 ACC/AHA/HRS Guideline for the Evaluation and Management of Patients With Syncope. Circulation 2017;136:e60-e122. doi:10.1161/CIR.0000000000000499",
+      "year": 2017,
+      "citedBy": [
+        "consult-workups:syncope-vs-seizure"
+      ]
+    },
+    {
+      "citation": "Shorvon S, Ferlisi M. The treatment of super-refractory status epilepticus: a critical review of available therapies and a clinical treatment protocol. Brain 2011;134(10):2802-2818. doi:10.1093/brain/awr215",
+      "year": 2011,
+      "citedBy": [
+        "acute-neuro:refractory-super-refractory-se"
+      ]
+    },
+    {
+      "citation": "Slooter AJC, et al. Updated nomenclature of delirium and acute encephalopathy: statement of ten Societies. Intensive Care Med 2020;46(5):1020-1022. doi:10.1007/s00134-019-05907-4",
+      "year": 2020,
+      "citedBy": [
+        "acute-neuro:delirium-vs-encephalopathy",
+        "consult-workups:altered-mental-status"
+      ]
+    },
+    {
+      "citation": "Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170(3):G1-G47. doi:10.1530/EJE-13-1020",
+      "year": 2014,
+      "citedBy": [
+        "acute-neuro:hyponatremia-ods",
+        "calc:sodium-correction"
+      ]
+    },
+    {
+      "citation": "Spatola M, et al. Clinical features, prognostic factors, and antibody effects in anti-mGluR1 encephalitis. Neurology 2020;95(22):e3012-e3025. doi:10.1212/WNL.0000000000010854",
+      "year": 2020,
+      "citedBy": [
+        "neural-antibodies:mglur1"
+      ]
+    },
+    {
+      "citation": "Spatola M, et al. Encephalitis with mGluR5 antibodies: symptoms and antibody effects. Neurology 2018;90(22):e1964-e1972. doi:10.1212/WNL.0000000000005614",
+      "year": 2018,
+      "citedBy": [
+        "neural-antibodies:mglur5"
+      ]
+    },
+    {
+      "citation": "Spatola M, et al. Investigations in GABAA receptor antibody-associated encephalitis. Neurology 2017;88(11):1012-1020. doi:10.1212/WNL.0000000000003713",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:gabaa-r"
+      ]
+    },
+    {
+      "citation": "Tande AJ, Currier BL, Osmon DR. Spinal epidural abscess. N Engl J Med 2026;394:1621-1633",
+      "year": 2026,
+      "citedBy": [
+        "acute-neuro:spinal-cord-compression"
+      ]
+    },
+    {
+      "citation": "Theophylline anhydrous extended-release tablets US prescribing information. Westminster; revised 12/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "seizure-threshold:theophylline"
+      ]
+    },
+    {
+      "citation": "Thompson AJ, et al. Diagnosis of multiple sclerosis: 2017 revisions of the McDonald criteria. Lancet Neurol 2018;17(2):162-173",
+      "year": 2018,
+      "citedBy": [
+        "acute-neuro:ms-relapse"
+      ]
+    },
+    {
+      "citation": "Ticagrelor tablets US prescribing information. AiPing Pharmaceutical; revised 6/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "vascular-antithrombotics:antiplatelet-ich",
+        "vascular-antithrombotics:aspirin",
+        "vascular-antithrombotics:ticagrelor"
+      ]
+    },
+    {
+      "citation": "Timolol maleate ophthalmic solution 0.25% and 0.5%, US prescribing information. Bausch & Lomb; revised 3/2025",
+      "year": 2025,
+      "citedBy": [
+        "mg-contraindications:beta-blockers"
+      ]
+    },
+    {
+      "citation": "Titulaer MJ, et al. Clinical Dutch-English Lambert-Eaton myasthenic syndrome (LEMS) tumor association prediction score accurately predicts small-cell lung cancer in the LEMS. J Clin Oncol 2011;29(7):902-908. doi:10.1200/JCO.2010.32.0440",
+      "year": 2011,
+      "citedBy": [
+        "neural-antibodies:p-q-vgcc",
+        "neural-antibodies:sox1"
+      ]
+    },
+    {
+      "citation": "Titulaer MJ, et al. Treatment and prognostic factors for long-term outcome in patients with anti-NMDA receptor encephalitis: an observational cohort study. Lancet Neurol 2013;12(2):157-165. doi:10.1016/S1474-4422(12)70310-1",
+      "year": 2013,
+      "citedBy": [
+        "neural-antibodies:nmdar"
+      ]
+    },
+    {
+      "citation": "TNKase (tenecteplase) US prescribing information. Genentech; revised 2/2025 (label text via Drugs.com, accessed 2026-11-04)",
+      "year": 2025,
+      "citedBy": [
+        "calc:tnk-dose",
+        "vascular-antithrombotics:tenecteplase"
+      ]
+    },
+    {
+      "citation": "Tobin WO, et al. DPPX potassium channel antibody: frequency, clinical accompaniments, and outcomes in 20 patients. Neurology 2014;83(20):1797-1803. doi:10.1212/WNL.0000000000000991",
+      "year": 2014,
+      "citedBy": [
+        "neural-antibodies:dppx"
+      ]
+    },
+    {
+      "citation": "Trinity Health Michigan neuro ICU protocol (provided by J. Schick, 11/2026)",
+      "year": 2026,
+      "citedBy": [
+        "calc:hypertonic-saline-bolus"
+      ]
+    },
+    {
+      "citation": "Tunkel AR, et al. Practice guidelines for the management of bacterial meningitis (IDSA). Clin Infect Dis 2004;39(9):1267-1284. doi:10.1086/425368",
+      "year": 2004,
+      "citedBy": [
+        "acute-neuro:bacterial-meningitis",
+        "acute-neuro:cns-infection-immunocompromised"
+      ]
+    },
+    {
+      "citation": "Tunkel AR, et al. The management of encephalitis: clinical practice guidelines by the IDSA. Clin Infect Dis 2008;47(3):303-327. doi:10.1086/589747",
+      "year": 2008,
+      "citedBy": [
+        "acute-neuro:cns-infection-immunocompromised",
+        "acute-neuro:viral-encephalitis"
+      ]
+    },
+    {
+      "citation": "Ultram ER (tramadol HCl) extended-release tablets US prescribing information (Rebel Distributors); revised 12/2010 (user-supplied label)",
+      "year": 2010,
+      "citedBy": [
+        "seizure-threshold:tramadol"
+      ]
+    },
+    {
+      "citation": "US Food and Drug Administration. Science paper: Concomitant use of ibuprofen and aspirin — potential for attenuation of the anti-platelet effect of aspirin. 9/8/2006 (user-supplied)",
+      "year": 2006,
+      "citedBy": [
+        "vascular-antithrombotics:aspirin"
+      ]
+    },
+    {
+      "citation": "Valproic acid oral solution US prescribing information. Atlantic Biologicals; revised 5/2024 (user-supplied label)",
+      "year": 2024,
+      "citedBy": [
+        "asm-interactions:carbapenems-valproate"
+      ]
+    },
+    {
+      "citation": "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:guillain-barre-syndrome",
+        "acute-neuro:neuromuscular-respiratory-failure",
+        "calc:ivig-dose",
+        "consult-workups:acute-generalized-weakness",
+        "consult-workups:inpatient-neuropathy"
+      ]
+    },
+    {
+      "citation": "van Sonderen A, et al. Anti-LGI1 encephalitis: clinical syndrome and long-term follow-up. Neurology 2016;87(14):1449-1456. doi:10.1212/WNL.0000000000003173",
+      "year": 2016,
+      "citedBy": [
+        "neural-antibodies:lgi1"
+      ]
+    },
+    {
+      "citation": "van Sonderen A, et al. The clinical spectrum of Caspr2 antibody-associated disease. Neurology 2016;87(5):521-528. doi:10.1212/WNL.0000000000002917",
+      "year": 2016,
+      "citedBy": [
+        "neural-antibodies:caspr2"
+      ]
+    },
+    {
+      "citation": "Van Steenhoven RW, et al. Mimics of autoimmune encephalitis: validation of the 2016 clinical autoimmune encephalitis criteria. Neurol Neuroimmunol Neuroinflamm 2023;10(6):e200148. doi:10.1212/NXI.0000000000200148",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:autoimmune-encephalitis"
+      ]
+    },
+    {
+      "citation": "Warfarin sodium tablets US prescribing information (RemedyRepack); revised 10/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "asm-interactions:inducing-asm-warfarin",
+        "vascular-antithrombotics:warfarin"
+      ]
+    },
+    {
+      "citation": "Werring DJ, et al. Optimal timing of anticoagulation after acute ischaemic stroke with atrial fibrillation (OPTIMAS): a multicentre, blinded-endpoint, phase 4, randomised controlled trial. Lancet 2024;404:1731-1741. doi:10.1016/S0140-6736(24)02197-4",
+      "year": 2024,
+      "citedBy": [
+        "vascular-antithrombotics:af-stroke-anticoag-timing"
+      ]
+    },
+    {
+      "citation": "Wickström R, et al. International consensus recommendations for management of NORSE including FIRES: summary and clinical tools. Epilepsia 2022;63(11):2827-2839. doi:10.1111/epi.17391",
+      "year": 2022,
+      "citedBy": [
+        "acute-neuro:refractory-super-refractory-se"
+      ]
+    },
+    {
+      "citation": "Wingerchuk DM, et al. International consensus diagnostic criteria for neuromyelitis optica spectrum disorders. Neurology 2015;85(2):177-189. doi:10.1212/WNL.0000000000001729",
+      "year": 2015,
+      "citedBy": [
+        "acute-neuro:nmosd-mogad-attack",
+        "neural-antibodies:aqp4"
+      ]
+    },
+    {
+      "citation": "Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "asm-interactions:inducing-asm-apixaban-rivaroxaban",
+        "calc:cockcroft-gault",
+        "vascular-antithrombotics:rivaroxaban"
+      ]
+    },
+    {
+      "citation": "Yu Z, et al. CRMP-5 neuronal autoantibody: marker of lung cancer and thymoma-related autoimmunity. Ann Neurol 2001;49(2):146-154",
+      "year": 2001,
+      "citedBy": [
+        "neural-antibodies:cv2-crmp5"
+      ]
+    }
+  ],
+  "oldestSourceYear": 1976
+}
