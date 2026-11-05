@@ -26,8 +26,8 @@ export interface RegistryInfo {
 export const REGISTRIES: RegistryInfo[] = [
   { id: 'acute-neuro', label: 'Acute protocol', section: 'acute', built: true },
   { id: 'consult-workups', label: 'Consult workup', section: 'consults', built: true },
-  { id: 'vascular-antithrombotics', label: 'Antithrombotics', section: 'drugs', built: false },
-  { id: 'neural-antibodies', label: 'Neural antibody', section: 'antibodies', built: false },
+  { id: 'vascular-antithrombotics', label: 'Antithrombotics', section: 'drugs', built: true },
+  { id: 'neural-antibodies', label: 'Neural antibody', section: 'antibodies', built: true },
   { id: 'mg-contraindications', label: 'MG cautions', section: 'drugs', built: true },
   { id: 'seizure-threshold', label: 'Seizure threshold', section: 'drugs', built: true },
   { id: 'rcvs-triggers', label: 'RCVS triggers', section: 'drugs', built: true },
@@ -56,7 +56,7 @@ export const SECTIONS: SectionInfo[] = [
   { id: 'acute', label: 'Acute', blurb: 'Emergency protocols', built: true, hash: '#/acute-neuro' },
   { id: 'consults', label: 'Consults', blurb: 'Consult workups', built: true, hash: '#/consult-workups' },
   { id: 'drugs', label: 'Drugs', blurb: 'Drug cautions, antithrombotics, interactions', built: true, hash: '#/mg-contraindications' },
-  { id: 'antibodies', label: 'Antibodies', blurb: 'Neural antibody cards', built: false, hash: '#/neural-antibodies' },
+  { id: 'antibodies', label: 'Antibodies', blurb: 'Neural antibody cards', built: true, hash: '#/neural-antibodies' },
   { id: 'calc', label: 'Calculators', blurb: 'Dosing and risk scores', built: true, hash: '#/calc' },
 ];
 

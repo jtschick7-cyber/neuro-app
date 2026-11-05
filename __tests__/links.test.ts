@@ -6,6 +6,8 @@ import { parseHash } from '../src/lib/route';
 import { CALCULATOR_META } from '../src/lib/calculators';
 import acute from '../data/acute-neuro.json';
 import consults from '../data/consult-workups.json';
+import vascular from '../data/vascular-antithrombotics.json';
+import antibodies from '../data/neural-antibodies.json';
 import { getRegistry } from '../src/lib/nav';
 import manifest from '../data/calculators.manifest.json';
 
@@ -33,8 +35,8 @@ describe('resolveRef', () => {
   });
   it('does not link to an unknown entry or to registries without a screen', () => {
     expect(resolveRef('mg-contraindications:not-a-real-entry').href).toBeNull();
-    expect(resolveRef('vascular-antithrombotics:dapt-minor-stroke-tia').href).toBeNull();
-    expect(resolveRef('vascular-antithrombotics:dapt-minor-stroke-tia').label).toBe('Dapt minor stroke tia');
+    expect(resolveRef('asm-interactions:valproate-lamotrigine').href).toBeNull();
+    expect(resolveRef('asm-interactions:valproate-lamotrigine').label).toBe('Valproate lamotrigine');
   });
 });
 
@@ -70,7 +72,9 @@ describe('every cross-link in the built registries', () => {
 });
 
 describe('cross-links into the lazy-loaded registries', () => {
-  it('links to acute-neuro and consult-workups entries', () => {
+  it('links to entries in each lazy-loaded registry', () => {
+    expect(resolveRef('neural-antibodies:' + antibodies.entries[0].id).href).toBe('#/neural-antibodies/' + antibodies.entries[0].id);
+    expect(resolveRef('vascular-antithrombotics:' + vascular.entries[0].id).href).toBe('#/vascular-antithrombotics/' + vascular.entries[0].id);
     expect(resolveRef('acute-neuro:convulsive-status-epilepticus').href).toBe('#/acute-neuro/convulsive-status-epilepticus');
     expect(resolveRef('consult-workups:tia-workup').href).toBe('#/consult-workups/tia-workup');
   });
@@ -78,9 +82,11 @@ describe('cross-links into the lazy-loaded registries', () => {
     const ids: Record<string, Set<string>> = {
       'acute-neuro': new Set(acute.entries.map((e) => e.id)),
       'consult-workups': new Set(consults.entries.map((e) => e.id)),
+      'vascular-antithrombotics': new Set(vascular.entries.map((e) => e.id)),
+      'neural-antibodies': new Set(antibodies.entries.map((e) => e.id)),
     };
     for (const l of CAUTION_LISTS) ids[l.id] = new Set(l.list.entries.map((e) => e.id));
-    const refs = [...acute.entries, ...consults.entries].flatMap((e) => e.relatedIds);
+    const refs = [...acute.entries, ...consults.entries, ...vascular.entries, ...antibodies.entries].flatMap((e) => e.relatedIds);
     for (const ref of refs) {
       const [reg, id] = ref.split(':');
       if (reg === 'calc' || !getRegistry(reg)?.built) continue;
