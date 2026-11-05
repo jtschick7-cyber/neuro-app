@@ -2,8 +2,8 @@ import DrugTabs from './DrugTabs';
 import RelatedLinks from './RelatedLinks';
 import { EntryShell, RegistryScreen } from './ProtocolViews';
 import { Bullets, EnumBadge, EvidenceBadge, Section, TreatmentList } from './ProtocolParts';
-import { NORMAL_LIKELIHOOD_LEGEND, PNS_RISK_LEGEND } from '../content/copy';
-import { loadAntibodies, loadVascular, type AntibodyEntry, type VascularEntry } from '../lib/protocols';
+import { INTERACTION_TIER_LEGEND, NORMAL_LIKELIHOOD_LEGEND, PNS_RISK_LEGEND } from '../content/copy';
+import { loadAntibodies, loadInteractions, loadVascular, type AntibodyEntry, type InteractionEntry, type VascularEntry } from '../lib/protocols';
 
 const PNS_HELP = Object.fromEntries(PNS_RISK_LEGEND) as Record<string, string>;
 const LIKELIHOOD_HELP = Object.fromEntries(NORMAL_LIKELIHOOD_LEGEND) as Record<string, string>;
@@ -228,5 +228,65 @@ export function AntibodiesView({ entryId }: { entryId?: string }) {
       entryId={entryId}
       renderEntry={(e) => <AntibodyEntryView e={e} />}
     />
+  );
+}
+
+const TIER_HELP = Object.fromEntries(INTERACTION_TIER_LEGEND) as Record<string, string>;
+const TIER_TONE: Record<string, string> = { AVOID: 'bg-red-600 text-white', HIGH_RISK: 'bg-orange-500 text-black', CAUTION: 'bg-yellow-400 text-black' };
+const TIER_LABEL: Record<string, string> = { AVOID: 'Avoid', HIGH_RISK: 'High risk', CAUTION: 'Caution' };
+
+function InteractionEntryView({ e }: { e: InteractionEntry }) {
+  return (
+    <EntryShell registry="asm-interactions" entry={e}>
+      <div className="mt-2 flex flex-wrap items-center gap-2">
+        <EnumBadge label={TIER_LABEL[e.tier] ?? e.tier} help={TIER_HELP[e.tier]} tone={TIER_TONE[e.tier]} />
+      </div>
+      <p className="mt-2 text-sm text-slate-300">
+        <span className="font-semibold text-slate-400">Affected: </span>
+        {e.objectDrugs.join(', ')}
+      </p>
+      <p className="text-sm text-slate-300">
+        <span className="font-semibold text-slate-400">Caused by: </span>
+        {e.precipitantDrugs.join(', ')}
+      </p>
+      <Section title="Effect" open>
+        <Bullets items={e.effect} tone="text-slate-100" />
+      </Section>
+      <Section title="Management" open>
+        <Bullets items={e.management} tone="text-emerald-300" />
+      </Section>
+      {e.population.length > 0 && (
+        <Section title="Population" open>
+          <Bullets items={e.population} />
+        </Section>
+      )}
+      {e.mechanism.length > 0 && (
+        <Section title="Mechanism">
+          <Bullets items={e.mechanism} tone="text-slate-400" />
+        </Section>
+      )}
+      {e.pearls.length > 0 && (
+        <Section title="Pearls">
+          <Bullets items={e.pearls} />
+        </Section>
+      )}
+      <RelatedLinks relatedIds={e.relatedIds} />
+    </EntryShell>
+  );
+}
+
+export function InteractionsView({ entryId }: { entryId?: string }) {
+  return (
+    <div className="space-y-3">
+      {entryId === undefined && <DrugTabs active="asm-interactions" />}
+      <RegistryScreen
+        registry="asm-interactions"
+        noun="ASM interactions"
+        placeholder="Search drug or brand (e.g. Eliquis, carbamazepine)"
+        load={loadInteractions}
+        entryId={entryId}
+        renderEntry={(e) => <InteractionEntryView e={e} />}
+      />
+    </div>
   );
 }

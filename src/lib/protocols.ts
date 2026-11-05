@@ -1,5 +1,7 @@
 import type { z } from 'zod';
 import type { AcuteNeuroEntry as AcuteSchema, AcuteNeuroRegistry } from '../../schema/acute-neuro';
+import type { InteractionEntry as InteractionSchema } from '../../schema/drug-interactions';
+import asmRaw from '../../data/asm-interactions.json';
 import type { NeuralAntibodyEntry as AntibodySchema } from '../../schema/neural-antibodies';
 import type { VascularAntithromboticEntry as VascularSchema } from '../../schema/vascular-antithrombotics';
 import type { ConsultWorkupEntry as ConsultSchema } from '../../schema/consult-workups';
@@ -9,8 +11,11 @@ export type ConsultEntry = z.infer<typeof ConsultSchema>;
 export type VascularEntry = z.infer<typeof VascularSchema> & { category: string };
 /** Antibody entries gain `title` (the antigen) and `category` (antigen class) so they fit the shared list screen. */
 export type AntibodyEntry = z.infer<typeof AntibodySchema> & { title: string; category: string };
+/** Interaction entries gain `category` (their tier) so they fit the shared list screen. */
+export type InteractionEntry = z.infer<typeof InteractionSchema> & { category: string };
 export interface ProtocolRegistry<E> {
   title: string;
+  scopeNotes?: string[];
   version: string;
   entries: E[];
 }
@@ -34,6 +39,14 @@ export const loadAntibodies = (): Promise<ProtocolRegistry<AntibodyEntry>> =>
     return { ...d, entries: d.entries.map((e) => ({ ...e, title: e.antigen, category: e.antigenClass })) };
   });
 
+// Small (7 KB), so bundled directly rather than lazy-loaded.
+const TIER_ORDER: Record<string, number> = { AVOID: 0, HIGH_RISK: 1, CAUTION: 2 };
+export const loadInteractions = (): Promise<ProtocolRegistry<InteractionEntry>> => {
+  const d = asmRaw as unknown as ProtocolRegistry<z.infer<typeof InteractionSchema>>;
+  const entries = d.entries.map((e) => ({ ...e, category: e.tier })).sort((a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier]);
+  return Promise.resolve({ ...d, entries });
+};
+
 /** Enum → display label. Badges are always derived from these enums, never free text. */
 export const CATEGORY_LABEL: Record<string, string> = {
   SEIZURE: 'Seizure',
@@ -51,6 +64,9 @@ export const CATEGORY_LABEL: Record<string, string> = {
   INFLAMMATORY_DEMYELINATING: 'Inflammatory / demyelinating',
   PROGNOSIS_DEATH: 'Prognosis / death',
   FUNCTIONAL: 'Functional',
+  AVOID: 'Avoid',
+  HIGH_RISK: 'High risk',
+  CAUTION: 'Caution',
   ANTIPLATELET: 'Antiplatelets',
   ANTICOAGULANT: 'Anticoagulants',
   THROMBOLYTIC: 'Thrombolytics',

@@ -4,7 +4,7 @@ import Calculators from './components/Calculators';
 import MgRegistryView from './components/MgRegistryView';
 import NavBar from './components/NavBar';
 import { AcuteView, ConsultView } from './components/ProtocolViews';
-import { AntibodiesView, AntithromboticsView } from './components/DrugAntibodyViews';
+import { AntibodiesView, AntithromboticsView, InteractionsView } from './components/DrugAntibodyViews';
 import Home from './components/Home';
 import DisclaimerGate from './components/DisclaimerGate';
 import { usePatientContext, type PatientContext } from './lib/patientContext';
@@ -66,6 +66,7 @@ function Screen({ route, context }: { route: Route; context: PatientContext }) {
       if (route.registry === 'acute-neuro') return <AcuteView entryId={route.entryId} />;
       if (route.registry === 'consult-workups') return <ConsultView entryId={route.entryId} />;
       if (route.registry === 'vascular-antithrombotics') return <AntithromboticsView entryId={route.entryId} />;
+      if (route.registry === 'asm-interactions') return <InteractionsView entryId={route.entryId} />;
       if (route.registry === 'neural-antibodies') return <AntibodiesView entryId={route.entryId} />;
       return getRegistry(route.registry)?.built ? null : <Unavailable />;
   }

@@ -31,7 +31,7 @@ export const REGISTRIES: RegistryInfo[] = [
   { id: 'mg-contraindications', label: 'MG cautions', section: 'drugs', built: true },
   { id: 'seizure-threshold', label: 'Seizure threshold', section: 'drugs', built: true },
   { id: 'rcvs-triggers', label: 'RCVS triggers', section: 'drugs', built: true },
-  { id: 'asm-interactions', label: 'ASM interactions', section: 'drugs', built: false },
+  { id: 'asm-interactions', label: 'ASM interactions', section: 'drugs', built: true },
 ];
 
 export function getRegistry(id: string): RegistryInfo | undefined {

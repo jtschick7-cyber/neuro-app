@@ -83,6 +83,11 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
       <p className="text-xs text-slate-500">
         {shown} of {entries.length} · v{state.data.version}
       </p>
+      {state.data.scopeNotes?.map((n) => (
+        <p key={n} className="text-xs text-slate-500">
+          {n}
+        </p>
+      ))}
       {groups.map(([cat, list]) => (
         <section key={cat}>
           <h2 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">{CATEGORY_LABEL[cat] ?? cat}</h2>
