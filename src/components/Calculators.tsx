@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Droplets, Pill, Zap, FlaskConical } from 'lucide-react';
 import { NeedWeight, NumberField } from './CalculatorCard';
-import { Card, FocusContext, Result, parseNonNegative, safe } from './calcShared';
+import { Card, FocusContext, Result, loadBadge, parseNonNegative, safe } from './calcShared';
 import { IvigCard, SodiumCard } from './ImmunoSodiumCalculators';
 import { Abcd2Card, Cha2ds2VascCard, HasBledCard, IchScoreCard, ThrombolyticsCard } from './StrokeCalculators';
 import {
@@ -17,6 +17,7 @@ import {
   mannitolDose,
   osmolarGap,
   valproateLoad,
+  type CalcResult,
   type LeddDrug,
 } from '../lib/calculators';
 import { BANNERS } from '../content/copy';
@@ -36,14 +37,18 @@ function Anticonvulsants({ weightKg }: { weightKg: number | null }) {
         <NeedWeight />
       ) : (
         <div className="divide-y divide-slate-800">
-          <Result label="Levetiracetam" r={safe(() => levetiracetamLoad(weightKg))} />
-          <Result label="Valproate" r={safe(() => valproateLoad(weightKg))} />
-          <Result label="Fosphenytoin" r={safe(() => fosphenytoinLoad(weightKg))} />
+          <Load label="Levetiracetam" metaId="levetiracetam-load" r={safe(() => levetiracetamLoad(weightKg))} />
+          <Load label="Valproate" metaId="valproate-load" r={safe(() => valproateLoad(weightKg))} />
+          <Load label="Fosphenytoin" metaId="fosphenytoin-load" r={safe(() => fosphenytoinLoad(weightKg))} />
           <Result label="Lacosamide" r={safe(() => lacosamideLoad(weightKg))} />
         </div>
       )}
     </Card>
   );
+}
+
+function Load({ label, metaId, r }: { label: string; metaId: string; r: CalcResult | string }) {
+  return <Result label={label} r={r} badge={loadBadge(r, metaId)} />;
 }
 
 function IcpCard({ weightKg }: { weightKg: number | null }) {
