@@ -45,6 +45,8 @@ export function isCautionListId(id: string): id is CautionListId {
 export interface SectionInfo {
   id: SectionId;
   label: string;
+  /** Shorter label for the bottom bar, where six items share a phone's width. */
+  navLabel?: string;
   blurb: string;
   built: boolean;
   /** Where the nav item points. */
@@ -57,7 +59,7 @@ export const SECTIONS: SectionInfo[] = [
   { id: 'consults', label: 'Consults', blurb: 'Consult workups', built: true, hash: '#/consult-workups' },
   { id: 'drugs', label: 'Drugs', blurb: 'Drug cautions, antithrombotics, interactions', built: true, hash: '#/mg-contraindications' },
   { id: 'antibodies', label: 'Antibodies', blurb: 'Neural antibody cards', built: true, hash: '#/neural-antibodies' },
-  { id: 'calc', label: 'Calculators', blurb: 'Dosing and risk scores', built: true, hash: '#/calc' },
+  { id: 'calc', label: 'Calculators', navLabel: 'Calcs', blurb: 'Dosing and risk scores', built: true, hash: '#/calc' },
 ];
 
 /**
