@@ -1,0 +1,131 @@
+# Calculators
+
+Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "app convention" needs pharmacy review.
+
+## Levetiracetam load (`levetiracetam-load`)
+- Formula: 60 mg/kg
+- Caps: 4500 mg
+- Rounding: nearest 50 mg, cap after rounding (app convention)
+- Weight: ACTUAL
+- Sources: Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48 | Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795
+- VERIFY: none
+
+## Valproate load (`valproate-load`)
+- Formula: 40 mg/kg
+- Caps: 3000 mg
+- Rounding: nearest 50 mg, cap after rounding (app convention)
+- Weight: ACTUAL
+- Sources: Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48 | Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795
+- VERIFY: none
+
+## Fosphenytoin load (`fosphenytoin-load`)
+- Formula: 20 mg PE/kg; min infusion time = dose / 150 mg PE/min
+- Caps: 1500 mg PE; 150 mg PE/min
+- Rounding: nearest 50 mg PE (= whole mL at 50 mg PE/mL; app convention)
+- Weight: ACTUAL
+- Sources: Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48 | Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795
+- VERIFY: none
+
+## Lacosamide load (`lacosamide-load`)
+- Formula: fixed 200–400 mg IV
+- Caps: none
+- Rounding: none
+- Weight: NOT_APPLICABLE
+- Sources: Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z
+- VERIFY: none
+
+## Hypertonic saline (ICP) (`hypertonic-saline-bolus`)
+- Formula: institutional protocol: 3% 250 mL over 30 min; 23.4% 30 mL over 5 min (central line). Na mEq = mL × 0.513 (3%) or 4.004 (23.4%)
+- Caps: fixed volume per protocol
+- Rounding: none (fixed volume)
+- Weight: NOT_APPLICABLE
+- Sources: Trinity Health Michigan neuro ICU protocol (provided by J. Schick, 11/2026) | Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7 | Bhalla P, Dingman JS, Aysenne A. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 6.0. Neurocritical Care Society; 2024
+- VERIFY: none
+
+## Mannitol 20% (`mannitol-dose`)
+- Formula: 0.5–1 g/kg; mL = g × 5; osmolar gap = measured − (2Na + glucose/18 + BUN/2.8)
+- Caps: none
+- Rounding: nearest 5 g
+- Weight: ACTUAL
+- Sources: Bhalla P, Dingman JS, Aysenne A. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 6.0. Neurocritical Care Society; 2024 | Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7 | Osmitrol (mannitol injection) US prescribing information. Baxter; revised 8/2025
+- VERIFY: none
+
+## Levodopa equivalent daily dose (`ledd`)
+- Formula: Σ (daily dose × factor) for levodopa, agonists, MAO-B, amantadine; + COMT LED = covered levodopa LED × 0.33 (entacapone) or 0.5 (tolcapone, opicapone); + istradefylline = (levodopa + COMT LED) × 0.2; safinamide 50/100 mg = 150
+- Caps: none
+- Rounding: 0.1 mg
+- Weight: NOT_APPLICABLE
+- Sources: Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252
+- VERIFY: none
+
+## Creatinine clearance (Cockcroft-Gault) (`cockcroft-gault`)
+- Formula: (140 − age) × weight / (72 × SCr) × 0.85 if female
+- Caps: none
+- Rounding: nearest 1 mL/min
+- Weight: ACTUAL
+- Sources: Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label) | Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron 1976;16:31-41
+- VERIFY: none
+
+## ICH score (`ich-score`)
+- Formula: GCS 3–4 = 2, 5–12 = 1, 13–15 = 0; volume ≥30 cm³ (ABC/2) 1; IVH 1; infratentorial 1; age ≥80 1. GCS as at ED transfer in the derivation study
+- Caps: 0–6
+- Rounding: integer
+- Weight: NOT_APPLICABLE
+- Sources: Hemphill JC 3rd, et al. The ICH score: a simple, reliable grading scale for intracerebral hemorrhage. Stroke 2001;32:891-897
+- VERIFY: none
+
+## ABCD2 (`abcd2`)
+- Formula: age ≥60 1; BP ≥140/90 1; unilateral weakness 2 or speech only 1; duration ≥60 min 2, 10–59 1; diabetes 1
+- Caps: 0–7
+- Rounding: integer
+- Weight: NOT_APPLICABLE
+- Sources: Amin HP, et al. Diagnosis, Workup, Risk Reduction of Transient Ischemic Attack in the Emergency Department Setting: A Scientific Statement From the AHA. Stroke 2023;54:e109-e121. doi:10.1161/STR.0000000000000418
+- VERIFY: none
+
+## CHA₂DS₂-VASc (`cha2ds2-vasc`)
+- Formula: CHF/LV dysfunction 1, HTN 1, age ≥75 2, DM 1, stroke/TIA/TE 2, vascular disease 1, age 65–74 1, female 1
+- Caps: 0–9
+- Rounding: integer
+- Weight: NOT_APPLICABLE
+- Sources: Lip GYH, et al. Refining clinical risk stratification for predicting stroke and thromboembolism in AF. Chest 2010;137(2):263-272 | Lip GYH, et al. CHA2DS2-VASc risk scheme: response. Chest 2010;138(4):1020-1021
+- VERIFY: none
+
+## HAS-BLED (`has-bled`)
+- Formula: 1 point each: HTN (uncontrolled, SBP >160); renal (dialysis, transplant, Cr >2.26 mg/dL); liver (cirrhosis, or bilirubin >2× normal with AST/ALT/AP >3× normal); stroke history; prior major bleeding or predisposition; labile INR (TTR <60%); age >65; drugs (antiplatelets, NSAIDs); alcohol ≥8 drinks/week
+- Caps: 0–9
+- Rounding: integer
+- Weight: NOT_APPLICABLE
+- Sources: Pisters R, et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest 2010;138:1093-1100 (as summarized by MDCalc; primary article not reviewed)
+- VERIFY: none
+
+## Tenecteplase (stroke) (`tnk-dose`)
+- Formula: 0.25 mg/kg via 10-kg bands; optional 1-kg dosing <50 kg
+- Caps: 25 mg
+- Rounding: label band chart
+- Weight: ACTUAL
+- Sources: Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513 | TNKase (tenecteplase) US prescribing information. Genentech; revised 2/2025 (label text via Drugs.com, accessed 2026-11-04)
+- VERIFY: none
+
+## Alteplase (stroke) (`alteplase-dose`)
+- Formula: 0.9 mg/kg; 10% bolus, 90% over 60 min
+- Caps: 90 mg
+- Rounding: 0.1 mg
+- Weight: ACTUAL
+- Sources: Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513 | Activase (alteplase) US prescribing information. Genentech; revised 9/2022 (user-supplied label)
+- VERIFY: none
+
+## IVIG (`ivig-dose`)
+- Formula: 2 g/kg total over 2–5 days
+- Caps: none
+- Rounding: daily dose to nearest 5 g (app convention)
+- Weight: SELECTABLE
+- Sources: van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073
+- VERIFY: none
+
+## Hyponatremia: 3% bolus and correction limits (`sodium-correction`)
+- Formula: ESE 150 mL; SALSA 2 or 4 mL/kg; limit ≤10 (≤8 if ODS risk) first 24 h, ≤8 thereafter
+- Caps: none
+- Rounding: nearest 10 mL
+- Weight: ACTUAL
+- Sources: Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170(3):G1-G47. doi:10.1530/EJE-13-1020 | Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519
+- VERIFY: none

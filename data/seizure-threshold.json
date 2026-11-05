@@ -1,0 +1,355 @@
+{
+  "title": "Drugs that lower the seizure threshold",
+  "condition": "Epilepsy or lowered seizure threshold",
+  "scopeNotes": [
+    "Labels and an FDA safety communication; Beers 2023 items apply to adults ≥65"
+  ],
+  "version": "0.2.1",
+  "schemaVersion": "3.0.0",
+  "lastUpdated": "2026-11-05",
+  "entries": [
+    {
+      "id": "bupropion",
+      "title": "Bupropion",
+      "searchTerms": [
+        "Wellbutrin",
+        "Zyban",
+        "smoking cessation"
+      ],
+      "drugClass": "Antidepressant (aminoketone)",
+      "generics": [
+        "bupropion"
+      ],
+      "brands": [
+        "Wellbutrin",
+        "Zyban"
+      ],
+      "tier": "AVOID",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Dose-related seizures: ~0.4% at up to 450 mg/day (IR label)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Contraindicated: seizure disorder; current or prior bulimia/anorexia; abrupt withdrawal of alcohol, benzodiazepines, barbiturates or antiseizure medications",
+        "Other risk factors (label): severe head injury, AVM, CNS tumor or infection, severe stroke, metabolic disorders (hypoglycemia, hyponatremia, hypoxia), other threshold-lowering drugs",
+        "IR: max 450 mg/day, ≤150 mg per dose, titrate gradually; stop if a seizure occurs",
+        "SR and XL maximum doses differ from IR — not covered by the label on file"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "consult-workups:first-unprovoked-seizure"
+      ],
+      "sources": [
+        "Bupropion hydrochloride tablets US prescribing information. Cipla; revised 3/2023 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "flumazenil",
+      "title": "Flumazenil",
+      "searchTerms": [
+        "Romazicon",
+        "benzodiazepine reversal"
+      ],
+      "drugClass": "Benzodiazepine antagonist",
+      "generics": [
+        "flumazenil"
+      ],
+      "brands": [
+        "Romazicon"
+      ],
+      "tier": "AVOID",
+      "fdaBoxedWarning": true,
+      "usMarketed": true,
+      "effect": [
+        "Seizures, most often after long-term benzodiazepine sedation or in overdose with serious cyclic antidepressant toxicity"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Contraindicated when a benzodiazepine is controlling a life-threatening condition (e.g., ICP, status epilepticus) or with signs of serious cyclic antidepressant overdose",
+        "Precipitates withdrawal seizures in benzodiazepine-dependent patients",
+        "Not recommended to diagnose benzodiazepine sedation in the ICU",
+        "Watch for resedation after reversal"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:convulsive-status-epilepticus"
+      ],
+      "sources": [
+        "Flumazenil injection US prescribing information. Akorn-Strides; revised 5/2008 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "cefepime",
+      "title": "Cefepime",
+      "searchTerms": [
+        "Maxipime",
+        "cefepime neurotoxicity",
+        "NCSE antibiotic"
+      ],
+      "drugClass": "4th-generation cephalosporin",
+      "generics": [
+        "cefepime"
+      ],
+      "brands": [
+        "Maxipime"
+      ],
+      "tier": "HIGH_RISK",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Non-convulsive status epilepticus — FDA review: 59 cases, nearly all with renal impairment; 56 without renal dose adjustment"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Mean onset ~6 days (range 1–15) in published cases; most recover after stopping cefepime ± antiseizure treatment",
+        "Unexplained confusion on cefepime, especially older or renally impaired: consider EEG",
+        "Dose to renal function per label and reassess as renal function changes"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:nonconvulsive-status-epilepticus",
+        "acute-neuro:delirium-vs-encephalopathy"
+      ],
+      "sources": [
+        "FDA Drug Safety Communication on cefepime and non-convulsive status epilepticus (2012), as summarized in: Song JC. Cefepime: FDA Drug Safety Communication on non-convulsive status epilepticus risk. Infect Dis Alert 2012;31(11)"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "beta-lactams-carbapenems",
+      "title": "Other beta-lactams and carbapenems",
+      "searchTerms": [
+        "penicillin seizure",
+        "ceftazidime",
+        "carbapenem seizure"
+      ],
+      "drugClass": "Beta-lactam antibiotics",
+      "generics": [
+        "ceftazidime",
+        "cefotaxime",
+        "ceftriaxone",
+        "penicillins",
+        "carbapenems"
+      ],
+      "brands": [],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Non-convulsive status epilepticus reported, including 8 published ceftazidime cases (onset 3–8 days, nearly all with renal impairment)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Risk factors for antibiotic-induced seizures: prior seizures, renal impairment, meningitis/CNS infection, extremes of age, low albumin",
+        "Carbapenems also lower valproate levels — see asm-interactions"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "asm-interactions:carbapenems-valproate"
+      ],
+      "sources": [
+        "FDA Drug Safety Communication on cefepime and non-convulsive status epilepticus (2012), as summarized in: Song JC. Cefepime: FDA Drug Safety Communication on non-convulsive status epilepticus risk. Infect Dis Alert 2012;31(11)"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "fluoroquinolones",
+      "title": "Fluoroquinolones",
+      "searchTerms": [
+        "cipro",
+        "levofloxacin"
+      ],
+      "drugClass": "Antibiotic",
+      "generics": [
+        "ciprofloxacin",
+        "levofloxacin",
+        "moxifloxacin"
+      ],
+      "brands": [
+        "Cipro",
+        "Levaquin",
+        "Avelox"
+      ],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Non-convulsive status epilepticus reported; ciprofloxacin raises CNS risk (seizures, confusion) when CrCl <30"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Beers 2023 (adults ≥65): ciprofloxacin doses usually need reduction at CrCl <30 mL/min",
+        "Also on the MG caution list"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "mg-contraindications:fluoroquinolones"
+      ],
+      "sources": [
+        "FDA Drug Safety Communication on cefepime and non-convulsive status epilepticus (2012), as summarized in: Song JC. Cefepime: FDA Drug Safety Communication on non-convulsive status epilepticus risk. Infect Dis Alert 2012;31(11)",
+        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "theophylline",
+      "title": "Theophylline",
+      "searchTerms": [
+        "aminophylline",
+        "Theo-24",
+        "methylxanthine"
+      ],
+      "drugClass": "Methylxanthine bronchodilator",
+      "generics": [
+        "theophylline",
+        "aminophylline"
+      ],
+      "brands": [
+        "Theo-24",
+        "Elixophyllin"
+      ],
+      "tier": "HIGH_RISK",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Seizures with toxicity (often >30 mcg/mL); isolated seizures reported below 20 mcg/mL in older patients and those with neurologic disease"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Label: extreme caution in seizure disorders",
+        "Toxicity seizures are hard to stop — benzodiazepines then phenobarbital; label calls for rapid, aggressive treatment",
+        "Ciprofloxacin raises theophylline levels — avoid the combination (Beers 2023)",
+        "Many conditions and drugs reduce clearance; label advises frequent serum concentrations in acutely ill patients"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Theophylline anhydrous extended-release tablets US prescribing information. Westminster; revised 12/2025 (user-supplied label)",
+        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "clozapine",
+      "title": "Clozapine",
+      "searchTerms": [
+        "Clozaril",
+        "treatment-resistant schizophrenia"
+      ],
+      "drugClass": "Atypical antipsychotic",
+      "generics": [
+        "clozapine"
+      ],
+      "brands": [
+        "Clozaril"
+      ],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": true,
+      "usMarketed": true,
+      "effect": [
+        "Dose-related seizures: ~5% cumulative incidence at 1 year"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Boxed warning includes seizure",
+        "Start 12.5 mg, titrate slowly, divided doses",
+        "Caution with prior seizures or risk factors (head trauma, CNS pathology, threshold-lowering drugs, alcohol use)",
+        "Counsel against driving, swimming or climbing"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Clozapine tablets US prescribing information. Accord; revised 10/2025 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "tramadol",
+      "title": "Tramadol",
+      "searchTerms": [
+        "Ultram",
+        "Ultram ER"
+      ],
+      "drugClass": "Opioid analgesic (with serotonergic activity)",
+      "generics": [
+        "tramadol"
+      ],
+      "brands": [
+        "Ultram",
+        "Ultram ER"
+      ],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Seizures within the recommended dose range; risk rises above it"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Higher risk with epilepsy or prior seizures, head trauma, metabolic disorders, alcohol/drug withdrawal, CNS infection",
+        "Risk rises with SSRIs, TCAs and tricyclic compounds (e.g., cyclobenzaprine), other opioids, MAOIs, neuroleptics",
+        "With carbamazepine: not recommended — less analgesia and added seizure risk",
+        "In overdose, naloxone may increase seizure risk",
+        "Beers 2023 (≥65): reduce IR dose and avoid ER at CrCl <30",
+        "Label on file is the 2010 Ultram ER label"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "asm-interactions:cns-polypharmacy-falls"
+      ],
+      "sources": [
+        "Ultram ER (tramadol HCl) extended-release tablets US prescribing information (Rebel Distributors); revised 12/2010 (user-supplied label)",
+        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "meperidine",
+      "title": "Meperidine",
+      "searchTerms": [
+        "Demerol",
+        "pethidine",
+        "normeperidine"
+      ],
+      "drugClass": "Opioid analgesic",
+      "generics": [
+        "meperidine"
+      ],
+      "brands": [
+        "Demerol"
+      ],
+      "tier": "HIGH_RISK",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Seizures with or without a seizure disorder; prolonged use and renal impairment accumulate the neurotoxic metabolite normeperidine"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Label: monitor seizure control in patients with epilepsy; titrate slowly and watch for CNS toxicity in renal impairment",
+        "Contraindicated with MAOIs or within 14 days of stopping one",
+        "Beers 2023 (≥65): avoid — neurotoxicity including delirium; safer alternatives exist"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Demerol (meperidine hydrochloride) injection US prescribing information. Hospira; revised 12/2025 (user-supplied label)",
+        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
+      ],
+      "lastReviewed": "2026-11-05"
+    }
+  ]
+}

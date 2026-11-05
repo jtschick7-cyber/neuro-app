@@ -1,0 +1,232 @@
+{
+  "title": "Antiseizure medication interactions",
+  "scopeNotes": [
+    "Selected interactions relevant to stroke and inpatient care — not a complete interaction checker",
+    "Beers 2023 entries apply to adults ≥65"
+  ],
+  "version": "0.1.1",
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-11-05",
+  "entries": [
+    {
+      "id": "inducing-asm-apixaban-rivaroxaban",
+      "title": "Carbamazepine or phenytoin with apixaban or rivaroxaban",
+      "searchTerms": [
+        "DOAC seizure medication",
+        "Eliquis Tegretol",
+        "Xarelto Dilantin"
+      ],
+      "objectDrugs": [
+        "apixaban",
+        "rivaroxaban"
+      ],
+      "precipitantDrugs": [
+        "carbamazepine",
+        "phenytoin",
+        "fosphenytoin"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "↓ apixaban/rivaroxaban exposure → reduced stroke protection"
+      ],
+      "mechanism": [
+        "Combined P-gp and strong CYP3A4 induction"
+      ],
+      "management": [
+        "Avoid the combination (both labels name carbamazepine and phenytoin)"
+      ],
+      "population": [],
+      "pearls": [
+        "Fosphenytoin is a phenytoin prodrug — same interaction"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "vascular-antithrombotics:apixaban",
+        "vascular-antithrombotics:rivaroxaban"
+      ],
+      "sources": [
+        "Eliquis (apixaban) US prescribing information. Bristol-Myers Squibb; revised 6/2026 (user-supplied label)",
+        "Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "inducing-asm-warfarin",
+      "title": "Enzyme-inducing antiseizure medications with warfarin",
+      "searchTerms": [
+        "warfarin Tegretol",
+        "INR drop phenytoin"
+      ],
+      "objectDrugs": [
+        "warfarin"
+      ],
+      "precipitantDrugs": [
+        "carbamazepine",
+        "phenobarbital",
+        "phenytoin"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "↓ warfarin effect (lower INR)"
+      ],
+      "mechanism": [
+        "CYP2C9, 1A2 and/or 3A4 induction"
+      ],
+      "management": [
+        "Monitor INR closely when starting, stopping or changing the dose of the inducer"
+      ],
+      "population": [],
+      "pearls": [],
+      "verify": [],
+      "relatedIds": [
+        "vascular-antithrombotics:warfarin"
+      ],
+      "sources": [
+        "Warfarin sodium tablets US prescribing information (RemedyRepack); revised 10/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "carbapenems-valproate",
+      "title": "Carbapenems with valproate",
+      "searchTerms": [
+        "meropenem Depakote",
+        "valproate level drop",
+        "breakthrough seizures meropenem"
+      ],
+      "objectDrugs": [
+        "valproate"
+      ],
+      "precipitantDrugs": [
+        "meropenem",
+        "imipenem",
+        "ertapenem"
+      ],
+      "tier": "HIGH_RISK",
+      "effect": [
+        "Clinically significant ↓ valproate level → loss of seizure control"
+      ],
+      "mechanism": [
+        "Not well understood (label)"
+      ],
+      "management": [
+        "Monitor valproate levels frequently after starting a carbapenem",
+        "If levels drop significantly or seizures worsen, change the antibiotic or the antiseizure medication"
+      ],
+      "population": [],
+      "pearls": [],
+      "verify": [],
+      "relatedIds": [
+        "seizure-threshold:beta-lactams-carbapenems"
+      ],
+      "sources": [
+        "Valproic acid oral solution US prescribing information. Atlantic Biologicals; revised 5/2024 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "tmp-smx-phenytoin",
+      "title": "Trimethoprim-sulfamethoxazole with phenytoin",
+      "searchTerms": [
+        "Bactrim Dilantin",
+        "phenytoin toxicity"
+      ],
+      "objectDrugs": [
+        "phenytoin"
+      ],
+      "precipitantDrugs": [
+        "trimethoprim-sulfamethoxazole"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "↑ risk of phenytoin toxicity"
+      ],
+      "mechanism": [],
+      "management": [
+        "Avoid (Beers 2023, adults ≥65)"
+      ],
+      "population": [
+        "Beers 2023: adults ≥65"
+      ],
+      "pearls": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "gabapentinoids-opioids",
+      "title": "Gabapentin or pregabalin with opioids",
+      "searchTerms": [
+        "Neurontin opioid",
+        "Lyrica opioid",
+        "respiratory depression"
+      ],
+      "objectDrugs": [
+        "opioids"
+      ],
+      "precipitantDrugs": [
+        "gabapentin",
+        "pregabalin"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "↑ severe sedation-related adverse events, including respiratory depression and death"
+      ],
+      "mechanism": [],
+      "management": [
+        "Avoid, except when transitioning from opioids to a gabapentinoid or using a gabapentinoid to reduce opioid dose — then use caution"
+      ],
+      "population": [
+        "Beers 2023: adults ≥65"
+      ],
+      "pearls": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "cns-polypharmacy-falls",
+      "title": "Three or more CNS-active drugs including antiseizure medications",
+      "searchTerms": [
+        "falls",
+        "polypharmacy",
+        "fracture"
+      ],
+      "objectDrugs": [
+        "antiseizure medications (including gabapentinoids)"
+      ],
+      "precipitantDrugs": [
+        "antidepressants",
+        "antipsychotics",
+        "benzodiazepines",
+        "Z-drugs",
+        "opioids",
+        "skeletal muscle relaxants"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "↑ falls and fractures with ≥3 CNS-active drugs"
+      ],
+      "mechanism": [],
+      "management": [
+        "Avoid ≥3 together; minimize the number of CNS-active drugs"
+      ],
+      "population": [
+        "Beers 2023: adults ≥65"
+      ],
+      "pearls": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
+      ],
+      "lastReviewed": "2026-11-05"
+    }
+  ]
+}

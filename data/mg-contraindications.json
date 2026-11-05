@@ -1,0 +1,712 @@
+{
+  "title": "Myasthenia gravis: drugs to avoid or use with caution",
+  "condition": "Myasthenia gravis",
+  "scopeNotes": [],
+  "version": "2.3.2",
+  "schemaVersion": "3.0.0",
+  "lastUpdated": "2026-11-05",
+  "entries": [
+    {
+      "searchTerms": [
+        "Botox",
+        "botulinum",
+        "spasticity injection",
+        "cosmetic"
+      ],
+      "brands": [
+        "Botox",
+        "Dysport",
+        "Xeomin",
+        "Myobloc",
+        "Daxxify"
+      ],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [
+        "Blocks presynaptic ACh release"
+      ],
+      "pearls": [
+        "Sheikh 2021: may be offered cautiously in mild/stable MG with blepharospasm or cervical dystonia — slow titration, close monitoring"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "botulinum-toxin",
+      "title": "Botulinum toxins",
+      "drugClass": "Neurotoxin",
+      "generics": [
+        "onabotulinumtoxinA",
+        "abobotulinumtoxinA",
+        "incobotulinumtoxinA",
+        "rimabotulinumtoxinB",
+        "daxibotulinumtoxinA"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "Distant weakness mimicking MG; can unmask subclinical MG or worsen controlled MG — including after cosmetic doses"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "penicillamine",
+        "Wilson disease"
+      ],
+      "brands": [
+        "Cuprimine",
+        "Depen"
+      ],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [
+        "Immune — no direct effect on neuromuscular transmission"
+      ],
+      "pearls": [
+        "Onset typically ~6–7 months after starting (range 1 month–8 years)",
+        "~70% remit 6–10 months after stopping",
+        "AASLD 2022 lists MG among very late penicillamine adverse effects"
+      ],
+      "saferAlternatives": [
+        "Wilson disease: trientine — chelator alternative, may be better tolerated (AASLD 2022, statement 16); zinc for asymptomatic or maintenance therapy (statements 17–18) — hepatology decision"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "d-penicillamine",
+      "title": "D-penicillamine",
+      "drugClass": "Chelating agent",
+      "generics": [
+        "penicillamine"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "Induces de novo autoimmune MG in ~1–7% of treated patients — usually mild/ocular, ~80% AChR-Ab positive"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537",
+        "Schilsky ML, et al. A multidisciplinary approach to the diagnosis and management of Wilson disease: executive summary of the 2022 practice guidance on Wilson disease from the AASLD. Hepatology 2023;77:1428-1455. doi:10.1002/hep.32805"
+      ]
+    },
+    {
+      "searchTerms": [
+        "cipro",
+        "levaquin",
+        "quinolone",
+        "UTI",
+        "pneumonia"
+      ],
+      "brands": [
+        "Cipro",
+        "Levaquin",
+        "Avelox"
+      ],
+      "fdaBoxedWarning": true,
+      "usMarketed": true,
+      "mechanism": [
+        "Reduces miniature endplate potential/current (pre- or postsynaptic)"
+      ],
+      "pearls": [
+        "MGFA: use cautiously, if at all",
+        "Common ED/hospitalist empiric choice for UTI and CAP — check the MAR on every MG consult"
+      ],
+      "saferAlternatives": [
+        "Penicillins — generally considered safe; rare case reports (ampicillin, amoxicillin)",
+        "Cephalosporins — no exacerbations reported",
+        "TMP-SMX, clindamycin, nitrofurantoin — no exacerbations reported",
+        "Tetracyclines (e.g., doxycycline) — no clinical reports of worsening"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:myasthenic-crisis"
+      ],
+      "lastReviewed": "2026-11-05",
+      "id": "fluoroquinolones",
+      "title": "Fluoroquinolones",
+      "drugClass": "Antibiotic",
+      "generics": [
+        "ciprofloxacin",
+        "levofloxacin",
+        "moxifloxacin",
+        "ofloxacin"
+      ],
+      "tier": "HIGH_RISK",
+      "effect": [
+        "Worsening reported 15 min to 5 days after starting; one series averaged a 10-point rise in QMG score"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "azithromycin",
+        "Z-pack",
+        "atypical pneumonia",
+        "CAP"
+      ],
+      "brands": [
+        "Zithromax",
+        "Biaxin"
+      ],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [
+        "Direct effect on neuromuscular transmission"
+      ],
+      "pearls": [
+        "MGFA: use cautiously, if at all",
+        "Sheikh 2021: avoid if another option exists"
+      ],
+      "saferAlternatives": [
+        "Penicillins — generally considered safe; rare case reports (ampicillin, amoxicillin)",
+        "Cephalosporins — no exacerbations reported",
+        "TMP-SMX, clindamycin, nitrofurantoin — no exacerbations reported",
+        "Tetracyclines (e.g., doxycycline) — no clinical reports of worsening"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:myasthenic-crisis"
+      ],
+      "lastReviewed": "2026-11-05",
+      "id": "macrolides",
+      "title": "Macrolides",
+      "drugClass": "Antibiotic",
+      "generics": [
+        "azithromycin",
+        "clarithromycin",
+        "erythromycin"
+      ],
+      "tier": "HIGH_RISK",
+      "effect": [
+        "Azithromycin was the most common drug linked to deterioration in a series of 212 MG exacerbations"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "gentamicin",
+        "tobramycin",
+        "gram-negative"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [],
+      "pearls": [
+        "MGFA: use cautiously, only if no alternative",
+        "Sheikh 2021: tobramycin suggested as least likely to cause neuromuscular blockade if one is required"
+      ],
+      "saferAlternatives": [
+        "Cephalosporins — no exacerbations reported",
+        "TMP-SMX — no exacerbations reported"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:myasthenic-crisis"
+      ],
+      "lastReviewed": "2026-11-05",
+      "id": "aminoglycosides",
+      "title": "Aminoglycosides",
+      "drugClass": "Antibiotic",
+      "generics": [
+        "gentamicin",
+        "tobramycin",
+        "amikacin",
+        "neomycin",
+        "streptomycin"
+      ],
+      "tier": "HIGH_RISK",
+      "effect": [
+        "Exacerbation and MG-like weakness even in non-MG patients — worst with high doses, renal failure, or concurrent neuromuscular blockers"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "mag sulfate",
+        "magnesium repletion",
+        "preeclampsia",
+        "eclampsia",
+        "milk of magnesia",
+        "magnesium citrate",
+        "magnesium oxide"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [
+        "Reduces presynaptic ACh release and postsynaptic sensitivity"
+      ],
+      "pearls": [
+        "MGFA: IV magnesium potentially dangerous — only if absolutely necessary, then observe",
+        "ICG 2016 and Gilhus 2024: magnesium sulfate not recommended for eclampsia/preeclampsia in MG; ACOG 2020 lists MG as a contraindication to MgSO4",
+        "Watch automatic electrolyte-replacement protocols",
+        "Oral magnesium (milk of magnesia, citrate, oxide) is not addressed by ICG 2016, MGFA or Sheikh 2021 — this caution is for IV magnesium and repletion"
+      ],
+      "saferAlternatives": [
+        "Eclampsia seizure control in MG: barbiturates or phenytoin (ICG 2016); benzodiazepines or phenytoin (ACOG 2020) — with obstetrics"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:myasthenic-crisis"
+      ],
+      "lastReviewed": "2026-11-05",
+      "id": "magnesium",
+      "title": "Magnesium (IV and repletion)",
+      "drugClass": "Electrolyte",
+      "generics": [
+        "magnesium sulfate"
+      ],
+      "tier": "HIGH_RISK",
+      "effect": [
+        "Crisis reported after magnesium for preeclampsia and after inpatient repletion"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537",
+        "Gilhus NE, et al. Generalized myasthenia gravis with acetylcholine receptor antibodies: a guidance for treatment. Eur J Neurol 2024;31:e16229. doi:10.1111/ene.16229",
+        "American College of Obstetricians and Gynecologists. Practice Bulletin No. 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135(6):e237-e260"
+      ]
+    },
+    {
+      "searchTerms": [
+        "ICI",
+        "immunotherapy",
+        "irAE",
+        "pembrolizumab",
+        "triple M"
+      ],
+      "brands": [
+        "Keytruda",
+        "Opdivo",
+        "Yervoy",
+        "Tecentriq",
+        "Bavencio",
+        "Imfinzi"
+      ],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [
+        "Immune — loss of tolerance"
+      ],
+      "pearls": [
+        "Onset usually within ~6 weeks (range 2–12) of starting; risk may be higher with combinations",
+        "Look for myositis/myocarditis overlap — worse prognosis (Sheikh 2021)",
+        "Decisions on continuing ICI belong to oncology + neurology"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:myasthenic-crisis"
+      ],
+      "lastReviewed": "2026-11-05",
+      "id": "immune-checkpoint-inhibitors",
+      "title": "Immune checkpoint inhibitors",
+      "drugClass": "Cancer immunotherapy",
+      "generics": [
+        "pembrolizumab",
+        "nivolumab",
+        "ipilimumab",
+        "atezolizumab",
+        "avelumab",
+        "durvalumab"
+      ],
+      "tier": "HIGH_RISK",
+      "effect": [
+        "De novo MG (~0.24% of treated patients) or flare of known MG (~85% in one series, half to MGFA class IV–V)",
+        "Respiratory failure ~45%, mortality 25–40% in one series; myositis overlap up to 40%, myocarditis rare but potentially fatal"
+      ],
+      "sources": [
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "procainamide",
+        "quinidine",
+        "antiarrhythmic"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [],
+      "pearls": [
+        "MGFA: procainamide — use with caution",
+        "Sheikh 2021: avoid class Ia agents or use with extreme caution",
+        "Propafenone (Ic) has also worsened MG within hours"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "class-ia-antiarrhythmics",
+      "title": "Class Ia antiarrhythmics",
+      "drugClass": "Antiarrhythmic",
+      "generics": [
+        "procainamide",
+        "quinidine"
+      ],
+      "tier": "HIGH_RISK",
+      "effect": [
+        "Procainamide: respiratory failure in MG; MG-like weakness in non-MG patients with renal failure"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "quinine",
+        "leg cramps",
+        "Plaquenil",
+        "lupus"
+      ],
+      "brands": [
+        "Qualaquin",
+        "Plaquenil"
+      ],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [
+        "Pre- and postsynaptic effects"
+      ],
+      "pearls": [
+        "MGFA: chloroquine and hydroxychloroquine — use with caution; quinine use restricted in the US to malaria",
+        "Sheikh 2021: quinine and chloroquine listed among drugs to avoid"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "quinine-antimalarials",
+      "title": "Quinine, chloroquine, hydroxychloroquine",
+      "drugClass": "Quinoline antimalarials",
+      "generics": [
+        "quinine",
+        "chloroquine",
+        "hydroxychloroquine"
+      ],
+      "tier": "HIGH_RISK",
+      "effect": [
+        "Worsening of MG; chloroquine and hydroxychloroquine can also induce MG"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "metoprolol",
+        "propranolol",
+        "labetalol",
+        "rate control",
+        "timolol",
+        "glaucoma drops"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [],
+      "pearls": [
+        "MGFA: use cautiously",
+        "Controlled studies of IV/oral propranolol showed no significant change in strength or RNS decrement (Sheikh 2021)",
+        "Well-controlled MG: usually acceptable at the lowest effective dose with monitoring"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "beta-blockers",
+      "title": "Beta-blockers",
+      "drugClass": "Cardiovascular",
+      "generics": [
+        "metoprolol",
+        "propranolol",
+        "atenolol",
+        "labetalol",
+        "carvedilol",
+        "esmolol",
+        "timolol (ophthalmic)"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "Transient worsening reported",
+        "Ophthalmic timolol: rarely increases weakness in MG — the label warns despite topical use"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537",
+        "Timolol maleate ophthalmic solution 0.25% and 0.5%, US prescribing information. Bausch & Lomb; revised 3/2025"
+      ]
+    },
+    {
+      "searchTerms": [
+        "nifedipine",
+        "verapamil",
+        "diltiazem",
+        "amlodipine"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [],
+      "pearls": [
+        "Not in ICG 2016 Table e-2 or the MGFA list — case reports only (Sheikh 2021)",
+        "Amlodipine and diltiazem are not addressed by any source on file",
+        "Controlled verapamil studies showed no significant change",
+        "Well-controlled MG: lowest effective dose with monitoring (Sheikh 2021)"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "calcium-channel-blockers",
+      "title": "Calcium channel blockers",
+      "drugClass": "Cardiovascular",
+      "generics": [
+        "nifedipine",
+        "felodipine",
+        "verapamil"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "Felodipine and nifedipine: exacerbation with positive dechallenge/rechallenge",
+        "Verapamil/nifedipine start preceded respiratory failure in severe gMG (confounded)"
+      ],
+      "sources": [
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "atorvastatin",
+        "rosuvastatin",
+        "cholesterol",
+        "secondary prevention"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [],
+      "pearls": [
+        "MGFA: use cautiously if indicated, at the lowest dose needed",
+        "Generally safe; occasionally worsens MG and then needs stopping (Sheikh 2021)"
+      ],
+      "saferAlternatives": [
+        "Bile acid sequestrants, niacin, PCSK9 inhibitors — not reported to worsen MG (Sheikh 2021)",
+        "Ezetimibe: one case report of worsening"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "statins",
+      "title": "Statins",
+      "drugClass": "Lipid-lowering",
+      "generics": [
+        "atorvastatin",
+        "rosuvastatin",
+        "simvastatin",
+        "pravastatin"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "Worsening in ~11% of statin-exposed MG patients in one series (1–16 weeks after start); rarely de novo MG"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "CTA",
+        "contrast",
+        "code stroke"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [],
+      "pearls": [
+        "MGFA: use cautiously and observe for worsening"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:myasthenic-crisis"
+      ],
+      "lastReviewed": "2026-11-05",
+      "id": "iodinated-contrast",
+      "title": "Iodinated contrast",
+      "drugClass": "Radiologic contrast",
+      "generics": [
+        "iodinated contrast media"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "Older reports of increased weakness; modern agents appear safer"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023"
+      ]
+    },
+    {
+      "searchTerms": [
+        "prednisone",
+        "steroid dip",
+        "methylprednisolone"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [],
+      "pearls": [
+        "Standard MG treatment — monitor closely when starting",
+        "Pair high-dose starts with IVIG/PLEX when rapid response is needed (Gilhus 2024)"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:myasthenic-crisis"
+      ],
+      "lastReviewed": "2026-11-05",
+      "id": "corticosteroids",
+      "title": "Corticosteroids (initiation)",
+      "drugClass": "Immunosuppressant",
+      "generics": [
+        "prednisone",
+        "methylprednisolone",
+        "dexamethasone"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "Transient worsening within the first ~2 weeks of starting"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Gilhus NE, et al. Generalized myasthenia gravis with acetylcholine receptor antibodies: a guidance for treatment. Eur J Neurol 2024;31:e16229. doi:10.1111/ene.16229"
+      ]
+    },
+    {
+      "searchTerms": [
+        "lithium",
+        "bipolar"
+      ],
+      "brands": [],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [
+        "Fewer postsynaptic AChRs; may reduce presynaptic ACh synthesis/release"
+      ],
+      "pearls": [],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "lithium",
+      "title": "Lithium",
+      "drugClass": "Mood stabilizer",
+      "generics": [
+        "lithium"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "Myasthenic symptoms soon after starting, resolving on withdrawal and recurring on rechallenge; may unmask AChR+ MG"
+      ],
+      "sources": [
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    },
+    {
+      "searchTerms": [
+        "desferrioxamine",
+        "iron overload"
+      ],
+      "brands": [
+        "Desferal"
+      ],
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "mechanism": [],
+      "pearls": [],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "desferrioxamine",
+      "title": "Deferoxamine",
+      "drugClass": "Chelating agent",
+      "generics": [
+        "deferoxamine"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "May worsen MG"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023"
+      ]
+    },
+    {
+      "searchTerms": [
+        "Ketek"
+      ],
+      "brands": [
+        "Ketek"
+      ],
+      "fdaBoxedWarning": true,
+      "usMarketed": false,
+      "mechanism": [],
+      "pearls": [
+        "No longer marketed in the US — kept for outside-hospital or international medication lists"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [],
+      "lastReviewed": "2026-11-05",
+      "id": "telithromycin",
+      "title": "Telithromycin",
+      "drugClass": "Ketolide antibiotic",
+      "generics": [
+        "telithromycin"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "Severe exacerbation from 1 hour to days after the first dose"
+      ],
+      "sources": [
+        "Sanders DB, et al. International consensus guidance for management of myasthenia gravis. Neurology 2016;87:419-425, supplemental Table e-2: Drugs to avoid or use with caution in MG",
+        "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
+        "Sheikh S, Alvi U, Soliven B, Rezania K. Drugs that induce or cause deterioration of myasthenia gravis: an update. J Clin Med 2021;10(7):1537. doi:10.3390/jcm10071537"
+      ]
+    }
+  ]
+}

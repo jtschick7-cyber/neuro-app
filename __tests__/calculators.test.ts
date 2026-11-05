@@ -1,217 +1,157 @@
-import { describe, expect, it } from 'vitest';
-import {
-  allAnticonvulsantLoads,
-  calculateLedd,
-  correctCsfProtein,
-  fosphenytoinLoad,
-  hypertonicSalineBolus,
-  lacosamideLoad,
-  levetiracetamLoad,
-  mannitolDose,
-  valproateLoad,
-} from '../src/lib/calculators';
+import { describe, it, expect } from "vitest";
+import * as C from "../src/lib/calculators";
+import manifest from "../data/calculators.manifest.json";
 
-describe('weight-based anticonvulsant loads', () => {
-  it('levetiracetam 60 mg/kg', () => {
-    const r = levetiracetamLoad(70);
-    expect(r.doseMg).toBe(4200);
-    expect(r.capApplied).toBe(false);
-  });
-
-  it('levetiracetam caps at 4500 mg', () => {
-    const r = levetiracetamLoad(100);
-    expect(r.doseMg).toBe(4500);
-    expect(r.capApplied).toBe(true);
-    expect(r.rawDoseMg).toBe(6000);
-  });
-
-  it('levetiracetam at exactly the cap weight (75 kg) is not flagged as capped', () => {
-    const r = levetiracetamLoad(75);
-    expect(r.doseMg).toBe(4500);
-    expect(r.capApplied).toBe(false);
-  });
-
-  it('valproate 40 mg/kg, capped at 3000 mg', () => {
-    expect(valproateLoad(60).doseMg).toBe(2400);
-    expect(valproateLoad(75).doseMg).toBe(3000);
-    const heavy = valproateLoad(120);
-    expect(heavy.doseMg).toBe(3000);
-    expect(heavy.capApplied).toBe(true);
-  });
-
-  it('fosphenytoin 20 mg PE/kg, capped at 1500 mg PE', () => {
-    const r = fosphenytoinLoad(70);
-    expect(r.doseMg).toBe(1400);
-    expect(r.unit).toBe('mg PE');
-    const heavy = fosphenytoinLoad(110);
-    expect(heavy.doseMg).toBe(1500);
-    expect(heavy.capApplied).toBe(true);
-  });
-
-  it('rounds to the nearest 10 mg', () => {
-    expect(levetiracetamLoad(72.3).doseMg).toBe(4340); // 4338 -> 4340
-    expect(valproateLoad(63.4).doseMg).toBe(2540); // 2536 -> 2540
-    expect(fosphenytoinLoad(63.7).doseMg).toBe(1270); // 1274 -> 1270
-  });
-
-  it('lacosamide is a fixed 400 mg for typical and large adults', () => {
-    expect(lacosamideLoad(70).doseMg).toBe(400);
-    expect(lacosamideLoad(150).doseMg).toBe(400);
-    expect(lacosamideLoad(250).doseMg).toBe(400);
-  });
-
-  it('lacosamide uses 5 mg/kg at low extremes of weight and never exceeds 400 mg', () => {
-    const r = lacosamideLoad(40);
-    expect(r.doseMg).toBe(200);
-    expect(r.basis).toContain('5 mg/kg');
-    expect(lacosamideLoad(49.9).doseMg).toBeLessThan(400);
-    expect(lacosamideLoad(50).doseMg).toBe(400);
-  });
-
-  it('allAnticonvulsantLoads returns all four agents in order', () => {
-    const r = allAnticonvulsantLoads(80);
-    expect(r.map((x) => x.id)).toEqual(['levetiracetam', 'valproate', 'fosphenytoin', 'lacosamide']);
-    expect(r.map((x) => x.doseMg)).toEqual([4500, 3000, 1500, 400]);
-  });
-
-  it.each([0, -5, NaN, Infinity])('rejects invalid weight %s', (w) => {
-    expect(() => levetiracetamLoad(w)).toThrow(RangeError);
-    expect(() => valproateLoad(w)).toThrow(RangeError);
-    expect(() => fosphenytoinLoad(w)).toThrow(RangeError);
-    expect(() => lacosamideLoad(w)).toThrow(RangeError);
-    expect(() => hypertonicSalineBolus(w)).toThrow(RangeError);
-    expect(() => mannitolDose({ weightKg: w })).toThrow(RangeError);
+describe("levetiracetam-load", () => {
+  it.each([
+    [50, 3000, false], [70, 4200, false], [75, 4500, false], [76, 4500, true], [120, 4500, true],
+  ])("%d kg → %d mg (capped %s)", (kg, mg, cap) => {
+    const r = C.levetiracetamLoad(kg);
+    expect(r.value).toBe(mg); expect(r.capped).toBe(cap);
   });
 });
 
-describe('3% hypertonic saline', () => {
-  it('2 mL/kg over 20 min', () => {
-    expect(hypertonicSalineBolus(70)).toEqual({ volumeMl: 140, infusionMinutes: 20, rateMlPerHr: 420 });
-  });
-
-  it('rounds volume to whole mL', () => {
-    expect(hypertonicSalineBolus(72.4).volumeMl).toBe(145);
-  });
+describe("valproate-load", () => {
+  it.each([[40, 1600, false], [61, 2450, false], [75, 3000, false], [76, 3000, true], [100, 3000, true]])(
+    "%d kg → %d mg (capped %s)", (kg, mg, cap) => { const r = C.valproateLoad(kg); expect(r.value).toBe(mg); expect(r.capped).toBe(cap); });
 });
 
-describe('mannitol 20%', () => {
-  it('computes 0.5–1.0 g/kg and the 20% volume (0.2 g/mL)', () => {
-    const r = mannitolDose({ weightKg: 80 });
-    expect(r.doseLowG).toBe(40);
-    expect(r.doseHighG).toBe(80);
-    expect(r.volumeLowMl).toBe(200);
-    expect(r.volumeHighMl).toBe(400);
-    expect(r.contraindicated).toBe(false);
-  });
-
-  it('is contraindicated when osmolality > 320', () => {
-    const r = mannitolDose({ weightKg: 80, serumOsmolality: 321 });
-    expect(r.contraindicated).toBe(true);
-    expect(r.contraindicationReasons).toHaveLength(1);
-  });
-
-  it('osmolality of exactly 320 is not contraindicated', () => {
-    expect(mannitolDose({ weightKg: 80, serumOsmolality: 320 }).contraindicated).toBe(false);
-  });
-
-  it('is contraindicated with severe AKI, and reports both reasons', () => {
-    expect(mannitolDose({ weightKg: 80, severeAki: true }).contraindicated).toBe(true);
-    const both = mannitolDose({ weightKg: 80, serumOsmolality: 335, severeAki: true });
-    expect(both.contraindicationReasons).toHaveLength(2);
-  });
-
-  it('rounds g doses to 0.1', () => {
-    expect(mannitolDose({ weightKg: 67.3 }).doseLowG).toBe(33.7); // 33.65 -> 33.7
-  });
-
-  it('rejects negative osmolality', () => {
-    expect(() => mannitolDose({ weightKg: 70, serumOsmolality: -1 })).toThrow(RangeError);
-  });
+describe("fosphenytoin-load", () => {
+  it.each([[50, 1000, 6.7], [62, 1250, 8.3], [75, 1500, 10], [80, 1500, 10], [43, 850, 5.7]])(
+    "%d kg → %d mg PE, ≥%d min", (kg, mg, min) => { const r = C.fosphenytoinLoad(kg); expect(r.value).toBe(mg); expect(r.parts?.minInfusionMinutes).toBe(min); });
 });
 
-describe('CSF traumatic tap correction', () => {
-  it('exact formula', () => {
-    // 100 - (5000 / 5,000,000) * 7000 = 100 - 7 = 93
-    const r = correctCsfProtein({
-      measuredProteinMgDl: 100,
-      csfRbcPerUl: 5000,
-      bloodRbcPerUl: 5_000_000,
-      bloodProteinMgDl: 7000,
+describe("lacosamide-load", () => {
+  it.each([[undefined, 0], [80, 0], [50, 0], [49.9, 1], [40, 1]])(
+    "weight %s → fixed 200–400 mg, %d warnings", (kg, nWarn) => {
+      const r = C.lacosamideLoad(kg as number | undefined);
+      expect(r.range).toEqual([200, 400]); expect(r.value).toBeNull(); expect(r.warnings.length).toBe(nWarn);
     });
-    expect(r.method).toBe('exact');
-    expect(r.correctedProteinMgDl).toBe(93);
-    expect(r.subtractedMgDl).toBe(7);
-  });
+});
 
-  it('approximation: 1.1 mg/dL per 1000 RBC', () => {
-    const r = correctCsfProtein({ measuredProteinMgDl: 80, csfRbcPerUl: 10_000 });
-    expect(r.method).toBe('approximation');
-    expect(r.correctedProteinMgDl).toBe(69);
+describe("hypertonic-saline-bolus (ICP, institutional protocol)", () => {
+  it.each([
+    ["3%", {}, 250, 128.3, false],
+    ["23.4%", {}, 30, 120.1, false],
+    ["3%", { weightKg: 150 }, 250, 128.3, false],
+    ["3%", { weightKg: 150, protocol: { concentration: "3%", mlPerKg: 2, maxMl: 250 } }, 250, 128.3, true],
+    ["3%", { weightKg: 66, protocol: { concentration: "3%", mlPerKg: 2, maxMl: 500 } }, 130, 66.7, false],
+  ] as const)("%s %j → %d mL, %d mEq", (conc, opts, ml, meq, cap) => {
+    const r = C.hypertonicSalineIcp(conc, opts as any);
+    expect(r.value).toBe(ml); expect(r.parts?.naMeq).toBe(meq); expect(r.capped).toBe(cap);
   });
+  it("23.4% warns central line", () => expect(C.hypertonicSalineIcp("23.4%").warnings.join()).toMatch(/central/));
+  it("throws when weight-based protocol has no weight", () => expect(() => C.hypertonicSalineIcp("3%", { protocol: { concentration: "3%", mlPerKg: 2 } })).toThrow());
+});
 
-  it('approximation scales fractionally and rounds to 0.1', () => {
-    const r = correctCsfProtein({ measuredProteinMgDl: 50, csfRbcPerUl: 2500 });
-    expect(r.correctedProteinMgDl).toBe(47.3); // 50 - 2.75 = 47.25 -> 47.3
-  });
+describe("mannitol-dose", () => {
+  it.each([[70, [35, 70]], [80, [40, 80]], [53, [25, 55]], [100, [50, 100]], [47, [25, 45]]])(
+    "%d kg → %j g", (kg, range) => { const r = C.mannitolDose(kg); expect(r.range).toEqual(range); expect(r.parts?.ml20High).toBe((range as number[])[1] * 5); });
+});
 
-  it('falls back to approximation if only one blood value is given', () => {
-    const r = correctCsfProtein({ measuredProteinMgDl: 80, csfRbcPerUl: 1000, bloodRbcPerUl: 5_000_000 });
-    expect(r.method).toBe('approximation');
-  });
-
-  it('clamps negative results to zero and flags it', () => {
-    const r = correctCsfProtein({ measuredProteinMgDl: 10, csfRbcPerUl: 100_000 });
-    expect(r.correctedProteinMgDl).toBe(0);
-    expect(r.clampedToZero).toBe(true);
-  });
-
-  it('zero RBC leaves protein unchanged', () => {
-    const r = correctCsfProtein({ measuredProteinMgDl: 45, csfRbcPerUl: 0 });
-    expect(r.correctedProteinMgDl).toBe(45);
-    expect(r.clampedToZero).toBe(false);
-  });
-
-  it('rejects invalid inputs', () => {
-    expect(() => correctCsfProtein({ measuredProteinMgDl: -1, csfRbcPerUl: 0 })).toThrow(RangeError);
-    expect(() =>
-      correctCsfProtein({ measuredProteinMgDl: 50, csfRbcPerUl: 100, bloodRbcPerUl: 0, bloodProteinMgDl: 7000 }),
-    ).toThrow(RangeError);
+describe("osmolar gap", () => {
+  it.each([
+    [310, 140, 90, 14, 20, false], [330, 145, 108, 28, 24, false], [360, 140, 180, 28, 60, true], [290, 140, 90, 14, 0, false], [340, 150, 126, 14, 28, false],
+  ])("osm %d Na %d glu %d BUN %d → gap %d", (osm, na, glu, bun, gap, warn) => {
+    const r = C.osmolarGap(osm, na, glu, bun);
+    expect(r.value).toBe(gap); expect(r.warnings.length > 0).toBe(warn);
   });
 });
 
-describe('LEDD converter', () => {
-  it('applies each conversion factor', () => {
-    expect(calculateLedd({ carbidopaLevodopaIR: 300 }).totalLedd).toBe(300);
-    expect(calculateLedd({ carbidopaLevodopaCR: 400 }).totalLedd).toBe(300);
-    expect(calculateLedd({ ropinirole: 6 }).totalLedd).toBe(120);
-    expect(calculateLedd({ pramipexole: 1.5 }).totalLedd).toBe(150);
-    expect(calculateLedd({ rotigotine: 6 }).totalLedd).toBe(180);
-    expect(calculateLedd({ selegiline: 10 }).totalLedd).toBe(1000);
-    expect(calculateLedd({ rasagiline: 1 }).totalLedd).toBe(100);
-  });
+describe("ledd", () => {
+  it.each([
+    [[{ drug: "levodopa-ir", mgPerDay: 300 }], {}, 300],
+    [[{ drug: "levodopa-cr", mgPerDay: 400 }, { drug: "levodopa-er-ipx066", mgPerDay: 390 }], {}, 495],
+    [[{ drug: "selegiline-oral", mgPerDay: 10 }, { drug: "rotigotine", mgPerDay: 4 }], {}, 221.2],
+    [[{ drug: "levodopa-ir", mgPerDay: 400 }], { comt: { drug: "entacapone" } }, 532],
+    [[{ drug: "levodopa-ir", mgPerDay: 300 }, { drug: "levodopa-cr", mgPerDay: 200 }], { comt: { drug: "opicapone" } }, 675],
+    [[{ drug: "levodopa-ir", mgPerDay: 300 }, { drug: "safinamide", mgPerDay: 100 }], {}, 450],
+    [[{ drug: "levodopa-ir", mgPerDay: 300 }], { comt: { drug: "entacapone", coveredLevodopaLed: 300 }, istradefylline: true }, 478.8],
+    [[{ drug: "pramipexole-base", mgPerDay: 1.05 }, { drug: "ropinirole", mgPerDay: 9 }], {}, 330],
+  ] as const)("%j %j → %d", (items, opts, total) => expect(C.ledd(items as any, opts as any).value).toBe(total));
+});
 
-  it('sums a combined regimen and reports a breakdown', () => {
-    const r = calculateLedd({ carbidopaLevodopaIR: 600, carbidopaLevodopaCR: 200, ropinirole: 3, rasagiline: 1 });
-    // 600 + 150 + 60 + 100
-    expect(r.totalLedd).toBe(910);
-    expect(r.breakdown.map((b) => b.id)).toEqual([
-      'carbidopaLevodopaIR',
-      'carbidopaLevodopaCR',
-      'ropinirole',
-      'rasagiline',
-    ]);
-  });
+describe("cockcroft-gault", () => {
+  it.each([[60, 70, 1.0, false, 78], [60, 70, 1.0, true, 66], [80, 50, 2.0, false, 21], [40, 100, 0.8, false, 174], [90, 45, 1.5, true, 18]])(
+    "age %d wt %d SCr %d female %s → %d", (age, wt, scr, f, out) => expect(C.cockcroftGault(age, wt, scr, f).value).toBe(out));
+});
 
-  it('ignores missing and zero entries; empty input is 0', () => {
-    expect(calculateLedd({}).totalLedd).toBe(0);
-    expect(calculateLedd({ ropinirole: 0 }).breakdown).toHaveLength(0);
-  });
+describe("ich-score", () => {
+  it.each([
+    [{ gcs: 15, volumeMl: 10, ivh: false, infratentorial: false, ageY: 60 }, 0, "0%"],
+    [{ gcs: 12, volumeMl: 30, ivh: false, infratentorial: false, ageY: 60 }, 2, "26%"],
+    [{ gcs: 4, volumeMl: 50, ivh: true, infratentorial: true, ageY: 85 }, 6, "no patients in derivation cohort"],
+    [{ gcs: 13, volumeMl: 29.9, ivh: true, infratentorial: false, ageY: 80 }, 2, "26%"],
+    [{ gcs: 4, volumeMl: 35, ivh: false, infratentorial: false, ageY: 79 }, 3, "72%"],
+  ])("%j → %d (%s)", (i, s, m) => { const r = C.ichScore(i); expect(r.value).toBe(s); expect(r.parts?.mortality30d).toBe(m); });
+});
 
-  it('rounds total to whole mg', () => {
-    expect(calculateLedd({ carbidopaLevodopaCR: 250 }).totalLedd).toBe(188); // 187.5 -> 188
-  });
+describe("abcd2", () => {
+  it.each([
+    [{ ageY: 65, bpHigh: true, weakness: true, speechOnly: false, durationMin: 90, diabetes: true }, 7],
+    [{ ageY: 50, bpHigh: false, weakness: false, speechOnly: false, durationMin: 5, diabetes: false }, 0],
+    [{ ageY: 60, bpHigh: false, weakness: false, speechOnly: true, durationMin: 10, diabetes: false }, 3],
+    [{ ageY: 59, bpHigh: true, weakness: true, speechOnly: true, durationMin: 59, diabetes: false }, 4],
+    [{ ageY: 70, bpHigh: true, weakness: false, speechOnly: false, durationMin: 60, diabetes: true }, 5],
+  ])("%j → %d", (i, s) => expect(C.abcd2(i).value).toBe(s));
+});
 
-  it('rejects negative doses', () => {
-    expect(() => calculateLedd({ ropinirole: -1 })).toThrow(RangeError);
+describe("cha2ds2-vasc", () => {
+  it.each([
+    [{ chf: false, htn: false, ageY: 50, diabetes: false, strokeTiaTe: false, vascular: false, female: false }, 0],
+    [{ chf: false, htn: false, ageY: 50, diabetes: false, strokeTiaTe: false, vascular: false, female: true }, 1],
+    [{ chf: false, htn: true, ageY: 70, diabetes: false, strokeTiaTe: true, vascular: false, female: false }, 4],
+    [{ chf: true, htn: true, ageY: 80, diabetes: true, strokeTiaTe: true, vascular: true, female: true }, 9],
+    [{ chf: false, htn: false, ageY: 75, diabetes: true, strokeTiaTe: false, vascular: false, female: false }, 3],
+  ])("%j → %d", (i, s) => expect(C.cha2ds2Vasc(i).value).toBe(s));
+});
+
+describe("has-bled", () => {
+  const base = { htn: false, renal: false, liver: false, stroke: false, bleeding: false, labileInr: false, ageY: 50, drugs: false, alcohol: false };
+  it.each([
+    [base, 0], [{ ...base, ageY: 66 }, 1], [{ ...base, ageY: 65 }, 0], [{ ...base, stroke: true, drugs: true, htn: true }, 3],
+    [{ htn: true, renal: true, liver: true, stroke: true, bleeding: true, labileInr: true, ageY: 70, drugs: true, alcohol: true }, 9],
+  ])("%j → %d", (i, s) => expect(C.hasBled(i).value).toBe(s));
+});
+
+describe("tnk-dose", () => {
+  it.each([[55, false, 15], [60, false, 17.5], [79.9, false, 20], [90, false, 25], [45.6, true, 11.25]])(
+    "%d kg (exact <50: %s) → %d mg", (kg, exact, mg) => expect(C.tnkDose(kg, { exactWeightUnder50: exact }).value).toBe(mg));
+});
+
+describe("alteplase-dose", () => {
+  it.each([[70, 63, 6.3, 56.7], [100, 90, 9, 81], [120, 90, 9, 81], [55, 49.5, 5, 44.5], [83, 74.7, 7.5, 67.2]])(
+    "%d kg → %d mg (bolus %d, infusion %d)", (kg, tot, b, inf) => {
+      const r = C.alteplaseDose(kg); expect(r.value).toBe(tot); expect(r.parts?.bolus).toBe(b); expect(r.parts?.infusion).toBe(inf);
+    });
+});
+
+describe("ivig-dose", () => {
+  it.each([[70, 5, 30, 150], [80, 5, 30, 150], [100, 2, 100, 200], [62, 5, 25, 125], [50, 4, 25, 100]] as const)(
+    "%d kg over %d days → %d g/day", (kg, days, daily, total) => {
+      const r = C.ivigDose(kg, { days }); expect(r.parts?.dailyG).toBe(daily); expect(r.value).toBe(total);
+    });
+});
+
+describe("sodium-correction", () => {
+  it.each([
+    ["ese", undefined, 150], ["salsa-moderate", 70, 140], ["salsa-severe", 70, 280], ["salsa-moderate", 54, 110], ["salsa-severe", 82, 330],
+  ] as const)("%s %s kg → %d mL", (mode, kg, ml) => expect(C.hyponatremiaBolus(mode, kg as number | undefined).value).toBe(ml));
+  it.each([
+    [{ startNa: 115, currentNa: 125, periodNumber: 1, odsRisk: false }, false],
+    [{ startNa: 115, currentNa: 126, periodNumber: 1, odsRisk: false }, true],
+    [{ startNa: 115, currentNa: 124, periodNumber: 1, odsRisk: true }, true],
+    [{ startNa: 125, currentNa: 133, periodNumber: 2, odsRisk: false }, false],
+    [{ startNa: 125, currentNa: 134, periodNumber: 2, odsRisk: false }, true],
+  ])("limit check %j → exceeded %s", (i, over) => expect(C.sodiumCorrectionCheck(i).warnings.length > 0).toBe(over));
+});
+
+describe("input guards", () => {
+  it.each([[0], [-5], [Number.NaN], [400], [Infinity]])("weight %d throws", (w) => expect(() => C.levetiracetamLoad(w)).toThrow(RangeError));
+});
+
+describe("metadata", () => {
+  it("covers every manifest id", () => {
+    for (const id of manifest as string[]) expect(C.CALCULATOR_META[id], id).toBeDefined();
   });
 });

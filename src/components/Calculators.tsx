@@ -1,17 +1,34 @@
-import { useState } from 'react';
-import { AlertTriangle, Droplets, FlaskConical, Pill, Zap } from 'lucide-react';
+import { useState, type ReactNode } from 'react';
+import { AlertTriangle, Droplets, Pill, Zap, FlaskConical } from 'lucide-react';
 import CalculatorCard, { NeedWeight, NumberField } from './CalculatorCard';
 import {
-  LEDD_DRUGS,
-  allAnticonvulsantLoads,
-  calculateLedd,
-  correctCsfProtein,
-  hypertonicSalineBolus,
+  CALCULATOR_META,
+  COMT_FACTORS,
+  LEVODOPA_FACTORS,
+  OTHER_FACTORS,
+  cockcroftGault,
+  fosphenytoinLoad,
+  hypertonicSalineIcp,
+  lacosamideLoad,
+  ledd,
+  levetiracetamLoad,
   mannitolDose,
-  type LeddDrugId,
-  type LeddInput,
+  osmolarGap,
+  valproateLoad,
+  type CalcResult,
+  type LeddDrug,
 } from '../lib/calculators';
-import { parsePositive } from '../lib/patientContext';
+import { BANNERS } from '../content/copy';
+import { parsePositive, type Sex } from '../lib/patientContext';
+
+/** Calculators throw RangeError on out-of-range input; show the message instead of crashing. */
+function safe(fn: () => CalcResult): CalcResult | string {
+  try {
+    return fn();
+  } catch (e) {
+    return e instanceof Error ? e.message : 'Invalid input';
+  }
+}
 
 function parseNonNegative(v: string): number | null {
   if (v.trim() === '') return null;
@@ -19,163 +36,216 @@ function parseNonNegative(v: string): number | null {
   return Number.isFinite(n) && n >= 0 ? n : null;
 }
 
+function Warnings({ items }: { items: string[] }) {
+  if (items.length === 0) return null;
+  return (
+    <ul className="mt-1 space-y-0.5">
+      {items.map((w) => (
+        <li key={w} className="flex gap-1 text-xs text-amber-300">
+          <AlertTriangle size={12} className="mt-0.5 shrink-0" /> {w}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Result({ r, label }: { r: CalcResult | string; label: string }) {
+  if (typeof r === 'string') return <p className="py-2 text-sm text-red-300">{label}: {r}</p>;
+  return (
+    <div className="py-2">
+      <div className="text-sm text-slate-200">{label}</div>
+      <div className="text-lg font-semibold text-sky-300">{r.display}</div>
+      <Warnings items={r.warnings} />
+    </div>
+  );
+}
+
+/** Formula, caps, rounding and sources straight from CALCULATOR_META. */
+function MetaFooter({ ids }: { ids: string[] }) {
+  return (
+    <details className="mt-2 text-xs text-slate-500">
+      <summary className="cursor-pointer">Formula and sources</summary>
+      {ids.map((id) => {
+        const m = CALCULATOR_META[id];
+        return (
+          <div key={id} className="mt-1">
+            <div className="font-semibold text-slate-400">{m.title}</div>
+            <div>Formula: {m.formula}</div>
+            {m.caps.length > 0 && <div>Caps: {m.caps.join('; ')}</div>}
+            <div>Rounding: {m.rounding}</div>
+            <ul className="list-inside list-disc">
+              {m.sources.map((s) => (
+                <li key={s}>{s}</li>
+              ))}
+            </ul>
+          </div>
+        );
+      })}
+    </details>
+  );
+}
+
+function Card(props: { noteId: string; title: string; subtitle: string; icon: ReactNode; metaIds: string[]; children: ReactNode }) {
+  return (
+    <CalculatorCard noteId={props.noteId} title={props.title} subtitle={props.subtitle} icon={props.icon}>
+      {props.children}
+      <MetaFooter ids={props.metaIds} />
+    </CalculatorCard>
+  );
+}
+
 function Anticonvulsants({ weightKg }: { weightKg: number | null }) {
   return (
-    <CalculatorCard noteId="calc-anticonvulsants" title="Anticonvulsant loading" subtitle="Rounded to 10 mg; capped at max single load" icon={<Zap size={18} />}>
+    <Card
+      noteId="calc-anticonvulsants"
+      title="Antiseizure medication loading"
+      subtitle="Status epilepticus second-line loads"
+      icon={<Zap size={18} />}
+      metaIds={['levetiracetam-load', 'valproate-load', 'fosphenytoin-load', 'lacosamide-load']}
+    >
       {weightKg === null ? (
         <NeedWeight />
       ) : (
-        <ul className="divide-y divide-slate-800">
-          {allAnticonvulsantLoads(weightKg).map((r) => (
-            <li key={r.id} className="py-2">
-              <div className="flex items-baseline justify-between gap-2">
-                <span className="text-sm text-slate-200">{r.name}</span>
-                <span className="text-lg font-semibold text-sky-300">
-                  {r.doseMg} {r.unit}
-                </span>
-              </div>
-              <div className="text-xs text-slate-500">{r.basis}</div>
-              {r.capApplied && (
-                <div className="mt-1 flex items-center gap-1 text-xs text-amber-300">
-                  <AlertTriangle size={12} /> Capped at {r.capMg} {r.unit} (uncapped {r.rawDoseMg})
-                </div>
-              )}
-            </li>
-          ))}
-        </ul>
+        <div className="divide-y divide-slate-800">
+          <Result label="Levetiracetam" r={safe(() => levetiracetamLoad(weightKg))} />
+          <Result label="Valproate" r={safe(() => valproateLoad(weightKg))} />
+          <Result label="Fosphenytoin" r={safe(() => fosphenytoinLoad(weightKg))} />
+          <Result label="Lacosamide" r={safe(() => lacosamideLoad(weightKg))} />
+        </div>
       )}
-    </CalculatorCard>
+    </Card>
   );
 }
 
-function IcpCard({ weightKg, creatinine }: { weightKg: number | null; creatinine: string }) {
+function IcpCard({ weightKg }: { weightKg: number | null }) {
   const [osm, setOsm] = useState('');
-  const [aki, setAki] = useState(false);
-  const osmVal = parseNonNegative(osm);
-
-  const saline = weightKg === null ? null : hypertonicSalineBolus(weightKg);
-  const mannitol = weightKg === null ? null : mannitolDose({ weightKg, serumOsmolality: osmVal, severeAki: aki });
-
-  return (
-    <CalculatorCard noteId="calc-icp" title="Cerebral edema / ICP" subtitle="3% saline and 20% mannitol" icon={<Droplets size={18} />}>
-      {saline === null || mannitol === null ? (
-        <NeedWeight />
-      ) : (
-        <div className="space-y-4">
-          <div>
-            <div className="text-sm text-slate-200">3% hypertonic saline bolus</div>
-            <div className="text-lg font-semibold text-sky-300">{saline.volumeMl} mL</div>
-            <div className="text-xs text-slate-500">
-              2 mL/kg over {saline.infusionMinutes} min ({saline.rateMlPerHr} mL/hr) — acute herniation
-            </div>
-          </div>
-          <div>
-            <div className="text-sm text-slate-200">Mannitol 20%</div>
-            <div className={`text-lg font-semibold ${mannitol.contraindicated ? 'text-slate-500 line-through' : 'text-sky-300'}`}>
-              {mannitol.doseLowG}–{mannitol.doseHighG} g ({mannitol.volumeLowMl}–{mannitol.volumeHighMl} mL)
-            </div>
-            <div className="text-xs text-slate-500">0.5–1.0 g/kg over 20–30 min</div>
-            <div className="mt-2 grid grid-cols-2 gap-2">
-              <NumberField label="Serum osm (mOsm/kg)" value={osm} onChange={setOsm} placeholder="295" />
-              <label className="flex items-end gap-2 pb-2 text-sm text-slate-300">
-                <input type="checkbox" checked={aki} onChange={(e) => setAki(e.target.checked)} className="h-5 w-5" />
-                Severe AKI
-              </label>
-            </div>
-            {creatinine !== '' && <div className="mt-1 text-xs text-slate-500">Cr in context: {creatinine} mg/dL</div>}
-            {mannitol.contraindicated && (
-              <div className="mt-2 rounded-md border border-red-500/50 bg-red-950/50 p-2 text-sm text-red-300">
-                <strong>CONTRAINDICATED:</strong> {mannitol.contraindicationReasons.join('; ')}
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-    </CalculatorCard>
-  );
-}
-
-function CsfCard() {
-  const [protein, setProtein] = useState('');
-  const [csfRbc, setCsfRbc] = useState('');
-  const [bloodRbc, setBloodRbc] = useState('');
-  const [bloodProtein, setBloodProtein] = useState('');
-
-  const p = parseNonNegative(protein);
-  const c = parseNonNegative(csfRbc);
-  const bRbc = parsePositive(bloodRbc);
-  const bProt = parseNonNegative(bloodProtein);
-
-  const result =
-    p !== null && c !== null
-      ? correctCsfProtein({
-          measuredProteinMgDl: p,
-          csfRbcPerUl: c,
-          bloodRbcPerUl: bRbc ?? undefined,
-          bloodProteinMgDl: bRbc !== null && bProt !== null ? bProt : undefined,
-        })
-      : null;
+  const [na, setNa] = useState('');
+  const [glu, setGlu] = useState('');
+  const [bun, setBun] = useState('');
+  const vals = [osm, na, glu, bun].map(parseNonNegative);
+  const gap = vals.every((v) => v !== null)
+    ? safe(() => osmolarGap(vals[0] as number, vals[1] as number, vals[2] as number, vals[3] as number))
+    : null;
 
   return (
-    <CalculatorCard
-      noteId="calc-csf"
-      title="CSF traumatic tap correction"
-      subtitle="Exact if blood RBC + protein entered; else 1.1 mg/dL per 1000 RBC"
-      icon={<FlaskConical size={18} />}
+    <Card
+      noteId="calc-icp"
+      title="Cerebral edema / ICP"
+      subtitle="Hypertonic saline (local protocol) and 20% mannitol"
+      icon={<Droplets size={18} />}
+      metaIds={['hypertonic-saline-bolus', 'mannitol-dose']}
     >
-      <div className="grid grid-cols-2 gap-2">
-        <NumberField label="CSF protein (mg/dL)" value={protein} onChange={setProtein} />
-        <NumberField label="CSF RBC (/µL)" value={csfRbc} onChange={setCsfRbc} />
-        <NumberField label="Blood RBC (/µL) – opt." value={bloodRbc} onChange={setBloodRbc} placeholder="5000000" />
-        <NumberField label="Blood protein (mg/dL) – opt." value={bloodProtein} onChange={setBloodProtein} placeholder="7000" />
+      <p className="text-xs text-sky-300">{BANNERS.CALC_INSTITUTIONAL}</p>
+      <div className="divide-y divide-slate-800">
+        <Result label="3% NaCl bolus" r={safe(() => hypertonicSalineIcp('3%'))} />
+        <Result label="23.4% NaCl bolus" r={safe(() => hypertonicSalineIcp('23.4%'))} />
       </div>
-      {result && (
-        <div className="mt-3">
-          <div className="text-lg font-semibold text-sky-300">Corrected: {result.correctedProteinMgDl} mg/dL</div>
-          <div className="text-xs text-slate-500">
-            −{result.subtractedMgDl} mg/dL ({result.method})
-          </div>
-          {result.clampedToZero && <div className="text-xs text-amber-300">Result was negative; shown as 0.</div>}
+      <div className="mt-3 border-t border-slate-800 pt-2">
+        <p className="text-xs text-sky-300">{BANNERS.CALC_LABEL_DIFFERS}</p>
+        {weightKg === null ? <NeedWeight /> : <Result label="Mannitol 20%" r={safe(() => mannitolDose(weightKg))} />}
+        <div className="mt-2 text-xs font-semibold text-slate-400">Osmolar gap</div>
+        <div className="grid grid-cols-2 gap-2">
+          <NumberField label="Measured osm (mOsm/kg)" value={osm} onChange={setOsm} placeholder="300" />
+          <NumberField label="Na (mmol/L)" value={na} onChange={setNa} placeholder="140" />
+          <NumberField label="Glucose (mg/dL)" value={glu} onChange={setGlu} placeholder="100" />
+          <NumberField label="BUN (mg/dL)" value={bun} onChange={setBun} placeholder="14" />
         </div>
-      )}
-    </CalculatorCard>
+        {gap !== null && <Result label="Osmolar gap" r={gap} />}
+      </div>
+    </Card>
   );
 }
+
+function CrClCard({ weightKg, age, sex, creatinine }: { weightKg: number | null; age: string; sex: Sex; creatinine: string }) {
+  const a = parsePositive(age);
+  const cr = parsePositive(creatinine);
+  const ready = weightKg !== null && a !== null && cr !== null && sex !== '';
+  return (
+    <Card noteId="calc-crcl" title="Creatinine clearance" subtitle="Cockcroft-Gault, actual body weight" icon={<FlaskConical size={18} />} metaIds={['cockcroft-gault']}>
+      {ready ? (
+        <Result label="CrCl" r={safe(() => cockcroftGault(a as number, weightKg as number, cr as number, sex === 'F'))} />
+      ) : (
+        <p className="text-sm text-amber-300">Enter weight, age, sex and Cr in the top bar.</p>
+      )}
+    </Card>
+  );
+}
+
+const LEDD_LABELS: Record<LeddDrug, string> = {
+  'levodopa-ir': 'Levodopa IR',
+  'levodopa-cr': 'Levodopa CR',
+  'levodopa-er-ipx066': 'Levodopa ER (Rytary)',
+  'levodopa-inhaled': 'Levodopa inhaled (Inbrija)',
+  'levodopa-carbidopa-intestinal-gel': 'LCIG (Duopa)',
+  'foslevodopa-foscarbidopa-sc': 'Foslevodopa SC (Vyalev)',
+  'selegiline-oral': 'Selegiline oral',
+  'selegiline-odt': 'Selegiline ODT (Zelapar)',
+  rasagiline: 'Rasagiline',
+  'pramipexole-salt': 'Pramipexole (salt)',
+  'pramipexole-base': 'Pramipexole (base)',
+  ropinirole: 'Ropinirole',
+  rotigotine: 'Rotigotine',
+  'apomorphine-sc': 'Apomorphine SC',
+  'apomorphine-sl': 'Apomorphine SL',
+  bromocriptine: 'Bromocriptine',
+  cabergoline: 'Cabergoline',
+  'amantadine-ir': 'Amantadine IR',
+  'amantadine-er-gocovri': 'Amantadine ER (Gocovri)',
+  'amantadine-er-osmolex': 'Amantadine ER (Osmolex)',
+  safinamide: 'Safinamide',
+};
+const LEDD_DRUGS = [...Object.keys(LEVODOPA_FACTORS), ...Object.keys(OTHER_FACTORS), 'safinamide'] as LeddDrug[];
+type Comt = keyof typeof COMT_FACTORS | '';
 
 function LeddCard() {
-  const [doses, setDoses] = useState<Partial<Record<LeddDrugId, string>>>({});
+  const [doses, setDoses] = useState<Partial<Record<LeddDrug, string>>>({});
+  const [comt, setComt] = useState<Comt>('');
+  const [istra, setIstra] = useState(false);
 
-  const numeric: LeddInput = {};
-  for (const d of LEDD_DRUGS) {
-    const v = parseNonNegative(doses[d.id] ?? '');
-    if (v !== null) numeric[d.id] = v;
-  }
-  const result = calculateLedd(numeric);
+  const items = LEDD_DRUGS.flatMap((drug) => {
+    const v = parseNonNegative(doses[drug] ?? '');
+    return v !== null && v > 0 ? [{ drug, mgPerDay: v }] : [];
+  });
+  const result = items.length ? safe(() => ledd(items, { comt: comt ? { drug: comt } : undefined, istradefylline: istra })) : null;
 
   return (
-    <CalculatorCard noteId="calc-ledd" title="Parkinson's LEDD converter" subtitle="Total daily doses" icon={<Pill size={18} />}>
+    <Card noteId="calc-ledd" title="Levodopa equivalent daily dose" subtitle="Total daily doses (mg/day) — Jost 2023" icon={<Pill size={18} />} metaIds={['ledd']}>
       <div className="grid grid-cols-2 gap-2">
         {LEDD_DRUGS.map((d) => (
-          <NumberField
-            key={d.id}
-            label={`${d.name} (${d.unitNote}) ×${d.factor}`}
-            value={doses[d.id] ?? ''}
-            onChange={(v) => setDoses((prev) => ({ ...prev, [d.id]: v }))}
-          />
+          <NumberField key={d} label={LEDD_LABELS[d]} value={doses[d] ?? ''} onChange={(v) => setDoses((p) => ({ ...p, [d]: v }))} />
         ))}
       </div>
-      <div className="mt-3 text-lg font-semibold text-sky-300">Total LEDD: {result.totalLedd} mg/day</div>
-    </CalculatorCard>
+      <div className="mt-2 grid grid-cols-2 gap-2">
+        <label className="block text-xs text-slate-400">
+          COMT inhibitor
+          <select
+            value={comt}
+            onChange={(e) => setComt(e.target.value as Comt)}
+            className="mt-0.5 w-full rounded-md border border-slate-600 bg-slate-800 px-2 py-1.5 text-base text-slate-100"
+          >
+            <option value="">None</option>
+            <option value="entacapone">Entacapone</option>
+            <option value="tolcapone">Tolcapone</option>
+            <option value="opicapone">Opicapone</option>
+          </select>
+        </label>
+        <label className="flex items-end gap-2 pb-2 text-sm text-slate-300">
+          <input type="checkbox" checked={istra} onChange={(e) => setIstra(e.target.checked)} className="h-5 w-5" />
+          Istradefylline
+        </label>
+      </div>
+      {result !== null && <Result label="Total" r={result} />}
+    </Card>
   );
 }
 
-export default function Calculators({ weight, creatinine }: { weight: string; creatinine: string }) {
+export default function Calculators({ weight, age, sex, creatinine }: { weight: string; age: string; sex: Sex; creatinine: string }) {
   const weightKg = parsePositive(weight);
   return (
     <div className="space-y-4">
       <Anticonvulsants weightKg={weightKg} />
-      <IcpCard weightKg={weightKg} creatinine={creatinine} />
-      <CsfCard />
+      <IcpCard weightKg={weightKg} />
+      <CrClCard weightKg={weightKg} age={age} sex={sex} creatinine={creatinine} />
       <LeddCard />
     </div>
   );

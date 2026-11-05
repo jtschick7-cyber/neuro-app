@@ -1,0 +1,308 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+    },
+    "entries": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "antigen": {
+            "type": "string",
+            "minLength": 1
+          },
+          "searchTerms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "antigenClass": {
+            "type": "string",
+            "enum": [
+              "NEURONAL_SURFACE",
+              "INTRACELLULAR",
+              "INTRACELLULAR_SYNAPTIC",
+              "GLIAL"
+            ]
+          },
+          "pnsRisk": {
+            "type": "string",
+            "enum": [
+              "HIGH",
+              "INTERMEDIATE",
+              "LOW",
+              "NOT_CLASSIFIED"
+            ]
+          },
+          "syndromes": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "syndrome": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "typical": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "syndrome",
+                "typical"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "demographics": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "tumors": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "tumor": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "frequencyText": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "tumor",
+                "frequencyText"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "cancerScreening": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "testing": {
+            "type": "object",
+            "properties": {
+              "preferredSpecimen": {
+                "type": "string",
+                "enum": [
+                  "CSF",
+                  "SERUM",
+                  "BOTH"
+                ]
+              },
+              "rationale": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "methodNotes": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "preferredSpecimen",
+              "rationale",
+              "methodNotes"
+            ],
+            "additionalProperties": false
+          },
+          "csf": {
+            "type": "object",
+            "properties": {
+              "normalLikelihood": {
+                "type": "string",
+                "enum": [
+                  "OFTEN_NORMAL",
+                  "SOMETIMES_NORMAL",
+                  "RARELY_NORMAL",
+                  "UNKNOWN"
+                ]
+              },
+              "normalPercentText": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "typicalFindings": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "normalLikelihood",
+              "normalPercentText",
+              "typicalFindings"
+            ],
+            "additionalProperties": false
+          },
+          "mri": {
+            "type": "object",
+            "properties": {
+              "normalLikelihood": {
+                "type": "string",
+                "enum": [
+                  "OFTEN_NORMAL",
+                  "SOMETIMES_NORMAL",
+                  "RARELY_NORMAL",
+                  "UNKNOWN"
+                ]
+              },
+              "normalPercentText": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "typicalFindings": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            },
+            "required": [
+              "normalLikelihood",
+              "normalPercentText",
+              "typicalFindings"
+            ],
+            "additionalProperties": false
+          },
+          "otherTests": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "immunotherapyResponse": {
+            "type": "string",
+            "enum": [
+              "USUALLY_GOOD",
+              "VARIABLE",
+              "USUALLY_POOR"
+            ]
+          },
+          "pearls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "verify": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "relatedIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*:[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "sources": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "lastReviewed": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+              },
+              {
+                "type": "string",
+                "const": "UNREVIEWED"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "antigen",
+          "searchTerms",
+          "antigenClass",
+          "pnsRisk",
+          "syndromes",
+          "demographics",
+          "tumors",
+          "cancerScreening",
+          "testing",
+          "csf",
+          "mri",
+          "otherTests",
+          "immunotherapyResponse",
+          "pearls",
+          "verify",
+          "relatedIds",
+          "sources",
+          "lastReviewed"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "title",
+    "version",
+    "schemaVersion",
+    "lastUpdated",
+    "entries"
+  ],
+  "additionalProperties": false
+}
