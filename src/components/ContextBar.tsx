@@ -1,4 +1,4 @@
-import { Eraser } from 'lucide-react';
+import { ChevronDown, Eraser } from 'lucide-react';
 import type { PatientContext, Sex } from '../lib/patientContext';
 
 interface Props {
@@ -7,7 +7,7 @@ interface Props {
   onClear: () => void;
 }
 
-const baseCls = 'w-full rounded-md border px-2 py-1.5 text-base placeholder:italic placeholder:text-slate-600 focus:border-sky-400 focus:outline-none';
+const baseCls = 'block h-10 w-full rounded-md border px-2 text-base placeholder:italic placeholder:text-slate-600 focus:border-sky-400 focus:outline-none';
 /** Entered values are visibly confirmed; untouched fields stay muted so nothing looks like patient data by default. */
 const fieldCls = (filled: boolean) =>
   `${baseCls} ${filled ? 'border-sky-500/60 bg-sky-950/25 font-semibold text-sky-100' : 'border-slate-800 bg-slate-900/60 text-slate-400'}`;
@@ -17,8 +17,8 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
     <header
       className="sticky top-0 z-20 border-b border-slate-700 bg-slate-900/95 pb-2 backdrop-blur"
       style={{
-        // Extra 0.5rem on top of the inset: the iOS standalone status bar can overlap the first few pixels below it.
-        paddingTop: 'calc(0.5rem + env(safe-area-inset-top))',
+        // Extra 1rem on top of the inset: the iOS standalone status bar (black-translucent) can overlap the first rows below it.
+        paddingTop: 'calc(1rem + env(safe-area-inset-top))',
         paddingLeft: 'max(0.75rem, env(safe-area-inset-left))',
         paddingRight: 'max(0.75rem, env(safe-area-inset-right))',
       }}
@@ -51,10 +51,10 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
             placeholder="—"
           />
         </label>
-        <label className="w-14 shrink-0 text-xs font-medium text-slate-400">
+        <label className="relative w-16 shrink-0 text-xs font-medium text-slate-400">
           Sex
           <select
-            className={fieldCls(context.sex !== '')}
+            className={`${fieldCls(context.sex !== '')} appearance-none pr-6`}
             value={context.sex}
             onChange={(e) => onChange({ sex: e.target.value as Sex })}
           >
@@ -62,6 +62,7 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
             <option value="M">M</option>
             <option value="F">F</option>
           </select>
+          <ChevronDown size={14} aria-hidden="true" className="pointer-events-none absolute bottom-3 right-2 text-slate-500" />
         </label>
         <label className="min-w-0 flex-1 text-xs font-medium text-slate-400">
           Cr (mg/dL)
@@ -79,7 +80,7 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
         <button
           type="button"
           onClick={onClear}
-          className="shrink-0 rounded-md border border-slate-700 bg-slate-900 p-2 text-slate-300 hover:text-white active:bg-slate-800"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-slate-700 bg-slate-900 text-slate-300 hover:text-white active:bg-slate-800"
           aria-label="Clear patient context"
           title="Clear"
         >
