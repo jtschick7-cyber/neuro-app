@@ -1,28 +1,46 @@
 import { useMemo, useState } from 'react';
-import { Search } from 'lucide-react';
+import { ArrowLeft, Search } from 'lucide-react';
 import ReferenceCard from './ReferenceCard';
 import { CAUTION_LISTS, searchCautionEntries } from '../lib/registry';
+import type { CautionListId } from '../lib/nav';
+import { toHash } from '../lib/route';
 
-/** Drug caution lists (MG, seizure threshold, RCVS triggers) — one screen, list chosen by the selector. */
-export default function MgRegistryView() {
-  const [listId, setListId] = useState(CAUTION_LISTS[0].id);
+/** Drug caution lists (MG, seizure threshold, RCVS triggers). The list and optional entry come from the route. */
+export default function MgRegistryView({ listId, entryId }: { listId: CautionListId; entryId?: string }) {
   const [query, setQuery] = useState('');
   const info = CAUTION_LISTS.find((l) => l.id === listId) ?? CAUTION_LISTS[0];
   const results = useMemo(() => searchCautionEntries(info.list.entries, query), [info, query]);
 
+  if (entryId !== undefined) {
+    const entry = info.list.entries.find((e) => e.id === entryId);
+    return (
+      <div className="space-y-3">
+        <a href={toHash({ kind: 'registry', registry: info.id })} className="inline-flex min-h-10 items-center gap-1 text-sm text-sky-300">
+          <ArrowLeft size={16} aria-hidden="true" /> {info.label}
+        </a>
+        {entry ? (
+          <ReferenceCard entry={entry} listId={info.id} detail />
+        ) : (
+          <p className="text-sm text-slate-400">
+            No entry “{entryId}” in {info.label}.
+          </p>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-3">
-      <div className="flex gap-1 rounded-lg bg-slate-900 p-1" role="tablist" aria-label="Caution list">
+      <div className="flex gap-1 rounded-lg bg-slate-900 p-1" aria-label="Caution list">
         {CAUTION_LISTS.map((l) => (
-          <button
+          <a
             key={l.id}
-            role="tab"
-            aria-selected={l.id === listId}
-            onClick={() => setListId(l.id)}
-            className={`flex-1 rounded-md px-2 py-1.5 text-xs font-medium ${l.id === listId ? 'bg-slate-700 text-slate-100' : 'text-slate-400'}`}
+            href={toHash({ kind: 'registry', registry: l.id })}
+            aria-current={l.id === info.id ? 'page' : undefined}
+            className={`flex min-h-10 flex-1 items-center justify-center rounded-md px-2 py-1.5 text-center text-xs font-medium ${l.id === info.id ? 'bg-slate-700 text-slate-100' : 'text-slate-400'}`}
           >
             {l.label}
-          </button>
+          </a>
         ))}
       </div>
       <div className="relative">

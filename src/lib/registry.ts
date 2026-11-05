@@ -1,5 +1,6 @@
 import type { z } from 'zod';
 import type { CautionEntry as CautionEntrySchema, CautionListRegistry, CautionTier as CautionTierSchema } from '../../schema/caution-list';
+import type { CautionListId } from './nav';
 import mgRaw from '../../data/mg-contraindications.json';
 import seizureRaw from '../../data/seizure-threshold.json';
 import rcvsRaw from '../../data/rcvs-triggers.json';
@@ -11,7 +12,7 @@ export type CautionEntry = z.infer<typeof CautionEntrySchema>;
 export type CautionTier = z.infer<typeof CautionTierSchema>;
 
 export interface CautionListInfo {
-  id: string;
+  id: CautionListId;
   label: string;
   list: CautionList;
 }
