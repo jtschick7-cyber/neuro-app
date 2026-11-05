@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Droplets, Pill, Zap, FlaskConical } from 'lucide-react';
 import { NeedWeight, NumberField } from './CalculatorCard';
 import { Card, FocusContext, Result, parseNonNegative, safe } from './calcShared';
+import { IvigCard, SodiumCard } from './ImmunoSodiumCalculators';
 import { Abcd2Card, Cha2ds2VascCard, HasBledCard, IchScoreCard, ThrombolyticsCard } from './StrokeCalculators';
 import {
   COMT_FACTORS,
@@ -197,6 +198,8 @@ export default function Calculators({
       <HasBledCard age={age} />
       <CrClCard weightKg={weightKg} age={age} sex={sex} creatinine={creatinine} />
       <LeddCard />
+      <IvigCard weightKg={weightKg} sex={sex} />
+      <SodiumCard weightKg={weightKg} />
     </div>
     </FocusContext.Provider>
   );
