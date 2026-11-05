@@ -3,6 +3,7 @@ import ContextBar from './components/ContextBar';
 import Calculators from './components/Calculators';
 import MgRegistryView from './components/MgRegistryView';
 import NavBar from './components/NavBar';
+import { AcuteView, ConsultView } from './components/ProtocolViews';
 import Home from './components/Home';
 import DisclaimerGate from './components/DisclaimerGate';
 import { usePatientContext, type PatientContext } from './lib/patientContext';
@@ -61,6 +62,8 @@ function Screen({ route, context }: { route: Route; context: PatientContext }) {
       );
     case 'registry':
       if (isCautionListId(route.registry)) return <MgRegistryView listId={route.registry} entryId={route.entryId} />;
+      if (route.registry === 'acute-neuro') return <AcuteView entryId={route.entryId} />;
+      if (route.registry === 'consult-workups') return <ConsultView entryId={route.entryId} />;
       return getRegistry(route.registry)?.built ? null : <Unavailable />;
   }
 }

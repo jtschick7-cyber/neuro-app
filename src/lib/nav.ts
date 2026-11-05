@@ -24,8 +24,8 @@ export interface RegistryInfo {
 }
 
 export const REGISTRIES: RegistryInfo[] = [
-  { id: 'acute-neuro', label: 'Acute protocol', section: 'acute', built: false },
-  { id: 'consult-workups', label: 'Consult workup', section: 'consults', built: false },
+  { id: 'acute-neuro', label: 'Acute protocol', section: 'acute', built: true },
+  { id: 'consult-workups', label: 'Consult workup', section: 'consults', built: true },
   { id: 'vascular-antithrombotics', label: 'Antithrombotics', section: 'drugs', built: false },
   { id: 'neural-antibodies', label: 'Neural antibody', section: 'antibodies', built: false },
   { id: 'mg-contraindications', label: 'MG cautions', section: 'drugs', built: true },
@@ -53,8 +53,8 @@ export interface SectionInfo {
 
 export const SECTIONS: SectionInfo[] = [
   { id: 'home', label: 'Home', blurb: '', built: true, hash: '#/' },
-  { id: 'acute', label: 'Acute', blurb: 'Emergency protocols', built: false, hash: '#/acute-neuro' },
-  { id: 'consults', label: 'Consults', blurb: 'Consult workups', built: false, hash: '#/consult-workups' },
+  { id: 'acute', label: 'Acute', blurb: 'Emergency protocols', built: true, hash: '#/acute-neuro' },
+  { id: 'consults', label: 'Consults', blurb: 'Consult workups', built: true, hash: '#/consult-workups' },
   { id: 'drugs', label: 'Drugs', blurb: 'Drug cautions, antithrombotics, interactions', built: true, hash: '#/mg-contraindications' },
   { id: 'antibodies', label: 'Antibodies', blurb: 'Neural antibody cards', built: false, hash: '#/neural-antibodies' },
   { id: 'calc', label: 'Calculators', blurb: 'Dosing and risk scores', built: true, hash: '#/calc' },
