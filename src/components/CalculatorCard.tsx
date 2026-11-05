@@ -8,11 +8,16 @@ interface Props {
   subtitle?: string;
   icon?: ReactNode;
   children: ReactNode;
+  /** Highlighted when opened from a cross-link (`#/calc/<id>`). */
+  focused?: boolean;
 }
 
-export default function CalculatorCard({ noteId, title, subtitle, icon, children }: Props) {
+export default function CalculatorCard({ noteId, title, subtitle, icon, children, focused = false }: Props) {
   return (
-    <section className="rounded-xl border border-slate-700 bg-slate-900 p-4">
+    <section
+      id={noteId}
+      className={`scroll-mt-32 rounded-xl border bg-slate-900 p-4 ${focused ? 'border-sky-400 ring-1 ring-sky-400' : 'border-slate-700'}`}
+    >
       <div className="mb-3 flex items-center gap-2">
         {icon && <span className="text-sky-400">{icon}</span>}
         <div>

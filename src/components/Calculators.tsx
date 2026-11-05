@@ -1,4 +1,4 @@
-import { useState, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 import { AlertTriangle, Droplets, Pill, Zap, FlaskConical } from 'lucide-react';
 import CalculatorCard, { NeedWeight, NumberField } from './CalculatorCard';
 import {
@@ -20,6 +20,10 @@ import {
 } from '../lib/calculators';
 import { BANNERS } from '../content/copy';
 import { parsePositive, type Sex } from '../lib/patientContext';
+import { CALC_CARD } from '../lib/nav';
+
+/** noteId of the card to highlight when opened via `#/calc/<id>`. */
+const FocusContext = createContext<string | undefined>(undefined);
 
 /** Calculators throw RangeError on out-of-range input; show the message instead of crashing. */
 function safe(fn: () => CalcResult): CalcResult | string {
@@ -86,8 +90,9 @@ function MetaFooter({ ids }: { ids: string[] }) {
 }
 
 function Card(props: { noteId: string; title: string; subtitle: string; icon: ReactNode; metaIds: string[]; children: ReactNode }) {
+  const focusNoteId = useContext(FocusContext);
   return (
-    <CalculatorCard noteId={props.noteId} title={props.title} subtitle={props.subtitle} icon={props.icon}>
+    <CalculatorCard noteId={props.noteId} title={props.title} subtitle={props.subtitle} icon={props.icon} focused={focusNoteId === props.noteId}>
       {props.children}
       <MetaFooter ids={props.metaIds} />
     </CalculatorCard>
@@ -239,14 +244,32 @@ function LeddCard() {
   );
 }
 
-export default function Calculators({ weight, age, sex, creatinine }: { weight: string; age: string; sex: Sex; creatinine: string }) {
+export default function Calculators({
+  weight,
+  age,
+  sex,
+  creatinine,
+  focusCalcId,
+}: {
+  weight: string;
+  age: string;
+  sex: Sex;
+  creatinine: string;
+  focusCalcId?: string;
+}) {
   const weightKg = parsePositive(weight);
+  const focusNoteId = focusCalcId ? CALC_CARD[focusCalcId] : undefined;
+  useEffect(() => {
+    if (focusNoteId) document.getElementById(focusNoteId)?.scrollIntoView({ block: 'start' });
+  }, [focusNoteId]);
   return (
+    <FocusContext.Provider value={focusNoteId}>
     <div className="space-y-4">
       <Anticonvulsants weightKg={weightKg} />
       <IcpCard weightKg={weightKg} />
       <CrClCard weightKg={weightKg} age={age} sex={sex} creatinine={creatinine} />
       <LeddCard />
     </div>
+    </FocusContext.Provider>
   );
 }

@@ -1,5 +1,10 @@
 import BedsideNotes from './BedsideNotes';
-import { BANNERS, MG_TIER_LEGEND } from '../content/copy';
+import BannerList from './BannerList';
+import EntryFooter from './EntryFooter';
+import RelatedLinks from './RelatedLinks';
+import { MG_TIER_LEGEND } from '../content/copy';
+import { toHash } from '../lib/route';
+import { isCautionListId } from '../lib/nav';
 import type { CautionEntry, CautionTier } from '../lib/registry';
 
 const TIER_STYLES: Record<CautionTier, string> = {
@@ -25,11 +30,19 @@ function Bullets({ label, items, tone = 'text-slate-300' }: { label: string; ite
 }
 
 /** One entry of a condition-specific caution list (MG, seizure threshold, RCVS). Badge is derived, never free text. */
-export default function ReferenceCard({ entry, listId }: { entry: CautionEntry; listId: string }) {
+export default function ReferenceCard({ entry, listId, detail = false }: { entry: CautionEntry; listId: string; detail?: boolean }) {
   return (
     <article className={`rounded-xl border border-slate-700 bg-slate-900 p-4 ${entry.usMarketed ? '' : 'opacity-60'}`}>
       <div className="mb-1 flex flex-wrap items-center gap-2">
-        <h3 className="text-base font-semibold text-slate-100">{entry.title}</h3>
+        <h3 className="text-base font-semibold text-slate-100">
+          {detail || !isCautionListId(listId) ? (
+            entry.title
+          ) : (
+            <a href={toHash({ kind: 'registry', registry: listId, entryId: entry.id })} className="hover:text-sky-300">
+              {entry.title}
+            </a>
+          )}
+        </h3>
         <span title={TIER_HELP[entry.tier]} className={`rounded-full px-2 py-0.5 text-xs font-semibold ${TIER_STYLES[entry.tier]}`}>
           {TIER_LABEL[entry.tier]}
         </span>
@@ -37,9 +50,7 @@ export default function ReferenceCard({ entry, listId }: { entry: CautionEntry; 
           <span className="rounded-full border border-red-400 px-2 py-0.5 text-xs font-semibold text-red-300">FDA boxed warning</span>
         )}
       </div>
-      {!entry.usMarketed && <p className="text-xs text-amber-300">{BANNERS.NOT_US_MARKETED}</p>}
-      {entry.lastReviewed === 'UNREVIEWED' && <p className="text-xs text-amber-300">{BANNERS.UNREVIEWED}</p>}
-      {entry.verify.length > 0 && <p className="text-xs text-amber-300">{BANNERS.VERIFY}</p>}
+      <BannerList entry={entry} />
       <p className="text-sm text-slate-300">
         {entry.generics.join(', ')}
         {entry.brands.length > 0 && <span className="text-slate-500"> ({entry.brands.join(', ')})</span>}
@@ -49,6 +60,7 @@ export default function ReferenceCard({ entry, listId }: { entry: CautionEntry; 
       <Bullets label="Pearls" items={entry.pearls} tone="text-slate-200" />
       <Bullets label="Safer alternatives" items={entry.saferAlternatives} tone="text-emerald-300" />
       <Bullets label="VERIFY" items={entry.verify} tone="text-amber-300" />
+      <RelatedLinks relatedIds={entry.relatedIds} />
       <details className="mt-2 text-xs text-slate-500">
         <summary className="cursor-pointer">Sources</summary>
         <ul className="mt-1 list-inside list-disc">
@@ -57,9 +69,7 @@ export default function ReferenceCard({ entry, listId }: { entry: CautionEntry; 
           ))}
         </ul>
       </details>
-      <p className="mt-2 text-[11px] text-slate-600">
-        {listId}:{entry.id} · reviewed {entry.lastReviewed}
-      </p>
+      <EntryFooter registryId={listId} entryId={entry.id} lastReviewed={entry.lastReviewed} />
       {/* MG notes keep their original key (`mg-<id>`) so notes saved by earlier builds still appear. */}
       <BedsideNotes noteId={listId === 'mg-contraindications' ? `mg-${entry.id}` : `${listId}-${entry.id}`} />
     </article>
