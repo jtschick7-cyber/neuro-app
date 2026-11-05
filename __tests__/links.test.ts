@@ -4,6 +4,9 @@ import { CAUTION_LISTS } from '../src/lib/registry';
 import { CALC_CARD } from '../src/lib/nav';
 import { parseHash } from '../src/lib/route';
 import { CALCULATOR_META } from '../src/lib/calculators';
+import acute from '../data/acute-neuro.json';
+import consults from '../data/consult-workups.json';
+import { getRegistry } from '../src/lib/nav';
 import manifest from '../data/calculators.manifest.json';
 
 describe('resolveRef', () => {
@@ -30,8 +33,8 @@ describe('resolveRef', () => {
   });
   it('does not link to an unknown entry or to registries without a screen', () => {
     expect(resolveRef('mg-contraindications:not-a-real-entry').href).toBeNull();
-    expect(resolveRef('acute-neuro:status-epilepticus').href).toBeNull();
-    expect(resolveRef('acute-neuro:status-epilepticus').label).toBe('Status epilepticus');
+    expect(resolveRef('vascular-antithrombotics:dapt-minor-stroke-tia').href).toBeNull();
+    expect(resolveRef('vascular-antithrombotics:dapt-minor-stroke-tia').label).toBe('Dapt minor stroke tia');
   });
 });
 
@@ -62,6 +65,26 @@ describe('every cross-link in the built registries', () => {
   it('links every stroke, immunotherapy and sodium calculator to its card', () => {
     for (const id of ['tnk-dose', 'alteplase-dose', 'ich-score', 'abcd2', 'cha2ds2-vasc', 'has-bled', 'ivig-dose', 'sodium-correction']) {
       expect(resolveRef(`calc:${id}`).href).toBe(`#/calc/${id}`);
+    }
+  });
+});
+
+describe('cross-links into the lazy-loaded registries', () => {
+  it('links to acute-neuro and consult-workups entries', () => {
+    expect(resolveRef('acute-neuro:convulsive-status-epilepticus').href).toBe('#/acute-neuro/convulsive-status-epilepticus');
+    expect(resolveRef('consult-workups:tia-workup').href).toBe('#/consult-workups/tia-workup');
+  });
+  it('every shipped reference to a built registry points at a real entry', () => {
+    const ids: Record<string, Set<string>> = {
+      'acute-neuro': new Set(acute.entries.map((e) => e.id)),
+      'consult-workups': new Set(consults.entries.map((e) => e.id)),
+    };
+    for (const l of CAUTION_LISTS) ids[l.id] = new Set(l.list.entries.map((e) => e.id));
+    const refs = [...acute.entries, ...consults.entries].flatMap((e) => e.relatedIds);
+    for (const ref of refs) {
+      const [reg, id] = ref.split(':');
+      if (reg === 'calc' || !getRegistry(reg)?.built) continue;
+      expect(ids[reg]?.has(id), ref).toBe(true);
     }
   });
 });

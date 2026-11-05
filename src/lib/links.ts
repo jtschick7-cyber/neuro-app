@@ -51,8 +51,9 @@ export function resolveRef(ref: string): ResolvedRef {
       href: entry && info ? toHash({ kind: 'registry', registry: info.id, entryId: id }) : null,
     };
   }
-  // Registries without a screen yet: no data loaded here, so label from the id and don't link.
-  return { ref, label: humanize(id), context, href: null };
+  // Other registries are lazy-loaded, so titles aren't available here: label from the id. Link when the registry
+  // has a screen (a test checks every shipped cross-reference points at a real entry).
+  return { ref, label: humanize(id), context, href: info?.built ? toHash({ kind: 'registry', registry: info.id, entryId: id }) : null };
 }
 
 export function resolveRefs(refs: string[]): ResolvedRef[] {
