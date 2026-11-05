@@ -29,10 +29,12 @@ export default function NavBar({ active }: { active: SectionId }) {
                 href={s.hash}
                 aria-label={s.label}
                 aria-current={on ? 'page' : undefined}
-                className={`flex min-h-14 flex-col items-center justify-center gap-0.5 px-0.5 text-center text-[10px] font-medium tracking-tight ${on ? 'text-sky-300' : 'text-slate-400'}`}
+                className="flex min-h-14 items-center justify-center px-0.5 text-center text-[10px] font-medium tracking-tight"
               >
-                <Icon size={22} aria-hidden="true" />
-                {s.navLabel ?? s.label}
+                <span className={`flex flex-col items-center gap-0.5 rounded-lg px-2 py-0.5 ${on ? 'bg-sky-500/15 text-sky-400' : 'text-slate-400'}`}>
+                  <Icon size={22} aria-hidden="true" />
+                  {s.navLabel ?? s.label}
+                </span>
               </a>
             </li>
           );
