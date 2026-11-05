@@ -71,6 +71,12 @@ export const CALC_CARD: Record<string, string> = {
   'lacosamide-load': 'calc-anticonvulsants',
   'hypertonic-saline-bolus': 'calc-icp',
   'mannitol-dose': 'calc-icp',
+  'tnk-dose': 'calc-thrombolytics',
+  'alteplase-dose': 'calc-thrombolytics',
+  'ich-score': 'calc-ich-score',
+  abcd2: 'calc-abcd2',
+  'cha2ds2-vasc': 'calc-cha2ds2-vasc',
+  'has-bled': 'calc-has-bled',
   'cockcroft-gault': 'calc-crcl',
   ledd: 'calc-ledd',
 };

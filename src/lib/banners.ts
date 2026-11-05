@@ -1,6 +1,6 @@
 // Entry banners and footer text. Wording lives in src/content/copy.ts; this file only decides which apply.
 
-import { BANNERS, FOOTER, STALE_AFTER_MONTHS } from '../content/copy';
+import { BANNERS, CALC_FOOTER, FOOTER, STALE_AFTER_MONTHS } from '../content/copy';
 
 export type EntryBannerKey = 'UNREVIEWED' | 'VERIFY' | 'STALE' | 'NOT_US_MARKETED';
 
@@ -45,4 +45,8 @@ export function footerText(lastReviewed: string, contentVersion: string): string
     lastReviewed: lastReviewed === 'UNREVIEWED' ? 'not yet signed off' : lastReviewed,
     contentVersion,
   });
+}
+
+export function calcFooterText(contentVersion: string): string {
+  return fillTemplate(CALC_FOOTER, { contentVersion });
 }
