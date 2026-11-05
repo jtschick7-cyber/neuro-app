@@ -7,8 +7,10 @@ interface Props {
   onClear: () => void;
 }
 
-const inputCls =
-  'w-full rounded-md border border-slate-600 bg-slate-800 px-2 py-1.5 text-base text-slate-100 placeholder-slate-500 focus:border-sky-400 focus:outline-none';
+const baseCls = 'w-full rounded-md border px-2 py-1.5 text-base placeholder:italic placeholder:text-slate-600 focus:border-sky-400 focus:outline-none';
+/** Entered values are visibly confirmed; untouched fields stay muted so nothing looks like patient data by default. */
+const fieldCls = (filled: boolean) =>
+  `${baseCls} ${filled ? 'border-sky-500/60 bg-sky-950/25 font-semibold text-sky-100' : 'border-slate-800 bg-slate-900/60 text-slate-400'}`;
 
 export default function ContextBar({ context, onChange, onClear }: Props) {
   return (
@@ -23,36 +25,36 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
       aria-label="Patient context"
     >
       <div className="mx-auto flex max-w-3xl items-end gap-2">
-        <label className="min-w-0 flex-1 text-xs text-slate-400">
+        <label className="min-w-0 flex-1 text-xs font-medium text-slate-400">
           Weight (kg)
           <input
             type="number"
             inputMode="decimal"
             min="0"
             step="0.1"
-            className={inputCls}
+            className={fieldCls(context.weightKg.trim() !== '')}
             value={context.weightKg}
             onChange={(e) => onChange({ weightKg: e.target.value })}
-            placeholder="70"
+            placeholder="—"
           />
         </label>
-        <label className="w-14 shrink-0 text-xs text-slate-400">
+        <label className="w-14 shrink-0 text-xs font-medium text-slate-400">
           Age
           <input
             type="number"
             inputMode="numeric"
             min="0"
             step="1"
-            className={inputCls}
+            className={fieldCls(context.age.trim() !== '')}
             value={context.age}
             onChange={(e) => onChange({ age: e.target.value })}
-            placeholder="65"
+            placeholder="—"
           />
         </label>
-        <label className="w-14 shrink-0 text-xs text-slate-400">
+        <label className="w-14 shrink-0 text-xs font-medium text-slate-400">
           Sex
           <select
-            className={inputCls}
+            className={fieldCls(context.sex !== '')}
             value={context.sex}
             onChange={(e) => onChange({ sex: e.target.value as Sex })}
           >
@@ -61,23 +63,23 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
             <option value="F">F</option>
           </select>
         </label>
-        <label className="min-w-0 flex-1 text-xs text-slate-400">
+        <label className="min-w-0 flex-1 text-xs font-medium text-slate-400">
           Cr (mg/dL)
           <input
             type="number"
             inputMode="decimal"
             min="0"
             step="0.01"
-            className={inputCls}
+            className={fieldCls(context.creatinine.trim() !== '')}
             value={context.creatinine}
             onChange={(e) => onChange({ creatinine: e.target.value })}
-            placeholder="1.0"
+            placeholder="—"
           />
         </label>
         <button
           type="button"
           onClick={onClear}
-          className="shrink-0 rounded-md border border-slate-600 p-2 text-slate-300 hover:bg-slate-800"
+          className="shrink-0 rounded-md border border-slate-700 bg-slate-900 p-2 text-slate-300 hover:text-white active:bg-slate-800"
           aria-label="Clear patient context"
           title="Clear"
         >
