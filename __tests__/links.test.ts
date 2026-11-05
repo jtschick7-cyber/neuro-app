@@ -16,8 +16,8 @@ describe('resolveRef', () => {
   it('accepts a bare calculator id (from calculatorIds)', () => {
     expect(resolveRef('cockcroft-gault').href).toBe('#/calc/cockcroft-gault');
   });
-  it('does not link calculators that have no UI yet', () => {
-    const r = resolveRef('calc:ivig-dose');
+  it('does not link calculator ids that have no card', () => {
+    const r = resolveRef('calc:not-yet-built');
     expect(r.href).toBeNull();
     expect(r.label).toBeTruthy();
   });
@@ -56,8 +56,11 @@ describe('every cross-link in the built registries', () => {
       expect(CALCULATOR_META[id]).toBeDefined();
     }
   });
-  it('links every stroke calculator to its card', () => {
-    for (const id of ['tnk-dose', 'alteplase-dose', 'ich-score', 'abcd2', 'cha2ds2-vasc', 'has-bled']) {
+  it('has a UI card for every id in the calculators manifest', () => {
+    for (const id of manifest) expect(CALC_CARD[id], id).toBeDefined();
+  });
+  it('links every stroke, immunotherapy and sodium calculator to its card', () => {
+    for (const id of ['tnk-dose', 'alteplase-dose', 'ich-score', 'abcd2', 'cha2ds2-vasc', 'has-bled', 'ivig-dose', 'sodium-correction']) {
       expect(resolveRef(`calc:${id}`).href).toBe(`#/calc/${id}`);
     }
   });
