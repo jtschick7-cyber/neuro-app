@@ -1,8 +1,9 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
-import { AlertTriangle, Droplets, Pill, Zap, FlaskConical } from 'lucide-react';
-import CalculatorCard, { NeedWeight, NumberField } from './CalculatorCard';
+import { useEffect, useState } from 'react';
+import { Droplets, Pill, Zap, FlaskConical } from 'lucide-react';
+import { NeedWeight, NumberField } from './CalculatorCard';
+import { Card, FocusContext, Result, parseNonNegative, safe } from './calcShared';
+import { Abcd2Card, Cha2ds2VascCard, HasBledCard, IchScoreCard, ThrombolyticsCard } from './StrokeCalculators';
 import {
-  CALCULATOR_META,
   COMT_FACTORS,
   LEVODOPA_FACTORS,
   OTHER_FACTORS,
@@ -15,89 +16,11 @@ import {
   mannitolDose,
   osmolarGap,
   valproateLoad,
-  type CalcResult,
   type LeddDrug,
 } from '../lib/calculators';
 import { BANNERS } from '../content/copy';
 import { parsePositive, type Sex } from '../lib/patientContext';
 import { CALC_CARD } from '../lib/nav';
-
-/** noteId of the card to highlight when opened via `#/calc/<id>`. */
-const FocusContext = createContext<string | undefined>(undefined);
-
-/** Calculators throw RangeError on out-of-range input; show the message instead of crashing. */
-function safe(fn: () => CalcResult): CalcResult | string {
-  try {
-    return fn();
-  } catch (e) {
-    return e instanceof Error ? e.message : 'Invalid input';
-  }
-}
-
-function parseNonNegative(v: string): number | null {
-  if (v.trim() === '') return null;
-  const n = Number(v);
-  return Number.isFinite(n) && n >= 0 ? n : null;
-}
-
-function Warnings({ items }: { items: string[] }) {
-  if (items.length === 0) return null;
-  return (
-    <ul className="mt-1 space-y-0.5">
-      {items.map((w) => (
-        <li key={w} className="flex gap-1 text-xs text-amber-300">
-          <AlertTriangle size={12} className="mt-0.5 shrink-0" /> {w}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
-function Result({ r, label }: { r: CalcResult | string; label: string }) {
-  if (typeof r === 'string') return <p className="py-2 text-sm text-red-300">{label}: {r}</p>;
-  return (
-    <div className="py-2">
-      <div className="text-sm text-slate-200">{label}</div>
-      <div className="text-lg font-semibold text-sky-300">{r.display}</div>
-      <Warnings items={r.warnings} />
-    </div>
-  );
-}
-
-/** Formula, caps, rounding and sources straight from CALCULATOR_META. */
-function MetaFooter({ ids }: { ids: string[] }) {
-  return (
-    <details className="mt-2 text-xs text-slate-500">
-      <summary className="cursor-pointer">Formula and sources</summary>
-      {ids.map((id) => {
-        const m = CALCULATOR_META[id];
-        return (
-          <div key={id} className="mt-1">
-            <div className="font-semibold text-slate-400">{m.title}</div>
-            <div>Formula: {m.formula}</div>
-            {m.caps.length > 0 && <div>Caps: {m.caps.join('; ')}</div>}
-            <div>Rounding: {m.rounding}</div>
-            <ul className="list-inside list-disc">
-              {m.sources.map((s) => (
-                <li key={s}>{s}</li>
-              ))}
-            </ul>
-          </div>
-        );
-      })}
-    </details>
-  );
-}
-
-function Card(props: { noteId: string; title: string; subtitle: string; icon: ReactNode; metaIds: string[]; children: ReactNode }) {
-  const focusNoteId = useContext(FocusContext);
-  return (
-    <CalculatorCard noteId={props.noteId} title={props.title} subtitle={props.subtitle} icon={props.icon} focused={focusNoteId === props.noteId}>
-      {props.children}
-      <MetaFooter ids={props.metaIds} />
-    </CalculatorCard>
-  );
-}
 
 function Anticonvulsants({ weightKg }: { weightKg: number | null }) {
   return (
@@ -265,8 +188,13 @@ export default function Calculators({
   return (
     <FocusContext.Provider value={focusNoteId}>
     <div className="space-y-4">
+      <ThrombolyticsCard weightKg={weightKg} />
       <Anticonvulsants weightKg={weightKg} />
       <IcpCard weightKg={weightKg} />
+      <IchScoreCard age={age} />
+      <Abcd2Card age={age} />
+      <Cha2ds2VascCard age={age} sex={sex} />
+      <HasBledCard age={age} />
       <CrClCard weightKg={weightKg} age={age} sex={sex} creatinine={creatinine} />
       <LeddCard />
     </div>

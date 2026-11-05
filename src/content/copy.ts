@@ -24,6 +24,9 @@ export const DISCLAIMER_GATE = {
 /** Persistent one-line footer on every entry and calculator screen. */
 export const FOOTER = "Decision support only — verify doses before ordering. Reviewed {lastReviewed} · Content {contentVersion}";
 
+/** Footer on every calculator card (calculators have no per-entry review date; the content version identifies what shipped). */
+export const CALC_FOOTER = "Decision support only — verify doses before ordering. Content {contentVersion}";
+
 /** Banners keyed to entry state. */
 export const BANNERS = {
   UNREVIEWED: "Not yet signed off — content may be incomplete or wrong. Verify everything against the sources.",

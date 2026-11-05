@@ -3,6 +3,8 @@ import { resolveRef } from '../src/lib/links';
 import { CAUTION_LISTS } from '../src/lib/registry';
 import { CALC_CARD } from '../src/lib/nav';
 import { parseHash } from '../src/lib/route';
+import { CALCULATOR_META } from '../src/lib/calculators';
+import manifest from '../data/calculators.manifest.json';
 
 describe('resolveRef', () => {
   it('links to a built calculator, with its title', () => {
@@ -15,7 +17,7 @@ describe('resolveRef', () => {
     expect(resolveRef('cockcroft-gault').href).toBe('#/calc/cockcroft-gault');
   });
   it('does not link calculators that have no UI yet', () => {
-    const r = resolveRef('calc:tnk-dose');
+    const r = resolveRef('calc:ivig-dose');
     expect(r.href).toBeNull();
     expect(r.label).toBeTruthy();
   });
@@ -47,5 +49,16 @@ describe('every cross-link in the built registries', () => {
   });
   it('maps each calculator card id to a note id with the calc- prefix', () => {
     for (const note of Object.values(CALC_CARD)) expect(note.startsWith('calc-')).toBe(true);
+  });
+  it('only maps calculator ids that exist in the manifest and in CALCULATOR_META', () => {
+    for (const id of Object.keys(CALC_CARD)) {
+      expect(manifest).toContain(id);
+      expect(CALCULATOR_META[id]).toBeDefined();
+    }
+  });
+  it('links every stroke calculator to its card', () => {
+    for (const id of ['tnk-dose', 'alteplase-dose', 'ich-score', 'abcd2', 'cha2ds2-vasc', 'has-bled']) {
+      expect(resolveRef(`calc:${id}`).href).toBe(`#/calc/${id}`);
+    }
   });
 });

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { entryBanners, fillTemplate, footerText, isStale } from '../src/lib/banners';
+import { calcFooterText, entryBanners, fillTemplate, footerText, isStale } from '../src/lib/banners';
 import { BANNERS, STALE_AFTER_MONTHS } from '../src/content/copy';
 
 const d = (iso: string) => new Date(`${iso}T12:00:00Z`);
@@ -51,5 +51,13 @@ describe('footerText', () => {
   });
   it('leaves unknown placeholders untouched', () => {
     expect(fillTemplate('a {x} {y}', { x: 1 })).toBe('a 1 {y}');
+  });
+});
+
+describe('calcFooterText', () => {
+  it('fills the content version', () => {
+    const t = calcFooterText('1.1.0+abc');
+    expect(t).toContain('1.1.0+abc');
+    expect(t).not.toContain('{');
   });
 });
