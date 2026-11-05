@@ -15,7 +15,8 @@ export default function ContextBar({ context, onChange, onClear }: Props) {
     <header
       className="sticky top-0 z-20 border-b border-slate-700 bg-slate-900/95 pb-2 backdrop-blur"
       style={{
-        paddingTop: 'max(0.5rem, env(safe-area-inset-top))',
+        // Extra 0.5rem on top of the inset: the iOS standalone status bar can overlap the first few pixels below it.
+        paddingTop: 'calc(0.5rem + env(safe-area-inset-top))',
         paddingLeft: 'max(0.75rem, env(safe-area-inset-left))',
         paddingRight: 'max(0.75rem, env(safe-area-inset-right))',
       }}

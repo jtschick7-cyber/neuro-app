@@ -27,11 +27,12 @@ export default function NavBar({ active }: { active: SectionId }) {
             <li key={s.id}>
               <a
                 href={s.hash}
+                aria-label={s.label}
                 aria-current={on ? 'page' : undefined}
                 className={`flex min-h-14 flex-col items-center justify-center gap-0.5 px-0.5 text-center text-[10px] font-medium tracking-tight ${on ? 'text-sky-300' : 'text-slate-400'}`}
               >
                 <Icon size={22} aria-hidden="true" />
-                {s.label}
+                {s.navLabel ?? s.label}
               </a>
             </li>
           );
