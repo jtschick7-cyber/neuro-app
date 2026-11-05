@@ -39,7 +39,7 @@ export default function App() {
         <main className="mx-auto max-w-3xl px-3 py-4" style={{ paddingBottom: 'calc(5.5rem + env(safe-area-inset-bottom))' }}>
           <Screen route={route} context={context} />
           <p className="mt-6 text-center text-xs text-slate-600">
-            Decision support only — verify doses before ordering. Content {about.contentVersion} ·{' '}
+            Decision support only — verify doses before ordering. Content {about.contentVersion} · Build {__BUILD_ID__} ·{' '}
             <a href="#/about" className="text-slate-500 underline">
               About
             </a>
