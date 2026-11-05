@@ -36,11 +36,22 @@ export function Warnings({ items }: { items: string[] }) {
   );
 }
 
-export function Result({ r, label }: { r: CalcResult | string; label: string }) {
+/** Muted "factor · max cap" badge for a weight-based load, read from the result's parts and CALCULATOR_META (never retyped). */
+export function loadBadge(r: CalcResult | string, metaId: string): string | undefined {
+  if (typeof r === 'string') return undefined;
+  const perKg = r.parts?.mgPerKg;
+  const cap = CALCULATOR_META[metaId]?.caps[0];
+  return perKg === undefined || cap === undefined ? undefined : `${perKg} mg/kg · max ${cap}`;
+}
+
+export function Result({ r, label, badge }: { r: CalcResult | string; label: string; badge?: string }) {
   if (typeof r === 'string') return <p className="py-2 text-sm text-red-300">{label}: {r}</p>;
   return (
     <div className="py-2">
-      <div className="text-sm text-slate-200">{label}</div>
+      <div className="flex items-baseline justify-between gap-2">
+        <span className="text-sm text-slate-200">{label}</span>
+        {badge && <span className="text-xs text-slate-400">{badge}</span>}
+      </div>
       <div className="text-lg font-semibold text-sky-300">{r.display}</div>
       <Warnings items={r.warnings} />
     </div>
