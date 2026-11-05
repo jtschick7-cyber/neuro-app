@@ -1,8 +1,17 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Search } from 'lucide-react';
+import { ChevronRight, Search } from 'lucide-react';
 import { APP_NAME } from '../content/copy';
-import { SECTIONS } from '../lib/nav';
+import { SECTIONS, type SectionId } from '../lib/nav';
 import { search } from '../lib/search';
+
+/** Semantic accent per section: left border and blurb tint (static strings so Tailwind keeps them). */
+const ACCENT: Partial<Record<SectionId, { border: string; text: string }>> = {
+  acute: { border: 'border-l-rose-500', text: 'text-rose-400' },
+  consults: { border: 'border-l-sky-400', text: 'text-sky-400' },
+  drugs: { border: 'border-l-amber-500', text: 'text-amber-400' },
+  antibodies: { border: 'border-l-purple-500', text: 'text-purple-400' },
+  calc: { border: 'border-l-emerald-500', text: 'text-emerald-400' },
+};
 
 type Index = typeof import('../lib/searchIndex').searchIndex;
 
@@ -36,9 +45,9 @@ export default function Home() {
             setWanted(true);
             setQuery(e.target.value);
           }}
-          placeholder="Search everything (e.g. TNK, Keppra, status, mag)"
+          placeholder="Search TNK, Keppra, status..."
           aria-label="Search all references and calculators"
-          className="w-full rounded-lg border border-slate-600 bg-slate-800 py-2.5 pl-10 pr-3 text-base text-slate-100 placeholder-slate-500 focus:border-sky-400 focus:outline-none"
+          className="w-full rounded-lg border border-slate-700 bg-slate-900/90 py-2.5 pl-10 pr-3 text-base text-slate-100 placeholder:text-slate-400 focus:border-sky-400 focus:outline-none focus:ring-1 focus:ring-sky-400/50"
         />
       </div>
       {searching ? (
@@ -61,9 +70,15 @@ export default function Home() {
         <ul className="grid gap-2">
           {tiles.map((s) => (
             <li key={s.id}>
-              <a href={s.hash} className="block rounded-xl border border-slate-700 bg-slate-900 p-4 hover:border-sky-500">
-                <div className="text-base font-semibold text-slate-100">{s.label}</div>
-                <div className="text-sm text-slate-400">{s.blurb}</div>
+              <a
+                href={s.hash}
+                className={`flex items-center justify-between gap-2 rounded-xl border border-l-4 border-slate-800 bg-slate-900/90 p-4 hover:border-sky-500 ${ACCENT[s.id]?.border ?? ''}`}
+              >
+                <div>
+                  <div className="text-base font-semibold text-slate-100">{s.label}</div>
+                  <div className={`text-sm ${ACCENT[s.id]?.text ?? 'text-slate-400'}`}>{s.blurb}</div>
+                </div>
+                <ChevronRight size={20} aria-hidden="true" className="shrink-0 text-slate-500" />
               </a>
             </li>
           ))}

@@ -50,11 +50,19 @@ export const RoleBadge = ({ role }: { role: string }) => (
 );
 
 /** Collapsible section; `open` for the parts needed in the first seconds. Empty sections are omitted by the caller. */
-export function Section({ title, open = false, children }: { title: string; open?: boolean; children: ReactNode }) {
+export function Section({ title, open = false, alert = false, children }: { title: string; open?: boolean; alert?: boolean; children: ReactNode }) {
+  if (alert) {
+    return (
+      <details open={open} className="my-3 rounded-r-lg border-l-2 border-rose-500 bg-rose-950/20 py-2 pl-3 pr-2">
+        <summary className="cursor-pointer select-none text-sm font-semibold text-rose-400">{title}</summary>
+        <div className="mt-1">{children}</div>
+      </details>
+    );
+  }
   return (
-    <details open={open} className="mt-3 border-t border-slate-800 pt-2">
-      <summary className="min-h-8 cursor-pointer text-sm font-semibold text-slate-200">{title}</summary>
-      <div className="mt-1">{children}</div>
+    <details open={open} className="my-1.5">
+      <summary className="cursor-pointer select-none rounded-lg border border-slate-800/80 bg-slate-900/80 px-3 py-2 text-sm font-semibold text-slate-100">{title}</summary>
+      <div className="mt-1 px-1">{children}</div>
     </details>
   );
 }

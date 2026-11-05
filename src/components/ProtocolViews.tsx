@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
-import { ArrowLeft, Search } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Search } from 'lucide-react';
 import BannerList from './BannerList';
 import BedsideNotes from './BedsideNotes';
 import EntryFooter from './EntryFooter';
@@ -58,8 +58,8 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
     const entry = entries.find((e) => e.id === entryId);
     return (
       <div className="space-y-3">
-        <a href={toHash({ kind: 'registry', registry })} className="inline-flex min-h-10 items-center gap-1 text-sm text-sky-300">
-          <ArrowLeft size={16} aria-hidden="true" /> {noun}
+        <a href={toHash({ kind: 'registry', registry })} className="inline-flex min-h-10 items-center gap-1 text-xs font-medium text-sky-400 hover:text-sky-300">
+          <ArrowLeft size={16} aria-hidden="true" /> {noun}{entry ? ` · ${CATEGORY_LABEL[entry.category] ?? entry.category}` : ''}
         </a>
         {entry ? renderEntry(entry) : <p className="text-sm text-slate-400">No entry “{entryId}” in {noun}.</p>}
       </div>
@@ -77,7 +77,7 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
           onChange={(e) => setQuery(e.target.value)}
           placeholder={placeholder}
           aria-label={`Search ${noun}`}
-          className="w-full rounded-lg border border-slate-600 bg-slate-800 py-2 pl-10 pr-3 text-base text-slate-100 placeholder-slate-500 focus:border-sky-400 focus:outline-none"
+          className="w-full rounded-lg border border-slate-700 bg-slate-900/90 py-2 pl-10 pr-3 text-base text-slate-100 placeholder:text-slate-400 focus:border-sky-400 focus:outline-none focus:ring-1 focus:ring-sky-400/50"
         />
       </div>
       <p className="text-xs text-slate-500">
@@ -90,15 +90,16 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
       ))}
       {groups.map(([cat, list]) => (
         <section key={cat}>
-          <h2 className="mb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">{CATEGORY_LABEL[cat] ?? cat}</h2>
+          <h2 className="mb-2 mt-4 text-xs font-semibold uppercase tracking-wider text-sky-400">{CATEGORY_LABEL[cat] ?? cat}</h2>
           <ul className="space-y-1.5">
             {list.map((e) => (
               <li key={e.id}>
                 <a
                   href={toHash({ kind: 'registry', registry, entryId: e.id })}
-                  className="flex min-h-12 items-center rounded-xl border border-slate-700 bg-slate-900 px-4 py-2 text-base text-slate-100 hover:border-sky-500"
+                  className="flex min-h-12 items-center justify-between gap-2 rounded-xl border border-slate-800 bg-slate-900/90 px-4 py-2 text-base text-slate-100 hover:border-sky-500"
                 >
                   {e.title}
+                  <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-slate-500" />
                 </a>
               </li>
             ))}
@@ -182,7 +183,7 @@ function ConsultEntryView({ e }: { e: ConsultEntry }) {
   return (
     <EntryShell registry="consult-workups" entry={e}>
       <p className="mt-2 text-sm text-slate-200">{e.consultQuestion}</p>
-      <Section title="Red flags" open>
+      <Section title="Red flags" open alert>
         <Bullets items={e.redFlags} tone="text-red-200" />
       </Section>
       <Section title="Key history" open>
@@ -275,7 +276,7 @@ export function ConsultView({ entryId }: { entryId?: string }) {
     <RegistryScreen
       registry="consult-workups"
       noun="Consult workups"
-      placeholder="Search consult (e.g. TIA, syncope, headache)"
+      placeholder="Search TIA, syncope, seizure..."
       load={loadConsults}
       entryId={entryId}
       renderEntry={(e) => <ConsultEntryView e={e} />}
