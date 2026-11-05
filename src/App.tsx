@@ -5,6 +5,7 @@ import MgRegistryView from './components/MgRegistryView';
 import NavBar from './components/NavBar';
 import { AcuteView, ConsultView } from './components/ProtocolViews';
 import { AntibodiesView, AntithromboticsView, InteractionsView } from './components/DrugAntibodyViews';
+import About from './components/About';
 import Home from './components/Home';
 import DisclaimerGate from './components/DisclaimerGate';
 import { usePatientContext, type PatientContext } from './lib/patientContext';
@@ -38,7 +39,10 @@ export default function App() {
         <main className="mx-auto max-w-3xl px-3 py-4" style={{ paddingBottom: 'calc(5.5rem + env(safe-area-inset-bottom))' }}>
           <Screen route={route} context={context} />
           <p className="mt-6 text-center text-xs text-slate-600">
-            Decision support only — verify doses before ordering. Content {about.contentVersion}
+            Decision support only — verify doses before ordering. Content {about.contentVersion} ·{' '}
+            <a href="#/about" className="text-slate-500 underline">
+              About
+            </a>
           </p>
         </main>
         <NavBar active={sectionOf(route)} />
@@ -51,6 +55,8 @@ function Screen({ route, context }: { route: Route; context: PatientContext }) {
   switch (route.kind) {
     case 'home':
       return <Home />;
+    case 'about':
+      return <About />;
     case 'calc':
       return (
         <Calculators
