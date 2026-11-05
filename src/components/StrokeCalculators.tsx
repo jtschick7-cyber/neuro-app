@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Brain, Clock, Droplet, HeartPulse, Syringe } from 'lucide-react';
 import { CheckField, NeedWeight, NumberField, SelectField } from './CalculatorCard';
-import { Card, Result, parseNonNegative, safe } from './calcShared';
+import { AlteplaseResult, Card, DoseResult, Result, parseNonNegative, safe } from './calcShared';
 import { abcd2, alteplaseDose, cha2ds2Vasc, hasBled, ichScore, tnkDose } from '../lib/calculators';
 import { parsePositive, type Sex } from '../lib/patientContext';
 
@@ -29,8 +29,8 @@ export function ThrombolyticsCard({ weightKg }: Pick<Inputs, 'weightKg'>) {
       ) : (
         <>
           <div className="divide-y divide-slate-800">
-            <Result label="Tenecteplase" r={safe(() => tnkDose(weightKg, { exactWeightUnder50: exact }))} />
-            <Result label="Alteplase" r={safe(() => alteplaseDose(weightKg))} />
+            <DoseResult label="Tenecteplase" r={safe(() => tnkDose(weightKg, { exactWeightUnder50: exact }))} />
+            <AlteplaseResult r={safe(() => alteplaseDose(weightKg))} />
           </div>
           {weightKg < 50 && <CheckField label="Use 1-kg dosing under 50 kg (accurate measured weight only)" checked={exact} onChange={setExact} />}
         </>
