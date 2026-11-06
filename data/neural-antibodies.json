@@ -1,6 +1,6 @@
 {
   "title": "Neural antibodies",
-  "version": "0.4.3",
+  "version": "0.5.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-05",
   "entries": [
@@ -2231,6 +2231,1241 @@
       "sources": [
         "Flanagan EP, et al. Glial fibrillary acidic protein immunoglobulin G as biomarker of autoimmune astrocytopathy: analysis of 102 patients. Ann Neurol 2017;81(2):298-309. doi:10.1002/ana.24881",
         "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "itpr1",
+      "antigen": "Inositol 1,4,5-trisphosphate receptor type 1 (ITPR1; endoplasmic reticulum Ca2+ channel)",
+      "searchTerms": [
+        "ITPR1-IgG",
+        "anti-ITPR1",
+        "anti-Sj",
+        "IP3R1",
+        "InsP3R1",
+        "Medusa head antibody"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Subacute cerebellar ataxia (Purkinje cell 'Medusa head' antibody)",
+          "typical": true
+        },
+        {
+          "syndrome": "Peripheral sensorimotor (radiculo)neuropathy, GBS-like or slowly progressive",
+          "typical": true
+        },
+        {
+          "syndrome": "Encephalitis/encephalopathy with seizures or cognitive decline",
+          "typical": false
+        },
+        {
+          "syndrome": "Myelopathy, incl. longitudinally extensive",
+          "typical": false
+        },
+        {
+          "syndrome": "Other: dysautonomia (incl. pandysautonomia), sleep disorder, dystonia, spastic paraparesis",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median onset 64 y (range 13–83); M:F 1:1.5 (Jarius 2022, pooled n=21)",
+        "Mayo series: median 64 y (range 7–83); 10/14 female; 2 pediatric (Alfugham 2018)",
+        "Peripheral phenotype median 60 y vs CNS phenotype 65 y (Jarius 2022)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Breast carcinoma (± endometrial)",
+          "frequencyText": "4/9 tumors: 3 breast, 1 breast + endometrial (Jarius 2022)"
+        },
+        {
+          "tumor": "Lung carcinoma (adenocarcinoma/NSCLC)",
+          "frequencyText": "3/9 tumors (Jarius 2022)"
+        },
+        {
+          "tumor": "Renal cell carcinoma",
+          "frequencyText": "1/9 tumors (Jarius 2022); bone/liver metastases at presentation (Alfugham 2018)"
+        },
+        {
+          "tumor": "Multiple myeloma",
+          "frequencyText": "1/9 tumors (Jarius 2022; Jarius 2016)"
+        }
+      ],
+      "cancerScreening": [
+        "Cancer in 9/20 (45%) with data (Jarius 2022); 5/14 (36%) in Mayo series (Alfugham 2018); both advise thorough tumor search in every seropositive pt",
+        "Modalities used in Mayo series: FDG-PET/CT, mammography (Alfugham 2018)",
+        "Tumor often already disseminated: metastases at presentation in 5/7 solid tumors (Jarius 2022)",
+        "Late tumor possible: breast cancer 11 y after ataxia onset (onset age 28) in 1 pt (Berzero 2017)",
+        "PNS-Care rescreening (every 4–6 mo for 2 y) is specified only for high-risk antibodies with high-risk phenotypes; ITPR1 is not tiered (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Serum CBA positive in all seropositive pts analysed; median serum CBA titer 1:30,720 (range 1:320–1:245,760; n=13) (Jarius 2022)",
+          "CSF IgG mainly extrathecal: CSF/serum ratio median 0.017; antibody index <4 in 2/2 tested (Jarius 2022)",
+          "CSF-only positive reports exist (5 excluded from pooled review) (Jarius 2022); PNS-Care advises testing serum and CSF (Graus 2021)"
+        ],
+        "methodNotes": [
+          "Tissue IHC/IFA: Purkinje somata, dendrites, axons ('Medusa head'), nearly identical to anti-Ca/ARHGAP26; ITPR1 CBA distinguishes (Jarius 2014)",
+          "Commercial CBA (Euroimmun); Mayo screening dilution serum 1:10, CSF 1:2 (Alfugham 2018)",
+          "Specificity: absent in 250 healthy and 105 non-neurological controls (Jarius 2022)",
+          "IgG2-only in milder cases (3 pts); IgG1-predominant in 2 pts with more severe outcome (Jarius 2022)",
+          "Coexisting neural IgGs reported: low-titer GAD65; CSF NMDAR + GFAP in 1 (Alfugham 2018)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Pooled seropositive pts: elevated protein 4/7, pleocytosis 1/5, OCB negative 5/6 (Jarius 2022)",
+          "Mayo series: elevated protein and pleocytosis in 4/5 tested (Alfugham 2018); conflicts with pooled data (see verify)",
+          "Acellular CSF with normal protein and no OCB in the MSA-C-like case (Berzero 2017)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal in 2/9 imaged (22%) (Alfugham 2018)"
+        ],
+        "typicalFindings": [
+          "Ataxia: cerebellar or pontocerebellar atrophy (Alfugham 2018; Jarius 2022)",
+          "Pontocerebellar atrophy with hot cross bun sign in 1 pt, MSA-C mimic (Berzero 2017)",
+          "Myelopathy: posterior column T2 change or longitudinally extensive myelitis; nerve-root enhancement (Alfugham 2018)",
+          "Encephalitis: mesial temporal or cortical-subcortical T2 lesions ± enhancement; temporal-predominant atrophy (Alfugham 2018)"
+        ]
+      },
+      "otherTests": [
+        "EMG/NCS: mixed sensorimotor radiculopolyneuropathy, delayed F waves, no conduction block (Jarius 2016); axonal or demyelinating neuropathy (Alfugham 2018)",
+        "Autonomic testing (TST/ART) abnormal in pandysautonomia with normal EMG (Alfugham 2018)",
+        "EEG: status epilepticus in 1, electrographic seizures in 1 (Jarius 2022)",
+        "FDG-PET: medial temporal/striatal hypermetabolism with normal MRI (Jarius 2022); increased cerebellar uptake with normal MRI in 1 ataxia pt (Alfugham 2018)"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); pooled cancer rate 9/20 (45%), which the authors note would fit the PNS-Care intermediate-risk range (30–70%) (Jarius 2022)",
+        "No significant improvement in any of 10 immunotherapy-treated Mayo pts (Alfugham 2018); clear benefit only in isolated cases (Jarius 2022)",
+        "Neuropathy is the most cancer-associated phenotype: cancer in 3/5 with neuropathy (Alfugham 2018)",
+        "Rare: 0.015% of 52,000 specimens over 12 mo (Alfugham 2018)",
+        "Germline ITPR1 mutations cause SCA15/SCA29, a distinct genetic differential (Jarius 2014)",
+        "Part of the 'Medusa head' Purkinje antibody group with mGluR1, Homer-3, CARP VIII (Jarius & Wildemann 2015)",
+        "Serum 1/32,000 and CSF 1/1,000 Purkinje antibody titers; no response to IVMP, PLEX or IVIg in the MSA-C-like case (Berzero 2017)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:arhgap26",
+        "neural-antibodies:mglur1"
+      ],
+      "sources": [
+        "Alfugham N, Gadoth A, Lennon VA, et al. ITPR1 autoimmunity: frequency, neurologic phenotype, and cancer association. Neurol Neuroimmunol Neuroinflamm 2018;5:e418. doi:10.1212/NXI.0000000000000418",
+        "Jarius S, Bräuninger S, Chung HY, et al. Inositol 1,4,5-trisphosphate receptor type 1 autoantibody (ITPR1-IgG/anti-Sj)-associated autoimmune cerebellar ataxia, encephalitis and peripheral neuropathy: review of the literature. J Neuroinflammation 2022;19:196. doi:10.1186/s12974-022-02545-4",
+        "Jarius S, Scharf M, Begemann N, et al. Antibodies to the inositol 1,4,5-trisphosphate receptor type 1 (ITPR1) in cerebellar ataxia. J Neuroinflammation 2014;11:206. doi:10.1186/s12974-014-0206-3",
+        "Jarius S, Ringelstein M, Haas J, et al. Inositol 1,4,5-trisphosphate receptor type 1 autoantibodies in paraneoplastic and non-paraneoplastic peripheral neuropathy. J Neuroinflammation 2016;13:278. doi:10.1186/s12974-016-0737-x",
+        "Berzero G, Hacohen Y, Komorowski L, et al. Paraneoplastic cerebellar degeneration associated with anti-ITPR1 antibodies. Neurol Neuroimmunol Neuroinflamm 2017;4:e326. doi:10.1212/NXI.0000000000000326",
+        "Jarius S, Wildemann B. 'Medusa head ataxia': the expanding spectrum of Purkinje cell antibodies in autoimmune cerebellar ataxia. Part 1: anti-mGluR1, anti-Homer-3, anti-Sj/ITPR1 and anti-CARP VIII. J Neuroinflammation 2015;12:166. doi:10.1186/s12974-015-0356-y",
+        "Garza M, Piquet AL. Update in autoimmune movement disorders: newly described antigen targets in autoimmune and paraneoplastic cerebellar ataxia. Front Neurol 2021;12:683048. doi:10.3389/fneur.2021.683048",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "ap3b2",
+      "antigen": "Adaptor protein-3 complex subunit beta-2 (AP3B2; beta-neuronal adaptin-like protein, synaptic vesicle coat)",
+      "searchTerms": [
+        "AP3B2-IgG",
+        "anti-AP3B2",
+        "anti-Nb",
+        "beta-NAP",
+        "beta-neuronal adaptin",
+        "AP-3B2",
+        "adaptor protein 3 beta 2"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Subacute rapidly progressive gait ataxia: cerebellar or spinocerebellar",
+          "typical": true
+        },
+        {
+          "syndrome": "Myeloneuropathy (dorsal column tractopathy ± longitudinally extensive cord lesion)",
+          "typical": true
+        },
+        {
+          "syndrome": "Sensory neuropathy/neuronopathy with sensory ataxia",
+          "typical": true
+        },
+        {
+          "syndrome": "Dysautonomia (GI dysmotility, bladder)",
+          "typical": false
+        },
+        {
+          "syndrome": "Subacute combined degeneration (B12) mimic",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median onset 42 y (range 24–58); 6/10 female (Honorat 2019)",
+        "Published cases span 10–73 y; 9/14 female (Liu 2025 Table 1)",
+        "Pediatric cases reported: 10 y (Liu 2025 Table 1) and 15 y (Garza 2021)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Renal cell carcinoma",
+          "frequencyText": "1/9, found prospectively; AP3B2 not detected in tumor sections (Honorat 2019)"
+        },
+        {
+          "tumor": "B-cell lymphoma (remote history)",
+          "frequencyText": "1/9 (Honorat 2019); no temporal correlation per Liu 2025"
+        }
+      ],
+      "cancerScreening": [
+        "Cancer in 2/9: RCC at presentation 1, remote B-cell lymphoma 1; both pts died (Honorat 2019)",
+        "PNS-Care rescreening (every 4–6 mo for 2 y) is specified only for high-risk antibodies; AP3B2 is not tiered (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "IFA positive in serum of 10/10 pts and in all 6 CSF specimens (Honorat 2019)",
+          "Serum IFA endpoint median 1:30,720 (range 3,840–61,440); CSF median 1:64 (range 32–256) (Honorat 2019)",
+          "CSF CBA positive in 3/3 tested (Honorat 2019)"
+        ],
+        "methodNotes": [
+          "Tissue IFA: synaptic pattern resembling amphiphysin-IgG; Purkinje perikarya, cerebellar granular-layer synapses, dentate, spinal dorsal horn, DRG and sympathetic ganglia (Honorat 2019)",
+          "Series found among specimens archived as 'amphiphysin-like' synaptic staining (Honorat 2019)",
+          "Western blot alone not specific: 1/50 control sera WB-positive but IFA- and CBA-negative; all 470 IFA controls negative (Honorat 2019)",
+          "Confirm by CBA (Euroimmun biochip, AP3B2 isoform 1) (Honorat 2019)",
+          "No binding to live hippocampal neurons, consistent with intracellular target (Honorat 2019)",
+          "Coexisting low-level N-type VGCC IgG in 8/10 (median 0.07 nmol/L) and low-titer GAD65 in 2 (Honorat 2019)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Abnormal in 6/6 with CSF data (Honorat 2019)"
+        ],
+        "typicalFindings": [
+          "WBC elevated 4/6 (median 7/µL, range 6–8); protein elevated 3/6 (median 46 mg/dL, range 39–87); CSF-exclusive OCB 2/6; raised IgG index/synthesis 1/6 (Honorat 2019)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Brain MRI normal in 3/10 and spinal cord MRI normal in 3/7 of published cases with imaging (Liu 2025 Table 1)"
+        ],
+        "typicalFindings": [
+          "Cerebellar (vermis-predominant) atrophy in 4/4 with cerebellar ataxia (Honorat 2019)",
+          "Cord MRI abnormal in 3/6 imaged, all with myeloneuropathy: posterior-column LETM/tractopathy, central gray T2 signal, cord atrophy (Honorat 2019)",
+          "Bilateral subcortical/periventricular white-matter T2 lesions in 1 (Honorat 2019)",
+          "Hemicerebellar atrophy with focal T2 lesion in 1 pediatric case (Garza 2021)"
+        ]
+      },
+      "otherTests": [
+        "EMG abnormal in 4: diffuse large-fiber sensory neuropathy 2, sensory neuronopathy 1, severe thoracic/lumbosacral polyradiculopathy 1 (Honorat 2019)",
+        "Sural nerve biopsy (1): endoneurial CD68+ macrophages, multifocal large- and small-fiber loss, consistent with neuron-directed cytotoxicity (Honorat 2019)",
+        "B12 and copper/ceruloplasmin normal in all Mayo-evaluated pts (Honorat 2019)",
+        "Early sensory involvement may be asymmetric (neuronopathy/mononeuropathy multiplex pattern) before becoming symmetric (Liu 2025)"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); cancer in 2/9 (Honorat 2019)",
+        "Gait disturbance unifies the syndrome: all 9 with data; sensory ataxia in 5, cerebellar ataxia in 4 (Honorat 2019)",
+        "Immunotherapy: 0/5 improved, but none worsened over median 36 mo follow-up (range 3–94) (Honorat 2019); mild improvement in 2/8 treated in pooled literature (Liu 2025)",
+        "Mixed signs: 2 cerebellar pts had leg areflexia with bilateral Babinski (Honorat 2019)",
+        "Coexisting systemic autoimmunity: Sjögren, systemic sclerosis, hypothyroidism (1 each) (Honorat 2019)",
+        "Consider in B12-refractory SCD-like myeloneuropathy with normal B12 and copper (Liu 2025)",
+        "Lab report may first read 'unclassified synaptic / amphiphysin-like' IFA pattern (Honorat 2019)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:amphiphysin",
+        "neural-antibodies:anti-hu"
+      ],
+      "sources": [
+        "Honorat JA, Lopez-Chiriboga AS, Kryzer TJ, et al. Autoimmune gait disturbance accompanying adaptor protein-3B2-IgG. Neurology 2019;93:e954-e963. doi:10.1212/WNL.0000000000008061",
+        "Liu Y, Gao GH, Lin J, Sun C, Zhao YY. Case report: subacute combined degeneration of the spinal cord mimic accompanying adaptor protein-3B2-IgG. Front Immunol 2025;16:1598033. doi:10.3389/fimmu.2025.1598033",
+        "Garza M, Piquet AL. Update in autoimmune movement disorders: newly described antigen targets in autoimmune and paraneoplastic cerebellar ataxia. Front Neurol 2021;12:683048. doi:10.3389/fneur.2021.683048",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "septin-5",
+      "antigen": "Septin-5 (CDCrel-1; presynaptic GTP-binding protein regulating neurotransmitter exocytosis)",
+      "searchTerms": [
+        "septin-5-IgG",
+        "anti-septin-5",
+        "SEPT5",
+        "SEPTIN5",
+        "CDCrel-1",
+        "septin 5"
+      ],
+      "antigenClass": "INTRACELLULAR_SYNAPTIC",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Subacute rapidly progressive (pan)cerebellar ataxia with prominent hyperkinetic eye movement disorder, oscillopsia, vertigo",
+          "typical": true
+        },
+        {
+          "syndrome": "Eye movement disorder with truncal/limb myoclonus, later encephalopathy",
+          "typical": false
+        },
+        {
+          "syndrome": "Psychiatric features (apathy, emotional blunting) with coexisting septin-7-IgG",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Septin-5 cohort (n=8): 6 M, 2 F; age 40–70 y, median 59.5 (Hinson 2022 Table S1)",
+        "Index series: median onset 59 y (range 47–62) (Honorat 2018)"
+      ],
+      "tumors": [],
+      "cancerScreening": [
+        "No neoplasm in 8/8 septin-5-IgG pts (Hinson 2022)",
+        "Septin-5 is expressed in pancreatic neuroendocrine tumors, but no paraneoplastic case reported (Honorat 2018)",
+        "PNS-Care rescreening rule applies only to high-risk antibodies; septin-5 is not tiered (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Septin IFA pattern in all 12 CSF and 17/18 sera; 1 pt positive in CSF only (Hinson 2022)",
+          "Median titers (septin-5 + -7 cohort): CSF 1:256 (range 4–2048), serum 1:15,360 (range 480–61,440) (Hinson 2022)",
+          "Septin-5 index series: serum median 1:15,360 (range 7,680–15,360); intrathecal vs systemic origin unknown (Honorat 2018)"
+        ],
+        "methodNotes": [
+          "Tissue IFA 'septin pattern': diffuse synaptic (neuropil) staining, cerebellar molecular layer and thalamus strongest, plus myenteric plexus and renal glomeruli (Hinson 2022)",
+          "Extra gastric mucosal and renal interstitial staining indicates septin-7-IgG; septin-5 vs -7 resolved by CBA (Euroimmun, isoform 1) (Hinson 2022)",
+          "Reactive with septin-5 isoform 1 only; all controls negative by IFA and CBA (Honorat 2018)",
+          "Coexisting septin-6/-11 IgG by WB in 1/4 tested (Hinson 2022); septin-4 IgG in 1 (Honorat 2018)",
+          "Coexisting N-type VGCC IgG in 2 and GAD65 in 2 (0.17 and 28.1 nmol/L) (Honorat 2018)",
+          "Patient IgG binds live hippocampal neuron surfaces, colocalizing with synaptophysin (Hinson 2022)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "No abnormal value reported in 1/5 with CSF data (20%) (Hinson 2022 Table S1)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 3/5 (8, 35, 144/µL, lymphocytic); protein elevated 3/5 (47–115 mg/dL); raised IgG synthesis rate 2/5; CSF-exclusive OCB (14) in 1 (Hinson 2022 Table S1)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Normal in 4/7 septin-5 pts with imaging (57%) (Hinson 2022)"
+        ],
+        "typicalFindings": [
+          "Focal cerebellar (vermis) atrophy in 2/7 (Hinson 2022), early in course in 1 (Honorat 2018)",
+          "Diffuse cerebellar T2 hyperintensity with FDG hypermetabolism in 1 (Hinson 2022 Table S1)"
+        ]
+      },
+      "otherTests": [
+        "FDG-PET: focal cerebellar hypermetabolism in 1/7 septin-5 pts (Hinson 2022)"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); no neoplasm in 8/8 (Hinson 2022)",
+        "All 8 septin-5 pts had pancerebellar ataxia; 7/8 prominent eye movement disorders (Hinson 2022)",
+        "Vestibular mimic: 1 pt first diagnosed as labyrinthitis (vertigo, intractable nausea/vomiting before ataxia) (Honorat 2018)",
+        "Outcomes: improvement in 4/5 treated, often partial or relapsing on steroid taper (rituximab or cyclophosphamide used); 1 spontaneous recovery; 1 treated pt died (Hinson 2022 Table S1)",
+        "Eye findings recorded: downbeat plus periodic alternating nystagmus (1), diplopia (2) (Hinson 2022 Table S1)",
+        "Coexisting GRAF1-IgG in 1 (Hinson 2022 Table S1)",
+        "Septin-5 is enriched in cerebellar dentate nuclei, matching the oculomotor phenotype (Hinson 2022)",
+        "Coexisting septin-7-IgG in 2/8; 1 developed apathy, emotional blunting, poor insight (Hinson 2022)",
+        "Onset 1 mo after SARS-CoV-2 illness in 1 (Hinson 2022)",
+        "Very rare: septin pattern in 0.003% of sera and 0.004% of CSF screened (Hinson 2022)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:septin-7",
+        "neural-antibodies:arhgap26"
+      ],
+      "sources": [
+        "Honorat JA, Lopez-Chiriboga AS, Kryzer TJ, et al. Autoimmune septin-5 cerebellar ataxia. Neurol Neuroimmunol Neuroinflamm 2018;5:e474. doi:10.1212/NXI.0000000000000474",
+        "Hinson SR, Honorat JA, Grund EM, et al. Septin-5 and -7-IgGs: neurologic, serologic, and pathophysiologic characteristics. Ann Neurol 2022;92:1090-1101. doi:10.1002/ana.26482",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Segal Y, Soltys J, Clarkson BDS, et al. Toward curing neurological autoimmune disorders: biomarkers, immunological mechanisms, and therapeutic targets. Neuron 2025;113:345-379. doi:10.1016/j.neuron.2024.12.006"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "neurochondrin",
+      "antigen": "Neurochondrin (NCDN, norbin; intracellular somatodendritic protein interacting with mGluR1/mGluR5)",
+      "searchTerms": [
+        "neurochondrin-IgG",
+        "anti-neurochondrin",
+        "NCDN",
+        "norbin"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Rapidly progressive rhombencephalitis: cerebellar ataxia with brainstem signs (eye movement abnormality, dysphagia, vomiting)",
+          "typical": true
+        },
+        {
+          "syndrome": "Subacute-to-chronic cerebellar ataxia (primary autoimmune cerebellar ataxia)",
+          "typical": true
+        },
+        {
+          "syndrome": "Pediatric chorea, dystonia, recurrent ataxia or encephalopathy",
+          "typical": false
+        },
+        {
+          "syndrome": "Myelopathy (longitudinally extensive)",
+          "typical": false
+        },
+        {
+          "syndrome": "Psychosis/behavioral change preceding ataxia",
+          "typical": false
+        },
+        {
+          "syndrome": "Small-fiber neuropathy with dysautonomia",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Mayo series: median onset 43 y (range 30–69); 5/8 female (Shelly 2019)",
+        "Pooled literature (n=19): 12 M, 7 F; age 2.6–69 y; 6 pediatric (<16 y) (Schwarzwald 2023)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Uterine carcinoma (poorly differentiated)",
+          "frequencyText": "1/7 Mayo pts (Shelly 2019); the only cancer among 19 published cases (Schwarzwald 2023)"
+        }
+      ],
+      "cancerScreening": [
+        "Cancer rare: 1/19 published cases (Schwarzwald 2023)",
+        "Whole-body FDG-PET/CT plus gynecologic/urologic exams repeated over 2–10 y found no tumor in 3 pts (Miske 2017)",
+        "PNS-Care rescreening rule applies only to high-risk antibodies; neurochondrin is not tiered (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Index Mayo series detected in 8 serum and 4 CSF specimens from 8 pts (Shelly 2019)",
+          "Median titers: serum 1:30,720 (range 3,840–61,440); CSF 1:64 (range 2–256) (Shelly 2019)",
+          "Intrathecal synthesis (antibody index ≥4) in 2/3 (Miske 2017)"
+        ],
+        "methodNotes": [
+          "Tissue IFA: synaptic/cytoplasmic pattern strongest in hippocampus (stratum lucidum, CA2/CA3, dentate), cerebellar Purkinje cytoplasm and molecular layer, amygdala (Shelly 2019)",
+          "CBA alone not specific: positive in 2/196 healthy controls whose tissue IFA was negative (Shelly 2019); confirm with tissue IFA",
+          "Antigen confirmed by ~75 kDa immunoblot band and recombinant western blot (Shelly 2019)",
+          "IgG1 subclass; titers largely unchanged during immunosuppression (Miske 2017)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Normal in 2/16 with data (13%) (Schwarzwald 2023); abnormal in 5/5 Mayo pts (Shelly 2019)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 11/16 and OCB 11/16 in pooled cases (Schwarzwald 2023)",
+          "Mayo series: lymphocytic pleocytosis 3/3 tested (14–185/µL, median 18); elevated protein 5/5; CSF-exclusive OCB 3/3; raised IgG index 3/3 (Shelly 2019)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal in 5/18 with data (28%) (Schwarzwald 2023)"
+        ],
+        "typicalFindings": [
+          "Cerebellar (often vermian) atrophy in 10/18 (Schwarzwald 2023); severe cerebellar atrophy at last follow-up in 5/7 Mayo pts (Shelly 2019)",
+          "Early MRI may be normal: 2/7 normal at onset (Shelly 2019); normal initial MRI then 29% cerebellar volume loss over 2 y (Schwarzwald 2023)",
+          "Early T2 lesions in cerebellum/brainstem, rhombencephalon-restricted enhancement, hippocampal or striatal T2 change; longitudinally extensive cord T2 lesion in 1 (Shelly 2019)",
+          "Supratentorial cortical gray-matter atrophy with DTI white-matter changes (Miske 2017)"
+        ]
+      },
+      "otherTests": [
+        "Quantitative cerebellar volumetry documented progressive volume loss in 1 (Schwarzwald 2023)"
+      ],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); cancer in 1/19 published cases (Schwarzwald 2023)",
+        "Mayo adults: poor outcome despite early treatment: 5/6 treated within 1 mo of onset, but only 1 remained ambulatory; 1 died (Shelly 2019)",
+        "Pooled outcomes (n=19): at least slight improvement 10, stable 4, progressed 4, died 1 (Schwarzwald 2023)",
+        "Cyclophosphamide was followed by improvement or stabilization in 4/5; 3/4 adults given B-cell depletion progressed (Schwarzwald 2023; small numbers)",
+        "Children may present with chorea minor (Rommel 2017), dystonia or encephalopathy (Schwarzwald 2023)",
+        "Coexisting systemic autoimmunity: Sjögren syndrome, thyroiditis (1 each) (Shelly 2019)",
+        "Rare: 8 pts among 616,025 specimens screened 1993–2018 (Shelly 2019)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:mglur1",
+        "neural-antibodies:mglur5"
+      ],
+      "sources": [
+        "Shelly S, Kryzer TJ, Komorowski L, et al. Neurochondrin neurological autoimmunity. Neurol Neuroimmunol Neuroinflamm 2019;6:e612. doi:10.1212/NXI.0000000000000612",
+        "Miske R, Gross CC, Scharf M, et al. Neurochondrin is a neuronal target antigen in autoimmune cerebellar degeneration. Neurol Neuroimmunol Neuroinflamm 2017;4:e307. doi:10.1212/NXI.0000000000000307",
+        "Schwarzwald A, Salmen A, León Betancourt AX, et al. Anti-neurochondrin antibody as a biomarker in primary autoimmune cerebellar ataxia: a case report and review of the literature. Eur J Neurol 2023;30:1135-1147. doi:10.1111/ene.15648",
+        "Rommel FR, Miske R, Stöcker W, et al. Chorea minor associated with anti-neurochondrin autoantibodies. Neuropediatrics 2017;48:482-483. doi:10.1055/s-0037-1606371",
+        "Garza M, Piquet AL. Update in autoimmune movement disorders: newly described antigen targets in autoimmune and paraneoplastic cerebellar ataxia. Front Neurol 2021;12:683048. doi:10.3389/fneur.2021.683048",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "trim46",
+      "antigen": "Tripartite motif-containing protein 46 (TRIM46; axon initial segment microtubule-binding protein)",
+      "searchTerms": [
+        "TRIM46-IgG",
+        "anti-TRIM46",
+        "axon initial segment antibody",
+        "AIS antibody",
+        "tripartite motif 46"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Subacute cerebellar syndrome, isolated or with encephalopathy, brainstem signs, myelopathy or parkinsonism",
+          "typical": true
+        },
+        {
+          "syndrome": "Limbic encephalitis",
+          "typical": false
+        },
+        {
+          "syndrome": "Encephalomyelitis",
+          "typical": false
+        },
+        {
+          "syndrome": "Rapidly progressive dementia / encephalopathy ± seizures",
+          "typical": false
+        },
+        {
+          "syndrome": "Isolated myelopathy",
+          "typical": false
+        },
+        {
+          "syndrome": "Opsoclonus-myoclonus (with cerebellar syndrome)",
+          "typical": false
+        },
+        {
+          "syndrome": "Immune checkpoint inhibitor-associated CNS syndrome",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median age 67 y (range 25–87); 15/22 female (68%) (Valencia-Sanchez 2022)",
+        "Initial 3 pts: median 73 y (range 64–78), 1/3 female (Valencia-Sanchez 2022 suppl Table 2; van Coevorden-Hameete 2017)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Small-cell lung cancer",
+          "frequencyText": "4/18 cancers (Valencia-Sanchez 2022); 2/3 initial pts (van Coevorden-Hameete 2017)"
+        },
+        {
+          "tumor": "Other neuroendocrine carcinoma (pancreas, esophagus, endometrium)",
+          "frequencyText": "5/18: pancreatic 3, esophageal 1, endometrial 1 (Valencia-Sanchez 2022)"
+        },
+        {
+          "tumor": "Adenocarcinoma (lung, ovary, endometrium, breast)",
+          "frequencyText": "6/18: lung 2, ovarian 2, endometrial 1, breast 1 (Valencia-Sanchez 2022)"
+        },
+        {
+          "tumor": "Sarcoma",
+          "frequencyText": "2/18 (Valencia-Sanchez 2022)"
+        },
+        {
+          "tumor": "Gastrointestinal tumor, not otherwise specified",
+          "frequencyText": "1/18 (Valencia-Sanchez 2022)"
+        }
+      ],
+      "cancerScreening": [
+        "Cancer in 18/22 (82%); metastatic in 8 (Valencia-Sanchez 2022)",
+        "Cancer usually already known: diagnosed before neuro onset in 12/18 (median 17 mo prior, range 3 mo–8 y); found during neuro work-up in 6 (Valencia-Sanchez 2022)",
+        "Neuroendocrine lineage in half of cancers (Valencia-Sanchez 2022)",
+        "Late detection possible: SCLC 4 y after neuro onset in 1; 2 more with suspicious chest CT without histology (Valencia-Sanchez 2022)",
+        "SCLC diagnosed 10 mo after ataxia onset in 1 initial pt (van Coevorden-Hameete 2017)",
+        "Authors argue TRIM46 should qualify as high-risk (>70% cancer) (Valencia-Sanchez 2022); not tiered in PNS-Care, so its 2-y rescreening rule is not formally specified (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "25 seropositive pts: 9 serum only, 8 CSF only, 8 both (Valencia-Sanchez 2022)",
+          "All 33 positive specimens confirmed by TRIM46 CBA (Valencia-Sanchez 2022)"
+        ],
+        "methodNotes": [
+          "Tissue IFA: distinctive axon initial segment staining in cerebellar Purkinje layer, cerebral cortex, hippocampus; kidney and gastric mucosa non-reactive (Valencia-Sanchez 2022)",
+          "Confirm by CBA (transfected COS7 or HeLa) or western blot; patient IgG does not bind live-neuron surfaces (Valencia-Sanchez 2022; van Coevorden-Hameete 2017)",
+          "Specificity: negative in 69 SCLC and 10 Merkel cell carcinoma sera without neurological disease, and in autoimmune and healthy controls (Valencia-Sanchez 2022)",
+          "208 healthy and disease controls (incl. 80 SCLC pts with or without Hu-IgG) were CBA-negative (van Coevorden-Hameete 2017)",
+          "Polyclonal response to multiple TRIM46 epitopes (Valencia-Sanchez 2022; van Coevorden-Hameete 2017)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Non-inflammatory in 5/14 (36%) (Valencia-Sanchez 2022)"
+        ],
+        "typicalFindings": [
+          "Inflammatory (elevated WBC or CSF-restricted supernumerary OCB) in 9/14 (64%) (Valencia-Sanchez 2022)",
+          "Post-ICI case: no pleocytosis, protein 67 mg/dL, 6 CSF-unique OCB, IgG index 1.27 (Garza 2021)",
+          "Initial 3 pts: pleocytosis 14 and 25/µL in 2, normal in 1 (van Coevorden-Hameete 2017)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal in 8/16 (50%) (Valencia-Sanchez 2022)"
+        ],
+        "typicalFindings": [
+          "Cerebellar atrophy in 5/16; 1 also with medullary and pulvinar T2 hyperintensity (Valencia-Sanchez 2022)",
+          "Medial temporal T2/FLAIR hyperintensity in 3/16 (bilateral 2) (Valencia-Sanchez 2022)",
+          "Post-ICI case: small medullary T2 lesion, then bilateral medullary and thalamic T2 change and cerebellar atrophy within 3 mo (Garza 2021)",
+          "Bilateral T2/DWI hyperintensity of caudate head, pallidum, hippocampus and cingulate in the CJD-like case (van Coevorden-Hameete 2017)"
+        ]
+      },
+      "otherTests": [
+        "EEG: progressive diffuse slowing in the CJD-like case; CSF 14-3-3 positive (van Coevorden-Hameete 2017)"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); cancer in 18/22 (82%) (Valencia-Sanchez 2022)",
+        "No significant improvement in any of 12 immunotherapy-treated pts with follow-up; 8 of them died (Valencia-Sanchez 2022)",
+        "Post-ICI: 3 pts, onset 2–8 mo after starting ICI; 2/3 partially improved after stopping ICI plus aggressive immunotherapy (Valencia-Sanchez 2022)",
+        "CJD mimic: rapidly progressive dementia with myoclonus, basal ganglia/hippocampal DWI change and positive 14-3-3; autopsy showed CD8+ T-cell infiltrates (van Coevorden-Hameete 2017)",
+        "Female predominance (68%) despite the SCLC link: many tumors are gynecologic, breast or pancreatic (Valencia-Sanchez 2022)",
+        "Authors recommend testing in intermediate- or high-risk PNS phenotypes, especially subacute cerebellar ataxia (Valencia-Sanchez 2022)",
+        "TRIM46 is CNS-restricted, matching CNS-only phenotypes (Valencia-Sanchez 2022)",
+        "SIADH (Na 120 mmol/L) in 1 with encephalomyelitis and SCLC (van Coevorden-Hameete 2017)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:anti-hu",
+        "neural-antibodies:cv2-crmp5"
+      ],
+      "sources": [
+        "Valencia-Sanchez C, Knight AM, Hammami MB, et al. Characterisation of TRIM46 autoantibody-associated paraneoplastic neurological syndrome. J Neurol Neurosurg Psychiatry 2022;93:196-200. doi:10.1136/jnnp-2021-326656",
+        "van Coevorden-Hameete MH, van Beuningen SFB, Perrenoud M, et al. Antibodies to TRIM46 are associated with paraneoplastic neurological syndromes. Ann Clin Transl Neurol 2017;4:680-686. doi:10.1002/acn3.396",
+        "Garza M, Piquet AL. Update in autoimmune movement disorders: newly described antigen targets in autoimmune and paraneoplastic cerebellar ataxia. Front Neurol 2021;12:683048. doi:10.3389/fneur.2021.683048",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "arhgap26",
+      "antigen": "GTPase regulator associated with focal adhesion kinase 1 (GRAF1; Rho GTPase-activating protein 26, ARHGAP26; cytosolic)",
+      "searchTerms": [
+        "GRAF1-IgG",
+        "GRAF1",
+        "GRAF",
+        "ARHGAP26",
+        "anti-ARHGAP26",
+        "anti-Ca",
+        "OPHN1L",
+        "Medusa head antibody"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Subacute progressive pancerebellar ataxia",
+          "typical": true
+        },
+        {
+          "syndrome": "Peripheral sensorimotor neuropathy (large- or small-fiber), isolated or with ataxia",
+          "typical": true
+        },
+        {
+          "syndrome": "Autonomic neuropathy (e.g., severe gastroparesis)",
+          "typical": false
+        },
+        {
+          "syndrome": "Cognitive impairment, depression, pseudobulbar affect or psychosis",
+          "typical": false
+        },
+        {
+          "syndrome": "Isolated cognitive impairment without ataxia",
+          "typical": false
+        },
+        {
+          "syndrome": "Hyperekplexia",
+          "typical": false
+        },
+        {
+          "syndrome": "Parkinsonism (static) or long-tract signs with ataxia",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Mayo series: median onset 51 y (range 14–76); about half male (Pittock 2020)",
+        "Previously published cases (n=10): age 24–84 y (Pittock 2020 Table 2)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Squamous cell carcinoma, head and neck (nasopharynx, lingual tonsil)",
+          "frequencyText": "2 Mayo pts (Pittock 2020)"
+        },
+        {
+          "tumor": "Squamous cell lung carcinoma",
+          "frequencyText": "1 Mayo pt (Pittock 2020)"
+        },
+        {
+          "tumor": "Other: ovarian, breast, melanoma, B-cell lymphoma, prostate, gastric adenocarcinoma",
+          "frequencyText": "1 each; tumor in half of 10 previously published cases (Pittock 2020)"
+        }
+      ],
+      "cancerScreening": [
+        "Evidence of cancer in 4 Mayo pts (33%); history of malignancy in 10/24 published cases (Pittock 2020)",
+        "Authors recommend searching for head and neck (nasopharynx) and lung tumors, ideally whole-body FDG-PET/CT, which found malignancy in 4 pts with negative conventional CT (Pittock 2020)",
+        "Ataxia can herald cancer: ovarian cancer found after anti-Ca detection (Jarius 2013)",
+        "PNS-Care rescreening rule applies only to high-risk antibodies; GRAF1 is not tiered (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Confirmed in 11 sera and 6 CSF specimens from 17 pts (Pittock 2020)",
+          "IFA end-point titers: serum 1:7,680–1:61,440; CSF 1:64–1:1,024 (Pittock 2020)"
+        ],
+        "methodNotes": [
+          "Seropositivity requires both tissue IFA and CBA: 1 control was CBA-positive only (Pittock 2020)",
+          "CBA-only positives are common: 14 CBA-positive pts, only 3 also IHC-positive (Bartels 2018)",
+          "IFA 'Medusa head' pattern: Purkinje dendritic arbors in the molecular layer plus myenteric ganglia; hippocampus not stained (Pittock 2020)",
+          "Only 17 of 119 Medusa-head-like patterns were GRAF1 by CBA; look-alikes stain hippocampus brightly (Pittock 2020)",
+          "ITPR1-IgG gives a near-identical Purkinje pattern but does not bind ARHGAP26; CBA separates them (Jarius 2014)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "Normal in 1/7 with CSF (14%) (Pittock 2020)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 5/7, supernumerary OCB 3/7, raised IgG index 1/7 (Pittock 2020)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal in 5/11 (45%) (Pittock 2020)"
+        ],
+        "typicalFindings": [
+          "Cerebellar atrophy 5/11; brainstem atrophy 2; cerebral atrophy 2 (Pittock 2020)",
+          "Across published cases: cerebellar atrophy in 8/18 with MRI (44%) (Pittock 2020)"
+        ]
+      },
+      "otherTests": [
+        "Autonomic neuropathy with severe gastroparesis in 1 (Pittock 2020)",
+        "Autonomic reflex testing normal in the pt with parkinsonism, arguing against MSA-C (Pittock 2020)"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); cancer in about one-third of Mayo pts (Pittock 2020)",
+        "Ataxia progressive despite immunotherapy in all but 1, who stabilized; wheelchair dependence in all but 1 (Pittock 2020)",
+        "Ataxia in 20/24 (83%) of all published cases; neurocognitive features in 9 (Pittock 2020)",
+        "Peripheral somatic or autonomic neuropathy in close to one-third (Pittock 2020)",
+        "Index anti-Ca pt developed ataxia after a respiratory infection, with no cancer at 52 mo (Jarius 2013)",
+        "Very rare: 0.004% of sera (2/52,000) over 12 mo (Pittock 2020)",
+        "Can coexist with septin-5/-7-IgG (1 pt) (Hinson 2022 Table S1)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:itpr1",
+        "neural-antibodies:mglur1"
+      ],
+      "sources": [
+        "Pittock SJ, Alfugham N, O'Connor K, et al. GTPase regulator associated with focal adhesion kinase 1 (GRAF1) immunoglobulin-associated ataxia and neuropathy. Mov Disord Clin Pract 2020;7:904-909. doi:10.1002/mdc3.13036",
+        "Jarius S, Martinez-Garcia P, Hernandez AL, et al. Two new cases of anti-Ca (anti-ARHGAP26/GRAF) autoantibody-associated cerebellar ataxia. J Neuroinflammation 2013;10:7. doi:10.1186/1742-2094-10-7",
+        "Bartels F, Prüss H, Finke C. Anti-ARHGAP26 autoantibodies are associated with isolated cognitive impairment. Front Neurol 2018;9:656. doi:10.3389/fneur.2018.00656",
+        "Jarius S, Scharf M, Begemann N, et al. Antibodies to the inositol 1,4,5-trisphosphate receptor type 1 (ITPR1) in cerebellar ataxia. J Neuroinflammation 2014;11:206. doi:10.1186/s12974-014-0206-3",
+        "Hinson SR, Honorat JA, Grund EM, et al. Septin-5 and -7-IgGs: neurologic, serologic, and pathophysiologic characteristics. Ann Neurol 2022;92:1090-1101. doi:10.1002/ana.26482",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "ak5",
+      "antigen": "Adenylate kinase 5 (AK5; cytosolic neuronal enzyme)",
+      "searchTerms": [
+        "AK5-IgG",
+        "anti-AK5",
+        "adenylate kinase 5"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Limbic encephalitis with rapidly progressive, severe episodic (anterograde) amnesia in older adults",
+          "typical": true
+        },
+        {
+          "syndrome": "Prominent psychiatric features (depression, anxiety, behavioral change, psychosis)",
+          "typical": false
+        },
+        {
+          "syndrome": "Temporal cortical deficits: prosopagnosia, aphasia",
+          "typical": false
+        },
+        {
+          "syndrome": "Late-onset seizures",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Pooled n=26: 20/26 male (76.9%); median age 66 y (range 48–94) (Muñiz-Castrillo 2021)",
+        "Original Lyon series: median 64 y (range 57–80) (Do 2017)",
+        "Mayo series: all 6 female; median 72 y (range 49–80) (McKeon-Makki 2022)"
+      ],
+      "tumors": [],
+      "cancerScreening": [
+        "No cancer and no autoimmune comorbidity in 26 reported pts (Muñiz-Castrillo 2021); no associated cancer in original 10 (Do 2017)",
+        "PNS-Care rescreening rule applies only to high-risk antibodies; AK5 is not tiered (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "CSF",
+        "rationale": [
+          "CSF more sensitive: tissue IFA pattern seen only in CSF; serum IFA negative in 3/3 tested, though serum CBA positive 3/3 (McKeon-Makki 2022)",
+          "French reference center identified cases by CSF screening; endpoint titers 1/160–1/48,000 in CSF (Do 2017)",
+          "Serum still useful for CBA confirmation: IgG1 titers higher in serum (median 1/51,200) than CSF (1/5,120) by CBA (Muñiz-Castrillo 2021)"
+        ],
+        "methodNotes": [
+          "Offered clinically by Mayo Clinic Laboratories (confirmed by reviewing clinician, Nov 2026)",
+          "Screen by tissue IFA/IHC, confirm by CBA and immunoblot; none of 99 healthy controls CBA-positive (McKeon-Makki 2022)",
+          "Specificity of CBA/immunoblot alone not yet established (McKeon-Makki 2022)",
+          "IgG1 predominant; IgG2–4 also detected, more often in CSF (Muñiz-Castrillo 2021)",
+          "No direct pathogenicity on hippocampal neurons in vitro (Do 2017)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "CSF abnormal in all reported pts (Muñiz-Castrillo 2021)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis 18/25 (72%); oligoclonal bands 18/25 (72%) (Muñiz-Castrillo 2021)",
+          "Elevated tau 11/14 (78.6%) (Muñiz-Castrillo 2021), with normal Aβ42 and phospho-tau (Do 2017)",
+          "Mayo series: lymphocytic pleocytosis and supernumerary OCB in all 3 with data (McKeon-Makki 2022)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "RARELY_NORMAL",
+        "normalPercentText": [
+          "No temporal FLAIR abnormality on initial MRI in 3/26 (12%) (Muñiz-Castrillo 2021)"
+        ],
+        "typicalFindings": [
+          "Temporal lobe FLAIR hyperintensity at onset 23/26 (88.5%); gadolinium enhancement 6/26 (23.1%); temporal enlargement possible (Muñiz-Castrillo 2021)",
+          "Evolves to severe hippocampal atrophy in 17/19 (89.5%) (Muñiz-Castrillo 2021)",
+          "Initial MRI normal, FLAIR change on repeat, in 1/10 (Do 2017); gadolinium enhancement on initial MRI in all 3 Mayo pts (McKeon-Makki 2022)"
+        ]
+      },
+      "otherTests": [
+        "EEG: epileptiform abnormalities in 2/17, without discharges (Muñiz-Castrillo 2021)",
+        "HLA: DRB1*03:01-DQA1*05:01-DQB1*02:01 in 8/11 (OR 14.4) (Muñiz-Castrillo 2021)",
+        "Brain biopsy: CD4+ and CD8+ T-cell infiltrates with granzyme B (Muñiz-Castrillo 2021); small-vessel CNS vasculitis in 1 (Vicino 2021)"
+      ],
+      "immunotherapyResponse": "USUALLY_POOR",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); non-paraneoplastic in all reported pts (Muñiz-Castrillo 2021)",
+        "Only 5/25 (20%) responded to immunotherapy, mostly mildly; outcome worse 8, stable 12, mild improvement 4, major improvement 1 (Muñiz-Castrillo 2021)",
+        "Unlike LGI1/CASPR2 limbic encephalitis: no seizures at onset (0/25) and often a constitutional prodrome (weight loss, asthenia, anorexia 11/25) (Muñiz-Castrillo 2021)",
+        "Depression in 17/25 (68%); anosmia/dysgeusia 4/25; prosopagnosia 6/25 (Muñiz-Castrillo 2021)",
+        "Olfactory prodrome: burning-smell phantosmia for 6 mo before amnesia, without EEG correlate, in 1 (McKeon-Makki 2022)",
+        "Neurodegenerative/prion mimic: high CSF tau with normal Aβ42/phospho-tau (Do 2017), yet MRI and CSF are inflammatory (Muñiz-Castrillo 2021)",
+        "Consider in older adults with subacute anterograde amnesia (Do 2017)",
+        "Mayo series: all 3 treated (IVMP + IVIg, ~4 mo after onset) still needed help with daily living at last follow-up (McKeon-Makki 2022)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:lgi1",
+        "neural-antibodies:caspr2"
+      ],
+      "sources": [
+        "Muñiz-Castrillo S, Hedou JJ, Ambati A, et al. Distinctive clinical presentation and pathogenic specificities of anti-AK5 encephalitis. Brain 2021;144:2709-2721. doi:10.1093/brain/awab153",
+        "Do LD, Chanson E, Desestret V, et al. Characteristics in limbic encephalitis with anti-adenylate kinase 5 autoantibodies. Neurology 2017;88:514-524",
+        "McKeon-Makki I, McKeon A, Yang B, et al. Adenylate kinase 5 (AK5) autoimmune encephalitis: clinical presentations and outcomes in three new patients. J Neuroimmunol 2022;367:577861. doi:10.1016/j.jneuroim.2022.577861",
+        "Vicino A, Loser V, Salvioni Chiabotti P, et al. Anti-adenylate kinase 5 encephalitis with histologic evidence of CNS vasculitis. Neurol Neuroimmunol Neuroinflamm 2021;8:e1010. doi:10.1212/NXI.0000000000001010",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "pde10a",
+      "antigen": "Phosphodiesterase 10A (PDE10A; striatum-enriched cyclic nucleotide phosphodiesterase, membrane-bound and cytosolic isoforms)",
+      "searchTerms": [
+        "PDE10A-IgG",
+        "anti-PDE10A",
+        "phosphodiesterase 10A"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Hyperkinetic movement disorder: chorea, hemiballismus, dystonia, dyskinesia",
+          "typical": true
+        },
+        {
+          "syndrome": "Encephalopathy (confusion), with or without movement disorder",
+          "typical": true
+        },
+        {
+          "syndrome": "Parkinsonism",
+          "typical": false
+        },
+        {
+          "syndrome": "Brainstem/cerebellar syndrome or subacute ataxia",
+          "typical": false
+        },
+        {
+          "syndrome": "Immune checkpoint inhibitor-triggered hyperkinetic disorder",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median age 70 y (range 66–76); 4/7 male (Zekeridou 2019)",
+        "4 further cases: median 61 y (range 53–68), 3 female (Valencia-Sanchez 2022 abstract)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Non-small-cell lung carcinoma (adenocarcinoma, squamous, poorly differentiated)",
+          "frequencyText": "3/7, plus 1 radiologic lung nodule (Zekeridou 2019)"
+        },
+        {
+          "tumor": "Renal cell carcinoma",
+          "frequencyText": "2/7, both metastatic (Zekeridou 2019); 2/4 further cases (Valencia-Sanchez 2022 abstract)"
+        },
+        {
+          "tumor": "Pancreatic adenocarcinoma",
+          "frequencyText": "1/7, metastatic (Zekeridou 2019)"
+        },
+        {
+          "tumor": "Small-cell lung cancer",
+          "frequencyText": "1/4 further cases (Valencia-Sanchez 2022 abstract)"
+        }
+      ],
+      "cancerScreening": [
+        "Carcinoma confirmed in 6/7; the 7th had a lung nodule (Zekeridou 2019); cancer in 3/4 further cases (Valencia-Sanchez 2022 abstract)",
+        "Cancers often metastatic at neuro presentation (renal, pancreatic, with leptomeningeal spread in 2) (Zekeridou 2019)",
+        "PNS-Care rescreening rule applies only to high-risk antibodies; PDE10A is not tiered (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Positive specimens: sera 7, CSF 4 from 7 pts; 1 pt identified from CSF only (Zekeridou 2019)",
+          "Serum IFA titers 1:15,360 to >1:30,720; CSF 1:4–1:64 (Zekeridou 2019)"
+        ],
+        "methodNotes": [
+          "Tissue IFA: basal ganglia-predominant synaptic staining, less in hippocampus, faint cerebellar granular layer; no similar pattern in >400,000 clinical samples (Zekeridou 2019)",
+          "Confirm with recombinant western blot and CBA (PDE10A1 and PDE10A2 isoforms) (Zekeridou 2019)",
+          "CBA-only faint positive in 1 control (renal carcinoma + AQP4-NMOSD) with negative IFA and WB: treat isolated low CBA results cautiously (Zekeridou 2019)",
+          "Negative in 26 ICI-treated cancer controls and 10 Huntington disease pts (Zekeridou 2019)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Both ICI-associated cases: WBC ≤5/µL, protein 44–56 mg/dL, 8 and 14 CSF-restricted OCB (Zekeridou 2019)",
+          "Inflammatory CSF in 2/4 further cases (pleocytosis 1, CSF-unique OCB 1) (Valencia-Sanchez 2022 abstract)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "UNKNOWN",
+        "normalPercentText": [],
+        "typicalFindings": [
+          "Non-enhancing FLAIR/T2 basal ganglia hyperintensities in both hyperkinetic ICI cases, mirroring the IFA pattern (Zekeridou 2019)",
+          "Leptomeningeal enhancement in 2 with probable carcinomatous meningitis (Zekeridou 2019)"
+        ]
+      },
+      "otherTests": [],
+      "immunotherapyResponse": "VARIABLE",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); carcinoma in 6/7 (Zekeridou 2019)",
+        "ICI trigger: hyperkinetic disorder began 4–5 mo after starting PD-1 inhibitor in 2/7 (Zekeridou 2019); hemichorea after ICI in 1 further case (Valencia-Sanchez 2022 abstract)",
+        "Immunotherapy: transient improvement with IV steroids in 1 of 2 treated (Zekeridou 2019); partial steroid response in 2 further cases (Valencia-Sanchez 2022 abstract)",
+        "Sustained symptom control in 1 came from tetrabenazine plus botulinum toxin (Zekeridou 2019)",
+        "High early mortality: 4/7 died shortly after neuro onset, mostly cancer-related (Zekeridou 2019)",
+        "Phenotype parallels genetic PDE10A disorders (hyperkinesia, bilateral striatal lesions); Huntington disease pts were seronegative (Zekeridou 2019)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:cv2-crmp5"
+      ],
+      "sources": [
+        "Zekeridou A, Kryzer T, Guo Y, et al. Phosphodiesterase 10A IgG: a novel biomarker of paraneoplastic neurologic autoimmunity. Neurology 2019;93:e815-e822. doi:10.1212/WNL.0000000000007971",
+        "Valencia-Sanchez C, McKeon A, Zekeridou A. Movement disorders with phosphodiesterase 10A IgG autoimmunity [abstract]. Mov Disord 2022;37(suppl 2)",
+        "Segal Y, Soltys J, Clarkson BDS, et al. Toward curing neurological autoimmune disorders: biomarkers, immunological mechanisms, and therapeutic targets. Neuron 2025;113:345-379. doi:10.1016/j.neuron.2024.12.006",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "anna3-dach1",
+      "antigen": "Dachshund homolog 1 (DACH1; nuclear transcription factor), the ANNA-3 antigen",
+      "searchTerms": [
+        "ANNA-3",
+        "ANNA3",
+        "anti-neuronal nuclear antibody type 3",
+        "DACH1-IgG",
+        "anti-DACH1"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Peripheral neuropathy: sensory or sensorimotor",
+          "typical": true
+        },
+        {
+          "syndrome": "Limbic encephalitis / subacute cognitive difficulties",
+          "typical": true
+        },
+        {
+          "syndrome": "Cerebellar ataxia",
+          "typical": true
+        },
+        {
+          "syndrome": "Sensory neuronopathy",
+          "typical": false
+        },
+        {
+          "syndrome": "Brainstem encephalitis",
+          "typical": false
+        },
+        {
+          "syndrome": "Dysautonomia, incl. GI dysmotility and esophageal spasm",
+          "typical": false
+        },
+        {
+          "syndrome": "Myelopathy / myeloneuropathy (may be MRI-negative)",
+          "typical": false
+        },
+        {
+          "syndrome": "Ocular: chorioretinopathy, optic neuropathy, Adie pupil",
+          "typical": false
+        },
+        {
+          "syndrome": "Stiff-person syndrome",
+          "typical": false
+        },
+        {
+          "syndrome": "Onset or worsening during immune checkpoint inhibitor therapy",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median age 63.5 y (range 49–88); 20/30 female (Zekeridou 2022)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Small-cell lung cancer",
+          "frequencyText": "9/22 histologically confirmed cancers (Zekeridou 2022 suppl table); 5/7 biopsied tumors (Chan 2001)"
+        },
+        {
+          "tumor": "Neuroendocrine tumors (incl. SCLC)",
+          "frequencyText": "14/22 (64%) histologically confirmed cancers, incl. SCLC, Merkel cell, gastric neuroendocrine, bladder small-cell and metastatic neuroendocrine of unknown primary (Zekeridou 2022 and suppl table)"
+        },
+        {
+          "tumor": "Other: carcinomas of colon, breast, lung (non-small-cell), ovary; carcinoma of unknown primary; ovarian teratoma",
+          "frequencyText": "Remainder of 22 confirmed; >1 malignancy in 4 pts (Zekeridou 2022)"
+        }
+      ],
+      "cancerScreening": [
+        "Cancer evident in 27/30 (90%) vs 15/100 general paraneoplastic-panel pts: 22 histologic, 4 lung mass ± hilar nodes, 1 FDG-avid mass (Zekeridou 2022)",
+        "Original series: intrathoracic neoplasm in all 9 adults followed; 1 found 3 y later (Chan 2001)",
+        "Smokers in 16/22 with data (Zekeridou 2022 suppl table)",
+        "Cancer identified after neuro onset in 12/23 (52%) (Zekeridou 2022)",
+        "Of 3 without cancer on imaging, 2 had a neuroendocrine-predicting antibody profile and 1 was a smoker (Zekeridou 2022)",
+        "Authors advise evaluation for occult cancer regardless of neuro diagnosis (Zekeridou 2022)",
+        "Not tiered in PNS-Care, so its 2-y rescreening rule is not formally specified (Graus 2021); authors state ANNA-3 fulfils high-risk criteria (Zekeridou 2022)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Residual specimens: serum 21, CSF 3, both 8 (Zekeridou 2022)",
+          "Paired serum/CSF positive in both, except 1 CSF negative by IFA but positive by DACH1 CBA (Zekeridou 2022)"
+        ],
+        "methodNotes": [
+          "Tissue IFA: nuclear staining of cerebellar Purkinje neurons and renal glomerular podocytes (Zekeridou 2022; Chandna 2024)",
+          "Pattern spares Purkinje cytoplasm, granular and enteric neurons; podocyte nuclear staining is not unique (ANNA-2 bound podocyte nuclei in 8/32) (Chan 2001)",
+          "Confirm with DACH1 CBA (serum 1:500, CSF 1:2) or western blot; all 145 controls negative (Zekeridou 2022)",
+          "Coexisting neural IgGs in 14/30, mostly neuroendocrine-predicting: NIF 3, CRMP5 3, P/Q VGCC 3, ANNA-1 2, SOX1 2, PCA2/MAP1B 1 (Zekeridou 2022)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Non-inflammatory in 2/6 with interpretable CSF (33%) (Zekeridou 2022)"
+        ],
+        "typicalFindings": [
+          "Pleocytosis or CSF-unique OCB in 4/6 (Zekeridou 2022)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "OFTEN_NORMAL",
+        "normalPercentText": [
+          "Brain MRI normal in 10/14 with data (71%) (Zekeridou 2022 suppl table)"
+        ],
+        "typicalFindings": [
+          "Abnormal: mild atrophy 1; left temporal T2 lesion with biopsy-proven inflammation (limbic encephalitis) 1; diffuse brainstem/cerebellar T2 1; radiation change/metastasis 1 (Zekeridou 2022 suppl table)",
+          "Lumbosacral plexus enhancement in polyradiculoneuropathy (1) (Zekeridou 2022 suppl table)",
+          "MRI-negative myeloneuropathy reported (Chandna 2024)"
+        ]
+      },
+      "otherTests": [
+        "EMG/NCS: sensory neuronopathy, demyelinating or axonal sensorimotor (poly)radiculoneuropathy (Zekeridou 2022 suppl table; Chan 2001; Chandna 2024)",
+        "Autonomic testing abnormal (sweat test, autonomic reflex screen) in small-fiber/autonomic cases (Zekeridou 2022 suppl table)",
+        "3 Hz RNS without decrement in 1 (Chandna 2024); LEMS coexisted in 1 (Zekeridou 2022 suppl table)"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); cancer in 27/30 (90%) (Zekeridou 2022)",
+        "Improvement in 8/11 with data, all after immunotherapy and/or cancer treatment (Zekeridou 2022)",
+        "ICI: neuro syndrome appeared or worsened during checkpoint inhibitor therapy in 2 SCLC pts (Zekeridou 2022)",
+        "Antibody kept oncologic significance even when an alternative diagnosis emerged: 2 pts with neurodegenerative disease both had cancer (Zekeridou 2022)",
+        "SIADH in 3/30 (Zekeridou 2022 suppl table) and in an original pt (Chan 2001)",
+        "Rare: 9 pts in 2016–2020 vs 473 ANNA-1-positive pts at Mayo (Zekeridou 2022)",
+        "Original description: 11 pts among ~68,000 screened; multifocal neuropathy, ataxia, myelopathy, brainstem/limbic encephalopathy (Chan 2001)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:anti-hu",
+        "neural-antibodies:cv2-crmp5",
+        "neural-antibodies:sox1"
+      ],
+      "sources": [
+        "Zekeridou A, Yang B, Lennon VA, et al. Anti-neuronal nuclear antibody 3 autoimmunity targets Dachshund homolog 1. Ann Neurol 2022;91:670-675. doi:10.1002/ana.26320",
+        "Chan KH, Vernino S, Lennon VA. ANNA-3 anti-neuronal nuclear antibody: marker of lung cancer-related autoimmunity. Ann Neurol 2001;50:301-311. doi:10.1002/ana.1127",
+        "Chandna N, Budhram A, Blanchette PS, Climans SA. Paraneoplastic anti-neuronal nuclear antibody type 3 neurologic autoimmunity. Can J Neurol Sci 2024;51:874-876. doi:10.1017/cjn.2023.324",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "septin-7",
+      "antigen": "Septin-7 (cytoskeletal GTP-binding protein; regulates dendritic branching; pre- and postsynaptic localization)",
+      "searchTerms": [
+        "septin-7-IgG",
+        "anti-septin-7",
+        "SEPT7",
+        "SEPTIN7",
+        "septin 7",
+        "septin complex antibody"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Subacute encephalopathy with prominent neuropsychiatric features (agitation, apathy, catatonia, disorganized thinking, paranoia, psychosis)",
+          "typical": true
+        },
+        {
+          "syndrome": "Encephalomyelopathy",
+          "typical": false
+        },
+        {
+          "syndrome": "Myelopathy, incl. primary lateral sclerosis-like phenotype",
+          "typical": false
+        },
+        {
+          "syndrome": "Painful myelopolyradiculoneuropathy",
+          "typical": false
+        },
+        {
+          "syndrome": "Episodic ataxia",
+          "typical": false
+        },
+        {
+          "syndrome": "Autoimmune encephalopathy after HSV-1 encephalitis",
+          "typical": false
+        },
+        {
+          "syndrome": "Seizures / nonconvulsive status epilepticus with psychosis",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Septin-7-only cohort (n=15): 8 M, 7 F; age 47–85 y, median 69 (Hinson 2022 Table S2)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Breast adenocarcinoma",
+          "frequencyText": "2/15 (Hinson 2022)"
+        },
+        {
+          "tumor": "Non-Hodgkin lymphoma",
+          "frequencyText": "1/15 (Hinson 2022)"
+        },
+        {
+          "tumor": "Carcinoid tumor",
+          "frequencyText": "1/15 (Hinson 2022)"
+        },
+        {
+          "tumor": "Myelodysplastic syndrome",
+          "frequencyText": "1/15 (Hinson 2022)"
+        }
+      ],
+      "cancerScreening": [
+        "≥1 concurrent neoplasm in 4/15: breast adenocarcinoma 2, non-Hodgkin lymphoma 1, carcinoid 1, myelodysplastic syndrome 1 (Hinson 2022)",
+        "PNS-Care rescreening rule applies only to high-risk antibodies; septin-7 is not tiered (Graus 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "Septin cohort: IFA positive in all 12 CSF and 17/18 sera; 1 pt positive in CSF only (Hinson 2022)",
+          "Septin-IgG found in serum + CSF (8), serum only (9), CSF only (6), mostly reflecting sample availability (Hinson 2022)",
+          "Median titers (septin-5 + -7 cohort): CSF 1:256, serum 1:15,360 (Hinson 2022)"
+        ],
+        "methodNotes": [
+          "Tissue IFA 'septin pattern' (diffuse synaptic staining, cerebellar molecular layer, renal glomeruli) plus gastric mucosal and renal interstitial staining in septin-7-positive specimens; confirm by septin-7 CBA (Hinson 2022)",
+          "Some epitopes require the septin complex: in 1 pt reactivity depended on septin-7 plus septin-6 or -11 (Gaebler 2026)",
+          "Coexisting septin-6/-11 IgG by western blot in 6/7 septin-7 pts tested; IgG1 in all tested, IgG2 in 2 septin-7 pts (Hinson 2022)",
+          "Coexisting neurofilament heavy-chain IgG in 1 (Hinson 2022)",
+          "Patient IgG binds live hippocampal neuron surfaces, partly colocalizing with PSD-95 (Hinson 2022)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Non-inflammatory in 4/10 with data (40%), using the authors' definition applied to Table S2 (Hinson 2022)"
+        ],
+        "typicalFindings": [
+          "Inflammatory (protein >100 mg/dL, lymphocytic pleocytosis, raised IgG synthesis or CSF-exclusive OCB) in 6/10 septin-7 pts (Hinson 2022 Table S2); whole septin cohort 11/15 (Hinson 2022)",
+          "Mild protein elevation (42–55 mg/dL) in 3 of the non-inflammatory pts (Hinson 2022 Table S2)",
+          "Normal CSF, incl. OCB, at onset and relapse in 1 steroid-responsive psychosis case (Gaebler 2026)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal or nonspecific in 3/9 with data (33%) (Hinson 2022)"
+        ],
+        "typicalFindings": [
+          "Bilateral hippocampal T2 abnormality 2 (resolved on repeat in 1); generalized cerebral atrophy 2 (Hinson 2022)",
+          "Precentral (motor strip) T2 hyperintensity with progressive frontal atrophy in the PLS-like pt (Hinson 2022)",
+          "Temporal changes/atrophy in post-HSV-1 cases (Hinson 2022)"
+        ]
+      },
+      "otherTests": [
+        "EEG: triphasic waves in 2, diffuse slowing in 1 (Hinson 2022 Table S2); right temporal nonconvulsive status epilepticus, missed by routine EEG and found on long-term video-EEG, in 1 (Gaebler 2026)",
+        "EMG: lumbosacral polyradiculoneuropathy in 1; axonal sensory neuropathy in 1 (Hinson 2022 Table S2)",
+        "CSF phosphorylated neurofilament heavy chain 1,480 pg/mL in the PLS-like pt (Hinson 2022 Table S2)"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); neoplasm in 4/15 (Hinson 2022)",
+        "Treatment-responsive: rapid improvement in 4/5 treated; 1 death from steroid-related bowel perforation (Hinson 2022)",
+        "The only untreated pt with progressive symptoms had a poor outcome (Hinson 2022)",
+        "Psychiatric symptoms prominent in 6/11 encephalopathic pts; 2 had poorly defined neuropsychiatric illness before subacute decline (Hinson 2022)",
+        "Antipsychotic-refractory psychosis resolved within 1 wk of IV methylprednisolone and relapsed on taper; antibody identified 5 y after onset (Gaebler 2026)",
+        "Followed HSV-1 encephalitis in 2 pts; 1 relapsed 1 wk after acyclovir and largely recovered with steroids + PLEX (Hinson 2022)",
+        "Relapsing course in 2 (Hinson 2022)",
+        "With coexisting septin-5-IgG the phenotype is ataxia with eye movement disorder instead (Hinson 2022)",
+        "Caveat: single-center series (n=15); HSV encephalitis, substance use or prior psychiatric illness coexisted in several pts (Hinson 2022 Table S2)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:septin-5",
+        "neural-antibodies:nmdar"
+      ],
+      "sources": [
+        "Hinson SR, Honorat JA, Grund EM, et al. Septin-5 and -7-IgGs: neurologic, serologic, and pathophysiologic characteristics. Ann Neurol 2022;92:1090-1101. doi:10.1002/ana.26482",
+        "Gaebler AJ, Arlt FA, Scharf M, et al. Seeing elephants and drinking water from a porcelain vase - a case of septin-7 antibody-associated encephalitis presenting as a severe disorganized psychosis. Transl Psychiatry 2026;16:71. doi:10.1038/s41398-026-03877-y",
+        "Segal Y, Soltys J, Clarkson BDS, et al. Toward curing neurological autoimmune disorders: biomarkers, immunological mechanisms, and therapeutic targets. Neuron 2025;113:345-379. doi:10.1016/j.neuron.2024.12.006",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
       ],
       "lastReviewed": "2026-11-05"
     }
