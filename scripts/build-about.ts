@@ -23,6 +23,7 @@ for (const f of files) {
   const raw = readFileSync(`data/${f}`, "utf8");
   hash.update(raw);
   const reg = JSON.parse(raw) as Registry;
+  if (!Array.isArray(reg.entries)) continue; // non-registry data file (syndrome-vocabulary): hashed above, no review status
   const name = f.replace(/\.json$/, "");
   const dates = reg.entries.map((e) => e.lastReviewed).filter((d) => d !== "UNREVIEWED").sort();
   registries.push({

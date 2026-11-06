@@ -63,6 +63,7 @@ const files = readdirSync("data").filter((f) => f.endsWith(".json") && !f.endsWi
 for (const f of files) {
   const name = f.replace(/\.json$/, "");
   const reg = JSON.parse(readFileSync(`data/${f}`, "utf8"));
+  if (!Array.isArray(reg.entries)) continue; // non-registry data file (syndrome-vocabulary)
   const entries = (reg.entries as Record<string, unknown>[]).filter((e) => all || e.lastReviewed === "UNREVIEWED");
   const checks = [...COMMON, ...(SPECIFIC[name] ?? [])];
   const body = entries.map((e, i) => {

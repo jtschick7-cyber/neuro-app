@@ -107,3 +107,12 @@ export const ABOUT = {
     legends: "Badge legends",
   },
 };
+
+export const SYNDROME_FILTER = {
+  label: "Filter by syndrome",
+  none: "All antibodies",
+  clear: "Clear filter",
+  typical: "Typical",
+  lessCommon: "Reported, less common",
+  empty: "No antibodies match this syndrome and search.",
+};
