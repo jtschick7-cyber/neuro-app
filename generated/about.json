@@ -1,7 +1,7 @@
 {
   "appVersion": "1.1.0",
-  "contentVersion": "1.1.0+d510f50c",
-  "builtAt": "2026-11-05",
+  "contentVersion": "1.1.0+c2089c8c",
+  "builtAt": "2026-11-06",
   "registries": [
     {
       "id": "acute-neuro",
@@ -58,11 +58,11 @@
     {
       "id": "neural-antibodies",
       "title": "Neural antibodies",
-      "version": "0.4.3",
+      "version": "0.5.1",
       "schemaVersion": "1.0.0",
       "lastUpdated": "2026-11-05",
-      "entries": 26,
-      "reviewed": 26,
+      "entries": 36,
+      "reviewed": 36,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
@@ -234,6 +234,13 @@
       ]
     },
     {
+      "citation": "Alfugham N, Gadoth A, Lennon VA, et al. ITPR1 autoimmunity: frequency, neurologic phenotype, and cancer association. Neurol Neuroimmunol Neuroinflamm 2018;5:e418. doi:10.1212/NXI.0000000000000418",
+      "year": 2018,
+      "citedBy": [
+        "neural-antibodies:itpr1"
+      ]
+    },
+    {
       "citation": "Alkhachroum A, et al. Ketamine to treat super-refractory status epilepticus. Neurology 2020;95(16):e2286-e2294. doi:10.1212/WNL.0000000000010611",
       "year": 2020,
       "citedBy": [
@@ -318,10 +325,24 @@
       ]
     },
     {
+      "citation": "Bartels F, Prüss H, Finke C. Anti-ARHGAP26 autoantibodies are associated with isolated cognitive impairment. Front Neurol 2018;9:656. doi:10.3389/fneur.2018.00656",
+      "year": 2018,
+      "citedBy": [
+        "neural-antibodies:arhgap26"
+      ]
+    },
+    {
       "citation": "Bernal F, et al. Anti-Tr antibodies as markers of paraneoplastic cerebellar degeneration and Hodgkin's disease. Neurology 2003;60(2):230-234",
       "year": 2003,
       "citedBy": [
         "neural-antibodies:tr-dner"
+      ]
+    },
+    {
+      "citation": "Berzero G, Hacohen Y, Komorowski L, et al. Paraneoplastic cerebellar degeneration associated with anti-ITPR1 antibodies. Neurol Neuroimmunol Neuroinflamm 2017;4:e326. doi:10.1212/NXI.0000000000000326",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:itpr1"
       ]
     },
     {
@@ -363,6 +384,20 @@
       "year": 2014,
       "citedBy": [
         "neural-antibodies:glyr"
+      ]
+    },
+    {
+      "citation": "Chan KH, Vernino S, Lennon VA. ANNA-3 anti-neuronal nuclear antibody: marker of lung cancer-related autoimmunity. Ann Neurol 2001;50:301-311. doi:10.1002/ana.1127",
+      "year": 2001,
+      "citedBy": [
+        "neural-antibodies:anna3-dach1"
+      ]
+    },
+    {
+      "citation": "Chandna N, Budhram A, Blanchette PS, Climans SA. Paraneoplastic anti-neuronal nuclear antibody type 3 neurologic autoimmunity. Can J Neurol Sci 2024;51:874-876. doi:10.1017/cjn.2023.324",
+      "year": 2024,
+      "citedBy": [
+        "neural-antibodies:anna3-dach1"
       ]
     },
     {
@@ -519,6 +554,13 @@
       ]
     },
     {
+      "citation": "Do LD, Chanson E, Desestret V, et al. Characteristics in limbic encephalitis with anti-adenylate kinase 5 autoantibodies. Neurology 2017;88:514-524",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:ak5"
+      ]
+    },
+    {
       "citation": "Do TP, et al. Red and orange flags for secondary headaches in clinical practice: SNNOOP10 list. Neurology 2019;92:134-144. doi:10.1212/WNL.0000000000006697",
       "year": 2019,
       "citedBy": [
@@ -666,6 +708,13 @@
       ]
     },
     {
+      "citation": "Gaebler AJ, Arlt FA, Scharf M, et al. Seeing elephants and drinking water from a porcelain vase - a case of septin-7 antibody-associated encephalitis presenting as a severe disorganized psychosis. Transl Psychiatry 2026;16:71. doi:10.1038/s41398-026-03877-y",
+      "year": 2026,
+      "citedBy": [
+        "neural-antibodies:septin-7"
+      ]
+    },
+    {
       "citation": "Gaig C, et al. Clinical manifestations of the anti-IgLON5 disease. Neurology 2017;88(18):1736-1743. doi:10.1212/WNL.0000000000003887",
       "year": 2017,
       "citedBy": [
@@ -677,6 +726,16 @@
       "year": 2010,
       "citedBy": [
         "acute-neuro:wernicke-encephalopathy"
+      ]
+    },
+    {
+      "citation": "Garza M, Piquet AL. Update in autoimmune movement disorders: newly described antigen targets in autoimmune and paraneoplastic cerebellar ataxia. Front Neurol 2021;12:683048. doi:10.3389/fneur.2021.683048",
+      "year": 2021,
+      "citedBy": [
+        "neural-antibodies:ap3b2",
+        "neural-antibodies:itpr1",
+        "neural-antibodies:neurochondrin",
+        "neural-antibodies:trim46"
       ]
     },
     {
@@ -751,6 +810,22 @@
         "neural-antibodies:pca2-map1b",
         "neural-antibodies:sox1",
         "neural-antibodies:tr-dner"
+      ]
+    },
+    {
+      "citation": "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+      "year": 2021,
+      "citedBy": [
+        "neural-antibodies:ak5",
+        "neural-antibodies:anna3-dach1",
+        "neural-antibodies:ap3b2",
+        "neural-antibodies:arhgap26",
+        "neural-antibodies:itpr1",
+        "neural-antibodies:neurochondrin",
+        "neural-antibodies:pde10a",
+        "neural-antibodies:septin-5",
+        "neural-antibodies:septin-7",
+        "neural-antibodies:trim46"
       ]
     },
     {
@@ -836,6 +911,15 @@
       ]
     },
     {
+      "citation": "Hinson SR, Honorat JA, Grund EM, et al. Septin-5 and -7-IgGs: neurologic, serologic, and pathophysiologic characteristics. Ann Neurol 2022;92:1090-1101. doi:10.1002/ana.26482",
+      "year": 2022,
+      "citedBy": [
+        "neural-antibodies:arhgap26",
+        "neural-antibodies:septin-5",
+        "neural-antibodies:septin-7"
+      ]
+    },
+    {
       "citation": "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806",
       "year": 2021,
       "citedBy": [
@@ -873,10 +957,60 @@
       ]
     },
     {
+      "citation": "Honorat JA, Lopez-Chiriboga AS, Kryzer TJ, et al. Autoimmune gait disturbance accompanying adaptor protein-3B2-IgG. Neurology 2019;93:e954-e963. doi:10.1212/WNL.0000000000008061",
+      "year": 2019,
+      "citedBy": [
+        "neural-antibodies:ap3b2"
+      ]
+    },
+    {
+      "citation": "Honorat JA, Lopez-Chiriboga AS, Kryzer TJ, et al. Autoimmune septin-5 cerebellar ataxia. Neurol Neuroimmunol Neuroinflamm 2018;5:e474. doi:10.1212/NXI.0000000000000474",
+      "year": 2018,
+      "citedBy": [
+        "neural-antibodies:septin-5"
+      ]
+    },
+    {
       "citation": "Husain AM, et al. Randomized trial of lacosamide versus fosphenytoin for nonconvulsive seizures (TRENdS). Ann Neurol 2018;83(6):1174-1185. doi:10.1002/ana.25249",
       "year": 2018,
       "citedBy": [
         "acute-neuro:nonconvulsive-status-epilepticus"
+      ]
+    },
+    {
+      "citation": "Jarius S, Bräuninger S, Chung HY, et al. Inositol 1,4,5-trisphosphate receptor type 1 autoantibody (ITPR1-IgG/anti-Sj)-associated autoimmune cerebellar ataxia, encephalitis and peripheral neuropathy: review of the literature. J Neuroinflammation 2022;19:196. doi:10.1186/s12974-022-02545-4",
+      "year": 2022,
+      "citedBy": [
+        "neural-antibodies:itpr1"
+      ]
+    },
+    {
+      "citation": "Jarius S, Martinez-Garcia P, Hernandez AL, et al. Two new cases of anti-Ca (anti-ARHGAP26/GRAF) autoantibody-associated cerebellar ataxia. J Neuroinflammation 2013;10:7. doi:10.1186/1742-2094-10-7",
+      "year": 2013,
+      "citedBy": [
+        "neural-antibodies:arhgap26"
+      ]
+    },
+    {
+      "citation": "Jarius S, Ringelstein M, Haas J, et al. Inositol 1,4,5-trisphosphate receptor type 1 autoantibodies in paraneoplastic and non-paraneoplastic peripheral neuropathy. J Neuroinflammation 2016;13:278. doi:10.1186/s12974-016-0737-x",
+      "year": 2016,
+      "citedBy": [
+        "neural-antibodies:itpr1"
+      ]
+    },
+    {
+      "citation": "Jarius S, Scharf M, Begemann N, et al. Antibodies to the inositol 1,4,5-trisphosphate receptor type 1 (ITPR1) in cerebellar ataxia. J Neuroinflammation 2014;11:206. doi:10.1186/s12974-014-0206-3",
+      "year": 2014,
+      "citedBy": [
+        "neural-antibodies:arhgap26",
+        "neural-antibodies:itpr1"
+      ]
+    },
+    {
+      "citation": "Jarius S, Wildemann B. 'Medusa head ataxia': the expanding spectrum of Purkinje cell antibodies in autoimmune cerebellar ataxia. Part 1: anti-mGluR1, anti-Homer-3, anti-Sj/ITPR1 and anti-CARP VIII. J Neuroinflammation 2015;12:166. doi:10.1186/s12974-015-0356-y",
+      "year": 2015,
+      "citedBy": [
+        "neural-antibodies:itpr1"
       ]
     },
     {
@@ -1029,6 +1163,13 @@
       ]
     },
     {
+      "citation": "Liu Y, Gao GH, Lin J, Sun C, Zhao YY. Case report: subacute combined degeneration of the spinal cord mimic accompanying adaptor protein-3B2-IgG. Front Immunol 2025;16:1598033. doi:10.3389/fimmu.2025.1598033",
+      "year": 2025,
+      "citedBy": [
+        "neural-antibodies:ap3b2"
+      ]
+    },
+    {
       "citation": "Lovenox (enoxaparin sodium) US prescribing information. Sanofi; revised 5/2025 (user-supplied label)",
       "year": 2025,
       "citedBy": [
@@ -1064,6 +1205,13 @@
       ]
     },
     {
+      "citation": "McKeon-Makki I, McKeon A, Yang B, et al. Adenylate kinase 5 (AK5) autoimmune encephalitis: clinical presentations and outcomes in three new patients. J Neuroimmunol 2022;367:577861. doi:10.1016/j.jneuroim.2022.577861",
+      "year": 2022,
+      "citedBy": [
+        "neural-antibodies:ak5"
+      ]
+    },
+    {
       "citation": "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
       "year": 2026,
       "citedBy": [
@@ -1082,6 +1230,13 @@
       ]
     },
     {
+      "citation": "Miske R, Gross CC, Scharf M, et al. Neurochondrin is a neuronal target antigen in autoimmune cerebellar degeneration. Neurol Neuroimmunol Neuroinflamm 2017;4:e307. doi:10.1212/NXI.0000000000000307",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:neurochondrin"
+      ]
+    },
+    {
       "citation": "Montalban X, et al. Diagnosis of multiple sclerosis: 2024 revisions of the McDonald criteria. Lancet Neurol 2025;24:850-865",
       "year": 2025,
       "citedBy": [
@@ -1094,6 +1249,13 @@
       "year": 2022,
       "citedBy": [
         "acute-neuro:elevated-icp-herniation"
+      ]
+    },
+    {
+      "citation": "Muñiz-Castrillo S, Hedou JJ, Ambati A, et al. Distinctive clinical presentation and pathogenic specificities of anti-AK5 encephalitis. Brain 2021;144:2709-2721. doi:10.1093/brain/awab153",
+      "year": 2021,
+      "citedBy": [
+        "neural-antibodies:ak5"
       ]
     },
     {
@@ -1205,6 +1367,13 @@
       ]
     },
     {
+      "citation": "Pittock SJ, Alfugham N, O'Connor K, et al. GTPase regulator associated with focal adhesion kinase 1 (GRAF1) immunoglobulin-associated ataxia and neuropathy. Mov Disord Clin Pract 2020;7:904-909. doi:10.1002/mdc3.13036",
+      "year": 2020,
+      "citedBy": [
+        "neural-antibodies:arhgap26"
+      ]
+    },
+    {
       "citation": "Pittock SJ, et al. Amphiphysin autoimmunity: paraneoplastic accompaniments. Ann Neurol 2005;58(1):96-107. doi:10.1002/ana.20529",
       "year": 2005,
       "citedBy": [
@@ -1299,6 +1468,13 @@
       "year": 2000,
       "citedBy": [
         "neural-antibodies:anti-yo"
+      ]
+    },
+    {
+      "citation": "Rommel FR, Miske R, Stöcker W, et al. Chorea minor associated with anti-neurochondrin autoantibodies. Neuropediatrics 2017;48:482-483. doi:10.1055/s-0037-1606371",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:neurochondrin"
       ]
     },
     {
@@ -1408,6 +1584,22 @@
       ]
     },
     {
+      "citation": "Schwarzwald A, Salmen A, León Betancourt AX, et al. Anti-neurochondrin antibody as a biomarker in primary autoimmune cerebellar ataxia: a case report and review of the literature. Eur J Neurol 2023;30:1135-1147. doi:10.1111/ene.15648",
+      "year": 2023,
+      "citedBy": [
+        "neural-antibodies:neurochondrin"
+      ]
+    },
+    {
+      "citation": "Segal Y, Soltys J, Clarkson BDS, et al. Toward curing neurological autoimmune disorders: biomarkers, immunological mechanisms, and therapeutic targets. Neuron 2025;113:345-379. doi:10.1016/j.neuron.2024.12.006",
+      "year": 2025,
+      "citedBy": [
+        "neural-antibodies:pde10a",
+        "neural-antibodies:septin-5",
+        "neural-antibodies:septin-7"
+      ]
+    },
+    {
       "citation": "Seneviratne J, et al. Noninvasive ventilation in myasthenic crisis. Arch Neurol 2008;65(1):54-58.",
       "year": 2008,
       "citedBy": [
@@ -1439,6 +1631,13 @@
         "mg-contraindications:quinine-antimalarials",
         "mg-contraindications:statins",
         "mg-contraindications:telithromycin"
+      ]
+    },
+    {
+      "citation": "Shelly S, Kryzer TJ, Komorowski L, et al. Neurochondrin neurological autoimmunity. Neurol Neuroimmunol Neuroinflamm 2019;6:e612. doi:10.1212/NXI.0000000000000612",
+      "year": 2019,
+      "citedBy": [
+        "neural-antibodies:neurochondrin"
       ]
     },
     {
@@ -1597,10 +1796,31 @@
       ]
     },
     {
+      "citation": "Valencia-Sanchez C, Knight AM, Hammami MB, et al. Characterisation of TRIM46 autoantibody-associated paraneoplastic neurological syndrome. J Neurol Neurosurg Psychiatry 2022;93:196-200. doi:10.1136/jnnp-2021-326656",
+      "year": 2022,
+      "citedBy": [
+        "neural-antibodies:trim46"
+      ]
+    },
+    {
+      "citation": "Valencia-Sanchez C, McKeon A, Zekeridou A. Movement disorders with phosphodiesterase 10A IgG autoimmunity [abstract]. Mov Disord 2022;37(suppl 2)",
+      "year": 2022,
+      "citedBy": [
+        "neural-antibodies:pde10a"
+      ]
+    },
+    {
       "citation": "Valproic acid oral solution US prescribing information. Atlantic Biologicals; revised 5/2024 (user-supplied label)",
       "year": 2024,
       "citedBy": [
         "asm-interactions:carbapenems-valproate"
+      ]
+    },
+    {
+      "citation": "van Coevorden-Hameete MH, van Beuningen SFB, Perrenoud M, et al. Antibodies to TRIM46 are associated with paraneoplastic neurological syndromes. Ann Clin Transl Neurol 2017;4:680-686. doi:10.1002/acn3.396",
+      "year": 2017,
+      "citedBy": [
+        "neural-antibodies:trim46"
       ]
     },
     {
@@ -1633,6 +1853,13 @@
       "year": 2023,
       "citedBy": [
         "acute-neuro:autoimmune-encephalitis"
+      ]
+    },
+    {
+      "citation": "Vicino A, Loser V, Salvioni Chiabotti P, et al. Anti-adenylate kinase 5 encephalitis with histologic evidence of CNS vasculitis. Neurol Neuroimmunol Neuroinflamm 2021;8:e1010. doi:10.1212/NXI.0000000000001010",
+      "year": 2021,
+      "citedBy": [
+        "neural-antibodies:ak5"
       ]
     },
     {
@@ -1679,6 +1906,20 @@
       "year": 2001,
       "citedBy": [
         "neural-antibodies:cv2-crmp5"
+      ]
+    },
+    {
+      "citation": "Zekeridou A, Kryzer T, Guo Y, et al. Phosphodiesterase 10A IgG: a novel biomarker of paraneoplastic neurologic autoimmunity. Neurology 2019;93:e815-e822. doi:10.1212/WNL.0000000000007971",
+      "year": 2019,
+      "citedBy": [
+        "neural-antibodies:pde10a"
+      ]
+    },
+    {
+      "citation": "Zekeridou A, Yang B, Lennon VA, et al. Anti-neuronal nuclear antibody 3 autoimmunity targets Dachshund homolog 1. Ann Neurol 2022;91:670-675. doi:10.1002/ana.26320",
+      "year": 2022,
+      "citedBy": [
+        "neural-antibodies:anna3-dach1"
       ]
     }
   ],
