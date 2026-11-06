@@ -2351,9 +2351,7 @@
         "Part of the 'Medusa head' Purkinje antibody group with mGluR1, Homer-3, CARP VIII (Jarius & Wildemann 2015)",
         "Serum 1/32,000 and CSF 1/1,000 Purkinje antibody titers; no response to IVMP, PLEX or IVIg in the MSA-C-like case (Berzero 2017)"
       ],
-      "verify": [
-        "Sign-off spot-check: Mayo MRI counts (2/9 normal) and deaths (5/14) from Alfugham 2018 per-patient table"
-      ],
+      "verify": [],
       "relatedIds": [
         "neural-antibodies:arhgap26",
         "neural-antibodies:mglur1"
@@ -2408,7 +2406,7 @@
       ],
       "demographics": [
         "Median onset 42 y (range 24–58); 6/10 female (Honorat 2019)",
-        "Published cases span 10–73 y; 8/13 female (Liu 2025 Table 1)",
+        "Published cases span 10–73 y; 9/14 female (Liu 2025 Table 1)",
         "Pediatric cases reported: 10 y (Liu 2025 Table 1) and 15 y (Garza 2021)"
       ],
       "tumors": [
@@ -2451,9 +2449,9 @@
         ]
       },
       "mri": {
-        "normalLikelihood": "RARELY_NORMAL",
+        "normalLikelihood": "SOMETIMES_NORMAL",
         "normalPercentText": [
-          "Normal in 1/11 published cases with imaging (Liu 2025 Table 1)"
+          "Brain MRI normal in 3/10 and spinal cord MRI normal in 3/7 of published cases with imaging (Liu 2025 Table 1)"
         ],
         "typicalFindings": [
           "Cerebellar (vermis-predominant) atrophy in 4/4 with cerebellar ataxia (Honorat 2019)",
@@ -2472,15 +2470,13 @@
       "pearls": [
         "Not tiered in PNS-Care 2021 (Graus 2021); cancer in 2/9 (Honorat 2019)",
         "Gait disturbance unifies the syndrome: all 9 with data; sensory ataxia in 5, cerebellar ataxia in 4 (Honorat 2019)",
-        "Immunotherapy: 0/5 improved, but none worsened over median 36 mo follow-up (range 3–94) (Honorat 2019); mild improvement in 2/7 treated in pooled literature (Liu 2025)",
+        "Immunotherapy: 0/5 improved, but none worsened over median 36 mo follow-up (range 3–94) (Honorat 2019); mild improvement in 2/8 treated in pooled literature (Liu 2025)",
         "Mixed signs: 2 cerebellar pts had leg areflexia with bilateral Babinski (Honorat 2019)",
         "Coexisting systemic autoimmunity: Sjögren, systemic sclerosis, hypothyroidism (1 each) (Honorat 2019)",
         "Consider in B12-refractory SCD-like myeloneuropathy with normal B12 and copper (Liu 2025)",
         "Lab report may first read 'unclassified synaptic / amphiphysin-like' IFA pattern (Honorat 2019)"
       ],
-      "verify": [
-        "Sign-off spot-check: Liu 2025 Table 1 pooled counts (8/13 female, MRI normal 1/11, 2/7 improved)"
-      ],
+      "verify": [],
       "relatedIds": [
         "neural-antibodies:amphiphysin",
         "neural-antibodies:anti-hu"
@@ -2663,7 +2659,7 @@
       "csf": {
         "normalLikelihood": "RARELY_NORMAL",
         "normalPercentText": [
-          "Normal in 3/16 with data (19%) (Schwarzwald 2023); abnormal in 5/5 Mayo pts (Shelly 2019)"
+          "Normal in 2/16 with data (13%) (Schwarzwald 2023); abnormal in 5/5 Mayo pts (Shelly 2019)"
         ],
         "typicalFindings": [
           "Pleocytosis 11/16 and OCB 11/16 in pooled cases (Schwarzwald 2023)",
@@ -2695,10 +2691,7 @@
         "Coexisting systemic autoimmunity: Sjögren syndrome, thyroiditis (1 each) (Shelly 2019)",
         "Rare: 8 pts among 616,025 specimens screened 1993–2018 (Shelly 2019)"
       ],
-      "verify": [
-        "Sign-off spot-check: Shelly 2019 text vs table (CSF protein range, wheelchair-bound 3 vs 4, PLEX 1 vs 2)",
-        "Sign-off spot-check: Schwarzwald 2023 pooled counts (normal CSF 3/16 per text; Table 2.2 suggests ~2)"
-      ],
+      "verify": [],
       "relatedIds": [
         "neural-antibodies:mglur1",
         "neural-antibodies:mglur5"
@@ -2969,9 +2962,7 @@
         "Very rare: 0.004% of sera (2/52,000) over 12 mo (Pittock 2020)",
         "Can coexist with septin-5/-7-IgG (1 pt) (Hinson 2022 Table S1)"
       ],
-      "verify": [
-        "Sign-off spot-check: Pittock 2020 results-text numbers used where abstract differs (ataxia 12 vs 13; MRI available 11 vs 7; atrophy 5 vs 4; men 53% vs 47%; cancer 4 with evidence vs 3 SCC)"
-      ],
+      "verify": [],
       "relatedIds": [
         "neural-antibodies:itpr1",
         "neural-antibodies:mglur1"
@@ -3077,9 +3068,7 @@
         "Consider in older adults with subacute anterograde amnesia (Do 2017)",
         "Mayo series: all 3 treated (IVMP + IVIg, ~4 mo after onset) still needed help with daily living at last follow-up (McKeon-Makki 2022)"
       ],
-      "verify": [
-        "Sign-off spot-check: one Muñiz-Castrillo 2021 pt had neither pleocytosis nor OCB despite 'CSF abnormal in all' (Table 1)"
-      ],
+      "verify": [],
       "relatedIds": [
         "neural-antibodies:lgi1",
         "neural-antibodies:caspr2"
