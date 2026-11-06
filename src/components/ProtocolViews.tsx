@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useState, type ComponentType, type ReactNode } from 'react';
 import { ArrowLeft, ChevronRight, Search } from 'lucide-react';
 import BannerList from './BannerList';
 import BedsideNotes from './BedsideNotes';
@@ -43,9 +43,11 @@ interface ScreenProps<E extends Searchable & { id: string }> {
   load: () => Promise<ProtocolRegistry<E>>;
   entryId?: string;
   renderEntry: (e: E) => ReactNode;
+  /** Optional wrapper around the list (e.g. the syndrome filter); receives the search-matched entries and the normal list as children. */
+  Browse?: ComponentType<{ entries: E[]; children: ReactNode }>;
 }
 
-export function RegistryScreen<E extends Searchable & { id: string }>({ registry, noun, placeholder, load, entryId, renderEntry }: ScreenProps<E>) {
+export function RegistryScreen<E extends Searchable & { id: string }>({ registry, noun, placeholder, load, entryId, renderEntry, Browse }: ScreenProps<E>) {
   const state = useLoaded(load);
   const [query, setQuery] = useState('');
   const entries = state.status === 'ready' ? state.data.entries : [];
@@ -67,6 +69,29 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
   }
 
   const shown = groups.reduce((n, [, g]) => n + g.length, 0);
+  const listView = (
+    <>
+      {groups.map(([cat, list]) => (
+        <section key={cat}>
+          <h2 className="mb-2 mt-4 text-xs font-semibold uppercase tracking-wider text-sky-400">{CATEGORY_LABEL[cat] ?? cat}</h2>
+          <ul className="space-y-1.5">
+            {list.map((e) => (
+              <li key={e.id}>
+                <a
+                  href={toHash({ kind: 'registry', registry, entryId: e.id })}
+                  className="flex min-h-12 items-center justify-between gap-2 rounded-xl border border-slate-800 bg-slate-900/90 px-4 py-2 text-base text-slate-100 hover:border-sky-500"
+                >
+                  {e.title}
+                  <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-slate-500" />
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      {shown === 0 && <p className="text-sm text-slate-400">No matches.</p>}
+    </>
+  );
   return (
     <div className="space-y-3">
       <div className="relative">
@@ -88,25 +113,7 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
           {n}
         </p>
       ))}
-      {groups.map(([cat, list]) => (
-        <section key={cat}>
-          <h2 className="mb-2 mt-4 text-xs font-semibold uppercase tracking-wider text-sky-400">{CATEGORY_LABEL[cat] ?? cat}</h2>
-          <ul className="space-y-1.5">
-            {list.map((e) => (
-              <li key={e.id}>
-                <a
-                  href={toHash({ kind: 'registry', registry, entryId: e.id })}
-                  className="flex min-h-12 items-center justify-between gap-2 rounded-xl border border-slate-800 bg-slate-900/90 px-4 py-2 text-base text-slate-100 hover:border-sky-500"
-                >
-                  {e.title}
-                  <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-slate-500" />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
-      {shown === 0 && <p className="text-sm text-slate-400">No matches.</p>}
+      {Browse ? <Browse entries={groups.flatMap(([, g]) => g)}>{listView}</Browse> : listView}
     </div>
   );
 }

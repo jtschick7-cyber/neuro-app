@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "vocabulary": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1
+          },
+          "definition": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "definition"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "mapping": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "antibodyId": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "syndromeTerm": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "typical": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "antibodyId",
+          "syndromeTerm",
+          "typical"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "vocabulary",
+    "mapping"
+  ],
+  "additionalProperties": false
+}

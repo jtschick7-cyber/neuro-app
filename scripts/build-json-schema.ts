@@ -3,6 +3,7 @@ import { writeFileSync } from "node:fs";
 import { z } from "zod";
 import { AcuteNeuroRegistry } from "../schema/acute-neuro";
 import { NeuralAntibodiesRegistry } from "../schema/neural-antibodies";
+import { SyndromeVocabulary } from "../schema/syndrome-vocabulary";
 import { VascularAntithromboticsRegistry } from "../schema/vascular-antithrombotics";
 import { ConsultWorkupsRegistry } from "../schema/consult-workups";
 import { CautionListRegistry } from "../schema/caution-list";
@@ -11,6 +12,7 @@ import { DrugInteractionsRegistry } from "../schema/drug-interactions";
 const targets: Record<string, z.ZodTypeAny> = {
   "acute-neuro": AcuteNeuroRegistry,
   "neural-antibodies": NeuralAntibodiesRegistry,
+  "syndrome-vocabulary": SyndromeVocabulary,
   "vascular-antithrombotics": VascularAntithromboticsRegistry,
   "consult-workups": ConsultWorkupsRegistry,
   "caution-list": CautionListRegistry,

@@ -13,6 +13,7 @@ import { basename, dirname, join } from "node:path";
 import type { ZodTypeAny } from "zod";
 import { AcuteNeuroRegistry } from "../schema/acute-neuro";
 import { NeuralAntibodiesRegistry } from "../schema/neural-antibodies";
+import { SyndromeVocabulary, checkSyndromeIntegrity, type SyndromeVocabularyData } from "../schema/syndrome-vocabulary";
 import { VascularAntithromboticsRegistry } from "../schema/vascular-antithrombotics";
 import { ConsultWorkupsRegistry } from "../schema/consult-workups";
 import { CautionListRegistry } from "../schema/caution-list";
@@ -23,6 +24,7 @@ const SCHEMAS: Record<string, ZodTypeAny> = {
   "acute-neuro": AcuteNeuroRegistry,
   "neural-antibodies": NeuralAntibodiesRegistry,
   "vascular-antithrombotics": VascularAntithromboticsRegistry,
+  "syndrome-vocabulary": SyndromeVocabulary, // not an entries registry; see the syndrome integrity block below
   "consult-workups": ConsultWorkupsRegistry,
   // Caution lists (schema/caution-list.ts) — one file per condition
   "mg-contraindications": CautionListRegistry,
@@ -47,6 +49,7 @@ const warn = (m: string) => (warnings++, console.warn(`WARN   ${m}`));
 
 type Entry = { id: string; relatedIds?: string[]; verify?: string[]; lastReviewed?: string; treatment?: { calculatorIds: string[] }[] };
 const loaded = new Map<string, Entry[]>();
+let syndromes: SyndromeVocabularyData | null = null;
 
 for (const file of files) {
   const reg = basename(file, ".json");
@@ -65,6 +68,10 @@ for (const file of files) {
   const res = schema.safeParse(raw);
   if (!res.success) {
     for (const i of res.error.issues) err(`${file}: ${i.path.join(".") || "(root)"}: ${i.message}`);
+    continue;
+  }
+  if (reg === "syndrome-vocabulary") {
+    syndromes = res.data as SyndromeVocabularyData;
     continue;
   }
   const entries = (res.data as { entries: Entry[] }).entries;
@@ -100,6 +107,13 @@ for (const [reg, entries] of loaded) {
     for (const t of e.treatment ?? []) for (const c of t.calculatorIds) checkCalc(`${reg}:${e.id}`, c);
     for (const c of e.calculatorIds ?? []) checkCalc(`${reg}:${e.id}`, c);
   }
+}
+
+// Syndrome vocabulary: mapping must be consistent with the neural-antibodies registry.
+if (syndromes) {
+  const antibodies = loaded.get("neural-antibodies");
+  if (!antibodies) warn("syndrome-vocabulary: neural-antibodies not loaded in this run; cross-file checks skipped");
+  else for (const p of checkSyndromeIntegrity(syndromes, new Set(antibodies.map((e) => e.id)))) err(`syndrome-vocabulary: ${p}`);
 }
 
 // Caution lists: a safer alternative must not name a drug or class listed in another entry of the same list.

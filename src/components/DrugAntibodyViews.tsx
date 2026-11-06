@@ -1,6 +1,7 @@
 import DrugTabs from './DrugTabs';
 import RelatedLinks from './RelatedLinks';
 import { EntryShell, RegistryScreen } from './ProtocolViews';
+import SyndromeBrowse from './SyndromeBrowse';
 import { Bullets, EnumBadge, EvidenceBadge, Section, TreatmentList } from './ProtocolParts';
 import { INTERACTION_TIER_LEGEND, NORMAL_LIKELIHOOD_LEGEND, PNS_RISK_LEGEND } from '../content/copy';
 import { loadAntibodies, loadInteractions, loadVascular, type AntibodyEntry, type InteractionEntry, type VascularEntry } from '../lib/protocols';
@@ -227,6 +228,7 @@ export function AntibodiesView({ entryId }: { entryId?: string }) {
       load={loadAntibodies}
       entryId={entryId}
       renderEntry={(e) => <AntibodyEntryView e={e} />}
+      Browse={SyndromeBrowse}
     />
   );
 }
