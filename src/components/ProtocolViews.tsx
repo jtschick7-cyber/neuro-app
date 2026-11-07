@@ -5,7 +5,8 @@ import BedsideNotes from './BedsideNotes';
 import EntryFooter from './EntryFooter';
 import RelatedLinks from './RelatedLinks';
 import DrugTabs from './DrugTabs';
-import { Bullets, EvidenceBadge, Section, Sources, TreatmentList, WorkupList } from './ProtocolParts';
+import { Bullets, EvidenceBadge, EvidenceNote, JumpChips, Section, Sources, TreatmentList, WorkupList, type JumpTarget } from './ProtocolParts';
+import { ENTRY_LAYOUT_COPY } from '../content/copy';
 import {
   CATEGORY_LABEL,
   groupByCategory,
@@ -120,13 +121,20 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
   );
 }
 
+/** Jump-chip targets for the sections an entry actually renders (in on-screen order), plus Sources. */
+export function jumpTargets(sections: [id: string, label: string, present: boolean][]): JumpTarget[] {
+  return [...sections.filter(([, , present]) => present).map(([id, label]) => ({ id, label })), { id: 'sec-sources', label: ENTRY_LAYOUT_COPY.sources }];
+}
+
 export function EntryShell({
   registry,
   entry,
+  jump = [],
   children,
 }: {
   registry: RegistryId;
   entry: { id: string; title: string; category: string; verify: string[]; lastReviewed: string; sources: string[] };
+  jump?: JumpTarget[];
   children: ReactNode;
 }) {
   return (
@@ -134,6 +142,7 @@ export function EntryShell({
       <h1 className="text-lg font-semibold text-slate-100">{entry.title}</h1>
       <p className="text-xs text-slate-400">{CATEGORY_LABEL[entry.category] ?? entry.category}</p>
       <BannerList entry={entry} />
+      <JumpChips targets={jump} />
       {children}
       {entry.verify.length > 0 && (
         <Section title="VERIFY" open>
@@ -148,9 +157,19 @@ export function EntryShell({
 }
 
 function AcuteEntryView({ e }: { e: AcuteEntry }) {
+  // 4.3: open = immediate actions, treatment (and escalation triggers); collapsed = presentation, workup, pitfalls, institution varies, sources.
+  const jump = jumpTargets([
+    ['sec-immediate', 'Immediate', true],
+    ['sec-treatment', 'Treatment', true],
+    ['sec-escalate', 'Escalate', true],
+    ['sec-presentation', 'Presentation', true],
+    ['sec-workup', 'Workup', true],
+    ['sec-pitfalls', 'Pitfalls', e.pitfalls.length > 0],
+    ['sec-varies', 'Institution', e.institutionVaries.length > 0],
+  ]);
   return (
-    <EntryShell registry="acute-neuro" entry={e}>
-      <Section title="Immediate actions" open>
+    <EntryShell registry="acute-neuro" entry={e} jump={jump}>
+      <Section id="sec-immediate" title="Immediate actions" open>
         <ol className="space-y-1.5">
           {e.immediateActions.map((a) => (
             <li key={a.order} className="flex gap-2 text-sm">
@@ -160,26 +179,26 @@ function AcuteEntryView({ e }: { e: AcuteEntry }) {
           ))}
         </ol>
       </Section>
-      <Section title="Presentation" open>
+      <Section id="sec-treatment" title="Treatment" open>
+        <TreatmentList items={e.treatment} />
+      </Section>
+      <Section id="sec-escalate" title="Escalate when" open>
+        <Bullets items={e.escalateWhen} tone="text-red-200" />
+      </Section>
+      <Section id="sec-presentation" title="Presentation">
         <Bullets items={e.presentation} />
         <Bullets items={e.definitions} tone="text-slate-400" />
       </Section>
-      <Section title="Workup" open>
+      <Section id="sec-workup" title="Workup">
         <WorkupList items={e.workup} />
       </Section>
-      <Section title="Treatment" open>
-        <TreatmentList items={e.treatment} />
-      </Section>
       {e.pitfalls.length > 0 && (
-        <Section title="Pitfalls" open>
+        <Section id="sec-pitfalls" title="Pitfalls">
           <Bullets items={e.pitfalls} tone="text-amber-200" />
         </Section>
       )}
-      <Section title="Escalate when" open>
-        <Bullets items={e.escalateWhen} tone="text-red-200" />
-      </Section>
       {e.institutionVaries.length > 0 && (
-        <Section title="Varies by institution">
+        <Section id="sec-varies" title="Varies by institution">
           <Bullets items={e.institutionVaries} />
         </Section>
       )}
@@ -190,18 +209,33 @@ function AcuteEntryView({ e }: { e: AcuteEntry }) {
 
 function ConsultEntryView({ e }: { e: ConsultEntry }) {
   return (
-    <EntryShell registry="consult-workups" entry={e}>
+    <EntryShell
+      registry="consult-workups"
+      entry={e}
+      jump={jumpTargets([
+        ['sec-redflags', 'Red flags', true],
+        ['sec-history', 'History', true],
+        ['sec-exam', 'Exam', true],
+        ['sec-differential', 'Differential', true],
+        ['sec-workup', 'Workup', true],
+        ['sec-rules', 'Rules', e.decisionRules.length > 0],
+        ['sec-initial', 'Initial steps', e.initialSteps.length > 0],
+        ['sec-dispo', 'Disposition', e.disposition.length > 0],
+        ['sec-pearls', 'Pearls', e.pearls.length > 0],
+        ['sec-varies', 'Institution', e.institutionVaries.length > 0],
+      ])}
+    >
       <p className="mt-2 text-sm text-slate-200">{e.consultQuestion}</p>
-      <Section title="Red flags" open alert>
+      <Section id="sec-redflags" title="Red flags" open alert>
         <Bullets items={e.redFlags} tone="text-red-200" />
       </Section>
-      <Section title="Key history" open>
+      <Section id="sec-history" title="Key history">
         <Bullets items={e.keyHistory} />
       </Section>
-      <Section title="Key exam" open>
+      <Section id="sec-exam" title="Key exam">
         <Bullets items={e.keyExam} />
       </Section>
-      <Section title="Differential" open>
+      <Section id="sec-differential" title="Differential" open>
         <ul className="space-y-1.5">
           {e.differential.map((d) => (
             <li key={d.dx} className="text-sm">
@@ -212,11 +246,11 @@ function ConsultEntryView({ e }: { e: ConsultEntry }) {
           ))}
         </ul>
       </Section>
-      <Section title="Workup" open>
+      <Section id="sec-workup" title="Workup">
         <WorkupList items={e.workup} />
       </Section>
       {e.decisionRules.length > 0 && (
-        <Section title="Decision rules" open>
+        <Section id="sec-rules" title="Decision rules" open>
           <ol className="space-y-2">
             {e.decisionRules.map((r) => (
               <li key={r.order} className="text-sm">
@@ -231,29 +265,29 @@ function ConsultEntryView({ e }: { e: ConsultEntry }) {
                 <div className="mt-0.5">
                   <EvidenceBadge level={r.evidenceLevel} />
                 </div>
-                <Bullets items={r.evidenceNote} tone="text-xs text-slate-400" />
+                <EvidenceNote items={r.evidenceNote} />
               </li>
             ))}
           </ol>
         </Section>
       )}
       {e.initialSteps.length > 0 && (
-        <Section title="Initial steps">
+        <Section id="sec-initial" title="Initial steps">
           <Bullets items={e.initialSteps} />
         </Section>
       )}
       {e.disposition.length > 0 && (
-        <Section title="Disposition">
+        <Section id="sec-dispo" title="Disposition">
           <Bullets items={e.disposition} />
         </Section>
       )}
       {e.pearls.length > 0 && (
-        <Section title="Pearls">
+        <Section id="sec-pearls" title="Pearls">
           <Bullets items={e.pearls} />
         </Section>
       )}
       {e.institutionVaries.length > 0 && (
-        <Section title="Varies by institution">
+        <Section id="sec-varies" title="Varies by institution">
           <Bullets items={e.institutionVaries} />
         </Section>
       )}
