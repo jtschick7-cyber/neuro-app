@@ -81,3 +81,21 @@ describe('Pins and draw-before (4.4, 4.7b)', () => {
     expect(hits).toEqual(['mog']);
   });
 });
+
+describe('Canonical links (4.6)', () => {
+  it('links every repeated block to its owning entry, which exists', async () => {
+    const { reversalCanonical, NEURAXIAL_PEARL } = await import('../src/components/DrugAntibodyViews');
+    type Row = { agent: string };
+    const reg = JSON.parse(src('data/vascular-antithrombotics.json')) as { entries: { id: string; kind: string; reversal?: Row[]; pearls: string[] }[] };
+    const ids = new Set(reg.entries.map((e) => e.id));
+    const linked = (id: string) => reg.entries.find((e) => e.id === id)!.reversal!.map((r) => reversalCanonical(r.agent));
+    expect(linked('aspirin')).toEqual(['antiplatelet-ich', 'antiplatelet-ich', 'antiplatelet-ich']);
+    expect(linked('clopidogrel')).toEqual(['antiplatelet-ich', 'antiplatelet-ich', 'antiplatelet-ich']);
+    for (const d of ['apixaban', 'rivaroxaban', 'edoxaban']) expect(linked(d)[0]).toBe('four-factor-pcc');
+    expect(linked('dabigatran')[1]).toBe('four-factor-pcc');
+    expect(reg.entries.filter((e) => e.pearls.some((p) => NEURAXIAL_PEARL.test(p))).map((e) => e.id)).toEqual([
+      'apixaban', 'rivaroxaban', 'edoxaban', 'dabigatran', 'enoxaparin',
+    ]);
+    for (const id of ['antiplatelet-ich', 'four-factor-pcc', 'periprocedural-holds-lp-evd']) expect(ids.has(id)).toBe(true);
+  });
+});

@@ -184,7 +184,7 @@ export function Sources({ items }: { items: string[] }) {
 }
 
 /** Treatment / use rows: role, agent, routes, dose text (as signed off), notes, evidence and formulary badges. */
-export function TreatmentList({ items }: { items: z.infer<typeof TreatmentItem>[] }) {
+export function TreatmentList({ items, canonical }: { items: z.infer<typeof TreatmentItem>[]; canonical?: (t: z.infer<typeof TreatmentItem>) => ReactNode }) {
   return (
     <ul className="space-y-3">
       {items.map((t) => (
@@ -201,6 +201,7 @@ export function TreatmentList({ items }: { items: z.infer<typeof TreatmentItem>[
             <FormularyBadge status={t.formularyStatus} />
           </div>
           <EvidenceNote items={t.evidenceNote} />
+          {canonical?.(t)}
           <RelatedLinks relatedIds={[]} calculatorIds={t.calculatorIds} />
         </li>
       ))}

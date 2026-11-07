@@ -176,6 +176,14 @@ export const PINS_COPY = {
   unpin: "Unpin from Home",
 };
 
+/** 4.6: link from a block repeated across agent cards to the entry that owns it. */
+export const CANONICAL_COPY = {
+  prefix: "Full guidance:",
+  "antiplatelet-ich": "Antiplatelet-associated ICH",
+  "four-factor-pcc": "4F-PCC",
+  "periprocedural-holds-lp-evd": "Holds before LP, lumbar drain or EVD",
+} as const;
+
 /** Global search (Home and the search button on every other screen). */
 export const SEARCH_COPY = {
   partial: "No entry matches every word — closest matches:",

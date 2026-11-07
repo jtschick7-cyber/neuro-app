@@ -3,7 +3,7 @@ import RelatedLinks from './RelatedLinks';
 import { EntryShell, RegistryScreen, jumpTargets } from './ProtocolViews';
 import SyndromeBrowse from './SyndromeBrowse';
 import { Bullets, EnumBadge, EvidenceBadge, EvidenceNote, Section, TreatmentList } from './ProtocolParts';
-import { INTERACTION_TIER_LEGEND, NORMAL_LIKELIHOOD_LEGEND, PNS_RISK_LEGEND, SPECIMEN_BADGE } from '../content/copy';
+import { CANONICAL_COPY, INTERACTION_TIER_LEGEND, NORMAL_LIKELIHOOD_LEGEND, PNS_RISK_LEGEND, SPECIMEN_BADGE } from '../content/copy';
 import { loadAntibodies, loadInteractions, loadVascular, type AntibodyEntry, type InteractionEntry, type VascularEntry } from '../lib/protocols';
 
 const PNS_HELP = Object.fromEntries(PNS_RISK_LEGEND) as Record<string, string>;
@@ -31,6 +31,28 @@ const RESPONSE_LABEL: Record<string, string> = {
   VARIABLE: 'Immunotherapy: variable',
   USUALLY_POOR: 'Immunotherapy: usually poor',
 };
+
+type CanonicalId = Exclude<keyof typeof CANONICAL_COPY, 'prefix'>;
+
+/**
+ * 4.6: blocks repeated across agent cards (platelet transfusion / desmopressin, 4F-PCC, the neuraxial boxed warning)
+ * stay in full — their grading differs by agent — and get a link to the entry that owns the full guidance.
+ */
+export function reversalCanonical(agent: string): CanonicalId | undefined {
+  if (/^(Platelet transfusion|Desmopressin)\b/.test(agent)) return 'antiplatelet-ich';
+  if (/^4F-PCC\b/.test(agent)) return 'four-factor-pcc';
+  return undefined;
+}
+export const NEURAXIAL_PEARL = /^Boxed warning: spinal\/epidural hematoma/;
+
+function CanonicalLink({ id, self }: { id: CanonicalId | undefined; self: string }) {
+  if (!id || id === self) return null;
+  return (
+    <a href={`#/vascular-antithrombotics/${id}`} className="mt-1 inline-flex min-h-8 items-center text-xs font-medium text-sky-400 hover:text-sky-300">
+      {CANONICAL_COPY.prefix}&nbsp;<span className="underline">{CANONICAL_COPY[id]}</span>&nbsp;→
+    </a>
+  );
+}
 
 function VascularEntryView({ e }: { e: VascularEntry }) {
   if (e.kind === 'DECISION') {
@@ -113,7 +135,7 @@ function VascularEntryView({ e }: { e: VascularEntry }) {
       <p className="text-sm text-slate-300">Half-life: {t.halfLifeText}</p>
       {e.reversal.length > 0 && (
         <Section id="sec-reversal" title="Reversal" open>
-          <TreatmentList items={e.reversal} />
+          <TreatmentList items={e.reversal} canonical={(t) => <CanonicalLink id={reversalCanonical(t.agent)} self={e.id} />} />
         </Section>
       )}
       {t.thrombolysisRule.length > 0 && (
@@ -152,6 +174,7 @@ function VascularEntryView({ e }: { e: VascularEntry }) {
       {e.pearls.length > 0 && (
         <Section id="sec-pearls" title="Pearls">
           <Bullets items={e.pearls} />
+          <CanonicalLink id={e.pearls.some((p) => NEURAXIAL_PEARL.test(p)) ? 'periprocedural-holds-lp-evd' : undefined} self={e.id} />
         </Section>
       )}
       {e.institutionVaries.length > 0 && (
