@@ -68,7 +68,7 @@ describe('every cross-link in the built registries', () => {
     for (const id of manifest) expect(CALC_CARD[id], id).toBeDefined();
   });
   it('links every stroke, immunotherapy and sodium calculator to its card', () => {
-    for (const id of ['tnk-dose', 'alteplase-dose', 'ich-score', 'abcd2', 'ivig-dose', 'sodium-correction']) {
+    for (const id of ['tnk-dose', 'alteplase-dose', 'ich-score', 'abcd2', 'sodium-correction']) {
       expect(resolveRef(`calc:${id}`).href).toBe(`#/calc/${id}`);
     }
   });

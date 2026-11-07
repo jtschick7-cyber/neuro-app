@@ -45,7 +45,7 @@ export function NumberField({
   step?: string;
 }) {
   return (
-    <label className="block text-xs text-slate-400">
+    <label className="flex h-full flex-col gap-0.5 text-xs text-slate-400">
       {label}
       <input
         type="number"
@@ -55,7 +55,7 @@ export function NumberField({
         value={value}
         placeholder={placeholder}
         onChange={(e) => onChange(e.target.value)}
-        className="mt-0.5 w-full rounded-md border border-slate-600 bg-slate-800 px-2 py-1.5 text-base text-slate-100 placeholder-slate-500 focus:border-sky-400 focus:outline-none"
+        className="mt-auto w-full rounded-md border border-slate-600 bg-slate-800 px-2 py-1.5 text-base text-slate-100 placeholder-slate-500 focus:border-sky-400 focus:outline-none"
       />
     </label>
   );
@@ -87,12 +87,12 @@ export function SelectField({
   options: { value: string; label: string }[];
 }) {
   return (
-    <label className="block text-xs text-slate-400">
+    <label className="flex h-full flex-col gap-0.5 text-xs text-slate-400">
       {label}
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="mt-0.5 w-full rounded-md border border-slate-600 bg-slate-800 px-2 py-1.5 text-base text-slate-100"
+        className="mt-auto w-full rounded-md border border-slate-600 bg-slate-800 px-2 py-1.5 text-base text-slate-100"
       >
         {options.map((o) => (
           <option key={o.value} value={o.value}>

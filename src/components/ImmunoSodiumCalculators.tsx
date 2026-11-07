@@ -1,74 +1,8 @@
 import { useState } from 'react';
-import { Activity, Droplets } from 'lucide-react';
+import { Droplets } from 'lucide-react';
 import { CheckField, NeedWeight, NumberField, SelectField } from './CalculatorCard';
 import { Card, Result, parseNonNegative, safe } from './calcShared';
-import { adjustedBodyWeight, hyponatremiaBolus, idealBodyWeight, ivigDose, sodiumCorrectionCheck } from '../lib/calculators';
-import { type Sex } from '../lib/patientContext';
-
-/** Display-only rounding for the reference line; dosing uses the unrounded helper values. */
-const kg1 = (n: number): string => n.toFixed(1);
-
-type WeightBasis = 'actual' | 'ideal' | 'adjusted';
-type IvigDays = 2 | 3 | 4 | 5;
-
-const BASIS_OPTIONS = [
-  { value: 'actual', label: 'Actual body weight' },
-  { value: 'ideal', label: 'Ideal body weight' },
-  { value: 'adjusted', label: 'Adjusted body weight' },
-];
-const DAYS_OPTIONS = [2, 3, 4, 5].map((d) => ({ value: String(d), label: `${d} days` }));
-
-export function IvigCard({ weightKg, sex }: { weightKg: number | null; sex: Sex }) {
-  const [height, setHeight] = useState('');
-  const [basis, setBasis] = useState<WeightBasis>('actual');
-  const [days, setDays] = useState<IvigDays>(5);
-  const h = parseNonNegative(height);
-  const female = sex === 'F';
-  const needsHeight = basis !== 'actual';
-  const missing: string[] = [];
-  if (weightKg === null) missing.push('weight');
-  if (needsHeight && sex === '') missing.push('sex');
-  if (needsHeight && (h === null || h === 0)) missing.push('height');
-
-  // Selected dosing weight, computed with the clinical helpers (never re-implemented here).
-  const dosing = (): number => {
-    if (weightKg === null) throw new RangeError('Enter weight');
-    if (basis === 'actual') return weightKg;
-    const hh = h ?? 0;
-    return basis === 'ideal' ? idealBodyWeight(hh, female) : adjustedBodyWeight(weightKg, hh, female);
-  };
-
-  const ready = missing.length === 0;
-  const weightsShown =
-    weightKg !== null && h !== null && h > 0 && sex !== ''
-      ? safe(() => ({
-          value: 0,
-          unit: 'kg',
-          display: `Actual ${kg1(weightKg)} kg · Ideal ${kg1(idealBodyWeight(h, female))} kg · Adjusted ${kg1(adjustedBodyWeight(weightKg, h, female))} kg`,
-          capped: false,
-          warnings: [],
-        }))
-      : null;
-
-  return (
-    <Card noteId="calc-ivig" title="IVIG" subtitle="2 g/kg total over 2–5 days (e.g. GBS, CIDP, MG)" icon={<Activity size={18} />} metaIds={['ivig-dose']}>
-      <div className="grid grid-cols-2 gap-2">
-        <SelectField label="Dosing weight" value={basis} onChange={(v) => setBasis(v as WeightBasis)} options={BASIS_OPTIONS} />
-        <SelectField label="Duration" value={String(days)} onChange={(v) => setDays(Number(v) as IvigDays)} options={DAYS_OPTIONS} />
-      </div>
-      <div className="mt-2 grid grid-cols-2 gap-2">
-        <NumberField label="Height (cm), for ideal/adjusted" value={height} onChange={setHeight} step="1" placeholder="170" />
-      </div>
-      {weightKg === null && <NeedWeight />}
-      {needsHeight && weightKg !== null && missing.length > 0 && (
-        <p className="text-sm text-amber-300">Enter {missing.join(' and ')} ({sex === '' ? 'sex is in the top bar' : 'height is above'}).</p>
-      )}
-      {typeof weightsShown === 'string' && <p className="py-1 text-sm text-red-300">{weightsShown}</p>}
-      {weightsShown !== null && typeof weightsShown !== 'string' && <p className="py-1 text-xs text-slate-400">{weightsShown.display}</p>}
-      {ready && <Result label={`IVIG, ${basis} body weight`} r={safe(() => ivigDose(dosing(), { days }))} />}
-    </Card>
-  );
-}
+import { hyponatremiaBolus, sodiumCorrectionCheck } from '../lib/calculators';
 
 const BOLUS_OPTIONS = [
   { value: 'ese', label: 'ESE 2014: 150 mL fixed' },
