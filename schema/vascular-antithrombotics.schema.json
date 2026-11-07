@@ -148,7 +148,9 @@
                           "BUCCAL",
                           "PR",
                           "INTRATHECAL",
-                          "NON_PHARM"
+                          "NON_PHARM",
+                          "EPIDURAL",
+                          "PERINEURAL"
                         ]
                       }
                     },
@@ -412,7 +414,9 @@
                           "BUCCAL",
                           "PR",
                           "INTRATHECAL",
-                          "NON_PHARM"
+                          "NON_PHARM",
+                          "EPIDURAL",
+                          "PERINEURAL"
                         ]
                       }
                     },
@@ -833,7 +837,9 @@
                           "BUCCAL",
                           "PR",
                           "INTRATHECAL",
-                          "NON_PHARM"
+                          "NON_PHARM",
+                          "EPIDURAL",
+                          "PERINEURAL"
                         ]
                       }
                     },

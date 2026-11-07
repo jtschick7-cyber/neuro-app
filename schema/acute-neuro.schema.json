@@ -42,7 +42,8 @@
               "SPINAL",
               "ICP_HERNIATION",
               "TOXIC_METABOLIC",
-              "ENCEPHALOPATHY"
+              "ENCEPHALOPATHY",
+              "HEADACHE"
             ]
           },
           "searchTerms": {
@@ -176,7 +177,9 @@
                       "BUCCAL",
                       "PR",
                       "INTRATHECAL",
-                      "NON_PHARM"
+                      "NON_PHARM",
+                      "EPIDURAL",
+                      "PERINEURAL"
                     ]
                   }
                 },

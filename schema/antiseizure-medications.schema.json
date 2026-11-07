@@ -1,0 +1,606 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scopeNotes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "schemaVersion": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "lastUpdated": {
+      "type": "string",
+      "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+    },
+    "entries": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "searchTerms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "maintenance": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "FIRST_LINE",
+                    "SECOND_LINE",
+                    "THIRD_LINE",
+                    "ALTERNATIVE",
+                    "ADJUNCT",
+                    "SUPPORTIVE",
+                    "NOT_RECOMMENDED"
+                  ]
+                },
+                "agent": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "routes": {
+                  "minItems": 1,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": [
+                      "IV",
+                      "IM",
+                      "IO",
+                      "PO",
+                      "NG",
+                      "SC",
+                      "IN",
+                      "BUCCAL",
+                      "PR",
+                      "INTRATHECAL",
+                      "NON_PHARM",
+                      "EPIDURAL",
+                      "PERINEURAL"
+                    ]
+                  }
+                },
+                "doseText": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "dose": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "amountMin": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "amountMax": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "unit": {
+                        "type": "string",
+                        "enum": [
+                          "MG",
+                          "G",
+                          "MCG",
+                          "MG_PE",
+                          "UNITS",
+                          "ML",
+                          "MEQ",
+                          "MMOL"
+                        ]
+                      },
+                      "basis": {
+                        "type": "string",
+                        "enum": [
+                          "FIXED",
+                          "PER_KG"
+                        ]
+                      },
+                      "timing": {
+                        "type": "string",
+                        "enum": [
+                          "SINGLE",
+                          "PER_DOSE",
+                          "PER_HOUR",
+                          "PER_MIN",
+                          "PER_DAY"
+                        ]
+                      },
+                      "weightBasis": {
+                        "type": "string",
+                        "enum": [
+                          "ACTUAL",
+                          "IDEAL",
+                          "ADJUSTED",
+                          "NOT_APPLICABLE"
+                        ]
+                      },
+                      "caps": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number",
+                              "exclusiveMinimum": 0
+                            },
+                            "unit": {
+                              "type": "string",
+                              "enum": [
+                                "MG",
+                                "G",
+                                "MCG",
+                                "MG_PE",
+                                "UNITS",
+                                "ML",
+                                "MEQ",
+                                "MMOL"
+                              ]
+                            },
+                            "scope": {
+                              "type": "string",
+                              "enum": [
+                                "PER_DOSE",
+                                "PER_DAY",
+                                "PER_COURSE",
+                                "MAX_RATE_PER_MIN"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "amount",
+                            "unit",
+                            "scope"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "frequency": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "duration": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "amountMin",
+                      "amountMax",
+                      "unit",
+                      "basis",
+                      "timing",
+                      "weightBasis",
+                      "caps",
+                      "frequency",
+                      "duration"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "notes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "evidenceLevel": {
+                  "type": "string",
+                  "enum": [
+                    "STRONG",
+                    "MODERATE",
+                    "WEAK",
+                    "CONSENSUS",
+                    "EXPERT_OPINION",
+                    "NOT_GRADED"
+                  ]
+                },
+                "evidenceNote": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "formularyStatus": {
+                  "type": "string",
+                  "enum": [
+                    "LOCAL_PREFERRED",
+                    "AVAILABLE",
+                    "NOT_STOCKED_LOCAL",
+                    "INSTITUTION_VARIES"
+                  ]
+                },
+                "calculatorIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+                  }
+                }
+              },
+              "required": [
+                "role",
+                "agent",
+                "routes",
+                "doseText",
+                "dose",
+                "notes",
+                "evidenceLevel",
+                "evidenceNote",
+                "formularyStatus",
+                "calculatorIds"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "renal": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "CRCL_BAND",
+                    "INTERMITTENT_HD"
+                  ]
+                },
+                "crclMin": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "crclMax": {
+                  "anyOf": [
+                    {
+                      "type": "number",
+                      "exclusiveMinimum": 0
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "crclBasis": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "CG_ML_MIN",
+                        "BSA_NORMALIZED_ML_MIN_1_73M2"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "label": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "doseText": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "dose": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "label": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "amountMin": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "amountMax": {
+                        "type": "number",
+                        "exclusiveMinimum": 0
+                      },
+                      "unit": {
+                        "type": "string",
+                        "enum": [
+                          "MG",
+                          "G",
+                          "MCG",
+                          "MG_PE",
+                          "UNITS",
+                          "ML",
+                          "MEQ",
+                          "MMOL"
+                        ]
+                      },
+                      "basis": {
+                        "type": "string",
+                        "enum": [
+                          "FIXED",
+                          "PER_KG"
+                        ]
+                      },
+                      "timing": {
+                        "type": "string",
+                        "enum": [
+                          "SINGLE",
+                          "PER_DOSE",
+                          "PER_HOUR",
+                          "PER_MIN",
+                          "PER_DAY"
+                        ]
+                      },
+                      "weightBasis": {
+                        "type": "string",
+                        "enum": [
+                          "ACTUAL",
+                          "IDEAL",
+                          "ADJUSTED",
+                          "NOT_APPLICABLE"
+                        ]
+                      },
+                      "caps": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "number",
+                              "exclusiveMinimum": 0
+                            },
+                            "unit": {
+                              "type": "string",
+                              "enum": [
+                                "MG",
+                                "G",
+                                "MCG",
+                                "MG_PE",
+                                "UNITS",
+                                "ML",
+                                "MEQ",
+                                "MMOL"
+                              ]
+                            },
+                            "scope": {
+                              "type": "string",
+                              "enum": [
+                                "PER_DOSE",
+                                "PER_DAY",
+                                "PER_COURSE",
+                                "MAX_RATE_PER_MIN"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "amount",
+                            "unit",
+                            "scope"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "frequency": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "duration": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      }
+                    },
+                    "required": [
+                      "label",
+                      "amountMin",
+                      "amountMax",
+                      "unit",
+                      "basis",
+                      "timing",
+                      "weightBasis",
+                      "caps",
+                      "frequency",
+                      "duration"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "notes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "required": [
+                "kind",
+                "crclMin",
+                "crclMax",
+                "crclBasis",
+                "label",
+                "doseText",
+                "dose",
+                "notes"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "renalNotes": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "hepatic": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "ivPo": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "enteral": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "levels": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "interactions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "pearls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "calculatorIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "verify": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "relatedIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(-[a-z0-9]+)*:[a-z0-9]+(-[a-z0-9]+)*$"
+            }
+          },
+          "sources": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "lastReviewed": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^\\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+              },
+              {
+                "type": "string",
+                "const": "UNREVIEWED"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "searchTerms",
+          "maintenance",
+          "renal",
+          "renalNotes",
+          "hepatic",
+          "ivPo",
+          "enteral",
+          "levels",
+          "interactions",
+          "pearls",
+          "calculatorIds",
+          "verify",
+          "relatedIds",
+          "sources",
+          "lastReviewed"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "title",
+    "scopeNotes",
+    "version",
+    "schemaVersion",
+    "lastUpdated",
+    "entries"
+  ],
+  "additionalProperties": false
+}
