@@ -8,6 +8,8 @@ import { VascularAntithromboticsRegistry } from "../schema/vascular-antithrombot
 import { ConsultWorkupsRegistry } from "../schema/consult-workups";
 import { CautionListRegistry } from "../schema/caution-list";
 import { DrugInteractionsRegistry } from "../schema/drug-interactions";
+import { AntiseizureMedicationsRegistry } from "../schema/antiseizure-medications";
+import { ReferenceCardsRegistry } from "../schema/reference-cards";
 
 const targets: Record<string, z.ZodTypeAny> = {
   "acute-neuro": AcuteNeuroRegistry,
@@ -17,6 +19,8 @@ const targets: Record<string, z.ZodTypeAny> = {
   "consult-workups": ConsultWorkupsRegistry,
   "caution-list": CautionListRegistry,
   "drug-interactions": DrugInteractionsRegistry,
+  "antiseizure-medications": AntiseizureMedicationsRegistry,
+  "reference-cards": ReferenceCardsRegistry,
 };
 
 for (const [name, schema] of Object.entries(targets)) {
