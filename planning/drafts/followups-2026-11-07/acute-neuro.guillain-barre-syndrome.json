@@ -1,0 +1,290 @@
+{
+  "id": "guillain-barre-syndrome",
+  "title": "Guillain-Barré syndrome",
+  "category": "NEUROMUSCULAR",
+  "keyNumbers": [
+    "IVIG: 0.4 g/kg/day IV ×5 days (2 g/kg total)",
+    "Plasma exchange (PLEX): 12–15 L total in 4–5 exchanges over 1–2 weeks (within 4 weeks of onset, unable to walk unaided)",
+    "Ward → ICU: FVC <60% predicted, SBC <20, autonomic instability, worsening bulbar/neck weakness, or mEGRIS ≥23 (EAN/PNS 2023 Fig. 2)",
+    "FVC fall >30% in 24 h → immediate ICU transfer; 50% fall in <24 h → likely needs ventilation",
+    "In ICU: FVC <20 mL/kg, MEP <30 cmH2O, MIP <40 cmH2O, or FVC >30% below baseline → consider elective intubation before FVC ≤10 mL/kg"
+  ],
+  "searchTerms": [
+    "GBS",
+    "AIDP",
+    "AMAN",
+    "Miller Fisher",
+    "MFS",
+    "ascending paralysis",
+    "EGRIS",
+    "Bickerstaff",
+    "BBE"
+  ],
+  "presentation": [
+    "Progressive bilateral limb weakness with reduced/absent reflexes; nadir within 4 weeks",
+    "Back/limb pain, distal paresthesias; facial or bulbar weakness; dysautonomia",
+    "Preceding diarrhea or respiratory infection makes GBS more likely",
+    "MFS: ophthalmoplegia, ataxia, areflexia (anti-GQ1b)"
+  ],
+  "definitions": [
+    "Progressive worsening ≤4 weeks; progression >8 weeks from onset or ≥3 treatment-related fluctuations (TRFs) → consider acute-onset CIDP (EAN/PNS 2023)",
+    "TRF: worsening after initial treatment-induced improvement or stabilization (EAN/PNS 2023)",
+    "CSF: raised protein with normal or slightly raised cells — <5/μL in 80%, 5–50/μL in 19%, >50/μL in 2%; >50/μL → consider alternative diagnosis (EAN/PNS 2023)",
+    "GBS disability scale: 1 minor symptoms, can run; 2 walks 10 m unaided, can't run; 3 walks 10 m with aid; 4 bed/chair-bound; 5 ventilated; 6 dead",
+    "CSF protein raised in 50% at <3 days and 84% at >7 days from onset (EAN/PNS 2023, n>1000)",
+    "High risk at presentation (→ ICU): mEGRIS 25–32 (>70% ventilation risk), OR ≥4 of 6 risk factors (<7 days onset→admission, can't cough, GBS-DS ≥4, can't lift arm above horizontal, neck flexion weakness, abnormal LFTs), OR FVC <60% predicted / aspiration risk / autonomic instability (EAN/PNS 2023 Fig. 2)",
+    "Bickerstaff brainstem encephalitis: MFS features plus impaired consciousness and pyramidal signs, often overlapping with GBS; IgG anti-GQ1b/GT1a (Leonhard 2019; Willison & Yuki 2002)"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "On arrival",
+      "action": "FVC, single breath count, MIP/MEP if available; bulbar and neck flexion strength. FVC 3–6×/day (q4h while falling)"
+    },
+    {
+      "order": 2,
+      "window": "On arrival",
+      "action": "Continuous ECG and frequent BP — screen for dysautonomia"
+    },
+    {
+      "order": 3,
+      "window": "On arrival",
+      "action": "Risk-stratify (definitions): high risk → ICU. Ward patients: transfer to ICU if FVC <60% predicted, SBC <20, autonomic instability, clinical deterioration (esp. bulbar/neck), or mEGRIS ≥23"
+    },
+    {
+      "order": 4,
+      "window": "≤2 weeks from onset",
+      "action": "Unable to walk unaided: IVIG 0.4 g/kg/day ×5 (local first choice) or PLEX 12–15 L over 4–5 exchanges (≤4 weeks)"
+    },
+    {
+      "order": 5,
+      "window": "Ongoing",
+      "action": "VTE prophylaxis, pain control, bowel/bladder care, swallow eval, early PT/OT"
+    }
+  ],
+  "workup": [
+    {
+      "test": "LP: cell count, protein, glucose",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Protein often normal in week 1 — doesn't exclude GBS",
+        "IVIG can raise CSF protein and cells; tap before IVIG if possible"
+      ]
+    },
+    {
+      "test": "Nerve conduction studies/EMG",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Can be normal early; repeat if nondiagnostic"
+      ]
+    },
+    {
+      "test": "BMP (K, Mg, phos), CK, CBC, LFTs, glucose",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Abnormal LFTs at presentation raise ventilation risk"
+      ]
+    },
+    {
+      "test": "Contrast MRI of the whole spine",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Sensory level",
+        "Extensor plantars",
+        "Marked asymmetry",
+        "Early bladder/bowel dysfunction"
+      ],
+      "notes": [
+        "Excludes cord compression, myelitis, tumor; root enhancement supports GBS"
+      ]
+    },
+    {
+      "test": "Anti-GQ1b antibody",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected Miller Fisher syndrome"
+      ],
+      "notes": [
+        "Anti-ganglioside panels of limited value in typical GBS; assay-dependent; a negative result doesn't exclude GBS (Leonhard 2019)"
+      ]
+    },
+    {
+      "test": "Nodal/paranodal antibodies",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected autoimmune nodopathy (severe, tremor, poor IVIG response)"
+      ],
+      "notes": []
+    },
+    {
+      "test": "HIV, Lyme, CMV, West Nile serology/PCR",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "CSF pleocytosis",
+        "Exposure history"
+      ],
+      "notes": []
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "IVIG",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "0.4 g/kg/day IV ×5 days (2 g/kg total)",
+      "dose": [
+        {
+          "label": "Daily",
+          "amountMin": 0.4,
+          "amountMax": 0.4,
+          "unit": "G",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": [
+            "5 days"
+          ]
+        }
+      ],
+      "notes": [
+        "2-day 1 g/kg/day regimen not endorsed (more TRFs in a pediatric trial)",
+        "Also reasonable 2–4 weeks after onset (GPP)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "EAN/PNS 2023: strong recommendation if unable to walk unaided within 2 weeks of onset"
+      ],
+      "formularyStatus": "LOCAL_PREFERRED",
+      "calculatorIds": [
+        "ivig-dose"
+      ]
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Plasma exchange (PLEX)",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "12–15 L total in 4–5 exchanges over 1–2 weeks (within 4 weeks of onset, unable to walk unaided); 2 exchanges if able to walk but not run (within 2 weeks)",
+      "dose": [],
+      "notes": [
+        "Albumin replacement preferred (FFP: similar outcome, more adverse events)",
+        "Discontinuous-flow machines relatively contraindicated with severe dysautonomia"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "EAN/PNS 2023: strong recommendation (4–5 exchanges); weak recommendation (2 exchanges, mild)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SUPPORTIVE",
+      "agent": "Neuropathic pain: gabapentinoid, tricyclic, or carbamazepine",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Per agent; titrate",
+      "dose": [],
+      "notes": [
+        "Caution with tricyclics in autonomic failure"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "EAN/PNS 2023: weak recommendation"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SUPPORTIVE",
+      "agent": "VTE prophylaxis",
+      "routes": [
+        "SC"
+      ],
+      "doseText": "Per institutional protocol for non-ambulatory patients",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Corticosteroids",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Do not use",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "EAN/PNS 2023: recommends against oral steroids (strong); weak recommendation against IV steroids"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Second IVIG course (poor prognosis) / PLEX followed immediately by IVIG",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Do not use",
+      "dose": [],
+      "notes": [
+        "SID-GBS: second course added no benefit, more thromboembolic events",
+        "Retreatment for a TRF may be considered (observational data only)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "EAN/PNS 2023: recommends against both"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Normal CSF protein in the first week is common",
+    "CSF cells >50/μL → think infection (HIV, Lyme, CMV, West Nile), malignancy, sarcoid",
+    "Sensory level, extensor plantars, or early sphincter dysfunction → image the cord",
+    "Severe respiratory failure with only mild limb weakness → reconsider diagnosis (MG, botulism, myopathy)",
+    "Mild stable GBS (grade 1 within 2 weeks; grade 1–2 at 2–4 weeks) does not need IVIG/PLEX — but treat walking patients with fast decline, bulbar, or autonomic problems",
+    "Dysautonomia: exaggerated responses to vasoactive drugs; bradyarrhythmia with suctioning"
+  ],
+  "escalateWhen": [
+    "Ward → ICU: FVC <60% predicted, SBC <20, autonomic instability, worsening bulbar/neck weakness, or mEGRIS ≥23 (EAN/PNS 2023 Fig. 2)",
+    "FVC fall >30% in 24 h → immediate ICU transfer; 50% fall in <24 h → likely needs ventilation",
+    "In ICU: FVC <20 mL/kg, MEP <30 cmH2O, MIP <40 cmH2O, or FVC >30% below baseline → consider elective intubation before FVC ≤10 mL/kg",
+    "Bulbar dysfunction with aspiration, or FVC ≤10 mL/kg → intubate"
+  ],
+  "institutionVaries": [
+    "IVIG product and dosing weight in obesity",
+    "PLEX machine type (continuous vs discontinuous flow) and line access"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:neuromuscular-respiratory-failure",
+    "consult-workups:acute-hepatic-porphyria"
+  ],
+  "sources": [
+    "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
+    "Luijten LWG, et al. Modified Erasmus GBS Respiratory Insufficiency Score: a simplified clinical tool to predict the risk of mechanical ventilation in GBS. J Neurol Neurosurg Psychiatry 2023;94:300-308",
+    "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
+    "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
