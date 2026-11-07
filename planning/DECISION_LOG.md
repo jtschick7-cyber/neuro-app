@@ -414,3 +414,7 @@ Not edited: `vascular-antithrombotics:pregnancy-antithrombotics` (proposed back-
 - `verify[]`: `cns-vasculitis-workup` (owner of `doi:10.1161/STR.0000000000000422`); `ticagrelor` (other AHA 2026 sections vs Kleindorfer 2021 §5.1.1 Rec 3).
 - Jason: close both, then `npm run signoff` and `npm run release`.
 - Noticed, not changed: tracked in `NEURO_APP_TASKS.md` §10.
+
+### Verify items closed (Jason, 2026-11-07), no content change
+- `cns-vasculitis-workup`: `doi:10.1161/STR.0000000000000422` is the Stroke 2022 editors/editorial board listing; nothing in the entry came from it.
+- `ticagrelor`: nothing in AHA 2026 restates or supersedes Kleindorfer 2021 §5.1.1 Rec 3. AHA 2026 covers acute stroke; Kleindorfer 2021 covers secondary prevention, so the two are complementary.

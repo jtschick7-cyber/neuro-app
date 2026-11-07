@@ -3358,9 +3358,7 @@
         "Can cause false-negative platelet function tests for HIT; PF4 antibody testing unaffected (label)",
         "After IVT: antiplatelets in the first 24 h might be considered only with a compelling indication (AHA 2026: COR 2b, B-NR); usual practice is 24-h imaging first"
       ],
-      "verify": [
-        "uses[3]: only AHA 2026 §4.6 and §4.8 were checked; confirm no other AHA 2026 section restates or supersedes Kleindorfer 2021 §5.1.1 Rec 3 (ticagrelor + aspirin for ipsilateral >30% intracranial stenosis)"
-      ],
+      "verify": [],
       "relatedIds": [
         "vascular-antithrombotics:aspirin",
         "vascular-antithrombotics:clopidogrel",
