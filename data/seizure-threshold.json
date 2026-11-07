@@ -4,9 +4,9 @@
   "scopeNotes": [
     "Labels and an FDA safety communication; Beers 2023 items apply to adults ≥65"
   ],
-  "version": "0.2.1",
+  "version": "0.2.3",
   "schemaVersion": "3.0.0",
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-07",
   "entries": [
     {
       "id": "bupropion",
@@ -114,13 +114,12 @@
       "saferAlternatives": [],
       "verify": [],
       "relatedIds": [
-        "acute-neuro:nonconvulsive-status-epilepticus",
-        "acute-neuro:delirium-vs-encephalopathy"
+        "acute-neuro:nonconvulsive-status-epilepticus"
       ],
       "sources": [
         "FDA Drug Safety Communication on cefepime and non-convulsive status epilepticus (2012), as summarized in: Song JC. Cefepime: FDA Drug Safety Communication on non-convulsive status epilepticus risk. Infect Dis Alert 2012;31(11)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "beta-lactams-carbapenems",

@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "0.8.1",
+  "version": "1.0.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -470,9 +470,7 @@
             "NCS 2012 lists as urgent control option"
           ],
           "formularyStatus": "AVAILABLE",
-          "calculatorIds": [
-            "lacosamide-load"
-          ]
+          "calculatorIds": []
         },
         {
           "role": "THIRD_LINE",
@@ -522,7 +520,7 @@
         "Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795",
         "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "refractory-super-refractory-se",
@@ -1116,9 +1114,7 @@
             "TRENdS 2018 RCT: noninferior to fosphenytoin (63% vs 50% seizure control)"
           ],
           "formularyStatus": "AVAILABLE",
-          "calculatorIds": [
-            "lacosamide-load"
-          ]
+          "calculatorIds": []
         },
         {
           "role": "SECOND_LINE",
@@ -1276,7 +1272,7 @@
         "Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z",
         "Husain AM, et al. Randomized trial of lacosamide versus fosphenytoin for nonconvulsive seizures (TRENdS). Ann Neurol 2018;83(6):1174-1185. doi:10.1002/ana.25249"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "myasthenic-crisis",
@@ -4841,14 +4837,13 @@
       "institutionVaries": [],
       "verify": [],
       "relatedIds": [
-        "acute-neuro:nms-parkinsonism-hyperpyrexia",
-        "acute-neuro:delirium-vs-encephalopathy"
+        "acute-neuro:nms-parkinsonism-hyperpyrexia"
       ],
       "sources": [
         "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352(11):1112-1120. doi:10.1056/NEJMra041867",
         "Dunkley EJC, et al. The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity. QJM 2003;96(9):635-642. doi:10.1093/qjmed/hcg109"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "nms-parkinsonism-hyperpyrexia",
@@ -5134,7 +5129,6 @@
       "verify": [],
       "relatedIds": [
         "acute-neuro:serotonin-syndrome",
-        "acute-neuro:delirium-vs-encephalopathy",
         "reference-cards:inpatient-parkinson-disease"
       ],
       "sources": [
@@ -5268,13 +5262,11 @@
         "Thiamine dose (EFNS 200 mg TID vs UK/other protocols up to 500 mg TID)"
       ],
       "verify": [],
-      "relatedIds": [
-        "acute-neuro:delirium-vs-encephalopathy"
-      ],
+      "relatedIds": [],
       "sources": [
         "Galvin R, et al. EFNS guidelines for diagnosis, therapy and prevention of Wernicke encephalopathy. Eur J Neurol 2010;17(12):1408-1418. doi:10.1111/j.1468-1331.2010.03153.x"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "hyponatremia-ods",
@@ -5431,225 +5423,6 @@
         "Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170(3):G1-G47. doi:10.1530/EJE-13-1020",
         "Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519",
         "Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7"
-      ],
-      "lastReviewed": "2026-11-05"
-    },
-    {
-      "id": "delirium-vs-encephalopathy",
-      "title": "Delirium vs acute encephalopathy",
-      "category": "ENCEPHALOPATHY",
-      "searchTerms": [
-        "delirium",
-        "encephalopathy",
-        "altered mental status",
-        "AMS",
-        "confusion",
-        "ICU delirium"
-      ],
-      "presentation": [
-        "Acute, fluctuating disturbance of attention and awareness with cognitive change",
-        "Hypoactive delirium is common and easily missed"
-      ],
-      "definitions": [
-        "Acute encephalopathy: rapidly developing (<4 weeks) pathobiological brain process, expressed clinically as subsyndromal delirium, delirium, or coma (Slooter 2020)",
-        "Delirium: clinical state meeting DSM-5 criteria; subsyndromal delirium: compatible changes not meeting all criteria",
-        "'Altered mental status' is not synonymous with delirium and should not be used (Slooter 2020)"
-      ],
-      "immediateActions": [
-        {
-          "order": 1,
-          "window": "First",
-          "action": "Exclude emergencies: glucose, hypoxia/hypercarbia, hypotension, NCSE, stroke, meningitis/encephalitis, Wernicke"
-        },
-        {
-          "order": 2,
-          "window": "Within hours",
-          "action": "Medication review: anticholinergics, benzodiazepines, opioids, sedatives, cefepime/renally cleared drugs, steroids"
-        },
-        {
-          "order": 3,
-          "window": "Workup",
-          "action": "Infection, metabolic, toxic screen; neuroimaging and EEG only if focal signs, seizures, or unexplained course"
-        },
-        {
-          "order": 4,
-          "window": "Management",
-          "action": "Treat cause; non-pharmacologic measures (sleep, mobility, glasses/hearing aids, reorientation)"
-        }
-      ],
-      "workup": [
-        {
-          "test": "Glucose, BMP, Ca, Mg, phos, LFTs, ammonia, TSH, B12, CBC",
-          "priority": "URGENT",
-          "indication": [],
-          "notes": []
-        },
-        {
-          "test": "UA, chest X-ray, blood cultures as indicated",
-          "priority": "URGENT",
-          "indication": [],
-          "notes": []
-        },
-        {
-          "test": "ABG/VBG",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Somnolence",
-            "Lung disease",
-            "Opioids"
-          ],
-          "notes": []
-        },
-        {
-          "test": "CT/MRI brain",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Focal deficit",
-            "Head trauma",
-            "Anticoagulation",
-            "No explanation after initial workup"
-          ],
-          "notes": []
-        },
-        {
-          "test": "EEG",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Fluctuating consciousness",
-            "Subtle twitching",
-            "Unexplained persistent encephalopathy"
-          ],
-          "notes": []
-        },
-        {
-          "test": "LP",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Fever",
-            "Meningism",
-            "Immunocompromise",
-            "Unexplained"
-          ],
-          "notes": []
-        }
-      ],
-      "treatment": [
-        {
-          "role": "SUPPORTIVE",
-          "agent": "Non-pharmacologic bundle",
-          "routes": [
-            "NON_PHARM"
-          ],
-          "doseText": "Sleep hygiene, early mobilization, sensory aids, family presence, avoid restraints",
-          "dose": [],
-          "notes": [],
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [],
-          "formularyStatus": "AVAILABLE",
-          "calculatorIds": []
-        },
-        {
-          "role": "ALTERNATIVE",
-          "agent": "Antipsychotic (haloperidol or atypical) — short-term for distress or danger only",
-          "routes": [
-            "PO",
-            "IV",
-            "IM"
-          ],
-          "doseText": "Not for routine treatment; short-term use for significant distress (anxiety, hallucinations, delusions) or agitation risking harm, until symptoms resolve",
-          "dose": [],
-          "notes": [
-            "Stop at discharge if started in the ICU and no longer needed (PADIS 2025)",
-            "Parkinson disease/DLB: avoid haloperidol",
-            "QTc monitoring"
-          ],
-          "evidenceLevel": "NOT_GRADED",
-          "evidenceNote": [
-            "PADIS 2025: no recommendation for or against antipsychotics vs usual care for ICU delirium (low certainty); may slightly increase delirium-free days (MD 1.25 d)",
-            "Replaces PADIS 2018 conditional recommendation against routine use",
-            "Short-term use for distress: panel clinical experience (PADIS 2018)"
-          ],
-          "formularyStatus": "AVAILABLE",
-          "calculatorIds": []
-        },
-        {
-          "role": "ADJUNCT",
-          "agent": "Dexmedetomidine",
-          "routes": [
-            "IV"
-          ],
-          "doseText": "Per ICU sedation protocol",
-          "dose": [],
-          "notes": [
-            "Ventilated ICU adults: suggested over propofol when light sedation and/or less delirium is the priority (PADIS 2025)",
-            "Agitation precluding weaning/extubation (PADIS 2018)",
-            "Watch bradycardia and hypotension"
-          ],
-          "evidenceLevel": "WEAK",
-          "evidenceNote": [
-            "PADIS 2025: conditional, moderate certainty (dexmedetomidine over propofol)",
-            "PADIS 2018: conditional, low quality (agitation precluding weaning)"
-          ],
-          "formularyStatus": "AVAILABLE",
-          "calculatorIds": []
-        },
-        {
-          "role": "ADJUNCT",
-          "agent": "Melatonin (ICU adults)",
-          "routes": [
-            "PO"
-          ],
-          "doseText": "No dose specified — trial doses, durations and frequencies varied (PADIS 2025)",
-          "dose": [],
-          "notes": [
-            "Not FDA-regulated — product quality varies",
-            "Ramelteon (FDA-approved melatonin agonist) is an alternative (PADIS 2025)",
-            "May reduce delirium prevalence; little to no effect on delirium duration"
-          ],
-          "evidenceLevel": "WEAK",
-          "evidenceNote": [
-            "PADIS 2025: conditional, low certainty — melatonin over no melatonin in ICU adults"
-          ],
-          "formularyStatus": "INSTITUTION_VARIES",
-          "calculatorIds": []
-        },
-        {
-          "role": "NOT_RECOMMENDED",
-          "agent": "Benzodiazepines for delirium (outside alcohol/benzodiazepine withdrawal or seizures)",
-          "routes": [
-            "IV",
-            "PO"
-          ],
-          "doseText": "Avoid — can worsen delirium",
-          "dose": [],
-          "notes": [],
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [],
-          "formularyStatus": "AVAILABLE",
-          "calculatorIds": []
-        }
-      ],
-      "pitfalls": [
-        "Hypoactive delirium is missed without a screening tool (e.g., CAM-ICU)",
-        "Cefepime neurotoxicity and NCSE in renal failure",
-        "Anchoring on 'sundowning' or dementia without workup"
-      ],
-      "escalateWhen": [
-        "Depressed consciousness, airway risk, or suspected NCSE/CNS infection"
-      ],
-      "institutionVaries": [
-        "Delirium screening tool and order set"
-      ],
-      "verify": [],
-      "relatedIds": [
-        "acute-neuro:nonconvulsive-status-epilepticus",
-        "acute-neuro:wernicke-encephalopathy",
-        "acute-neuro:serotonin-syndrome"
-      ],
-      "sources": [
-        "Slooter AJC, et al. Updated nomenclature of delirium and acute encephalopathy: statement of ten Societies. Intensive Care Med 2020;46(5):1020-1022. doi:10.1007/s00134-019-05907-4",
-        "Devlin JW, et al. Clinical practice guidelines for the prevention and management of pain, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU (PADIS). Crit Care Med 2018;46(9):e825-e873",
-        "Lewis K, et al. A focused update to the clinical practice guidelines for the prevention and management of pain, anxiety, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU (PADIS). Crit Care Med 2025;53(3):e711-e727. doi:10.1097/CCM.0000000000006574"
       ],
       "lastReviewed": "2026-11-05"
     },

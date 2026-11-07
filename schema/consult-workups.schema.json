@@ -208,13 +208,6 @@
               "minLength": 1
             }
           },
-          "recsTemplate": {
-            "type": "array",
-            "items": {
-              "type": "string",
-              "minLength": 1
-            }
-          },
           "disposition": {
             "type": "array",
             "items": {
@@ -291,7 +284,6 @@
           "workup",
           "decisionRules",
           "initialSteps",
-          "recsTemplate",
           "disposition",
           "calculatorIds",
           "institutionVaries",

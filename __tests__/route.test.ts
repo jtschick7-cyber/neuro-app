@@ -37,7 +37,7 @@ describe('toHash', () => {
   const routes: Route[] = [
     { kind: 'home' },
     { kind: 'calc' },
-    { kind: 'calc', calcId: 'cha2ds2-vasc' },
+    { kind: 'calc', calcId: 'abcd2' },
     ...REGISTRIES.flatMap<Route>((r) => [
       { kind: 'registry', registry: r.id },
       { kind: 'registry', registry: r.id, entryId: 'some-entry' },

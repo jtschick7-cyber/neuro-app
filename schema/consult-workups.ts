@@ -3,7 +3,7 @@ import { KebabId, RelatedId, ReviewDate, Source, Text, registryEnvelope } from "
 import { WorkupItem } from "./acute-neuro";
 import { DecisionRule } from "./vascular-antithrombotics";
 
-export const CONSULT_WORKUPS_SCHEMA_VERSION = "1.0.0";
+export const CONSULT_WORKUPS_SCHEMA_VERSION = "2.0.0";
 
 export const ConsultCategory = z.enum([
   "VASCULAR",
@@ -41,7 +41,6 @@ export const ConsultWorkupEntry = z
     workup: z.array(WorkupItem).min(1),
     decisionRules: z.array(DecisionRule),
     initialSteps: z.array(Text),
-    recsTemplate: z.array(Text),
     disposition: z.array(Text),
     calculatorIds: z.array(KebabId),
     institutionVaries: z.array(Text),

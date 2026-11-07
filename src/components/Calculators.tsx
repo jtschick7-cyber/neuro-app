@@ -4,7 +4,7 @@ import { NeedWeight, NumberField } from './CalculatorCard';
 import { Card, FocusContext, Result, loadBadge, parseNonNegative, safe } from './calcShared';
 import { IvigCard, SodiumCard } from './ImmunoSodiumCalculators';
 import { PhenytoinCard } from './PhenytoinCard';
-import { Abcd2Card, Cha2ds2VascCard, HasBledCard, IchScoreCard, ThrombolyticsCard } from './StrokeCalculators';
+import { Abcd2Card, IchScoreCard, ThrombolyticsCard } from './StrokeCalculators';
 import {
   COMT_FACTORS,
   LEVODOPA_FACTORS,
@@ -12,7 +12,6 @@ import {
   cockcroftGault,
   fosphenytoinLoad,
   hypertonicSalineIcp,
-  lacosamideLoad,
   ledd,
   levetiracetamLoad,
   mannitolDose,
@@ -32,7 +31,7 @@ function Anticonvulsants({ weightKg }: { weightKg: number | null }) {
       title="Antiseizure medication loading"
       subtitle="Status epilepticus second-line loads"
       icon={<Zap size={18} />}
-      metaIds={['levetiracetam-load', 'valproate-load', 'fosphenytoin-load', 'lacosamide-load']}
+      metaIds={['levetiracetam-load', 'valproate-load', 'fosphenytoin-load']}
     >
       {weightKg === null ? (
         <NeedWeight />
@@ -41,7 +40,6 @@ function Anticonvulsants({ weightKg }: { weightKg: number | null }) {
           <Load label="Levetiracetam" metaId="levetiracetam-load" r={safe(() => levetiracetamLoad(weightKg))} />
           <Load label="Valproate" metaId="valproate-load" r={safe(() => valproateLoad(weightKg))} />
           <Load label="Fosphenytoin" metaId="fosphenytoin-load" r={safe(() => fosphenytoinLoad(weightKg))} />
-          <Result label="Lacosamide" r={safe(() => lacosamideLoad(weightKg))} />
         </div>
       )}
     </Card>
@@ -201,8 +199,6 @@ export default function Calculators({
       <IcpCard weightKg={weightKg} />
       <IchScoreCard age={age} />
       <Abcd2Card age={age} />
-      <Cha2ds2VascCard age={age} sex={sex} />
-      <HasBledCard age={age} />
       <CrClCard weightKg={weightKg} age={age} sex={sex} creatinine={creatinine} />
       <LeddCard />
       <IvigCard weightKg={weightKg} sex={sex} />

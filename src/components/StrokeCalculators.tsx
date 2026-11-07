@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Brain, Clock, Droplet, HeartPulse, Syringe } from 'lucide-react';
+import { Brain, Clock, Syringe } from 'lucide-react';
 import { CheckField, NeedWeight, NumberField, SelectField } from './CalculatorCard';
 import { AlteplaseResult, Card, DoseResult, Result, parseNonNegative, safe } from './calcShared';
-import { abcd2, alteplaseDose, cha2ds2Vasc, hasBled, ichScore, tnkDose } from '../lib/calculators';
+import { abcd2, alteplaseDose, ichScore, tnkDose } from '../lib/calculators';
 import { parsePositive, type Sex } from '../lib/patientContext';
 
 interface Inputs {
@@ -95,51 +95,6 @@ export function Abcd2Card({ age }: Pick<Inputs, 'age'>) {
           r={safe(() => abcd2({ ageY: a, bpHigh: bp, weakness: clinical === 'weakness', speechOnly: clinical === 'speech', durationMin: d, diabetes: dm }))}
         />
       )}
-    </Card>
-  );
-}
-
-export function Cha2ds2VascCard({ age, sex }: Pick<Inputs, 'age' | 'sex'>) {
-  const [chf, setChf] = useState(false);
-  const [htn, setHtn] = useState(false);
-  const [dm, setDm] = useState(false);
-  const [stroke, setStroke] = useState(false);
-  const [vasc, setVasc] = useState(false);
-  const a = parsePositive(age);
-  return (
-    <Card noteId="calc-cha2ds2-vasc" title="CHA₂DS₂-VASc" subtitle="Atrial fibrillation stroke risk" icon={<HeartPulse size={18} />} metaIds={['cha2ds2-vasc']}>
-      <CheckField label="Heart failure / LV dysfunction" checked={chf} onChange={setChf} />
-      <CheckField label="Hypertension" checked={htn} onChange={setHtn} />
-      <CheckField label="Diabetes" checked={dm} onChange={setDm} />
-      <CheckField label="Prior stroke / TIA / thromboembolism" checked={stroke} onChange={setStroke} />
-      <CheckField label="Vascular disease (MI, PAD, aortic plaque)" checked={vasc} onChange={setVasc} />
-      {(a === null || sex === '') && <p className="text-sm text-amber-300">Enter age and sex in the top bar.</p>}
-      {a !== null && sex !== '' && (
-        <Result
-          label="CHA₂DS₂-VASc"
-          r={safe(() => cha2ds2Vasc({ chf, htn, ageY: a, diabetes: dm, strokeTiaTe: stroke, vascular: vasc, female: sex === 'F' }))}
-        />
-      )}
-    </Card>
-  );
-}
-
-export function HasBledCard({ age }: Pick<Inputs, 'age'>) {
-  const [f, setF] = useState({ htn: false, renal: false, liver: false, stroke: false, bleeding: false, labileInr: false, drugs: false, alcohol: false });
-  const set = (k: keyof typeof f) => (v: boolean) => setF((p) => ({ ...p, [k]: v }));
-  const a = parsePositive(age);
-  return (
-    <Card noteId="calc-has-bled" title="HAS-BLED" subtitle="Major bleeding risk on anticoagulation, atrial fibrillation" icon={<Droplet size={18} />} metaIds={['has-bled']}>
-      <CheckField label="Uncontrolled hypertension (SBP >160)" checked={f.htn} onChange={set('htn')} />
-      <CheckField label="Renal disease (dialysis, transplant, Cr >2.26 mg/dL)" checked={f.renal} onChange={set('renal')} />
-      <CheckField label="Liver disease (cirrhosis or marked LFT/bilirubin elevation)" checked={f.liver} onChange={set('liver')} />
-      <CheckField label="Prior stroke" checked={f.stroke} onChange={set('stroke')} />
-      <CheckField label="Prior major bleeding or predisposition" checked={f.bleeding} onChange={set('bleeding')} />
-      <CheckField label="Labile INR (TTR <60%)" checked={f.labileInr} onChange={set('labileInr')} />
-      <CheckField label="Antiplatelet or NSAID use" checked={f.drugs} onChange={set('drugs')} />
-      <CheckField label="Alcohol ≥8 drinks/week" checked={f.alcohol} onChange={set('alcohol')} />
-      {a === null && NEED_AGE}
-      {a !== null && <Result label="HAS-BLED" r={safe(() => hasBled({ ...f, ageY: a }))} />}
     </Card>
   );
 }
