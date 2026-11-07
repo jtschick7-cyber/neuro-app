@@ -155,3 +155,141 @@ describe("metadata", () => {
     for (const id of manifest as string[]) expect(C.CALCULATOR_META[id], id).toBeDefined();
   });
 });
+
+describe("phenytoin-correction (worked cases, planning/drafts/calc-phenytoin-correction.md)", () => {
+  const W = C.PHENYTOIN_WARNINGS;
+  type Case = [number, C.PhenytoinCorrectionInput, number, number, number, number | undefined, boolean];
+  // #, inputs, corrected total, est. free, reload mg PE, min infusion minutes, capped
+  it.each<Case>([
+    [1, { measuredTotal: 8, albuminGdl: 2.0, weightKg: 70 }, 16.0, 1.6, 0, undefined, false],
+    [2, { measuredTotal: 5, albuminGdl: 2.5, weightKg: 80 }, 8.3, 0.8, 350, 2.3, false],
+    [3, { measuredTotal: 6, albuminGdl: 3.0, onDialysis: true, weightKg: 70 }, 15.0, 1.5, 0, undefined, false],
+    [4, { measuredTotal: 12, albuminGdl: 4.6, weightKg: 70 }, 12.0, 1.2, 150, 1, false],
+    [5, { measuredTotal: 4, weightKg: 60 }, 4.0, 0.4, 450, 3, false],
+    [6, { measuredTotal: 2, albuminGdl: 4.0, weightKg: 70, targetTotal: 20 }, 2.2, 0.2, 700, 4.7, true],
+    [7, { measuredTotal: 0, weightKg: 200, targetTotal: 20 }, 0, 0, 1500, 10, true],
+    [8, { measuredTotal: 3, weightKg: 63, targetTotal: 20 }, 3.0, 0.3, 600, 4, true],
+    [9, { measuredTotal: 9, albuminGdl: 3.5, measuredFree: 2.4, weightKg: 70 }, 11.3, 1.1, 0, undefined, false],
+    [10, { measuredTotal: 6, albuminGdl: 3.0, measuredFree: 0.6, weightKg: 70 }, 8.6, 0.9, 300, 2, false],
+    [11, { measuredTotal: 14.7, weightKg: 70 }, 14.7, 1.5, 0, undefined, false],
+    [12, { measuredTotal: 10, albuminGdl: 3.0, onValproate: true, hoursSinceFosphenytoin: 1, fosphenytoinRoute: "IV", weightKg: 70 }, 14.3, 1.4, 50, 0.3, false],
+    [13, { measuredTotal: 10, albuminGdl: 4.4, onDialysis: true, weightKg: 70 }, 18.5, 1.9, 0, undefined, false],
+  ])("case %d", (_n, input, corr, free, reload, minutes, cap) => {
+    const r = C.phenytoinCorrection(input);
+    expect(r.parts?.correctedTotal).toBe(corr);
+    expect(r.parts?.estimatedFree).toBe(free);
+    expect(r.parts?.reloadMgPe).toBe(reload);
+    expect(r.parts?.minInfusionMinutes).toBe(minutes);
+    expect(r.capped).toBe(cap);
+    expect(r.warnings[0]).toBe(W.estimateOnly);
+  });
+
+  it("case 1: no warnings beyond the standard one; at/above target → no reload", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 8, albuminGdl: 2.0, weightKg: 70 });
+    expect(r.warnings).toEqual([W.estimateOnly]);
+    expect(r.display).toContain("no reload — at or above target 15");
+  });
+  it("case 2: 10 mg/kg cap (800) not hit", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 5, albuminGdl: 2.5, weightKg: 80 });
+    expect(r.parts?.reloadUncapped).toBe(350);
+    expect(r.warnings).toEqual([W.estimateOnly]);
+  });
+  it("case 3: dialysis coefficient 0.1 and its warning; exactly at target → no reload", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 6, albuminGdl: 3.0, onDialysis: true, weightKg: 70 });
+    expect(r.parts?.coefficient).toBe(0.1);
+    expect(r.warnings).toContain(W.dialysis);
+    expect(r.display).toContain("no reload — at or above target");
+  });
+  it("case 4: albumin ≥4.4 on the standard equation → not corrected", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 12, albuminGdl: 4.6, weightKg: 70 });
+    expect(r.parts?.corrected).toBe("no");
+    expect(r.parts?.coefficient).toBe(0.2);
+    expect(C.phenytoinCorrection({ measuredTotal: 12, albuminGdl: 4.4 }).parts?.correctedTotal).toBe(12);
+    expect(C.phenytoinCorrection({ measuredTotal: 12, albuminGdl: 4.3 }).parts?.corrected).toBe("yes");
+  });
+  it("case 5: no albumin → uncorrected, with warning", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 4, weightKg: 60 });
+    expect(r.parts?.corrected).toBe("no");
+    expect(r.warnings).toContain(W.noAlbumin);
+    expect(r.value).toBe(4);
+    expect(r.parts?.primary).toBe("CORRECTED_TOTAL");
+  });
+  it("case 6: 10 mg/kg cap (700 mg PE) after rounding 871.1 → 850", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 2, albuminGdl: 4.0, weightKg: 70, targetTotal: 20 });
+    expect(r.parts?.reloadUncapped).toBe(850);
+    expect(r.warnings).toContain(W.capped(700, true));
+  });
+  it("case 7: absolute 1500 mg PE cap (10 mg/kg would be 2000)", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 0, weightKg: 200, targetTotal: 20 });
+    expect(r.parts?.reloadUncapped).toBe(2800);
+    expect(r.warnings).toContain(W.capped(1500, false));
+  });
+  it("case 8: 10 mg/kg cap rounded down to a 50 mg PE multiple (630 → 600)", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 3, weightKg: 63, targetTotal: 20 });
+    expect(r.parts?.reloadUncapped).toBe(750);
+    expect(r.warnings).toContain(W.capped(600, true));
+  });
+  it("case 9: measured free above range → no reload, primary result, discordance warning", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 9, albuminGdl: 3.5, measuredFree: 2.4, weightKg: 70 });
+    expect(r.value).toBe(2.4);
+    expect(r.parts?.primary).toBe("MEASURED_FREE");
+    expect(r.parts?.measuredFreeBand).toBe("ABOVE");
+    expect(r.warnings).toContain(W.discordant("ABOVE", "WITHIN"));
+    expect(r.display).toContain("no reload — measured free level within or above");
+  });
+  it("measured free within range → no reload even when the corrected total is low", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 5, albuminGdl: 2.5, measuredFree: 1.5, weightKg: 80 });
+    expect(r.parts?.reloadMgPe).toBe(0);
+    expect(r.warnings).toContain(W.discordant("WITHIN", "BELOW"));
+  });
+  it("case 10: measured free low and concordant → reload allowed, no discordance warning", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 6, albuminGdl: 3.0, measuredFree: 0.6, weightKg: 70 });
+    expect(r.parts?.measuredFreeBand).toBe("BELOW");
+    expect(r.warnings).toEqual([W.estimateOnly]);
+  });
+  it("case 11: rounded reload 0 → '<25 mg PE — not meaningful'", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 14.7, weightKg: 70 });
+    expect(r.display).toContain("<25 mg PE — not meaningful");
+    expect(r.parts?.reloadUncapped).toBe(0);
+  });
+  it("case 12: valproate and early-draw (IV <2 h) warnings", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 10, albuminGdl: 3.0, onValproate: true, hoursSinceFosphenytoin: 1, fosphenytoinRoute: "IV", weightKg: 70 });
+    expect(r.warnings).toContain(W.valproate);
+    expect(r.warnings).toContain(W.earlyDraw("IV"));
+  });
+  it("case 13: dialysis variant still applies at albumin ≥4.4", () => {
+    expect(C.phenytoinCorrection({ measuredTotal: 10, albuminGdl: 4.4, onDialysis: true, weightKg: 70 }).parts?.corrected).toBe("yes");
+  });
+  it.each([
+    ["IV", 1.9, true], ["IV", 2, false], ["IM", 3.9, true], ["IM", 4, false], [undefined, 1, true], [undefined, 3, false],
+  ] as const)("early draw: %s at %d h → warning %s", (route, h, warned) => {
+    const r = C.phenytoinCorrection({ measuredTotal: 10, hoursSinceFosphenytoin: h, fosphenytoinRoute: route });
+    expect(r.warnings.some((w) => w.startsWith("Drawn <"))).toBe(warned);
+  });
+  it("corrected total >20 → above-range warning", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 15, albuminGdl: 3.0 });
+    expect(r.parts?.correctedTotal).toBe(21.4);
+    expect(r.parts?.totalBand).toBe("ABOVE");
+    expect(r.warnings).toContain(W.aboveRange);
+    expect(C.phenytoinCorrection({ measuredTotal: 20 }).warnings).not.toContain(W.aboveRange);
+  });
+  it("no weight → no reload estimate", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 5, albuminGdl: 2.5 });
+    expect(r.parts?.reloadMgPe).toBeUndefined();
+    expect(r.capped).toBe(false);
+    expect(r.display).toContain("enter weight for a reload estimate");
+  });
+  it("target defaults to 15", () => expect(C.phenytoinCorrection({ measuredTotal: 5 }).parts?.targetTotal).toBe(15));
+  it.each<[string, C.PhenytoinCorrectionInput]>([
+    ["albumin 0.5", { measuredTotal: 10, albuminGdl: 0.5 }],
+    ["target 25", { measuredTotal: 10, targetTotal: 25 }],
+    ["total −1", { measuredTotal: -1 }],
+    ["total 61", { measuredTotal: 61 }],
+    ["albumin 6.1", { measuredTotal: 10, albuminGdl: 6.1 }],
+    ["free 10.1", { measuredTotal: 10, measuredFree: 10.1 }],
+    ["target 9", { measuredTotal: 10, targetTotal: 9 }],
+    ["weight 0", { measuredTotal: 10, weightKg: 0 }],
+    ["hours 241", { measuredTotal: 10, hoursSinceFosphenytoin: 241 }],
+    ["total NaN", { measuredTotal: Number.NaN }],
+  ])("case 14: %s throws RangeError", (_l, input) => expect(() => C.phenytoinCorrection(input)).toThrow(RangeError));
+});

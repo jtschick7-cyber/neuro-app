@@ -1,20 +1,33 @@
 {
-  "appVersion": "1.1.0",
-  "contentVersion": "1.1.0+9604a59e",
+  "appVersion": "1.2.0",
+  "contentVersion": "1.2.0+be23cb7f",
   "builtAt": "2026-11-07",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "0.7.1",
-      "schemaVersion": "1.0.0",
-      "lastUpdated": "2026-11-05",
-      "entries": 21,
-      "reviewed": 21,
+      "version": "0.8.1",
+      "schemaVersion": "1.1.0",
+      "lastUpdated": "2026-11-07",
+      "entries": 23,
+      "reviewed": 23,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
-      "newestReview": "2026-11-05"
+      "newestReview": "2026-11-07"
+    },
+    {
+      "id": "antiseizure-medications",
+      "title": "Antiseizure medication dosing",
+      "version": "1.0.1",
+      "schemaVersion": "1.0.0",
+      "lastUpdated": "2026-11-07",
+      "entries": 6,
+      "reviewed": 6,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-07",
+      "newestReview": "2026-11-07"
     },
     {
       "id": "asm-interactions",
@@ -32,15 +45,15 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "0.7.2",
+      "version": "0.8.1",
       "schemaVersion": "1.0.0",
       "lastUpdated": "2026-11-07",
-      "entries": 26,
-      "reviewed": 26,
+      "entries": 31,
+      "reviewed": 31,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
-      "newestReview": "2026-11-05"
+      "newestReview": "2026-11-07"
     },
     {
       "id": "mg-contraindications",
@@ -80,6 +93,19 @@
       "openVerify": 0,
       "oldestReview": "2026-11-05",
       "newestReview": "2026-11-05"
+    },
+    {
+      "id": "reference-cards",
+      "title": "Reference Cards",
+      "version": "1.2.1",
+      "schemaVersion": "1.1.0",
+      "lastUpdated": "2026-11-07",
+      "entries": 4,
+      "reviewed": 4,
+      "unreviewedIds": [],
+      "openVerify": 0,
+      "oldestReview": "2026-11-07",
+      "newestReview": "2026-11-07"
     },
     {
       "id": "seizure-threshold",
@@ -127,6 +153,11 @@
     {
       "id": "lacosamide-load",
       "title": "Lacosamide load",
+      "openVerify": 0
+    },
+    {
+      "id": "phenytoin-correction",
+      "title": "Phenytoin level: albumin correction and reload estimate",
       "openVerify": 0
     },
     {
@@ -270,12 +301,26 @@
       ]
     },
     {
+      "citation": "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+      "year": 2014,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Amin HP, et al. Diagnosis, Workup, Risk Reduction of Transient Ischemic Attack in the Emergency Department Setting: A Scientific Statement From the AHA. Stroke 2023;54:e109-e121. doi:10.1161/STR.0000000000000418",
       "year": 2023,
       "citedBy": [
         "calc:abcd2",
         "consult-workups:tga-vs-tia",
         "consult-workups:tia-workup"
+      ]
+    },
+    {
+      "citation": "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
+      "year": 2022,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
       ]
     },
     {
@@ -298,6 +343,13 @@
       "citedBy": [
         "vascular-antithrombotics:aspirin",
         "vascular-antithrombotics:aspirin-dipyridamole"
+      ]
+    },
+    {
+      "citation": "Auriel E, et al. Validation of Clinicoradiological Criteria for the Diagnosis of Cerebral Amyloid Angiopathy-Related Inflammation. JAMA Neurol 2016;73:197-202. doi:10.1001/jamaneurol.2015.4078",
+      "year": 2016,
+      "citedBy": [
+        "consult-workups:caa-related-inflammation"
       ]
     },
     {
@@ -362,6 +414,29 @@
       ]
     },
     {
+      "citation": "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 17 Cerebral Perfusion Pressure Thresholds",
+      "year": 2016,
+      "citedBy": [
+        "reference-cards:neuro-icu-targets"
+      ]
+    },
+    {
+      "citation": "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+      "year": 2010,
+      "citedBy": [
+        "acute-neuro:nms-parkinsonism-hyperpyrexia",
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
+      "citation": "Briviact (brivaracetam) tablets, oral solution, injection US prescribing information. UCB; revised 4/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:brivaracetam",
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ]
+    },
+    {
       "citation": "Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z",
       "year": 2012,
       "citedBy": [
@@ -384,6 +459,16 @@
       "year": 2014,
       "citedBy": [
         "neural-antibodies:glyr"
+      ]
+    },
+    {
+      "citation": "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "antiseizure-medications:lacosamide",
+        "antiseizure-medications:phenytoin-fosphenytoin",
+        "antiseizure-medications:valproate",
+        "calc:phenytoin-correction"
       ]
     },
     {
@@ -422,6 +507,13 @@
       ]
     },
     {
+      "citation": "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025",
+      "year": 2025,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
       "citation": "Clozapine tablets US prescribing information. Accord; revised 10/2025 (user-supplied label)",
       "year": 2025,
       "citedBy": [
@@ -457,6 +549,13 @@
       ]
     },
     {
+      "citation": "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7",
+      "year": 2020,
+      "citedBy": [
+        "reference-cards:neuro-icu-targets"
+      ]
+    },
+    {
       "citation": "Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7",
       "year": 2020,
       "citedBy": [
@@ -479,6 +578,13 @@
       "year": 2017,
       "citedBy": [
         "acute-neuro:bacterial-meningitis"
+      ]
+    },
+    {
+      "citation": "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766",
+      "year": 2021,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
       ]
     },
     {
@@ -540,6 +646,20 @@
       ]
     },
     {
+      "citation": "Depakote (divalproex sodium) delayed-release tablets US prescribing information. AbbVie; revised 3/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:valproate"
+      ]
+    },
+    {
+      "citation": "Devalet B, et al. Pathophysiology, diagnosis, and treatment of paroxysmal nocturnal hemoglobinuria: a review. Eur J Haematol 2015;95:190-198. doi:10.1111/ejh.12543",
+      "year": 2015,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Devlin JW, et al. Clinical practice guidelines for the prevention and management of pain, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU (PADIS). Crit Care Med 2018;46(9):e825-e873",
       "year": 2018,
       "citedBy": [
@@ -551,6 +671,35 @@
       "year": 2024,
       "citedBy": [
         "consult-workups:young-stroke-workup"
+      ]
+    },
+    {
+      "citation": "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047",
+      "year": 2020,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Devreese KMJ, et al. Testing for antiphospholipid antibodies with solid phase assays: guidance from the SSC of the ISTH. J Thromb Haemost 2014;12:792-795. doi:10.1111/jth.12537",
+      "year": 2014,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Dihydroergotamine mesylate injection US prescribing information. Provepharm; revised 2/2025",
+      "year": 2025,
+      "citedBy": [
+        "acute-neuro:status-migrainosus"
+      ]
+    },
+    {
+      "citation": "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (DailyMed setid 86dd27d1-9cee-48ae-b55d-e2d2f7dbc593, accessed 2026-11-06)",
+      "year": 2023,
+      "citedBy": [
+        "antiseizure-medications:phenytoin-fosphenytoin",
+        "calc:phenytoin-correction"
       ]
     },
     {
@@ -621,6 +770,13 @@
       ]
     },
     {
+      "citation": "English SW, et al. Liberal or Restrictive Transfusion Strategy in Aneurysmal Subarachnoid Hemorrhage (SAHARA). N Engl J Med 2025;392:1079-1088. doi:10.1056/NEJMoa2410962",
+      "year": 2025,
+      "citedBy": [
+        "reference-cards:neuro-icu-targets"
+      ]
+    },
+    {
       "citation": "Eptifibatide injection US prescribing information. Baxter; revised 5/2024 (user-supplied label)",
       "year": 2024,
       "citedBy": [
@@ -632,6 +788,13 @@
       "year": 2014,
       "citedBy": [
         "consult-workups:icu-acquired-weakness"
+      ]
+    },
+    {
+      "citation": "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+      "year": 2019,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
       ]
     },
     {
@@ -758,6 +921,13 @@
       ]
     },
     {
+      "citation": "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480",
+      "year": 2018,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9",
       "year": 2016,
       "citedBy": [
@@ -869,10 +1039,31 @@
       ]
     },
     {
+      "citation": "Haapaniemi E, et al. Serial measurements of plasma homocysteine levels in early and late phases of ischemic stroke. Eur J Neurol 2007;14:12-17. doi:10.1111/j.1468-1331.2006.01518.x",
+      "year": 2007,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Hara M, et al. DPPX antibody-associated encephalitis: main syndrome and antibody effects. Neurology 2017;88(14):1340-1348. doi:10.1212/WNL.0000000000003796",
       "year": 2017,
       "citedBy": [
         "neural-antibodies:dppx"
+      ]
+    },
+    {
+      "citation": "Haviv Y, et al. Effect of enoxaparin on homocysteine concentration in warfarin-treated patients. Ann Pharmacother 2002;36:1355-1359",
+      "year": 2002,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Headache Classification Committee of the International Headache Society (IHS). The International Classification of Headache Disorders, 3rd edition: 1.4.1 Status migrainosus. Cephalalgia 2018;38(1):1-211 (ichd-3.org, accessed 2026-11-07)",
+      "year": 2018,
+      "citedBy": [
+        "acute-neuro:status-migrainosus"
       ]
     },
     {
@@ -953,7 +1144,8 @@
       "year": 2023,
       "citedBy": [
         "consult-workups:sah-workup",
-        "consult-workups:thunderclap-headache"
+        "consult-workups:thunderclap-headache",
+        "reference-cards:asah-numbers"
       ]
     },
     {
@@ -975,6 +1167,13 @@
       "year": 2018,
       "citedBy": [
         "acute-neuro:nonconvulsive-status-epilepticus"
+      ]
+    },
+    {
+      "citation": "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+      "year": 2021,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
       ]
     },
     {
@@ -1039,7 +1238,8 @@
       "citation": "Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252",
       "year": 2023,
       "citedBy": [
-        "calc:ledd"
+        "calc:ledd",
+        "reference-cards:inpatient-parkinson-disease"
       ]
     },
     {
@@ -1067,12 +1267,42 @@
       ]
     },
     {
+      "citation": "Keppra (levetiracetam) injection US prescribing information. UCB; revised 6/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "antiseizure-medications:levetiracetam"
+      ]
+    },
+    {
+      "citation": "Kiang TK, Ensom MH. A comprehensive review on the predictive performance of the Sheiner-Tozer and derivative equations for the correction of phenytoin concentrations. Ann Pharmacother 2016;50(4):311-325. doi:10.1177/1060028016628166",
+      "year": 2016,
+      "citedBy": [
+        "antiseizure-medications:phenytoin-fosphenytoin",
+        "calc:phenytoin-correction"
+      ]
+    },
+    {
+      "citation": "Kinnecom C, et al. Course of cerebral amyloid angiopathy-related inflammation. Neurology 2007;68:1411-1416",
+      "year": 2007,
+      "citedBy": [
+        "consult-workups:caa-related-inflammation"
+      ]
+    },
+    {
+      "citation": "Kleffner I, et al. Diagnostic criteria for Susac syndrome (European Susac Consortium). J Neurol Neurosurg Psychiatry 2016 (published online first Oct 25, 2016). doi:10.1136/jnnp-2016-314295",
+      "year": 2016,
+      "citedBy": [
+        "consult-workups:susac-syndrome"
+      ]
+    },
+    {
       "citation": "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
       "year": 2021,
       "citedBy": [
         "consult-workups:inpatient-stroke-etiology-workup",
         "consult-workups:tia-workup",
         "consult-workups:young-stroke-workup",
+        "reference-cards:thrombophilia-test-validity",
         "vascular-antithrombotics:af-stroke-anticoag-timing",
         "vascular-antithrombotics:apixaban",
         "vascular-antithrombotics:aspirin",
@@ -1107,10 +1337,41 @@
       ]
     },
     {
+      "citation": "Koutsogianni AD, et al. Effects of Lipid-Modifying and Other Drugs on Lipoprotein(a) Levels—Potent Clinical Implications. Pharmaceuticals 2023;16:750. doi:10.3390/ph16050750",
+      "year": 2023,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Krumholz A, et al. Evidence-based guideline: management of an unprovoked first seizure in adults (AAN/AES). Neurology 2015;84:1705-1713",
       "year": 2015,
       "citedBy": [
         "consult-workups:first-unprovoked-seizure"
+      ]
+    },
+    {
+      "citation": "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384",
+      "year": 2006,
+      "citedBy": [
+        "consult-workups:inpatient-neuropathy",
+        "consult-workups:myelopathy-workup"
+      ]
+    },
+    {
+      "citation": "Kwo PY, Cohen SM, Lim JK. ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries. Am J Gastroenterol 2017;112:18-35. doi:10.1038/ajg.2016.517",
+      "year": 2017,
+      "citedBy": [
+        "consult-workups:elevated-ck-myopathy"
+      ]
+    },
+    {
+      "citation": "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "antiseizure-medications:lamotrigine",
+        "antiseizure-medications:phenytoin-fosphenytoin",
+        "antiseizure-medications:valproate"
       ]
     },
     {
@@ -1132,6 +1393,14 @@
       "year": 2019,
       "citedBy": [
         "acute-neuro:icans-car-t-neurotoxicity"
+      ]
+    },
+    {
+      "citation": "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
+      "year": 2019,
+      "citedBy": [
+        "consult-workups:acute-hepatic-porphyria",
+        "consult-workups:inpatient-neuropathy"
       ]
     },
     {
@@ -1220,6 +1489,28 @@
       ]
     },
     {
+      "citation": "Meiklejohn DJ, et al. Plasma homocysteine concentrations in the acute and convalescent periods of atherothrombotic stroke. Stroke 2001;32:57-62",
+      "year": 2001,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:inpatient-neuropathy",
+        "consult-workups:myelopathy-workup"
+      ]
+    },
+    {
+      "citation": "Middeldorp S, et al. American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing. Blood Adv 2023;7:7101-7138. doi:10.1182/bloodadvances.2023010177",
+      "year": 2023,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
       "year": 2026,
       "citedBy": [
@@ -1274,6 +1565,13 @@
       ]
     },
     {
+      "citation": "Muruá A, et al. Unsuspected hyperhomocysteinemia in chronically anticoagulated patients. Blood Coagul Fibrinolysis 2001;12:79-80",
+      "year": 2001,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Myasthenia Gravis Foundation of America. Cautionary drug list (derived from the International Consensus Guidance for Management of MG, Neurology 2016;87:419-425). MGFA Medical/Scientific and Nurses Advisory Boards; 2023",
       "year": 2016,
       "citedBy": [
@@ -1295,11 +1593,25 @@
       ]
     },
     {
+      "citation": "Nagy AJ, et al. Intravenous dihydroergotamine for inpatient management of refractory primary headaches. Neurology 2011;77:1827-1832",
+      "year": 2011,
+      "citedBy": [
+        "acute-neuro:status-migrainosus"
+      ]
+    },
+    {
       "citation": "Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. Neurology 2021;96(3):114-122. doi:10.1212/WNL.0000000000011124",
       "year": 2021,
       "citedBy": [
         "acute-neuro:myasthenic-crisis",
         "consult-workups:acute-generalized-weakness"
+      ]
+    },
+    {
+      "citation": "Nathwani RA, et al. Serum Alanine Aminotransferase in Skeletal Muscle Diseases. Hepatology 2005;41:380-382. doi:10.1002/hep.20548",
+      "year": 2005,
+      "citedBy": [
+        "consult-workups:elevated-ck-myopathy"
       ]
     },
     {
@@ -1311,6 +1623,13 @@
       ]
     },
     {
+      "citation": "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
       "citation": "NICE. Spinal metastases and metastatic spinal cord compression (NG234). 2023",
       "year": 2023,
       "citedBy": [
@@ -1318,10 +1637,38 @@
       ]
     },
     {
+      "citation": "Nimodipine capsules US prescribing information. Bionpharma Inc.; revised 12/2025 (DailyMed label)",
+      "year": 2025,
+      "citedBy": [
+        "reference-cards:asah-numbers"
+      ]
+    },
+    {
       "citation": "Nolan JP, Sandroni C, et al. European Resuscitation Council and European Society of Intensive Care Medicine Guidelines 2025: Post-Resuscitation Care. Resuscitation 2025;215:110809",
       "year": 2025,
       "citedBy": [
         "consult-workups:post-cardiac-arrest-prognostication"
+      ]
+    },
+    {
+      "citation": "Nuplazid (pimavanserin) capsules and tablets US prescribing information. Acadia; revised 4/2026",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
+      "citation": "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454",
+      "year": 1999,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Orr SL, et al. Management of adults with acute migraine in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache 2016;56(6):911-940. doi:10.1111/head.12835",
+      "year": 2016,
+      "citedBy": [
+        "acute-neuro:status-migrainosus"
       ]
     },
     {
@@ -1358,6 +1705,20 @@
       "year": 2010,
       "citedBy": [
         "acute-neuro:cns-infection-immunocompromised"
+      ]
+    },
+    {
+      "citation": "Perrott J, Murphy NG, Zed PJ. L-Carnitine for Acute Valproic Acid Overdose: A Systematic Review of Published Cases. Ann Pharmacother 2010;44:1287-1293",
+      "year": 2010,
+      "citedBy": [
+        "consult-workups:valproate-hyperammonemic-encephalopathy"
+      ]
+    },
+    {
+      "citation": "Phenytoin oral suspension 125 mg/5 mL US prescribing information. Sun Pharmaceutical; revised 8/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "antiseizure-medications:phenytoin-fosphenytoin"
       ]
     },
     {
@@ -1447,6 +1808,13 @@
       ]
     },
     {
+      "citation": "Preis M, Lowrey CH. Laboratory tests for paroxysmal nocturnal hemoglobinuria. Am J Hematol 2014;89:339-341. doi:10.1002/ajh.23612",
+      "year": 2014,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483",
       "year": 2010,
       "citedBy": [
@@ -1474,10 +1842,24 @@
       ]
     },
     {
+      "citation": "Regenhardt RW, et al. Association Between Immunosuppressive Treatment and Outcomes of Cerebral Amyloid Angiopathy-Related Inflammation. JAMA Neurol 2020;77:1261-1269. doi:10.1001/jamaneurol.2020.1782",
+      "year": 2020,
+      "citedBy": [
+        "consult-workups:caa-related-inflammation"
+      ]
+    },
+    {
       "citation": "Reulbach U, et al. Managing an effective treatment for neuroleptic malignant syndrome. Crit Care 2007;11(1):R4. doi:10.1186/cc5148",
       "year": 2007,
       "citedBy": [
         "acute-neuro:nms-parkinsonism-hyperpyrexia"
+      ]
+    },
+    {
+      "citation": "Robblee J, et al. 2025 guideline update to acute treatment of migraine for adults in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache 2026;66(1):53-76. doi:10.1111/head.70016",
+      "year": 2026,
+      "citedBy": [
+        "acute-neuro:status-migrainosus"
       ]
     },
     {
@@ -1502,6 +1884,13 @@
       ]
     },
     {
+      "citation": "Rozenbaum D, et al. Skin biopsy in the diagnosis of intravascular lymphoma: A retrospective diagnostic accuracy study. J Am Acad Dermatol 2021;85:665-670. doi:10.1016/j.jaad.2019.09.015",
+      "year": 2021,
+      "citedBy": [
+        "consult-workups:intravascular-lymphoma"
+      ]
+    },
+    {
       "citation": "Sabater L, et al. SOX1 antibodies are markers of paraneoplastic Lambert-Eaton myasthenic syndrome. Neurology 2008;70(12):924-928",
       "year": 2008,
       "citedBy": [
@@ -1516,7 +1905,7 @@
       ]
     },
     {
-      "citation": "Salvarani C, Brown RD Jr, Hunder GG. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1056/NEJMra2314942",
+      "citation": "Salvarani C, Brown RD Jr, Hunder GG. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1161/STR.0000000000000422",
       "year": 2024,
       "citedBy": [
         "consult-workups:cns-vasculitis-workup"
@@ -1624,6 +2013,13 @@
       ]
     },
     {
+      "citation": "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
+      "year": 2019,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
       "citation": "Shams'ili S, et al. Paraneoplastic cerebellar degeneration associated with antineuronal antibodies: analysis of 50 patients. Brain 2003;126:1409-1418. doi:10.1093/brain/awg133",
       "year": 2003,
       "citedBy": [
@@ -1665,10 +2061,38 @@
       ]
     },
     {
+      "citation": "Shi Z, et al. Changes in total homocysteine levels after acute stroke and recurrence of stroke. Sci Rep 2018;8:6993. doi:10.1038/s41598-018-25398-5",
+      "year": 2018,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Shimada K, Kinoshita T, Naoe T, Nakamura S. Presentation and management of intravascular large B-cell lymphoma. Lancet Oncol 2009;10:895-902",
+      "year": 2009,
+      "citedBy": [
+        "consult-workups:intravascular-lymphoma"
+      ]
+    },
+    {
       "citation": "Shorvon S, Ferlisi M. The treatment of super-refractory status epilepticus: a critical review of available therapies and a clinical treatment protocol. Brain 2011;134(10):2802-2818. doi:10.1093/brain/awr215",
       "year": 2011,
       "citedBy": [
         "acute-neuro:refractory-super-refractory-se"
+      ]
+    },
+    {
+      "citation": "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
+      "citation": "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018",
+      "year": 2018,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
       ]
     },
     {
@@ -1706,6 +2130,27 @@
       "year": 2017,
       "citedBy": [
         "neural-antibodies:gabaa-r"
+      ]
+    },
+    {
+      "citation": "Stern BJ, et al. Definition and Consensus Diagnostic Criteria for Neurosarcoidosis. JAMA Neurol 2018;75:1546-1553. doi:10.1001/jamaneurol.2018.2295",
+      "year": 2018,
+      "citedBy": [
+        "consult-workups:myelopathy-workup"
+      ]
+    },
+    {
+      "citation": "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+      "year": 2016,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Taccone FS, et al. Restrictive vs Liberal Transfusion Strategy in Patients With Acute Brain Injury: The TRAIN Randomized Clinical Trial. JAMA 2024;332:1623-1633. doi:10.1001/jama.2024.20424",
+      "year": 2024,
+      "citedBy": [
+        "reference-cards:neuro-icu-targets"
       ]
     },
     {
@@ -1783,6 +2228,20 @@
       ]
     },
     {
+      "citation": "Tsimikas S, et al. Unmet Needs in Understanding Lipoprotein(a) Pathophysiology: NHLBI Working Group Recommendations to Reduce Risk of Cardiovascular Disease and Aortic Stenosis. J Am Coll Cardiol 2018;71:177-192. doi:10.1016/j.jacc.2017.11.014",
+      "year": 2018,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Tsimikas S. A Test in Context: Lipoprotein(a): Diagnosis, Prognosis, Controversies, and Emerging Therapies. J Am Coll Cardiol 2017;69:692-711. doi:10.1016/j.jacc.2016.11.042",
+      "year": 2017,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
       "citation": "Tunkel AR, et al. Practice guidelines for the management of bacterial meningitis (IDSA). Clin Infect Dis 2004;39(9):1267-1284. doi:10.1086/425368",
       "year": 2004,
       "citedBy": [
@@ -1803,6 +2262,13 @@
       "year": 2010,
       "citedBy": [
         "seizure-threshold:tramadol"
+      ]
+    },
+    {
+      "citation": "Uppal V, et al. Consensus practice guidelines on postdural puncture headache from a multisociety, international working group: a summary report. JAMA Netw Open 2023;6(8):e2325387. doi:10.1001/jamanetworkopen.2023.25387",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:post-dural-puncture-headache"
       ]
     },
     {
@@ -1827,6 +2293,15 @@
       ]
     },
     {
+      "citation": "Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)",
+      "year": 2023,
+      "citedBy": [
+        "antiseizure-medications:valproate",
+        "calc:phenytoin-correction",
+        "consult-workups:valproate-hyperammonemic-encephalopathy"
+      ]
+    },
+    {
       "citation": "Valproic acid oral solution US prescribing information. Atlantic Biologicals; revised 5/2024 (user-supplied label)",
       "year": 2024,
       "citedBy": [
@@ -1838,6 +2313,14 @@
       "year": 2017,
       "citedBy": [
         "neural-antibodies:trim46"
+      ]
+    },
+    {
+      "citation": "Van den Bergh PYK, et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of chronic inflammatory demyelinating polyradiculoneuropathy: Report of a joint Task Force—Second revision. Eur J Neurol 2021;28:3556-3583. doi:10.1111/ene.14959",
+      "year": 2021,
+      "citedBy": [
+        "consult-workups:acute-hepatic-porphyria",
+        "consult-workups:inpatient-neuropathy"
       ]
     },
     {
@@ -1880,6 +2363,20 @@
       ]
     },
     {
+      "citation": "Vimpat (lacosamide) tablets, injection, oral solution US prescribing information. UCB; revised 5/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:lacosamide"
+      ]
+    },
+    {
+      "citation": "Wang B, et al. AGA Clinical Practice Update on Diagnosis and Management of Acute Hepatic Porphyrias: Expert Review. Gastroenterology 2023;164:484-491. doi:10.1053/j.gastro.2022.11.034",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:acute-hepatic-porphyria"
+      ]
+    },
+    {
       "citation": "Warfarin sodium tablets US prescribing information (RemedyRepack); revised 10/2026 (user-supplied label)",
       "year": 2026,
       "citedBy": [
@@ -1902,6 +2399,13 @@
       ]
     },
     {
+      "citation": "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625",
+      "year": 2002,
+      "citedBy": [
+        "consult-workups:inpatient-neuropathy"
+      ]
+    },
+    {
       "citation": "Wingerchuk DM, et al. International consensus diagnostic criteria for neuromyelitis optica spectrum disorders. Neurology 2015;85(2):177-189. doi:10.1212/WNL.0000000000001729",
       "year": 2015,
       "citedBy": [
@@ -1916,6 +2420,13 @@
         "asm-interactions:inducing-asm-apixaban-rivaroxaban",
         "calc:cockcroft-gault",
         "vascular-antithrombotics:rivaroxaban"
+      ]
+    },
+    {
+      "citation": "Xia D, Hasserjian RP. Molecular testing for JAK2, MPL, and CALR in myeloproliferative neoplasms. Am J Hematol 2016;91:1277-1280. doi:10.1002/ajh.24578",
+      "year": 2016,
+      "citedBy": [
+        "reference-cards:thrombophilia-test-validity"
       ]
     },
     {

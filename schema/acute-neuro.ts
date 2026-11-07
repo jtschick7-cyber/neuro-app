@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { KebabId, RelatedId, ReviewDate, Source, Text, registryEnvelope } from "./common";
 
-export const ACUTE_NEURO_SCHEMA_VERSION = "1.0.0";
+export const ACUTE_NEURO_SCHEMA_VERSION = "1.1.0";
 
 export const AcuteNeuroCategory = z.enum([
   "SEIZURE",
@@ -12,6 +12,7 @@ export const AcuteNeuroCategory = z.enum([
   "ICP_HERNIATION",
   "TOXIC_METABOLIC",
   "ENCEPHALOPATHY",
+  "HEADACHE", // 1.1.0 (item 7.9)
 ]);
 
 export const TimedAction = z
@@ -59,6 +60,8 @@ export const Route = z.enum([
   "PR",
   "INTRATHECAL",
   "NON_PHARM",
+  "EPIDURAL", // 1.1.0 (item 7.9): epidural blood patch
+  "PERINEURAL", // 1.1.0 (item 7.9): greater occipital / supraorbital nerve blocks
 ]);
 
 export const EvidenceLevel = z.enum([

@@ -4,6 +4,7 @@ import BannerList from './BannerList';
 import BedsideNotes from './BedsideNotes';
 import EntryFooter from './EntryFooter';
 import RelatedLinks from './RelatedLinks';
+import DrugTabs from './DrugTabs';
 import { Bullets, EvidenceBadge, Section, Sources, TreatmentList, WorkupList } from './ProtocolParts';
 import {
   CATEGORY_LABEL,
@@ -61,7 +62,8 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
     return (
       <div className="space-y-3">
         <a href={toHash({ kind: 'registry', registry })} className="inline-flex min-h-10 items-center gap-1 text-xs font-medium text-sky-400 hover:text-sky-300">
-          <ArrowLeft size={16} aria-hidden="true" /> {noun}{entry ? ` · ${CATEGORY_LABEL[entry.category] ?? entry.category}` : ''}
+          <ArrowLeft size={16} aria-hidden="true" /> {noun}
+          {entry && (CATEGORY_LABEL[entry.category] ?? entry.category) !== noun ? ` · ${CATEGORY_LABEL[entry.category] ?? entry.category}` : ''}
         </a>
         {entry ? renderEntry(entry) : <p className="text-sm text-slate-400">No entry “{entryId}” in {noun}.</p>}
       </div>
@@ -280,13 +282,16 @@ export function AcuteView({ entryId }: { entryId?: string }) {
 
 export function ConsultView({ entryId }: { entryId?: string }) {
   return (
-    <RegistryScreen
-      registry="consult-workups"
-      noun="Consult workups"
-      placeholder="Search TIA, syncope, seizure..."
-      load={loadConsults}
-      entryId={entryId}
-      renderEntry={(e) => <ConsultEntryView e={e} />}
-    />
+    <div className="space-y-3">
+      {entryId === undefined && <DrugTabs active="consult-workups" section="consults" />}
+      <RegistryScreen
+        registry="consult-workups"
+        noun="Consult workups"
+        placeholder="Search TIA, syncope, seizure..."
+        load={loadConsults}
+        entryId={entryId}
+        renderEntry={(e) => <ConsultEntryView e={e} />}
+      />
+    </div>
   );
 }

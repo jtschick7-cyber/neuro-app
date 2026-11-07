@@ -34,6 +34,16 @@ describe('global search over the real data', () => {
     expect(hrefs('NMDA')).toContain('#/neural-antibodies/nmdar');
     expect(hrefs('Eliquis')).toContain('#/asm-interactions/inducing-asm-apixaban-rivaroxaban');
   });
+  it('finds the ASM dosing cards, reference cards and the phenytoin calculator', () => {
+    expect(hrefs('Keppra')).toContain('#/antiseizure-medications/levetiracetam');
+    expect(hrefs('Vimpat')).toContain('#/antiseizure-medications/lacosamide');
+    expect(hrefs('thrombophilia')).toContain('#/reference-cards/thrombophilia-test-validity');
+    expect(hrefs('nimodipine')).toContain('#/reference-cards/asah-numbers');
+    expect(hrefs('rotigotine')).toContain('#/reference-cards/inpatient-parkinson-disease');
+    expect(hrefs('sodium target')).toContain('#/reference-cards/neuro-icu-targets');
+    expect(hrefs('lupus anticoagulant')).toContain('#/reference-cards/thrombophilia-test-validity');
+    expect(hrefs('phenytoin level')).toContain('#/calc/phenytoin-correction');
+  });
   it('indexes every calculator card', () => {
     const calcs = buildDocs().filter((d) => d.context === 'Calculator');
     expect(calcs).toHaveLength(Object.keys(CALC_CARD).length);

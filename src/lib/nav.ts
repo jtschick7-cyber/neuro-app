@@ -11,7 +11,9 @@ export type RegistryId =
   | 'mg-contraindications'
   | 'seizure-threshold'
   | 'rcvs-triggers'
-  | 'asm-interactions';
+  | 'asm-interactions'
+  | 'antiseizure-medications'
+  | 'reference-cards';
 
 export type CautionListId = 'mg-contraindications' | 'seizure-threshold' | 'rcvs-triggers';
 
@@ -21,17 +23,21 @@ export interface RegistryInfo {
   label: string;
   section: Exclude<SectionId, 'home' | 'calc'>;
   built: boolean;
+  /** Tab-strip label when it differs from `label` (sections with more than one registry). */
+  tabLabel?: string;
 }
 
 export const REGISTRIES: RegistryInfo[] = [
   { id: 'acute-neuro', label: 'Acute protocol', section: 'acute', built: true },
-  { id: 'consult-workups', label: 'Consult workup', section: 'consults', built: true },
+  { id: 'consult-workups', label: 'Consult workup', section: 'consults', built: true, tabLabel: 'Consult workups' },
+  { id: 'reference-cards', label: 'Reference card', section: 'consults', built: true, tabLabel: 'Reference cards' },
   { id: 'vascular-antithrombotics', label: 'Antithrombotics', section: 'drugs', built: true },
   { id: 'neural-antibodies', label: 'Neural antibody', section: 'antibodies', built: true },
   { id: 'mg-contraindications', label: 'MG cautions', section: 'drugs', built: true },
   { id: 'seizure-threshold', label: 'Seizure threshold', section: 'drugs', built: true },
   { id: 'rcvs-triggers', label: 'RCVS triggers', section: 'drugs', built: true },
   { id: 'asm-interactions', label: 'ASM interactions', section: 'drugs', built: true },
+  { id: 'antiseizure-medications', label: 'ASM dosing', section: 'drugs', built: true },
 ];
 
 export function getRegistry(id: string): RegistryInfo | undefined {
@@ -56,8 +62,8 @@ export interface SectionInfo {
 export const SECTIONS: SectionInfo[] = [
   { id: 'home', label: 'Home', blurb: '', built: true, hash: '#/' },
   { id: 'acute', label: 'Acute', blurb: 'Emergency protocols', built: true, hash: '#/acute-neuro' },
-  { id: 'consults', label: 'Consults', blurb: 'Consult workups', built: true, hash: '#/consult-workups' },
-  { id: 'drugs', label: 'Drugs', blurb: 'Drug cautions, antithrombotics, interactions', built: true, hash: '#/mg-contraindications' },
+  { id: 'consults', label: 'Consults', blurb: 'Consult workups and reference cards', built: true, hash: '#/consult-workups' },
+  { id: 'drugs', label: 'Drugs', blurb: 'Drug cautions, antithrombotics, ASM dosing and interactions', built: true, hash: '#/mg-contraindications' },
   { id: 'antibodies', label: 'Antibodies', blurb: 'Neural antibody cards', built: true, hash: '#/neural-antibodies' },
   { id: 'calc', label: 'Calculators', navLabel: 'Calcs', blurb: 'Dosing and risk scores', built: true, hash: '#/calc' },
 ];
@@ -71,6 +77,7 @@ export const CALC_CARD: Record<string, string> = {
   'valproate-load': 'calc-anticonvulsants',
   'fosphenytoin-load': 'calc-anticonvulsants',
   'lacosamide-load': 'calc-anticonvulsants',
+  'phenytoin-correction': 'calc-phenytoin',
   'hypertonic-saline-bolus': 'calc-icp',
   'mannitol-dose': 'calc-icp',
   'tnk-dose': 'calc-thrombolytics',

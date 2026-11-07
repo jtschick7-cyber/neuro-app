@@ -34,6 +34,14 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - Sources: Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z
 - VERIFY: none
 
+## Phenytoin level: albumin correction and reload estimate (`phenytoin-correction`)
+- Formula: Corrected total = measured total / (0.2 × albumin + 0.1) [Sheiner-Tozer]; on dialysis: / (0.1 × albumin + 0.1) [Mauro 1989]. Albumin g/dL, phenytoin mcg/mL. Not corrected if albumin not entered, or albumin ≥4.4 g/dL on the standard equation. Estimated free = corrected × 0.1. Reload (mg PE) = (target − corrected) × 0.7 L/kg × actual weight; target default 15 (10–20)
+- Caps: 10 mg PE/kg (rounded down to 50 mg PE); 1500 mg PE; 150 mg PE/min
+- Rounding: Corrected total and estimated free to 0.1 mcg/mL; reload to nearest 50 mg PE (= whole mL at 50 mg PE/mL), then cap (app convention)
+- Weight: ACTUAL
+- Sources: Kiang TK, Ensom MH. A comprehensive review on the predictive performance of the Sheiner-Tozer and derivative equations for the correction of phenytoin concentrations. Ann Pharmacother 2016;50(4):311-325. doi:10.1177/1060028016628166 | Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label) | Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (DailyMed setid 86dd27d1-9cee-48ae-b55d-e2d2f7dbc593, accessed 2026-11-06) | Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)
+- VERIFY: none
+
 ## Hypertonic saline (ICP) (`hypertonic-saline-bolus`)
 - Formula: institutional protocol: 3% 250 mL over 30 min; 23.4% 30 mL over 5 min (central line). Na mEq = mL × 0.513 (3%) or 4.004 (23.4%)
 - Caps: fixed volume per protocol

@@ -73,6 +73,124 @@ export function lacosamideLoad(weightKg?: number): CalcResult {
   return { value: null, unit: "mg", range: [200, 400], display: "200–400 mg IV (fixed, NCS 2012)", capped: false, warnings };
 }
 
+// ---------- 1b. Phenytoin level correction and reload (item 7.1; spec planning/drafts/calc-phenytoin-correction.md) ----------
+export type LevelBand = "BELOW" | "WITHIN" | "ABOVE";
+const band = (x: number, lo: number, hi: number): LevelBand => (x < lo ? "BELOW" : x > hi ? "ABOVE" : "WITHIN");
+const BAND_TEXT: Record<LevelBand, string> = { BELOW: "below", WITHIN: "within", ABOVE: "above" };
+
+export type PhenytoinCorrectionInput = {
+  measuredTotal: number; // mcg/mL
+  albuminGdl?: number; // g/dL; omitted → no correction
+  onDialysis?: boolean; // Mauro 1989 coefficient 0.1
+  measuredFree?: number; // mcg/mL
+  weightKg?: number; // actual; omitted → no reload estimate
+  targetTotal?: number; // mcg/mL, default 15
+  onValproate?: boolean;
+  hoursSinceFosphenytoin?: number;
+  fosphenytoinRoute?: "IV" | "IM";
+};
+
+export const PHENYTOIN_WARNINGS = {
+  estimateOnly:
+    "Estimate only — the Sheiner-Tozer equation is biased and imprecise in ICU, head-trauma and neurology patients; use a measured free level when available (Kiang 2016; Cerebyx §2.7; Dilantin §2.5)",
+  noAlbumin: "No albumin entered — measured total used uncorrected",
+  dialysis: "Dialysis coefficient 0.1 comes from 11 dialysis patients (Mauro 1989); imprecise and not externally validated (Kiang 2016)",
+  valproate:
+    "On valproate: valproate displaces phenytoin (free fraction +60%), so the equation is unreliable — send a free level (valproate label §7.2; Kiang 2016)",
+  earlyDraw: (route: "IV" | "IM") =>
+    `Drawn <${route === "IV" ? 2 : 4} h after ${route} fosphenytoin: immunoassays overestimate phenytoin before conversion, so the level won't reflect the final concentration (Cerebyx §2.5)`,
+  discordant: (measured: LevelBand, estimated: LevelBand) =>
+    `Measured free level is ${BAND_TEXT[measured]} 1–2 mcg/mL but the estimate is ${BAND_TEXT[estimated]} — trust the measured free level`,
+  aboveRange: "Corrected total is above 10–20 mcg/mL",
+  capped: (cap: number, perKg: boolean) => (perKg ? `Capped at 10 mg/kg (${cap} mg PE)` : `Capped at ${cap} mg PE`),
+} as const;
+
+/**
+ * Sheiner-Tozer albumin correction (dialysis variant optional), estimated free level, and a fosphenytoin reload estimate.
+ * Unrounded intermediates throughout; rounding only for the reported values.
+ */
+export function phenytoinCorrection(i: PhenytoinCorrectionInput): CalcResult {
+  req("measuredTotal", i.measuredTotal, 0, 60);
+  if (i.albuminGdl !== undefined) req("albuminGdl", i.albuminGdl, 1, 6);
+  if (i.measuredFree !== undefined) req("measuredFree", i.measuredFree, 0, 10);
+  if (i.weightKg !== undefined) reqWeight(i.weightKg);
+  const target = i.targetTotal ?? 15;
+  req("targetTotal", target, 10, 20);
+  if (i.hoursSinceFosphenytoin !== undefined) req("hoursSinceFosphenytoin", i.hoursSinceFosphenytoin, 0, 240);
+  const route = i.fosphenytoinRoute ?? "IV";
+  const dialysis = i.onDialysis === true;
+
+  const warnings: string[] = [PHENYTOIN_WARNINGS.estimateOnly];
+  if (i.albuminGdl === undefined) warnings.push(PHENYTOIN_WARNINGS.noAlbumin);
+  if (dialysis) warnings.push(PHENYTOIN_WARNINGS.dialysis);
+  if (i.onValproate) warnings.push(PHENYTOIN_WARNINGS.valproate);
+  if (i.hoursSinceFosphenytoin !== undefined && i.hoursSinceFosphenytoin < (route === "IV" ? 2 : 4))
+    warnings.push(PHENYTOIN_WARNINGS.earlyDraw(route));
+
+  // Corrected total. Denominator (coef × albumin + 0.1) is computed in tenths — (k × albumin + 1) / 10 with k = 2, or 1 on
+  // dialysis — the same value without binary drift (6 / (0.1 × 3 + 0.1) would otherwise give 14.999…).
+  const k = dialysis ? 1 : 2;
+  const corrects = i.albuminGdl !== undefined && (dialysis || i.albuminGdl < 4.4);
+  const corrected = corrects ? (i.measuredTotal * 10) / (k * (i.albuminGdl as number) + 1) : i.measuredTotal;
+  const estFree = corrected * 0.1;
+  const totalBand = band(corrected, 10, 20);
+  const estFreeBand = band(estFree, 1, 2);
+  const measuredFreeBand = i.measuredFree !== undefined ? band(i.measuredFree, 1, 2) : null;
+  if (measuredFreeBand && measuredFreeBand !== estFreeBand) warnings.push(PHENYTOIN_WARNINGS.discordant(measuredFreeBand, estFreeBand));
+  if (totalBand === "ABOVE") warnings.push(PHENYTOIN_WARNINGS.aboveRange);
+
+  const correctedR = roundTo(corrected, 0.1);
+  const estFreeR = roundTo(estFree, 0.1);
+  const parts: Record<string, number | string> = {
+    coefficient: dialysis ? 0.1 : 0.2,
+    correctedTotal: correctedR,
+    estimatedFree: estFreeR,
+    totalBand,
+    estimatedFreeBand: estFreeBand,
+    corrected: corrects ? "yes" : "no",
+    targetTotal: target,
+  };
+  if (measuredFreeBand) parts.measuredFreeBand = measuredFreeBand;
+
+  const levelText =
+    (i.measuredFree !== undefined ? `Measured free ${fmt(i.measuredFree)} mcg/mL (${BAND_TEXT[measuredFreeBand as LevelBand]} 1–2); ` : "") +
+    `${corrects ? "corrected" : "uncorrected"} total ${fmt(correctedR)} mcg/mL (${BAND_TEXT[totalBand]} 10–20), est. free ${fmt(estFreeR)}`;
+
+  let reloadText = "enter weight for a reload estimate";
+  let isCapped = false;
+  if (i.weightKg !== undefined) {
+    const w = i.weightKg;
+    let reload = 0;
+    if (measuredFreeBand === "WITHIN" || measuredFreeBand === "ABOVE") {
+      reloadText = "no reload — measured free level within or above 1–2 mcg/mL";
+    } else if (corrected >= target) {
+      reloadText = `no reload — at or above target ${fmt(target)} mcg/mL`;
+    } else {
+      const raw = (target - corrected) * 0.7 * w;
+      const rounded = roundTo(raw, 50);
+      const perKgCap = Math.floor((10 * w) / 50) * 50;
+      const cap = Math.min(perKgCap, 1500);
+      const c = capped(rounded, cap);
+      reload = c.v;
+      isCapped = c.capped;
+      parts.reloadUncapped = rounded;
+      if (c.capped) warnings.push(PHENYTOIN_WARNINGS.capped(cap, perKgCap < 1500));
+      if (reload === 0) {
+        reloadText = "calculated reload <25 mg PE — not meaningful";
+      } else {
+        const minMinutes = roundTo(reload / 150, 0.1);
+        parts.minInfusionMinutes = minMinutes;
+        reloadText = `reload ${fmt(reload)} mg PE fosphenytoin${c.capped ? " (capped)" : ""}; infuse over ≥${fmt(minMinutes)} min (≤150 mg PE/min)`;
+      }
+    }
+    parts.reloadMgPe = reload;
+  }
+
+  const primary = i.measuredFree !== undefined ? i.measuredFree : correctedR;
+  parts.primary = i.measuredFree !== undefined ? "MEASURED_FREE" : "CORRECTED_TOTAL";
+  return { value: primary, unit: "mcg/mL", display: `${levelText}; ${reloadText}`, capped: isCapped, warnings, parts };
+}
+
 // ---------- 2. Cerebral edema / ICP ----------
 export type HtsConcentration = "3%" | "23.4%";
 const NACL_MEQ_PER_ML: Record<HtsConcentration, number> = { "3%": 0.513, "23.4%": 4.004 };
@@ -334,6 +452,10 @@ const S = {
   salsa2021: "Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519",
   gbs2023: "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
   xarelto: "Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label)",
+  kiang2016: "Kiang TK, Ensom MH. A comprehensive review on the predictive performance of the Sheiner-Tozer and derivative equations for the correction of phenytoin concentrations. Ann Pharmacother 2016;50(4):311-325. doi:10.1177/1060028016628166",
+  cerebyx: "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)",
+  dilantin: "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (DailyMed setid 86dd27d1-9cee-48ae-b55d-e2d2f7dbc593, accessed 2026-11-06)",
+  vpaIv: "Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)",
 };
 
 export const CALCULATOR_META: Record<string, CalcMeta> = {
@@ -341,6 +463,16 @@ export const CALCULATOR_META: Record<string, CalcMeta> = {
   "valproate-load": { id: "valproate-load", title: "Valproate load", formula: "40 mg/kg", caps: ["3000 mg"], rounding: "nearest 50 mg, cap after rounding (app convention)", weightBasis: "ACTUAL", sources: [S.aes2016, S.esett2019], verify: [] },
   "fosphenytoin-load": { id: "fosphenytoin-load", title: "Fosphenytoin load", formula: "20 mg PE/kg; min infusion time = dose / 150 mg PE/min", caps: ["1500 mg PE", "150 mg PE/min"], rounding: "nearest 50 mg PE (= whole mL at 50 mg PE/mL; app convention)", weightBasis: "ACTUAL", sources: [S.aes2016, S.esett2019], verify: [] },
   "lacosamide-load": { id: "lacosamide-load", title: "Lacosamide load", formula: "fixed 200–400 mg IV", caps: [], rounding: "none", weightBasis: "NOT_APPLICABLE", sources: [S.ncs2012], verify: [] },
+  "phenytoin-correction": {
+    id: "phenytoin-correction",
+    title: "Phenytoin level: albumin correction and reload estimate",
+    formula: "Corrected total = measured total / (0.2 × albumin + 0.1) [Sheiner-Tozer]; on dialysis: / (0.1 × albumin + 0.1) [Mauro 1989]. Albumin g/dL, phenytoin mcg/mL. Not corrected if albumin not entered, or albumin ≥4.4 g/dL on the standard equation. Estimated free = corrected × 0.1. Reload (mg PE) = (target − corrected) × 0.7 L/kg × actual weight; target default 15 (10–20)",
+    caps: ["10 mg PE/kg (rounded down to 50 mg PE)", "1500 mg PE", "150 mg PE/min"],
+    rounding: "Corrected total and estimated free to 0.1 mcg/mL; reload to nearest 50 mg PE (= whole mL at 50 mg PE/mL), then cap (app convention)",
+    weightBasis: "ACTUAL",
+    sources: [S.kiang2016, S.cerebyx, S.dilantin, S.vpaIv],
+    verify: [],
+  },
   "hypertonic-saline-bolus": { id: "hypertonic-saline-bolus", title: "Hypertonic saline (ICP)", formula: "institutional protocol: 3% 250 mL over 30 min; 23.4% 30 mL over 5 min (central line). Na mEq = mL × 0.513 (3%) or 4.004 (23.4%)", caps: ["fixed volume per protocol"], rounding: "none (fixed volume)", weightBasis: "NOT_APPLICABLE", sources: ["Trinity Health Michigan neuro ICU protocol (provided by J. Schick, 11/2026)", S.ncs2020, S.enls6], verify: [] },
   "mannitol-dose": { id: "mannitol-dose", title: "Mannitol 20%", formula: "0.5–1 g/kg; mL = g × 5; osmolar gap = measured − (2Na + glucose/18 + BUN/2.8)", caps: [], rounding: "nearest 5 g", weightBasis: "ACTUAL", sources: [S.enls6, S.ncs2020, "Osmitrol (mannitol injection) US prescribing information. Baxter; revised 8/2025"], verify: [] },
   ledd: { id: "ledd", title: "Levodopa equivalent daily dose", formula: "Σ (daily dose × factor) for levodopa, agonists, MAO-B, amantadine; + COMT LED = covered levodopa LED × 0.33 (entacapone) or 0.5 (tolcapone, opicapone); + istradefylline = (levodopa + COMT LED) × 0.2; safinamide 50/100 mg = 150", caps: [], rounding: "0.1 mg", weightBasis: "NOT_APPLICABLE", sources: ["Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252"], verify: [] },

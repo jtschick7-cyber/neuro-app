@@ -36,6 +36,8 @@ describe('release audit', () => {
   it('shows banners on every registry entry', () => {
     expect(readFileSync('src/components/ReferenceCard.tsx', 'utf8')).toContain('<BannerList');
     expect(readFileSync('src/components/ProtocolViews.tsx', 'utf8')).toContain('<BannerList');
+    // ASM dosing and reference cards render inside EntryShell (banners, sources, footer, notes).
+    expect(readFileSync('src/components/ReferenceViews.tsx', 'utf8')).toContain('<EntryShell');
   });
   it('ties the service-worker cache name to the content version', () => {
     const cfg = readFileSync('vite.config.ts', 'utf8');

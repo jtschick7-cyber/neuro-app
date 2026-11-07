@@ -18,6 +18,8 @@ import { VascularAntithromboticsRegistry } from "../schema/vascular-antithrombot
 import { ConsultWorkupsRegistry } from "../schema/consult-workups";
 import { CautionListRegistry } from "../schema/caution-list";
 import { DrugInteractionsRegistry } from "../schema/drug-interactions";
+import { AntiseizureMedicationsRegistry } from "../schema/antiseizure-medications";
+import { ReferenceCardsRegistry } from "../schema/reference-cards";
 import { CALCULATOR_META } from "../src/lib/calculators";
 import { findPlaceholderText } from "./placeholder-text";
 
@@ -33,6 +35,8 @@ const SCHEMAS: Record<string, ZodTypeAny> = {
   "rcvs-triggers": CautionListRegistry,
   // Interaction lists (schema/drug-interactions.ts)
   "asm-interactions": DrugInteractionsRegistry,
+  "antiseizure-medications": AntiseizureMedicationsRegistry,
+  "reference-cards": ReferenceCardsRegistry,
 };
 
 const args = process.argv.slice(2);

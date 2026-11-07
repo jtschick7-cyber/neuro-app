@@ -5,6 +5,8 @@ import asmRaw from '../../data/asm-interactions.json';
 import type { NeuralAntibodyEntry as AntibodySchema } from '../../schema/neural-antibodies';
 import type { VascularAntithromboticEntry as VascularSchema } from '../../schema/vascular-antithrombotics';
 import type { ConsultWorkupEntry as ConsultSchema } from '../../schema/consult-workups';
+import type { AsmEntry as AsmSchema } from '../../schema/antiseizure-medications';
+import type { ReferenceCard as ReferenceCardSchema } from '../../schema/reference-cards';
 
 export type AcuteEntry = z.infer<typeof AcuteSchema>;
 export type ConsultEntry = z.infer<typeof ConsultSchema>;
@@ -13,6 +15,9 @@ export type VascularEntry = z.infer<typeof VascularSchema> & { category: string 
 export type AntibodyEntry = z.infer<typeof AntibodySchema> & { title: string; category: string };
 /** Interaction entries gain `category` (their tier) so they fit the shared list screen. */
 export type InteractionEntry = z.infer<typeof InteractionSchema> & { category: string };
+/** ASM dosing cards and reference cards have no category in the schema; they get a fixed one for the shared list screen. */
+export type AsmEntry = z.infer<typeof AsmSchema> & { category: string };
+export type ReferenceCardEntry = z.infer<typeof ReferenceCardSchema> & { category: string };
 export interface ProtocolRegistry<E> {
   title: string;
   scopeNotes?: string[];
@@ -37,6 +42,17 @@ export const loadAntibodies = (): Promise<ProtocolRegistry<AntibodyEntry>> =>
   import('../../data/neural-antibodies.json').then((m) => {
     const d = m.default as unknown as ProtocolRegistry<z.infer<typeof AntibodySchema>>;
     return { ...d, entries: d.entries.map((e) => ({ ...e, title: e.antigen, category: e.antigenClass })) };
+  });
+
+export const loadAsm = (): Promise<ProtocolRegistry<AsmEntry>> =>
+  import('../../data/antiseizure-medications.json').then((m) => {
+    const d = m.default as unknown as ProtocolRegistry<z.infer<typeof AsmSchema>>;
+    return { ...d, entries: d.entries.map((e) => ({ ...e, category: 'ASM' })) };
+  });
+export const loadReferenceCards = (): Promise<ProtocolRegistry<ReferenceCardEntry>> =>
+  import('../../data/reference-cards.json').then((m) => {
+    const d = m.default as unknown as ProtocolRegistry<z.infer<typeof ReferenceCardSchema>>;
+    return { ...d, entries: d.entries.map((e) => ({ ...e, category: 'REFERENCE_CARD' })) };
   });
 
 // Small (7 KB), so bundled directly rather than lazy-loaded.
@@ -76,6 +92,8 @@ export const CATEGORY_LABEL: Record<string, string> = {
   INTRACELLULAR: 'Intracellular antigens',
   INTRACELLULAR_SYNAPTIC: 'Intracellular synaptic antigens',
   GLIAL: 'Glial antigens',
+  ASM: 'Antiseizure medications',
+  REFERENCE_CARD: 'Reference cards',
 };
 
 export const ROLE_LABEL: Record<string, string> = {
@@ -87,6 +105,47 @@ export const ROLE_LABEL: Record<string, string> = {
   SUPPORTIVE: 'Supportive',
   NOT_RECOMMENDED: 'Not recommended',
 };
+
+/** reference-cards TargetRole. EVIDENCE_SUMMARY rows are trial findings, never targets. */
+export const TARGET_ROLE_LABEL: Record<string, string> = {
+  TARGET: 'Target',
+  RECOMMENDED: 'Recommended',
+  NOT_RECOMMENDED: 'Not recommended',
+  EVIDENCE_SUMMARY: 'Evidence summary',
+};
+
+/** reference-cards matrix CellStatus: full label, and a short form for the phone-width grid. */
+export const CELL_STATUS_LABEL: Record<string, string> = {
+  VALID: 'Valid',
+  CAUTION: 'Caution',
+  UNRELIABLE: 'Unreliable',
+  ASSAY_DEPENDENT: 'Assay-dependent',
+  NOT_ADDRESSED: 'Not addressed',
+};
+export const CELL_STATUS_SHORT: Record<string, string> = {
+  VALID: 'Valid',
+  CAUTION: 'Caution',
+  UNRELIABLE: 'Unrel.',
+  ASSAY_DEPENDENT: 'Assay',
+  NOT_ADDRESSED: '—',
+};
+export const CELL_DIRECTION_LABEL: Record<string, string> = { FALSE_LOW: 'False low', FALSE_HIGH: 'False high', EITHER: 'Either direction' };
+export const CELL_DIRECTION_GLYPH: Record<string, string> = { FALSE_LOW: '↓', FALSE_HIGH: '↑', EITHER: '↕' };
+
+/** antiseizure-medications RenalRow.crclBasis */
+export const CRCL_BASIS_LABEL: Record<string, string> = {
+  CG_ML_MIN: 'CrCl mL/min (Cockcroft-Gault)',
+  BSA_NORMALIZED_ML_MIN_1_73M2: 'CrCl mL/min/1.73 m² (BSA-normalized)',
+};
+
+/**
+ * Whether an ASM renal row matches the context-bar CrCl. Bounds are inclusive, so a value on a shared endpoint matches
+ * both bands (both rows highlight). Only Cockcroft-Gault bands: BSA-normalized bands (Keppra) are never highlighted from CG.
+ */
+export function renalRowMatches(row: AsmEntry['renal'][number], crcl: number | null): boolean {
+  if (crcl === null || row.kind !== 'CRCL_BAND' || row.crclBasis !== 'CG_ML_MIN') return false;
+  return (row.crclMin === null || crcl >= row.crclMin) && (row.crclMax === null || crcl <= row.crclMax);
+}
 
 export const PRIORITY_LABEL: Record<string, string> = { STAT: 'STAT', URGENT: 'Urgent', ROUTINE: 'Routine', IF_INDICATED: 'If indicated' };
 

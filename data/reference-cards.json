@@ -1,0 +1,1978 @@
+{
+  "title": "Reference Cards",
+  "version": "1.2.1",
+  "schemaVersion": "1.1.0",
+  "lastUpdated": "2026-11-07",
+  "entries": [
+    {
+      "id": "neuro-icu-targets",
+      "title": "Neuro-ICU targets (rounds lookup)",
+      "searchTerms": [
+        "neuro ICU targets",
+        "sodium goal",
+        "sodium target",
+        "hypertonic saline target",
+        "osmolar gap",
+        "mannitol monitoring",
+        "CPP",
+        "cerebral perfusion pressure",
+        "transfusion threshold",
+        "hemoglobin threshold",
+        "TRAIN",
+        "SAHaRA",
+        "SAHARA"
+      ],
+      "scopeNote": "Rounds lookup, not a protocol. Glucose and temperature are intentionally not on this card. aSAH-specific numbers: see aSAH numbers card.",
+      "sections": [
+        {
+          "heading": "Sodium & osmotherapy",
+          "rows": [
+            {
+              "parameter": "Sodium",
+              "condition": "Severe acute brain injury (any)",
+              "role": "RECOMMENDED",
+              "target": "Avoid hyponatremia",
+              "notes": [
+                "Hyponatremia can worsen cerebral edema",
+                "Correction limits for chronic hyponatremia: see hyponatremia-ods"
+              ],
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Cook 2020: good practice statement"
+              ],
+              "sources": [
+                "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+              ]
+            },
+            {
+              "parameter": "Sodium / chloride",
+              "condition": "During hypertonic saline for ICP or edema",
+              "role": "TARGET",
+              "target": "Upper limit Na 155–160 mEq/L; Cl 110–115 mEq/L",
+              "notes": [
+                "A ceiling to limit AKI, not a treatment goal",
+                "Avoid severe hypernatremia and hyperchloremia (AKI association)",
+                "Monitor Na, Cl and renal function routinely; frequency from BID to q2h depending on how fast values are moving"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Cook 2020: ceiling — conditional, very low-quality evidence",
+                "Cook 2020: avoid severe hyperNa/hyperCl — conditional, low-quality evidence",
+                "Cook 2020: monitoring — good practice statements"
+              ],
+              "sources": [
+                "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+              ]
+            },
+            {
+              "parameter": "Sodium",
+              "condition": "Hypertonic saline for ICP or edema — SAH",
+              "role": "RECOMMENDED",
+              "target": "Symptom-based bolus HTS rather than dosing to a sodium target",
+              "notes": [
+                "Studies that targeted sodium used 145–155 mEq/L; data too limited to recommend a target",
+                "No HTS dosing strategy is recommended to improve neurological outcome"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Cook 2020: conditional, very low-quality evidence"
+              ],
+              "sources": [
+                "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+              ]
+            },
+            {
+              "parameter": "Sodium",
+              "condition": "Hypertonic saline for ICP or edema — ICH",
+              "role": "RECOMMENDED",
+              "target": "Either bolus dosing or a targeted sodium is acceptable",
+              "notes": [
+                "Targeted studies used 145–155 mEq/L; results conflicting"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Cook 2020: conditional, very low-quality evidence"
+              ],
+              "sources": [
+                "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+              ]
+            },
+            {
+              "parameter": "Sodium",
+              "condition": "Hypertonic saline for ICP or edema — TBI, AIS; continuous infusion to a sodium goal (any condition)",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "No sodium target recommended",
+              "notes": [
+                "TBI: no substantial evidence for targeting a specific sodium",
+                "AIS: continuous 3% to 145–155 mEq/L didn't consistently reduce ICP crises or improve outcome (2 conflicting studies)",
+                "Any condition: insufficient evidence that a continuous infusion to a sodium goal improves outcome"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Cook 2020: evidence summary / insufficient-evidence statement — no recommendation made"
+              ],
+              "sources": [
+                "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+              ]
+            },
+            {
+              "parameter": "Osmolar gap",
+              "condition": "Mannitol",
+              "role": "RECOMMENDED",
+              "target": "Follow the osmolar gap, not a serum osmolality threshold",
+              "notes": [
+                "No gap cutoff is recommended: 20 mOsm/kg is used in practice but unsupported; one study correlated a gap ≥55 mOsm/kg with mannitol concentration",
+                "Recent studies: osmolality >320 mOsm/L did not change AKI incidence",
+                "Monitor renal function closely (good practice)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Cook 2020: conditional, very low-quality evidence",
+                "Cook 2020: no gap cutoff — insufficient evidence"
+              ],
+              "sources": [
+                "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Cerebral perfusion pressure",
+          "rows": [
+            {
+              "parameter": "CPP",
+              "condition": "Severe TBI",
+              "role": "TARGET",
+              "target": "60–70 mm Hg",
+              "notes": [
+                "Whether 60 or 70 is the minimum is unclear; may depend on autoregulatory status",
+                "No CPP target from a provided source for aSAH, ICH or AIS"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "BTF 4th ed: Level II B (low-quality evidence)"
+              ],
+              "sources": [
+                "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 17 Cerebral Perfusion Pressure Thresholds"
+              ]
+            },
+            {
+              "parameter": "CPP",
+              "condition": "Severe TBI",
+              "role": "RECOMMENDED",
+              "target": "Avoid aggressive fluids and pressors to hold CPP >70 mm Hg",
+              "notes": [
+                "Risk of adult respiratory failure"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "BTF 4th ed: Level III"
+              ],
+              "sources": [
+                "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 17 Cerebral Perfusion Pressure Thresholds"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Hemoglobin — trial findings, not guideline targets",
+          "rows": [
+            {
+              "parameter": "Hemoglobin",
+              "condition": "Acute brain injury with Hb <9 g/dL (TBI 59%, aSAH 23%, ICH 18%) — TRAIN",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Transfusing at <9 vs <7 g/dL: less unfavorable outcome at 180 days",
+              "notes": [
+                "Unfavorable outcome (GOS-E 1–5): 62.6% vs 72.6%; adjusted RR 0.86 (95% CI 0.79–0.94)",
+                "≥1 cerebral ischemic event: 8.8% vs 13.5% (RR 0.65, 0.44–0.97)",
+                "Median 2 vs 0 units; strategy applied up to 28 days",
+                "Clinical teams unblinded; outcome assessors blinded"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Single RCT, 850 randomized (820 completed)"
+              ],
+              "sources": [
+                "Taccone FS, et al. Restrictive vs Liberal Transfusion Strategy in Patients With Acute Brain Injury: The TRAIN Randomized Clinical Trial. JAMA 2024;332:1623-1633. doi:10.1001/jama.2024.20424"
+              ]
+            },
+            {
+              "parameter": "Hemoglobin",
+              "condition": "aSAH with anemia — SAHARA",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Transfusing at ≤10 (mandatory) vs ≤8 g/dL (optional): no significant difference in 12-month outcome",
+              "notes": [
+                "mRS ≥4 at 12 months: 33.5% vs 37.7%; RR 0.88 (95% CI 0.72–1.09); P=0.22",
+                "12-month mortality 27.2% vs 27.1%; DCI and new infarction similar",
+                "Radiographic vasospasm (secondary): 31.5% vs 40.7% (RR 0.77, 0.63–0.95)",
+                "Thresholds held through day 21; median 2 vs 0 units"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Single RCT, 742 randomized at 23 centers"
+              ],
+              "sources": [
+                "English SW, et al. Liberal or Restrictive Transfusion Strategy in Aneurysmal Subarachnoid Hemorrhage (SAHARA). N Engl J Med 2025;392:1079-1088. doi:10.1056/NEJMoa2410962"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Don't treat 145–155 mEq/L as a guideline target — it's the range used in studies (Cook 2020)",
+        "TRAIN and SAHARA used different thresholds and outcomes; TRAIN's aSAH subgroup was 23% of patients"
+      ],
+      "keyNumbers": [
+        "HTS ceiling: Na 155–160, Cl 110–115 mEq/L",
+        "No sodium goal endorsed for ICP; avoid hyponatremia",
+        "Mannitol: follow osmolar gap, not osm 320",
+        "Severe TBI: CPP 60–70 mm Hg",
+        "Hb: TRAIN <9 beat <7; SAHARA ≤10 = ≤8 (aSAH)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "reference-cards:asah-numbers",
+        "acute-neuro:elevated-icp-herniation",
+        "acute-neuro:hyponatremia-ods",
+        "calc:hypertonic-saline-bolus",
+        "calc:mannitol-dose"
+      ],
+      "sources": [
+        "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7",
+        "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 17 Cerebral Perfusion Pressure Thresholds",
+        "Taccone FS, et al. Restrictive vs Liberal Transfusion Strategy in Patients With Acute Brain Injury: The TRAIN Randomized Clinical Trial. JAMA 2024;332:1623-1633. doi:10.1001/jama.2024.20424",
+        "English SW, et al. Liberal or Restrictive Transfusion Strategy in Aneurysmal Subarachnoid Hemorrhage (SAHARA). N Engl J Med 2025;392:1079-1088. doi:10.1056/NEJMoa2410962"
+      ],
+      "lastReviewed": "2026-11-07"
+    },
+    {
+      "id": "asah-numbers",
+      "title": "aSAH numbers",
+      "searchTerms": [
+        "aSAH",
+        "SAH",
+        "subarachnoid",
+        "nimodipine",
+        "vasospasm",
+        "DCI",
+        "delayed cerebral ischemia",
+        "euvolemia",
+        "fludrocortisone",
+        "hyponatremia SAH",
+        "seizure prophylaxis SAH",
+        "induced hypertension",
+        "TCD",
+        "antifibrinolytic"
+      ],
+      "scopeNote": "Rounds lookup, not a protocol. Glucose and temperature (Hoh §8 Recs 7–8) intentionally omitted. Hb thresholds: see Neuro-ICU targets card.",
+      "sections": [
+        {
+          "heading": "Before the aneurysm is secured",
+          "rows": [
+            {
+              "parameter": "BP",
+              "condition": "Unsecured aneurysm",
+              "role": "RECOMMENDED",
+              "target": "No specific SBP target — frequent BP monitoring, short-acting agents; avoid severe hypotension, hypertension and BP variability",
+              "notes": [
+                "Severe hypertension (>180–200 mm Hg): lower gradually; avoid MAP <65 (writing-group text)",
+                "Earlier guidelines used SBP <160 or <180 — may be reasonable, evidence insufficient for a target",
+                "Meta-analysis: more rebleeding with SBP >160, not with <140"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §6 Rec 1: COR 1, LOE C-EO"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Anticoagulation",
+              "condition": "Patient on anticoagulants",
+              "role": "RECOMMENDED",
+              "target": "Emergency reversal",
+              "notes": [
+                "Follow current standards for life-threatening bleeding"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §6 Rec 2: COR 1, LOE C-EO"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Antifibrinolytics",
+              "condition": "Routine use",
+              "role": "NOT_RECOMMENDED",
+              "target": "Not useful to improve functional outcome",
+              "notes": [
+                "ULTRA: ultra-early TXA didn't improve 6-month outcome"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §6 Rec 3: COR 3: No Benefit, LOE A"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Nimodipine",
+          "rows": [
+            {
+              "parameter": "Nimodipine",
+              "condition": "All aSAH",
+              "role": "RECOMMENDED",
+              "target": "60 mg enteral q4h × 21 days; start as soon as possible, within 96 h of onset",
+              "notes": [
+                "Keep giving through hypotension that standard measures can manage; hold temporarily only for significant BP variability (Hoh text)",
+                "Cirrhosis: 30 mg q4h with close BP/HR monitoring (label)",
+                "1 h before or 2 h after meals; avoid grapefruit (label)",
+                "Can't swallow: puncture both capsule ends with an 18 G needle, draw contents into an oral/enteral syringe labeled 'Not for IV Use', give via NG/PEG, flush with 30 mL NS (label)",
+                "Never IV or other parenteral route — boxed warning (label)",
+                "Strong CYP3A4 inhibitors contraindicated; strong inducers (phenytoin, carbamazepine, phenobarbital, rifampin) generally not co-administered (label)",
+                "IV and intra-arterial nimodipine: too little data to recommend (Hoh)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8.3 Rec 1: COR 1, LOE A",
+                "Label: dose, duration, timing, administration"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436",
+                "Nimodipine capsules US prescribing information. Bionpharma Inc.; revised 12/2025 (DailyMed label)"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "DCI surveillance",
+          "rows": [
+            {
+              "parameter": "Neuro exam",
+              "condition": "All aSAH",
+              "role": "RECOMMENDED",
+              "target": "Frequent GCS or NIHSS to monitor DCI and other complications",
+              "notes": [
+                "Peak DCI/vasospasm risk: post-bleed days 6–10 (Hoh §8.3 text)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8.1 Rec 2: COR 1, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "CTA / CTP",
+              "condition": "Suspected vasospasm or limited exam",
+              "role": "RECOMMENDED",
+              "target": "Can be useful to detect vasospasm and predict DCI",
+              "notes": [],
+              "evidenceLevel": "MODERATE",
+              "evidenceNote": [
+                "Hoh 2023 §8.2 Rec 1: COR 2a, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "TCD",
+              "condition": "All aSAH",
+              "role": "RECOMMENDED",
+              "target": "Reasonable to detect vasospasm and predict DCI",
+              "notes": [],
+              "evidenceLevel": "MODERATE",
+              "evidenceNote": [
+                "Hoh 2023 §8.2 Rec 2: COR 2a, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "cEEG",
+              "condition": "High-grade aSAH",
+              "role": "RECOMMENDED",
+              "target": "Can be useful to predict DCI",
+              "notes": [
+                "Order/consult item; interpretation by neurophysiology"
+              ],
+              "evidenceLevel": "MODERATE",
+              "evidenceNote": [
+                "Hoh 2023 §8.2 Rec 3: COR 2a, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Invasive monitoring",
+              "condition": "High-grade aSAH",
+              "role": "RECOMMENDED",
+              "target": "Brain tissue O2, lactate/pyruvate, glutamate may be considered to predict DCI",
+              "notes": [],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Hoh 2023 §8.2 Rec 4: COR 2b, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Volume, sodium & DCI treatment",
+          "rows": [
+            {
+              "parameter": "Volume",
+              "condition": "All aSAH",
+              "role": "TARGET",
+              "target": "Euvolemia — close monitoring and goal-directed treatment",
+              "notes": [
+                "CVP alone isn't an adequate measure of volume status",
+                "Definitions of euvolemia vary; no clear standard"
+              ],
+              "evidenceLevel": "MODERATE",
+              "evidenceNote": [
+                "Hoh 2023 §8 Rec 3: COR 2a, LOE B-R",
+                "Hoh 2023 §8.3 Rec 2: COR 2a, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Volume",
+              "condition": "Induced hypervolemia",
+              "role": "NOT_RECOMMENDED",
+              "target": "Potentially harmful — excess morbidity",
+              "notes": [
+                "RCTs: more complications without less DCI or better outcome"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8 Rec 5: COR 3: Harm, LOE B-R"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Hemodynamics",
+              "condition": "At risk of DCI (prophylactic)",
+              "role": "NOT_RECOMMENDED",
+              "target": "No prophylactic hemodynamic augmentation",
+              "notes": [
+                "No outcome benefit; more complications including heart failure (Hoh text)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8.3 Rec 8: COR 3: Harm, LOE B-R"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Sodium",
+              "condition": "Natriuresis and hyponatremia",
+              "role": "RECOMMENDED",
+              "target": "Mineralocorticoid (fludrocortisone) is reasonable",
+              "notes": [
+                "RCTs: less natriuresis, urine volume, hyponatremia and IV fluid use; DCI and outcome not consistently improved",
+                "Main adverse effect: hypokalemia — potassium supplementation",
+                "High-dose hydrocortisone: similar sodium effects, more complications (hyperglycemia, hypokalemia, GI bleeding, heart failure)",
+                "No dose in the provided sources — use pharmacy dosing"
+              ],
+              "evidenceLevel": "MODERATE",
+              "evidenceNote": [
+                "Hoh 2023 §8 Rec 4: COR 2a, LOE B-R"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "BP",
+              "condition": "Symptomatic vasospasm",
+              "role": "RECOMMENDED",
+              "target": "Raising SBP may be reasonable to limit DCI",
+              "notes": [
+                "Hoh Figure 3 labels its DCI-response box (elevate BP, ensure euvolemia, imaging) Class 2a; the recommendation table says 2b — table used",
+                "Retrospective: more neurological improvement with norepinephrine than phenylephrine (94% vs 71%)",
+                "HIMALAIA (only RCT) stopped early, underpowered"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Hoh 2023 §8.3 Rec 3: COR 2b, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Endovascular rescue",
+              "condition": "Severe vasospasm",
+              "role": "RECOMMENDED",
+              "target": "IA vasodilator therapy and/or cerebral angioplasty may be reasonable",
+              "notes": [
+                "Neuro-IR decision"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Hoh 2023 §8.3 Rec 4 (IA vasodilators): COR 2b, LOE B-NR",
+                "Hoh 2023 §8.3 Rec 5 (angioplasty): COR 2b, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Statins",
+              "condition": "Routine use to improve outcome",
+              "role": "NOT_RECOMMENDED",
+              "target": "Not recommended",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8.3 Rec 6: COR 3: No Benefit, LOE A"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "IV magnesium",
+              "condition": "Routine use to improve outcome",
+              "role": "NOT_RECOMMENDED",
+              "target": "Not recommended",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8.3 Rec 7: COR 3: No Benefit, LOE A"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Seizures",
+          "rows": [
+            {
+              "parameter": "cEEG",
+              "condition": "Fluctuating exam, depressed mental state, ruptured MCA aneurysm, high-grade SAH, ICH, hydrocephalus or cortical infarction",
+              "role": "RECOMMENDED",
+              "target": "Reasonable to detect seizures",
+              "notes": [
+                "Order/consult item; interpretation by neurophysiology"
+              ],
+              "evidenceLevel": "MODERATE",
+              "evidenceNote": [
+                "Hoh 2023 §8.5 Rec 1: COR 2a, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "ASM prophylaxis",
+              "condition": "High seizure-risk features (ruptured MCA aneurysm, high-grade SAH, ICH, hydrocephalus, cortical infarction)",
+              "role": "RECOMMENDED",
+              "target": "Prophylactic ASM may be reasonable",
+              "notes": [],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Hoh 2023 §8.5 Rec 2: COR 2b, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "ASM prophylaxis",
+              "condition": "No high seizure-risk features",
+              "role": "NOT_RECOMMENDED",
+              "target": "Not beneficial",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8.5 Rec 3: COR 3: No Benefit, LOE B-R"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "Phenytoin",
+              "condition": "Seizure prevention or prophylaxis",
+              "role": "NOT_RECOMMENDED",
+              "target": "Avoid — excess morbidity and mortality",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8.5 Rec 4: COR 3: Harm, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "ASM duration",
+              "condition": "Presented with seizures",
+              "role": "RECOMMENDED",
+              "target": "Treat ≤7 days (perioperative period)",
+              "notes": [],
+              "evidenceLevel": "MODERATE",
+              "evidenceNote": [
+                "Hoh 2023 §8.5 Rec 5: COR 2a, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            },
+            {
+              "parameter": "ASM duration",
+              "condition": "Presented with seizures, no prior epilepsy",
+              "role": "NOT_RECOMMENDED",
+              "target": ">7 days doesn't reduce future SAH-associated seizure risk",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8.5 Rec 6: COR 3: No Benefit, LOE B-NR"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "VTE",
+          "rows": [
+            {
+              "parameter": "VTE prophylaxis",
+              "condition": "Aneurysm secured",
+              "role": "RECOMMENDED",
+              "target": "Pharmacological or mechanical prophylaxis",
+              "notes": [
+                "Small RCT: enoxaparin 40 mg SC daily after aneurysm treatment didn't increase bleeding",
+                "Optimal timing relative to securing and procedures is unclear (Hoh text)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hoh 2023 §8 Rec 6: COR 1, LOE C-LD"
+              ],
+              "sources": [
+                "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Don't stop nimodipine for manageable hypotension — interruptions were associated with more DCI (Hoh text)",
+        "Nimodipine plus phenytoin: phenytoin is both a strong CYP3A4 inducer (label) and harmful as SAH prophylaxis (Hoh)"
+      ],
+      "keyNumbers": [
+        "Nimodipine 60 mg q4h × 21 d (30 mg q4h in cirrhosis)",
+        "Unsecured: no SBP target; avoid MAP <65 and BP swings",
+        "Euvolemia; no prophylactic hypervolemia or augmentation",
+        "Seizure ppx only if high-risk; no phenytoin; ASM ≤7 d",
+        "Peak DCI risk days 6–10"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "reference-cards:neuro-icu-targets",
+        "consult-workups:sah-workup",
+        "antiseizure-medications:levetiracetam",
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ],
+      "sources": [
+        "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436",
+        "Nimodipine capsules US prescribing information. Bionpharma Inc.; revised 12/2025 (DailyMed label)"
+      ],
+      "lastReviewed": "2026-11-07"
+    },
+    {
+      "id": "thrombophilia-test-validity",
+      "title": "Thrombophilia tests: validity by timing and anticoagulant",
+      "searchTerms": [
+        "thrombophilia",
+        "hypercoagulable workup",
+        "test interference",
+        "lupus anticoagulant on DOAC",
+        "protein C warfarin",
+        "protein S",
+        "antithrombin heparin",
+        "factor V Leiden",
+        "prothrombin gene",
+        "antiphospholipid",
+        "JAK2",
+        "PNH",
+        "lipoprotein(a)",
+        "homocysteine"
+      ],
+      "scopeNote": "Whether each result can be trusted during acute thrombosis or on UFH/LMWH, a VKA or a DOAC. Inherited thrombophilia testing rarely changes default antiplatelet therapy after arterial stroke unless it shows APS or venous thrombosis (Kleindorfer 2021). AT, protein C and protein S deficiency can be acquired, and levels vary within a person (Middeldorp 2023). \"Not addressed by sources\" means no source in this app covers that cell.",
+      "sections": [
+        {
+          "kind": "MATRIX",
+          "heading": "Test validity by setting",
+          "columns": [
+            {
+              "key": "acute-thrombosis",
+              "label": "Acute thrombosis"
+            },
+            {
+              "key": "ufh-lmwh",
+              "label": "UFH / LMWH"
+            },
+            {
+              "key": "vka",
+              "label": "VKA"
+            },
+            {
+              "key": "doac",
+              "label": "DOAC"
+            }
+          ],
+          "rows": [
+            {
+              "test": "Factor V Leiden / prothrombin 20210A (PCR genotype)",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "Genotype is accurate at any time",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+                  ]
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "Unaffected",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                    "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+                  ]
+                },
+                {
+                  "column": "vka",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "Unaffected",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                    "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+                  ]
+                },
+                {
+                  "column": "doac",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "Unaffected",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                    "Favaloro 2019: single-lab ex vivo audit (ungraded)",
+                    "ASCP Choosing Wisely: society recommendation (no formal grading)"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+                    "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020"
+                  ]
+                }
+              ],
+              "notes": [
+                {
+                  "text": "The functional APCR screen is not the genotype: it is unreliable on DOACs and warfarin, and the direction depends on the assay (false APCR-positive ratios in an RVVT-based audit; ICSH lists APCR among results a DOAC can falsely raise). On anticoagulation, send PCR.",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ICSH 2018: consensus recommendation (Table 3)",
+                    "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+                  ],
+                  "sources": [
+                    "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480",
+                    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+                  ]
+                }
+              ]
+            },
+            {
+              "test": "Anticardiolipin / anti-β2-glycoprotein I (solid-phase)",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "Accurate at any time",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+                  ]
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "Reliable on anticoagulation",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+                  ]
+                },
+                {
+                  "column": "vka",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "Reliable on anticoagulation",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+                  ]
+                },
+                {
+                  "column": "doac",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "ELISA-based aCL/aβ2GPI unaffected",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                    "ASCP Choosing Wisely: society recommendation (no formal grading)"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                    "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020"
+                  ]
+                }
+              ],
+              "notes": [
+                {
+                  "text": "Confirm a positive result at ≥12 weeks — transient antibodies occur with infection.",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2014: consensus guidance"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Testing for antiphospholipid antibodies with solid phase assays: guidance from the SSC of the ISTH. J Thromb Haemost 2014;12:792-795. doi:10.1111/jth.12537"
+                  ]
+                },
+                {
+                  "text": "IgM rheumatoid factor can falsely raise IgM aCL/aβ2GPI; avoid hemolyzed, icteric or lipemic samples. Interpret together with the LA result.",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2014: consensus guidance"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Testing for antiphospholipid antibodies with solid phase assays: guidance from the SSC of the ISTH. J Thromb Haemost 2014;12:792-795. doi:10.1111/jth.12537"
+                  ]
+                }
+              ]
+            },
+            {
+              "test": "Lupus anticoagulant (dRVVT + aPTT-based)",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "CAUTION",
+                  "direction": "EITHER",
+                  "text": "Acute-phase FVIII can mask LA; CRP can cause false positives. Interpret with caution — acute testing may still be needed in a new stroke when APS is suspected",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+                  ]
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "ASSAY_DEPENDENT",
+                  "direction": "FALSE_HIGH",
+                  "text": "Many reagents neutralize heparin; false positives at supratherapeutic anti-Xa. LMWH: draw ≥12 h after the dose, near the next one, with an anti-Xa level",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)",
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047",
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+                  ]
+                },
+                {
+                  "column": "vka",
+                  "status": "UNRELIABLE",
+                  "direction": "EITHER",
+                  "text": "False positives and negatives; mixing with normal plasma is not reliable. If feasible, test 1–2 weeks after stopping the VKA (LMWH bridge if needed)",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+                  ]
+                },
+                {
+                  "column": "doac",
+                  "status": "UNRELIABLE",
+                  "direction": "FALSE_HIGH",
+                  "text": "False positives even at low DOAC levels. If feasible, hold the DOAC ≥48 h (longer with renal impairment) and check a DOAC level; adsorbents only with lab input",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)",
+                    "ICSH 2018: consensus recommendation (Table 3)",
+                    "ASCP Choosing Wisely: society recommendation (no formal grading)"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047",
+                    "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480",
+                    "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020"
+                  ]
+                }
+              ],
+              "notes": [
+                {
+                  "text": "Repeat a positive LA at ≥12 weeks to confirm persistence; interpret with aCL and aβ2GPI.",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+                  ]
+                },
+                {
+                  "text": "Put the anticoagulant on the request — the lab needs it to interpret the result.",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+                  ]
+                },
+                {
+                  "text": "In pregnancy, positive or negative results are unreliable; retest after delivery (≥6 weeks, ideally 3 months).",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+                  ],
+                  "sources": [
+                    "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+                  ]
+                }
+              ]
+            },
+            {
+              "test": "Antithrombin (activity)",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "UNRELIABLE",
+                  "direction": "FALSE_LOW",
+                  "text": "Can be low from consumption — don't diagnose hereditary deficiency during an active clot",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                    "ASCP Choosing Wisely: society recommendation (no formal grading)",
+                    "AHA/ASA 2021: supportive text (ungraded)"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                    "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+                    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375"
+                  ]
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "UNRELIABLE",
+                  "direction": "FALSE_LOW",
+                  "text": "UFH and LMWH lowered AT in an ex vivo audit; avoid testing on heparin",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Favaloro 2019: single-lab ex vivo audit (ungraded)",
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+                  ],
+                  "sources": [
+                    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+                  ]
+                },
+                {
+                  "column": "vka",
+                  "status": "VALID",
+                  "direction": null,
+                  "text": "Warfarin did not affect AT in an ex vivo audit (single lab, chromogenic assay)",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+                  ],
+                  "sources": [
+                    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+                  ]
+                },
+                {
+                  "column": "doac",
+                  "status": "ASSAY_DEPENDENT",
+                  "direction": "FALSE_HIGH",
+                  "text": "Falsely high when the kit's substrate matches the drug (FXa-based kit with anti-Xa DOACs; thrombin-based kit with dabigatran); the other substrate is unaffected",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ICSH 2018: consensus recommendation (Table 3)"
+                  ],
+                  "sources": [
+                    "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480"
+                  ]
+                }
+              ],
+              "notes": [
+                {
+                  "text": "AT, protein C and protein S deficiency can be acquired (comorbidity, hormones), and levels fluctuate within a person.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "ASH 2023: ungraded background statement"
+                  ],
+                  "sources": [
+                    "Middeldorp S, et al. American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing. Blood Adv 2023;7:7101-7138. doi:10.1182/bloodadvances.2023010177"
+                  ]
+                }
+              ]
+            },
+            {
+              "test": "Protein C / protein S",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "UNRELIABLE",
+                  "direction": "FALSE_LOW",
+                  "text": "Can be low from consumption; defer or repeat ≥4–6 weeks after the event",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                    "ASCP Choosing Wisely: society recommendation (no formal grading)",
+                    "AHA/ASA 2021: supportive text (ungraded)"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                    "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+                    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375"
+                  ]
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "ASSAY_DEPENDENT",
+                  "direction": null,
+                  "text": "Most kits contain heparin neutralizers; little effect seen ex vivo (chromogenic PC, free PS antigen)",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+                  ],
+                  "sources": [
+                    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+                  ]
+                },
+                {
+                  "column": "vka",
+                  "status": "UNRELIABLE",
+                  "direction": "FALSE_LOW",
+                  "text": "Vitamin K–dependent: falsely low on warfarin",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Favaloro 2019: single-lab ex vivo audit (ungraded)",
+                    "ASCP Choosing Wisely: society recommendation (no formal grading)",
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+                  ],
+                  "sources": [
+                    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+                    "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+                  ]
+                },
+                {
+                  "column": "doac",
+                  "status": "ASSAY_DEPENDENT",
+                  "direction": "FALSE_HIGH",
+                  "text": "Clot-based PC/PS activity falsely high (can mask deficiency); chromogenic PC and free PS antigen unaffected",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "ICSH 2018: consensus recommendation (Table 3)"
+                  ],
+                  "sources": [
+                    "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480"
+                  ]
+                }
+              ],
+              "notes": [
+                {
+                  "text": "Pregnancy, female sex and estrogen lower protein S: use sex-specific ranges; test before pregnancy or off estrogen.",
+                  "evidenceLevel": "CONSENSUS",
+                  "evidenceNote": [
+                    "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+                  ],
+                  "sources": [
+                    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+                  ]
+                }
+              ]
+            },
+            {
+              "test": "JAK2 V617F / CALR / MPL",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                },
+                {
+                  "column": "vka",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                },
+                {
+                  "column": "doac",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                }
+              ],
+              "notes": [
+                {
+                  "text": "Screen for JAK2 V617F in unexplained splanchnic vein thrombosis with normal blood counts.",
+                  "evidenceLevel": "STRONG",
+                  "evidenceNote": [
+                    "BSH 2021: GRADE 1B"
+                  ],
+                  "sources": [
+                    "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766"
+                  ]
+                },
+                {
+                  "text": "Consider JAK2 V617F in selected unexplained cerebral venous thrombosis; consider CALR in splanchnic or cerebral venous thrombosis.",
+                  "evidenceLevel": "WEAK",
+                  "evidenceNote": [
+                    "BSH 2021: GRADE 2C"
+                  ],
+                  "sources": [
+                    "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766"
+                  ]
+                },
+                {
+                  "text": "Consider JAK2/CALR/MPL in arterial or unprovoked venous thrombosis with a mildly or variably raised hematocrit or platelet count persisting 2–3 months.",
+                  "evidenceLevel": "WEAK",
+                  "evidenceNote": [
+                    "BSH 2021: GRADE 2C"
+                  ],
+                  "sources": [
+                    "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766"
+                  ]
+                },
+                {
+                  "text": "Very low allele burdens (e.g. JAK2 V617F <1%) are reported as such — their significance is less certain because low-level JAK2 V617F occurs in the general population.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "BSH 2021: ungraded text"
+                  ],
+                  "sources": [
+                    "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766"
+                  ]
+                },
+                {
+                  "text": "Peripheral blood is adequate; assay sensitivity varies by method and sequencing can miss low-level mutations.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Xia 2016: narrative review (ungraded)"
+                  ],
+                  "sources": [
+                    "Xia D, Hasserjian RP. Molecular testing for JAK2, MPL, and CALR in myeloproliferative neoplasms. Am J Hematol 2016;91:1277-1280. doi:10.1002/ajh.24578"
+                  ]
+                }
+              ]
+            },
+            {
+              "test": "PNH (flow cytometry)",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                },
+                {
+                  "column": "vka",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                },
+                {
+                  "column": "doac",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                }
+              ],
+              "notes": [
+                {
+                  "text": "Test with thrombosis at unusual sites (intra-abdominal, cerebral or dermal veins), hemolysis or cytopenia.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Devalet 2015: narrative review (ungraded)",
+                    "Preis 2014: educational review (ungraded)"
+                  ],
+                  "sources": [
+                    "Devalet B, et al. Pathophysiology, diagnosis, and treatment of paroxysmal nocturnal hemoglobinuria: a review. Eur J Haematol 2015;95:190-198. doi:10.1111/ejh.12543",
+                    "Preis M, Lowrey CH. Laboratory tests for paroxysmal nocturnal hemoglobinuria. Am J Hematol 2014;89:339-341. doi:10.1002/ajh.23612"
+                  ]
+                },
+                {
+                  "text": "Use granulocyte/monocyte (FLAER-based) analysis — the red-cell clone is underestimated after hemolysis or transfusion.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Preis 2014: educational review (ungraded)",
+                    "Devalet 2015: narrative review (ungraded)"
+                  ],
+                  "sources": [
+                    "Preis M, Lowrey CH. Laboratory tests for paroxysmal nocturnal hemoglobinuria. Am J Hematol 2014;89:339-341. doi:10.1002/ajh.23612",
+                    "Devalet B, et al. Pathophysiology, diagnosis, and treatment of paroxysmal nocturnal hemoglobinuria: a review. Eur J Haematol 2015;95:190-198. doi:10.1111/ejh.12543"
+                  ]
+                }
+              ]
+            },
+            {
+              "test": "Lipoprotein(a)",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "CAUTION",
+                  "direction": "FALSE_HIGH",
+                  "text": "Possible acute-phase rise (uncertain)",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "NHLBI working group 2018 (ungraded)",
+                    "Koutsogianni 2023: narrative review (ungraded)"
+                  ],
+                  "sources": [
+                    "Tsimikas S, et al. Unmet Needs in Understanding Lipoprotein(a) Pathophysiology: NHLBI Working Group Recommendations to Reduce Risk of Cardiovascular Disease and Aortic Stenosis. J Am Coll Cardiol 2018;71:177-192. doi:10.1016/j.jacc.2017.11.014",
+                    "Koutsogianni AD, et al. Effects of Lipid-Modifying and Other Drugs on Lipoprotein(a) Levels—Potent Clinical Implications. Pharmaceuticals 2023;16:750. doi:10.3390/ph16050750"
+                  ]
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                },
+                {
+                  "column": "vka",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                },
+                {
+                  "column": "doac",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                }
+              ],
+              "notes": [
+                {
+                  "text": "Mostly genetic and stable over a lifetime — one measurement usually suffices.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Tsimikas 2017: review (ungraded)",
+                    "Koutsogianni 2023: narrative review (ungraded)"
+                  ],
+                  "sources": [
+                    "Tsimikas S. A Test in Context: Lipoprotein(a): Diagnosis, Prognosis, Controversies, and Emerging Therapies. J Am Coll Cardiol 2017;69:692-711. doi:10.1016/j.jacc.2016.11.042",
+                    "Koutsogianni AD, et al. Effects of Lipid-Modifying and Other Drugs on Lipoprotein(a) Levels—Potent Clinical Implications. Pharmaceuticals 2023;16:750. doi:10.3390/ph16050750"
+                  ]
+                },
+                {
+                  "text": "mg/dL and nmol/L are not interchangeable (apo(a) size varies); compare results in the same unit.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "NHLBI working group 2018 (ungraded)"
+                  ],
+                  "sources": [
+                    "Tsimikas S, et al. Unmet Needs in Understanding Lipoprotein(a) Pathophysiology: NHLBI Working Group Recommendations to Reduce Risk of Cardiovascular Disease and Aortic Stenosis. J Am Coll Cardiol 2018;71:177-192. doi:10.1016/j.jacc.2017.11.014"
+                  ]
+                }
+              ]
+            },
+            {
+              "test": "Homocysteine (total)",
+              "cells": [
+                {
+                  "column": "acute-thrombosis",
+                  "status": "CAUTION",
+                  "direction": "FALSE_LOW",
+                  "text": "Acute value may underestimate (lower acutely in some cohorts; unchanged at 3 months in a large one) — recheck at ≥3 months if it changes management",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Nygård 1999: review (ungraded)",
+                    "Meiklejohn 2001: prospective cohort, n=82 resampled (ungraded)",
+                    "Haapaniemi 2007: serial-measurement cohort (ungraded)",
+                    "Shi 2018: prospective cohort, n=2800 (ungraded)"
+                  ],
+                  "sources": [
+                    "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454",
+                    "Meiklejohn DJ, et al. Plasma homocysteine concentrations in the acute and convalescent periods of atherothrombotic stroke. Stroke 2001;32:57-62",
+                    "Haapaniemi E, et al. Serial measurements of plasma homocysteine levels in early and late phases of ischemic stroke. Eur J Neurol 2007;14:12-17. doi:10.1111/j.1468-1331.2006.01518.x",
+                    "Shi Z, et al. Changes in total homocysteine levels after acute stroke and recurrence of stroke. Sci Rep 2018;8:6993. doi:10.1038/s41598-018-25398-5"
+                  ]
+                },
+                {
+                  "column": "ufh-lmwh",
+                  "status": "CAUTION",
+                  "direction": "FALSE_LOW",
+                  "text": "Enoxaparin lowered total homocysteine over 3 days in warfarin-treated patients (n=24); UFH not studied",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Haviv 2002: prospective before-after study, n=24 (ungraded)"
+                  ],
+                  "sources": [
+                    "Haviv Y, et al. Effect of enoxaparin on homocysteine concentration in warfarin-treated patients. Ann Pharmacother 2002;36:1355-1359"
+                  ]
+                },
+                {
+                  "column": "vka",
+                  "status": "CAUTION",
+                  "direction": "FALSE_HIGH",
+                  "text": "Higher levels with lower folate on long-term VKA with a vitamin K–restricted diet (n=20) — attributed to diet/folate, not warfarin itself",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Muruá 2001: cross-sectional brief report, n=20 vs 35 (ungraded)"
+                  ],
+                  "sources": [
+                    "Muruá A, et al. Unsuspected hyperhomocysteinemia in chronically anticoagulated patients. Blood Coagul Fibrinolysis 2001;12:79-80"
+                  ]
+                },
+                {
+                  "column": "doac",
+                  "status": "NOT_ADDRESSED",
+                  "direction": null,
+                  "text": "Not addressed by sources",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [],
+                  "sources": []
+                }
+              ],
+              "notes": [
+                {
+                  "text": "Pre-analytic: levels rise about 15–20% per hour in unseparated blood at room temperature — keep on ice or separate promptly.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Nygård 1999: review (ungraded)"
+                  ],
+                  "sources": [
+                    "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454"
+                  ]
+                },
+                {
+                  "text": "Raised by renal impairment, B12/folate deficiency, methotrexate, nitrous oxide and anticonvulsants.",
+                  "evidenceLevel": "NOT_GRADED",
+                  "evidenceNote": [
+                    "Nygård 1999: review (ungraded)"
+                  ],
+                  "sources": [
+                    "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Sending the full panel during the acute admission — AT, protein C/S and LA are least reliable then; genotypes and solid-phase aPL are not affected (Stevens 2016; Devreese 2020)",
+        "Treating an abnormal APCR on a DOAC or warfarin as factor V Leiden — send PCR (Favaloro 2019)",
+        "Leaving the anticoagulant off the LA request (Devreese 2020)"
+      ],
+      "keyNumbers": [
+        "LA on LMWH: draw ≥12 h after the dose, with anti-Xa (Devreese 2020)",
+        "LA on a DOAC: hold ≥48 h if feasible (longer with renal impairment) and check a DOAC level (Devreese 2020)",
+        "Positive aPL: repeat at ≥12 weeks (Devreese 2014, 2020)",
+        "Homocysteine after stroke: recheck at ≥3 months if it changes management (Meiklejohn 2001; Haapaniemi 2007; Shi 2018)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "consult-workups:young-stroke-workup",
+        "vascular-antithrombotics:cvt-anticoagulation",
+        "vascular-antithrombotics:pregnancy-antithrombotics"
+      ],
+      "sources": [
+        "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+        "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+        "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+        "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480",
+        "Devreese KMJ, et al. Testing for antiphospholipid antibodies with solid phase assays: guidance from the SSC of the ISTH. J Thromb Haemost 2014;12:792-795. doi:10.1111/jth.12537",
+        "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047",
+        "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+        "Middeldorp S, et al. American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing. Blood Adv 2023;7:7101-7138. doi:10.1182/bloodadvances.2023010177",
+        "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766",
+        "Xia D, Hasserjian RP. Molecular testing for JAK2, MPL, and CALR in myeloproliferative neoplasms. Am J Hematol 2016;91:1277-1280. doi:10.1002/ajh.24578",
+        "Devalet B, et al. Pathophysiology, diagnosis, and treatment of paroxysmal nocturnal hemoglobinuria: a review. Eur J Haematol 2015;95:190-198. doi:10.1111/ejh.12543",
+        "Preis M, Lowrey CH. Laboratory tests for paroxysmal nocturnal hemoglobinuria. Am J Hematol 2014;89:339-341. doi:10.1002/ajh.23612",
+        "Tsimikas S, et al. Unmet Needs in Understanding Lipoprotein(a) Pathophysiology: NHLBI Working Group Recommendations to Reduce Risk of Cardiovascular Disease and Aortic Stenosis. J Am Coll Cardiol 2018;71:177-192. doi:10.1016/j.jacc.2017.11.014",
+        "Koutsogianni AD, et al. Effects of Lipid-Modifying and Other Drugs on Lipoprotein(a) Levels—Potent Clinical Implications. Pharmaceuticals 2023;16:750. doi:10.3390/ph16050750",
+        "Tsimikas S. A Test in Context: Lipoprotein(a): Diagnosis, Prognosis, Controversies, and Emerging Therapies. J Am Coll Cardiol 2017;69:692-711. doi:10.1016/j.jacc.2016.11.042",
+        "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454",
+        "Meiklejohn DJ, et al. Plasma homocysteine concentrations in the acute and convalescent periods of atherothrombotic stroke. Stroke 2001;32:57-62",
+        "Haapaniemi E, et al. Serial measurements of plasma homocysteine levels in early and late phases of ischemic stroke. Eur J Neurol 2007;14:12-17. doi:10.1111/j.1468-1331.2006.01518.x",
+        "Shi Z, et al. Changes in total homocysteine levels after acute stroke and recurrence of stroke. Sci Rep 2018;8:6993. doi:10.1038/s41598-018-25398-5",
+        "Haviv Y, et al. Effect of enoxaparin on homocysteine concentration in warfarin-treated patients. Ann Pharmacother 2002;36:1355-1359",
+        "Muruá A, et al. Unsuspected hyperhomocysteinemia in chronically anticoagulated patients. Blood Coagul Fibrinolysis 2001;12:79-80"
+      ],
+      "lastReviewed": "2026-11-07"
+    },
+    {
+      "id": "inpatient-parkinson-disease",
+      "title": "Inpatient Parkinson disease: NPO, tube, antiemetics, psychosis",
+      "searchTerms": [
+        "Parkinson",
+        "PD",
+        "NPO Parkinson",
+        "rotigotine",
+        "Neupro",
+        "carbidopa levodopa",
+        "Sinemet",
+        "crush Sinemet",
+        "apomorphine",
+        "ondansetron apomorphine",
+        "pimavanserin",
+        "Nuplazid",
+        "quetiapine Parkinson",
+        "clozapine Parkinson",
+        "antiemetic Parkinson",
+        "LEDD"
+      ],
+      "scopeNote": "Rounds lookup for hospitalized adults with PD on dopaminergic therapy — not a protocol. Get movement-disorder input early when the usual regimen can't be given.",
+      "sections": [
+        {
+          "heading": "Keep dopaminergic therapy going",
+          "rows": [
+            {
+              "parameter": "Home regimen",
+              "condition": "Any admission, incl. perioperative",
+              "role": "RECOMMENDED",
+              "target": "Keep the usual drugs, doses and dose times; resume the usual dose as soon as oral medication is allowed",
+              "notes": [
+                "Labels: carbidopa-levodopa can continue up to anesthesia while oral medication is permitted; if interrupted, watch for an NMS-like syndrome",
+                "Abrupt reduction or withdrawal can cause hyperpyrexia, rigidity and altered consciousness — see acute-neuro:nms-parkinsonism-hyperpyrexia",
+                "Engage neurology / movement disorders early if the usual regimen can't be given (BMJ; Hwang)"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)",
+                "Hwang & Norris 2021 narrative review: ungraded",
+                "Sinemet and Sinemet CR PI, Interruption of Therapy: ungraded"
+              ],
+              "sources": [
+                "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+                "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+                "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018"
+              ]
+            },
+            {
+              "parameter": "Stopping rotigotine",
+              "condition": "Neupro taper",
+              "role": "RECOMMENDED",
+              "target": "Reduce by no more than 2 mg/24 h, preferably every other day — don't stop abruptly",
+              "notes": [
+                "Label §5.14: hyperpyrexia and confusion reported with rapid dose reduction, withdrawal or changes in antiparkinsonian therapy"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Neupro PI §2.4, §5.14"
+              ],
+              "sources": [
+                "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Enteral route first",
+          "rows": [
+            {
+              "parameter": "Tube route",
+              "condition": "Can't swallow, gut working",
+              "role": "RECOMMENDED",
+              "target": "Give carbidopa-levodopa via NG; immediate-release tablets can be crushed",
+              "notes": [
+                "Hwang: NG route for patients who can't continue their home regimen; a crushed IR dose in an acidic liquid (e.g., orange juice) is used as OFF-period rescue",
+                "Orally disintegrating carbidopa-levodopa still needs gut absorption (Hwang); BMJ cites two cases of worsening during ileus",
+                "The Sinemet IR label doesn't address crushing or tube administration — confirm flush/dispersal with pharmacy"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "Hwang & Norris 2021 narrative review: ungraded",
+                "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)",
+                "Sinemet PI: silent on tube administration"
+              ],
+              "sources": [
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+                "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+                "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026"
+              ]
+            },
+            {
+              "parameter": "Controlled release",
+              "condition": "Sinemet CR",
+              "role": "NOT_RECOMMENDED",
+              "target": "Never crush or chew — swallow whole or half tablet",
+              "notes": [
+                "If switching CR → IR for tube use: CR levodopa bioavailability is ~70–75% of IR (label Table 2); BMJ suggests ~30% lower dose when switching CR to dispersible levodopa",
+                "Label IR → CR direction: give ~10% (up to 30%) more levodopa as CR",
+                "Other ER carbidopa-levodopa products aren't covered by the provided sources"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Sinemet CR PI: Dosage and Administration, Table 2; Precautions (information for patients)",
+                "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)"
+              ],
+              "sources": [
+                "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018",
+                "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718"
+              ]
+            },
+            {
+              "parameter": "Feeds and timing",
+              "condition": "Enteral feeds or meals",
+              "role": "RECOMMENDED",
+              "target": "Give doses on schedule; high-protein intake can delay and reduce levodopa absorption",
+              "notes": [
+                "Iron salts chelate levodopa — coadminister with caution (labels)",
+                "Avoid drugs that slow gastric emptying (Hwang)",
+                "No provided source gives a feed-hold interval — follow local pharmacy/nutrition practice"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Sinemet and Sinemet CR PI: Precautions, Drug Interactions: ungraded",
+                "Hwang & Norris 2021 narrative review: ungraded"
+              ],
+              "sources": [
+                "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+                "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018",
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "No reliable enteral route → rotigotine (BMJ 2010 algorithm)",
+          "rows": [
+            {
+              "parameter": "When",
+              "condition": "Non-oral route needed",
+              "role": "RECOMMENDED",
+              "target": "Both: oral route expected to be delayed AND ileus or another cause of poor absorption",
+              "notes": [
+                "Hwang: transdermal rotigotine or SC apomorphine may be considered"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods) (figure: indications box)",
+                "Hwang & Norris 2021 narrative review: ungraded"
+              ],
+              "sources": [
+                "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            },
+            {
+              "parameter": "LEDD — BMJ factors",
+              "condition": "Use BMJ's own factors, not calc:ledd",
+              "role": "RECOMMENDED",
+              "target": "A = levodopa mg/day (×0.7 if CR), then ×1.3 if on a COMT inhibitor. B = agonist mg/day × factor (ropinirole 20, rotigotine 20, pramipexole base 100, cabergoline 100, bromocriptine 10, apomorphine 10). LEDD = A + B",
+              "notes": [
+                "Levodopa dose excludes carbidopa",
+                "calc:ledd uses Jost 2023 factors, which differ (CR 0.75; COMT +0.33 or +0.5 of covered levodopa; pramipexole base 142.86; rotigotine 30.3) — don't feed its result into these steps"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods) (figure: LEF table)",
+                "Jost 2023 cited only for the factor comparison"
+              ],
+              "sources": [
+                "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+                "Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252"
+              ]
+            },
+            {
+              "parameter": "Rotigotine dose",
+              "condition": "BMJ adjusted LEDD ≤350 mg",
+              "role": "RECOMMENDED",
+              "target": "Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily",
+              "notes": [
+                "BMJ rounds up to 16 mg; the US label maximum is 6 mg/24 h (early PD) and 8 mg/24 h (advanced PD) — doses above 8 mg exceed the label",
+                "Example: levodopa IR 300 mg/day → 300 × 0.55 = 165 → 8.25 → 8 mg/24 h",
+                "Example: levodopa IR 600 mg/day → 330 → 16.5 → 16 mg/24 h per BMJ (twice the label maximum)",
+                "BMJ: the ×0.55 deliberately starts below equivalence; review and adjust early; may be too weak for high-dose regimens"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods) (figure: rotigotine box; text: switching section)",
+                "Neupro PI §2.1 (maximum doses)"
+              ],
+              "sources": [
+                "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+                "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+              ]
+            },
+            {
+              "parameter": "Patch handling",
+              "condition": "Neupro",
+              "role": "RECOMMENDED",
+              "target": "Strengths 1, 2, 3, 4, 6, 8 mg/24 h (combine patches for the dose); don't cut; remove before MRI or cardioversion (aluminum backing — burns)",
+              "notes": [
+                "Drug detectable ~3 h after application (range 1–8 h); Tmax 15–18 h; steady state in 2–3 days",
+                "No relevant PK change in renal impairment, including hemodialysis",
+                "Keep external heat off the patch — may increase absorption",
+                "Rotate sites; don't reuse a site within 14 days",
+                "Contains sodium metabisulfite (sulfite sensitivity)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Neupro PI §2.3, §3, §5.1, §5.12, §5.13, §12.3, §17"
+              ],
+              "sources": [
+                "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Antiemetics",
+          "rows": [
+            {
+              "parameter": "Ondansetron",
+              "condition": "Nausea, not on apomorphine",
+              "role": "RECOMMENDED",
+              "target": "Acceptable — doesn't appear to worsen motor symptoms",
+              "notes": [
+                "Contraindicated with apomorphine — see next row"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)",
+                "Hwang & Norris 2021 narrative review: ungraded"
+              ],
+              "sources": [
+                "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            },
+            {
+              "parameter": "5-HT3 antagonists",
+              "condition": "Patient on apomorphine",
+              "role": "NOT_RECOMMENDED",
+              "target": "Contraindicated: apomorphine with any 5-HT3 antagonist (ondansetron, granisetron, dolasetron, palonosetron, alosetron) — profound hypotension and loss of consciousness",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Apokyn PI §2.2, §4 Contraindications, §7.1"
+              ],
+              "sources": [
+                "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022"
+              ]
+            },
+            {
+              "parameter": "Dopamine-blocking antiemetics",
+              "condition": "All PD patients",
+              "role": "NOT_RECOMMENDED",
+              "target": "Avoid metoclopramide, prochlorperazine, promethazine, chlorpromazine, haloperidol, droperidol",
+              "notes": [
+                "Apokyn §5.2 names haloperidol, chlorpromazine, promethazine, prochlorperazine and metoclopramide as worsening PD",
+                "Droperidol: class-level statement (dopamine-blocking antiemetics, Hwang); agent not named in provided sources",
+                "Metoclopramide may adversely affect disease control despite faster gastric emptying (Sinemet labels)",
+                "Dopamine antagonists may reduce the effect of rotigotine and apomorphine (labels)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Apokyn PI §5.2, §7.4; Neupro PI §7.1; Sinemet PI Drug Interactions: ungraded",
+                "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)",
+                "Hwang & Norris 2021 narrative review: ungraded"
+              ],
+              "sources": [
+                "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
+                "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026",
+                "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+                "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Psychosis and agitation",
+          "rows": [
+            {
+              "parameter": "First steps",
+              "condition": "New hallucinations, psychosis or confusion",
+              "role": "RECOMMENDED",
+              "target": "Look for a trigger (infection, incl. UTI); then withdraw PD drugs in this order: anticholinergics → dopamine agonists → amantadine → MAO-B inhibitors → COMT inhibitors → levodopa",
+              "notes": [
+                "Weaning carbidopa-levodopa may be limited by motor severity — then add an antipsychotic (Hwang)"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "Hwang & Norris 2021 narrative review: ungraded (Table 3)"
+              ],
+              "sources": [
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            },
+            {
+              "parameter": "Pimavanserin",
+              "condition": "PD psychosis (FDA indication)",
+              "role": "RECOMMENDED",
+              "target": "34 mg PO once daily, no titration (10 mg with a strong CYP3A4 inhibitor) — not a rapid agent: benefit shown over 6 weeks",
+              "notes": [
+                "QT prolongation — avoid with other QT-prolonging drugs; avoid strong or moderate CYP3A4 inducers",
+                "Capsule may be opened onto soft food; tube use not addressed in the label",
+                "Boxed warning: increased mortality in elderly patients with dementia-related psychosis (approved only when PD-related)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "MDS 2019 (Seppi) Table 6: efficacious; acceptable risk without specialized monitoring; clinically useful",
+                "Nuplazid PI §1, §2, §5.2, §14"
+              ],
+              "sources": [
+                "Nuplazid (pimavanserin) capsules and tablets US prescribing information. Acadia; revised 4/2026",
+                "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602"
+              ]
+            },
+            {
+              "parameter": "Quetiapine",
+              "condition": "PD psychosis",
+              "role": "RECOMMENDED",
+              "target": "Low dose, off-label — MDS calls it a pragmatic first choice",
+              "notes": [
+                "No dose in the provided sources",
+                "No high-quality placebo RCT; similar efficacy to clozapine in clozapine-controlled trials",
+                "Blocks D2 but dissociates faster; used off-label with caution (Hwang)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "MDS 2019 (Seppi) Table 6: insufficient evidence; acceptable risk without specialized monitoring; possibly useful",
+                "Hwang & Norris 2021 narrative review: ungraded"
+              ],
+              "sources": [
+                "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            },
+            {
+              "parameter": "Clozapine",
+              "condition": "PD psychosis, failed quetiapine/pimavanserin",
+              "role": "RECOMMENDED",
+              "target": "Efficacious but off-label, with label ANC monitoring: baseline ANC ≥1500/µL (≥1000 in benign ethnic neutropenia), weekly for 6 months; start 12.5 mg once or twice daily",
+              "notes": [
+                "Label indications are schizophrenia only",
+                "Boxed warnings: severe neutropenia; orthostatic hypotension, bradycardia, syncope (highest during titration); seizures; myocarditis/cardiomyopathy; dementia-related mortality",
+                "Anticholinergic GI hypomotility (ileus) — screen for constipation",
+                "Missed doses: 1 day → restart at 40–50%; 2 days → ~25%; longer → 12.5 mg",
+                "MDS: use when quetiapine or pimavanserin fail; can be first-line despite weekly blood counts"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "MDS 2019 (Seppi) Table 6: efficacious; acceptable risk with specialized monitoring; clinically useful",
+                "Clozapine PI boxed warning, §2.1–2.6, §5.7",
+                "Hwang & Norris 2021 narrative review: ungraded"
+              ],
+              "sources": [
+                "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025",
+                "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            },
+            {
+              "parameter": "Olanzapine",
+              "condition": "PD psychosis",
+              "role": "NOT_RECOMMENDED",
+              "target": "Avoid — not efficacious, unacceptable risk",
+              "notes": [
+                "Based on a low-quality negative study (MDS)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "MDS 2019 (Seppi) Table 6: not efficacious; unacceptable risk; not useful"
+              ],
+              "sources": [
+                "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602"
+              ]
+            },
+            {
+              "parameter": "Typical antipsychotics",
+              "condition": "All PD patients",
+              "role": "NOT_RECOMMENDED",
+              "target": "Avoid haloperidol and other typical antipsychotics — D2 blockade can irreversibly worsen motor symptoms",
+              "notes": [
+                "Also blunt rotigotine and apomorphine (labels)"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "Hwang & Norris 2021 narrative review: ungraded",
+                "Apokyn PI §5.2, §7.4; Neupro PI §7.1"
+              ],
+              "sources": [
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+                "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
+                "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+              ]
+            },
+            {
+              "parameter": "Benzodiazepines",
+              "condition": "Agitation, insomnia",
+              "role": "NOT_RECOMMENDED",
+              "target": "Use sparingly; avoid long-term — linked in time to delirium, falls and balance impairment in advanced PD",
+              "notes": [
+                "Exception: benzodiazepines remain part of NMS / parkinsonism-hyperpyrexia treatment (see that entry)"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "Hwang & Norris 2021 narrative review: ungraded"
+              ],
+              "sources": [
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            },
+            {
+              "parameter": "Other deliriogenic drugs",
+              "condition": "Cognitive or neuropsychiatric symptoms",
+              "role": "NOT_RECOMMENDED",
+              "target": "Stop anticholinergics (strongest link to psychosis and delirium); avoid opioids where possible (delirium, falls, orthostasis, constipation); wean amantadine if confusion or psychosis",
+              "notes": [],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "Hwang & Norris 2021 narrative review: ungraded"
+              ],
+              "sources": [
+                "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "calc:ledd (Jost 2023) and the BMJ algorithm use different factors — don't mix them",
+        "BMJ's adjusted LEDD >350 mg branch (continuous SC apomorphine with domperidone pre-load) is not on this card: the Apokyn label covers intermittent pen doses only (≤6 mg per dose)",
+        "Hallucinations, orthostasis and sudden sleep onset are dopaminergic adverse effects — consider them before adding drugs",
+        "Deep brain stimulator in situ: manufacturers advise avoiding electrocautery; bipolar diathermy if needed (BMJ)"
+      ],
+      "keyNumbers": [
+        "Rotigotine (BMJ 2010): LEDD (BMJ factors) × 0.55 ÷ 20 → nearest 2 mg, once daily",
+        "Neupro US max: 6 mg/24 h early PD, 8 mg/24 h advanced PD",
+        "Apomorphine + any 5-HT3 antagonist (incl. ondansetron): contraindicated",
+        "Sinemet CR: never crush; CR levodopa ≈70–75% as bioavailable as IR",
+        "Pimavanserin 34 mg daily (10 mg with strong CYP3A4 inhibitor) — benefit over weeks"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "calc:ledd",
+        "acute-neuro:nms-parkinsonism-hyperpyrexia"
+      ],
+      "sources": [
+        "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+        "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+        "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+        "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018",
+        "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026",
+        "Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252",
+        "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
+        "Nuplazid (pimavanserin) capsules and tablets US prescribing information. Acadia; revised 4/2026",
+        "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
+        "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025"
+      ],
+      "lastReviewed": "2026-11-07"
+    }
+  ]
+}

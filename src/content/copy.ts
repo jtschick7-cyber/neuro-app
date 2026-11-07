@@ -108,6 +108,43 @@ export const ABOUT = {
   },
 };
 
+/** reference-cards TargetRole legend. */
+export const TARGET_ROLE_LEGEND = [
+  ["TARGET", "A value to aim for, from the cited source"],
+  ["RECOMMENDED", "A recommended practice or stance"],
+  ["NOT_RECOMMENDED", "The source recommends against it"],
+  ["EVIDENCE_SUMMARY", "What a trial found, or that no recommendation was made — not a target"],
+] as const;
+
+/** reference-cards matrix CellStatus legend. */
+export const MATRIX_STATUS_LEGEND = [
+  ["VALID", "Source says the result is reliable in this setting"],
+  ["CAUTION", "Possible bias or thin evidence — interpret with care"],
+  ["UNRELIABLE", "Source says false results are expected — don't test in this setting"],
+  ["ASSAY_DEPENDENT", "Depends on the method or reagent"],
+  ["NOT_ADDRESSED", "Not addressed by sources"],
+] as const;
+
+/** Matrix cell direction legend (↓ ↑ ↕). */
+export const MATRIX_DIRECTION_LEGEND = [
+  ["FALSE_LOW", "↓ Falsely low result possible"],
+  ["FALSE_HIGH", "↑ Falsely high result possible"],
+  ["EITHER", "↕ Either direction"],
+] as const;
+
+/** Labels and notes on reference-card and ASM dosing screens. */
+export const REFERENCE_COPY = {
+  keyNumbers: "Key numbers",
+  pitfalls: "Pitfalls",
+  rowSources: "Sources for this row",
+  matrixHint: "Tap a test for each cell's finding, evidence and sources.",
+  notAddressed: "Not addressed by sources",
+  notes: "Notes",
+  renalHighlight: "Highlighted for CrCl {crcl} mL/min (Cockcroft-Gault from the top bar). Rows sharing an endpoint are both highlighted.",
+  renalNeedContext: "Enter weight, age, sex and Cr in the top bar to highlight the matching CrCl row.",
+  renalBsaNotHighlighted: "These bands use BSA-normalized CrCl (mL/min/1.73 m²), so they are not highlighted from Cockcroft-Gault.",
+};
+
 export const SYNDROME_FILTER = {
   label: "Filter by syndrome",
   none: "All antibodies",

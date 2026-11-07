@@ -9,6 +9,8 @@ import consults from '../data/consult-workups.json';
 import vascular from '../data/vascular-antithrombotics.json';
 import antibodies from '../data/neural-antibodies.json';
 import asm from '../data/asm-interactions.json';
+import asmDosing from '../data/antiseizure-medications.json';
+import referenceCards from '../data/reference-cards.json';
 import { getRegistry } from '../src/lib/nav';
 import manifest from '../data/calculators.manifest.json';
 
@@ -78,6 +80,9 @@ describe('cross-links into the lazy-loaded registries', () => {
     expect(resolveRef('vascular-antithrombotics:' + vascular.entries[0].id).href).toBe('#/vascular-antithrombotics/' + vascular.entries[0].id);
     expect(resolveRef('acute-neuro:convulsive-status-epilepticus').href).toBe('#/acute-neuro/convulsive-status-epilepticus');
     expect(resolveRef('consult-workups:tia-workup').href).toBe('#/consult-workups/tia-workup');
+    expect(resolveRef('antiseizure-medications:valproate').href).toBe('#/antiseizure-medications/valproate');
+    expect(resolveRef('reference-cards:thrombophilia-test-validity').href).toBe('#/reference-cards/thrombophilia-test-validity');
+    expect(resolveRef('calc:phenytoin-correction').href).toBe('#/calc/phenytoin-correction');
   });
   it('every shipped reference to a built registry points at a real entry', () => {
     const ids: Record<string, Set<string>> = {
@@ -86,9 +91,15 @@ describe('cross-links into the lazy-loaded registries', () => {
       'vascular-antithrombotics': new Set(vascular.entries.map((e) => e.id)),
       'neural-antibodies': new Set(antibodies.entries.map((e) => e.id)),
       'asm-interactions': new Set(asm.entries.map((e) => e.id)),
+      'antiseizure-medications': new Set(asmDosing.entries.map((e) => e.id)),
+      'reference-cards': new Set(referenceCards.entries.map((e) => e.id)),
     };
     for (const l of CAUTION_LISTS) ids[l.id] = new Set(l.list.entries.map((e) => e.id));
-    const refs = [...acute.entries, ...consults.entries, ...vascular.entries, ...antibodies.entries, ...asm.entries].flatMap((e) => e.relatedIds);
+    const refs = [
+      ...[...acute.entries, ...consults.entries, ...vascular.entries, ...antibodies.entries, ...asm.entries].flatMap((e) => e.relatedIds),
+      ...asmDosing.entries.flatMap((e) => e.relatedIds),
+      ...referenceCards.entries.flatMap((e) => e.relatedIds),
+    ];
     for (const ref of refs) {
       const [reg, id] = ref.split(':');
       if (reg === 'calc' || !getRegistry(reg)?.built) continue;
