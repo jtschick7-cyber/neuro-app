@@ -1,6 +1,6 @@
 {
   "appVersion": "2.0.0",
-  "contentVersion": "2.0.0+b052ba0c",
+  "contentVersion": "2.0.0+c432e48c",
   "builtAt": "2026-11-07",
   "registries": [
     {
@@ -151,11 +151,6 @@
       "openVerify": 0
     },
     {
-      "id": "lacosamide-load",
-      "title": "Lacosamide load",
-      "openVerify": 0
-    },
-    {
       "id": "phenytoin-correction",
       "title": "Phenytoin level: albumin correction and reload estimate",
       "openVerify": 0
@@ -188,16 +183,6 @@
     {
       "id": "abcd2",
       "title": "ABCD2",
-      "openVerify": 0
-    },
-    {
-      "id": "cha2ds2-vasc",
-      "title": "CHA₂DS₂-VASc",
-      "openVerify": 0
-    },
-    {
-      "id": "has-bled",
-      "title": "HAS-BLED",
       "openVerify": 0
     },
     {
@@ -433,8 +418,7 @@
       "citedBy": [
         "acute-neuro:convulsive-status-epilepticus",
         "acute-neuro:nonconvulsive-status-epilepticus",
-        "acute-neuro:refractory-super-refractory-se",
-        "calc:lacosamide-load"
+        "acute-neuro:refractory-super-refractory-se"
       ]
     },
     {
@@ -1393,20 +1377,6 @@
       ]
     },
     {
-      "citation": "Lip GYH, et al. CHA2DS2-VASc risk scheme: response. Chest 2010;138(4):1020-1021",
-      "year": 2010,
-      "citedBy": [
-        "calc:cha2ds2-vasc"
-      ]
-    },
-    {
-      "citation": "Lip GYH, et al. Refining clinical risk stratification for predicting stroke and thromboembolism in AF. Chest 2010;137(2):263-272",
-      "year": 2010,
-      "citedBy": [
-        "calc:cha2ds2-vasc"
-      ]
-    },
-    {
       "citation": "Liu Y, Gao GH, Lin J, Sun C, Zhao YY. Case report: subacute combined degeneration of the spinal cord mimic accompanying adaptor protein-3B2-IgG. Front Immunol 2025;16:1598033. doi:10.3389/fimmu.2025.1598033",
       "year": 2025,
       "citedBy": [
@@ -1692,13 +1662,6 @@
       "year": 2016,
       "citedBy": [
         "acute-neuro:nms-parkinsonism-hyperpyrexia"
-      ]
-    },
-    {
-      "citation": "Pisters R, et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest 2010;138:1093-1100 (as summarized by MDCalc; primary article not reviewed)",
-      "year": 2010,
-      "citedBy": [
-        "calc:has-bled"
       ]
     },
     {

@@ -26,14 +26,6 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - Sources: Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48 | Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795
 - VERIFY: none
 
-## Lacosamide load (`lacosamide-load`)
-- Formula: fixed 200–400 mg IV
-- Caps: none
-- Rounding: none
-- Weight: NOT_APPLICABLE
-- Sources: Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z
-- VERIFY: none
-
 ## Phenytoin level: albumin correction and reload estimate (`phenytoin-correction`)
 - Formula: Corrected total = measured total / (0.2 × albumin + 0.1) [Sheiner-Tozer]; on dialysis: / (0.1 × albumin + 0.1) [Mauro 1989]. Albumin g/dL, phenytoin mcg/mL. Not corrected if albumin not entered, or albumin ≥4.4 g/dL on the standard equation. Estimated free = corrected × 0.1. Reload (mg PE) = (target − corrected) × 0.7 L/kg × actual weight; target default 15 (10–20)
 - Caps: 10 mg PE/kg (rounded down to 50 mg PE); 1500 mg PE; 150 mg PE/min
@@ -88,22 +80,6 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - Rounding: integer
 - Weight: NOT_APPLICABLE
 - Sources: Amin HP, et al. Diagnosis, Workup, Risk Reduction of Transient Ischemic Attack in the Emergency Department Setting: A Scientific Statement From the AHA. Stroke 2023;54:e109-e121. doi:10.1161/STR.0000000000000418
-- VERIFY: none
-
-## CHA₂DS₂-VASc (`cha2ds2-vasc`)
-- Formula: CHF/LV dysfunction 1, HTN 1, age ≥75 2, DM 1, stroke/TIA/TE 2, vascular disease 1, age 65–74 1, female 1
-- Caps: 0–9
-- Rounding: integer
-- Weight: NOT_APPLICABLE
-- Sources: Lip GYH, et al. Refining clinical risk stratification for predicting stroke and thromboembolism in AF. Chest 2010;137(2):263-272 | Lip GYH, et al. CHA2DS2-VASc risk scheme: response. Chest 2010;138(4):1020-1021
-- VERIFY: none
-
-## HAS-BLED (`has-bled`)
-- Formula: 1 point each: HTN (uncontrolled, SBP >160); renal (dialysis, transplant, Cr >2.26 mg/dL); liver (cirrhosis, or bilirubin >2× normal with AST/ALT/AP >3× normal); stroke history; prior major bleeding or predisposition; labile INR (TTR <60%); age >65; drugs (antiplatelets, NSAIDs); alcohol ≥8 drinks/week
-- Caps: 0–9
-- Rounding: integer
-- Weight: NOT_APPLICABLE
-- Sources: Pisters R, et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest 2010;138:1093-1100 (as summarized by MDCalc; primary article not reviewed)
 - VERIFY: none
 
 ## Tenecteplase (stroke) (`tnk-dose`)

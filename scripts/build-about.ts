@@ -38,11 +38,14 @@ for (const f of files) {
   for (const e of reg.entries) for (const s of e.sources) addSource(s, `${name}:${e.id}`);
 }
 
-const calculators = Object.values(CALCULATOR_META).map((m) => {
+// Only calculators the app ships (data/calculators.manifest.json); functions kept in calculators.ts without a UI are left out.
+const shipped = new Set(JSON.parse(readFileSync("data/calculators.manifest.json", "utf8")) as string[]);
+const shippedMeta = Object.values(CALCULATOR_META).filter((m) => shipped.has(m.id));
+const calculators = shippedMeta.map((m) => {
   for (const s of m.sources) addSource(s, `calc:${m.id}`);
   return { id: m.id, title: m.title, openVerify: m.verify.length };
 });
-hash.update(JSON.stringify(CALCULATOR_META));
+hash.update(JSON.stringify(shippedMeta));
 
 // Publication year: "Journal YYYY;vol" pattern first, else the first 4-digit year (avoids page numbers like 1925-1938).
 const year = (s: string) => Number(s.match(/\b((?:19|20)\d{2})(?=;)/)?.[1] ?? s.match(/\b(?:19|20)\d{2}\b/)?.[0] ?? 0);
