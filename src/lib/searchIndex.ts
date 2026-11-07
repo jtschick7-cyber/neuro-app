@@ -133,7 +133,6 @@ export const CALC_ALIASES: Record<string, string[]> = {
   abcd2: ['TIA', 'transient ischemic attack'],
   'cockcroft-gault': ['CrCl', 'creatinine clearance', 'renal dosing'],
   ledd: ['levodopa', 'Parkinson', 'levodopa equivalent'],
-  'ivig-dose': ['immune globulin', 'intravenous immunoglobulin', 'GBS', 'CIDP', 'myasthenia'],
   'sodium-correction': ['hyponatremia', '3% saline', 'ODS', 'osmotic demyelination', 'SALSA', 'ESE'],
 };
 

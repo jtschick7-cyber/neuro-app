@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.2.3",
+  "version": "1.2.5",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -906,9 +906,7 @@
             "Wickström 2022 Delphi: statements 9–11"
           ],
           "formularyStatus": "LOCAL_PREFERRED",
-          "calculatorIds": [
-            "ivig-dose"
-          ]
+          "calculatorIds": []
         },
         {
           "role": "ADJUNCT",
@@ -1484,9 +1482,7 @@
             "Gilhus 2024: PLEX and IVIG are the primary crisis treatments; choose by availability and patient factors"
           ],
           "formularyStatus": "LOCAL_PREFERRED",
-          "calculatorIds": [
-            "ivig-dose"
-          ]
+          "calculatorIds": []
         },
         {
           "role": "FIRST_LINE",
@@ -1803,9 +1799,7 @@
             "EAN/PNS 2023: strong recommendation if unable to walk unaided within 2 weeks of onset"
           ],
           "formularyStatus": "LOCAL_PREFERRED",
-          "calculatorIds": [
-            "ivig-dose"
-          ]
+          "calculatorIds": []
         },
         {
           "role": "FIRST_LINE",
@@ -2368,9 +2362,7 @@
             "Abboud 2021"
           ],
           "formularyStatus": "LOCAL_PREFERRED",
-          "calculatorIds": [
-            "ivig-dose"
-          ]
+          "calculatorIds": []
         },
         {
           "role": "FIRST_LINE",
@@ -3774,9 +3766,7 @@
           "evidenceLevel": "EXPERT_OPINION",
           "evidenceNote": [],
           "formularyStatus": "LOCAL_PREFERRED",
-          "calculatorIds": [
-            "ivig-dose"
-          ]
+          "calculatorIds": []
         }
       ],
       "pitfalls": [

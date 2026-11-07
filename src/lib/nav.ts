@@ -85,6 +85,5 @@ export const CALC_CARD: Record<string, string> = {
   abcd2: 'calc-abcd2',
   'cockcroft-gault': 'calc-crcl',
   ledd: 'calc-ledd',
-  'ivig-dose': 'calc-ivig',
   'sodium-correction': 'calc-sodium',
 };

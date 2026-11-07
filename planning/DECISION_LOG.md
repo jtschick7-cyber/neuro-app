@@ -418,3 +418,12 @@ Not edited: `vascular-antithrombotics:pregnancy-antithrombotics` (proposed back-
 ### Verify items closed (Jason, 2026-11-07), no content change
 - `cns-vasculitis-workup`: `doi:10.1161/STR.0000000000000422` is the Stroke 2022 editors/editorial board listing; nothing in the entry came from it.
 - `ticagrelor`: nothing in AHA 2026 restates or supersedes Kleindorfer 2021 §5.1.1 Rec 3. AHA 2026 covers acute stroke; Kleindorfer 2021 covers secondary prevention, so the two are complementary.
+
+## 2026-11-07 — Cuts and ICH alignment (Jason, in chat)
+
+- **Removed:** IVIG calculator card; `consult-workups:first-unprovoked-seizure`; `consult-workups:acute-vertigo-hints`. Jason won't use them or doesn't need to look them up.
+- IVIG: `ivig-dose` dropped from the manifest and from `calculatorIds` of 5 acute-neuro entries (refractory-super-refractory-se, myasthenic-crisis, guillain-barre-syndrome, autoimmune-encephalitis, nmosd-mogad-attack). The IVIG dose text in those entries is unchanged. `ivigDose` and its `CALCULATOR_META` row stay in `calculators.ts` (clinical code not touched), now unused by the UI.
+- Links to the removed entries dropped from `consult-workups:diplopia-ptosis` and `seizure-threshold:bupropion`.
+- All 7 edited entries reset to UNREVIEWED. Versions: acute-neuro 1.2.3 → 1.2.4 (PATCH, navigation only); consult-workups 1.1.3 → 2.0.0 (MAJOR, entries removed); seizure-threshold 0.2.3 → 0.2.4 (PATCH).
+- A pin to a removed entry now shows its star on the "No entry" page so it can be unpinned.
+- ICH score (and all two-column calculator rows): inputs bottom-aligned so a wrapped label doesn't push its input down.

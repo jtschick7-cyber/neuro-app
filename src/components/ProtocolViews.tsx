@@ -20,6 +20,7 @@ import {
   type Searchable,
 } from '../lib/protocols';
 import { toHash } from '../lib/route';
+import { loadPins } from '../lib/storage';
 import type { RegistryId } from '../lib/nav';
 
 type Loaded<E> = { status: 'loading' } | { status: 'error' } | { status: 'ready'; data: ProtocolRegistry<E> };
@@ -67,7 +68,15 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
           <ArrowLeft size={16} aria-hidden="true" /> {noun}
           {entry && (CATEGORY_LABEL[entry.category] ?? entry.category) !== noun ? ` · ${CATEGORY_LABEL[entry.category] ?? entry.category}` : ''}
         </a>
-        {entry ? renderEntry(entry) : <p className="text-sm text-slate-400">No entry “{entryId}” in {noun}.</p>}
+        {entry ? (
+          renderEntry(entry)
+        ) : (
+          <div className="flex items-center justify-between gap-2">
+            <p className="text-sm text-slate-400">No entry “{entryId}” in {noun}.</p>
+            {/* A pin can outlive a removed entry; keep the star here so it can be unpinned. */}
+            {loadPins().includes(`${registry}:${entryId}`) && <PinButton registryId={registry} entryId={entryId} />}
+          </div>
+        )}
       </div>
     );
   }

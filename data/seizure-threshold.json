@@ -4,7 +4,7 @@
   "scopeNotes": [
     "Labels and an FDA safety communication; Beers 2023 items apply to adults ≥65"
   ],
-  "version": "0.2.3",
+  "version": "0.2.5",
   "schemaVersion": "3.0.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -39,13 +39,11 @@
       ],
       "saferAlternatives": [],
       "verify": [],
-      "relatedIds": [
-        "consult-workups:first-unprovoked-seizure"
-      ],
+      "relatedIds": [],
       "sources": [
         "Bupropion hydrochloride tablets US prescribing information. Cipla; revised 3/2023 (user-supplied label)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "flumazenil",
