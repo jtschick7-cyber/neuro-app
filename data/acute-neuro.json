@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -1641,6 +1641,13 @@
       "id": "guillain-barre-syndrome",
       "title": "Guillain-Barré syndrome",
       "category": "NEUROMUSCULAR",
+      "keyNumbers": [
+        "IVIG: 0.4 g/kg/day IV ×5 days (2 g/kg total)",
+        "Plasma exchange (PLEX): 12–15 L total in 4–5 exchanges over 1–2 weeks (within 4 weeks of onset, unable to walk unaided)",
+        "Ward → ICU: FVC <60% predicted, SBC <20, autonomic instability, worsening bulbar/neck weakness, or mEGRIS ≥23 (EAN/PNS 2023 Fig. 2)",
+        "FVC fall >30% in 24 h → immediate ICU transfer; 50% fall in <24 h → likely needs ventilation",
+        "In ICU: FVC <20 mL/kg, MEP <30 cmH2O, MIP <40 cmH2O, or FVC >30% below baseline → consider elective intubation before FVC ≤10 mL/kg"
+      ],
       "searchTerms": [
         "GBS",
         "AIDP",
@@ -1662,7 +1669,8 @@
         "CSF: raised protein with normal or slightly raised cells — <5/μL in 80%, 5–50/μL in 19%, >50/μL in 2%; >50/μL → consider alternative diagnosis (EAN/PNS 2023)",
         "GBS disability scale: 1 minor symptoms, can run; 2 walks 10 m unaided, can't run; 3 walks 10 m with aid; 4 bed/chair-bound; 5 ventilated; 6 dead",
         "CSF protein raised in 50% at <3 days and 84% at >7 days from onset (EAN/PNS 2023, n>1000)",
-        "High risk at presentation (→ ICU): mEGRIS 25–32 (>70% ventilation risk), OR ≥4 of 6 risk factors (<7 days onset→admission, can't cough, GBS-DS ≥4, can't lift arm above horizontal, neck flexion weakness, abnormal LFTs), OR FVC <60% predicted / aspiration risk / autonomic instability (EAN/PNS 2023 Fig. 2)"
+        "High risk at presentation (→ ICU): mEGRIS 25–32 (>70% ventilation risk), OR ≥4 of 6 risk factors (<7 days onset→admission, can't cough, GBS-DS ≥4, can't lift arm above horizontal, neck flexion weakness, abnormal LFTs), OR FVC <60% predicted / aspiration risk / autonomic instability (EAN/PNS 2023 Fig. 2)",
+        "Bickerstaff brainstem encephalitis: MFS features plus impaired consciousness and pyramidal signs, often overlapping with GBS; IgG anti-GQ1b/GT1a (Leonhard 2019; Willison & Yuki 2002)"
       ],
       "immediateActions": [
         {
@@ -1737,7 +1745,7 @@
             "Suspected Miller Fisher syndrome"
           ],
           "notes": [
-            "Anti-ganglioside panels of limited value in typical GBS"
+            "Anti-ganglioside panels of limited value in typical GBS; assay-dependent; a negative result doesn't exclude GBS (Leonhard 2019)"
           ]
         },
         {
@@ -1906,13 +1914,16 @@
       ],
       "verify": [],
       "relatedIds": [
-        "acute-neuro:neuromuscular-respiratory-failure"
+        "acute-neuro:neuromuscular-respiratory-failure",
+        "consult-workups:acute-hepatic-porphyria"
       ],
       "sources": [
         "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
-        "Luijten LWG, et al. Modified Erasmus GBS Respiratory Insufficiency Score: a simplified clinical tool to predict the risk of mechanical ventilation in GBS. J Neurol Neurosurg Psychiatry 2023;94:300-308"
+        "Luijten LWG, et al. Modified Erasmus GBS Respiratory Insufficiency Score: a simplified clinical tool to predict the risk of mechanical ventilation in GBS. J Neurol Neurosurg Psychiatry 2023;94:300-308",
+        "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
+        "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "neuromuscular-respiratory-failure",
@@ -4168,6 +4179,13 @@
       "id": "elevated-icp-herniation",
       "title": "Elevated ICP / cerebral herniation",
       "category": "ICP_HERNIATION",
+      "keyNumbers": [
+        "Hypertonic saline: 2%–23.4% as bolus, alone or with mannitol; 3% may run peripherally, ≥7.5% (incl. 23.4%) via central line",
+        "Mannitol 20%: 0.5–1 g/kg IV bolus over 5–15 min via peripheral line; may repeat q4–6h (ENLS)",
+        "NCS 2020: upper limits Na 155–160 and Cl 110–115 mEq/L may be reasonable",
+        "Intracranial hypertension: sustained (>5 min) ICP >22 mmHg (ENLS v6.0)",
+        "Maintain CPP 60–70 mmHg (ENLS v6.0)"
+      ],
       "searchTerms": [
         "ICP",
         "herniation",
@@ -4268,7 +4286,8 @@
           ],
           "evidenceLevel": "WEAK",
           "evidenceNote": [
-            "NCS 2020: conditional, low-quality evidence",
+            "NCS 2020: HTS over mannitol in TBI — conditional, low-quality evidence; in ICH — conditional, very low-quality evidence",
+            "NCS 2020: HTS or mannitol in AIS — conditional, low-quality evidence; insufficient evidence for either to improve neurological outcome",
             "Central-line threshold: ENLS v5.0"
           ],
           "formularyStatus": "INSTITUTION_VARIES",
@@ -4307,7 +4326,8 @@
           ],
           "evidenceLevel": "WEAK",
           "evidenceNote": [
-            "NCS 2020: alternative when HTS can't be given (TBI); either agent in AIS",
+            "NCS 2020: alternative when HTS can't be given (TBI) — conditional, low-quality evidence; either agent in AIS — conditional, low-quality evidence",
+            "NCS 2020: osmolar gap over osmolality for AKI monitoring — conditional, very low-quality evidence",
             "ENLS v6.0 dosing"
           ],
           "formularyStatus": "AVAILABLE",
@@ -4491,7 +4511,7 @@
       ],
       "escalateWhen": [
         "Any herniation sign → neurosurgery + neuro-ICU immediately",
-        "ICP >20 mmHg sustained despite tier-one measures",
+        "ICP >22 mmHg sustained despite tier-one measures (ENLS v6.0; BTF 4th ed. ch. 16)",
         "Rising Na/Cl or creatinine limiting further osmotherapy"
       ],
       "institutionVaries": [
@@ -4500,14 +4520,16 @@
       ],
       "verify": [],
       "relatedIds": [
-        "acute-neuro:refractory-super-refractory-se"
+        "acute-neuro:refractory-super-refractory-se",
+        "reference-cards:neuro-icu-targets"
       ],
       "sources": [
         "Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7",
         "Morrison C, et al. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 5.0. Neurocritical Care Society; 2022",
-        "Bhalla P, Dingman JS, Aysenne A. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 6.0. Neurocritical Care Society; 2024"
+        "Bhalla P, Dingman JS, Aysenne A. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 6.0. Neurocritical Care Society; 2024",
+        "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 16 Intracranial Pressure Thresholds"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "pres",

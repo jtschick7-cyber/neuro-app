@@ -124,7 +124,7 @@ None.
 | Hydrocortisone | Note only | Similar sodium effect, more complications (Hoh text) |
 | CPP for aSAH / ICH / AIS | Not shown | No provided source; scope note on the TBI row |
 | Hoh §8 pulmonary recs (vent bundle, ARDS rescue), §8.1 nursing recs other than neuro exam | Left off card | MICU manages medical issues; not neuro rounds numbers |
-| ICP threshold (BTF ch. 16) | Not added | Chapter not provided; existing entry keeps its ≥20–22 |
+| ICP threshold (BTF ch. 16) | Not added | Chapter not provided; existing entry keeps its ≥20–22. **Superseded 2026-11-07:** ch. 16 supplied; `escalateWhen[1]` → >22 (see GBS/ICP rebuild entry) |
 
 ### Noticed, not changed
 - `acute-neuro:hyponatremia-ods` uses cap scope `CUMULATIVE_PER_EPISODE`, not in `CapScope` — fails validation as extracted.
@@ -172,7 +172,7 @@ Drafts:
 
 ### Noticed, not changed (out of scope)
 - `cns-vasculitis-workup`: Salvarani NEJM 2024 citation carries a Stroke DOI (10.1161/STR.0000000000000422).
-- `guillain-barre-syndrome`: CSF protein "~50% normal early" vs Leonhard "30–50% in week 1".
+- `guillain-barre-syndrome`: CSF protein "~50% normal early" vs Leonhard "30–50% in week 1". **Closed 2026-11-07 (Jason), no change** — see GBS/ICP rebuild entry.
 
 ### Open items
 - No `verify[]` items.
@@ -337,7 +337,7 @@ Update `lastUpdated` on every bump. 0.7.1 is the version on the extracted copies
 - `heparin-ufh` `thrombolysisRule` (aPTT >40 s line) — not reviewed against AHA 2026.
 - `ticagrelor` uses[3] SECOND_LINE on a COR 2b recommendation.
 - Back-links not added: `sah-workup` → `reference-cards:asah-numbers`; `cvt-anticoagulation` / `pregnancy-antithrombotics` → `reference-cards:thrombophilia-test-validity`.
-- `cns-vasculitis-workup`: Salvarani NEJM 2024 carries a Stroke DOI. `young-stroke-workup`: Devreese 2024 citation lacks volume/pages. `guillain-barre-syndrome`: CSF protein "~50% normal early" vs Leonhard "30–50% in week 1".
+- `cns-vasculitis-workup`: Salvarani NEJM 2024 carries a Stroke DOI. `young-stroke-workup`: Devreese 2024 citation lacks volume/pages. `guillain-barre-syndrome`: CSF protein "~50% normal early" vs Leonhard "30–50% in week 1" (closed 2026-11-07, no change).
 - `NEURO_APP_TASKS.md` §9 row "CRRT dosing is folded into 7.1" is now inaccurate (CRRT was dropped in 7.1 for lack of a source). §9 is outside the planning scope and was left unchanged — Jason to edit.
 
 ### Source files still to add to project knowledge (from each item's open items)
@@ -351,3 +351,38 @@ Update `lastUpdated` on every bump. 0.7.1 is the version on the extracted copies
 
 ### Reminder
 Approval in the planning project isn't clinical sign-off. Claude Code encodes and validates the drafts; Jason signs off in the repo with `npm run review-sheets` and `npm run signoff`.
+
+## 2026-11-07 — GBS and elevated ICP rebuild (items 7.3 and 7.2)
+
+**Status:** final (approved by Jason 2026-11-07). Hold lifted by Jason in chat 2026-11-07. Drafts: `drafts/acute-neuro.{guillain-barre-syndrome,elevated-icp-herniation}.json` + `.CHANGES.md`, rebuilt on the signed 2026-11-05 entries (acute-neuro 1.1.1). They replace the 2026-11-06 drafts built on v0.7.1. Encoded word for word as full replacements on branch `gbs-icp-rebuild`; `npm run validate` 0 errors.
+
+### Decisions — `guillain-barre-syndrome` (confirmed by Jason)
+1. 7.3 AMAN, MFS ">90%" and PCB edits (7.3 decisions 5 and 8 as they applied to GBS) dropped: the signed entry has no such lines, so nothing to correct.
+2. Bickerstaff line kept, now `definitions[6]` (Leonhard 2019 Table 1; Willison & Yuki 2002 Table 1).
+3. Leonhard note merged into the Anti-GQ1b `workup` note ("assay-dependent; a negative result doesn't exclude GBS").
+4. `relatedIds` + `consult-workups:acute-hepatic-porphyria`; `sources` + Leonhard 2019, Willison & Yuki 2002.
+5. `calc:egris` not carried (not a valid id; no calculator built). mEGRIS stays in text only.
+6. keyNumbers: 5 lines copied from the entry's own fields, accepted as proposed.
+7. **CSF protein item closed 2026-11-07 (Jason), no change.** The "~50% normal early" text isn't in the signed entry; `definitions[4]` matches EAN/PNS 2023 (raised in 50% at <3 days, 84% at >7 days) and `workup[0].notes[0]` / `pitfalls[0]` match the EAN/PNS GPP. Leonhard 2019 agrees.
+
+### Decisions — `elevated-icp-herniation` (confirmed by Jason)
+1. **`escalateWhen[1]` ICP >20 → >22 mmHg — Jason's decision 2026-11-07**, beyond the 7.2 approvals. Now "ICP >22 mmHg sustained despite tier-one measures (ENLS v6.0; BTF 4th ed. ch. 16)", matching `definitions[0]`. BTF ch. 16 is TBI-specific (Level II B); ENLS v6.0 gives the general adult definition.
+2. BTF 4th ed. ch. 16 added to `sources` (citation format follows ch. 17, 7.2 decision 5).
+3. HTS and mannitol `evidenceNote`s state Cook 2020 grades per population (7.2 part B); AIS outcome clause adapted to "insufficient evidence for either to improve neurological outcome" (Cook AIS rec 1), accepted as adapted.
+4. ENLS v5.0 kept as a source; it is the only source for the ≥7.5% central-line threshold (checked against the v5.0 PDF 2026-11-07).
+5. 7.2 part A sodium edits and several part B edits dropped or already present in the signed entry (CHANGES §2). Mannitol stays FIRST_LINE; both osmotic agents stay WEAK.
+6. `relatedIds` + `reference-cards:neuro-icu-targets`. keyNumbers: 5 lines copied from the entry's own fields, accepted as proposed.
+
+### Version
+`acute-neuro` registry 1.1.1 → 1.2.0 (one MINOR for both entries: threshold, evidence notes, sources). `lastUpdated` 2026-11-07. Schema unchanged (1.2.0). Both entries `lastReviewed: "UNREVIEWED"`.
+
+### Noticed, not changed
+- GBS `searchTerms` has no "Bickerstaff"/"BBE".
+- GBS: old-draft links to `consult-workups:acute-generalized-weakness` and `inpatient-neuropathy` not added (not approved).
+- ICP `treatment[0].notes[0]` "either acceptable in AIS and SAH": no matching Cook recommendation for SAH.
+- ENLS v5.0 peripheral-HTS conditions (large vessel, site checks, IO ≤7.5%) not in the entry.
+- Old-draft ICP links to `consult-workups:ich-etiology-workup` and `sah-workup` not added (not approved).
+
+### Open items
+- No `verify[]` items.
+- Jason: `npm run review-sheets` and `npm run signoff` for both entries before release (`npm run build` fails until then).
