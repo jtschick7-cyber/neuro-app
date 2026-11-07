@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -243,7 +243,7 @@
         "Taccone FS, et al. Restrictive vs Liberal Transfusion Strategy in Patients With Acute Brain Injury: The TRAIN Randomized Clinical Trial. JAMA 2024;332:1623-1633. doi:10.1001/jama.2024.20424",
         "English SW, et al. Liberal or Restrictive Transfusion Strategy in Aneurysmal Subarachnoid Hemorrhage (SAHARA). N Engl J Med 2025;392:1079-1088. doi:10.1056/NEJMoa2410962"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "asah-numbers",
@@ -702,7 +702,7 @@
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436",
         "Nimodipine capsules US prescribing information. Bionpharma Inc.; revised 12/2025 (DailyMed label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "thrombophilia-test-validity",
@@ -1509,7 +1509,7 @@
         "Haviv Y, et al. Effect of enoxaparin on homocysteine concentration in warfarin-treated patients. Ann Pharmacother 2002;36:1355-1359",
         "Muruá A, et al. Unsuspected hyperhomocysteinemia in chronically anticoagulated patients. Blood Coagul Fibrinolysis 2001;12:79-80"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "inpatient-parkinson-disease",
@@ -1972,7 +1972,7 @@
         "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
         "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     }
   ]
 }

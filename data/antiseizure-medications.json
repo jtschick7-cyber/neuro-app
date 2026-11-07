@@ -5,9 +5,9 @@
     "CRRT dosing not covered — no institutional or published source supplied; ask pharmacy",
     "Phenobarbital not covered — no source supplied"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-11-06",
+  "lastUpdated": "2026-11-07",
   "entries": [
     {
       "id": "levetiracetam",
@@ -260,7 +260,7 @@
       "sources": [
         "Keppra (levetiracetam) injection US prescribing information. UCB; revised 6/2025 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "lacosamide",
@@ -488,7 +488,7 @@
         "Vimpat (lacosamide) tablets, injection, oral solution US prescribing information. UCB; revised 5/2026 (user-supplied label)",
         "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "brivaracetam",
@@ -601,7 +601,7 @@
       "sources": [
         "Briviact (brivaracetam) tablets, oral solution, injection US prescribing information. UCB; revised 4/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "valproate",
@@ -731,7 +731,7 @@
         "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)",
         "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "phenytoin-fosphenytoin",
@@ -929,7 +929,7 @@
         "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)",
         "Kiang TK, Ensom MH. A comprehensive review on the predictive performance of the Sheiner-Tozer and derivative equations for the correction of phenytoin concentrations. Ann Pharmacother 2016;50(4):311-325. doi:10.1177/1060028016628166"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "lamotrigine",
@@ -1048,7 +1048,7 @@
       "sources": [
         "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     }
   ]
 }

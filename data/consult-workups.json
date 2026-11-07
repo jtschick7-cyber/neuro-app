@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -651,7 +651,7 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2024. doi:10.1016/j.jtha.2024.10.022"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "tia-workup",
@@ -1612,7 +1612,7 @@
         "Regenhardt RW, et al. Association Between Immunosuppressive Treatment and Outcomes of Cerebral Amyloid Angiopathy-Related Inflammation. JAMA Neurol 2020;77:1261-1269. doi:10.1001/jamaneurol.2020.1782",
         "Kinnecom C, et al. Course of cerebral amyloid angiopathy-related inflammation. Neurology 2007;68:1411-1416"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "first-unprovoked-seizure",
@@ -2888,7 +2888,7 @@
         "Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)",
         "Perrott J, Murphy NG, Zed PJ. L-Carnitine for Acute Valproic Acid Overdose: A Systematic Review of Published Cases. Ann Pharmacother 2010;44:1287-1293"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "functional-neurologic-symptoms",
@@ -3765,7 +3765,7 @@
         "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
         "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "elevated-ck-myopathy",
@@ -4018,7 +4018,7 @@
         "Nathwani RA, et al. Serum Alanine Aminotransferase in Skeletal Muscle Diseases. Hepatology 2005;41:380-382. doi:10.1002/hep.20548",
         "Kwo PY, Cohen SM, Lim JK. ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries. Am J Gastroenterol 2017;112:18-35. doi:10.1038/ajg.2016.517"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "acute-hepatic-porphyria",
@@ -4176,7 +4176,7 @@
         "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
         "Van den Bergh PYK, et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of chronic inflammatory demyelinating polyradiculoneuropathy: Report of a joint Task Force—Second revision. Eur J Neurol 2021;28:3556-3583. doi:10.1111/ene.14959"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "myelopathy-workup",
@@ -4427,7 +4427,7 @@
         "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
         "Stern BJ, et al. Definition and Consensus Diagnostic Criteria for Neurosarcoidosis. JAMA Neurol 2018;75:1546-1553. doi:10.1001/jamaneurol.2018.2295"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "acute-vertigo-hints",
@@ -6037,7 +6037,7 @@
         "Salvarani C, Brown RD Jr, Hunder GG. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1161/STR.0000000000000422",
         "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "paraneoplastic-workup",
@@ -6409,7 +6409,7 @@
       "sources": [
         "Kleffner I, et al. Diagnostic criteria for Susac syndrome (European Susac Consortium). J Neurol Neurosurg Psychiatry 2016 (published online first Oct 25, 2016). doi:10.1136/jnnp-2016-314295"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "intravascular-lymphoma",
@@ -6563,7 +6563,7 @@
         "Rozenbaum D, et al. Skin biopsy in the diagnosis of intravascular lymphoma: A retrospective diagnostic accuracy study. J Am Acad Dermatol 2021;85:665-670. doi:10.1016/j.jaad.2019.09.015",
         "Shimada K, Kinoshita T, Naoe T, Nakamura S. Presentation and management of intravascular large B-cell lymphoma. Lancet Oncol 2009;10:895-902"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "post-cardiac-arrest-prognostication",

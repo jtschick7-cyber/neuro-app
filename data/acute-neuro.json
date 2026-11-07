@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -5143,7 +5143,7 @@
         "Reulbach U, et al. Managing an effective treatment for neuroleptic malignant syndrome. Crit Care 2007;11(1):R4. doi:10.1186/cc5148",
         "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "wernicke-encephalopathy",
@@ -6672,7 +6672,7 @@
         "Nagy AJ, et al. Intravenous dihydroergotamine for inpatient management of refractory primary headaches. Neurology 2011;77:1827-1832",
         "Dihydroergotamine mesylate injection US prescribing information. Provepharm; revised 2/2025"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "post-dural-puncture-headache",
@@ -6987,7 +6987,7 @@
       "sources": [
         "Uppal V, et al. Consensus practice guidelines on postdural puncture headache from a multisociety, international working group: a summary report. JAMA Netw Open 2023;6(8):e2325387. doi:10.1001/jamanetworkopen.2023.25387"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     }
   ]
 }
