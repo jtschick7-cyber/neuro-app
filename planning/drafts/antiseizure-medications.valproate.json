@@ -1,0 +1,130 @@
+{
+  "id": "valproate",
+  "title": "Valproate (Depacon IV / Depakote) — maintenance dosing",
+  "searchTerms": [
+    "Depakote",
+    "Depacon",
+    "VPA",
+    "valproic acid",
+    "divalproex",
+    "valproate level",
+    "free valproate"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Valproate — epilepsy (complex partial or absence)",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Adults and children ≥10 y: start 10–15 mg/kg/day; ↑ by 5–10 mg/kg/day weekly to response; max 60 mg/kg/day. Divide if >250 mg/day",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 10,
+          "amountMax": 15,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Divided if >250 mg/day"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Weekly increment",
+          "amountMin": 5,
+          "amountMax": 10,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Weekly"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Label maximum 60 mg/kg/day (not expressible as a DoseCap — per-kg)",
+        "Elderly: lower starting dose, slower titration (§2.2)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Valproate sodium injection label §2.1–2.2; Depakote label §2.2"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "valproate-load"
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "kind": "INTERMITTENT_HD",
+      "crclMin": null,
+      "crclMax": null,
+      "crclBasis": null,
+      "label": "Intermittent hemodialysis",
+      "doseText": "No dose adjustment per label; HD lowers valproate concentrations ~20%",
+      "dose": [],
+      "notes": []
+    }
+  ],
+  "renalNotes": [
+    "No adjustment in renal failure; CrCl <10 mL/min: unbound clearance ↓27% (IV label §12.3)",
+    "Protein binding substantially reduced in renal failure — total levels may mislead (IV label §12.3)"
+  ],
+  "hepatic": [
+    "Contraindicated in hepatic disease or significant hepatic dysfunction (label §4)",
+    "Hepatic disease: free levels may be high while total looks normal (IV label §12.3)"
+  ],
+  "ivPo": [
+    "Oral → IV: same total daily dose, same frequency; infuse over 60 min, ≤20 mg/min (IV label §2.1)",
+    "IV–oral equivalence shown only with q6h dosing; with BID/TID IV dosing, troughs may be lower — monitor trough levels (IV label §2.1)",
+    "IV use >14 days not studied — switch to oral when feasible (IV label §2.1)",
+    "Valproic acid → Depakote: same daily dose and schedule; once stable, BID or TID may be used (Depakote §2.2)"
+  ],
+  "enteral": [
+    "Depakote delayed-release: swallow whole; do not crush or chew (Depakote §2.1)",
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "Usual therapeutic range 50–100 mcg/mL total (epilepsy)",
+    "Thrombocytopenia risk rises at total ≥110 mcg/mL (women) or ≥135 mcg/mL (men)",
+    "Free fraction rises with concentration (~10% at 40 → 18.5% at 130 mcg/mL) and is higher in elderly, hyperlipidemia, hepatic and renal disease — total level is not a reliable index of active drug (IV label §12.2–12.3)"
+  ],
+  "interactions": [
+    "Carbapenems (meropenem, imipenem, ertapenem): clinically significant ↓ valproate levels with loss of seizure control — monitor levels; change antibiotic or ASM if levels drop",
+    "Phenytoin, carbamazepine, phenobarbital can double valproate clearance (IV label §7.1)",
+    "Aspirin: valproate free fraction ↑ ~4-fold (IV label §7.1)",
+    "Lamotrigine: valproate more than doubles lamotrigine levels — lamotrigine dose must be reduced; ↑ serious rash risk",
+    "Phenytoin: valproate displaces phenytoin (free fraction +60% in volunteers) — use free phenytoin levels; combination ↑ hyperammonemia risk",
+    "Topiramate: hyperammonemia and encephalopathy (IV label §7.3)"
+  ],
+  "pearls": [
+    "Check ammonia for unexplained lethargy, vomiting or mental-status change (label §5)",
+    "Boxed warnings: hepatotoxicity, fetal risk, pancreatitis",
+    "Contraindicated with POLG mitochondrial disease and urea cycle disorders (label §4)"
+  ],
+  "calculatorIds": [
+    "valproate-load"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "asm-interactions:carbapenems-valproate",
+    "antiseizure-medications:lamotrigine",
+    "antiseizure-medications:phenytoin-fosphenytoin"
+  ],
+  "sources": [
+    "Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)",
+    "Depakote (divalproex sodium) delayed-release tablets US prescribing information. AbbVie; revised 3/2026 (user-supplied label)",
+    "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)",
+    "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

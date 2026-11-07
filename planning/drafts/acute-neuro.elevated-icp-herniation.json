@@ -1,0 +1,309 @@
+{
+  "id": "elevated-icp-herniation",
+  "title": "Elevated ICP / cerebral herniation",
+  "category": "ICP_HERNIATION",
+  "searchTerms": [
+    "ICP",
+    "herniation",
+    "mannitol",
+    "hypertonic saline",
+    "3% saline",
+    "23.4%",
+    "uncus",
+    "tonsillar",
+    "osmolar gap"
+  ],
+  "presentation": [
+    "Fixed/dilated pupil, extensor posturing, Cushing triad (HTN + bradycardia + irregular respirations), acute decline in GCS"
+  ],
+  "definitions": [
+    "Uncal: medial temporal lobe over tentorial edge → ipsilateral dilated pupil, contralateral hemiparesis",
+    "Central: downward displacement of diencephalon → small reactive pupils then fixed midposition, Cheyne-Stokes",
+    "Subfalcine: cingulate gyrus under falx → ACA compression / leg weakness",
+    "Tonsillar: cerebellar tonsils through foramen magnum → apnea, bradycardia, death",
+    "Normal ICP <15 mm Hg (adults); treatment threshold ≥20–22 mm Hg"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "0–5 min",
+      "action": "Call neurosurgery STAT. Position head midline, elevate head of bed 30°"
+    },
+    {
+      "order": 2,
+      "window": "0–5 min",
+      "action": "Ensure airway/ventilation — brief mild hyperventilation (target PaCO2 30–35 mm Hg) ONLY as temporizing bridge"
+    },
+    {
+      "order": 3,
+      "window": "5–15 min",
+      "action": "Osmotherapy bolus (hypertonic saline preferred over mannitol in hypotension / hypovolemia)"
+    },
+    {
+      "order": 4,
+      "window": "15–30 min",
+      "action": "Stat noncontrast head CT (or directly to OR if herniating with known surgical lesion)"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Noncontrast head CT",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "Look for midline shift, effaced basal cisterns, hydrocephalus, mass lesion"
+      ]
+    },
+    {
+      "test": "BMP with Na, K, BUN, Cr",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "Baseline before osmotherapy; recheck q4–6h during therapy"
+      ]
+    },
+    {
+      "test": "Serum osmolality (measured)",
+      "priority": "STAT",
+      "indication": [
+        "If using mannitol"
+      ],
+      "notes": [
+        "Calculate osmolar gap = measured − calculated"
+      ]
+    },
+    {
+      "test": "ABG / VBG",
+      "priority": "STAT",
+      "indication": [
+        "If ventilated"
+      ],
+      "notes": [
+        "Target PaCO2 35–40 mm Hg; 30–35 only during acute herniation"
+      ]
+    },
+    {
+      "test": "Coagulation panel (PT/INR, aPTT, platelets)",
+      "priority": "STAT",
+      "indication": [
+        "If intracranial hemorrhage or surgical candidate"
+      ],
+      "notes": []
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Hypertonic saline 3%",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "250–500 mL IV bolus over 10–20 min (or 2–5 mL/kg, max 500 mL); central line preferred, peripheral acceptable in emergency",
+      "dose": [
+        {
+          "label": "Bolus",
+          "amountMin": 250,
+          "amountMax": 500,
+          "unit": "ML",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "May repeat bolus if ICP remains elevated and serum Na <155–160 mEq/L"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "No serum sodium target is endorsed (Cook 2020): SAH — symptom-based boluses rather than a sodium target; ICH — bolus or targeted sodium both acceptable; TBI/AIS — no target recommended. Studies that targeted sodium used 145–155 mEq/L",
+        "Ceiling: Na 155–160 mEq/L and Cl 110–115 mEq/L may be reasonable to limit AKI; monitor Na, Cl and renal function (Cook 2020)",
+        "Preferred over mannitol if hypotensive (SBP <90) or hypovolemic",
+        "Peripheral administration of 3% is safe emergently; switch to central line when placed"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Cook 2020: HTS over mannitol for ICP/edema in TBI — conditional, low-quality evidence; in ICH — conditional, very low",
+        "Cook 2020: HTS or mannitol in AIS — conditional, low; neither improves neurological outcome"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "hypertonic-saline-dose"
+      ]
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Mannitol 20%",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "0.5–1 g/kg IV bolus over 15–30 min through an in-line filter",
+      "dose": [
+        {
+          "label": "Bolus",
+          "amountMin": 0.5,
+          "amountMax": 1,
+          "unit": "G",
+          "basis": "PER_KG",
+          "timing": "SINGLE",
+          "weightBasis": "ACTUAL",
+          "caps": [
+            {
+              "amount": 100,
+              "unit": "G",
+              "scope": "PER_DOSE"
+            }
+          ],
+          "frequency": [
+            "May repeat q4–6h; follow osmolar gap (no validated cutoff) and MAP"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Requires Foley catheter — produces vigorous osmotic diuresis",
+        "Monitor the osmolar gap rather than serum osmolality (Cook 2020); no gap cutoff is validated — 20 mOsm/kg is used in practice, ≥55 correlated with mannitol concentration in one study; osmolality >320 did not change AKI incidence",
+        "Do NOT use if hypotensive or hypovolemic; replace urine volume with isotonic crystalloid if needed"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Cook 2020: mannitol is an effective alternative in TBI when HTS can't be given — conditional, low-quality evidence",
+        "Cook 2020: osmolar gap over osmolality for AKI monitoring — conditional, very low"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "mannitol-dose"
+      ]
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Hypertonic saline 23.4%",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "30 mL IV push over 10–15 min through a central line ONLY",
+      "dose": [
+        {
+          "label": "Bolus",
+          "amountMin": 30,
+          "amountMax": 30,
+          "unit": "ML",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Reserved for refractory elevated ICP / acute herniation"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "CENTRAL LINE ONLY — severe tissue necrosis if extravasated",
+        "Rapid onset (minutes); keep in ICU / code cart where available"
+      ],
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "NCS emergency neurological life support (ENLS)"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Dexamethasone",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "10 mg IV bolus, then 4 mg IV q6h",
+      "dose": [
+        {
+          "label": "Load",
+          "amountMin": 10,
+          "amountMax": 10,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 4,
+          "amountMax": 4,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q6h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "INDICATED ONLY for vasogenic edema from tumor, abscess, or CNS inflammation",
+        "CONTRAINDICATED in acute ischemic stroke, ICH, and traumatic brain injury (CRASH trial showed increased mortality)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "NCCN guidelines (brain metastases); CRASH trial (contraindication in TBI)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Sedation / analgesia (propofol ± fentanyl)",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Titrate to target RASS -4 to -5; avoid hypotension",
+      "dose": [],
+      "notes": [
+        "Reduces cerebral metabolic demand and blunts ICP spikes from coughing/agitation",
+        "Propofol infusion syndrome risk with prolonged (>48h) or high-dose (>50 mcg/kg/min) infusions"
+      ],
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "NCS guidelines"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Do NOT give steroids for ischemic stroke, intracerebral hemorrhage, or TBI — harmful",
+    "Avoid prolonged hyperventilation — causes cerebral vasoconstriction and secondary ischemia; use only as bridge to definitive therapy",
+    "Do NOT let serum sodium drop during ICP management — avoid all hypotonic IV fluids (no D5W, no 0.45% NaCl); use 0.9% NaCl as maintenance (Cook 2020: avoid hyponatremia — good practice)",
+    "Mannitol in a hypovolemic patient induces severe hypotension, dropping cerebral perfusion pressure (CPP = MAP - ICP)"
+  ],
+  "escalateWhen": [
+    "Pupillary asymmetry or loss of light reflex",
+    "ICP >20–22 mm Hg refractory to first-line osmotherapy",
+    "New extensor or flexor posturing",
+    "Cushing triad"
+  ],
+  "institutionVaries": [
+    "Availability and stocking of 23.4% NaCl (often restricted to Neuro ICU / code carts)",
+    "Osmolar-gap cutoff used to hold mannitol (Cook 2020 prefers the gap over osmolality but sets no cutoff)",
+    "Peripheral 3% NaCl protocol (some hospitals permit bolus only, others continuous with concentration limits)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:ich-etiology-workup",
+    "consult-workups:sah-workup",
+    "calc:mannitol-dose",
+    "calc:hypertonic-saline-dose",
+    "reference-cards:neuro-icu-targets"
+  ],
+  "sources": [
+    "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7",
+    "Hawryluk GWJ, et al. Brain Trauma Foundation Guidelines for the Management of Severe Traumatic Brain Injury: 2020 Update. Neurosurgery 2020;87:427-434",
+    "Roberts I, et al. Effect of intravenous corticosteroids on death within 14 days in 10008 adults with traumatic brain injury (CRASH trial). Lancet 2004;364:1321-1328"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

@@ -1,0 +1,154 @@
+{
+  "id": "intravascular-lymphoma",
+  "title": "Suspected intravascular large B-cell lymphoma (IVLBCL)",
+  "searchTerms": [
+    "IVL",
+    "IVLBCL",
+    "intravascular lymphoma",
+    "angiotropic lymphoma",
+    "random skin biopsy",
+    "angioendotheliomatosis",
+    "sIL-2R"
+  ],
+  "category": "INFLAMMATORY_DEMYELINATING",
+  "consultQuestion": "Progressive multifocal infarcts or encephalopathy with nonspecific MRI, high LDH, or unexplained fever — intravascular lymphoma? Skin biopsy before brain biopsy?",
+  "keyHistory": [
+    "Neurologic findings in 75–76%, constitutional symptoms (fever, sweats, weight loss), skin lesions (Rozenbaum)",
+    "Fever of unknown origin; HLH features (HLH mostly in the Asian variant) (Rozenbaum; Shimada)"
+  ],
+  "keyExam": [
+    "Skin: plaques, nodules, violaceous patches, petechiae, telangiectasias, cherry angiomas (Rozenbaum)"
+  ],
+  "redFlags": [
+    "Rapidly progressive course — aggressive lymphoma with poor prognosis (Shimada)",
+    "Neurological symptoms with unrevealing imaging — imaging detects CNS involvement in only about half (Shimada)"
+  ],
+  "differential": [
+    {
+      "dx": "Intravascular large B-cell lymphoma",
+      "clues": [
+        "LDH raised; anemia, thrombocytopenia (Rozenbaum; Shimada)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "CNS vasculitis (PACNS)",
+      "clues": [
+        "Imaging can be identical (Shimada); 25% of patients biopsied for IVL who didn't have it had CNS vasculitis (Rozenbaum)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Other CNS lymphoma",
+      "clues": [
+        "9% of alternative diagnoses (Rozenbaum)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Meningoencephalitis / encephalitis",
+      "clues": [
+        "7% of alternative diagnoses (Rozenbaum)"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "LDH, CBC, CRP, albumin",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "LDH raised in 10/11 Western patients (Rozenbaum), 104/106 (98%) in a Japanese cohort and 69% in a European series (Shimada)",
+        "Anemia 75%, thrombocytopenia 33% (Rozenbaum)"
+      ]
+    },
+    {
+      "test": "Soluble IL-2 receptor",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected IVLBCL"
+      ],
+      "notes": [
+        "sIL-2R >5000 U/mL in 63/96 (66%) of a Japanese cohort, significantly higher in Asian-variant than non-Asian IVLBCL — yield in Western patients not reported (Shimada)"
+      ]
+    },
+    {
+      "test": "Random skin biopsies",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "≥3 sites of normal-appearing skin plus any skin lesions and cherry angiomas; 4-mm punch deep enough to include subcutaneous fat (Rozenbaum)",
+        "Sensitivity 50% (12 cases), specificity 100%; positive in 1 of 10 patients evaluated (Rozenbaum)",
+        "Lesional skin more sensitive than uninvolved skin (67% vs 33%) (Rozenbaum)"
+      ]
+    },
+    {
+      "test": "MRI brain with DWI",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Nonspecific white-matter hyperintensity that can mimic small-vessel disease, demyelination, or vasculitis (Shimada)"
+      ]
+    },
+    {
+      "test": "Bone marrow biopsy",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Cytopenias",
+        "Skin biopsies negative"
+      ],
+      "notes": [
+        "Negative in all 9 Western patients who had it (Rozenbaum); intrasinusoidal involvement is common in Asian series and repeat biopsy may help (Shimada)"
+      ]
+    },
+    {
+      "test": "Brain biopsy",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Skin biopsies negative and suspicion persists"
+      ],
+      "notes": [
+        "6 of 12 IVL cases in Rozenbaum were diagnosed by other means, typically brain biopsy"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Suspected IVLBCL",
+      "recommendation": "Random skin biopsies (≥3 normal-skin sites + lesions + angiomas, deep with fat) before brain biopsy",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Rozenbaum 2021: authors' suggested approach; skin-before-brain order not tested",
+        "Shimada 2009: random skin biopsy promising, data still limited"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Hematology/oncology once suspected — adding rituximab to chemotherapy has shown benefit (Shimada)"
+  ],
+  "recsTemplate": [],
+  "disposition": [
+    "Hematology/oncology"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Dermatology availability for multiple deep punch biopsies",
+    "sIL-2R send-out turnaround"
+  ],
+  "pearls": [
+    "Very low HDL may be a clue (median 23 mg/dL; 2 patients <5) (Rozenbaum)",
+    "Random skin biopsy can be positive even where the cutaneous variant is rare (Shimada)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:cns-vasculitis-workup",
+    "consult-workups:rapidly-progressive-dementia"
+  ],
+  "sources": [
+    "Rozenbaum D, et al. Skin biopsy in the diagnosis of intravascular lymphoma: A retrospective diagnostic accuracy study. J Am Acad Dermatol 2021;85:665-670. doi:10.1016/j.jaad.2019.09.015",
+    "Shimada K, Kinoshita T, Naoe T, Nakamura S. Presentation and management of intravascular large B-cell lymphoma. Lancet Oncol 2009;10:895-902"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

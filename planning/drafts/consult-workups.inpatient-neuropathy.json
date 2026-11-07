@@ -1,0 +1,286 @@
+{
+  "id": "inpatient-neuropathy",
+  "title": "Acute or subacute neuropathy on the wards",
+  "searchTerms": [
+    "neuropathy",
+    "polyneuropathy",
+    "mononeuritis multiplex",
+    "vasculitic neuropathy",
+    "CIDP",
+    "B12",
+    "copper",
+    "nitrous oxide"
+  ],
+  "category": "NEUROMUSCULAR",
+  "consultQuestion": "Numbness and weakness in the limbs — what kind of neuropathy, and does it need urgent treatment?",
+  "keyHistory": [
+    "Tempo: days (GBS, vasculitis, toxic) vs weeks (CIDP, nutritional) vs years",
+    "Pattern: length-dependent vs multifocal (mononeuritis multiplex) vs proximal and distal",
+    "Pain (vasculitis), systemic symptoms, rash, weight loss",
+    "Bariatric surgery, malabsorption, zinc products, nitrous oxide use",
+    "Alcohol, chemotherapy, other neurotoxic drugs; diabetes"
+  ],
+  "keyExam": [
+    "Distribution of weakness and sensory loss",
+    "Reflexes",
+    "Upper motor neuron signs (combined myelopathy — B12, copper, nitrous oxide)",
+    "Skin: purpura, livedo"
+  ],
+  "redFlags": [
+    "Rapid progression or respiratory/bulbar involvement — treat as GBS",
+    "Painful asymmetric deficits in separate nerves — vasculitis",
+    "Myelopathy plus neuropathy — B12, copper, nitrous oxide"
+  ],
+  "differential": [
+    {
+      "dx": "Guillain-Barré syndrome",
+      "clues": [
+        "Progression ≤4 weeks, areflexia"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Acute-onset CIDP",
+      "clues": [
+        "Progression >8 weeks or ≥3 treatment-related fluctuations"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Vasculitic neuropathy (mononeuritis multiplex)",
+      "clues": [
+        "Painful, stepwise, asymmetric; systemic vasculitis"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "B12 deficiency / nitrous oxide toxicity",
+      "clues": [
+        "Myeloneuropathy, high MMA/homocysteine",
+        "Serum B12 often normal in N₂O users (low in 42%) — MMA/homocysteine raised in ~80% (Ménétrier 2023)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Copper deficiency",
+      "clues": [
+        "Bariatric surgery, zinc excess; cytopenias; myeloneuropathy",
+        "Excess zinc incl. denture cream; prior gastric surgery; malabsorption (Kumar 2006)"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Toxic (chemotherapy, alcohol, heavy metals)",
+      "clues": [
+        "Exposure history"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Autoimmune nodopathy (anti-NF155, CNTN1, Caspr1, pan-neurofascin IgG)",
+      "clues": [
+        "CIDP-like, often acute/subacute: ataxia and tremor (NF155), motor/ataxic (CNTN1), pain and cranial nerves (Caspr1); poor or no IVIG response",
+        "Pan-neurofascin: severe phenotype, especially IgG3 (EAN/PNS 2021)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Anti-MAG IgM neuropathy",
+      "clues": [
+        "Distal, lower > upper limb; IgM paraprotein; usually doesn't respond to IVIG or steroids (EAN/PNS 2021)"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Acute hepatic porphyria",
+      "clues": [
+        "Weakness/neuropathy with abdominal pain, hyponatremia, tachycardia — see acute-hepatic-porphyria"
+      ],
+      "mustNotMiss": true
+    }
+  ],
+  "workup": [
+    {
+      "test": "EMG/NCS",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Axonal vs demyelinating; multifocal pattern"
+      ]
+    },
+    {
+      "test": "B12 with MMA and homocysteine; copper and ceruloplasmin; zinc",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "MMA/homocysteine also rise in nitrous oxide toxicity (Douglas 2022)",
+        "Total B12 is low in only 42% of N₂O users — rely on MMA/homocysteine; interpret with eGFR (Ménétrier 2023)"
+      ]
+    },
+    {
+      "test": "Glucose/HbA1c, CBC, BMP, LFTs, TSH, SPEP with immunofixation",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Serum and urine M-protein by immunofixation are strongly advised in suspected CIDP (EAN/PNS 2021 Table 5)"
+      ]
+    },
+    {
+      "test": "LP",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected GBS or CIDP"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Vasculitic neuropathy panel: CBC with eosinophils, chemistry, UA, HbA1c, ESR, CRP, ANA, RF, ANCA, SPEP with immunofixation, complement (C3, C4), cryoglobulins, HBsAg, HCV antibody, chest X-ray",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Painful multifocal or stepwise neuropathy"
+      ],
+      "notes": [
+        "PNS 2010 Table 7 routine studies (Good Practice Point)"
+      ]
+    },
+    {
+      "test": "Nerve biopsy (with peroneus brevis muscle biopsy through the same incision when possible) of an affected nerve",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected nonsystemic vasculitic neuropathy"
+      ],
+      "notes": [
+        "Required to diagnose NSVN; optional with established systemic vasculitis or diabetic radiculoplexus phenotype (PNS 2010)"
+      ]
+    },
+    {
+      "test": "MRI spine",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "UMN signs or sensory level"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Nodal-paranodal antibodies (NF155, CNTN1, Caspr1, NF140/186)",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "CIDP-like neuropathy with acute/subacute onset, ataxia, tremor, or poor IVIG response"
+      ],
+      "notes": [
+        "Cell-based assay, with confirmation by ELISA or teased-nerve immunohistochemistry (EAN/PNS 2021 Good Practice Point)"
+      ]
+    },
+    {
+      "test": "Anti-MAG antibodies",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "IgM paraprotein with a distal phenotype"
+      ],
+      "notes": [
+        "High titre (>7000 BTU) strongly implies anti-MAG neuropathy rather than CIDP (EAN/PNS 2021)"
+      ]
+    },
+    {
+      "test": "Anti-ganglioside antibodies",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected GBS variant (MFS, PCB), multifocal motor neuropathy, or chronic ataxic neuropathy"
+      ],
+      "notes": [
+        "Phenotype map in pearls (Willison & Yuki 2002 Table 1); a negative result doesn't exclude GBS (Leonhard 2019)"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Progression to nadir ≤4 weeks",
+      "recommendation": "GBS pathway — see acute-neuro:guillain-barre-syndrome",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "EAN/PNS 2023"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Progression >8 weeks from onset or ≥3 treatment-related fluctuations",
+      "recommendation": "Consider acute-onset CIDP",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "EAN/PNS 2023"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Sensory or sensorimotor, asymmetric/multifocal, lower-limb and distal predominant, painful, acute relapsing, non-demyelinating EMG",
+      "recommendation": "Clinically typical for vasculitic neuropathy — vasculitis panel and biopsy planning",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "PNS 2010: Good Practice Point"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Proximal signs, proximal or mixed axonal/demyelinating EMG, or suspected sarcoid, malignancy, or meningeal infection",
+      "recommendation": "LP should be considered",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "PNS 2010: Good Practice Point"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "CIDP-like neuropathy with nodal-paranodal antibodies",
+      "recommendation": "Autoimmune nodopathy — not a CIDP variant; poor response to IVIG; rituximab may be effective",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "EAN/PNS 2021 Good Practice Point; rituximab evidence anecdotal (case series)"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "B12 deficiency or nitrous oxide toxicity: replace B12 promptly (dosing per institutional protocol)"
+  ],
+  "recsTemplate": [
+    "EMG/NCS",
+    "B12, MMA, homocysteine; copper, ceruloplasmin, zinc; SPEP/IFE; HbA1c; TSH",
+    "LP [if GBS/CIDP suspected]",
+    "Vasculitis labs [if multifocal/painful]"
+  ],
+  "disposition": [
+    "Outpatient neuromuscular follow-up for subacute or chronic patterns"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Nerve biopsy access and turnaround"
+  ],
+  "pearls": [
+    "Nitrous oxide toxicity looks identical to B12 deficiency on exam and imaging — ask about recreational use ('whippets') and recent anesthesia (Douglas 2022)",
+    "PR3/MPO-ANCA, mixed cryoglobulins, ESR ≥100 mm/h, other-organ involvement, or a predisposing condition point to systemic rather than nonsystemic vasculitis (PNS 2010)",
+    "Anti-glycolipid map (Willison & Yuki 2002 Table 1) — IgG GM1, GM1b, GD1a, GalNAc-GD1a: AMAN",
+    "IgG GQ1b, GT1a: Miller Fisher, Bickerstaff, acute ophthalmoparesis, ataxic GBS; IgG GT1a (± GQ1b): pharyngeal-cervical-brachial (Willison & Yuki 2002)",
+    "IgM GM1, GD1b, asialo-GM1 (polyclonal or monoclonal): multifocal motor neuropathy (Willison & Yuki 2002)",
+    "Monoclonal IgM to disialosyl gangliosides (GD1b, GD3, GT1b, GQ1b): chronic ataxic neuropathy / CANOMAD; monoclonal IgM to SGPG (MAG cross-reactive): chronic demyelinating neuropathy (Willison & Yuki 2002)",
+    "IgG anti-GD1a separates AMAN from AIDP better than anti-GM1: 60% vs 4% at titre >1:100 (Willison & Yuki 2002)",
+    "Nodopathies lack overt inflammation or macrophage-mediated demyelination, which is why they aren't classed as CIDP (EAN/PNS 2021)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:guillain-barre-syndrome",
+    "consult-workups:myelopathy-workup",
+    "consult-workups:acute-generalized-weakness",
+    "consult-workups:acute-hepatic-porphyria"
+  ],
+  "sources": [
+    "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
+    "Douglas AG, Xu DJ, Shah MP. Approach to Myelopathy and Myelitis. Neurol Clin 2022;40:133-156. doi:10.1016/j.ncl.2021.08.009",
+    "Collins MP, et al. Peripheral Nerve Society Guideline on the classification, diagnosis, investigation, and immunosuppressive therapy of non-systemic vasculitic neuropathy: executive summary. J Peripher Nerv Syst 2010;15:176-184. doi:10.1111/j.1529-8027.2010.00281.x",
+    "Van den Bergh PYK, et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of chronic inflammatory demyelinating polyradiculoneuropathy: Report of a joint Task Force—Second revision. Eur J Neurol 2021;28:3556-3583. doi:10.1111/ene.14959",
+    "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625",
+    "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
+    "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
+    "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

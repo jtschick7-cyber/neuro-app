@@ -1,0 +1,315 @@
+{
+  "id": "post-dural-puncture-headache",
+  "title": "Post-dural puncture headache (post-LP) and epidural blood patch",
+  "category": "HEADACHE",
+  "searchTerms": [
+    "PDPH",
+    "post-LP headache",
+    "post lumbar puncture headache",
+    "spinal headache",
+    "blood patch",
+    "EBP",
+    "epidural blood patch",
+    "low pressure headache"
+  ],
+  "presentation": [
+    "Headache or neurologic symptoms, often relieved lying flat, within 5 days of a neuraxial procedure — suspect PDPH",
+    "Often neck stiffness and subjective hearing symptoms; also spinal pain, visual disturbance, vertigo",
+    "Higher risk: younger adults and women (high certainty); prior headache history (moderate)"
+  ],
+  "definitions": [
+    "ICHD-3 (as summarized by the consensus): headache within 5 days of LP from CSF leak, usually with neck stiffness or hearing symptoms, remitting within 2 weeks or after the leak is sealed",
+    "Consensus caveats: onset can be >5 days; a postural component is usually present; the puncture may go unnoticed; headache can outlast 2 weeks"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "At diagnosis",
+      "action": "Confirm timing and postural pattern; check for imaging triggers (workup)"
+    },
+    {
+      "order": 2,
+      "window": "Conservative",
+      "action": "Oral hydration (IV only if oral not possible); scheduled acetaminophen + NSAID unless contraindicated; caffeine in the first 24 h of symptoms (≤900 mg/day)"
+    },
+    {
+      "order": 3,
+      "window": "If analgesia fails",
+      "action": "Short-term opioid may be considered; occipital nerve block may be offered after spinal with a ≥22 G needle"
+    },
+    {
+      "order": 4,
+      "window": "Refractory and impairing ADLs, or severe neuro symptoms",
+      "action": "Epidural blood patch (anesthesia or IR)"
+    },
+    {
+      "order": 5,
+      "window": "Until resolved",
+      "action": "Follow until headache resolves; urgent imaging if worse after EBP, new focal deficit, or headache changes"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Brain imaging",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Non-orthostatic headache, or orthostatic headache that becomes non-orthostatic",
+        "Onset >5 days after dural puncture",
+        "Focal deficit, visual change, altered consciousness or seizure (especially postpartum)",
+        "Worsening despite EBP, new focal symptoms or change in headache"
+      ],
+      "notes": [
+        "Alternatives to exclude include subdural hematoma and CVST",
+        "Routine imaging before EBP: insufficient evidence (statement, low certainty)"
+      ]
+    },
+    {
+      "test": "Antithrombotic review, platelet count and temperature before EBP",
+      "priority": "ROUTINE",
+      "indication": [],
+      "notes": [
+        "Follow neuraxial antithrombotic guidance — see vascular-antithrombotics:periprocedural-holds-lp-evd (B, moderate)",
+        "Pregnancy: platelets ≥70,000/µL with normal function and coagulation → low epidural hematoma risk (statement, moderate)",
+        "Fever or systemic infection: caution; deferring EBP may be appropriate (C, moderate)"
+      ]
+    }
+  ],
+  "treatment": [
+    {
+      "role": "SUPPORTIVE",
+      "agent": "Hydration",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Maintain oral hydration; IV fluids only when oral intake can't be maintained",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Uppal 2023: grade C, low certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SUPPORTIVE",
+      "agent": "Bed rest",
+      "routes": [
+        "NON_PHARM"
+      ],
+      "doseText": "Temporizing symptom relief only — not routine treatment",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Uppal 2023: grade C, low certainty (routine use not supported)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Multimodal analgesia (acetaminophen + NSAID)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Scheduled, unless contraindicated (source gives no doses)",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Uppal 2023: grade B, low certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Caffeine",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "First 24 h of symptoms; max 900 mg/day (200–300 mg/day if breastfeeding); avoid multiple sources",
+      "dose": [],
+      "notes": [
+        "Evidence from 2 small RCTs; excess can cause withdrawal, dehydration, seizures"
+      ],
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Uppal 2023: grade B, low certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Opioid, short-term",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "May consider short-term if multimodal analgesia fails; no long-term use",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Uppal 2023: short-term grade C, low certainty; long-term grade D, moderate certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Greater occipital nerve block",
+      "routes": [
+        "PERINEURAL"
+      ],
+      "doseText": "May offer after spinal anesthesia with a narrower (≥22 G) needle (source gives no volume)",
+      "dose": [],
+      "notes": [
+        "Headache may recur; more severe headache may still need EBP",
+        "Benefit after wider-gauge punctures unclear (statement, low certainty)"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Uppal 2023: grade C, moderate certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SECOND_LINE",
+      "agent": "Epidural blood patch",
+      "routes": [
+        "EPIDURAL"
+      ],
+      "doseText": "Autologous blood, usually 15–20 mL (optimal volume unknown; >30 mL adds nothing), at or one level below the puncture; inject slowly and stop for significant back pain or headache",
+      "dose": [
+        {
+          "label": "Usual volume (consensus statement)",
+          "amountMin": 15,
+          "amountMax": 20,
+          "unit": "ML",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Indications: refractory to conservative care and impairing ADLs (B, moderate); severe neurologic symptoms such as hearing loss or cranial neuropathy (C, moderate)",
+        "Within 48 h of dural puncture: counsel that a repeat EBP is more likely (B, moderate)",
+        "Complete relief 33–91% in recent series (statement, low)",
+        "Consent: repeat dural puncture, backache, neurologic complications (A, high)",
+        "Strict asepsis (B); no routine blood cultures (D, low)",
+        "Image guidance (fluoroscopy/CT, transforaminal) individualized — e.g., prior laminectomy or failed interlaminar EBP (C, moderate)",
+        "Persistent, worsening or changed backache after EBP → look for another diagnosis (C, low)",
+        "Prior EBP shouldn't stop future epidural analgesia (C, low)"
+      ],
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Uppal 2023: grade B, moderate certainty (EBP when refractory and impairing ADLs)",
+        "Volume and success figures: ungraded consensus statements (low; >30 mL moderate)"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Abdominal binders, aromatherapy",
+      "routes": [
+        "NON_PHARM"
+      ],
+      "doseText": "Not supported",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Uppal 2023: grade D, low certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Spinal or epidural morphine",
+      "routes": [
+        "INTRATHECAL",
+        "EPIDURAL"
+      ],
+      "doseText": "Not supported",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Uppal 2023: grade D, low certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Routine drug therapy beyond analgesia/caffeine",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Hydrocortisone, theophylline, triptans, ACTH/cosyntropin, neostigmine/atropine, piritramide, methylergonovine, gabapentin — evidence doesn't support routine use",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Uppal 2023: grade I, low certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Other procedures",
+      "routes": [
+        "PERINEURAL",
+        "EPIDURAL",
+        "NON_PHARM"
+      ],
+      "doseText": "SPG block, acupuncture, epidural dextran/gelatin/hydroxyethyl starch, routine fibrin glue — evidence doesn't support routine use",
+      "dose": [],
+      "notes": [
+        "Fibrin glue: reserve for EBP-refractory PDPH or when EBP is contraindicated; anaphylaxis and aseptic meningitis reported",
+        "Epidural saline: temporary benefit at most (statement, low)"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Uppal 2023: grade I, low certainty"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "No routine prophylactic EBP after dural puncture (I, low), no prophylactic bed rest (D, moderate), no routine prophylactic drugs or neuraxial injections (I, low)",
+    "Your own LPs: use noncutting (atraumatic) needles in all populations (A, high); if cutting, narrower gauge (A, high) with the bevel parallel to the spine's long axis (B, moderate); lateral decubitus and fewer attempts are associated with lower risk (statements, moderate)",
+    "Long-term associations: chronic headache, back/neck pain, depression, cranial nerve palsy, SDH, CVST (moderate); unknown whether EBP prevents them",
+    "Hand off: tell the primary team/PCP about the PDPH and arrange follow-up until resolution (B, moderate)"
+  ],
+  "escalateWhen": [
+    "Worsening despite EBP, new focal neurologic symptoms, or change in headache character → urgent neuroimaging and specialist referral (B, moderate)",
+    "Focal deficit, visual change, altered consciousness or seizure → neuroimaging for an alternative diagnosis (B, moderate)"
+  ],
+  "institutionVaries": [
+    "Who performs EBP (anesthesia vs interventional radiology) and with what image guidance",
+    "Post-LP follow-up pathway (consensus: centers doing LPs should have one)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:periprocedural-holds-lp-evd",
+    "consult-workups:thunderclap-headache",
+    "acute-neuro:status-migrainosus"
+  ],
+  "sources": [
+    "Uppal V, et al. Consensus practice guidelines on postdural puncture headache from a multisociety, international working group: a summary report. JAMA Netw Open 2023;6(8):e2325387. doi:10.1001/jamanetworkopen.2023.25387"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

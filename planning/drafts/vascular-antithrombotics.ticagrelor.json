@@ -1,0 +1,247 @@
+{
+  "kind": "AGENT",
+  "id": "ticagrelor",
+  "title": "Ticagrelor (Brilinta)",
+  "searchTerms": [
+    "Brilinta",
+    "P2Y12 inhibitor",
+    "THALES",
+    "CHANCE-2",
+    "DAPT"
+  ],
+  "drugClass": "ANTIPLATELET",
+  "subclass": "P2Y12 inhibitor (reversible, direct-acting)",
+  "mechanism": "Reversibly blocks P2Y12; no metabolic activation needed (CYP2C19-independent)",
+  "uses": [
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Ticagrelor + aspirin — noncardioembolic minor stroke (NIHSS ≤5) or high-risk TIA (ABCD2 ≥6, or symptomatic ≥50% intracranial/extracranial stenosis that could account for the TIA), <24 h, no IVT (THALES)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "180 mg load, then 90 mg BID for up to 30 days; first maintenance dose 6–12 h after the load; with aspirin 300–325 mg load then 75–100 mg daily",
+      "dose": [
+        {
+          "label": "Load",
+          "amountMin": 180,
+          "amountMax": 180,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 90,
+          "amountMax": 90,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": [
+            "Up to 30 days"
+          ]
+        }
+      ],
+      "notes": [
+        "FDA-labeled stroke indication (NIHSS ≤5 or high-risk TIA)",
+        "More severe bleeding including ICH (Kleindorfer)"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA 2026: COR 2b, LOE B-R",
+        "Kleindorfer 2021 §5.19: COR 2b, LOE B-R (SR) — used ≥30% stenosis for any event"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Ticagrelor + aspirin — CYP2C19 loss-of-function carrier, minor stroke (NIHSS ≤3) or TIA (ABCD2 ≥4), <24 h, no IVT (CHANCE-2)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "180 mg load, then 90 mg BID with aspirin × 21 days, then ticagrelor monotherapy",
+      "dose": [
+        {
+          "label": "Load",
+          "amountMin": 180,
+          "amountMax": 180,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 90,
+          "amountMax": 90,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Preferred over clopidogrel + aspirin in carriers"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA 2026: COR 2b, LOE B-R"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Ticagrelor monotherapy instead of aspirin (SOCRATES)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Not recommended over aspirin (unstructured: recommendation against)",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2026: COR 3: No Benefit, LOE B-R"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "SECOND_LINE",
+      "agent": "Ticagrelor — minor stroke/high-risk TIA <24 h with ipsilateral >30% intracranial stenosis",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "90 mg BID added to aspirin for up to 30 days (unstructured: see ICAD entry, pending)",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE B-NR"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renalHepatic": [
+    "No renal adjustment; ESRD on hemodialysis: exposure ~38% higher on non-dialysis days (label)",
+    "Severe hepatic impairment: exposure likely increased (label)"
+  ],
+  "timing": {
+    "halfLifeText": "~7 h (parent), ~9 h (active metabolite) (label)",
+    "holdBeforeProcedure": [
+      "Stop 5 days before surgery with major bleeding risk when possible (label)"
+    ],
+    "thrombolysisRule": [
+      "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute (class-level statement; agent not named)",
+      "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
+    ]
+  },
+  "reversal": [
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Platelet transfusion",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Did not reverse ticagrelor in healthy volunteers; unlikely to help (unstructured: label statement)",
+      "dose": [],
+      "notes": [
+        "Circulating drug inhibits transfused platelets"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Label §10 overdosage"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Desmopressin",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "0.4 mcg/kg IV once",
+      "dose": [
+        {
+          "label": "Desmopressin",
+          "amountMin": 0.4,
+          "amountMax": 0.4,
+          "unit": "MCG",
+          "basis": "PER_KG",
+          "timing": "SINGLE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Watch sodium"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "NCS 2016: suggestion for ADP-receptor inhibitor ICH",
+        "AHA ICH 2022: COR 2b, C-LD"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "monitoring": [
+    "Dyspnea (common, self-limiting) and bradyarrhythmias/ventricular pauses (label)"
+  ],
+  "interactions": [
+    "Avoid strong CYP3A inhibitors (e.g., ketoconazole, itraconazole, voriconazole, clarithromycin, nefazodone) and strong inducers (rifampin, phenytoin, carbamazepine, phenobarbital) (label)",
+    "Aspirin maintenance >100 mg reduces effectiveness — keep 75–100 mg (label)"
+  ],
+  "pregnancy": [
+    "Crosses the placenta; minimal pregnancy and lactation data (Miller 2026)"
+  ],
+  "formularyStatus": "INSTITUTION_VARIES",
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Formulary restriction for neuro indications",
+    "CYP2C19 genotype testing"
+  ],
+  "pearls": [
+    "Contraindicated with any history of intracranial hemorrhage (label)",
+    "Tablets can be crushed and given in water orally or by NG tube (label)",
+    "Can cause false-negative platelet function tests for HIT; PF4 antibody testing unaffected (label)",
+    "After IVT: antiplatelets in the first 24 h might be considered only with a compelling indication (AHA 2026: COR 2b, B-NR); usual practice is 24-h imaging first"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:aspirin",
+    "vascular-antithrombotics:clopidogrel",
+    "vascular-antithrombotics:pregnancy-antithrombotics"
+  ],
+  "sources": [
+    "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Johnston SC, et al. Ticagrelor and Aspirin or Aspirin Alone in Acute Ischemic Stroke or TIA (THALES). N Engl J Med 2020;383:207-217. doi:10.1056/NEJMoa1916870",
+    "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
+    "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
+    "Ticagrelor tablets US prescribing information. AiPing Pharmaceutical; revised 6/2026 (user-supplied label)",
+    "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

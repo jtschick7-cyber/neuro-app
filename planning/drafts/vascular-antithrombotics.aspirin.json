@@ -1,0 +1,287 @@
+{
+  "kind": "AGENT",
+  "id": "aspirin",
+  "title": "Aspirin",
+  "searchTerms": [
+    "ASA",
+    "acetylsalicylic acid",
+    "baby aspirin",
+    "SAPT",
+    "antiplatelet"
+  ],
+  "drugClass": "ANTIPLATELET",
+  "subclass": "Irreversible COX-1 inhibitor",
+  "mechanism": "Irreversibly acetylates platelet COX-1 → less thromboxane A2 for the platelet's lifespan",
+  "uses": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Aspirin — acute ischemic stroke (no IVT)",
+      "routes": [
+        "PO",
+        "PR"
+      ],
+      "doseText": "Start within 48 h of onset; trials used 160–300 mg daily early (IST 300 mg, CAST 160 mg)",
+      "dose": [
+        {
+          "label": "Early dose",
+          "amountMin": 160,
+          "amountMax": 300,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Not a substitute for IVT or EVT in eligible patients (COR 3: Harm, B-R)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2026: COR 1, LOE A (within 48 h)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "IV aspirin with or within 90 min of starting IVT",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Do not give (unstructured: recommendation against)",
+      "dose": [],
+      "notes": [
+        "Increased hemorrhage"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2026: COR 3: Harm, LOE B-R"
+      ],
+      "formularyStatus": "NOT_STOCKED_LOCAL",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Aspirin — noncardioembolic stroke/TIA (long-term SAPT)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "50–325 mg daily",
+      "dose": [
+        {
+          "label": "Maintenance",
+          "amountMin": 50,
+          "amountMax": 325,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Antiplatelet preferred over anticoagulation (AHA 2026 and Kleindorfer 2021: COR 1, A)",
+        "Choose agent on risk profile, cost, tolerance (AHA 2026: COR 1, C-EO)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 1, LOE A (aspirin 50–325 mg, clopidogrel 75 mg, or aspirin 25 mg/ER-dipyridamole 200 mg BID)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Aspirin — DAPT partner for minor stroke/high-risk TIA",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Load 160–325 mg, then 75–100 mg daily (trial regimens; see DAPT entry, pending)",
+      "dose": [
+        {
+          "label": "Load",
+          "amountMin": 160,
+          "amountMax": 325,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 75,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "With ticagrelor: aspirin maintenance 75–100 mg (ticagrelor label)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2026: DAPT COR 1, LOE A (clopidogrel + aspirin, 21 days)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "renalHepatic": [
+    "Avoid in severe renal failure (GFR <10) or severe hepatic insufficiency (aspirin/ER-dipyridamole label, aspirin component)"
+  ],
+  "timing": {
+    "halfLifeText": "Short plasma half-life, but platelet inhibition is irreversible and lasts the platelet lifespan (7–10 days)",
+    "holdBeforeProcedure": [
+      "Usually continued for LP and most neuro procedures — follow local policy"
+    ],
+    "thrombolysisRule": [
+      "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute",
+      "Not a substitute for IVT/EVT (AHA 2026 §4.8 Rec 16: COR 3: Harm, B-R)",
+      "No IV aspirin with IVT or within 90 min after start (AHA 2026 §4.8 Rec 17: COR 3: Harm, B-R)",
+      "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
+    ]
+  },
+  "reversal": [
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Platelet transfusion — ICH without planned surgery",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Do not give (unstructured: recommendation against)",
+      "dose": [],
+      "notes": [
+        "NCS: against, regardless of agent, platelet-function result, volume or exam"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA ICH 2022: COR 3: Harm, LOE B-R (aspirin)",
+        "NCS 2016: conditional against, low quality"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Platelet transfusion — before emergency neurosurgery",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "1 single-donor apheresis unit; platelet-function testing first if available",
+      "dose": [
+        {
+          "label": "Apheresis platelets",
+          "amountMin": 1,
+          "amountMax": 1,
+          "unit": "UNITS",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Repeat only if platelet function stays abnormal (NCS)",
+        "Don't transfuse if platelet function is normal or documented resistance (NCS strong)"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA ICH 2022: COR 2b, LOE C-LD (aspirin)",
+        "NCS 2016: conditional, moderate quality (aspirin or ADP inhibitor)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Desmopressin",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "0.4 mcg/kg IV once",
+      "dose": [
+        {
+          "label": "Desmopressin",
+          "amountMin": 0.4,
+          "amountMax": 0.4,
+          "unit": "MCG",
+          "basis": "PER_KG",
+          "timing": "SINGLE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Watch sodium — hyponatremia risk",
+        "Can be combined with platelet transfusion before surgery (NCS)"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA ICH 2022: COR 2b, LOE C-LD (effectiveness uncertain)",
+        "NCS 2016: suggestion (conditional)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "monitoring": [
+    "GI bleeding symptoms"
+  ],
+  "interactions": [
+    "Ibuprofen can blunt low-dose aspirin's antiplatelet effect: give ibuprofen 400 mg ≥30 min after immediate-release aspirin or ≥8 h before; enteric-coated aspirin timing not established; occasional use is low risk (FDA 2006)",
+    "Ticagrelor: keep aspirin ≤100 mg/day"
+  ],
+  "pregnancy": [
+    "Aspirin <100 mg daily is the first-choice antiplatelet in pregnancy; safe in lactation (Miller 2026)"
+  ],
+  "formularyStatus": "AVAILABLE",
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Rectal aspirin dose in dysphagia orders"
+  ],
+  "pearls": [
+    "After IVT: antiplatelets in the first 24 h might be considered only with a compelling indication (AHA 2026: COR 2b, B-NR); usual practice is 24-h imaging first",
+    "Already on aspirin at the time of stroke: raising the dose or switching agents is of unclear benefit (AHA 2026: COR 2b, B-NR)",
+    "Contraindicated with NSAID allergy or the asthma/rhinitis/nasal polyp syndrome (aspirin/ER-dipyridamole label)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics",
+    "vascular-antithrombotics:pregnancy-antithrombotics"
+  ],
+  "sources": [
+    "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
+    "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
+    "Aspirin 325 mg tablets, OTC Drug Facts label. Trifecta Pharmaceuticals USA; revised 7/2026 (user-supplied label)",
+    "Aspirin and extended-release dipyridamole capsules US prescribing information. Amneal; revised 6/2021 (user-supplied label)",
+    "Ticagrelor tablets US prescribing information. AiPing Pharmaceutical; revised 6/2026 (user-supplied label)",
+    "US Food and Drug Administration. Science paper: Concomitant use of ibuprofen and aspirin — potential for attenuation of the anti-platelet effect of aspirin. 9/8/2006 (user-supplied)",
+    "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

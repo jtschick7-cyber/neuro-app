@@ -1,0 +1,291 @@
+{
+  "id": "guillain-barre-syndrome",
+  "title": "Guillain-Barré syndrome",
+  "category": "NEUROMUSCULAR",
+  "searchTerms": [
+    "GBS",
+    "Guillain-Barre",
+    "AIDP",
+    "Miller Fisher",
+    "IVIG",
+    "plasma exchange",
+    "PLEX",
+    "albuminocytologic dissociation",
+    "mEGOS",
+    "EGRIS"
+  ],
+  "presentation": [
+    "Progressive, symmetric, ascending limb weakness and sensory loss over days to 4 weeks, with absent or depressed deep tendon reflexes. May include facial/bulbar weakness, ophthalmoplegia (Miller Fisher), or dysautonomia"
+  ],
+  "definitions": [
+    "Classic GBS (AIDP): sensorimotor, ascending, demyelinating on NCS",
+    "AMAN / AMSAN: motor or sensorimotor axonal variants; often post-Campylobacter; IgG anti-GM1, GM1b, GD1a, GalNAc-GD1a (Willison & Yuki 2002)",
+    "Miller Fisher syndrome (MFS): triad of ophthalmoplegia, ataxia, areflexia; anti-GQ1b in up to 90% (Leonhard 2019)",
+    "Pharyngeal-cervical-brachial (PCB): ptosis, facial, bulbar and arm weakness with leg sparing; IgG anti-GT1a (± GQ1b) (Willison & Yuki 2002)",
+    "Bickerstaff brainstem encephalitis: MFS features plus impaired consciousness and pyramidal signs, often overlapping with GBS; IgG anti-GQ1b/GT1a (Leonhard 2019; Willison & Yuki 2002)",
+    "Albuminocytological dissociation: elevated CSF protein with normal WBC (<50/mcL); may be ABSENT in the first week (~50% normal early)"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "On arrival",
+      "action": "Assess respiratory and bulbar status immediately: bedside forced vital capacity (FVC), negative inspiratory force (NIF), single-breath count, neck flexion strength, swallowing"
+    },
+    {
+      "order": 2,
+      "window": "0–2 hours",
+      "action": "Apply the '20/30/40 rule' for ICU admission / elective intubation threshold: FVC <20 mL/kg, NIF worse than -30 cmH2O, max inspiratory pressure <40 cmH2O, or single-breath count <15"
+    },
+    {
+      "order": 3,
+      "window": "0–4 hours",
+      "action": "Continuous cardiac telemetry and frequent vital signs for dysautonomia (wide BP fluctuations, bradyarrhythmias, tachyarrhythmias)"
+    },
+    {
+      "order": 4,
+      "window": "12–24 hours",
+      "action": "Initiate IVIG or PLEX early if non-ambulatory, rapidly progressive, or respiratory/bulbar involvement. DO NOT delay treatment for EMG/NCS if clinical picture is convincing"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Bedside pulmonary function tests (FVC, NIF)",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "Every 4h if progressing; q2h if borderline; single-breath count if spirometry unavailable"
+      ]
+    },
+    {
+      "test": "Lumbar puncture (CSF cell count, protein, glucose)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Protein typically elevated with WBC <5/mcL (up to 50 allowed; >50 suggests HIV, Lyme, sarcoid, or leukemia); protein may be NORMAL in first 3–7 days (re-tap in 1–2 weeks if diagnosis in doubt)"
+      ]
+    },
+    {
+      "test": "Electromyography and nerve conduction studies (EMG/NCS)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Aids subtype classification (AIDP vs AMAN); prolonged distal latencies, conduction block, temporal dispersion, absent F-waves early; normal early study does NOT rule out GBS"
+      ]
+    },
+    {
+      "test": "Ganglioside autoantibody panel (anti-GM1, anti-GD1a, anti-GQ1b)",
+      "priority": "ROUTINE",
+      "indication": [
+        "Miller Fisher (GQ1b), AMAN/AMSAN (GM1, GD1a), atypical variants"
+      ],
+      "notes": [
+        "Send before IVIG or PLEX if possible; do not wait for results to treat",
+        "Limited, assay-dependent value; a negative result doesn't exclude GBS; most useful when MFS is suspected (Leonhard 2019)"
+      ]
+    },
+    {
+      "test": "MRI cervical spine (± whole spine) with gadolinium",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Sensory level, asymmetric findings, brisk reflexes, urinary retention at presentation (rule out cord compression / myelitis)"
+      ],
+      "notes": [
+        "GBS may show prominent anterior spinal root enhancement"
+      ]
+    },
+    {
+      "test": "Infectious triggers panel (Campylobacter, CMV, EBV, HIV, Mycoplasma, hepatitis)",
+      "priority": "ROUTINE",
+      "indication": [],
+      "notes": [
+        "Stool culture / PCR for Campylobacter if diarrhea in prior 4 weeks"
+      ]
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Intravenous immunoglobulin (IVIG)",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "0.4 g/kg/day IV for 5 consecutive days (total 2 g/kg); alternative: 1 g/kg/day for 2 days",
+      "dose": [
+        {
+          "label": "5-day regimen",
+          "amountMin": 0.4,
+          "amountMax": 0.4,
+          "unit": "G",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": [
+            "5 days"
+          ]
+        },
+        {
+          "label": "2-day regimen",
+          "amountMin": 1,
+          "amountMax": 1,
+          "unit": "G",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": [
+            "2 days"
+          ]
+        }
+      ],
+      "notes": [
+        "Equally effective to plasma exchange; preferred for ease of administration and hemodynamic stability",
+        "Pre-screen: baseline IgA level (severe IgA deficiency risks anaphylaxis, though rare); renal function (renal tubular necrosis risk with sucrose-containing formulations)",
+        "Premedicate: acetaminophen 650 mg PO + diphenhydramine 25–50 mg IV/PO 30 min before infusion",
+        "Hydrate adequately before and during infusion to reduce thrombotic and renal risk"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Cochrane Review 2014; EAN/PNS guidelines 2023"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "ivig-dose"
+      ]
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Plasma exchange (PLEX)",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "4–5 exchanges (200–250 mL plasma/kg total, ~40–50 mL/kg per exchange) over 7–14 days, using 5% albumin replacement",
+      "dose": [
+        {
+          "label": "Per exchange",
+          "amountMin": 40,
+          "amountMax": 50,
+          "unit": "ML",
+          "basis": "PER_KG",
+          "timing": "PER_DOSE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Every other day"
+          ],
+          "duration": [
+            "4–5 sessions"
+          ]
+        }
+      ],
+      "notes": [
+        "Equal efficacy to IVIG; preferred if IVIG contraindicated (severe IgA deficiency, hypercoagulability, acute renal failure)",
+        "Requires central venous access (dialysis catheter / apheresis line); risk of hypotension, hypocalcemia, line sepsis",
+        "DO NOT combine IVIG and PLEX — sequential combination showed no additional benefit in RCTs"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Cochrane Review 2017; Plasma Exchange/Sandoglobulin GBS Trial Group"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Corticosteroids (oral or IV)",
+      "routes": [
+        "IV",
+        "PO"
+      ],
+      "doseText": "Do NOT use — corticosteroids alone show NO benefit and may delay recovery (Cochrane 2016)",
+      "dose": [],
+      "notes": [
+        "Multiple RCTs confirmed that neither oral nor IV steroids improve outcomes in GBS",
+        "If considering steroids, reconsider the diagnosis (e.g., CIDP, transverse myelitis, vasculitis)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Cochrane Review 2016; EAN/PNS guideline 2023"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SUPPORTIVE",
+      "agent": "VTE prophylaxis (LMWH or UFH)",
+      "routes": [
+        "SC"
+      ],
+      "doseText": "Enoxaparin 40 mg SC daily (or UFH 5,000 U SC q8–12h) + pneumatic compression devices while non-ambulatory",
+      "dose": [],
+      "notes": [
+        "High risk of DVT/PE due to prolonged immobility"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "EAN/PNS guideline 2023"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SUPPORTIVE",
+      "agent": "Neuropathic pain management",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Gabapentin 300 mg TID (titrated up), pregabalin 75 mg BID, or duloxetine 30–60 mg daily",
+      "dose": [],
+      "notes": [
+        "Severe back/limb pain occurs in up to 80% of GBS patients, often preceding weakness"
+      ],
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "EAN/PNS guideline 2023"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Giving corticosteroids: Cochrane evidence confirms steroids do not benefit and may worsen GBS",
+    "Waiting for elevated CSF protein or diagnostic EMG before starting therapy — both can be completely normal in the first week",
+    "Relying on pulse oximetry to judge respiratory failure — hypoxia is a VERY LATE sign in neuromuscular respiratory failure; vital capacity drops long before SpO2 falls",
+    "Succinylcholine is CONTRAINDICATED for intubation — risks life-threatening hyperkalemic cardiac arrest due to up-regulated denervation acetylcholine receptors",
+    "Failing to recognize dysautonomia — wide swings from severe hypertension to sudden bradycardic arrest can occur without warning; avoid aggressive antihypertensives"
+  ],
+  "escalateWhen": [
+    "FVC <20 mL/kg, NIF worse than -30 cmH2O, or single-breath count <15 → urgent ICU transfer and intubation readiness",
+    "New or worsening bulbar weakness (dysphagia, weak cough, aspiration risk)",
+    "Hemodynamic instability: sustained bradycardia (<40 bpm), pause >3 sec, or SBP swings >60 mm Hg",
+    "Rapid motor decline: loss of ambulation within 24–48 hours (predicts respiratory failure via EGRIS)"
+  ],
+  "institutionVaries": [
+    "Choice of first-line therapy (IVIG stocked and readily available at most centers; PLEX requires apheresis team and line placement)",
+    "ICU bed criteria: some centers admit all confirmed GBS to ICU/stepdown; others allow ward monitoring if stable and ambulatory"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:acute-generalized-weakness",
+    "consult-workups:inpatient-neuropathy",
+    "acute-neuro:neuromuscular-respiratory-failure",
+    "calc:ivig-dose",
+    "calc:egris",
+    "consult-workups:acute-hepatic-porphyria"
+  ],
+  "sources": [
+    "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30:3646-3674",
+    "Hughes RAC, et al. Intravenous immune globulin for Guillain-Barré syndrome. Cochrane Database Syst Rev 2014;9:CD002063",
+    "Chevret S, et al. Plasma exchange for Guillain-Barré syndrome. Cochrane Database Syst Rev 2017;2:CD001798",
+    "Walgaard C, et al. Early recognition of poor prognosis in Guillain-Barré syndrome: the modified Erasmus GBS outcome score (mEGOS). Neurology 2011;76:968-975",
+    "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
+    "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

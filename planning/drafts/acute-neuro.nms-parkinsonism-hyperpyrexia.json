@@ -1,0 +1,295 @@
+{
+  "id": "nms-parkinsonism-hyperpyrexia",
+  "title": "Neuroleptic malignant syndrome & parkinsonism-hyperpyrexia",
+  "category": "TOXIC_METABOLIC",
+  "searchTerms": [
+    "NMS",
+    "neuroleptic malignant",
+    "parkinsonism hyperpyrexia",
+    "levodopa withdrawal",
+    "dantrolene",
+    "bromocriptine",
+    "rigidity fever"
+  ],
+  "presentation": [
+    "Days after starting/escalating a dopamine antagonist (antipsychotics, metoclopramide, prochlorperazine), or after stopping/reducing dopaminergic drugs (parkinsonism-hyperpyrexia)",
+    "Fever, lead-pipe rigidity, altered mental status, autonomic instability; evolves over days"
+  ],
+  "definitions": [
+    "Gurrera 2011 consensus elements: dopamine antagonist exposure or agonist withdrawal (recent); hyperthermia >38.0 °C on ≥2 occasions; rigidity; altered mental status; CK ≥4× ULN; sympathetic lability (BP ≥25% above baseline or fluctuation ≥20 mmHg diastolic / ≥25 mmHg systolic in 24 h; diaphoresis; incontinence); tachycardia ≥25% + tachypnea ≥50% above baseline; negative workup for other causes",
+    "Woodbury severity stages (Pileggi 2016, Table 3): I drug-induced parkinsonism; II drug-induced catatonia; III mild/early NMS (T <38 °C, HR ≤100); IV moderate (T 38–40 °C, HR 100–120); V severe (T ≥40 °C, HR ≥120)"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "Immediately",
+      "action": "Stop the dopamine antagonist even if the presentation is atypical; restart dopaminergic therapy as quickly as possible if it was withdrawn (NG if needed)"
+    },
+    {
+      "order": 2,
+      "window": "Now",
+      "action": "Supportive care: cooling blankets, IV fluids and electrolyte correction, VTE prophylaxis, aspiration precautions"
+    },
+    {
+      "order": 3,
+      "window": "All stages",
+      "action": "Benzodiazepine (lorazepam or diazepam)"
+    },
+    {
+      "order": 4,
+      "window": "Moderate (stage IV)",
+      "action": "Add bromocriptine or amantadine"
+    },
+    {
+      "order": 5,
+      "window": "Severe (stage V)",
+      "action": "ICU; add IV dantrolene to bromocriptine or amantadine"
+    }
+  ],
+  "workup": [
+    {
+      "test": "CK, BMP, creatinine, LFTs, urinalysis (myoglobin)",
+      "priority": "STAT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "CBC, coagulation (DIC), ABG/lactate",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Infection workup (blood cultures; LP if meningitis/encephalitis possible)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Medication review incl. antiemetics and recent parkinsonian drug changes",
+      "priority": "STAT",
+      "indication": [],
+      "notes": []
+    }
+  ],
+  "treatment": [
+    {
+      "role": "SUPPORTIVE",
+      "agent": "Cooling, fluids, discontinue offending agent",
+      "routes": [
+        "NON_PHARM"
+      ],
+      "doseText": "N/A",
+      "dose": [],
+      "notes": [
+        "Antipyretics are less effective than cooling (hyperthermia isn't prostaglandin-mediated)"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Benzodiazepine (lorazepam)",
+      "routes": [
+        "IV",
+        "IM"
+      ],
+      "doseText": "Lorazepam 1–2 mg IM/IV q4–6h, or diazepam 10 mg IV q8h; taper",
+      "dose": [
+        {
+          "label": "Lorazepam",
+          "amountMin": 1,
+          "amountMax": 2,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q4–6h"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Diazepam",
+          "amountMin": 10,
+          "amountMax": 10,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q8h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Also treats catatonic overlap",
+        "May delay wakefulness"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Pileggi 2016 (Woodbury/Strawn algorithm; case-based evidence)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SECOND_LINE",
+      "agent": "Dantrolene",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Severe NMS: 1–2.5 mg/kg (actual body weight) IV q6h or continuously for 48 h, then taper over several days",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 1,
+          "amountMax": 2.5,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DOSE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "q6h"
+          ],
+          "duration": [
+            "48 h, then taper"
+          ]
+        }
+      ],
+      "notes": [
+        "Use with bromocriptine or amantadine",
+        "Hepatitis mainly with prolonged use",
+        "Reulbach 2007 linked monotherapy with higher mortality, likely confounded by use in the most severe cases (Pileggi)"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Pileggi 2016 (case reports/series)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SECOND_LINE",
+      "agent": "Bromocriptine",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "2.5–5 mg PO/NG q8h; start low and titrate over several days; wean, don't stop abruptly",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 2.5,
+          "amountMax": 5,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q8h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Hypotension",
+        "Symptom recrudescence with rapid discontinuation"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Pileggi 2016 (case series)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Amantadine",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "100 mg PO/NG q8h (moderate–severe; alternative to bromocriptine)",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 100,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q8h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Anticholinergic effects"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Pileggi 2016"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Resume dopaminergic therapy (parkinsonism-hyperpyrexia)",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Restart prior carbidopa/levodopa regimen promptly; NG if NPO",
+      "dose": [],
+      "notes": [
+        "If no enteral route: rotigotine patch — dose it with the BMJ 2010 conversion on reference-cards:inpatient-parkinson-disease; don't use the calc:ledd (Jost) total as the input"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "BMJ 2010 practice pointer (rotigotine as non-oral option; ungraded)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "ledd"
+      ]
+    }
+  ],
+  "pitfalls": [
+    "Atypical antipsychotics and antiemetics (metoclopramide, prochlorperazine) cause NMS too",
+    "NMS vs serotonin syndrome: NMS = slow onset, lead-pipe rigidity, bradyreflexia; SS = rapid onset, clonus, hyperreflexia",
+    "Abrupt levodopa stop (NPO, surgery) in Parkinson's can cause a NMS-like syndrome",
+    "Malignant catatonia overlaps — benzodiazepines help both",
+    "Rechallenge: wait ≥5 days (one series) to ≥14 days (another) after resolution; restart low and slow (Pileggi 2016)"
+  ],
+  "escalateWhen": [
+    "Temperature ≥40 °C, rising CK/renal failure, or autonomic instability → ICU"
+  ],
+  "institutionVaries": [
+    "Dantrolene stock location (often OR malignant-hyperthermia carts)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:serotonin-syndrome",
+    "acute-neuro:delirium-vs-encephalopathy",
+    "reference-cards:inpatient-parkinson-disease"
+  ],
+  "sources": [
+    "Gurrera RJ, et al. An international consensus study of neuroleptic malignant syndrome diagnostic criteria using the Delphi method. J Clin Psychiatry 2011;72(9):1222-1228. doi:10.4088/JCP.10m06438",
+    "Pileggi DJ, Cook AM. Neuroleptic malignant syndrome: focus on treatment and rechallenge. Ann Pharmacother 2016;50(11):973-981. doi:10.1177/1060028016657553",
+    "Reulbach U, et al. Managing an effective treatment for neuroleptic malignant syndrome. Crit Care 2007;11(1):R4. doi:10.1186/cc5148",
+    "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

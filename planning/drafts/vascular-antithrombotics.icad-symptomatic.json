@@ -1,0 +1,189 @@
+{
+  "kind": "DECISION",
+  "id": "icad-symptomatic",
+  "title": "Symptomatic intracranial atherosclerotic stenosis (ICAD)",
+  "searchTerms": [
+    "ICAD",
+    "ICAS",
+    "intracranial stenosis",
+    "SAMMPRIS",
+    "WASID",
+    "intracranial atherosclerosis"
+  ],
+  "question": "What antithrombotic and procedural management fits stroke or TIA from 50–99% intracranial stenosis?",
+  "population": [
+    "Stroke or TIA attributed to 50–99% stenosis of a major intracranial artery",
+    "Rule 3 also covers ipsilateral >30% stenosis within 24 h of minor stroke/high-risk TIA"
+  ],
+  "rules": [
+    {
+      "order": 1,
+      "condition": "Any symptomatic 50–99% stenosis",
+      "recommendation": "Aspirin 325 mg/day rather than warfarin",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 1, LOE B-R (WASID)"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Severe 70–99% stenosis, event within 30 days",
+      "recommendation": "Add clopidogrel 75 mg/day to aspirin for up to 90 days",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2a, LOE B-NR"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Minor stroke or high-risk TIA within 24 h with ipsilateral >30% stenosis of a major intracranial artery (applies below this entry's 50–99% range; not the THALES ≥50% TIA criterion)",
+      "recommendation": "Ticagrelor 90 mg BID added to aspirin for up to 30 days might be considered",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE B-NR"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Presumed atherosclerotic minor stroke/TIA at 24–72 h",
+      "recommendation": "Clopidogrel + aspirin × 21 days (INSPIRES) — see dapt-minor-stroke-tia",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "AHA 2026: COR 2a, LOE B-R"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Wanting another add-on agent",
+      "recommendation": "Cilostazol 200 mg/day added to aspirin or clopidogrel might be considered",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE C-LD"
+      ]
+    },
+    {
+      "order": 6,
+      "condition": "Considering clopidogrel alone, aspirin/dipyridamole, ticagrelor alone or cilostazol alone",
+      "recommendation": "Usefulness not well established",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE C-EO"
+      ]
+    },
+    {
+      "order": 7,
+      "condition": "All patients",
+      "recommendation": "SBP <140 mm Hg, high-intensity statin, at least moderate physical activity",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 1, LOE B-NR"
+      ]
+    },
+    {
+      "order": 8,
+      "condition": "Severe 70–99% stenosis as initial treatment, even if on an antithrombotic at the time",
+      "recommendation": "Do not angioplasty or stent",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 3: Harm, LOE A"
+      ]
+    },
+    {
+      "order": 9,
+      "condition": "Moderate 50–69% stenosis",
+      "recommendation": "Do not angioplasty or stent — excess morbidity and mortality",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 3: Harm, LOE B-NR"
+      ]
+    },
+    {
+      "order": 10,
+      "condition": "Progressing symptoms or recurrence despite DAPT, SBP <140 and high-intensity statin (medical failure)",
+      "recommendation": "Usefulness of angioplasty or stenting is unknown — neuro-IR discussion",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE C-LD"
+      ]
+    },
+    {
+      "order": 11,
+      "condition": "50–99% stenosis or occlusion",
+      "recommendation": "EC-IC bypass not recommended",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 3: No Benefit, LOE B-R"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Aspirin + clopidogrel (70–99%, ≤30 days)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Aspirin 325 mg daily + clopidogrel 75 mg daily up to 90 days, then aspirin alone",
+      "dose": [
+        {
+          "label": "Aspirin",
+          "amountMin": 325,
+          "amountMax": 325,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Clopidogrel",
+          "amountMin": 75,
+          "amountMax": 75,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Load clopidogrel if within the acute DAPT window",
+        "Agent details, interactions and holds: see the agent entries"
+      ],
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2a, LOE B-NR"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "contraindications": [],
+  "esoDiffers": [],
+  "institutionVaries": [
+    "Neuro-IR thresholds for rescue angioplasty/stenting in medical failures"
+  ],
+  "pearls": [
+    "Warfarin vs aspirin (WASID): more major hemorrhage and death without fewer strokes",
+    "Rule 3 rests on a THALES prespecified subgroup: the analysis used ≥30% ipsilateral stenosis that didn't have to be related to the index event, both drugs were loaded, and bleeding was not significantly higher than with aspirin alone (Kleindorfer 2021 §5.1.1)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:dapt-minor-stroke-tia",
+    "vascular-antithrombotics:cilostazol",
+    "vascular-antithrombotics:ticagrelor"
+  ],
+  "sources": [
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

@@ -1,0 +1,237 @@
+{
+  "id": "cns-vasculitis-workup",
+  "title": "Suspected primary CNS vasculitis",
+  "searchTerms": [
+    "PACNS",
+    "primary angiitis",
+    "CNS vasculitis",
+    "brain biopsy",
+    "vessel wall imaging",
+    "beading"
+  ],
+  "category": "INFLAMMATORY_DEMYELINATING",
+  "consultQuestion": "Multifocal strokes or abnormal angiogram — is this CNS vasculitis or a mimic like RCVS?",
+  "keyHistory": [
+    "Subacute headache, cognitive decline, focal deficits, seizures over weeks–months",
+    "Thunderclap headache and vasoactive triggers (RCVS)",
+    "Systemic symptoms, rash, oral ulcers, sicca (secondary vasculitis)",
+    "Shingles or chickenpox recently (VZV vasculopathy)",
+    "Immunosuppression, HIV, syphilis risk, TB exposure",
+    "Lymphoma history"
+  ],
+  "keyExam": [
+    "Focal deficits, cognitive impairment",
+    "Skin, joints, eyes for systemic disease"
+  ],
+  "redFlags": [
+    "Normal brain MRI — PACNS very unlikely",
+    "Thunderclap onset, normal parenchyma, convexity SAH — favors RCVS (avoid steroids)",
+    "Fever, immunocompromise — infection first"
+  ],
+  "differential": [
+    {
+      "dx": "Primary CNS vasculitis (small-vessel vs medium-to-large-vessel)",
+      "clues": [
+        "Subacute course, multifocal infarcts, inflammatory CSF, enhancing lesions"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "RCVS",
+      "clues": [
+        "Thunderclap, triggers, normal MRI or cSAH, minimal vessel-wall enhancement"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Intracranial atherosclerosis",
+      "clues": [
+        "Eccentric plaque on vessel-wall MRI, vascular risk"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Infectious vasculitis (VZV, syphilis, TB, fungal, HIV, endocarditis)",
+      "clues": [
+        "Recent zoster, CSF anti-VZV IgG, serologies"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Intravascular or primary CNS lymphoma",
+      "clues": [
+        "Progressive, nonspecific lesions"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Secondary CNS vasculitis (connective tissue disease, systemic vasculitis, Behçet)",
+      "clues": [
+        "Systemic disease activity"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Aβ-related angiitis (CAA-related inflammation)",
+      "clues": [
+        "Vasogenic edema, leptomeningeal enhancement, lobar microbleeds"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Moyamoya, FMD, radiation vasculopathy, APS, MOGAD, CADASIL",
+      "clues": [
+        "Specific imaging/genetic features"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "MRI brain with and without gadolinium, DWI, SWI",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Normal MRI makes CNS vasculitis very unlikely"
+      ]
+    },
+    {
+      "test": "High-resolution vessel-wall MRI",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Intracranial stenoses"
+      ],
+      "notes": [
+        "Concentric smooth enhancement favors vasculitis over plaque or RCVS; specificity not established"
+      ]
+    },
+    {
+      "test": "CTA or MRA head",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Less sensitive for medium-sized and posterior-circulation vessels"
+      ]
+    },
+    {
+      "test": "Catheter DSA",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Strong suspicion with normal CTA/MRA"
+      ],
+      "notes": [
+        "Sensitivity vs biopsy ~15–43%; specificity low"
+      ]
+    },
+    {
+      "test": "LP: cells, protein, glucose, Gram stain/culture, VZV PCR and CSF anti-VZV IgG, syphilis, fungal studies, cytology, flow cytometry",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Inflammatory CSF in ~75%; mainly used to rule out mimics"
+      ]
+    },
+    {
+      "test": "Serum: ESR, CRP, ANA, ANCA, antiphospholipid antibodies, HIV, syphilis, hepatitis B/C",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "ESR/CRP usually normal in PACNS"
+      ]
+    },
+    {
+      "test": "Brain and leptomeningeal biopsy (lesional preferred; nondominant frontal if random)",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Small-vessel vasculitis suspected with normal angiogram",
+        "To exclude mimics"
+      ],
+      "notes": [
+        "30–50% false negatives; finds another diagnosis in ~30%"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Diagnosing PACNS",
+      "recommendation": "1988 Calabrese–Mallek criteria (angiographic or histological vasculitis + exclusion of other causes) — not prospectively validated",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Salvarani 2024"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Strong clinical suspicion, normal CTA/MRA",
+      "recommendation": "Consider catheter DSA",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "ESO guideline as cited in Salvarani 2024"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Suspected small-vessel vasculitis with normal angiogram",
+      "recommendation": "Brain biopsy",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "ESO guideline as cited in Salvarani 2024"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Angiography highly suggestive of medium-to-large-vessel vasculitis",
+      "recommendation": "Biopsy only to rule out other diagnoses",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "ESO guideline as cited in Salvarani 2024"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Thunderclap headache with vasoconstriction",
+      "recommendation": "Score with RCVS2 before labeling vasculitis — see thunderclap-headache",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Sousa 2026"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Confirmed PACNS: glucocorticoids ± cyclophosphamide (Salvarani 2024) — rheumatology co-management",
+    "Hold steroids if RCVS remains likely"
+  ],
+  "recsTemplate": [
+    "MRI brain with contrast, DWI, SWI; vessel-wall MRI",
+    "CTA/MRA head; DSA if normal and suspicion high",
+    "LP: cells, protein, cultures, VZV PCR + CSF VZV IgG, VDRL, fungal studies, cytology/flow",
+    "ESR, CRP, ANA, ANCA, APLA, HIV, RPR, hepatitis B/C",
+    "Neurosurgery for brain/leptomeningeal biopsy [if small-vessel suspected or diagnosis uncertain]"
+  ],
+  "disposition": [
+    "Inpatient workup; rheumatology involvement"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Vessel-wall MRI protocol availability"
+  ],
+  "pearls": [
+    "Only 11.9% of patients with both studies had classic angiography plus pathologically confirmed vasculitis (Salvarani 2024)",
+    "Common presentations: focal deficits (67–83%), headache (54–63%), cognitive impairment (35–50%) (Salvarani 2024)",
+    "Most drug-induced 'vasculitis' on angiography is vasospasm (Salvarani 2024)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:thunderclap-headache",
+    "consult-workups:young-stroke-workup",
+    "consult-workups:rapidly-progressive-dementia",
+    "consult-workups:caa-related-inflammation",
+    "consult-workups:intravascular-lymphoma"
+  ],
+  "sources": [
+    "Salvarani C, Brown RD Jr, Hunder GG. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1161/STR.0000000000000422",
+    "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

@@ -1,0 +1,253 @@
+{
+  "id": "levetiracetam",
+  "title": "Levetiracetam (Keppra) — maintenance dosing",
+  "searchTerms": [
+    "Keppra",
+    "LEV",
+    "levetiracetam renal dose",
+    "Keppra dialysis",
+    "Keppra IV to PO"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Levetiracetam",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Partial-onset (adults ≥16 y): start 500 mg q12h; may ↑ by 1000 mg/day every 2 weeks; max 3000 mg/day. JME myoclonic and PGTC: same start, titrate to 3000 mg/day",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 500,
+          "amountMax": 500,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 3000,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance (normal renal function)",
+          "amountMin": 500,
+          "amountMax": 1500,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 3000,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Label: no evidence that >3000 mg/day adds benefit"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Keppra injection label §2.1–2.3, Table 2 (normal-function row)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "levetiracetam-load"
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "kind": "CRCL_BAND",
+      "crclMin": 80,
+      "crclMax": null,
+      "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+      "label": "CrCl >80 mL/min/1.73 m² (normal)",
+      "doseText": "500–1500 mg q12h",
+      "dose": [
+        {
+          "label": "Normal",
+          "amountMin": 500,
+          "amountMax": 1500,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kind": "CRCL_BAND",
+      "crclMin": 50,
+      "crclMax": 80,
+      "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+      "label": "CrCl 50–80 mL/min/1.73 m² (mild)",
+      "doseText": "500–1000 mg q12h",
+      "dose": [
+        {
+          "label": "Mild",
+          "amountMin": 500,
+          "amountMax": 1000,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kind": "CRCL_BAND",
+      "crclMin": 30,
+      "crclMax": 50,
+      "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+      "label": "CrCl 30–50 mL/min/1.73 m² (moderate)",
+      "doseText": "250–750 mg q12h",
+      "dose": [
+        {
+          "label": "Moderate",
+          "amountMin": 250,
+          "amountMax": 750,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kind": "CRCL_BAND",
+      "crclMin": null,
+      "crclMax": 30,
+      "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+      "label": "CrCl <30 mL/min/1.73 m² (severe)",
+      "doseText": "250–500 mg q12h",
+      "dose": [
+        {
+          "label": "Severe",
+          "amountMin": 250,
+          "amountMax": 500,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": []
+    },
+    {
+      "kind": "INTERMITTENT_HD",
+      "crclMin": null,
+      "crclMax": null,
+      "crclBasis": null,
+      "label": "ESRD on dialysis",
+      "doseText": "500–1000 mg q24h, plus a 250–500 mg supplemental dose after dialysis",
+      "dose": [
+        {
+          "label": "Daily",
+          "amountMin": 500,
+          "amountMax": 1000,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q24h"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Post-dialysis supplement",
+          "amountMin": 250,
+          "amountMax": 500,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "After each dialysis session"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "~50% of body levetiracetam removed by a standard 4-h hemodialysis (label §12.3)"
+      ]
+    }
+  ],
+  "renalNotes": [
+    "Label bands use CrCl normalized to BSA: CrCl (mL/min) from Cockcroft-Gault × 1.73 / BSA (m²) (§2.7)",
+    "No pediatric renal dosing in label"
+  ],
+  "hepatic": [
+    "No adjustment: mild–moderate PK unchanged; severe (Child-Pugh C) clearance ↓50%, mostly from reduced renal clearance (§12.3)"
+  ],
+  "ivPo": [
+    "IV ↔ PO 1:1: same total daily dose and frequency in both directions (§2.4–2.5)",
+    "IV: dilute in 100 mL NS, LR or D5W; give over 15 min (§2.6)",
+    "No clinical study experience with IV levetiracetam beyond 4 days (§2.1)"
+  ],
+  "enteral": [
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [],
+  "interactions": [
+    "Unlikely to cause or be subject to PK interactions; not CYP450-dependent (§12.3)"
+  ],
+  "pearls": [
+    "Avoid abrupt withdrawal — risk of increased seizures and status epilepticus (§2.8)",
+    "Elderly: renally cleared — dose by renal function (§8.5)"
+  ],
+  "calculatorIds": [
+    "levetiracetam-load",
+    "cockcroft-gault"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:brivaracetam"
+  ],
+  "sources": [
+    "Keppra (levetiracetam) injection US prescribing information. UCB; revised 6/2025 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

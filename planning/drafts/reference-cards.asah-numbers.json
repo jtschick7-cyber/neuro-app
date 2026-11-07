@@ -1,0 +1,459 @@
+{
+  "id": "asah-numbers",
+  "title": "aSAH numbers",
+  "searchTerms": [
+    "aSAH",
+    "SAH",
+    "subarachnoid",
+    "nimodipine",
+    "vasospasm",
+    "DCI",
+    "delayed cerebral ischemia",
+    "euvolemia",
+    "fludrocortisone",
+    "hyponatremia SAH",
+    "seizure prophylaxis SAH",
+    "induced hypertension",
+    "TCD",
+    "antifibrinolytic"
+  ],
+  "scopeNote": "Rounds lookup, not a protocol. Glucose and temperature (Hoh §8 Recs 7–8) intentionally omitted. Hb thresholds: see Neuro-ICU targets card.",
+  "sections": [
+    {
+      "heading": "Before the aneurysm is secured",
+      "rows": [
+        {
+          "parameter": "BP",
+          "condition": "Unsecured aneurysm",
+          "role": "RECOMMENDED",
+          "target": "No specific SBP target — frequent BP monitoring, short-acting agents; avoid severe hypotension, hypertension and BP variability",
+          "notes": [
+            "Severe hypertension (>180–200 mm Hg): lower gradually; avoid MAP <65 (writing-group text)",
+            "Earlier guidelines used SBP <160 or <180 — may be reasonable, evidence insufficient for a target",
+            "Meta-analysis: more rebleeding with SBP >160, not with <140"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §6 Rec 1: COR 1, LOE C-EO"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Anticoagulation",
+          "condition": "Patient on anticoagulants",
+          "role": "RECOMMENDED",
+          "target": "Emergency reversal",
+          "notes": [
+            "Follow current standards for life-threatening bleeding"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §6 Rec 2: COR 1, LOE C-EO"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Antifibrinolytics",
+          "condition": "Routine use",
+          "role": "NOT_RECOMMENDED",
+          "target": "Not useful to improve functional outcome",
+          "notes": [
+            "ULTRA: ultra-early TXA didn't improve 6-month outcome"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §6 Rec 3: COR 3: No Benefit, LOE A"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Nimodipine",
+      "rows": [
+        {
+          "parameter": "Nimodipine",
+          "condition": "All aSAH",
+          "role": "RECOMMENDED",
+          "target": "60 mg enteral q4h × 21 days; start as soon as possible, within 96 h of onset",
+          "notes": [
+            "Keep giving through hypotension that standard measures can manage; hold temporarily only for significant BP variability (Hoh text)",
+            "Cirrhosis: 30 mg q4h with close BP/HR monitoring (label)",
+            "1 h before or 2 h after meals; avoid grapefruit (label)",
+            "Can't swallow: puncture both capsule ends with an 18 G needle, draw contents into an oral/enteral syringe labeled 'Not for IV Use', give via NG/PEG, flush with 30 mL NS (label)",
+            "Never IV or other parenteral route — boxed warning (label)",
+            "Strong CYP3A4 inhibitors contraindicated; strong inducers (phenytoin, carbamazepine, phenobarbital, rifampin) generally not co-administered (label)",
+            "IV and intra-arterial nimodipine: too little data to recommend (Hoh)"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8.3 Rec 1: COR 1, LOE A",
+            "Label: dose, duration, timing, administration"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436",
+            "Nimodipine capsules US prescribing information. Bionpharma Inc.; revised 12/2025 (DailyMed label)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "DCI surveillance",
+      "rows": [
+        {
+          "parameter": "Neuro exam",
+          "condition": "All aSAH",
+          "role": "RECOMMENDED",
+          "target": "Frequent GCS or NIHSS to monitor DCI and other complications",
+          "notes": [
+            "Peak DCI/vasospasm risk: post-bleed days 6–10 (Hoh §8.3 text)"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8.1 Rec 2: COR 1, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "CTA / CTP",
+          "condition": "Suspected vasospasm or limited exam",
+          "role": "RECOMMENDED",
+          "target": "Can be useful to detect vasospasm and predict DCI",
+          "notes": [],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Hoh 2023 §8.2 Rec 1: COR 2a, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "TCD",
+          "condition": "All aSAH",
+          "role": "RECOMMENDED",
+          "target": "Reasonable to detect vasospasm and predict DCI",
+          "notes": [],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Hoh 2023 §8.2 Rec 2: COR 2a, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "cEEG",
+          "condition": "High-grade aSAH",
+          "role": "RECOMMENDED",
+          "target": "Can be useful to predict DCI",
+          "notes": [
+            "Order/consult item; interpretation by neurophysiology"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Hoh 2023 §8.2 Rec 3: COR 2a, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Invasive monitoring",
+          "condition": "High-grade aSAH",
+          "role": "RECOMMENDED",
+          "target": "Brain tissue O2, lactate/pyruvate, glutamate may be considered to predict DCI",
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Hoh 2023 §8.2 Rec 4: COR 2b, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Volume, sodium & DCI treatment",
+      "rows": [
+        {
+          "parameter": "Volume",
+          "condition": "All aSAH",
+          "role": "TARGET",
+          "target": "Euvolemia — close monitoring and goal-directed treatment",
+          "notes": [
+            "CVP alone isn't an adequate measure of volume status",
+            "Definitions of euvolemia vary; no clear standard"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Hoh 2023 §8 Rec 3: COR 2a, LOE B-R",
+            "Hoh 2023 §8.3 Rec 2: COR 2a, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Volume",
+          "condition": "Induced hypervolemia",
+          "role": "NOT_RECOMMENDED",
+          "target": "Potentially harmful — excess morbidity",
+          "notes": [
+            "RCTs: more complications without less DCI or better outcome"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8 Rec 5: COR 3: Harm, LOE B-R"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Hemodynamics",
+          "condition": "At risk of DCI (prophylactic)",
+          "role": "NOT_RECOMMENDED",
+          "target": "No prophylactic hemodynamic augmentation",
+          "notes": [
+            "No outcome benefit; more complications including heart failure (Hoh text)"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8.3 Rec 8: COR 3: Harm, LOE B-R"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Sodium",
+          "condition": "Natriuresis and hyponatremia",
+          "role": "RECOMMENDED",
+          "target": "Mineralocorticoid (fludrocortisone) is reasonable",
+          "notes": [
+            "RCTs: less natriuresis, urine volume, hyponatremia and IV fluid use; DCI and outcome not consistently improved",
+            "Main adverse effect: hypokalemia — potassium supplementation",
+            "High-dose hydrocortisone: similar sodium effects, more complications (hyperglycemia, hypokalemia, GI bleeding, heart failure)",
+            "No dose in the provided sources — use pharmacy dosing"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Hoh 2023 §8 Rec 4: COR 2a, LOE B-R"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "BP",
+          "condition": "Symptomatic vasospasm",
+          "role": "RECOMMENDED",
+          "target": "Raising SBP may be reasonable to limit DCI",
+          "notes": [
+            "Hoh Figure 3 labels its DCI-response box (elevate BP, ensure euvolemia, imaging) Class 2a; the recommendation table says 2b — table used",
+            "Retrospective: more neurological improvement with norepinephrine than phenylephrine (94% vs 71%)",
+            "HIMALAIA (only RCT) stopped early, underpowered"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Hoh 2023 §8.3 Rec 3: COR 2b, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Endovascular rescue",
+          "condition": "Severe vasospasm",
+          "role": "RECOMMENDED",
+          "target": "IA vasodilator therapy and/or cerebral angioplasty may be reasonable",
+          "notes": [
+            "Neuro-IR decision"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Hoh 2023 §8.3 Rec 4 (IA vasodilators): COR 2b, LOE B-NR",
+            "Hoh 2023 §8.3 Rec 5 (angioplasty): COR 2b, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Statins",
+          "condition": "Routine use to improve outcome",
+          "role": "NOT_RECOMMENDED",
+          "target": "Not recommended",
+          "notes": [],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8.3 Rec 6: COR 3: No Benefit, LOE A"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "IV magnesium",
+          "condition": "Routine use to improve outcome",
+          "role": "NOT_RECOMMENDED",
+          "target": "Not recommended",
+          "notes": [],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8.3 Rec 7: COR 3: No Benefit, LOE A"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Seizures",
+      "rows": [
+        {
+          "parameter": "cEEG",
+          "condition": "Fluctuating exam, depressed mental state, ruptured MCA aneurysm, high-grade SAH, ICH, hydrocephalus or cortical infarction",
+          "role": "RECOMMENDED",
+          "target": "Reasonable to detect seizures",
+          "notes": [
+            "Order/consult item; interpretation by neurophysiology"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Hoh 2023 §8.5 Rec 1: COR 2a, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "ASM prophylaxis",
+          "condition": "High seizure-risk features (ruptured MCA aneurysm, high-grade SAH, ICH, hydrocephalus, cortical infarction)",
+          "role": "RECOMMENDED",
+          "target": "Prophylactic ASM may be reasonable",
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Hoh 2023 §8.5 Rec 2: COR 2b, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "ASM prophylaxis",
+          "condition": "No high seizure-risk features",
+          "role": "NOT_RECOMMENDED",
+          "target": "Not beneficial",
+          "notes": [],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8.5 Rec 3: COR 3: No Benefit, LOE B-R"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "Phenytoin",
+          "condition": "Seizure prevention or prophylaxis",
+          "role": "NOT_RECOMMENDED",
+          "target": "Avoid — excess morbidity and mortality",
+          "notes": [],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8.5 Rec 4: COR 3: Harm, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "ASM duration",
+          "condition": "Presented with seizures",
+          "role": "RECOMMENDED",
+          "target": "Treat ≤7 days (perioperative period)",
+          "notes": [],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Hoh 2023 §8.5 Rec 5: COR 2a, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        },
+        {
+          "parameter": "ASM duration",
+          "condition": "Presented with seizures, no prior epilepsy",
+          "role": "NOT_RECOMMENDED",
+          "target": ">7 days doesn't reduce future SAH-associated seizure risk",
+          "notes": [],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8.5 Rec 6: COR 3: No Benefit, LOE B-NR"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "VTE",
+      "rows": [
+        {
+          "parameter": "VTE prophylaxis",
+          "condition": "Aneurysm secured",
+          "role": "RECOMMENDED",
+          "target": "Pharmacological or mechanical prophylaxis",
+          "notes": [
+            "Small RCT: enoxaparin 40 mg SC daily after aneurysm treatment didn't increase bleeding",
+            "Optimal timing relative to securing and procedures is unclear (Hoh text)"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Hoh 2023 §8 Rec 6: COR 1, LOE C-LD"
+          ],
+          "sources": [
+            "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+          ]
+        }
+      ]
+    }
+  ],
+  "pitfalls": [
+    "Don't stop nimodipine for manageable hypotension — interruptions were associated with more DCI (Hoh text)",
+    "Nimodipine plus phenytoin: phenytoin is both a strong CYP3A4 inducer (label) and harmful as SAH prophylaxis (Hoh)"
+  ],
+  "keyNumbers": [
+    "Nimodipine 60 mg q4h × 21 d (30 mg q4h in cirrhosis)",
+    "Unsecured: no SBP target; avoid MAP <65 and BP swings",
+    "Euvolemia; no prophylactic hypervolemia or augmentation",
+    "Seizure ppx only if high-risk; no phenytoin; ASM ≤7 d",
+    "Peak DCI risk days 6–10"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "reference-cards:neuro-icu-targets",
+    "consult-workups:sah-workup",
+    "antiseizure-medications:levetiracetam",
+    "antiseizure-medications:phenytoin-fosphenytoin"
+  ],
+  "sources": [
+    "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436",
+    "Nimodipine capsules US prescribing information. Bionpharma Inc.; revised 12/2025 (DailyMed label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

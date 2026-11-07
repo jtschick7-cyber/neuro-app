@@ -1,0 +1,86 @@
+{
+  "kind": "AGENT",
+  "id": "cilostazol",
+  "title": "Cilostazol (Pletal)",
+  "searchTerms": [
+    "Pletal",
+    "PDE3 inhibitor",
+    "ICAD"
+  ],
+  "drugClass": "ANTIPLATELET",
+  "subclass": "Phosphodiesterase-3 inhibitor",
+  "mechanism": "PDE3 inhibition → raised cAMP in platelets and vessels: antiplatelet and vasodilator",
+  "uses": [
+    {
+      "role": "ADJUNCT",
+      "agent": "Cilostazol — added to aspirin or clopidogrel, symptomatic intracranial stenosis 50–99%",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "100 mg BID, 30 min before or 2 h after breakfast and dinner",
+      "dose": [
+        {
+          "label": "Standard",
+          "amountMin": 100,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Kleindorfer 2021 dose: 200 mg/day",
+        "Label indication is claudication — stroke use is off-label in the US"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE C-LD"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renalHepatic": [
+    "No renal adjustment; not removed by dialysis (95–98% protein bound) (label)",
+    "Mild hepatic impairment: no adjustment (label)"
+  ],
+  "timing": {
+    "halfLifeText": "~11–13 h (cilostazol and active metabolites) (label)",
+    "holdBeforeProcedure": [
+      "Not stated in label — local policy"
+    ],
+    "thrombolysisRule": [
+      "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute (class-level statement; agent not named)",
+      "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
+    ]
+  },
+  "reversal": [],
+  "monitoring": [
+    "Platelets and WBC — rare thrombocytopenia/leukopenia progressing to agranulocytosis (label)",
+    "Headache, diarrhea, palpitations common (label)"
+  ],
+  "interactions": [
+    "Reduce to 50 mg BID with CYP3A4 inhibitors (ketoconazole, itraconazole, erythromycin, diltiazem) or CYP2C19 inhibitors (ticlopidine, fluconazole, omeprazole) (label)"
+  ],
+  "pregnancy": [],
+  "formularyStatus": "INSTITUTION_VARIES",
+  "calculatorIds": [],
+  "institutionVaries": [],
+  "pearls": [
+    "Boxed warning: contraindicated in heart failure of any severity (label)"
+  ],
+  "verify": [],
+  "relatedIds": [],
+  "sources": [
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Cilostazol tablets US prescribing information. Apotex; revised 5/2017 (user-supplied label)",
+    "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

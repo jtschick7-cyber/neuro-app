@@ -1,0 +1,169 @@
+{
+  "id": "susac-syndrome",
+  "title": "Suspected Susac syndrome",
+  "searchTerms": [
+    "Susac",
+    "SuS",
+    "BRAO",
+    "branch retinal artery occlusion",
+    "snowball lesions",
+    "corpus callosum lesions",
+    "hearing loss encephalopathy",
+    "retinocochleocerebral vasculopathy"
+  ],
+  "category": "INFLAMMATORY_DEMYELINATING",
+  "consultQuestion": "Encephalopathy or new headache with callosal lesions, hearing loss, or visual symptoms — Susac rather than MS?",
+  "keyHistory": [
+    "New cognitive or behavioral change, focal symptoms, or new migrainous/oppressive headache preceding other features by ≤6 months (Kleffner Box 1)",
+    "New tinnitus, hearing loss, or peripheral vertigo (Kleffner Box 1)",
+    "Visual symptoms are often absent — visual impairment reported in 28% though 58% had field defects (Kleffner)",
+    "Prior MS diagnosis or MS therapy — MS is the most common misdiagnosis; MS immunotherapy may worsen SuS (Kleffner)"
+  ],
+  "keyExam": [
+    "Mental status and focal deficits",
+    "Funduscopy — branch retinal artery occlusions may be silent (Kleffner)"
+  ],
+  "redFlags": [
+    "Severe encephalopathy — can mask the other triad features (Kleffner)",
+    "Planned MS disease-modifying therapy in a patient who may have SuS (Kleffner)"
+  ],
+  "differential": [
+    {
+      "dx": "Susac syndrome",
+      "clues": [
+        "Complete triad at onset in only 13%",
+        "Callosal 'snowball' lesions; BRAO or arterial wall hyperfluorescence on FLA; low/mid-tone sensorineural hearing loss (Kleffner)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Multiple sclerosis",
+      "clues": [
+        "Most common misdiagnosis of SuS; intrathecal IgG/OCBs are rare in SuS (Kleffner)"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "MRI brain (sagittal FLAIR/T2; T1 ± gadolinium)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Required for brain criterion: multifocal round T2/FLAIR lesions with ≥1 in the corpus callosum ('snowball') (Kleffner Box 1)",
+        "Supportive only: T1-hypointense lesions, gray-matter lesions, leptomeningeal enhancement"
+      ]
+    },
+    {
+      "test": "Fluorescein angiography",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Do it even without visual symptoms — BRAO may be silent (Kleffner Box 1)",
+        "BRAO or arterial wall hyperfluorescence (AWH; marker of activity) meets the retinal criterion"
+      ]
+    },
+    {
+      "test": "Pure-tone or speech audiogram",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Required to support hearing loss; typically low/mid-tone sensorineural (Kleffner Box 1)"
+      ]
+    },
+    {
+      "test": "Spectral-domain OCT",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Later disease, when FLA no longer shows BRAO/AWH"
+      ],
+      "notes": [
+        "Sectoral inner-retinal damage meets the retinal criterion (Kleffner)"
+      ]
+    },
+    {
+      "test": "Vestibular testing (caloric, VEMP)",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Vertigo"
+      ],
+      "notes": [
+        "Required to support vestibular vertigo (Kleffner Box 1)"
+      ]
+    },
+    {
+      "test": "LP",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "To exclude differential diagnoses"
+      ],
+      "notes": [
+        "Protein often raised; mild pleocytosis (median 12 cells) in 45%; intrathecal IgG/OCBs rare — not a criterion (Kleffner)"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Brain, retinal, and vestibulocochlear criteria all met",
+      "recommendation": "Definite Susac syndrome",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "European Susac Consortium criteria, Kleffner 2016 Box 1"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Two of the three criteria met",
+      "recommendation": "Probable Susac syndrome — treat as definite and re-examine frequently",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "Kleffner 2016 Box 1"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Some features but fewer than two criteria",
+      "recommendation": "Possible SuS — keep in the differential, follow closely",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "Kleffner 2016 Box 1"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Suspected SuS",
+      "recommendation": "Neurological exam, brain MRI, ophthalmology exam with FLA, audiogram, and vestibular testing in every patient",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "Kleffner 2016 conclusion"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Acute episode: high-dose corticosteroids; continuous immunosuppression to prevent relapses — no trials, empirical (Kleffner)"
+  ],
+  "recsTemplate": [],
+  "disposition": [
+    "Ophthalmology and audiology/ENT involvement",
+    "Probable SuS: thorough, frequent re-examination (Kleffner)"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Inpatient fluorescein angiography access (ophthalmology)"
+  ],
+  "pearls": [
+    "Complete triad at onset in only 13% (Kleffner)",
+    "Brain, muscle, and skin biopsies are nonspecific — diagnose with less invasive testing (Kleffner)",
+    "No specific serologic marker; anti-endothelial cell antibodies >1:100 in only 25% (Kleffner)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:ms-relapse",
+    "consult-workups:cns-vasculitis-workup"
+  ],
+  "sources": [
+    "Kleffner I, et al. Diagnostic criteria for Susac syndrome (European Susac Consortium). J Neurol Neurosurg Psychiatry 2016 (published online first Oct 25, 2016). doi:10.1136/jnnp-2016-314295"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

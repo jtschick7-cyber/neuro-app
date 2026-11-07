@@ -1,0 +1,19 @@
+{
+  "title": "Antiseizure medication dosing",
+  "scopeNotes": [
+    "Adults; maintenance and titration only — loading doses live in the status epilepticus entries and load calculators",
+    "CRRT dosing not covered — no institutional or published source supplied; ask pharmacy",
+    "Phenobarbital not covered — no source supplied"
+  ],
+  "version": "1.0.0",
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-11-06",
+  "entries": [
+    "<levetiracetam>",
+    "<lacosamide>",
+    "<brivaracetam>",
+    "<valproate>",
+    "<phenytoin-fosphenytoin>",
+    "<lamotrigine>"
+  ]
+}
