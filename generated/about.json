@@ -1,16 +1,16 @@
 {
-  "appVersion": "1.2.0",
-  "contentVersion": "1.2.0+be23cb7f",
+  "appVersion": "2.0.0",
+  "contentVersion": "2.0.0+b052ba0c",
   "builtAt": "2026-11-07",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "0.8.1",
+      "version": "1.0.1",
       "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-07",
-      "entries": 23,
-      "reviewed": 23,
+      "entries": 22,
+      "reviewed": 22,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
@@ -45,14 +45,14 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "0.8.1",
-      "schemaVersion": "1.0.0",
+      "version": "1.0.1",
+      "schemaVersion": "2.0.0",
       "lastUpdated": "2026-11-07",
-      "entries": 31,
-      "reviewed": 31,
+      "entries": 24,
+      "reviewed": 24,
       "unreviewedIds": [],
       "openVerify": 0,
-      "oldestReview": "2026-11-05",
+      "oldestReview": "2026-11-07",
       "newestReview": "2026-11-07"
     },
     {
@@ -110,20 +110,20 @@
     {
       "id": "seizure-threshold",
       "title": "Drugs that lower the seizure threshold",
-      "version": "0.2.1",
+      "version": "0.2.3",
       "schemaVersion": "3.0.0",
-      "lastUpdated": "2026-11-05",
+      "lastUpdated": "2026-11-07",
       "entries": 9,
       "reviewed": 9,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
-      "newestReview": "2026-11-05"
+      "newestReview": "2026-11-07"
     },
     {
       "id": "vascular-antithrombotics",
       "title": "Vascular antithrombotics",
-      "version": "0.8.1",
+      "version": "0.9.1",
       "schemaVersion": "1.0.0",
       "lastUpdated": "2026-11-07",
       "entries": 35,
@@ -311,9 +311,7 @@
       "citation": "Amin HP, et al. Diagnosis, Workup, Risk Reduction of Transient Ischemic Attack in the Emergency Department Setting: A Scientific Statement From the AHA. Stroke 2023;54:e109-e121. doi:10.1161/STR.0000000000000418",
       "year": 2023,
       "citedBy": [
-        "calc:abcd2",
-        "consult-workups:tga-vs-tia",
-        "consult-workups:tia-workup"
+        "calc:abcd2"
       ]
     },
     {
@@ -350,13 +348,6 @@
       "year": 2016,
       "citedBy": [
         "consult-workups:caa-related-inflammation"
-      ]
-    },
-    {
-      "citation": "Aybek S, Perez DL. Diagnosis and management of functional neurological disorder. BMJ 2022;376:o64. doi:10.1136/bmj.o64",
-      "year": 2022,
-      "citedBy": [
-        "consult-workups:functional-neurologic-symptoms"
       ]
     },
     {
@@ -443,8 +434,7 @@
         "acute-neuro:convulsive-status-epilepticus",
         "acute-neuro:nonconvulsive-status-epilepticus",
         "acute-neuro:refractory-super-refractory-se",
-        "calc:lacosamide-load",
-        "consult-workups:altered-mental-status"
+        "calc:lacosamide-load"
       ]
     },
     {
@@ -660,13 +650,6 @@
       ]
     },
     {
-      "citation": "Devlin JW, et al. Clinical practice guidelines for the prevention and management of pain, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU (PADIS). Crit Care Med 2018;46(9):e825-e873",
-      "year": 2018,
-      "citedBy": [
-        "acute-neuro:delirium-vs-encephalopathy"
-      ]
-    },
-    {
       "citation": "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2024. doi:10.1016/j.jtha.2024.10.022",
       "year": 2024,
       "citedBy": [
@@ -707,13 +690,6 @@
       "year": 2017,
       "citedBy": [
         "neural-antibodies:ak5"
-      ]
-    },
-    {
-      "citation": "Do TP, et al. Red and orange flags for secondary headaches in clinical practice: SNNOOP10 list. Neurology 2019;92:134-144. doi:10.1212/WNL.0000000000006697",
-      "year": 2019,
-      "citedBy": [
-        "consult-workups:secondary-headache-red-flags"
       ]
     },
     {
@@ -1299,8 +1275,6 @@
       "citation": "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
       "year": 2021,
       "citedBy": [
-        "consult-workups:inpatient-stroke-etiology-workup",
-        "consult-workups:tia-workup",
         "consult-workups:young-stroke-workup",
         "reference-cards:thrombophilia-test-validity",
         "vascular-antithrombotics:af-stroke-anticoag-timing",
@@ -1408,13 +1382,6 @@
       "year": 2023,
       "citedBy": [
         "consult-workups:brain-death-determination"
-      ]
-    },
-    {
-      "citation": "Lewis K, et al. A focused update to the clinical practice guidelines for the prevention and management of pain, anxiety, agitation/sedation, delirium, immobility, and sleep disruption in adult patients in the ICU (PADIS). Crit Care Med 2025;53(3):e711-e727. doi:10.1097/CCM.0000000000006574",
-      "year": 2025,
-      "citedBy": [
-        "acute-neuro:delirium-vs-encephalopathy"
       ]
     },
     {
@@ -1618,7 +1585,6 @@
       "citation": "Navi BB, et al. Classification and Management of Ischemic Stroke in Patients With Active Cancer: A Scientific Statement From the AHA. Stroke 2026;57:e160-e173. doi:10.1161/STR.0000000000000517",
       "year": 2026,
       "citedBy": [
-        "consult-workups:inpatient-stroke-etiology-workup",
         "vascular-antithrombotics:cancer-associated-stroke"
       ]
     },
@@ -1778,8 +1744,6 @@
         "calc:alteplase-dose",
         "calc:tnk-dose",
         "consult-workups:acute-vision-loss",
-        "consult-workups:inpatient-stroke-etiology-workup",
-        "consult-workups:tia-workup",
         "vascular-antithrombotics:af-stroke-anticoag-timing",
         "vascular-antithrombotics:alteplase",
         "vascular-antithrombotics:antithrombotic-after-reperfusion",
@@ -1874,13 +1838,6 @@
       "year": 2017,
       "citedBy": [
         "neural-antibodies:neurochondrin"
-      ]
-    },
-    {
-      "citation": "Ropper AH. Transient Global Amnesia. N Engl J Med 2023;388:635-640. doi:10.1056/NEJMra2213867",
-      "year": 2023,
-      "citedBy": [
-        "consult-workups:tga-vs-tia"
       ]
     },
     {
@@ -2054,13 +2011,6 @@
       ]
     },
     {
-      "citation": "Shen WK, et al. 2017 ACC/AHA/HRS Guideline for the Evaluation and Management of Patients With Syncope. Circulation 2017;136:e60-e122. doi:10.1161/CIR.0000000000000499",
-      "year": 2017,
-      "citedBy": [
-        "consult-workups:syncope-vs-seizure"
-      ]
-    },
-    {
       "citation": "Shi Z, et al. Changes in total homocysteine levels after acute stroke and recurrence of stroke. Sci Rep 2018;8:6993. doi:10.1038/s41598-018-25398-5",
       "year": 2018,
       "citedBy": [
@@ -2093,14 +2043,6 @@
       "year": 2018,
       "citedBy": [
         "reference-cards:inpatient-parkinson-disease"
-      ]
-    },
-    {
-      "citation": "Slooter AJC, et al. Updated nomenclature of delirium and acute encephalopathy: statement of ten Societies. Intensive Care Med 2020;46(5):1020-1022. doi:10.1007/s00134-019-05907-4",
-      "year": 2020,
-      "citedBy": [
-        "acute-neuro:delirium-vs-encephalopathy",
-        "consult-workups:altered-mental-status"
       ]
     },
     {
