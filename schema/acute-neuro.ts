@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { KebabId, RelatedId, ReviewDate, Source, Text, registryEnvelope } from "./common";
 
-export const ACUTE_NEURO_SCHEMA_VERSION = "1.1.0";
+export const ACUTE_NEURO_SCHEMA_VERSION = "1.2.0";
 
 export const AcuteNeuroCategory = z.enum([
   "SEIZURE",
@@ -137,6 +137,7 @@ export const AcuteNeuroEntry = z
     id: KebabId,
     title: Text,
     category: AcuteNeuroCategory,
+    keyNumbers: z.array(Text).max(5).optional(), // 4.2: same element shape as reference-cards; copied signed-off numbers only
     searchTerms: z.array(Text),
     presentation: z.array(Text).min(1),
     definitions: z.array(Text),

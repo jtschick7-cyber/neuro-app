@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import RelatedLinks from './RelatedLinks';
-import { ENTRY_LAYOUT_COPY, EVIDENCE_LEGEND, FORMULARY_LEGEND } from '../content/copy';
+import { ENTRY_LAYOUT_COPY, EVIDENCE_LEGEND, FORMULARY_LEGEND, REFERENCE_COPY } from '../content/copy';
 import { EVIDENCE_LABEL, FORMULARY_LABEL, PRIORITY_LABEL, ROLE_LABEL } from '../lib/protocols';
 import type { TreatmentItem } from '../../schema/acute-neuro';
 import type { z } from 'zod';
@@ -64,6 +64,17 @@ export function Section({ id, title, open = false, alert = false, children }: { 
       <summary className="cursor-pointer select-none rounded-lg border border-slate-800/80 bg-slate-900/80 px-3 py-2 text-sm font-semibold text-slate-100">{title}</summary>
       <div className="mt-1 px-1">{children}</div>
     </details>
+  );
+}
+
+/** 4.2: high-contrast key-numbers card directly under the title (same look as reference cards). */
+export function KeyNumbers({ items = [] }: { items?: string[] }) {
+  if (items.length === 0) return null;
+  return (
+    <div className="my-3 rounded-lg border border-sky-800 bg-sky-950/30 px-3 py-2">
+      <div className="text-xs font-semibold uppercase tracking-wider text-sky-300">{REFERENCE_COPY.keyNumbers}</div>
+      <Bullets items={items} tone="text-slate-100" />
+    </div>
   );
 }
 

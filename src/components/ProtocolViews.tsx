@@ -5,7 +5,7 @@ import BedsideNotes from './BedsideNotes';
 import EntryFooter from './EntryFooter';
 import RelatedLinks from './RelatedLinks';
 import DrugTabs from './DrugTabs';
-import { Bullets, EvidenceBadge, EvidenceNote, JumpChips, Section, Sources, TreatmentList, WorkupList, type JumpTarget } from './ProtocolParts';
+import { Bullets, EvidenceBadge, EvidenceNote, JumpChips, KeyNumbers, Section, Sources, TreatmentList, WorkupList, type JumpTarget } from './ProtocolParts';
 import { ENTRY_LAYOUT_COPY } from '../content/copy';
 import { PinButton } from './Pins';
 import {
@@ -134,7 +134,7 @@ export function EntryShell({
   children,
 }: {
   registry: RegistryId;
-  entry: { id: string; title: string; category: string; verify: string[]; lastReviewed: string; sources: string[] };
+  entry: { id: string; title: string; category: string; verify: string[]; lastReviewed: string; sources: string[]; keyNumbers?: string[] };
   jump?: JumpTarget[];
   children: ReactNode;
 }) {
@@ -146,6 +146,7 @@ export function EntryShell({
       </div>
       <p className="text-xs text-slate-400">{CATEGORY_LABEL[entry.category] ?? entry.category}</p>
       <BannerList entry={entry} />
+      <KeyNumbers items={entry.keyNumbers} />
       <JumpChips targets={jump} />
       {children}
       {entry.verify.length > 0 && (
