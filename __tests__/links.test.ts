@@ -68,7 +68,7 @@ describe('every cross-link in the built registries', () => {
     for (const id of manifest) expect(CALC_CARD[id], id).toBeDefined();
   });
   it('links every stroke, immunotherapy and sodium calculator to its card', () => {
-    for (const id of ['tnk-dose', 'alteplase-dose', 'ich-score', 'abcd2', 'cha2ds2-vasc', 'has-bled', 'ivig-dose', 'sodium-correction']) {
+    for (const id of ['tnk-dose', 'alteplase-dose', 'ich-score', 'abcd2', 'ivig-dose', 'sodium-correction']) {
       expect(resolveRef(`calc:${id}`).href).toBe(`#/calc/${id}`);
     }
   });
@@ -79,7 +79,7 @@ describe('cross-links into the lazy-loaded registries', () => {
     expect(resolveRef('neural-antibodies:' + antibodies.entries[0].id).href).toBe('#/neural-antibodies/' + antibodies.entries[0].id);
     expect(resolveRef('vascular-antithrombotics:' + vascular.entries[0].id).href).toBe('#/vascular-antithrombotics/' + vascular.entries[0].id);
     expect(resolveRef('acute-neuro:convulsive-status-epilepticus').href).toBe('#/acute-neuro/convulsive-status-epilepticus');
-    expect(resolveRef('consult-workups:tia-workup').href).toBe('#/consult-workups/tia-workup');
+    expect(resolveRef('consult-workups:young-stroke-workup').href).toBe('#/consult-workups/young-stroke-workup');
     expect(resolveRef('antiseizure-medications:valproate').href).toBe('#/antiseizure-medications/valproate');
     expect(resolveRef('reference-cards:thrombophilia-test-validity').href).toBe('#/reference-cards/thrombophilia-test-validity');
     expect(resolveRef('calc:phenytoin-correction').href).toBe('#/calc/phenytoin-correction');

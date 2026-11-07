@@ -242,11 +242,6 @@ function ConsultEntryView({ e }: { e: ConsultEntry }) {
           <Bullets items={e.initialSteps} />
         </Section>
       )}
-      {e.recsTemplate.length > 0 && (
-        <Section title="Recs template">
-          <Bullets items={e.recsTemplate} />
-        </Section>
-      )}
       {e.disposition.length > 0 && (
         <Section title="Disposition">
           <Bullets items={e.disposition} />
