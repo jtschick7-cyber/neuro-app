@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "0.9.1",
+  "version": "0.10.0",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -8,6 +8,13 @@
       "kind": "AGENT",
       "id": "tenecteplase",
       "title": "Tenecteplase (TNK)",
+      "keyNumbers": [
+        "Tenecteplase — AIS within 4.5 h: 0.25 mg/kg (max 25 mg) IV push over 5–10 s",
+        "10-kg weight bands: <60 kg 15 mg, 60–<70 17.5 mg, 70–<80 20 mg, 80–<90 22.5 mg, ≥90 25 mg (5 mg/mL)",
+        "Tenecteplase 0.4 mg/kg: Do not use — no outcome benefit and possible harm (NOR-TEST 2)",
+        "Keep BP ≤180/105 mm Hg; increase BP checks if above (AHA 2026 Table 7)",
+        "CT or MRI at 24 h before starting antiplatelets or anticoagulants (AHA 2026 Table 7)"
+      ],
       "searchTerms": [
         "TNK",
         "TNKase",
@@ -195,12 +202,18 @@
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "TNKase (tenecteplase) US prescribing information. Genentech; revised 2/2025 (label text via Drugs.com, accessed 2026-11-04)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "alteplase",
       "title": "Alteplase (tPA)",
+      "keyNumbers": [
+        "Alteplase — AIS within 4.5 h: 0.9 mg/kg (max 90 mg): 10% as IV bolus over 1 min, remainder infused over 60 min",
+        "Neuro checks and BP every 15 min during and for 2 h after, every 30 min for 6 h, then hourly to 24 h (AHA 2026 Table 7)",
+        "Keep BP ≤180/105 mm Hg; increase BP checks if above (AHA 2026 Table 7)",
+        "CT or MRI at 24 h before starting antiplatelets or anticoagulants (AHA 2026 Table 7)"
+      ],
       "searchTerms": [
         "tPA",
         "Activase",
@@ -335,12 +348,19 @@
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "Activase (alteplase) US prescribing information. Genentech; revised 9/2022 (user-supplied label)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "thrombolysis-with-prior-antithrombotics",
       "title": "Thrombolysis in patients on antithrombotics or with coagulopathy",
+      "keyNumbers": [
+        "Platelets <100,000/mm³, INR >1.7, aPTT >40 s, or PT >15 s: Do not give IVT",
+        "No recent warfarin or heparin: Start IVT before coagulation results return; stop if INR >1.7 or PT/PTT is abnormal by local standards",
+        "DOAC taken <48 h, disabling deficit, within window: May be considered after individual benefit–risk review",
+        "Prior antiplatelet monotherapy (SAPT) or DAPT, otherwise eligible: Give IVT — sICH rises ~0.9% (SAPT) / 1.2% (DAPT) absolute vs no antiplatelet, outweighed by ~8% absolute benefit",
+        "Full treatment-dose LMWH within the previous 24 h: Do not give IVT; doesn't apply to prophylactic doses"
+      ],
       "searchTerms": [
         "DOAC thrombolysis",
         "INR thrombolysis",
@@ -436,12 +456,16 @@
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "Powers WJ, et al. Guidelines for the Early Management of Patients With Acute Ischemic Stroke: 2019 Update to the 2018 Guidelines for the Early Management of Acute Ischemic Stroke (AHA/ASA). Stroke 2019;50:e344-e418. doi:10.1161/STR.0000000000000211"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "sich-after-thrombolysis",
       "title": "Symptomatic ICH within 24 h of thrombolysis",
+      "keyNumbers": [
+        "Bleed confirmed: Cryoprecipitate 10 U IV over 10–30 min to keep fibrinogen ≥150 mg/dL (10 U raises fibrinogen ~50 mg/dL)",
+        "Tranexamic acid 1,000 mg IV over 10 min, or ε-aminocaproic acid 4–5 g IV over 1 h then 1 g IV until bleeding controlled"
+      ],
       "searchTerms": [
         "sICH after tPA",
         "post-thrombolysis hemorrhage",
@@ -628,12 +652,19 @@
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "four-factor-pcc",
       "title": "Four-factor prothrombin complex concentrate (4F-PCC)",
+      "keyNumbers": [
+        "4F-PCC — warfarin (VKA) with ICH, INR ≥2.0: By pre-treatment INR and weight (weight capped at 100 kg): INR 2–<4: 25 U/kg (max 2,500 U); INR 4–6: 35 U/kg (max 3,500 U); INR >6: 50 U/kg (max 5,000 U)",
+        "4F-PCC — factor Xa inhibitor ICH (apixaban, rivaroxaban, edoxaban): 50 U/kg IV (NCS 2016)",
+        "4F-PCC — dabigatran ICH when idarucizumab unavailable: 50 U/kg IV (NCS 2016)",
+        "Infuse 0.12 mL/kg/min (~3 U/kg/min), max 8.4 mL/min (label)",
+        "If INR still ≥1.4 at 24–48 h, NCS suggests FFP rather than more PCC"
+      ],
       "searchTerms": [
         "Kcentra",
         "PCC",
@@ -838,12 +869,16 @@
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
         "Kcentra (prothrombin complex concentrate, human) US prescribing information. CSL Behring (label text via Drugs.com, accessed 2026-11-04)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "vitamin-k",
       "title": "Vitamin K (phytonadione)",
+      "keyNumbers": [
+        "Vitamin K — warfarin-associated ICH: 10 mg IV once (NCS 2016); AHA ICH 2022 cites 5–10 mg IV",
+        "Repeat INR; redose if ≥1.4 at 24–48 h"
+      ],
       "searchTerms": [
         "vitamin K",
         "phytonadione",
@@ -912,12 +947,17 @@
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "protamine",
       "title": "Protamine sulfate",
+      "keyNumbers": [
+        "Protamine — UFH-associated ICH: 1 mg per 100 U heparin given in the previous 2–3 h, max 50 mg per dose; if aPTT stays high, 0.5 mg per 100 U",
+        "Protamine — enoxaparin-associated ICH (therapeutic dose): Enoxaparin within 8 h: 1 mg per 1 mg enoxaparin; 8–12 h: 0.5 mg per 1 mg; max 50 mg per dose",
+        "Slow IV over ~10 min"
+      ],
       "searchTerms": [
         "protamine",
         "heparin reversal",
@@ -1016,12 +1056,19 @@
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "apixaban",
       "title": "Apixaban (Eliquis)",
+      "keyNumbers": [
+        "4F-PCC — apixaban-associated ICH: 50 U/kg IV (NCS 2016)",
+        "Last dose <48 h (or unknown) with normal renal function: IVT generally not given; may be considered after individualized review",
+        "Moderate/high bleeding risk: stop ≥48 h before",
+        "Low bleeding risk: stop ≥24 h before",
+        "Apixaban — AF (secondary stroke prevention): 5 mg BID; 2.5 mg BID if ≥2 of: age ≥80, weight ≤60 kg, SCr ≥1.5 mg/dL"
+      ],
       "searchTerms": [
         "Eliquis",
         "DOAC",
@@ -1263,12 +1310,19 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "rivaroxaban",
       "title": "Rivaroxaban (Xarelto)",
+      "keyNumbers": [
+        "4F-PCC — rivaroxaban-associated ICH: 50 U/kg IV (NCS 2016)",
+        "Last dose <48 h (or unknown) with normal renal function: IVT generally not given; may be considered after individualized review",
+        "Stop ≥24 h before surgery or other procedures (label)",
+        "Rivaroxaban — AF (secondary stroke prevention): CrCl >50: 20 mg daily; CrCl ≤50: 15 mg daily — with the evening meal",
+        "Rivaroxaban — DVT/PE treatment: 15 mg BID with food × 21 days, then 20 mg daily with food; avoid if CrCl <15"
+      ],
       "searchTerms": [
         "Xarelto",
         "DOAC",
@@ -1509,12 +1563,19 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "edoxaban",
       "title": "Edoxaban (Savaysa)",
+      "keyNumbers": [
+        "4F-PCC — edoxaban-associated ICH: 50 U/kg IV (NCS 2016)",
+        "Last dose <48 h (or unknown) with normal renal function: IVT generally not given; may be considered after individualized review",
+        "Stop ≥24 h before invasive or surgical procedures (label)",
+        "Edoxaban — AF (secondary stroke prevention): CrCl >50 to ≤95: 60 mg daily; CrCl 15–50: 30 mg daily; do not use if CrCl >95",
+        "Edoxaban — DVT/PE treatment: After 5–10 days of parenteral anticoagulation: 60 mg daily; 30 mg daily if CrCl 15–50, weight ≤60 kg, or certain P-gp inhibitors"
+      ],
       "searchTerms": [
         "Savaysa",
         "DOAC",
@@ -1753,12 +1814,19 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "dabigatran",
       "title": "Dabigatran (Pradaxa)",
+      "keyNumbers": [
+        "Idarucizumab (Praxbind): 5 g IV",
+        "4F-PCC (or aPCC) when idarucizumab unavailable: 50 U/kg IV (NCS 2016)",
+        "Last dose <48 h (or unknown) with normal renal function: IVT generally not given; may be considered after individualized review",
+        "CrCl ≥50: stop 1–2 days before",
+        "CrCl <50: stop 3–5 days before"
+      ],
       "searchTerms": [
         "Pradaxa",
         "DOAC",
@@ -2000,12 +2068,19 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "warfarin",
       "title": "Warfarin (Coumadin, Jantoven)",
+      "keyNumbers": [
+        "4F-PCC + IV vitamin K — VKA-associated ICH: INR-banded 4F-PCC (25/35/50 U/kg) plus vitamin K 10 mg IV",
+        "INR >1.7 or PT >15 s: do not give IVT",
+        "Warfarin — valvular AF (moderate–severe mitral stenosis or any mechanical valve): Target INR 2.5 (2.0–3.0); mechanical mitral valve INR 3.0 (2.5–3.5)",
+        "Warfarin — nonvalvular AF: Target INR 2.5 (2.0–3.0)",
+        "INR >4.0 adds no benefit and raises bleeding risk (label)"
+      ],
       "searchTerms": [
         "Coumadin",
         "Jantoven",
@@ -2127,12 +2202,19 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "heparin-ufh",
       "title": "Unfractionated heparin (UFH)",
+      "keyNumbers": [
+        "Protamine: 1 mg per 100 U UFH given in the prior 2–3 h, max 50 mg",
+        "Received heparin with aPTT >40 s: do not give IVT",
+        "UFH — therapeutic IV infusion: Label: 5,000 U IV bolus, then 20,000–40,000 U/24 h (68-kg basis); weight-based nomogram per local protocol",
+        "UFH — VTE prophylaxis: 5,000 U SC every 8–12 h",
+        "Label target: aPTT 1.5–2× control; check ~every 4 h early in infusion (label)"
+      ],
       "searchTerms": [
         "heparin",
         "UFH",
@@ -2294,12 +2376,19 @@
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "enoxaparin",
       "title": "Enoxaparin (Lovenox)",
+      "keyNumbers": [
+        "Protamine: <8 h since dose: 1 mg per 1 mg enoxaparin; 8–12 h: 0.5 mg per 1 mg",
+        "Full treatment-dose LMWH within 24 h: no IVT",
+        "Neuraxial/LP: ≥12 h after a prophylactic dose; ≥24 h after a treatment dose (label)",
+        "Enoxaparin — VTE prophylaxis (medical): 40 mg SC daily; CrCl <30: 30 mg SC daily",
+        "Enoxaparin — DVT/PE treatment: 1 mg/kg SC q12h (or 1.5 mg/kg daily); CrCl <30: 1 mg/kg daily"
+      ],
       "searchTerms": [
         "Lovenox",
         "LMWH",
@@ -2493,12 +2582,19 @@
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
         "Powers WJ, et al. Guidelines for the Early Management of Patients With Acute Ischemic Stroke: 2019 Update to the 2018 Guidelines for the Early Management of Acute Ischemic Stroke (AHA/ASA). Stroke 2019;50:e344-e418. doi:10.1161/STR.0000000000000211"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "aspirin",
       "title": "Aspirin",
+      "keyNumbers": [
+        "Platelet transfusion — before emergency neurosurgery: 1 single-donor apheresis unit; platelet-function testing first if available",
+        "Desmopressin: 0.4 mcg/kg IV once",
+        "No IV aspirin with IVT or within 90 min after start (AHA 2026 §4.8 Rec 17: COR 3: Harm, B-R)",
+        "Aspirin — acute ischemic stroke (no IVT): Start within 48 h of onset; trials used 160–300 mg daily early (IST 300 mg, CAST 160 mg)",
+        "Aspirin — noncardioembolic stroke/TIA (long-term SAPT): 50–325 mg daily"
+      ],
       "searchTerms": [
         "ASA",
         "acetylsalicylic acid",
@@ -2781,12 +2877,19 @@
         "US Food and Drug Administration. Science paper: Concomitant use of ibuprofen and aspirin — potential for attenuation of the anti-platelet effect of aspirin. 9/8/2006 (user-supplied)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "clopidogrel",
       "title": "Clopidogrel (Plavix)",
+      "keyNumbers": [
+        "Platelet transfusion — before emergency neurosurgery: 1 single-donor apheresis unit; platelet-function testing first if available",
+        "Stop 5 days before elective surgery if an antiplatelet effect isn't wanted (label)",
+        "Clopidogrel + aspirin — minor stroke (NIHSS ≤3) or high-risk TIA (ABCD2 ≥4), no IVT: Load 300–600 mg, then 75 mg daily with aspirin × 21 days (up to 90), then SAPT",
+        "Start within 24 h (Kleindorfer: ideally 12–24 h, at least within 7 days)",
+        "Clopidogrel — noncardioembolic stroke/TIA (long-term SAPT): 75 mg daily"
+      ],
       "searchTerms": [
         "Plavix",
         "P2Y12 inhibitor",
@@ -3015,12 +3118,19 @@
         "Clopidogrel bisulfate tablets US prescribing information. ACI Healthcare USA; revised 6/2020 (user-supplied label)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "ticagrelor",
       "title": "Ticagrelor (Brilinta)",
+      "keyNumbers": [
+        "Desmopressin: 0.4 mcg/kg IV once",
+        "Stop 5 days before surgery with major bleeding risk when possible (label)",
+        "Ticagrelor + aspirin — noncardioembolic minor stroke (NIHSS ≤5) or high-risk TIA (ABCD2 ≥6, or symptomatic ≥50% intracranial/extracranial stenosis that could account for the TIA), <24 h, no IVT (THALES): 180 mg load, then 90 mg BID for up to 30 days; first maintenance dose 6–12 h after the load; with aspirin 300–325 mg load then 75–100 mg daily",
+        "Ticagrelor + aspirin — CYP2C19 loss-of-function carrier, minor stroke (NIHSS ≤3) or TIA (ABCD2 ≥4), <24 h, no IVT (CHANCE-2): 180 mg load, then 90 mg BID with aspirin × 21 days, then ticagrelor monotherapy",
+        "Aspirin maintenance >100 mg reduces effectiveness — keep 75–100 mg (label)"
+      ],
       "searchTerms": [
         "Brilinta",
         "P2Y12 inhibitor",
@@ -3263,12 +3373,17 @@
         "Ticagrelor tablets US prescribing information. AiPing Pharmaceutical; revised 6/2026 (user-supplied label)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "cilostazol",
       "title": "Cilostazol (Pletal)",
+      "keyNumbers": [
+        "Cilostazol — added to aspirin or clopidogrel, symptomatic intracranial stenosis 50–99%: 100 mg BID, 30 min before or 2 h after breakfast and dinner",
+        "Kleindorfer 2021 dose: 200 mg/day",
+        "Reduce to 50 mg BID with CYP3A4 inhibitors (ketoconazole, itraconazole, erythromycin, diltiazem) or CYP2C19 inhibitors (ticlopidine, fluconazole, omeprazole) (label)"
+      ],
       "searchTerms": [
         "Pletal",
         "PDE3 inhibitor",
@@ -3349,12 +3464,18 @@
         "Cilostazol tablets US prescribing information. Apotex; revised 5/2017 (user-supplied label)",
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "aspirin-dipyridamole",
       "title": "Aspirin / extended-release dipyridamole (Aggrenox)",
+      "keyNumbers": [
+        "Platelet transfusion — before emergency neurosurgery: 1 single-donor apheresis unit; platelet-function testing first if available",
+        "Aspirin 25 mg / ER-dipyridamole 200 mg — noncardioembolic stroke/TIA (long-term SAPT): 1 capsule BID (morning and evening), with or without food",
+        "Headache-intolerance regimen: 1 capsule at bedtime + low-dose aspirin in the morning; return to BID within about 1 week",
+        "Avoid in severe hepatic or severe renal insufficiency (GFR <10) (label)"
+      ],
       "searchTerms": [
         "Aggrenox",
         "ASA-ERDP",
@@ -3563,12 +3684,18 @@
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
         "Aspirin and extended-release dipyridamole capsules US prescribing information. Amneal; revised 6/2021 (user-supplied label)"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "gp-iib-iiia-inhibitors",
       "title": "GP IIb/IIIa inhibitors (eptifibatide, tirofiban, abciximab)",
+      "keyNumbers": [
+        "Eptifibatide ~2.5 h; tirofiban ~2 h — platelet aggregation near baseline 4–8 h after stopping in ~90% (labels)",
+        "Eptifibatide: halve infusion if CrCl <50; contraindicated if dialysis-dependent (label)",
+        "Tirofiban: CrCl ≤60 → halve infusion; removed by hemodialysis (label)",
+        "Stop if platelets <100,000/mm³ or confirmed thrombocytopenia (label)"
+      ],
       "searchTerms": [
         "eptifibatide",
         "Integrilin",
@@ -3725,12 +3852,19 @@
         "Eptifibatide injection US prescribing information. Baxter; revised 5/2024 (user-supplied label)",
         "Aggrastat (tirofiban) US prescribing information. Medicure; revised 1/2025 (user-supplied label)"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "dapt-minor-stroke-tia",
       "title": "DAPT for minor stroke and high-risk TIA",
+      "keyNumbers": [
+        "NIHSS ≤3 or ABCD2 ≥4, within 24 h of onset: Clopidogrel (with load) + aspirin, start within 24 h, 21 days, then SAPT",
+        "NIHSS ≤5 or ABCD2 ≥4 at 24–72 h, or NIHSS 4–5 within 24 h, with presumed atherosclerotic cause (≥50% stenosis likely causative, or new infarcts of presumed large-artery origin): Clopidogrel + aspirin × 21 days, then SAPT (INSPIRES)",
+        "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier: Ticagrelor + aspirin × 21 days, then ticagrelor alone, in preference to clopidogrel-based DAPT (CHANCE-2)",
+        "Any regimen beyond 90 days, or adding a third antiplatelet: Don't — excess hemorrhage without added benefit",
+        "Clopidogrel 300–600 mg load, then 75 mg daily; aspirin 160–325 mg load, then 75–100 mg daily"
+      ],
       "searchTerms": [
         "DAPT",
         "dual antiplatelet",
@@ -3990,12 +4124,19 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Johnston SC, et al. Ticagrelor and Aspirin or Aspirin Alone in Acute Ischemic Stroke or TIA (THALES). N Engl J Med 2020;383:207-217. doi:10.1056/NEJMoa1916870"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "icad-symptomatic",
       "title": "Symptomatic intracranial atherosclerotic stenosis (ICAD)",
+      "keyNumbers": [
+        "Any symptomatic 50–99% stenosis: Aspirin 325 mg/day rather than warfarin",
+        "Severe 70–99% stenosis, event within 30 days: Add clopidogrel 75 mg/day to aspirin for up to 90 days",
+        "Ticagrelor 90 mg BID added to aspirin for up to 30 days might be considered",
+        "Cilostazol 200 mg/day added to aspirin or clopidogrel might be considered",
+        "All patients: SBP <140 mm Hg, high-intensity statin, at least moderate physical activity"
+      ],
       "searchTerms": [
         "ICAD",
         "ICAS",
@@ -4179,12 +4320,19 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "af-stroke-anticoag-timing",
       "title": "When to start anticoagulation after stroke with AF",
+      "keyNumbers": [
+        "Minor or moderate infarct (ELAN imaging size), carefully selected: Start a DOAC early — within 48 h (ELAN) or ≤4 days (OPTIMAS); low risk and reasonable vs delayed start",
+        "Major infarct (ELAN imaging size): ELAN early arm started on day 6–7 (later arm day 12–14); OPTIMAS early arm ≤4 days at any severity",
+        "Judged at high risk of hemorrhagic conversion: Delaying beyond 14 days is reasonable (pre-ELAN/OPTIMAS recommendation)",
+        "Bridging with heparin/LMWH or parenteral anticoagulation within 48 h to prevent early worsening: Not recommended",
+        "ELAN size: minor ≤1.5 cm; moderate = cortical superficial branch of MCA/ACA/PCA; major = larger infarct in those territories, or brainstem/cerebellar >1.5 cm"
+      ],
       "searchTerms": [
         "ELAN",
         "OPTIMAS",
@@ -4314,12 +4462,16 @@
         "Fischer U, et al. Early versus Later Anticoagulation for Stroke with Atrial Fibrillation (ELAN). N Engl J Med 2023;388:2411-2421. doi:10.1056/NEJMoa2303048",
         "Werring DJ, et al. Optimal timing of anticoagulation after acute ischaemic stroke with atrial fibrillation (OPTIMAS): a multicentre, blinded-endpoint, phase 4, randomised controlled trial. Lancet 2024;404:1731-1741. doi:10.1016/S0140-6736(24)02197-4"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "esus-antithrombotic",
       "title": "ESUS / cryptogenic stroke: antithrombotic and PFO",
+      "keyNumbers": [
+        "Age 18–60, nonlacunar stroke of undetermined cause, PFO with high-risk anatomic features: PFO closure + long-term antiplatelet over antiplatelet alone",
+        "Age 18–60, PFO without high-risk features: Benefit of closure not well established"
+      ],
       "searchTerms": [
         "ESUS",
         "cryptogenic",
@@ -4426,12 +4578,16 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "cervical-artery-dissection",
       "title": "Cervical artery dissection: antithrombotic choice",
+      "keyNumbers": [
+        "All extracranial dissection with stroke/TIA: Antithrombotic therapy for at least 3 months",
+        "Extracranial dissection, AIS within 4.5 h, otherwise eligible: IVT (ESO: alteplase) if standard criteria are met"
+      ],
       "searchTerms": [
         "dissection",
         "CAD",
@@ -4549,12 +4705,17 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Debette S, et al. ESO guideline for the management of extracranial and intracranial artery dissection. Eur Stroke J 2021;6(3):XXXIX-LXXXVIII. doi:10.1177/23969873211046475"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "antithrombotic-after-reperfusion",
       "title": "Antithrombotics after IVT or thrombectomy",
+      "keyNumbers": [
+        "After IVT, routine case: Hold antiplatelets and anticoagulants until 24-h CT or MRI excludes hemorrhage",
+        "Compelling indication within 24 h of IVT (e.g., emergent stent, tandem lesion): Antiplatelet might be considered",
+        "IV aspirin with or within 90 min of starting IVT: Do not give"
+      ],
       "searchTerms": [
         "post-tPA",
         "post-TNK",
@@ -4673,12 +4834,19 @@
       "sources": [
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "anticoag-reversal-ich",
       "title": "Anticoagulant-associated ICH: reversal by agent",
+      "keyNumbers": [
+        "Warfarin, INR ≥2.0: 4F-PCC (INR-banded) in preference to FFP, then IV vitamin K right after",
+        "Warfarin, INR 1.3–1.9: PCC may be reasonable",
+        "Apixaban, rivaroxaban or edoxaban: 4F-PCC 50 U/kg (local pathway); andexanet is not stocked",
+        "Dabigatran: Idarucizumab is not stocked — 4F-PCC (or aPCC) 50 U/kg and consider dialysis; call pharmacy about idarucizumab or transfer",
+        "IV or SC unfractionated heparin: Protamine 1 mg per 100 U given in the prior 2–3 h, max 50 mg"
+      ],
       "searchTerms": [
         "reversal",
         "ICH on anticoagulation",
@@ -4800,12 +4968,16 @@
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
         "Li M, Frontera JA. Emergency reversal of antithrombotics in intracerebral hemorrhage: an update. Curr Neurol Neurosci Rep 2025;25:81. doi:10.1007/s11910-025-01469-9"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "antiplatelet-ich",
       "title": "Antiplatelet-associated ICH: platelets and desmopressin",
+      "keyNumbers": [
+        "Aspirin or ADP inhibitor, emergency neurosurgery: Platelet transfusion (1 apheresis unit) might be considered; test platelet function first if available",
+        "Desmopressin 0.4 mcg/kg IV once may be considered; effectiveness uncertain"
+      ],
       "searchTerms": [
         "platelet transfusion",
         "PATCH",
@@ -4948,12 +5120,15 @@
         "Ticagrelor tablets US prescribing information. AiPing Pharmaceutical; revised 6/2026 (user-supplied label)",
         "Li M, Frontera JA. Emergency reversal of antithrombotics in intracerebral hemorrhage: an update. Curr Neurol Neurosci Rep 2025;25:81. doi:10.1007/s11910-025-01469-9"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "restart-antithrombotic-after-ich",
       "title": "Restarting antithrombotics after ICH",
+      "keyNumbers": [
+        "Nonvalvular AF, decision made to restart: Start about 7–8 weeks after ICH, adjusted to the patient"
+      ],
       "searchTerms": [
         "restart anticoagulation ICH",
         "RESTART",
@@ -5028,12 +5203,18 @@
       "sources": [
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "vte-prophylaxis-stroke-ich",
       "title": "VTE prophylaxis in ischemic stroke and ICH",
+      "keyNumbers": [
+        "AIS after IVT: No anticoagulant (including prophylactic heparin) until 24-h imaging",
+        "ICH, nonambulatory: Low-dose UFH or LMWH can be useful to reduce PE; starting at 24–48 h from onset may be reasonable",
+        "UFH prophylaxis: 5,000 U SC every 8–12 h",
+        "Enoxaparin prophylaxis: 40 mg SC daily; CrCl <30: 30 mg daily"
+      ],
       "searchTerms": [
         "DVT prophylaxis",
         "VTE prophylaxis",
@@ -5227,12 +5408,18 @@
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "CLOTS Trials Collaboration. Effectiveness of intermittent pneumatic compression in reduction of risk of deep vein thrombosis in patients who have had a stroke (CLOTS 3). Lancet 2013. doi:10.1016/S0140-6736(13)61050-8 (protocol exclusion criteria, user-supplied)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "cvt-anticoagulation",
       "title": "Cerebral venous thrombosis: anticoagulation",
+      "keyNumbers": [
+        "Enoxaparin (treatment dose): 1 mg/kg SC q12h (CrCl <30: 1 mg/kg daily)",
+        "After the acute phase: VKA (INR 2.0–3.0) for 3–12 months depending on cause; indefinitely with thrombophilia or recurrent VTE",
+        "CVT during pregnancy: Full-dose LMWH throughout pregnancy, then LMWH or VKA ≥6 weeks postpartum (total ≥3 months)",
+        "Suspected VITT (after adenovirus-vector vaccine, thrombocytopenia): Send PF4 antibodies; avoid all heparin; IVIG 1 g/kg daily × 2 days; steroids; no platelet transfusion; argatroban or fondaparinux, then DOAC after platelet recovery"
+      ],
       "searchTerms": [
         "CVT",
         "CVST",
@@ -5383,12 +5570,19 @@
       "sources": [
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "periprocedural-holds-lp-evd",
       "title": "Holds before LP, lumbar drain or EVD",
+      "keyNumbers": [
+        "SC heparin 5,000 U BID/TID: ≥4–6 h after the dose, or normal coagulation",
+        "Enoxaparin prophylactic / therapeutic: ≥12 h / ≥24 h after the last dose; first prophylactic dose ≥12 h after puncture, therapeutic ≥24 h after; ≥4 h after catheter removal",
+        "Apixaban, rivaroxaban or edoxaban at treatment/AF doses (including reduced AF doses): Stop ≥72 h before — or level <30 ng/mL or anti-Xa ≤0.1 IU/mL if <72 h; first dose ≥24 h after",
+        "Clopidogrel / prasugrel: Stop 5–7 days (clopidogrel) or 7–10 days (prasugrel) before; resume right after unless loading — then wait 6 h",
+        "Warfarin: Stop 5 days before and confirm normal INR"
+      ],
       "searchTerms": [
         "LP",
         "lumbar puncture",
@@ -5567,12 +5761,19 @@
       "sources": [
         "Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: ASRA Pain Medicine evidence-based guidelines (fifth edition). Reg Anesth Pain Med 2025;0:1-29. doi:10.1136/rapm-2024-105766"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "mechanical-valve-stroke",
       "title": "Stroke with a prosthetic heart valve",
+      "keyNumbers": [
+        "Bileaflet or current single-tilting-disk AVR, no thromboembolic risk factors: INR goal 2.5",
+        "Mechanical AVR with a risk factor (AF, prior thromboembolism, LV dysfunction, hypercoagulable) or older-generation valve; or any mechanical MVR: INR goal 3.0",
+        "Mechanical AVR with prior stroke/TIA: INR 3.0 (2.5–3.5) or add aspirin 75–100 mg/day",
+        "Mechanical MVR with stroke/TIA before valve replacement: Warfarin INR 3.0 (2.5–3.5) plus aspirin 75–100 mg/day",
+        "New stroke on a mechanical AVR while INR therapeutic: Raise INR goal from 2.5 to 3.0 (2.5–3.5) or add aspirin 75–100 mg, weighing bleeding"
+      ],
       "searchTerms": [
         "mechanical valve",
         "MVR",
@@ -5750,12 +5951,15 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "cancer-associated-stroke",
       "title": "Ischemic stroke with active cancer",
+      "keyNumbers": [
+        "Possible cancer-related: cryptogenic with spread or progressing cancer plus ≥1 of D-dimer >2,500 ng/mL FEU (no VTE), multiterritory infarcts, bilateral microemboli on TCD, or no susceptibility vessel sign: Equipoise between anticoagulant and antiplatelet; decide individually"
+      ],
       "searchTerms": [
         "cancer stroke",
         "Trousseau",
@@ -5868,12 +6072,18 @@
         "Navi BB, et al. Classification and Management of Ischemic Stroke in Patients With Active Cancer: A Scientific Statement From the AHA. Stroke 2026;57:e160-e173. doi:10.1161/STR.0000000000000517",
         "Jauregui Larrañaga C, et al. Stroke secondary to cancer-associated coagulopathy: a systematic review. J Neurol 2026;273:609. doi:10.1007/s00415-026-14119-y"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
       "id": "pregnancy-antithrombotics",
       "title": "Stroke and antithrombotics in pregnancy and postpartum",
+      "keyNumbers": [
+        "Antiplatelet needed: Aspirin <100 mg daily first choice (safe in lactation; no hold for neuraxial); clopidogrel for the shortest needed duration; ticagrelor/prasugrel minimal data",
+        "Neuraxial anesthesia timing: Aspirin: no hold; prophylactic LMWH ≥12 h; therapeutic LMWH ≥24 h; low-dose UFH 4–6 h",
+        "Enoxaparin — prophylactic: 40 mg daily (or 30 mg q12h) — fixed dosing preferred to weight-based for prophylaxis in pregnancy",
+        "Mechanical valve, warfarin >5 mg/day needed: Dose-adjusted LMWH ≥BID (anti-Xa 0.8–1.2 U/mL 4–6 h post-dose) in first trimester, then warfarin; IV UFH (aPTT 2× control) if LMWH unavailable"
+      ],
       "searchTerms": [
         "pregnancy",
         "postpartum",
@@ -6151,7 +6361,7 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: ASRA Pain Medicine evidence-based guidelines (fifth edition). Reg Anesth Pain Med 2025;0:1-29. doi:10.1136/rapm-2024-105766"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }

@@ -1,12 +1,18 @@
 {
   "title": "Consult workups",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-07",
   "entries": [
     {
       "id": "young-stroke-workup",
       "title": "Young adult stroke (<50): extended workup",
+      "keyNumbers": [
+        "Confirmed APS: Warfarin is reasonable; target INR 2–3 over >3",
+        "Repeat APS testing at 12 weeks",
+        "Protein C, protein S, antithrombin, factor VIII: Defer or repeat ≥4–6 weeks after stroke; factor VIII up to 6 months (Kleindorfer)",
+        "Age 18–60, nonlacunar cryptogenic stroke, PFO: Closure decision by PFO features — see esus-antithrombotic"
+      ],
       "searchTerms": [
         "young stroke",
         "stroke in young",
@@ -305,11 +311,17 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2024. doi:10.1016/j.jtha.2024.10.022"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "ich-etiology-workup",
       "title": "Intracerebral hemorrhage: cause and early course",
+      "keyNumbers": [
+        "Lobar ICH <70 y; deep/posterior fossa <45 y; deep/posterior fossa 45–70 y without hypertension: Acute CTA, consider venography",
+        "Repeat head CT within 24 h",
+        "Repeat DSA at 3–6 months if cause still unexplained",
+        "Isolated IVH: DSA yield ~58% in pooled studies (ICH 2022)"
+      ],
       "searchTerms": [
         "ICH workup",
         "ICH etiology",
@@ -568,11 +580,18 @@
       "sources": [
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "sah-workup",
       "title": "Suspected subarachnoid hemorrhage",
+      "keyNumbers": [
+        "Noncontrast head CT: <6 h from onset, no new deficit, high-quality scanner read by neuroradiology: sensitivity ~98.7%",
+        "Presentation >6 h, or new neurological deficit: CT; if negative, LP",
+        "Ottawa SAH Rule: further testing if any of age ≥40, neck pain/stiffness, witnessed LOC, onset with exertion, thunderclap (instant peak), limited neck flexion",
+        "Secure the aneurysm early, preferably within 24 h (AHA 2023 key message)",
+        "No routine seizure prophylaxis (consider in high-risk patients); avoid phenytoin; new seizures → ASM for 7 days (AHA 2023 key message)"
+      ],
       "searchTerms": [
         "SAH",
         "thunderclap",
@@ -813,11 +832,16 @@
       "sources": [
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "caa-related-inflammation",
       "title": "CAA-related inflammation (CAA-ri)",
+      "keyNumbers": [
+        "Probable CAA-ri — sensitivity 82%, specificity 97%",
+        "IV methylprednisolone 1 g daily for 3–5 days, then oral prednisone 60 mg daily tapered over months",
+        "No steroid response within 3 weeks — consider brain biopsy (Auriel)"
+      ],
       "searchTerms": [
         "CAA-ri",
         "inflammatory CAA",
@@ -1006,11 +1030,17 @@
         "Regenhardt RW, et al. Association Between Immunosuppressive Treatment and Outcomes of Cerebral Amyloid Angiopathy-Related Inflammation. JAMA Neurol 2020;77:1261-1269. doi:10.1001/jamaneurol.2020.1782",
         "Kinnecom C, et al. Course of cerebral amyloid angiopathy-related inflammation. Neurology 2007;68:1411-1416"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "first-unprovoked-seizure",
       "title": "First unprovoked seizure in an adult",
+      "keyNumbers": [
+        "Recurrence risk is highest in the first 2 years (21–45%)",
+        "Recurrence risk ≥60% over 10 years after one unprovoked seizure: Meets the ILAE practical definition of epilepsy",
+        "After a second unprovoked seizure, recurrence risk is ~57% at 1 year and 73% at 4 years (AAN/AES 2015)",
+        "Michigan: no driving until 6 months seizure-free"
+      ],
       "searchTerms": [
         "first seizure",
         "new-onset seizure",
@@ -1243,11 +1273,15 @@
       "sources": [
         "Krumholz A, et al. Evidence-based guideline: management of an unprovoked first seizure in adults (AAN/AES). Neurology 2015;84:1705-1713"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "rapidly-progressive-dementia",
       "title": "Rapidly progressive dementia (incl. CJD)",
+      "keyNumbers": [
+        "Dementia (global CDR ≥1) within 1 year, or dependence (CDR ≥2) within 2 years of onset",
+        "RT-QuIC sensitivity varies 73–97% and it can't distinguish prion disease forms (Hermann 2021)"
+      ],
       "searchTerms": [
         "RPD",
         "CJD",
@@ -1489,11 +1523,17 @@
         "Hermann P, et al. Biomarkers and diagnostic guidelines for sporadic Creutzfeldt-Jakob disease. Lancet Neurol 2021;20:235-246. doi:10.1016/S1474-4422(20)30477-4",
         "Satyadev N, et al. Standardizing 'Rapid': Applying the CDR to Define Rapidly Progressive Dementia. Neurology 2026;106:e214439. doi:10.1212/WNL.0000000000214439"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "valproate-hyperammonemic-encephalopathy",
       "title": "Valproate hyperammonemic encephalopathy",
+      "keyNumbers": [
+        "Acute ingestion >100 mg/kg or valproate level >850 mg/L — higher risk of coma, respiratory depression, aspiration (Perrott)",
+        "Consider IV L-carnitine 100 mg/kg, then 50 mg/kg (max 3 g/dose) IV q8h until ammonia is falling (if raised) and the patient improves",
+        "Core temperature — hypothermia <35 °C with or without hyperammonemia (label §5.10)",
+        "Overdose: peak at mean 7.4 h, ~15% >10 h after ingestion — repeat levels (Perrott)"
+      ],
       "searchTerms": [
         "VHE",
         "valproate ammonia",
@@ -1676,7 +1716,7 @@
         "Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)",
         "Perrott J, Murphy NG, Zed PJ. L-Carnitine for Acute Valproic Acid Overdose: A Systematic Review of Published Cases. Ann Pharmacother 2010;44:1287-1293"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "acute-generalized-weakness",
@@ -1893,6 +1933,9 @@
     {
       "id": "icu-acquired-weakness",
       "title": "ICU-acquired weakness (CIP/CIM)",
+      "keyNumbers": [
+        "Diagnose by manual muscle testing; average MRC <4 = ICUAW"
+      ],
       "searchTerms": [
         "ICUAW",
         "critical illness polyneuropathy",
@@ -2072,11 +2115,16 @@
       "sources": [
         "Fan E, et al. An Official American Thoracic Society Clinical Practice Guideline: The Diagnosis of Intensive Care Unit-acquired Weakness in Adults. Am J Respir Crit Care Med 2014;190:1437-1446. doi:10.1164/rccm.201411-2011ST"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "inpatient-neuropathy",
       "title": "Acute or subacute neuropathy on the wards",
+      "keyNumbers": [
+        "Guillain-Barré syndrome: Progression ≤4 weeks, areflexia",
+        "Acute-onset CIDP: Progression >8 weeks or ≥3 treatment-related fluctuations",
+        "High titre (>7000 BTU) strongly implies anti-MAG neuropathy rather than CIDP (EAN/PNS 2021)"
+      ],
       "searchTerms": [
         "neuropathy",
         "polyneuropathy",
@@ -2352,7 +2400,7 @@
         "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
         "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "elevated-ck-myopathy",
@@ -2602,6 +2650,12 @@
     {
       "id": "acute-hepatic-porphyria",
       "title": "Suspected acute hepatic porphyria (AIP)",
+      "keyNumbers": [
+        "Diagnostic: ALA and PBG ≥5× ULN normalized to creatinine; 24-h urine not recommended (AGA BPA 2, Table 2)",
+        "IV hemin 3–4 mg/kg once daily, typically 4 days (3–5 days), via PICC or central port, after the urine sample is sent (AGA BPA 4)",
+        "IV carbohydrate ~300 g/day early in the attack; treat pain and nausea aggressively (AGA BPA 5)",
+        "≥4 attacks/year: outpatient prophylaxis (hemin or givosiran) with a porphyria specialist (AGA BPA 7)"
+      ],
       "searchTerms": [
         "AIP",
         "acute intermittent porphyria",
@@ -2754,11 +2808,16 @@
         "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
         "Van den Bergh PYK, et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of chronic inflammatory demyelinating polyradiculoneuropathy: Report of a joint Task Force—Second revision. Eur J Neurol 2021;28:3556-3583. doi:10.1111/ene.14959"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "myelopathy-workup",
       "title": "Myelopathy / transverse myelitis workup",
+      "keyNumbers": [
+        "Lesion ≥3 vertebral segments (LETM): Test AQP4-IgG and MOG-IgG; NMOSD likely if AQP4-positive",
+        "Copper deficiency (Kumar/Mayo practice): elemental copper 6 mg/day PO for 1 week, 4 mg/day for 1 week, then 2 mg/day",
+        "Nitrous oxide: serum B12 low in only 42% of users; homocysteine and MMA raised in ~80% (Ménétrier 2023)"
+      ],
       "searchTerms": [
         "myelopathy",
         "myelitis",
@@ -2998,11 +3057,16 @@
         "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
         "Stern BJ, et al. Definition and Consensus Diagnostic Criteria for Neurosarcoidosis. JAMA Neurol 2018;75:1546-1553. doi:10.1001/jamaneurol.2018.2295"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "acute-vertigo-hints",
       "title": "Acute dizziness / vertigo: stroke or inner ear?",
+      "keyNumbers": [
+        "MRI sensitivity ≈80–90% in the first 48 h — a negative early MRI doesn't exclude stroke",
+        "HINTS by experts: 98% sensitivity, >92% specificity",
+        "Gait grade predictive value for stroke: grade 1 7%, grade 2 28%, grade 3 100% (GRACE-3)"
+      ],
       "searchTerms": [
         "vertigo",
         "dizziness",
@@ -3254,11 +3318,16 @@
       "sources": [
         "Edlow JA, Carpenter C, et al. Guidelines for reasonable and appropriate care in the emergency department 3 (GRACE-3): Acute dizziness and vertigo in the emergency department. Acad Emerg Med 2023;30:442-486. doi:10.1111/acem.14728"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "acute-vision-loss",
       "title": "Acute monocular vision loss",
+      "keyNumbers": [
+        "Painless sudden monocular loss within 4.5 h — stroke alert",
+        "Nonarteritic CRAO with disabling vision loss, otherwise IVT-eligible, within 4.5 h: IVT usefulness is uncertain — shared decision after fundus exam and ESR",
+        "Age >50 with GCA symptoms — treat without waiting for imaging"
+      ],
       "searchTerms": [
         "vision loss",
         "CRAO",
@@ -3500,11 +3569,15 @@
         "Dejaco C, et al. EULAR recommendations for the use of imaging in large vessel vasculitis in clinical practice: 2023 update. Ann Rheum Dis 2024;83:741-751. doi:10.1136/ard-2023-224543",
         "Eggenberger E. Optic Neuritis. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):407-435"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "diplopia-ptosis",
       "title": "Diplopia and ptosis",
+      "keyNumbers": [
+        "ESR and CRP: Age >50 with new binocular diplopia, even transient",
+        "Age >50 with vascular risk and presumed microvascular III, IV or VI palsy: Still obtain MRI (61% of nonmicrovascular causes had vascular risk factors) and ESR/CRP"
+      ],
       "searchTerms": [
         "double vision",
         "diplopia",
@@ -3721,11 +3794,18 @@
         "Mackay DD. Approach to Diplopia. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):463-478",
         "Keene KR, et al. Clinical and imaging clues to the diagnosis and follow-up of ptosis and ophthalmoparesis. J Cachexia Sarcopenia Muscle 2022. doi:10.1002/jcsm.13089"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "thunderclap-headache",
       "title": "Thunderclap headache",
+      "keyNumbers": [
+        "LP with opening pressure, cells, xanthochromia: CT negative and >6 h from onset or new deficit (SAH guideline)",
+        "RCVS-TCH score: recurrent TCH (2), female (3), vasoconstrictive trigger (single 2, multiple 3), BP surge (4): Score ≥7 separates RCVS from other TCH causes (sensitivity 80%, specificity 97%) — doesn't replace SAH workup",
+        "RCVS2 score: recurrent TCH (5), intracranial carotid affected (−2), vasoconstrictive trigger (3), female (1), SAH (1): ≥5 confirms RCVS (specificity 99%, sensitivity 90%); ≤2 excludes (specificity 100%, sensitivity 85%)",
+        "Repeat vessel imaging in 5–7 days",
+        "Admit RCVS — about a third worsen within 14 days of diagnosis (Sousa 2026)"
+      ],
       "searchTerms": [
         "thunderclap",
         "worst headache",
@@ -3934,11 +4014,17 @@
         "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048",
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "new-demyelinating-lesion",
       "title": "New demyelinating event or lesions: is it MS?",
+      "keyNumbers": [
+        "Typical lesions in ≥2 of 5 locations: optic nerve, cortical/juxtacortical, periventricular, infratentorial, spinal cord — symptomatic or not",
+        "CVS positivity (select 6): ≥6 lesions with a central vein; if <10 lesions, CVS-positive must outnumber CVS-negative (McDonald 2024)",
+        "Progressive course ≥12 months from onset: Two spinal cord lesions satisfy DIS",
+        "OCT inter-eye difference: pRNFL ≥6 µm or GCIPL ≥4 µm supports optic nerve involvement (McDonald 2024)"
+      ],
       "searchTerms": [
         "MS",
         "multiple sclerosis",
@@ -4170,7 +4256,7 @@
         "Montalban X, et al. Diagnosis of multiple sclerosis: 2024 revisions of the McDonald criteria. Lancet Neurol 2025;24:850-865",
         "Eggenberger E. Optic Neuritis. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):407-435"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "cns-vasculitis-workup",
@@ -4405,6 +4491,13 @@
     {
       "id": "paraneoplastic-workup",
       "title": "Suspected paraneoplastic neurologic syndrome",
+      "keyNumbers": [
+        "High-risk phenotype 3; intermediate-risk phenotype 2; phenotype not associated with cancer 0",
+        "High-risk antibody (>70% cancer) 3; intermediate-risk (30–70%) 2; lower-risk (<30%) or negative 0",
+        "Found and consistent with phenotype/antibody (or antigen expression shown) 4; not found but follow-up <2 years 1; not found with ≥2 years follow-up 0",
+        "Definite ≥8; probable 6–7; possible 4–5; non-PNS ≤3 — definite requires a high- or intermediate-risk antibody (except opsoclonus-myoclonus)",
+        "Repeat cancer screening every 4–6 months for 2 years"
+      ],
       "searchTerms": [
         "paraneoplastic",
         "PNS",
@@ -4596,7 +4689,7 @@
         "Graus F, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes (PNS-Care). Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
         "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "susac-syndrome",
@@ -4769,6 +4862,9 @@
     {
       "id": "intravascular-lymphoma",
       "title": "Suspected intravascular large B-cell lymphoma (IVLBCL)",
+      "keyNumbers": [
+        "Random skin biopsies (≥3 normal-skin sites + lesions + angiomas, deep with fat) before brain biopsy"
+      ],
       "searchTerms": [
         "IVL",
         "IVLBCL",
@@ -4917,11 +5013,17 @@
         "Rozenbaum D, et al. Skin biopsy in the diagnosis of intravascular lymphoma: A retrospective diagnostic accuracy study. J Am Acad Dermatol 2021;85:665-670. doi:10.1016/j.jaad.2019.09.015",
         "Shimada K, Kinoshita T, Naoe T, Nakamura S. Presentation and management of intravascular large B-cell lymphoma. Lancet Oncol 2009;10:895-902"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "post-cardiac-arrest-prognostication",
       "title": "Neuroprognostication after cardiac arrest",
+      "keyNumbers": [
+        "Defer prognostication ≥72 h from ROSC (no hypothermia) or ≥72 h from rewarming; persistent coma beyond this doesn't by itself mean poor prognosis",
+        "ERC/ESICM algorithm: not obeying commands (GCS motor <6) at ≥72 h from ROSC, confounders excluded: Poor outcome likely with ≥2 of: no pupillary and corneal reflexes at 72 h; bilaterally absent N20 at 24 h; highly malignant EEG at >24 h; NSE >60 µg/L at 48 and/or 72 h; status myoclonus within 72 h; diffuse extensive anoxic injury on CT/MRI",
+        "Bilaterally absent N20 on SSEP ≥48 h, accurately measured: Reliable predictor of poor outcome",
+        "Serum NSE at 24, 48 and 72 h: ERC uses >60 µg/L at 48/72 h; NCS: not reliable alone until a threshold is validated; hemolysis falsely raises"
+      ],
       "searchTerms": [
         "anoxic brain injury",
         "HIBI",
@@ -5175,11 +5277,18 @@
         "Rajajee V, et al. Guidelines for Neuroprognostication in Comatose Adult Survivors of Cardiac Arrest (NCS). Neurocrit Care 2023. doi:10.1007/s12028-023-01688-3",
         "Nolan JP, Sandroni C, et al. European Resuscitation Council and European Society of Intensive Care Medicine Guidelines 2025: Post-Resuscitation Care. Resuscitation 2025;215:110809"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "brain-death-determination",
       "title": "Brain death / death by neurologic criteria (adult)",
+      "keyNumbers": [
+        "Hypoxic-ischemic injury (e.g., cardiac arrest), age ≥24 months: Observe ≥24 h after the injury before starting the evaluation",
+        "Core temperature >36°C; wait ≥24 h after rewarming to 36°C if temperature was lowered",
+        "SBP ≥100 mm Hg and MAP ≥75 mm Hg (or near chronic baseline if it differs substantially)",
+        "Pre-test PaCO2 35–45 mm Hg unless known chronic hypercarbia",
+        "PaCO2 ≥60 mm Hg AND ≥20 mm Hg above pre-test baseline AND arterial pH <7.3; with known chronic hypercarbia, ≥20 above the chronic baseline"
+      ],
       "searchTerms": [
         "brain death",
         "BD/DNC",
@@ -5382,7 +5491,7 @@
       "sources": [
         "Lewis A, Kirschen MP, Greer D. The 2023 AAN/AAP/CNS/SCCM Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline: A Comparison With the 2010 and 2011 Guidelines. Neurol Clin Pract 2023;13:e200189. doi:10.1212/CPJ.0000000000200189"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }

@@ -1,12 +1,19 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-07",
   "entries": [
     {
       "id": "convulsive-status-epilepticus",
       "title": "Convulsive status epilepticus (adult)",
+      "keyNumbers": [
+        "Midazolam: 10 mg IM once (>40 kg); 5 mg if 13–40 kg",
+        "Lorazepam: 0.1 mg/kg IV (max 4 mg/dose) at ≤2 mg/min; may repeat once in 5–10 min",
+        "Levetiracetam: 60 mg/kg IV over 10 min (max 4500 mg)",
+        "Fosphenytoin: 20 mg PE/kg IV single dose (max 1500 mg PE); ≤150 mg PE/min",
+        "Valproate: 40 mg/kg IV single dose (max 3000 mg)"
+      ],
       "category": "SEIZURE",
       "searchTerms": [
         "GCSE",
@@ -520,11 +527,18 @@
         "Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795",
         "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "refractory-super-refractory-se",
       "title": "Refractory & super-refractory status epilepticus (incl. NORSE)",
+      "keyNumbers": [
+        "Midazolam: Load 0.2 mg/kg at 2 mg/min; maintain 0.05–2 mg/kg/h",
+        "Propofol: Load 1–2 mg/kg; start 20 mcg/kg/min; maintain 30–200 mcg/kg/min",
+        "PRIS risk: caution >80 mcg/kg/min for >48 h",
+        "Pentobarbital: Load 5–15 mg/kg at ≤50 mg/min (may add 5–10 mg/kg); maintain 0.5–5 mg/kg/h",
+        "Methylprednisolone (NORSE first-line immunotherapy): 20–30 mg/kg/day IV (max 1 g/day) ×3–5 days; start within 72 h"
+      ],
       "category": "SEIZURE",
       "searchTerms": [
         "RSE",
@@ -949,11 +963,18 @@
         "Wickström R, et al. International consensus recommendations for management of NORSE including FIRES: summary and clinical tools. Epilepsia 2022;63(11):2827-2839. doi:10.1111/epi.17391",
         "Alkhachroum A, et al. Ketamine to treat super-refractory status epilepticus. Neurology 2020;95(16):e2286-e2294. doi:10.1212/WNL.0000000000010611"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "nonconvulsive-status-epilepticus",
       "title": "Nonconvulsive status epilepticus & ictal-interictal continuum",
+      "keyNumbers": [
+        "Electrographic SE: electrographic seizure ≥10 continuous min, or >20% of any 60-min period (ACNS 2021)",
+        "Lorazepam: 0.1 mg/kg IV (max 4 mg/dose)",
+        "Lacosamide: 400 mg IV over 30 min (TRENdS); rebolus 200 mg for breakthrough; then 200 mg q12h",
+        "Fosphenytoin: 20 mg PE/kg IV (TRENdS infused ≤75 mg PE/min); rebolus 5 mg PE/kg",
+        "Levetiracetam: 60 mg/kg IV (max 4500 mg)"
+      ],
       "category": "SEIZURE",
       "searchTerms": [
         "NCSE",
@@ -1272,11 +1293,17 @@
         "Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z",
         "Husain AM, et al. Randomized trial of lacosamide versus fosphenytoin for nonconvulsive seizures (TRENdS). Ann Neurol 2018;83(6):1174-1185. doi:10.1002/ana.25249"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "myasthenic-crisis",
       "title": "Myasthenic crisis (impending and manifest)",
+      "keyNumbers": [
+        "FVC <20 mL/kg, NIF weaker than −30 cmH2O, or rapid decline (thresholds extrapolated from GBS)",
+        "Single breath count <20",
+        "IVIG: 2 g/kg total over 2–5 days",
+        "Plasma exchange (PLEX): 1–1.5 total plasma volumes per exchange; 3–6 exchanges over 10–14 days (daily or alternate days)"
+      ],
       "category": "NEUROMUSCULAR",
       "searchTerms": [
         "MG crisis",
@@ -1608,7 +1635,7 @@
         "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (MG fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043",
         "Gilhus NE, et al. Generalized myasthenia gravis with acetylcholine receptor antibodies: a guidance for treatment. Eur J Neurol 2024;31:e16229. doi:10.1111/ene.16229"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "guillain-barre-syndrome",
@@ -1890,6 +1917,12 @@
     {
       "id": "neuromuscular-respiratory-failure",
       "title": "Acute neuromuscular respiratory failure (undifferentiated)",
+      "keyNumbers": [
+        "20/30/40 rule (GBS cohort): VC <20 mL/kg, MIP weaker than −30 cmH2O, MEP <40 cmH2O predict need for ventilation (Lawn 2001)",
+        "EAN/PNS 2023 (GBS): consider elective ventilation at FVC ≤20 mL/kg, MEP <30 cmH2O, or MIP <40 cmH2O; SBC <20 → ICU",
+        "Michigan: MDHHS 517-335-8165",
+        "Poison Control 1-800-222-1222"
+      ],
       "category": "NEUROMUSCULAR",
       "searchTerms": [
         "NMRF",
@@ -2104,11 +2137,18 @@
         "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
         "Rao AK, et al. Clinical guidelines for diagnosis and treatment of botulism, 2021. MMWR Recomm Rep 2021;70(2):1-30. doi:10.15585/mmwr.rr7002a1"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "autoimmune-encephalitis",
       "title": "Autoimmune encephalitis (incl. paraneoplastic)",
+      "keyNumbers": [
+        "Methylprednisolone: 1 g IV daily ×3–7 days, then bridging therapy",
+        "IVIG: 2 g/kg total over 2–5 days",
+        "Plasma exchange (PLEX): 5–10 exchanges, every other day",
+        "Rituximab: 375 mg/m² weekly ×4, OR 1000 mg ×2 doses 2 weeks apart",
+        "Cyclophosphamide: 600–1000 mg/m² (per neuroimmunology/oncology)"
+      ],
       "category": "NEUROIMMUNOLOGY",
       "searchTerms": [
         "AE",
@@ -2455,11 +2495,18 @@
         "Van Steenhoven RW, et al. Mimics of autoimmune encephalitis: validation of the 2016 clinical autoimmune encephalitis criteria. Neurol Neuroimmunol Neuroinflamm 2023;10(6):e200148. doi:10.1212/NXI.0000000000200148",
         "Abboud H, et al. Autoimmune encephalitis: proposed recommendations for symptomatic and long-term management. J Neurol Neurosurg Psychiatry 2021;92:897-907. doi:10.1136/jnnp-2020-325302"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "bacterial-meningitis",
       "title": "Bacterial meningitis (community-acquired & post-neurosurgical, adult)",
+      "keyNumbers": [
+        "Dexamethasone 0.15 mg/kg IV q6h, started 10–20 min before or with the first antibiotic dose (IDSA A-I)",
+        "Vancomycin: 30–45 mg/kg/day divided q8–12h (IDSA 2004)",
+        "Ceftriaxone: 2 g IV q12h (IDSA adult total 4 g/day, interval q12–24h)",
+        "Ampicillin (Listeria coverage): 2 g IV q4h (12 g/day) — add if age >50, immunocompromised, or alcohol use disorder",
+        "Acyclovir: 10 mg/kg IV q8h until HSV excluded"
+      ],
       "category": "CNS_INFECTION",
       "searchTerms": [
         "meningitis",
@@ -2837,11 +2884,17 @@
         "Cranial imaging before lumbar puncture in adults with community-acquired meningitis: clinical utility and adherence to the IDSA guidelines. Clin Infect Dis 2017;64(12):1657-1662. doi:10.1093/cid/cix240",
         "de Gans J, van de Beek D. Dexamethasone in adults with bacterial meningitis. N Engl J Med 2002;347(20):1549-1556"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "viral-encephalitis",
       "title": "Viral encephalitis (HSV, VZV, arboviral incl. West Nile)",
+      "keyNumbers": [
+        "Acyclovir (HSV): 10 mg/kg IV q8h ×14–21 days for confirmed HSV encephalitis; renally adjust",
+        "Continue acyclovir and repeat HSV PCR 3–7 days later (B-III)",
+        "Acyclovir (VZV): 10–15 mg/kg IV q8h ×10–14 days",
+        "Ganciclovir 5 mg/kg IV q12h + foscarnet 60 mg/kg IV q8h (or 90 mg/kg q12h) ×3 weeks"
+      ],
       "category": "CNS_INFECTION",
       "searchTerms": [
         "HSV encephalitis",
@@ -3119,11 +3172,17 @@
         "Tunkel AR, et al. The management of encephalitis: clinical practice guidelines by the IDSA. Clin Infect Dis 2008;47(3):303-327. doi:10.1086/589747",
         "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "cns-infection-immunocompromised",
       "title": "CNS infection in the immunocompromised (HIV, transplant, biologics)",
+      "keyNumbers": [
+        "Liposomal AmB 3–4 mg/kg IV daily + flucytosine 25 mg/kg PO QID ×2 weeks (AII)",
+        "Therapeutic lumbar puncture (cryptococcal raised ICP): Remove CSF to cut OP by ≥50% or to <20 cm CSF; 20–25 mL if no manometer; repeat at least daily while symptomatic",
+        "HIV + CNS cryptococcosis: defer ART 4–6 weeks after starting antifungals (AI)",
+        "Ring-enhancing lesions, HIV, CD4 <100: empiric toxoplasma therapy"
+      ],
       "category": "CNS_INFECTION",
       "searchTerms": [
         "cryptococcal meningitis",
@@ -3517,11 +3576,17 @@
         "Tunkel AR, et al. Practice guidelines for the management of bacterial meningitis (IDSA). Clin Infect Dis 2004;39(9):1267-1284. doi:10.1086/425368",
         "Tunkel AR, et al. The management of encephalitis: clinical practice guidelines by the IDSA. Clin Infect Dis 2008;47(3):303-327. doi:10.1086/589747"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "nmosd-mogad-attack",
       "title": "NMOSD / MOGAD acute attack",
+      "keyNumbers": [
+        "IV methylprednisolone 1 g daily ×3–5 days",
+        "Severe attack, or poor response to steroids → PLEX within 5 days of onset",
+        "Plasma exchange (PLEX): 1–1.5 total plasma volumes per exchange, daily or every other day; median 5 exchanges over ~10 days (range 2–10)",
+        "IVIG: 0.4 g/kg/day ×5 days if PLEX not feasible"
+      ],
       "category": "NEUROIMMUNOLOGY",
       "searchTerms": [
         "NMO",
@@ -3730,11 +3795,15 @@
         "Cortese I, et al. Evidence-based guideline update: plasmapheresis in neurologic disorders (AAN; since retired). Neurology 2011;76(3):294-300. doi:10.1212/WNL.0b013e318207b1f6",
         "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (NMOSD fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "ms-relapse",
       "title": "Multiple sclerosis relapse",
+      "keyNumbers": [
+        "Methylprednisolone: 500–1000 mg/day ×3–5 days; oral 1000 mg/day ×3 days noninferior to IV (COPOUSEP)",
+        "Relapse: patient-reported or objectively observed acute inflammatory demyelinating event lasting ≥24 h, in the absence of fever or infection"
+      ],
       "category": "NEUROIMMUNOLOGY",
       "searchTerms": [
         "MS flare",
@@ -3882,11 +3951,16 @@
         "Le Page E, et al. Oral versus intravenous high-dose methylprednisolone for treatment of relapses in MS (COPOUSEP). Lancet 2015;386(9997):974-981. doi:10.1016/S0140-6736(15)61137-0",
         "Cortese I, et al. Evidence-based guideline update: plasmapheresis in neurologic disorders (AAN; since retired). Neurology 2011;76(3):294-300. doi:10.1212/WNL.0b013e318207b1f6"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "spinal-cord-compression",
       "title": "Acute spinal cord compression (malignant, epidural abscess)",
+      "keyNumbers": [
+        "Dexamethasone (malignant compression): 16 mg PO (or IV equivalent) as soon as possible, then 16 mg daily until surgery/radiotherapy",
+        "ASAP, ≤24 h: MRI whole spine (CT if MRI contraindicated)",
+        "Emergency surgery; outcomes best when surgery occurs within 72 h (not a hard cutoff)"
+      ],
       "category": "SPINAL",
       "searchTerms": [
         "MSCC",
@@ -4088,7 +4162,7 @@
         "NICE. Spinal metastases and metastatic spinal cord compression (NG234). 2023",
         "Tande AJ, Currier BL, Osmon DR. Spinal epidural abscess. N Engl J Med 2026;394:1621-1633"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "elevated-icp-herniation",
@@ -4438,6 +4512,11 @@
     {
       "id": "pres",
       "title": "Posterior reversible encephalopathy syndrome (PRES)",
+      "keyNumbers": [
+        "Lower BP gradually — no more than ~20–25% in the first hours",
+        "Magnesium sulfate (eclampsia/preeclampsia-associated PRES): 4–6 g IV over 20–30 min, then 1–2 g/h; continue 24 h after delivery",
+        "Toxicity: DTRs lost ~9 mg/dL, respiratory depression ~12 mg/dL; give calcium gluconate 10% 10 mL IV over 3 min + IV furosemide"
+      ],
       "category": "ENCEPHALOPATHY",
       "searchTerms": [
         "PRES",
@@ -4647,11 +4726,15 @@
         "Hinduja A. Posterior reversible encephalopathy syndrome: clinical features and outcome. Front Neurol 2020;11:71. doi:10.3389/fneur.2020.00071",
         "American College of Obstetricians and Gynecologists. Practice Bulletin No. 222: Gestational hypertension and preeclampsia. Obstet Gynecol 2020;135(6):e237-e260"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "serotonin-syndrome",
       "title": "Serotonin syndrome (serotonin toxicity)",
+      "keyNumbers": [
+        "Cyproheptadine: 12 mg initially, then 2 mg q2h while symptoms continue; maintenance 8 mg q6h (12–32 mg/24 h); oral only — crush via NG",
+        "Temperature >41 °C, rigidity, or hemodynamic instability → ICU"
+      ],
       "category": "TOXIC_METABOLIC",
       "searchTerms": [
         "serotonin toxicity",
@@ -4843,11 +4926,18 @@
         "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352(11):1112-1120. doi:10.1056/NEJMra041867",
         "Dunkley EJC, et al. The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity. QJM 2003;96(9):635-642. doi:10.1093/qjmed/hcg109"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "nms-parkinsonism-hyperpyrexia",
       "title": "Neuroleptic malignant syndrome & parkinsonism-hyperpyrexia",
+      "keyNumbers": [
+        "Lorazepam 1–2 mg IM/IV q4–6h, or diazepam 10 mg IV q8h",
+        "Dantrolene: Severe NMS: 1–2.5 mg/kg (actual body weight) IV q6h or continuously for 48 h, then taper over several days",
+        "Bromocriptine: 2.5–5 mg PO/NG q8h",
+        "Amantadine: 100 mg PO/NG q8h (moderate–severe; alternative to bromocriptine)",
+        "Temperature ≥40 °C, rising CK/renal failure, or autonomic instability → ICU"
+      ],
       "category": "TOXIC_METABOLIC",
       "searchTerms": [
         "NMS",
@@ -5137,11 +5227,15 @@
         "Reulbach U, et al. Managing an effective treatment for neuroleptic malignant syndrome. Crit Care 2007;11(1):R4. doi:10.1186/cc5148",
         "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "wernicke-encephalopathy",
       "title": "Wernicke encephalopathy",
+      "keyNumbers": [
+        "Thiamine: 200 mg IV three times daily, before any carbohydrate (EFNS, Level C)",
+        "Thiamine dose (EFNS 200 mg TID vs UK/other protocols up to 500 mg TID)"
+      ],
       "category": "TOXIC_METABOLIC",
       "searchTerms": [
         "Wernicke",
@@ -5266,11 +5360,17 @@
       "sources": [
         "Galvin R, et al. EFNS guidelines for diagnosis, therapy and prevention of Wernicke encephalopathy. Eur J Neurol 2010;17(12):1408-1418. doi:10.1111/j.1468-1331.2010.03153.x"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "hyponatremia-ods",
       "title": "Severe hyponatremia & osmotic demyelination syndrome",
+      "keyNumbers": [
+        "150 mL 3% NaCl IV over 20 min; recheck Na; repeat up to twice more until Na rises 5 mmol/L (ESE 1D/2D)",
+        "ESE 2014 correction limits: ≤10 mmol/L in the first 24 h, then ≤8 mmol/L per 24 h until Na 130 (1D)",
+        "Stricter limit (≤8 mmol/L in first 24 h) when ODS risk factors: hypokalemia, malnutrition, alcohol use disorder",
+        "Na at 6 h, 12 h, then daily (more often in high-risk)"
+      ],
       "category": "TOXIC_METABOLIC",
       "searchTerms": [
         "hyponatremia",
@@ -5424,11 +5524,18 @@
         "Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519",
         "Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "icans-car-t-neurotoxicity",
       "title": "ICANS (immune effector cell–associated neurotoxicity)",
+      "keyNumbers": [
+        "ASTCT grade = worst of: ICE 7–9 (G1), 3–6 (G2), 0–2 (G3), 0 unarousable (G4)",
+        "Dexamethasone (grade 2–3): G3 (or G2 with CRS refractory to tocilizumab): 10 mg IV q6–12h",
+        "Methylprednisolone (grade 4): 1,000 mg IV once or twice daily ×3 days",
+        "Tocilizumab (concurrent CRS only): 8 mg/kg IV over 1 h (max 800 mg/dose); repeat q8h as needed; max 3 doses/24 h and 4 total",
+        "Grade ≥3 → ICU"
+      ],
       "category": "NEUROIMMUNOLOGY",
       "searchTerms": [
         "ICANS",
@@ -5747,11 +5854,18 @@
         "Lee DW, et al. ASTCT consensus grading for cytokine release syndrome and neurologic toxicity associated with immune effector cells. Biol Blood Marrow Transplant 2019;25(4):625-638",
         "Santomasso BD, et al. Management of immune-related adverse events in patients treated with CAR T-cell therapy: ASCO guideline. J Clin Oncol 2021;39(35):3978-3992"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "status-migrainosus",
       "title": "Status migrainosus / refractory migraine (inpatient)",
+      "keyNumbers": [
+        "IV prochlorperazine 10–12.5 mg (low EPS risk) or bilateral greater occipital nerve block (AHS 2025 Level A)",
+        "Metoclopramide: 10 mg IV when prochlorperazine isn't appropriate or available",
+        "Ketorolac: 30–60 mg IV if no NSAID contraindication",
+        "Sumatriptan: 3–6 mg SC; best early or while pain is mild",
+        "Dexamethasone: Recurrence prevention: single 10–24 mg IV dose (ideal dose unknown)"
+      ],
       "category": "HEADACHE",
       "searchTerms": [
         "status migrainosus",
@@ -6445,11 +6559,15 @@
         "Nagy AJ, et al. Intravenous dihydroergotamine for inpatient management of refractory primary headaches. Neurology 2011;77:1827-1832",
         "Dihydroergotamine mesylate injection US prescribing information. Provepharm; revised 2/2025"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "post-dural-puncture-headache",
       "title": "Post-dural puncture headache (post-LP) and epidural blood patch",
+      "keyNumbers": [
+        "Caffeine: First 24 h of symptoms; max 900 mg/day (200–300 mg/day if breastfeeding)",
+        "Epidural blood patch: Autologous blood, usually 15–20 mL (optimal volume unknown; >30 mL adds nothing)"
+      ],
       "category": "HEADACHE",
       "searchTerms": [
         "PDPH",
@@ -6760,7 +6878,7 @@
       "sources": [
         "Uppal V, et al. Consensus practice guidelines on postdural puncture headache from a multisociety, international working group: a summary report. JAMA Netw Open 2023;6(8):e2325387. doi:10.1001/jamanetworkopen.2023.25387"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }
