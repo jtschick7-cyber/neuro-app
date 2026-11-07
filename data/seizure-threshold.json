@@ -4,7 +4,7 @@
   "scopeNotes": [
     "Labels and an FDA safety communication; Beers 2023 items apply to adults ≥65"
   ],
-  "version": "0.2.2",
+  "version": "0.2.3",
   "schemaVersion": "3.0.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -119,7 +119,7 @@
       "sources": [
         "FDA Drug Safety Communication on cefepime and non-convulsive status epilepticus (2012), as summarized in: Song JC. Cefepime: FDA Drug Safety Communication on non-convulsive status epilepticus risk. Infect Dis Alert 2012;31(11)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "beta-lactams-carbapenems",

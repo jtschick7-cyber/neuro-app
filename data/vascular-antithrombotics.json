@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -3725,7 +3725,7 @@
         "Eptifibatide injection US prescribing information. Baxter; revised 5/2024 (user-supplied label)",
         "Aggrastat (tirofiban) US prescribing information. Medicure; revised 1/2025 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "kind": "DECISION",
