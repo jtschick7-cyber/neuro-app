@@ -153,3 +153,8 @@ export const SYNDROME_FILTER = {
   lessCommon: "Reported, less common",
   empty: "No antibodies match this syndrome and search.",
 };
+
+/** Global search (Home). */
+export const SEARCH_COPY = {
+  partial: "No entry matches every word — closest matches:",
+};
