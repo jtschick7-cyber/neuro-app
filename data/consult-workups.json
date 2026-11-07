@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -309,9 +309,9 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
-        "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2024. doi:10.1016/j.jtha.2024.10.022"
+        "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2025;23:731-744. doi:10.1016/j.jtha.2024.10.022"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "ich-etiology-workup",
@@ -827,12 +827,13 @@
       "verify": [],
       "relatedIds": [
         "consult-workups:ich-etiology-workup",
-        "consult-workups:thunderclap-headache"
+        "consult-workups:thunderclap-headache",
+        "reference-cards:asah-numbers"
       ],
       "sources": [
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "caa-related-inflammation",
@@ -4474,7 +4475,9 @@
         "Common presentations: focal deficits (67–83%), headache (54–63%), cognitive impairment (35–50%) (Salvarani 2024)",
         "Most drug-induced 'vasculitis' on angiography is vasospasm (Salvarani 2024)"
       ],
-      "verify": [],
+      "verify": [
+        "doi:10.1161/STR.0000000000000422 (formerly attached to the Salvarani 2024 citation): paper not identified from attached sources. No content in this entry is attributed to an AHA/Stroke paper; confirm none was drawn from it"
+      ],
       "relatedIds": [
         "consult-workups:thunderclap-headache",
         "consult-workups:young-stroke-workup",
@@ -4483,10 +4486,10 @@
         "consult-workups:intravascular-lymphoma"
       ],
       "sources": [
-        "Salvarani C, Brown RD Jr, Hunder GG. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1161/STR.0000000000000422",
+        "Salvarani C, Hunder GG, Brown RD Jr. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1056/NEJMra2314942",
         "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "paraneoplastic-workup",

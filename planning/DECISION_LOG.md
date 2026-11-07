@@ -386,3 +386,31 @@ Approval in the planning project isn't clinical sign-off. Claude Code encodes an
 ### Open items
 - No `verify[]` items.
 - Jason: `npm run review-sheets` and `npm run signoff` for both entries before release (`npm run build` fails until then).
+
+## 2026-11-07 — Follow-up batch (six decisions)
+
+Approved by Jason in chat 2026-11-07. Drafts: `planning/drafts/followups-2026-11-07/` (base `main` 6ff3179). All 7 entries `lastReviewed: "UNREVIEWED"`.
+
+| Draft | Item | Change |
+|---|---|---|
+| `acute-neuro.guillain-barre-syndrome.json` | A1 | `searchTerms` += "Bickerstaff", "BBE" |
+| `consult-workups.sah-workup.json` | A2 | `relatedIds` += `reference-cards:asah-numbers` |
+| `vascular-antithrombotics.cvt-anticoagulation.json` | A2 | `relatedIds` += `reference-cards:thrombophilia-test-validity` |
+| `consult-workups.cns-vasculitis-workup.json` | B3 | Salvarani DOI → 10.1056/NEJMra2314942; author order → Salvarani, Hunder, Brown; `verify[]` +1 |
+| `consult-workups.young-stroke-workup.json` | B4 | Devreese → J Thromb Haemost 2025;23:731-744 (year 2024 → 2025) |
+| `vascular-antithrombotics.heparin-ufh.json` | C5 | IVT line sourced to AHA 2026 §4.6.5 Table 8 (ungraded); new aPTT-wait line; `keyNumbers[1]` kept identical to `thrombolysisRule[0]` |
+| `vascular-antithrombotics.ticagrelor.json` | C6 | `uses[3].role` SECOND_LINE → ALTERNATIVE; `verify[]` +1 |
+
+Not edited: `vascular-antithrombotics:pregnancy-antithrombotics` (proposed back-link dropped at review).
+
+### Version
+| registry | from | to | level |
+|---|---|---|---|
+| acute-neuro | 1.2.1 | 1.2.2 | PATCH |
+| consult-workups | 1.1.1 | 1.1.2 | PATCH (citation corrections to the same papers) |
+| vascular-antithrombotics | 0.10.1 | 0.11.0 | MINOR (re-sourced/graded IVT line, new IVT instruction, role change) |
+
+### Open items
+- `verify[]`: `cns-vasculitis-workup` (owner of `doi:10.1161/STR.0000000000000422`); `ticagrelor` (other AHA 2026 sections vs Kleindorfer 2021 §5.1.1 Rec 3).
+- Jason: close both, then `npm run signoff` and `npm run release`.
+- Noticed, not changed: tracked in `NEURO_APP_TASKS.md` §10.
