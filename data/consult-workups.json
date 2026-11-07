@@ -1225,8 +1225,7 @@
         "Outpatient EEG/MRI acceptable if not done inpatient"
       ],
       "calculatorIds": [
-        "levetiracetam-load",
-        "lacosamide-load"
+        "levetiracetam-load"
       ],
       "institutionVaries": [
         "Inpatient vs outpatient EEG/MRI access"

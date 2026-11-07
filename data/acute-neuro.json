@@ -470,9 +470,7 @@
             "NCS 2012 lists as urgent control option"
           ],
           "formularyStatus": "AVAILABLE",
-          "calculatorIds": [
-            "lacosamide-load"
-          ]
+          "calculatorIds": []
         },
         {
           "role": "THIRD_LINE",
@@ -522,7 +520,7 @@
         "Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795",
         "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "refractory-super-refractory-se",
@@ -1116,9 +1114,7 @@
             "TRENdS 2018 RCT: noninferior to fosphenytoin (63% vs 50% seizure control)"
           ],
           "formularyStatus": "AVAILABLE",
-          "calculatorIds": [
-            "lacosamide-load"
-          ]
+          "calculatorIds": []
         },
         {
           "role": "SECOND_LINE",
@@ -1276,7 +1272,7 @@
         "Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z",
         "Husain AM, et al. Randomized trial of lacosamide versus fosphenytoin for nonconvulsive seizures (TRENdS). Ann Neurol 2018;83(6):1174-1185. doi:10.1002/ana.25249"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "myasthenic-crisis",
