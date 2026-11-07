@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -3647,133 +3647,6 @@
           ],
           "formularyStatus": "NOT_STOCKED_LOCAL",
           "calculatorIds": []
-        },
-        {
-          "role": "SUPPORTIVE",
-          "agent": "Eptifibatide — label ACS/PCI regimen (reference only)",
-          "routes": [
-            "IV"
-          ],
-          "doseText": "180 mcg/kg bolus, then 2 mcg/kg/min; CrCl <50: 1 mcg/kg/min",
-          "dose": [
-            {
-              "label": "Bolus",
-              "amountMin": 180,
-              "amountMax": 180,
-              "unit": "MCG",
-              "basis": "PER_KG",
-              "timing": "SINGLE",
-              "weightBasis": "ACTUAL",
-              "caps": [],
-              "frequency": [],
-              "duration": []
-            },
-            {
-              "label": "Infusion",
-              "amountMin": 2,
-              "amountMax": 2,
-              "unit": "MCG",
-              "basis": "PER_KG",
-              "timing": "PER_MIN",
-              "weightBasis": "ACTUAL",
-              "caps": [],
-              "frequency": [
-                "Continuous"
-              ],
-              "duration": []
-            },
-            {
-              "label": "Infusion, CrCl <50",
-              "amountMin": 1,
-              "amountMax": 1,
-              "unit": "MCG",
-              "basis": "PER_KG",
-              "timing": "PER_MIN",
-              "weightBasis": "ACTUAL",
-              "caps": [],
-              "frequency": [
-                "Continuous"
-              ],
-              "duration": []
-            }
-          ],
-          "notes": [
-            "Cardiac dosing — not a stroke recommendation"
-          ],
-          "evidenceLevel": "NOT_GRADED",
-          "evidenceNote": [
-            "FDA-labeled regimen"
-          ],
-          "formularyStatus": "INSTITUTION_VARIES",
-          "calculatorIds": [
-            "cockcroft-gault"
-          ]
-        },
-        {
-          "role": "SUPPORTIVE",
-          "agent": "Tirofiban — label ACS regimen (reference only)",
-          "routes": [
-            "IV"
-          ],
-          "doseText": "25 mcg/kg over 5 min, then 0.15 mcg/kg/min up to 18 h; CrCl ≤60: 0.075 mcg/kg/min",
-          "dose": [
-            {
-              "label": "Bolus",
-              "amountMin": 25,
-              "amountMax": 25,
-              "unit": "MCG",
-              "basis": "PER_KG",
-              "timing": "SINGLE",
-              "weightBasis": "ACTUAL",
-              "caps": [],
-              "frequency": [],
-              "duration": []
-            },
-            {
-              "label": "Infusion",
-              "amountMin": 0.15,
-              "amountMax": 0.15,
-              "unit": "MCG",
-              "basis": "PER_KG",
-              "timing": "PER_MIN",
-              "weightBasis": "ACTUAL",
-              "caps": [],
-              "frequency": [
-                "Continuous"
-              ],
-              "duration": [
-                "Up to 18 h"
-              ]
-            },
-            {
-              "label": "Infusion, CrCl ≤60",
-              "amountMin": 0.075,
-              "amountMax": 0.075,
-              "unit": "MCG",
-              "basis": "PER_KG",
-              "timing": "PER_MIN",
-              "weightBasis": "ACTUAL",
-              "caps": [],
-              "frequency": [
-                "Continuous"
-              ],
-              "duration": [
-                "Up to 18 h"
-              ]
-            }
-          ],
-          "notes": [
-            "Cardiac dosing — stroke/IR regimens differ and are off-label",
-            "CrCl by Cockcroft-Gault with actual weight (label)"
-          ],
-          "evidenceLevel": "NOT_GRADED",
-          "evidenceNote": [
-            "FDA-labeled regimen"
-          ],
-          "formularyStatus": "INSTITUTION_VARIES",
-          "calculatorIds": [
-            "cockcroft-gault"
-          ]
         }
       ],
       "renalHepatic": [
@@ -3852,7 +3725,7 @@
         "Eptifibatide injection US prescribing information. Baxter; revised 5/2024 (user-supplied label)",
         "Aggrastat (tirofiban) US prescribing information. Medicure; revised 1/2025 (user-supplied label)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
