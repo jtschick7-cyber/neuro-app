@@ -1,19 +1,19 @@
 {
   "appVersion": "2.0.0",
-  "contentVersion": "2.0.0+c0903b69",
+  "contentVersion": "2.0.0+ad01e0e0",
   "builtAt": "2026-11-07",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "1.1.1",
+      "version": "1.2.1",
       "schemaVersion": "1.2.0",
       "lastUpdated": "2026-11-07",
       "entries": 22,
       "reviewed": 22,
       "unreviewedIds": [],
       "openVerify": 0,
-      "oldestReview": "2026-11-05",
+      "oldestReview": "2026-11-07",
       "newestReview": "2026-11-07"
     },
     {
@@ -387,6 +387,13 @@
       "year": 2005,
       "citedBy": [
         "acute-neuro:serotonin-syndrome"
+      ]
+    },
+    {
+      "citation": "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 16 Intracranial Pressure Thresholds",
+      "year": 2016,
+      "citedBy": [
+        "acute-neuro:elevated-icp-herniation"
       ]
     },
     {
@@ -1357,6 +1364,7 @@
       "citation": "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
       "year": 2019,
       "citedBy": [
+        "acute-neuro:guillain-barre-syndrome",
         "consult-workups:acute-hepatic-porphyria",
         "consult-workups:inpatient-neuropathy"
       ]
@@ -2307,6 +2315,7 @@
       "citation": "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625",
       "year": 2002,
       "citedBy": [
+        "acute-neuro:guillain-barre-syndrome",
         "consult-workups:inpatient-neuropathy"
       ]
     },
