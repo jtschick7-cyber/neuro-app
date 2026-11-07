@@ -1,0 +1,309 @@
+{
+  "id": "young-stroke-workup",
+  "title": "Young adult stroke (<50): extended workup",
+  "keyNumbers": [
+    "Confirmed APS: Warfarin is reasonable; target INR 2–3 over >3",
+    "Repeat APS testing at 12 weeks",
+    "Protein C, protein S, antithrombin, factor VIII: Defer or repeat ≥4–6 weeks after stroke; factor VIII up to 6 months (Kleindorfer)",
+    "Age 18–60, nonlacunar cryptogenic stroke, PFO: Closure decision by PFO features — see esus-antithrombotic"
+  ],
+  "searchTerms": [
+    "young stroke",
+    "stroke in young",
+    "hypercoagulable workup",
+    "thrombophilia",
+    "APS",
+    "PFO",
+    "cryptogenic young"
+  ],
+  "category": "VASCULAR",
+  "consultQuestion": "Stroke in a young adult — what beyond the standard workup?",
+  "keyHistory": [
+    "Personal or family history of VTE, miscarriage, early stroke",
+    "Migraine with aura, oral contraceptives/estrogen, pregnancy or postpartum",
+    "Drugs: cocaine, amphetamines, other stimulants",
+    "Neck trauma, recent infection, HIV/syphilis risk",
+    "Systemic symptoms: rash, arthritis, livedo, weight loss",
+    "Hearing loss, renal disease, neuropathic pain (genetic syndromes)"
+  ],
+  "keyExam": [
+    "Horner syndrome, bruits (dissection)",
+    "Livedo reticularis, skin lesions",
+    "Murmur, signs of endocarditis",
+    "Marfanoid or connective-tissue features"
+  ],
+  "redFlags": [
+    "Headache with stroke-like deficits (dissection, RCVS, CVT)",
+    "Fever or new murmur (endocarditis)",
+    "Pregnancy or postpartum",
+    "Recurrent events in different territories"
+  ],
+  "differential": [
+    {
+      "dx": "Cervical artery dissection",
+      "clues": [
+        "Neck pain or headache, Horner, preceding trauma"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Paradoxical embolism via PFO",
+      "clues": [
+        "Cortical infarct, no other cause, Valsalva at onset, DVT"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Antiphospholipid syndrome",
+      "clues": [
+        "Prior VTE or pregnancy loss, livedo, thrombocytopenia"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Infective endocarditis",
+      "clues": [
+        "Fever, murmur, multiple emboli"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Reversible cerebral vasoconstriction syndrome",
+      "clues": [
+        "Recurrent thunderclap headache, postpartum, vasoactive drugs"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Cerebral venous thrombosis",
+      "clues": [
+        "Headache, seizures, hemorrhagic infarcts not respecting arterial territories"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Drug-related (cocaine, amphetamines)",
+      "clues": [
+        "Toxicology positive, vasospasm"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Primary/secondary CNS vasculitis, moyamoya",
+      "clues": [
+        "Multifocal infarcts, abnormal vessel imaging, CSF pleocytosis"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Genetic: CADASIL, Fabry, MELAS, sickle cell disease",
+      "clues": [
+        "Family history, migraine, white-matter disease, systemic features"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "Standard stroke etiology workup: MRI brain, vessel imaging, ECG and telemetry, echo, routine stroke labs",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "CTA or MRA head and neck (dissection, vasculopathy)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "MRI with fat-saturated T1 neck if dissection suspected"
+      ]
+    },
+    {
+      "test": "TTE with agitated saline; TEE if negative and suspicion remains",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Urine drug screen",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Pregnancy test (people who can become pregnant)",
+      "priority": "STAT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Antiphospholipid antibodies (lupus anticoagulant, anticardiolipin, anti-β2GPI)",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Cryptogenic stroke, prior VTE or pregnancy loss"
+      ],
+      "notes": [
+        "Confirm persistence 12 weeks apart (Kleindorfer)",
+        "Lupus anticoagulant testing is discouraged on anticoagulation (false positives and negatives); DOAC removal or alternate assays only with lab input (ISTH 2024)"
+      ]
+    },
+    {
+      "test": "Protein C, protein S, antithrombin, factor VIII",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Paradoxical embolism or VTE history"
+      ],
+      "notes": [
+        "Defer or repeat ≥4–6 weeks after stroke; factor VIII up to 6 months (Kleindorfer)"
+      ]
+    },
+    {
+      "test": "Factor V Leiden, prothrombin 20210A (genetic tests)",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Venous thrombosis, PFO with suspected paradoxical embolism"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Blood cultures",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Fever, murmur"
+      ],
+      "notes": []
+    },
+    {
+      "test": "HIV, syphilis serology; ESR/CRP",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Cryptogenic stroke"
+      ],
+      "notes": [
+        "Kleindorfer COR 2a"
+      ]
+    },
+    {
+      "test": "Lower-extremity duplex",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "PFO with suspected paradoxical embolism"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Hemoglobin electrophoresis",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Sickle cell risk"
+      ],
+      "notes": []
+    },
+    {
+      "test": "LP",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected vasculitis or infection"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Genetic testing (NOTCH3, GLA, mtDNA)",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suggestive phenotype or family history"
+      ],
+      "notes": [
+        "Kleindorfer COR 2a"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Cryptogenic stroke, clinically indicated",
+      "recommendation": "Targeted tests: hypercoagulable state, blood/CSF infection, infections causing CNS vasculitis (e.g., HIV, syphilis), drug use (cocaine, amphetamines), systemic inflammation markers, genetic tests for inherited stroke diseases",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2a, LOE C-LD"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Isolated antiphospholipid antibody, APS criteria not met",
+      "recommendation": "Antiplatelet therapy alone",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 1, LOE B-NR"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Confirmed APS",
+      "recommendation": "Warfarin is reasonable; target INR 2–3 over >3",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2a (C-LD; INR target B-R)"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Triple-positive APS with thrombosis history",
+      "recommendation": "No rivaroxaban — excess thrombosis vs warfarin",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 3: Harm, LOE B-R"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Inherited thrombophilia found, no other thrombotic history, cryptogenic stroke",
+      "recommendation": "Antiplatelet therapy is reasonable",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2a, LOE C-LD"
+      ]
+    },
+    {
+      "order": 6,
+      "condition": "Age 18–60, nonlacunar cryptogenic stroke, PFO",
+      "recommendation": "Closure decision by PFO features — see esus-antithrombotic",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2a, LOE B-R (high-risk features)"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Pregnancy or postpartum: see pregnancy-antithrombotics",
+    "Dissection: see cervical-artery-dissection"
+  ],
+  "disposition": [
+    "Repeat APS testing at 12 weeks",
+    "Hematology referral for confirmed thrombophilia or APS",
+    "PFO heart team referral when criteria met"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Send-out thrombophilia panel contents and turnaround"
+  ],
+  "pearls": [
+    "Acute-phase protein C/S/antithrombin levels are unreliable — testing too early creates false positives (Kleindorfer)",
+    "Thrombophilia testing rarely changes default antiplatelet therapy unless it shows APS or venous thrombosis (Kleindorfer supportive text)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:esus-antithrombotic",
+    "vascular-antithrombotics:cervical-artery-dissection",
+    "vascular-antithrombotics:pregnancy-antithrombotics",
+    "vascular-antithrombotics:cvt-anticoagulation",
+    "reference-cards:thrombophilia-test-validity"
+  ],
+  "sources": [
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
+    "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
+    "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2025;23:731-744. doi:10.1016/j.jtha.2024.10.022"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

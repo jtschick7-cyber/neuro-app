@@ -1,0 +1,163 @@
+{
+  "kind": "DECISION",
+  "id": "cvt-anticoagulation",
+  "title": "Cerebral venous thrombosis: anticoagulation",
+  "keyNumbers": [
+    "Enoxaparin (treatment dose): 1 mg/kg SC q12h (CrCl <30: 1 mg/kg daily)",
+    "After the acute phase: VKA (INR 2.0–3.0) for 3–12 months depending on cause; indefinitely with thrombophilia or recurrent VTE",
+    "CVT during pregnancy: Full-dose LMWH throughout pregnancy, then LMWH or VKA ≥6 weeks postpartum (total ≥3 months)",
+    "Suspected VITT (after adenovirus-vector vaccine, thrombocytopenia): Send PF4 antibodies; avoid all heparin; IVIG 1 g/kg daily × 2 days; steroids; no platelet transfusion; argatroban or fondaparinux, then DOAC after platelet recovery"
+  ],
+  "searchTerms": [
+    "CVT",
+    "CVST",
+    "venous sinus thrombosis",
+    "cerebral venous thrombosis",
+    "VITT"
+  ],
+  "question": "How is CVT anticoagulated, for how long, and when to escalate?",
+  "population": [
+    "Confirmed cerebral venous thrombosis in adults"
+  ],
+  "rules": [
+    {
+      "order": 1,
+      "condition": "Confirmed CVT",
+      "recommendation": "Parenteral heparin first; LMWH favored over UFH",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "AHA scientific statement 2024 (ungraded)"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Venous (hemorrhagic) infarct or ICH at presentation",
+      "recommendation": "Not a contraindication — anticoagulate",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "After the acute phase",
+      "recommendation": "VKA (INR 2.0–3.0) for 3–12 months depending on cause; indefinitely with thrombophilia or recurrent VTE",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Considering a DOAC instead of VKA",
+      "recommendation": "DOACs appear safe and effective (RE-SPECT CVT: dabigatran after 5–15 days of parenteral lead-in); avoid in pregnancy, breastfeeding and antiphospholipid syndrome",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "CVT during pregnancy",
+      "recommendation": "Full-dose LMWH throughout pregnancy, then LMWH or VKA ≥6 weeks postpartum (total ≥3 months)",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    },
+    {
+      "order": 6,
+      "condition": "Deciding duration from repeat imaging",
+      "recommendation": "Using recanalization on CTV/MRV to set duration remains uncertain",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    },
+    {
+      "order": 7,
+      "condition": "Thrombus propagation, deterioration despite medical therapy, or contraindication to anticoagulation",
+      "recommendation": "Consider endovascular therapy (no controlled studies; poorer outcomes in meta-analyses)",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    },
+    {
+      "order": 8,
+      "condition": "Clinical signs of herniation",
+      "recommendation": "Decompressive surgery — lifesaving and may improve function",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    },
+    {
+      "order": 9,
+      "condition": "Suspected VITT (after adenovirus-vector vaccine, thrombocytopenia)",
+      "recommendation": "Send PF4 antibodies; avoid all heparin; IVIG 1 g/kg daily × 2 days; steroids; no platelet transfusion; argatroban or fondaparinux, then DOAC after platelet recovery",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Enoxaparin (treatment dose)",
+      "routes": [
+        "SC"
+      ],
+      "doseText": "1 mg/kg SC q12h (CrCl <30: 1 mg/kg daily)",
+      "dose": [
+        {
+          "label": "Enoxaparin",
+          "amountMin": 1,
+          "amountMax": 1,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DOSE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "UFH if procedure or surgery likely"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024: LMWH favored"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "cockcroft-gault"
+      ]
+    }
+  ],
+  "contraindications": [],
+  "esoDiffers": [],
+  "institutionVaries": [
+    "Neuro-IR thresholds for venous thrombectomy"
+  ],
+  "pearls": [
+    "Hemorrhage is present in up to 40% of CVT (Saposnik 2024)",
+    "Saposnik 2024 is an ungraded scientific statement; the ESO 2017 CVT guideline (graded) is not stored"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:enoxaparin",
+    "vascular-antithrombotics:heparin-ufh",
+    "vascular-antithrombotics:warfarin",
+    "vascular-antithrombotics:dabigatran",
+    "reference-cards:thrombophilia-test-validity"
+  ],
+  "sources": [
+    "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

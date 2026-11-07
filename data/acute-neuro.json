@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -1655,7 +1655,9 @@
         "Miller Fisher",
         "MFS",
         "ascending paralysis",
-        "EGRIS"
+        "EGRIS",
+        "Bickerstaff",
+        "BBE"
       ],
       "presentation": [
         "Progressive bilateral limb weakness with reduced/absent reflexes; nadir within 4 weeks",

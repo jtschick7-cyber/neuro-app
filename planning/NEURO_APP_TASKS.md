@@ -526,3 +526,18 @@ context-bar chip, safe-area top unchanged.
 | Cangrelor bridging, DNC calculator/apnea validator, CRRT PK, MG 20-30-40 drug checker | Not specified | Referenced by the external spec but its sections weren't provided. Brain death and MG content already exist; CRRT dosing is folded into 7.1 |
 | IBM / cN-1A card | Pearl only | Outpatient diagnosis |
 | External spec's file layout (`src/data/*.json`) | Rejected | Use the repo's `data/` + `schema/` zod pipeline with sources and sign-off |
+
+---
+
+## 10. Open follow-ups (noticed in the 2026-11-07 follow-up batch, not changed)
+
+Content items: each needs an approved draft (docs/VERSIONING.md) before any edit.
+
+- [ ] GBS: `searchTerms` lacks "GQ1b". The PLEX line in `keyNumbers` is shortened from `doseText`.
+- [ ] cvt-anticoagulation: no back-link to `pregnancy-antithrombotics`. The enoxaparin CrCl <30 dose has no `dose[]` object. `rules[0].evidenceNote` says "AHA scientific statement 2024" rather than "Saposnik 2024".
+- [ ] sah-workup: no `relatedIds` to `cervical-artery-dissection` or `cvt-anticoagulation`, though both are in the differential.
+- [ ] pregnancy-antithrombotics: the Kopp 2025 citation has an online-first placeholder (0:1-29). `pearls[0]` overstates the ACOG endorsement.
+- [ ] cns-vasculitis: the ESO PACNS guideline is used only "as cited in Salvarani 2024" and isn't in `sources`. "Sousa 2026" vs "de Sousa IA".
+- [ ] young-stroke: `keyNumbers[0]` looks truncated ("…over >3"). The in-text labels still say "ISTH 2024".
+- [ ] AHA 2026 Table 8 has no LMWH row (Powers 2019 had one): check against `enoxaparin` and `thrombolysis-with-prior-antithrombotics`. Table 8's coagulopathy row gives both "aPTT>40s" and "PTT abnormal by local standards".
+- [ ] ticagrelor: `uses[0].evidenceNote` cites "§5.19 … ≥30% stenosis" (the ≥30% subgroup is in §5.1.1). `uses[3].evidenceNote` names no section.

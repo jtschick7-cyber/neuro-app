@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "0.10.1",
+  "version": "0.11.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -2210,7 +2210,7 @@
       "title": "Unfractionated heparin (UFH)",
       "keyNumbers": [
         "Protamine: 1 mg per 100 U UFH given in the prior 2–3 h, max 50 mg",
-        "Received heparin with aPTT >40 s: do not give IVT",
+        "Received heparin with aPTT >40 s: do not give IVT (AHA 2026 §4.6.5 Table 8: absolute contraindication; expert opinion, not graded)",
         "UFH — therapeutic IV infusion: Label: 5,000 U IV bolus, then 20,000–40,000 U/24 h (68-kg basis); weight-based nomogram per local protocol",
         "UFH — VTE prophylaxis: 5,000 U SC every 8–12 h",
         "Label target: aPTT 1.5–2× control; check ~every 4 h early in infusion (label)"
@@ -2315,7 +2315,8 @@
           "IV infusion: stop and confirm normalized aPTT before LP/procedure — interval per local policy"
         ],
         "thrombolysisRule": [
-          "Received heparin with aPTT >40 s: do not give IVT",
+          "Received heparin with aPTT >40 s: do not give IVT (AHA 2026 §4.6.5 Table 8: absolute contraindication; expert opinion, not graded)",
+          "Recent heparin: wait for aPTT before IVT — starting before coagulation results applies only without recent heparin or warfarin (AHA 2026 §4.6.5 Table 8; §4.6.1 Rec 10: COR 2a, B-NR)",
           "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
         ]
       },
@@ -3253,7 +3254,7 @@
           "calculatorIds": []
         },
         {
-          "role": "SECOND_LINE",
+          "role": "ALTERNATIVE",
           "agent": "Ticagrelor — minor stroke/high-risk TIA <24 h with ipsilateral >30% intracranial stenosis",
           "routes": [
             "PO"
@@ -5565,7 +5566,8 @@
         "vascular-antithrombotics:enoxaparin",
         "vascular-antithrombotics:heparin-ufh",
         "vascular-antithrombotics:warfarin",
-        "vascular-antithrombotics:dabigatran"
+        "vascular-antithrombotics:dabigatran",
+        "reference-cards:thrombophilia-test-validity"
       ],
       "sources": [
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456"

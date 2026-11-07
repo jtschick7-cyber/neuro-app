@@ -1,0 +1,253 @@
+{
+  "id": "sah-workup",
+  "title": "Suspected subarachnoid hemorrhage",
+  "keyNumbers": [
+    "Noncontrast head CT: <6 h from onset, no new deficit, high-quality scanner read by neuroradiology: sensitivity ~98.7%",
+    "Presentation >6 h, or new neurological deficit: CT; if negative, LP",
+    "Ottawa SAH Rule: further testing if any of age ≥40, neck pain/stiffness, witnessed LOC, onset with exertion, thunderclap (instant peak), limited neck flexion",
+    "Secure the aneurysm early, preferably within 24 h (AHA 2023 key message)",
+    "No routine seizure prophylaxis (consider in high-risk patients); avoid phenytoin; new seizures → ASM for 7 days (AHA 2023 key message)"
+  ],
+  "searchTerms": [
+    "SAH",
+    "thunderclap",
+    "worst headache",
+    "xanthochromia",
+    "Ottawa SAH rule",
+    "aneurysm",
+    "LP after CT"
+  ],
+  "category": "VASCULAR",
+  "consultQuestion": "Sudden severe headache — rule out SAH? CT negative, need LP?",
+  "keyHistory": [
+    "Time to peak intensity (instant/within 1 h)",
+    "Onset during exertion, sex, Valsalva",
+    "Loss of consciousness, seizure, vomiting",
+    "Neck pain or stiffness",
+    "Prior sentinel headache in recent weeks",
+    "Family history of aneurysm/SAH, polycystic kidney disease"
+  ],
+  "keyExam": [
+    "GCS, Hunt-Hess and WFNS grade",
+    "Meningismus, limited neck flexion",
+    "Third-nerve palsy (PCOM aneurysm)",
+    "Subhyaloid hemorrhage on fundoscopy"
+  ],
+  "redFlags": [
+    "Decreased consciousness or focal deficit",
+    "Third-nerve palsy with pupil involvement",
+    "Hydrocephalus on CT",
+    "Rebleeding (sudden worsening)"
+  ],
+  "differential": [
+    {
+      "dx": "Aneurysmal SAH",
+      "clues": [
+        "Diffuse basal cisternal blood",
+        "Thunderclap onset"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Perimesencephalic nonaneurysmal SAH",
+      "clues": [
+        "Blood anterior to the midbrain/pons only, good grade"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "RCVS",
+      "clues": [
+        "Recurrent thunderclap headaches, convexity SAH, segmental vasoconstriction"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Cervical artery dissection",
+      "clues": [
+        "Neck pain, Horner, focal deficits"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Cerebral venous thrombosis",
+      "clues": [
+        "Progressive headache, papilledema, seizures"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Pituitary apoplexy",
+      "clues": [
+        "Visual loss, ophthalmoplegia, known adenoma"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Convexity SAH from CAA",
+      "clues": [
+        "Older, transient focal spells, superficial siderosis"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Primary thunderclap or exertional headache",
+      "clues": [
+        "Diagnosis of exclusion after negative workup"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "Noncontrast head CT",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "<6 h from onset, no new deficit, high-quality scanner read by neuroradiology: sensitivity ~98.7%"
+      ]
+    },
+    {
+      "test": "LP: opening pressure, cell counts in tubes 1 and 4, xanthochromia (spectrophotometry if available)",
+      "priority": "URGENT",
+      "indication": [
+        "CT negative and presentation >6 h from onset or new neurological deficit"
+      ],
+      "notes": [
+        "Often done >6–12 h after onset; xanthochromia sensitivity 100%, specificity 95.2% (pooled)"
+      ]
+    },
+    {
+      "test": "CTA head",
+      "priority": "STAT",
+      "indication": [
+        "SAH on CT"
+      ],
+      "notes": [
+        "Sensitivity for aneurysms <3 mm ~61%"
+      ]
+    },
+    {
+      "test": "Catheter DSA",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Diffuse SAH with negative or inconclusive CTA",
+        "Aneurysm confirmed — to plan treatment"
+      ],
+      "notes": []
+    },
+    {
+      "test": "ECG, troponin, electrolytes (sodium)",
+      "priority": "URGENT",
+      "indication": [
+        "Confirmed SAH"
+      ],
+      "notes": []
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Acute severe headache",
+      "recommendation": "Prompt workup to diagnose or exclude aSAH",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2023 aSAH: COR 1, LOE B-NR"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Alert, >15 y, severe nontraumatic headache peaking within 1 h",
+      "recommendation": "Ottawa SAH Rule: further testing if any of age ≥40, neck pain/stiffness, witnessed LOC, onset with exertion, thunderclap (instant peak), limited neck flexion",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA 2023 aSAH: COR 2b, LOE B-NR",
+        "100% sensitive, 7.6–15.3% specific in validation"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Presentation <6 h, no new deficit",
+      "recommendation": "Negative high-quality CT read by neuroradiology is reasonable to exclude aSAH",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "AHA 2023 aSAH: COR 2a, LOE B-NR"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Presentation >6 h, or new neurological deficit",
+      "recommendation": "CT; if negative, LP",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2023 aSAH: COR 1, LOE B-NR"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Spontaneous SAH with high concern for aneurysm, CTA negative or inconclusive",
+      "recommendation": "Catheter DSA",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2023 aSAH: COR 1, LOE B-NR"
+      ]
+    },
+    {
+      "order": 6,
+      "condition": "Confirmed aneurysm",
+      "recommendation": "DSA can help plan treatment",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "AHA 2023 aSAH: COR 2a, LOE B-NR"
+      ]
+    },
+    {
+      "order": 7,
+      "condition": "Confirmed aSAH",
+      "recommendation": "Grade with Hunt-Hess or WFNS for severity and prognosis",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2023 aSAH: COR 1, LOE B-NR"
+      ]
+    },
+    {
+      "order": 8,
+      "condition": "Confirmed aSAH at a low-volume hospital",
+      "recommendation": "Timely transfer to a high-volume center with neurocritical care and cerebrovascular/endovascular expertise",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2023 aSAH: COR 1, LOE B-NR"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Neurosurgery/neuroendovascular now; neuro ICU (AHA 2023: COR 1)",
+    "Secure the aneurysm early, preferably within 24 h (AHA 2023 key message)",
+    "Enteral nimodipine early (AHA 2023 key message); routine antifibrinolytics don't improve outcome",
+    "No routine seizure prophylaxis (consider in high-risk patients); avoid phenytoin; new seizures → ASM for 7 days (AHA 2023 key message)"
+  ],
+  "disposition": [
+    "Confirmed aSAH: neuro ICU at a high-volume center",
+    "Negative CT + LP: consider other thunderclap causes"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Spectrophotometric xanthochromia availability vs visual inspection",
+    "CTA-first vs LP-first for CT-negative patients (no head-to-head data; AHA 2023)"
+  ],
+  "pearls": [
+    "Sentinel headache precedes aSAH in 10–43% (AHA 2023)",
+    "Negative CT within 6 h may miss <1.5 per 1000 SAH — but this doesn't apply to atypical presentations (neck pain, syncope, seizure, focal deficit) (AHA 2023)",
+    "Perimesencephalic SAH: CTA alone vs DSA is in equipoise (AHA 2023)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:ich-etiology-workup",
+    "consult-workups:thunderclap-headache",
+    "reference-cards:asah-numbers"
+  ],
+  "sources": [
+    "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

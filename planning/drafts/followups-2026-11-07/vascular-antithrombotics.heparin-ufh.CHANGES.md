@@ -1,0 +1,12 @@
+# vascular-antithrombotics:heparin-ufh — CHANGES (follow-up batch, Group C item 5)
+
+**Decision: keep the threshold, re-source it, state its grade, and add an aPTT-wait line (approved by Jason at Group C review).** The aPTT >40 s cutoff and the "do not give" instruction match AHA 2026. The line had no attribution, and the 2026 source for it is an ungraded table, not a recommendation.
+
+| field path | current | new | source | why |
+|---|---|---|---|---|
+| `timing.thrombolysisRule[0]` | `Received heparin with aPTT >40 s: do not give IVT` | `Received heparin with aPTT >40 s: do not give IVT (AHA 2026 §4.6.5 Table 8: absolute contraindication; expert opinion, not graded)` | Prabhakaran 2026 (AHA/ASA AIS), §4.6.5, Table 8, row "Severe coagulopathy or thrombocytopenia" under "Conditions that are Considered Absolute Contraindications": with "aPTT>40s … should not be administered". The §4.6.5 text says Table 8 rests on "expert opinions and limited data" | Threshold unchanged. Adds the section and makes clear the line isn't COR/LOE-graded. No §4.6 recommendation box (4.6.1 Recs 1–14, 4.6.3, 4.6.4, 4.6.5) addresses heparin. Table 7 (IVT administration) has no heparin content |
+| `timing.thrombolysisRule[1]` (new; the former `[1]` link moves to `[2]`) | — | `Recent heparin: wait for aPTT before IVT — starting before coagulation results applies only without recent heparin or warfarin (AHA 2026 §4.6.5 Table 8; §4.6.1 Rec 10: COR 2a, B-NR)` | Prabhakaran 2026 §4.6.5 Table 8, same row (second paragraph): starting IVT before coagulation results applies to patients "without recent use of warfarin or heparin". §4.6.1 Rec 10 (COR 2a, B-NR): not waiting for testing is reasonable only "if there is no reason to suspect an abnormal result" | Says outright what both sources imply: recent heparin is a reason to wait for the aPTT. The line paraphrases them; neither states it directly, and the wording reflects that. Not copied into `keyNumbers` |
+| `keyNumbers[1]` | `Received heparin with aPTT >40 s: do not give IVT` | same text as the new `timing.thrombolysisRule[0]` | Batch rule 6 | `keyNumbers[1]` is a word-for-word copy of `thrombolysisRule[0]`, so it's updated to stay identical |
+| `lastReviewed` | `"2026-11-07"` | `"UNREVIEWED"` | Batch rule 5 | Entry edited |
+
+Registry bump: vascular-antithrombotics **MINOR** (source and grade status attached to a threshold; new IVT instruction). Applied once at assembly.
