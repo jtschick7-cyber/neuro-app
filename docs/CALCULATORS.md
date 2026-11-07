@@ -98,14 +98,6 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - Sources: Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513 | Activase (alteplase) US prescribing information. Genentech; revised 9/2022 (user-supplied label)
 - VERIFY: none
 
-## IVIG (`ivig-dose`)
-- Formula: 2 g/kg total over 2–5 days
-- Caps: none
-- Rounding: daily dose to nearest 5 g (app convention)
-- Weight: SELECTABLE
-- Sources: van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073
-- VERIFY: none
-
 ## Hyponatremia: 3% bolus and correction limits (`sodium-correction`)
 - Formula: ESE 150 mL; SALSA 2 or 4 mL/kg; limit ≤10 (≤8 if ODS risk) first 24 h, ≤8 thereafter
 - Caps: none

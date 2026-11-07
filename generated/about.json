@@ -1,12 +1,12 @@
 {
   "appVersion": "2.0.0",
-  "contentVersion": "2.0.0+43f88ffd",
+  "contentVersion": "2.0.0+cdd3c332",
   "builtAt": "2026-11-07",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "1.2.3",
+      "version": "1.2.5",
       "schemaVersion": "1.2.0",
       "lastUpdated": "2026-11-07",
       "entries": 22,
@@ -45,11 +45,11 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "1.1.3",
+      "version": "2.0.1",
       "schemaVersion": "2.1.0",
       "lastUpdated": "2026-11-07",
-      "entries": 24,
-      "reviewed": 24,
+      "entries": 22,
+      "reviewed": 22,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
@@ -110,7 +110,7 @@
     {
       "id": "seizure-threshold",
       "title": "Drugs that lower the seizure threshold",
-      "version": "0.2.3",
+      "version": "0.2.5",
       "schemaVersion": "3.0.0",
       "lastUpdated": "2026-11-07",
       "entries": 9,
@@ -193,11 +193,6 @@
     {
       "id": "alteplase-dose",
       "title": "Alteplase (stroke)",
-      "openVerify": 0
-    },
-    {
-      "id": "ivig-dose",
-      "title": "IVIG",
       "openVerify": 0
     },
     {
@@ -711,13 +706,6 @@
       "year": 2003,
       "citedBy": [
         "acute-neuro:serotonin-syndrome"
-      ]
-    },
-    {
-      "citation": "Edlow JA, Carpenter C, et al. Guidelines for reasonable and appropriate care in the emergency department 3 (GRACE-3): Acute dizziness and vertigo in the emergency department. Acad Emerg Med 2023;30:442-486. doi:10.1111/acem.14728",
-      "year": 2023,
-      "citedBy": [
-        "consult-workups:acute-vertigo-hints"
       ]
     },
     {
@@ -1306,13 +1294,6 @@
       "year": 2023,
       "citedBy": [
         "reference-cards:thrombophilia-test-validity"
-      ]
-    },
-    {
-      "citation": "Krumholz A, et al. Evidence-based guideline: management of an unprovoked first seizure in adults (AAN/AES). Neurology 2015;84:1705-1713",
-      "year": 2015,
-      "citedBy": [
-        "consult-workups:first-unprovoked-seizure"
       ]
     },
     {
@@ -2242,7 +2223,6 @@
       "citedBy": [
         "acute-neuro:guillain-barre-syndrome",
         "acute-neuro:neuromuscular-respiratory-failure",
-        "calc:ivig-dose",
         "consult-workups:acute-generalized-weakness",
         "consult-workups:inpatient-neuropathy"
       ]

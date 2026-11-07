@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -961,7 +961,7 @@
         "Wickström R, et al. International consensus recommendations for management of NORSE including FIRES: summary and clinical tools. Epilepsia 2022;63(11):2827-2839. doi:10.1111/epi.17391",
         "Alkhachroum A, et al. Ketamine to treat super-refractory status epilepticus. Neurology 2020;95(16):e2286-e2294. doi:10.1212/WNL.0000000000010611"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "nonconvulsive-status-epilepticus",
@@ -1631,7 +1631,7 @@
         "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (MG fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043",
         "Gilhus NE, et al. Generalized myasthenia gravis with acetylcholine receptor antibodies: a guidance for treatment. Eur J Neurol 2024;31:e16229. doi:10.1111/ene.16229"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "guillain-barre-syndrome",
@@ -1919,7 +1919,7 @@
         "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
         "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "neuromuscular-respiratory-failure",
@@ -2500,7 +2500,7 @@
         "Van Steenhoven RW, et al. Mimics of autoimmune encephalitis: validation of the 2016 clinical autoimmune encephalitis criteria. Neurol Neuroimmunol Neuroinflamm 2023;10(6):e200148. doi:10.1212/NXI.0000000000200148",
         "Abboud H, et al. Autoimmune encephalitis: proposed recommendations for symptomatic and long-term management. J Neurol Neurosurg Psychiatry 2021;92:897-907. doi:10.1136/jnnp-2020-325302"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "bacterial-meningitis",
@@ -3798,7 +3798,7 @@
         "Cortese I, et al. Evidence-based guideline update: plasmapheresis in neurologic disorders (AAN; since retired). Neurology 2011;76(3):294-300. doi:10.1212/WNL.0b013e318207b1f6",
         "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (NMOSD fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "ms-relapse",
