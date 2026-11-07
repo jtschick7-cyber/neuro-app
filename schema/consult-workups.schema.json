@@ -58,6 +58,14 @@
             "type": "string",
             "minLength": 1
           },
+          "keyNumbers": {
+            "maxItems": 5,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
           "keyHistory": {
             "minItems": 1,
             "type": "array",
