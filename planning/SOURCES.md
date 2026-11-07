@@ -1,7 +1,7 @@
 # SOURCES
 
 Citations used in planning-chat drafts → the entries that cite them, with the section/table used.
-Complete as of final assembly 2026-11-07 (items 1.3, 1.5, 7.1, 7.2, 7.3, 7.5, 7.7, 7.9).
+Complete as of final assembly 2026-11-07 (items 1.3, 1.5, 7.1, 7.2, 7.3, 7.5, 7.7, 7.9). GBS/ICP rebuild sources added 2026-11-07.
 
 ## Item 1.3 — THALES stenosis threshold (2026-11-06)
 
@@ -135,6 +135,16 @@ Registry `acute-neuro` (schema 1.1.0): new entries `status-migrainosus` and `pos
 | Nagy AJ, et al. Intravenous dihydroergotamine for inpatient management of refractory primary headaches. Neurology 2011;77:1827-1832 | Appendix protocol (premedication, escalating doses/volumes/rates, nausea management, naproxen, baseline tests, vitals, contraindications); Results (dose–response, nausea predicts failure); Discussion (domperidone US availability, transient worsening, medication overuse stopped, preventive timing) | `status-migrainosus`: DHE rows, workup, immediateActions, pitfalls |
 | Dihydroergotamine mesylate injection US prescribing information. Provepharm; revised 2/2025 | Boxed warning; Contraindications; Warnings (CYP3A4 lists, fibrosis, CAD risk factors/first-dose ECG, cerebrovascular events, vasospasm, preterm labor, MOH); Drug Interactions; Nursing Mothers; Dosage and Administration (1 mg; IV ≤2 mg/24 h; ≤6 mg/week; not chronic daily) | `status-migrainosus`: DHE rows, sumatriptan, workup, escalateWhen, pitfalls |
 | Uppal V, et al. Consensus practice guidelines on postdural puncture headache from a multisociety, international working group: a summary report. JAMA Netw Open 2023;6(8):e2325387. doi:10.1001/jamanetworkopen.2023.25387 | Definition and clinical features; Q1 (suspect); Q2 Table 3 (patient factors); Q3 Table 4 + recommendations (needles); Q4 (prevention); Q5 (conservative); Q6 (procedural; GONB "≥22 G" glyph verified as U+2265); Q7 (imaging); Q8 (EBP contraindications); Q9 (EBP timing, level, volume, consent, technique); Q10 (follow-up, long-term associations) | `post-dural-puncture-headache`: all fields |
+
+## GBS / ICP rebuild — elevated-icp-herniation (2026-11-07)
+
+Registry `acute-neuro` 1.2.0. Section notes from `drafts/acute-neuro.elevated-icp-herniation.CHANGES.md`.
+
+| Citation | Section / table used | Cited by |
+|---|---|---|
+| Morrison C, et al. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 5.0. Neurocritical Care Society; 2022 | Hyperosmolar therapy section (HTS boluses ≥7.5% via central venous catheter; lower concentrations may go peripheral) | `acute-neuro:elevated-icp-herniation` (`treatment[0]` central-line threshold) |
+| Bhalla P, Dingman JS, Aysenne A. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 6.0. Neurocritical Care Society; 2024 | Definition (sustained >5 min ICP >22 mmHg, adults); tiers; hyperosmolar therapy; sedation | `acute-neuro:elevated-icp-herniation` |
+| Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 16 Intracranial Pressure Thresholds | Ch. 16 Recommendations box, Level II B (treat ICP above 22 mm Hg; TBI) | `acute-neuro:elevated-icp-herniation` (`escalateWhen[1]`) |
 
 ## Source files still to add to project knowledge
 
