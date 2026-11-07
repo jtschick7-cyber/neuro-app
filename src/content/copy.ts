@@ -169,6 +169,13 @@ export const SPECIMEN_BADGE = {
   BOTH: { label: "PAIRED", detail: "Serum and CSF" },
 } as const;
 
+/** 4.4: pinned favorites (entry ids only). */
+export const PINS_COPY = {
+  heading: "Pinned",
+  pin: "Pin to Home",
+  unpin: "Unpin from Home",
+};
+
 /** Global search (Home and the search button on every other screen). */
 export const SEARCH_COPY = {
   partial: "No entry matches every word — closest matches:",

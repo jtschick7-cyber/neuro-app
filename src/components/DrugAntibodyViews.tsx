@@ -14,9 +14,23 @@ const PNS_TONE: Record<string, string> = {
   LOW: 'bg-slate-600 text-slate-100',
   NOT_CLASSIFIED: 'border border-slate-600 text-slate-400',
 };
-const PNS_LABEL: Record<string, string> = { HIGH: 'Cancer risk: high', INTERMEDIATE: 'Cancer risk: intermediate', LOW: 'Cancer risk: low', NOT_CLASSIFIED: 'Cancer risk: not classified' };
-const LIKELIHOOD_LABEL: Record<string, string> = { OFTEN_NORMAL: 'Often normal', SOMETIMES_NORMAL: 'Sometimes normal', RARELY_NORMAL: 'Rarely normal', UNKNOWN: 'Frequency unknown' };
-const RESPONSE_LABEL: Record<string, string> = { USUALLY_GOOD: 'Immunotherapy: usually good', VARIABLE: 'Immunotherapy: variable', USUALLY_POOR: 'Immunotherapy: usually poor' };
+const PNS_LABEL: Record<string, string> = {
+  HIGH: 'Cancer risk: high',
+  INTERMEDIATE: 'Cancer risk: intermediate',
+  LOW: 'Cancer risk: low',
+  NOT_CLASSIFIED: 'Cancer risk: not classified',
+};
+const LIKELIHOOD_LABEL: Record<string, string> = {
+  OFTEN_NORMAL: 'Often normal',
+  SOMETIMES_NORMAL: 'Sometimes normal',
+  RARELY_NORMAL: 'Rarely normal',
+  UNKNOWN: 'Frequency unknown',
+};
+const RESPONSE_LABEL: Record<string, string> = {
+  USUALLY_GOOD: 'Immunotherapy: usually good',
+  VARIABLE: 'Immunotherapy: variable',
+  USUALLY_POOR: 'Immunotherapy: usually poor',
+};
 
 function VascularEntryView({ e }: { e: VascularEntry }) {
   if (e.kind === 'DECISION') {
@@ -183,13 +197,26 @@ const SPECIMEN_TONE: Record<AntibodyEntry['testing']['preferredSpecimen'], strin
 };
 
 /** 4.7: large preferred-specimen badge at the top of each antibody card (from `testing.preferredSpecimen`). */
-function SpecimenBadge({ specimen }: { specimen: AntibodyEntry['testing']['preferredSpecimen'] }) {
+/** Signed-off testing lines about drawing before immunotherapy (e.g. MOG). Shown verbatim next to the badge; never authored here. */
+const BEFORE_IMMUNOTHERAPY = /\bbefore\b[^.;]*\b(steroids|IVIG|IVIg|PLEX|immunotherapy)\b/i;
+export function drawBeforeLines(t: AntibodyEntry['testing']): string[] {
+  return [...t.rationale, ...t.methodNotes].filter((x) => BEFORE_IMMUNOTHERAPY.test(x));
+}
+
+function SpecimenBadge({ specimen, drawBefore }: { specimen: AntibodyEntry['testing']['preferredSpecimen']; drawBefore: string[] }) {
   const b = SPECIMEN_BADGE[specimen];
   return (
-    <div className={`mt-3 flex items-baseline gap-3 rounded-lg border-2 px-3 py-2 ${SPECIMEN_TONE[specimen]}`}>
-      <span className="text-xs font-semibold uppercase tracking-wider opacity-80">{SPECIMEN_BADGE.heading}</span>
-      <span className="text-2xl font-bold tracking-wide">{b.label}</span>
-      <span className="text-sm opacity-90">{b.detail}</span>
+    <div className={`mt-3 rounded-lg border-2 px-3 py-2 ${SPECIMEN_TONE[specimen]}`}>
+      <div className="flex items-baseline gap-3">
+        <span className="text-xs font-semibold uppercase tracking-wider opacity-80">{SPECIMEN_BADGE.heading}</span>
+        <span className="text-2xl font-bold tracking-wide">{b.label}</span>
+        <span className="text-sm opacity-90">{b.detail}</span>
+      </div>
+      {drawBefore.map((l) => (
+        <p key={l} className="mt-1 text-sm font-semibold">
+          {l}
+        </p>
+      ))}
     </div>
   );
 }
@@ -197,7 +224,7 @@ function SpecimenBadge({ specimen }: { specimen: AntibodyEntry['testing']['prefe
 function AntibodyEntryView({ e }: { e: AntibodyEntry }) {
   return (
     <EntryShell registry="neural-antibodies" entry={e}>
-      <SpecimenBadge specimen={e.testing.preferredSpecimen} />
+      <SpecimenBadge specimen={e.testing.preferredSpecimen} drawBefore={drawBeforeLines(e.testing)} />
       <div className="mt-2 flex flex-wrap gap-2">
         <EnumBadge label={PNS_LABEL[e.pnsRisk] ?? e.pnsRisk} help={PNS_HELP[e.pnsRisk]} tone={PNS_TONE[e.pnsRisk]} />
         <EnumBadge label={RESPONSE_LABEL[e.immunotherapyResponse] ?? e.immunotherapyResponse} />
@@ -261,8 +288,16 @@ export function AntibodiesView({ entryId }: { entryId?: string }) {
 }
 
 const TIER_HELP = Object.fromEntries(INTERACTION_TIER_LEGEND) as Record<string, string>;
-const TIER_TONE: Record<string, string> = { AVOID: 'bg-red-600 text-white', HIGH_RISK: 'bg-orange-500 text-black', CAUTION: 'bg-yellow-400 text-black' };
-const TIER_LABEL: Record<string, string> = { AVOID: 'Avoid', HIGH_RISK: 'High risk', CAUTION: 'Caution' };
+const TIER_TONE: Record<string, string> = {
+  AVOID: 'bg-red-600 text-white',
+  HIGH_RISK: 'bg-orange-500 text-black',
+  CAUTION: 'bg-yellow-400 text-black',
+};
+const TIER_LABEL: Record<string, string> = {
+  AVOID: 'Avoid',
+  HIGH_RISK: 'High risk',
+  CAUTION: 'Caution',
+};
 
 function InteractionEntryView({ e }: { e: InteractionEntry }) {
   return (

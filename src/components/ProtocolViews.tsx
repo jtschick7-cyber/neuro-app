@@ -7,6 +7,7 @@ import RelatedLinks from './RelatedLinks';
 import DrugTabs from './DrugTabs';
 import { Bullets, EvidenceBadge, EvidenceNote, JumpChips, Section, Sources, TreatmentList, WorkupList, type JumpTarget } from './ProtocolParts';
 import { ENTRY_LAYOUT_COPY } from '../content/copy';
+import { PinButton } from './Pins';
 import {
   CATEGORY_LABEL,
   groupByCategory,
@@ -139,7 +140,10 @@ export function EntryShell({
 }) {
   return (
     <article className="rounded-xl border border-slate-700 bg-slate-900 p-4">
-      <h1 className="text-lg font-semibold text-slate-100">{entry.title}</h1>
+      <div className="flex items-start justify-between gap-2">
+        <h1 className="text-lg font-semibold text-slate-100">{entry.title}</h1>
+        <PinButton registryId={registry} entryId={entry.id} />
+      </div>
       <p className="text-xs text-slate-400">{CATEGORY_LABEL[entry.category] ?? entry.category}</p>
       <BannerList entry={entry} />
       <JumpChips targets={jump} />

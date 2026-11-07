@@ -53,3 +53,31 @@ describe('Entry layout (task group 4)', () => {
     expect(SPECIMEN_BADGE.BOTH.label).toBe('PAIRED');
   });
 });
+
+describe('Pins and draw-before (4.4, 4.7b)', () => {
+  it('4.4 pin titles come from the id only', async () => {
+    const { pinTitle } = await import('../src/components/Pins');
+    expect(pinTitle('acute-neuro:convulsive-status-epilepticus')).toBe('Convulsive status epilepticus');
+  });
+  it('4.4 pins store ids only and drop anything else', async () => {
+    const store = new Map<string, string>();
+    (globalThis as { localStorage?: Storage }).localStorage = {
+      getItem: (k: string) => store.get(k) ?? null,
+      setItem: (k: string, v: string) => void store.set(k, v),
+      removeItem: (k: string) => void store.delete(k),
+    } as Storage;
+    const { loadPins, togglePin } = await import('../src/lib/storage');
+    store.set('neurohosp.pins.v1', JSON.stringify(['acute-neuro:x', 'weight 70kg', 3, 'bad id:Y']));
+    expect(loadPins()).toEqual(['acute-neuro:x']);
+    expect(togglePin('Patient Name')).toEqual(['acute-neuro:x']);
+    expect(togglePin('neural-antibodies:mog')).toEqual(['neural-antibodies:mog', 'acute-neuro:x']);
+    expect(togglePin('acute-neuro:x')).toEqual(['neural-antibodies:mog']);
+    delete (globalThis as { localStorage?: Storage }).localStorage;
+  });
+  it('4.7b draw-before line is copied verbatim from signed-off testing text (MOG only today)', async () => {
+    const { drawBeforeLines } = await import('../src/components/DrugAntibodyViews');
+    const reg = JSON.parse(src('data/neural-antibodies.json')) as { entries: { id: string; testing: Parameters<typeof drawBeforeLines>[0] }[] };
+    const hits = reg.entries.filter((e) => drawBeforeLines(e.testing).length > 0).map((e) => e.id);
+    expect(hits).toEqual(['mog']);
+  });
+});
