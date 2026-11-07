@@ -1,8 +1,8 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-07",
   "entries": [
     {
       "kind": "AGENT",
@@ -382,15 +382,26 @@
         },
         {
           "order": 4,
-          "condition": "Prior antiplatelet monotherapy/DAPT, or prophylactic/therapeutic LMWH",
-          "recommendation": "Not addressed in AHA 2026 — follow institutional protocol",
-          "evidenceLevel": "NOT_GRADED",
+          "condition": "Prior antiplatelet monotherapy (SAPT) or DAPT, otherwise eligible",
+          "recommendation": "Give IVT — sICH rises ~0.9% (SAPT) / 1.2% (DAPT) absolute vs no antiplatelet, outweighed by ~8% absolute benefit",
+          "evidenceLevel": "STRONG",
           "evidenceNote": [
-            "Gap in source: AHA 2026 text and Table 8 don't address these exposures"
+            "AHA 2026 §4.6.1 Rec 9: COR 1, LOE B-NR",
+            "sICH and benefit figures: AHA 2026 §4.6.1 supportive text 9"
           ]
         },
         {
           "order": 5,
+          "condition": "Full treatment-dose LMWH within the previous 24 h",
+          "recommendation": "Do not give IVT; doesn't apply to prophylactic doses",
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "Powers 2019 §3.5.5 Rec 7: COR III: Harm, LOE B-NR",
+            "Not restated in AHA 2026 §4.6 or Table 8"
+          ]
+        },
+        {
+          "order": 6,
           "condition": "After IVT",
           "recommendation": "Hold antiplatelets and anticoagulants until the 24-h CT/MRI",
           "evidenceLevel": "CONSENSUS",
@@ -411,7 +422,7 @@
       "institutionVaries": [
         "Availability of rapid drug-specific anti-Xa / thrombin-time assays",
         "Local policy on IVT with DOAC <48 h",
-        "Policy on prior antiplatelets and LMWH"
+        "Local policy on LMWH exposure (AHA 2026 silent; Powers 2019 rule applies to full doses only)"
       ],
       "pearls": [
         "Don't delay thrombectomy work-up while sorting out anticoagulant status"
@@ -422,9 +433,10 @@
         "vascular-antithrombotics:alteplase"
       ],
       "sources": [
-        "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
+        "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
+        "Powers WJ, et al. Guidelines for the Early Management of Patients With Acute Ischemic Stroke: 2019 Update to the 2018 Guidelines for the Early Management of Acute Ischemic Stroke (AHA/ASA). Stroke 2019;50:e344-e418. doi:10.1161/STR.0000000000000211"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
@@ -1059,8 +1071,7 @@
             }
           ],
           "notes": [
-            "Dose reduction uses SCr, age and weight — not CrCl",
-            "Timing after stroke: see AF anticoagulation timing (pending)"
+            "Dose reduction uses SCr, age and weight — not CrCl"
           ],
           "evidenceLevel": "STRONG",
           "evidenceNote": [
@@ -1241,7 +1252,8 @@
         "vascular-antithrombotics:four-factor-pcc",
         "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics",
         "vascular-antithrombotics:periprocedural-holds-lp-evd",
-        "vascular-antithrombotics:pregnancy-antithrombotics"
+        "vascular-antithrombotics:pregnancy-antithrombotics",
+        "vascular-antithrombotics:af-stroke-anticoag-timing"
       ],
       "sources": [
         "Eliquis (apixaban) US prescribing information. Bristol-Myers Squibb; revised 6/2026 (user-supplied label)",
@@ -2202,8 +2214,7 @@
             }
           ],
           "notes": [
-            "Label regimen is postoperative (5,000 U 2 h before surgery then q8–12h); same dose used for medical/stroke prophylaxis",
-            "Timing after ICH/IVT: see VTE prophylaxis entry (pending)"
+            "Label regimen is postoperative (5,000 U 2 h before surgery then q8–12h); same dose used for medical/stroke prophylaxis"
           ],
           "evidenceLevel": "NOT_GRADED",
           "evidenceNote": [
@@ -2273,7 +2284,8 @@
         "vascular-antithrombotics:protamine",
         "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics",
         "vascular-antithrombotics:periprocedural-holds-lp-evd",
-        "vascular-antithrombotics:pregnancy-antithrombotics"
+        "vascular-antithrombotics:pregnancy-antithrombotics",
+        "vascular-antithrombotics:vte-prophylaxis-stroke-ich"
       ],
       "sources": [
         "Heparin Sodium in 0.45% Sodium Chloride Injection US prescribing information. B. Braun; revised 12/2023 (user-supplied label)",
@@ -2334,9 +2346,7 @@
               "duration": []
             }
           ],
-          "notes": [
-            "Timing after ICH/IVT: see VTE prophylaxis entry (pending)"
-          ],
+          "notes": [],
           "evidenceLevel": "NOT_GRADED",
           "evidenceNote": [
             "FDA-labeled regimen"
@@ -2421,7 +2431,8 @@
           "CrCl <30: consider roughly doubling these intervals (label)"
         ],
         "thrombolysisRule": [
-          "Therapeutic LMWH within 24 h: not addressed in AHA 2026 — see vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
+          "Full treatment-dose LMWH within 24 h: no IVT (Powers 2019: COR III: Harm, B-NR; not restated in AHA 2026). Prophylactic doses excluded",
+          "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
         ]
       },
       "reversal": [
@@ -2472,15 +2483,17 @@
       "relatedIds": [
         "vascular-antithrombotics:protamine",
         "vascular-antithrombotics:periprocedural-holds-lp-evd",
-        "vascular-antithrombotics:pregnancy-antithrombotics"
+        "vascular-antithrombotics:pregnancy-antithrombotics",
+        "vascular-antithrombotics:vte-prophylaxis-stroke-ich"
       ],
       "sources": [
         "Lovenox (enoxaparin sodium) US prescribing information. Sanofi; revised 5/2025 (user-supplied label)",
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
-        "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
+        "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
+        "Powers WJ, et al. Guidelines for the Early Management of Patients With Acute Ischemic Stroke: 2019 Update to the 2018 Guidelines for the Early Management of Acute Ischemic Stroke (AHA/ASA). Stroke 2019;50:e344-e418. doi:10.1161/STR.0000000000000211"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
@@ -2589,7 +2602,7 @@
           "routes": [
             "PO"
           ],
-          "doseText": "Load 160–325 mg, then 75–100 mg daily (trial regimens; see DAPT entry, pending)",
+          "doseText": "Load 160–325 mg, then 75–100 mg daily (trial regimens)",
           "dose": [
             {
               "label": "Load",
@@ -2638,7 +2651,9 @@
           "Usually continued for LP and most neuro procedures — follow local policy"
         ],
         "thrombolysisRule": [
-          "Antiplatelets alone don't exclude IVT — not addressed as a contraindication in AHA 2026",
+          "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute",
+          "Not a substitute for IVT/EVT (AHA 2026 §4.8 Rec 16: COR 3: Harm, B-R)",
+          "No IV aspirin with IVT or within 90 min after start (AHA 2026 §4.8 Rec 17: COR 3: Harm, B-R)",
           "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
         ]
       },
@@ -2752,7 +2767,8 @@
       "verify": [],
       "relatedIds": [
         "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics",
-        "vascular-antithrombotics:pregnancy-antithrombotics"
+        "vascular-antithrombotics:pregnancy-antithrombotics",
+        "vascular-antithrombotics:dapt-minor-stroke-tia"
       ],
       "sources": [
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
@@ -2765,7 +2781,7 @@
         "US Food and Drug Administration. Science paper: Concomitant use of ibuprofen and aspirin — potential for attenuation of the anti-platelet effect of aspirin. 9/8/2006 (user-supplied)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
@@ -2872,7 +2888,7 @@
           "Stop 5 days before elective surgery if an antiplatelet effect isn't wanted (label)"
         ],
         "thrombolysisRule": [
-          "Antiplatelets alone don't exclude IVT — not addressed as a contraindication in AHA 2026",
+          "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute",
           "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
         ]
       },
@@ -2999,7 +3015,7 @@
         "Clopidogrel bisulfate tablets US prescribing information. ACI Healthcare USA; revised 6/2020 (user-supplied label)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
@@ -3018,7 +3034,7 @@
       "uses": [
         {
           "role": "ALTERNATIVE",
-          "agent": "Ticagrelor + aspirin — minor stroke (NIHSS ≤5) or high-risk TIA (ABCD2 ≥6) or symptomatic ≥50% stenosis, <24 h, no IVT (THALES)",
+          "agent": "Ticagrelor + aspirin — noncardioembolic minor stroke (NIHSS ≤5) or high-risk TIA (ABCD2 ≥6, or symptomatic ≥50% intracranial/extracranial stenosis that could account for the TIA), <24 h, no IVT (THALES)",
           "routes": [
             "PO"
           ],
@@ -3060,7 +3076,7 @@
           "evidenceLevel": "WEAK",
           "evidenceNote": [
             "AHA 2026: COR 2b, LOE B-R",
-            "Kleindorfer 2021: COR 2b, LOE B-R"
+            "Kleindorfer 2021 §5.19: COR 2b, LOE B-R (SR) — used ≥30% stenosis for any event"
           ],
           "formularyStatus": "INSTITUTION_VARIES",
           "calculatorIds": []
@@ -3101,7 +3117,7 @@
             }
           ],
           "notes": [
-            "Preferred over clopidogrel + aspirin in carriers"
+            "May be reasonable instead of clopidogrel + aspirin in carriers"
           ],
           "evidenceLevel": "WEAK",
           "evidenceNote": [
@@ -3132,7 +3148,7 @@
           "routes": [
             "PO"
           ],
-          "doseText": "90 mg BID added to aspirin for up to 30 days (unstructured: see ICAD entry, pending)",
+          "doseText": "90 mg BID added to aspirin for up to 30 days (unstructured: see ICAD entry)",
           "dose": [],
           "notes": [],
           "evidenceLevel": "WEAK",
@@ -3153,7 +3169,7 @@
           "Stop 5 days before surgery with major bleeding risk when possible (label)"
         ],
         "thrombolysisRule": [
-          "Antiplatelets alone don't exclude IVT — not addressed as a contraindication in AHA 2026",
+          "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute (class-level statement; agent not named)",
           "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
         ]
       },
@@ -3235,17 +3251,19 @@
       "relatedIds": [
         "vascular-antithrombotics:aspirin",
         "vascular-antithrombotics:clopidogrel",
-        "vascular-antithrombotics:pregnancy-antithrombotics"
+        "vascular-antithrombotics:pregnancy-antithrombotics",
+        "vascular-antithrombotics:icad-symptomatic"
       ],
       "sources": [
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+        "Johnston SC, et al. Ticagrelor and Aspirin or Aspirin Alone in Acute Ischemic Stroke or TIA (THALES). N Engl J Med 2020;383:207-217. doi:10.1056/NEJMoa1916870",
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
         "Ticagrelor tablets US prescribing information. AiPing Pharmaceutical; revised 6/2026 (user-supplied label)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
@@ -3305,7 +3323,7 @@
           "Not stated in label — local policy"
         ],
         "thrombolysisRule": [
-          "Antiplatelets alone don't exclude IVT — not addressed as a contraindication in AHA 2026",
+          "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute (class-level statement; agent not named)",
           "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
         ]
       },
@@ -3328,9 +3346,10 @@
       "relatedIds": [],
       "sources": [
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
-        "Cilostazol tablets US prescribing information. Apotex; revised 5/2017 (user-supplied label)"
+        "Cilostazol tablets US prescribing information. Apotex; revised 5/2017 (user-supplied label)",
+        "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
@@ -3424,7 +3443,7 @@
           "Not stated in label — local policy"
         ],
         "thrombolysisRule": [
-          "Antiplatelets alone don't exclude IVT — not addressed as a contraindication in AHA 2026",
+          "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute (class-level statement; agent not named)",
           "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
         ]
       },
@@ -3544,7 +3563,7 @@
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
         "Aspirin and extended-release dipyridamole capsules US prescribing information. Amneal; revised 6/2021 (user-supplied label)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
@@ -3886,12 +3905,12 @@
         },
         {
           "order": 4,
-          "condition": "NIHSS ≤5, ABCD2 ≥6, or symptomatic ≥50% intracranial/extracranial stenosis, within 24 h",
+          "condition": "Noncardioembolic minor stroke (NIHSS ≤5) or high-risk TIA (ABCD2 ≥6, or symptomatic ≥50% intracranial/extracranial stenosis that could account for the TIA), <24 h, no IVT (THALES)",
           "recommendation": "Ticagrelor + aspirin × 30 days may be considered (THALES) — more severe bleeding including ICH",
           "evidenceLevel": "WEAK",
           "evidenceNote": [
             "AHA 2026: COR 2b, LOE B-R",
-            "Kleindorfer 2021: COR 2b, LOE B-R (stenosis ≥30%)"
+            "Kleindorfer 2021 §5.19: COR 2b, LOE B-R (SR) — used ≥30% stenosis for any event"
           ]
         },
         {
@@ -4083,19 +4102,22 @@
       ],
       "pearls": [
         "Trial NNTs (AHA 2026 Table 9): CHANCE 28, INSPIRES 53, CHANCE-2 63, POINT 67, THALES 91; POINT, THALES, CHANCE-2 and INSPIRES had slightly more bleeding",
-        "In a large Italian registry only 7.8% of DAPT-treated patients met trial criteria (AHA 2026 knowledge gaps) — out-of-criteria use is untested"
+        "In a large Italian registry only 7.8% of DAPT-treated patients met trial criteria (AHA 2026 knowledge gaps) — out-of-criteria use is untested",
+        "Stenosis thresholds differ by source: THALES enrollment and AHA 2026 use ≥50% as a high-risk-TIA criterion; Kleindorfer 2021 §5.19 used ≥30% for any event; ipsilateral >30% intracranial stenosis has its own recommendation (icad-symptomatic rule 3)"
       ],
       "verify": [],
       "relatedIds": [
         "vascular-antithrombotics:clopidogrel",
         "vascular-antithrombotics:aspirin",
-        "vascular-antithrombotics:ticagrelor"
+        "vascular-antithrombotics:ticagrelor",
+        "vascular-antithrombotics:icad-symptomatic"
       ],
       "sources": [
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
-        "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375"
+        "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+        "Johnston SC, et al. Ticagrelor and Aspirin or Aspirin Alone in Acute Ischemic Stroke or TIA (THALES). N Engl J Med 2020;383:207-217. doi:10.1056/NEJMoa1916870"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
@@ -4111,7 +4133,8 @@
       ],
       "question": "What antithrombotic and procedural management fits stroke or TIA from 50–99% intracranial stenosis?",
       "population": [
-        "Stroke or TIA attributed to 50–99% stenosis of a major intracranial artery"
+        "Stroke or TIA attributed to 50–99% stenosis of a major intracranial artery",
+        "Rule 3 also covers ipsilateral >30% stenosis within 24 h of minor stroke/high-risk TIA"
       ],
       "rules": [
         {
@@ -4134,7 +4157,7 @@
         },
         {
           "order": 3,
-          "condition": "Minor stroke or high-risk TIA within 24 h with ipsilateral >30% intracranial stenosis",
+          "condition": "Minor stroke or high-risk TIA within 24 h with ipsilateral >30% stenosis of a major intracranial artery (applies below this entry's 50–99% range; not the THALES ≥50% TIA criterion)",
           "recommendation": "Ticagrelor 90 mg BID added to aspirin for up to 30 days might be considered",
           "evidenceLevel": "WEAK",
           "evidenceNote": [
@@ -4270,7 +4293,8 @@
         "Neuro-IR thresholds for rescue angioplasty/stenting in medical failures"
       ],
       "pearls": [
-        "Warfarin vs aspirin (WASID): more major hemorrhage and death without fewer strokes"
+        "Warfarin vs aspirin (WASID): more major hemorrhage and death without fewer strokes",
+        "Rule 3 rests on a THALES prespecified subgroup: the analysis used ≥30% ipsilateral stenosis that didn't have to be related to the index event, both drugs were loaded, and bleeding was not significantly higher than with aspirin alone (Kleindorfer 2021 §5.1.1)"
       ],
       "verify": [],
       "relatedIds": [
@@ -4282,7 +4306,7 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
@@ -4300,7 +4324,7 @@
       "question": "How soon after ischemic stroke or TIA should an oral anticoagulant start in AF?",
       "population": [
         "Ischemic stroke or TIA with AF selected for oral anticoagulation",
-        "Excludes mechanical valves and moderate–severe mitral stenosis (warfarin; see mechanical-valve entry, pending)"
+        "Excludes mechanical valves and moderate–severe mitral stenosis (warfarin)"
       ],
       "rules": [
         {
@@ -4408,7 +4432,8 @@
         "vascular-antithrombotics:rivaroxaban",
         "vascular-antithrombotics:edoxaban",
         "vascular-antithrombotics:dabigatran",
-        "vascular-antithrombotics:warfarin"
+        "vascular-antithrombotics:warfarin",
+        "vascular-antithrombotics:mechanical-valve-stroke"
       ],
       "sources": [
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
@@ -4762,14 +4787,15 @@
         "Post-stent antiplatelet protocol (agent, load, IV vs oral, GP IIb/IIIa bridge) — neuro-IR"
       ],
       "pearls": [
-        "VTE prophylaxis timing after IVT is separate — see vte-prophylaxis entry (pending)"
+        "VTE prophylaxis timing after IVT is separate"
       ],
       "verify": [],
       "relatedIds": [
         "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics",
         "vascular-antithrombotics:af-stroke-anticoag-timing",
         "vascular-antithrombotics:gp-iib-iiia-inhibitors",
-        "vascular-antithrombotics:dapt-minor-stroke-tia"
+        "vascular-antithrombotics:dapt-minor-stroke-tia",
+        "vascular-antithrombotics:vte-prophylaxis-stroke-ich"
       ],
       "sources": [
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"

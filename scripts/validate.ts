@@ -19,6 +19,7 @@ import { ConsultWorkupsRegistry } from "../schema/consult-workups";
 import { CautionListRegistry } from "../schema/caution-list";
 import { DrugInteractionsRegistry } from "../schema/drug-interactions";
 import { CALCULATOR_META } from "../src/lib/calculators";
+import { findPlaceholderText } from "./placeholder-text";
 
 const SCHEMAS: Record<string, ZodTypeAny> = {
   "acute-neuro": AcuteNeuroRegistry,
@@ -79,6 +80,7 @@ for (const file of files) {
   for (const e of entries) {
     if (seen.has(e.id)) err(`${file}: duplicate id "${e.id}"`);
     seen.add(e.id);
+    for (const p of findPlaceholderText(e)) err(`${reg}:${e.id}: ${p.path}: placeholder text "${p.text}" — link via relatedIds instead`);
     const open = e.verify ?? [];
     if (open.length) (release ? err : warn)(`${reg}:${e.id}: ${open.length} open VERIFY item(s)`);
     if (e.lastReviewed === "UNREVIEWED") (release ? err : warn)(`${reg}:${e.id}: not yet signed off (UNREVIEWED)`);

@@ -1,8 +1,8 @@
 {
   "title": "Consult workups",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-07",
   "entries": [
     {
       "id": "inpatient-stroke-etiology-workup",
@@ -1397,7 +1397,7 @@
       ],
       "disposition": [
         "Confirmed aSAH: neuro ICU at a high-volume center",
-        "Negative CT + LP: consider other thunderclap causes — see thunderclap-headache (batch D)"
+        "Negative CT + LP: consider other thunderclap causes"
       ],
       "calculatorIds": [],
       "institutionVaries": [
@@ -1411,7 +1411,8 @@
       ],
       "verify": [],
       "relatedIds": [
-        "consult-workups:ich-etiology-workup"
+        "consult-workups:ich-etiology-workup",
+        "consult-workups:thunderclap-headache"
       ],
       "sources": [
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
