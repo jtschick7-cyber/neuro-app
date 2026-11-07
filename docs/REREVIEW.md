@@ -26,7 +26,7 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [ ] `calc:ivig-dose` — IVIG
 - [ ] `calc:sodium-correction` — Hyponatremia: 3% bolus and correction limits
 
-## 2. Acute protocols with doses (doseText / structured dose) (0/22)
+## 2. Acute protocols with doses, then ASM dosing cards (0/28)
 
 - [ ] `acute-neuro:convulsive-status-epilepticus` — Convulsive status epilepticus (adult)
 - [ ] `acute-neuro:refractory-super-refractory-se` — Refractory & super-refractory status epilepticus (incl. NORSE)
@@ -50,6 +50,12 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [ ] `acute-neuro:icans-car-t-neurotoxicity` — ICANS (immune effector cell–associated neurotoxicity)
 - [ ] `acute-neuro:status-migrainosus` — Status migrainosus / refractory migraine (inpatient)
 - [ ] `acute-neuro:post-dural-puncture-headache` — Post-dural puncture headache (post-LP) and epidural blood patch
+- [ ] `antiseizure-medications:levetiracetam` — Levetiracetam (Keppra) — maintenance dosing
+- [ ] `antiseizure-medications:lacosamide` — Lacosamide (Vimpat) — maintenance dosing
+- [ ] `antiseizure-medications:brivaracetam` — Brivaracetam (Briviact) — maintenance dosing
+- [ ] `antiseizure-medications:valproate` — Valproate (Depacon IV / Depakote) — maintenance dosing
+- [ ] `antiseizure-medications:phenytoin-fosphenytoin` — Phenytoin / fosphenytoin — maintenance dosing and levels
+- [ ] `antiseizure-medications:lamotrigine` — Lamotrigine (Lamictal) — titration
 
 ## 3. Antithrombotic reversal and thrombolysis rules (0/19)
 
@@ -73,7 +79,7 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [ ] `vascular-antithrombotics:anticoag-reversal-ich` — Anticoagulant-associated ICH: reversal by agent
 - [ ] `vascular-antithrombotics:antiplatelet-ich` — Antiplatelet-associated ICH: platelets and desmopressin
 
-## 4. Other decision rules (0/40)
+## 4. Other decision rules and reference cards (0/44)
 
 - [ ] `consult-workups:young-stroke-workup` — Young adult stroke (<50): extended workup
 - [ ] `consult-workups:ich-etiology-workup` — Intracerebral hemorrhage: cause and early course
@@ -99,6 +105,10 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [ ] `consult-workups:intravascular-lymphoma` — Suspected intravascular large B-cell lymphoma (IVLBCL)
 - [ ] `consult-workups:post-cardiac-arrest-prognostication` — Neuroprognostication after cardiac arrest
 - [ ] `consult-workups:brain-death-determination` — Brain death / death by neurologic criteria (adult)
+- [ ] `reference-cards:neuro-icu-targets` — Neuro-ICU targets (rounds lookup)
+- [ ] `reference-cards:asah-numbers` — aSAH numbers
+- [ ] `reference-cards:thrombophilia-test-validity` — Thrombophilia tests: validity by timing and anticoagulant
+- [ ] `reference-cards:inpatient-parkinson-disease` — Inpatient Parkinson disease: NPO, tube, antiemetics, psychosis
 - [ ] `vascular-antithrombotics:four-factor-pcc` — Four-factor prothrombin complex concentrate (4F-PCC)
 - [ ] `vascular-antithrombotics:vitamin-k` — Vitamin K (phytonadione)
 - [ ] `vascular-antithrombotics:protamine` — Protamine sulfate
@@ -197,16 +207,3 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [ ] `neural-antibodies:pde10a` — Phosphodiesterase 10A (PDE10A; striatum-enriched cyclic nucleotide phosphodiesterase, membrane-bound and cytosolic isoforms)
 - [ ] `neural-antibodies:anna3-dach1` — Dachshund homolog 1 (DACH1; nuclear transcription factor), the ANNA-3 antigen
 - [ ] `neural-antibodies:septin-7` — Septin-7 (cytoskeletal GTP-binding protein; regulates dendritic branching; pre- and postsynaptic localization)
-
-## 7. Not in the task 2.1 order — placement to confirm (0/10)
-
-- [ ] `antiseizure-medications:levetiracetam` — Levetiracetam (Keppra) — maintenance dosing
-- [ ] `antiseizure-medications:lacosamide` — Lacosamide (Vimpat) — maintenance dosing
-- [ ] `antiseizure-medications:brivaracetam` — Brivaracetam (Briviact) — maintenance dosing
-- [ ] `antiseizure-medications:valproate` — Valproate (Depacon IV / Depakote) — maintenance dosing
-- [ ] `antiseizure-medications:phenytoin-fosphenytoin` — Phenytoin / fosphenytoin — maintenance dosing and levels
-- [ ] `antiseizure-medications:lamotrigine` — Lamotrigine (Lamictal) — titration
-- [ ] `reference-cards:neuro-icu-targets` — Neuro-ICU targets (rounds lookup)
-- [ ] `reference-cards:asah-numbers` — aSAH numbers
-- [ ] `reference-cards:thrombophilia-test-validity` — Thrombophilia tests: validity by timing and anticoagulant
-- [ ] `reference-cards:inpatient-parkinson-disease` — Inpatient Parkinson disease: NPO, tube, antiemetics, psychosis

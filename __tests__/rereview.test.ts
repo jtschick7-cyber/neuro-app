@@ -31,5 +31,8 @@ describe('re-review queue (task 2.1)', () => {
     expect(tierOf('consult-workups:sah-workup')).toBe(4);
     expect(tierOf('mg-contraindications:' + regs['mg-contraindications'].entries[0].id)).toBe(5);
     expect(tierOf('neural-antibodies:lgi1')).toBe(6);
+    expect(tierOf('antiseizure-medications:levetiracetam')).toBe(2);
+    expect(tierOf('reference-cards:neuro-icu-targets')).toBe(4);
+    expect(queue.filter((q) => q.tier === 7)).toEqual([]);
   });
 });

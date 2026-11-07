@@ -8,12 +8,12 @@ export type Tier = { tier: number; slug: string; heading: string };
 
 export const TIERS: Tier[] = [
   { tier: 1, slug: "calculators", heading: "Calculators" },
-  { tier: 2, slug: "acute-doses", heading: "Acute protocols with doses (doseText / structured dose)" },
+  { tier: 2, slug: "acute-doses", heading: "Acute protocols with doses, then ASM dosing cards" },
   { tier: 3, slug: "reversal-thrombolysis", heading: "Antithrombotic reversal and thrombolysis rules" },
-  { tier: 4, slug: "decision-rules", heading: "Other decision rules" },
+  { tier: 4, slug: "decision-rules", heading: "Other decision rules and reference cards" },
   { tier: 5, slug: "caution-lists", heading: "Caution and interaction lists" },
   { tier: 6, slug: "neural-antibodies", heading: "Neural antibodies" },
-  { tier: 7, slug: "unplaced", heading: "Not in the task 2.1 order — placement to confirm" },
+  { tier: 7, slug: "unplaced", heading: "Unplaced registries (add a rule in scripts/rereview-queue.ts)" },
 ];
 
 const REVERSAL_DECISIONS = new Set(["thrombolysis-with-prior-antithrombotics", "sich-after-thrombolysis", "anticoag-reversal-ich", "antiplatelet-ich"]);
@@ -25,7 +25,8 @@ function tierOf(registry: string, e: QueueEntry): number {
     if (e.kind === "AGENT") return e.reversal?.length || e.timing?.thrombolysisRule?.length ? 3 : 4;
     return REVERSAL_DECISIONS.has(e.id) ? 3 : 4;
   }
-  if (registry === "consult-workups") return 4;
+  if (registry === "antiseizure-medications") return 2; // Jason, 2026-11-07
+  if (registry === "consult-workups" || registry === "reference-cards") return 4; // reference-cards: Jason, 2026-11-07
   if (CAUTION.includes(registry)) return 5;
   if (registry === "neural-antibodies") return 6;
   return 7;
