@@ -53,7 +53,7 @@ export default function ReferenceCard({ entry, listId, detail = false }: { entry
       <BannerList entry={entry} />
       <p className="text-sm text-slate-300">
         {entry.generics.join(', ')}
-        {entry.brands.length > 0 && <span className="text-slate-500"> ({entry.brands.join(', ')})</span>}
+        {entry.brands.length > 0 && <span className="text-slate-400"> ({entry.brands.join(', ')})</span>}
       </p>
       <Bullets label="Effect" items={entry.effect} tone="text-slate-200" />
       <Bullets label="Mechanism" items={entry.mechanism} tone="text-slate-400" />
@@ -61,7 +61,7 @@ export default function ReferenceCard({ entry, listId, detail = false }: { entry
       <Bullets label="Safer alternatives" items={entry.saferAlternatives} tone="text-emerald-300" />
       <Bullets label="VERIFY" items={entry.verify} tone="text-amber-300" />
       <RelatedLinks relatedIds={entry.relatedIds} />
-      <details className="mt-2 text-xs text-slate-500">
+      <details className="mt-2 text-xs text-slate-400">
         <summary className="cursor-pointer">Sources</summary>
         <ul className="mt-1 list-inside list-disc">
           {entry.sources.map((s) => (

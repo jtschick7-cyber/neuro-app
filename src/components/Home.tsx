@@ -36,7 +36,7 @@ export default function Home() {
     <div className="space-y-3">
       <h1 className="text-lg font-semibold text-slate-100">{APP_NAME}</h1>
       <div className="relative">
-        <Search size={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
+        <Search size={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
         <input
           type="search"
           value={query}
@@ -82,7 +82,7 @@ export default function Home() {
                   <div className="text-base font-semibold text-slate-100">{s.label}</div>
                   <div className={`text-sm ${ACCENT[s.id]?.text ?? 'text-slate-400'}`}>{s.blurb}</div>
                 </div>
-                <ChevronRight size={20} aria-hidden="true" className="shrink-0 text-slate-500" />
+                <ChevronRight size={20} aria-hidden="true" className="shrink-0 text-slate-400" />
               </a>
             </li>
           ))}

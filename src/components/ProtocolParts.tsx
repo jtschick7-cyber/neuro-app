@@ -97,7 +97,7 @@ export function WorkupList({ items }: { items: { test: string; priority: string;
 
 export function Sources({ items }: { items: string[] }) {
   return (
-    <details className="mt-2 text-xs text-slate-500">
+    <details className="mt-2 text-xs text-slate-400">
       <summary className="cursor-pointer">Sources</summary>
       <ul className="mt-1 list-inside list-disc">
         {items.map((s) => (
@@ -117,7 +117,7 @@ export function TreatmentList({ items }: { items: z.infer<typeof TreatmentItem>[
           <div className="flex flex-wrap items-center gap-2">
             <RoleBadge role={t.role} />
             <span className="text-sm font-semibold text-slate-100">{t.agent}</span>
-            <span className="text-xs text-slate-500">{t.routes.join(', ')}</span>
+            <span className="text-xs text-slate-400">{t.routes.join(', ')}</span>
           </div>
           <p className="text-sm text-slate-200">{t.doseText}</p>
           <Bullets items={t.notes} tone="text-slate-400" />
@@ -125,7 +125,7 @@ export function TreatmentList({ items }: { items: z.infer<typeof TreatmentItem>[
             <EvidenceBadge level={t.evidenceLevel} />
             <FormularyBadge status={t.formularyStatus} />
           </div>
-          <Bullets items={t.evidenceNote} tone="text-xs text-slate-500" />
+          <Bullets items={t.evidenceNote} tone="text-xs text-slate-400" />
           <RelatedLinks relatedIds={[]} calculatorIds={t.calculatorIds} />
         </li>
       ))}

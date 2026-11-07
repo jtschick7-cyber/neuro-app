@@ -158,3 +158,11 @@ export const SYNDROME_FILTER = {
 export const SEARCH_COPY = {
   partial: "No entry matches every word — closest matches:",
 };
+
+/** Patient context bar (collapsed chip). */
+export const CONTEXT_BAR_COPY = {
+  empty: "Patient: tap to enter weight, age, sex, Cr",
+  prefix: "Patient:",
+  expand: "Edit patient context",
+  collapse: "Collapse patient context",
+};

@@ -21,8 +21,8 @@ export default function RelatedLinks({ relatedIds, calculatorIds = [] }: { relat
                 <span className="text-sky-400/70">· {r.context}</span>
               </a>
             ) : (
-              <span className="inline-flex items-center gap-1 rounded-full border border-slate-700 px-2.5 py-1 text-xs text-slate-500">
-                {r.label} <span className="text-slate-600">· {r.context}</span>
+              <span className="inline-flex items-center gap-1 rounded-full border border-slate-700 px-2.5 py-1 text-xs text-slate-400">
+                {r.label} <span className="text-slate-400">· {r.context}</span>
               </span>
             )}
           </li>

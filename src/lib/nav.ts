@@ -63,7 +63,7 @@ export const SECTIONS: SectionInfo[] = [
   { id: 'home', label: 'Home', blurb: '', built: true, hash: '#/' },
   { id: 'acute', label: 'Acute', blurb: 'Emergency protocols', built: true, hash: '#/acute-neuro' },
   { id: 'consults', label: 'Consults', blurb: 'Consult workups and reference cards', built: true, hash: '#/consult-workups' },
-  { id: 'drugs', label: 'Drugs', blurb: 'Drug cautions, antithrombotics, ASM dosing and interactions', built: true, hash: '#/mg-contraindications' },
+  { id: 'drugs', label: 'Drugs', blurb: 'Drug cautions, antithrombotics, ASM dosing and interactions', built: true, hash: '#/vascular-antithrombotics' },
   { id: 'antibodies', label: 'Antibodies', blurb: 'Neural antibody cards', built: true, hash: '#/neural-antibodies' },
   { id: 'calc', label: 'Calculators', navLabel: 'Calcs', blurb: 'Dosing and risk scores', built: true, hash: '#/calc' },
 ];

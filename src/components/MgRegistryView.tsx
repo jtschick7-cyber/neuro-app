@@ -34,7 +34,7 @@ export default function MgRegistryView({ listId, entryId }: { listId: CautionLis
     <div className="space-y-3">
       <DrugTabs active={info.id} />
       <div className="relative">
-        <Search size={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
+        <Search size={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
         <input
           type="search"
           value={query}
@@ -44,11 +44,11 @@ export default function MgRegistryView({ listId, entryId }: { listId: CautionLis
           className="w-full rounded-lg border border-slate-600 bg-slate-800 py-2 pl-10 pr-3 text-base text-slate-100 placeholder-slate-500 focus:border-sky-400 focus:outline-none"
         />
       </div>
-      <p className="text-xs text-slate-500">
+      <p className="text-xs text-slate-400">
         {info.list.condition} · {results.length} of {info.list.entries.length} · v{info.list.version}
       </p>
       {info.list.scopeNotes.map((n) => (
-        <p key={n} className="text-xs text-slate-500">
+        <p key={n} className="text-xs text-slate-400">
           {n}
         </p>
       ))}
