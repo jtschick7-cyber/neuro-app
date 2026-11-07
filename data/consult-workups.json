@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "0.7.2",
+  "version": "0.8.0",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -642,7 +642,8 @@
         "vascular-antithrombotics:esus-antithrombotic",
         "vascular-antithrombotics:cervical-artery-dissection",
         "vascular-antithrombotics:pregnancy-antithrombotics",
-        "vascular-antithrombotics:cvt-anticoagulation"
+        "vascular-antithrombotics:cvt-anticoagulation",
+        "reference-cards:thrombophilia-test-validity"
       ],
       "sources": [
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
@@ -650,7 +651,7 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2024. doi:10.1016/j.jtha.2024.10.022"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "tia-workup",
@@ -1418,6 +1419,200 @@
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
       ],
       "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "caa-related-inflammation",
+      "title": "CAA-related inflammation (CAA-ri)",
+      "searchTerms": [
+        "CAA-ri",
+        "inflammatory CAA",
+        "amyloid angiitis",
+        "ABRA",
+        "cerebral amyloid angiopathy inflammation",
+        "ARIA-like"
+      ],
+      "category": "VASCULAR",
+      "consultQuestion": "Older patient with subacute cognitive change, seizures, or headache and asymmetric white-matter edema with lobar microbleeds — CAA-ri? Biopsy or treat?",
+      "keyHistory": [
+        "Subacute cognitive or behavioral change (58%), headache (42%), seizure (42%), focal deficit (19%) (Regenhardt)",
+        "Known CAA or prior lobar ICH (Auriel)",
+        "Anti-amyloid antibody therapy — ARIA has a similar clinicoradiologic picture (Auriel)",
+        "Cancer, immunosuppression, infection risk — criteria require excluding neoplastic and infectious causes (Auriel)"
+      ],
+      "keyExam": [
+        "Mental status, level of consciousness",
+        "Focal neurological signs"
+      ],
+      "redFlags": [
+        "Declining consciousness or mass effect from edema",
+        "Features of lymphoma or infection — steroids can obscure lymphoma (Auriel)",
+        "No steroid response within 3 weeks — consider brain biopsy (Auriel)"
+      ],
+      "differential": [
+        {
+          "dx": "CAA-related inflammation",
+          "clues": [
+            "Asymmetric T2/FLAIR WMH extending to the immediately subcortical white matter plus lobar microbleeds, macrobleed, or cortical superficial siderosis (Auriel)",
+            "APOE ε4/ε4 in 77% vs 5% of noninflammatory CAA (Kinnecom)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Primary CNS lymphoma",
+          "clues": [
+            "Steroids may obscure the diagnosis (Auriel)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Infection",
+          "clues": [
+            "Criteria require exclusion (Auriel)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "PACNS / other CNS vasculitis",
+          "clues": [
+            "See cns-vasculitis-workup"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "Noninflammatory CAA with extensive WMH",
+          "clues": [
+            "Extensive WMH is common in noninflammatory CAA — possible criteria only 68% specific (Auriel)"
+          ],
+          "mustNotMiss": false
+        }
+      ],
+      "workup": [
+        {
+          "test": "MRI brain: FLAIR, SWI/GRE, gadolinium",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Probable criteria: asymmetric WMH to the immediately subcortical WM (not from past ICH) + ≥1 cortico-subcortical macrobleed, microbleed, or cSS (Auriel Table 1)",
+            "Small DWI lesions and gadolinium enhancement are not reliable for diagnosis (Auriel); enhancement in 34% (Regenhardt)"
+          ]
+        },
+        {
+          "test": "LP: cells, protein, glucose, cytology, flow cytometry, infectious studies",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "CSF protein >45 mg/dL in 92%, cells >5/μL in 26% (Regenhardt)",
+            "Neither sensitive nor specific — mainly to exclude mimics (Auriel)"
+          ]
+        },
+        {
+          "test": "Brain and leptomeningeal biopsy",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "No steroid response within 3 weeks",
+            "Probable criteria not met or a mimic is suspected"
+          ],
+          "notes": [
+            "Focal, segmental inflammation can be missed on biopsy (Auriel)",
+            "Stereotactic biopsy: mortality 0–1%, significant morbidity 3–5% (Auriel)"
+          ]
+        },
+        {
+          "test": "Surveillance MRI",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "After treatment"
+          ],
+          "notes": [
+            "Detects recurrence (Regenhardt)"
+          ]
+        }
+      ],
+      "decisionRules": [
+        {
+          "order": 1,
+          "condition": "Age ≥40; ≥1 of headache, decreased consciousness, behavioral change, focal signs/seizures (not from acute ICH); asymmetric WMH extending to immediately subcortical WM (not from past ICH); ≥1 cortico-subcortical macrobleed, microbleed, or cSS; no neoplastic, infectious, or other cause",
+          "recommendation": "Probable CAA-ri — sensitivity 82%, specificity 97%",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Auriel 2016 Table 1; 17 pathology-proven cases vs 37 noninflammatory CAA controls"
+          ]
+        },
+        {
+          "order": 2,
+          "condition": "Same, but WMH need not be asymmetric",
+          "recommendation": "Possible CAA-ri — sensitivity 82%, specificity 68%",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Auriel 2016 Table 1"
+          ]
+        },
+        {
+          "order": 3,
+          "condition": "Meets probable criteria",
+          "recommendation": "Empiric immunosuppression without brain biopsy",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Auriel 2016 conclusion"
+          ]
+        },
+        {
+          "order": 4,
+          "condition": "Empirically treated, no response within 3 weeks",
+          "recommendation": "Consider brain biopsy",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Auriel 2016 (citing Chung 2011)"
+          ]
+        },
+        {
+          "order": 5,
+          "condition": "Treating CAA-ri",
+          "recommendation": "IV methylprednisolone 1 g daily for 3–5 days, then oral prednisone 60 mg daily tapered over months",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Regenhardt 2020: most common regimen, called reasonable by the authors",
+            "Retrospective: improvement 94% treated vs 50% untreated; recurrence 26% vs 71% (HR 0.19)"
+          ]
+        },
+        {
+          "order": 6,
+          "condition": "Recurrent episodes",
+          "recommendation": "Cyclophosphamide or mycophenolate can be considered — sparse data",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Regenhardt 2020"
+          ]
+        }
+      ],
+      "initialSteps": [
+        "Where feasible, exclude lymphoma and infection before empiric steroids (Auriel)"
+      ],
+      "recsTemplate": [],
+      "disposition": [
+        "Surveillance MRI for recurrence (Regenhardt)"
+      ],
+      "calculatorIds": [],
+      "institutionVaries": [
+        "Brain biopsy access (neurosurgery)"
+      ],
+      "pearls": [
+        "APOE ε4/ε4: 10/13 (77%) CAA-ri vs 2/39 (5%) noninflammatory CAA, OR 61.7 (Kinnecom); 15/33 (45%) in Regenhardt",
+        "Cognition improved and seizures resolved within 1–2 weeks of treatment in responders (Kinnecom)",
+        "All symptomatic recurrences in Kinnecom occurred off immunosuppression; one ICH occurred in a region of recurrent hyperintensity",
+        "CSF anti-Aβ autoantibodies are research-only (Auriel)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "consult-workups:cns-vasculitis-workup",
+        "consult-workups:ich-etiology-workup"
+      ],
+      "sources": [
+        "Auriel E, et al. Validation of Clinicoradiological Criteria for the Diagnosis of Cerebral Amyloid Angiopathy-Related Inflammation. JAMA Neurol 2016;73:197-202. doi:10.1001/jamaneurol.2015.4078",
+        "Regenhardt RW, et al. Association Between Immunosuppressive Treatment and Outcomes of Cerebral Amyloid Angiopathy-Related Inflammation. JAMA Neurol 2020;77:1261-1269. doi:10.1001/jamaneurol.2020.1782",
+        "Kinnecom C, et al. Course of cerebral amyloid angiopathy-related inflammation. Neurology 2007;68:1411-1416"
+      ],
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "first-unprovoked-seizure",
@@ -2508,6 +2703,194 @@
       "lastReviewed": "2026-11-05"
     },
     {
+      "id": "valproate-hyperammonemic-encephalopathy",
+      "title": "Valproate hyperammonemic encephalopathy",
+      "searchTerms": [
+        "VHE",
+        "valproate ammonia",
+        "VPA encephalopathy",
+        "hyperammonemia",
+        "Depakote",
+        "Depacon",
+        "carnitine",
+        "L-carnitine",
+        "valproate overdose"
+      ],
+      "category": "COGNITION_ENCEPHALOPATHY",
+      "consultQuestion": "Patient on valproate with new lethargy, vomiting, confusion, or hypothermia — hyperammonemic encephalopathy?",
+      "keyHistory": [
+        "Valproate start or dose change — hyperammonemic encephalopathy after starting valproate is reported in urea cycle disorders (label §5.6)",
+        "UCD risk features: unexplained encephalopathy/coma, encephalopathy after a protein load, pregnancy-related or postpartum encephalopathy, cyclical vomiting and lethargy, family history (label §5.6)",
+        "Concomitant topiramate — hyperammonemia ± encephalopathy even when each drug alone was tolerated (label §5.9)",
+        "Intentional or accidental overdose; amount ingested (Perrott)"
+      ],
+      "keyExam": [
+        "Lethargy, vomiting, change in mental status (label §5.8)",
+        "Core temperature — hypothermia <35 °C with or without hyperammonemia (label §5.10)"
+      ],
+      "redFlags": [
+        "Hypothermia (label §5.10)",
+        "Acute ingestion >100 mg/kg or valproate level >850 mg/L — higher risk of coma, respiratory depression, aspiration (Perrott)",
+        "Abdominal pain with vomiting — pancreatitis (boxed warning)"
+      ],
+      "differential": [
+        {
+          "dx": "Valproate hyperammonemic encephalopathy",
+          "clues": [
+            "Raised ammonia; can occur with normal liver tests (label §5.8)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Urea cycle disorder unmasked by valproate",
+          "clues": [
+            "Encephalopathy after starting valproate; risk features in label §5.6"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Valproate hepatotoxicity",
+          "clues": [
+            "Abnormal liver tests (boxed warning)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Acute valproate overdose",
+          "clues": [
+            "Somnolence, heart block, deep coma, hypernatremia (label §10); peak level can be delayed (Perrott)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Valproate pancreatitis",
+          "clues": [
+            "Abdominal pain, vomiting (boxed warning, §5.5)"
+          ],
+          "mustNotMiss": true
+        }
+      ],
+      "workup": [
+        {
+          "test": "Plasma ammonia",
+          "priority": "STAT",
+          "indication": [],
+          "notes": [
+            "Any unexplained lethargy, vomiting, mental-status change, or hypothermia on valproate (label §5.8, §5.10)"
+          ]
+        },
+        {
+          "test": "Liver tests",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Normal LFTs do not exclude hyperammonemia (label §5.8)"
+          ]
+        },
+        {
+          "test": "Valproate level",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Overdose: peak at mean 7.4 h, ~15% >10 h after ingestion — repeat levels (Perrott)"
+          ]
+        },
+        {
+          "test": "Lipase",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Abdominal pain or vomiting"
+          ],
+          "notes": [
+            "Pancreatitis (boxed warning, §5.5)"
+          ]
+        },
+        {
+          "test": "Urea cycle disorder evaluation",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Hyperammonemic encephalopathy on valproate"
+          ],
+          "notes": [
+            "Label: evaluate for underlying UCD (§5.6, §5.8)"
+          ]
+        }
+      ],
+      "decisionRules": [
+        {
+          "order": 1,
+          "condition": "On valproate with unexplained lethargy, vomiting, mental-status change, or hypothermia",
+          "recommendation": "Check ammonia",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Valproate sodium injection label §5.8, §5.10"
+          ]
+        },
+        {
+          "order": 2,
+          "condition": "Ammonia raised",
+          "recommendation": "Stop valproate; treat hyperammonemia; evaluate for urea cycle disorder",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Label §5.8"
+          ]
+        },
+        {
+          "order": 3,
+          "condition": "Asymptomatic ammonia elevation",
+          "recommendation": "Monitor ammonia closely; consider stopping valproate if it persists",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Label §5.8"
+          ]
+        },
+        {
+          "order": 4,
+          "condition": "Acute valproate overdose (>100 mg/kg) with decreased level of consciousness",
+          "recommendation": "Consider IV L-carnitine 100 mg/kg, then 50 mg/kg (max 3 g/dose) IV q8h until ammonia is falling (if raised) and the patient improves",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Perrott 2010: authors' regimen from 8 case reports; no comparative data",
+            "Not a source for VHE on therapeutic dosing — chronic-therapy toxicity was excluded from the review"
+          ]
+        },
+        {
+          "order": 5,
+          "condition": "Overdose",
+          "recommendation": "Hemodialysis (± hemoperfusion) can remove significant drug; naloxone may reverse CNS depression — use with caution in epilepsy",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Label §10"
+          ]
+        }
+      ],
+      "initialSteps": [
+        "Stop valproate if ammonia is raised (label §5.8); choose an alternative ASM — see antiseizure-medications"
+      ],
+      "recsTemplate": [],
+      "disposition": [],
+      "calculatorIds": [],
+      "institutionVaries": [
+        "Ammonia specimen handling (e.g., on ice, prompt analysis) — follow lab instructions",
+        "IV L-carnitine availability"
+      ],
+      "pearls": [
+        "Hyperammonemia can occur with normal LFTs (label §5.8)",
+        "Topiramate + valproate hyperammonemia is not a pharmacokinetic interaction (label §5.9)",
+        "In overdose, ammonia didn't correlate with symptoms or outcome — don't use it alone to decide on L-carnitine (Perrott)",
+        "Hypothermia may be the presenting sign (label §5.10)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:valproate"
+      ],
+      "sources": [
+        "Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)",
+        "Perrott J, Murphy NG, Zed PJ. L-Carnitine for Acute Valproic Acid Overdose: A Systematic Review of Published Cases. Ann Pharmacother 2010;44:1287-1293"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
       "id": "functional-neurologic-symptoms",
       "title": "Functional neurological disorder (FND)",
       "searchTerms": [
@@ -3156,14 +3539,16 @@
         {
           "dx": "B12 deficiency / nitrous oxide toxicity",
           "clues": [
-            "Myeloneuropathy, high MMA/homocysteine"
+            "Myeloneuropathy, high MMA/homocysteine",
+            "Serum B12 often normal in N₂O users (low in 42%) — MMA/homocysteine raised in ~80% (Ménétrier 2023)"
           ],
           "mustNotMiss": true
         },
         {
           "dx": "Copper deficiency",
           "clues": [
-            "Bariatric surgery, zinc excess; cytopenias; myeloneuropathy"
+            "Bariatric surgery, zinc excess; cytopenias; myeloneuropathy",
+            "Excess zinc incl. denture cream; prior gastric surgery; malabsorption (Kumar 2006)"
           ],
           "mustNotMiss": false
         },
@@ -3173,6 +3558,28 @@
             "Exposure history"
           ],
           "mustNotMiss": false
+        },
+        {
+          "dx": "Autoimmune nodopathy (anti-NF155, CNTN1, Caspr1, pan-neurofascin IgG)",
+          "clues": [
+            "CIDP-like, often acute/subacute: ataxia and tremor (NF155), motor/ataxic (CNTN1), pain and cranial nerves (Caspr1); poor or no IVIG response",
+            "Pan-neurofascin: severe phenotype, especially IgG3 (EAN/PNS 2021)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Anti-MAG IgM neuropathy",
+          "clues": [
+            "Distal, lower > upper limb; IgM paraprotein; usually doesn't respond to IVIG or steroids (EAN/PNS 2021)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "Acute hepatic porphyria",
+          "clues": [
+            "Weakness/neuropathy with abdominal pain, hyponatremia, tachycardia — see acute-hepatic-porphyria"
+          ],
+          "mustNotMiss": true
         }
       ],
       "workup": [
@@ -3189,14 +3596,17 @@
           "priority": "URGENT",
           "indication": [],
           "notes": [
-            "MMA/homocysteine also rise in nitrous oxide toxicity (Douglas 2022)"
+            "MMA/homocysteine also rise in nitrous oxide toxicity (Douglas 2022)",
+            "Total B12 is low in only 42% of N₂O users — rely on MMA/homocysteine; interpret with eGFR (Ménétrier 2023)"
           ]
         },
         {
           "test": "Glucose/HbA1c, CBC, BMP, LFTs, TSH, SPEP with immunofixation",
           "priority": "URGENT",
           "indication": [],
-          "notes": []
+          "notes": [
+            "Serum and urine M-protein by immunofixation are strongly advised in suspected CIDP (EAN/PNS 2021 Table 5)"
+          ]
         },
         {
           "test": "LP",
@@ -3233,6 +3643,36 @@
             "UMN signs or sensory level"
           ],
           "notes": []
+        },
+        {
+          "test": "Nodal-paranodal antibodies (NF155, CNTN1, Caspr1, NF140/186)",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "CIDP-like neuropathy with acute/subacute onset, ataxia, tremor, or poor IVIG response"
+          ],
+          "notes": [
+            "Cell-based assay, with confirmation by ELISA or teased-nerve immunohistochemistry (EAN/PNS 2021 Good Practice Point)"
+          ]
+        },
+        {
+          "test": "Anti-MAG antibodies",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "IgM paraprotein with a distal phenotype"
+          ],
+          "notes": [
+            "High titre (>7000 BTU) strongly implies anti-MAG neuropathy rather than CIDP (EAN/PNS 2021)"
+          ]
+        },
+        {
+          "test": "Anti-ganglioside antibodies",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected GBS variant (MFS, PCB), multifocal motor neuropathy, or chronic ataxic neuropathy"
+          ],
+          "notes": [
+            "Phenotype map in pearls (Willison & Yuki 2002 Table 1); a negative result doesn't exclude GBS (Leonhard 2019)"
+          ]
         }
       ],
       "decisionRules": [
@@ -3271,6 +3711,15 @@
           "evidenceNote": [
             "PNS 2010: Good Practice Point"
           ]
+        },
+        {
+          "order": 5,
+          "condition": "CIDP-like neuropathy with nodal-paranodal antibodies",
+          "recommendation": "Autoimmune nodopathy — not a CIDP variant; poor response to IVIG; rituximab may be effective",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN/PNS 2021 Good Practice Point; rituximab evidence anecdotal (case series)"
+          ]
         }
       ],
       "initialSteps": [
@@ -3291,20 +3740,32 @@
       ],
       "pearls": [
         "Nitrous oxide toxicity looks identical to B12 deficiency on exam and imaging — ask about recreational use ('whippets') and recent anesthesia (Douglas 2022)",
-        "PR3/MPO-ANCA, mixed cryoglobulins, ESR ≥100 mm/h, other-organ involvement, or a predisposing condition point to systemic rather than nonsystemic vasculitis (PNS 2010)"
+        "PR3/MPO-ANCA, mixed cryoglobulins, ESR ≥100 mm/h, other-organ involvement, or a predisposing condition point to systemic rather than nonsystemic vasculitis (PNS 2010)",
+        "Anti-glycolipid map (Willison & Yuki 2002 Table 1) — IgG GM1, GM1b, GD1a, GalNAc-GD1a: AMAN",
+        "IgG GQ1b, GT1a: Miller Fisher, Bickerstaff, acute ophthalmoparesis, ataxic GBS; IgG GT1a (± GQ1b): pharyngeal-cervical-brachial (Willison & Yuki 2002)",
+        "IgM GM1, GD1b, asialo-GM1 (polyclonal or monoclonal): multifocal motor neuropathy (Willison & Yuki 2002)",
+        "Monoclonal IgM to disialosyl gangliosides (GD1b, GD3, GT1b, GQ1b): chronic ataxic neuropathy / CANOMAD; monoclonal IgM to SGPG (MAG cross-reactive): chronic demyelinating neuropathy (Willison & Yuki 2002)",
+        "IgG anti-GD1a separates AMAN from AIDP better than anti-GM1: 60% vs 4% at titre >1:100 (Willison & Yuki 2002)",
+        "Nodopathies lack overt inflammation or macrophage-mediated demyelination, which is why they aren't classed as CIDP (EAN/PNS 2021)"
       ],
       "verify": [],
       "relatedIds": [
         "acute-neuro:guillain-barre-syndrome",
         "consult-workups:myelopathy-workup",
-        "consult-workups:acute-generalized-weakness"
+        "consult-workups:acute-generalized-weakness",
+        "consult-workups:acute-hepatic-porphyria"
       ],
       "sources": [
         "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
         "Douglas AG, Xu DJ, Shah MP. Approach to Myelopathy and Myelitis. Neurol Clin 2022;40:133-156. doi:10.1016/j.ncl.2021.08.009",
-        "Collins MP, et al. Peripheral Nerve Society Guideline on the classification, diagnosis, investigation, and immunosuppressive therapy of non-systemic vasculitic neuropathy: executive summary. J Peripher Nerv Syst 2010;15:176-184. doi:10.1111/j.1529-8027.2010.00281.x"
+        "Collins MP, et al. Peripheral Nerve Society Guideline on the classification, diagnosis, investigation, and immunosuppressive therapy of non-systemic vasculitic neuropathy: executive summary. J Peripher Nerv Syst 2010;15:176-184. doi:10.1111/j.1529-8027.2010.00281.x",
+        "Van den Bergh PYK, et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of chronic inflammatory demyelinating polyradiculoneuropathy: Report of a joint Task Force—Second revision. Eur J Neurol 2021;28:3556-3583. doi:10.1111/ene.14959",
+        "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625",
+        "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
+        "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
+        "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "elevated-ck-myopathy",
@@ -3397,7 +3858,10 @@
           "test": "CK, aldolase, LFTs (AST/ALT may be muscle), TSH, BMP",
           "priority": "URGENT",
           "indication": [],
-          "notes": []
+          "notes": [
+            "Acute muscle injury: AST/ALT ratio >3, falling toward ~1 within days because AST clears faster; ratio ~1.2 in polymyositis (Nathwani 2005)",
+            "GGT confirms a hepatic source of alkaline phosphatase — it doesn't localize AST/ALT, and phenytoin and barbiturates raise it (ACG 2017)"
+          ]
         },
         {
           "test": "Troponin and ECG",
@@ -3541,7 +4005,8 @@
         "Cancer occurs in about 10% of adults with myositis within 3 years of diagnosis; risk is high with seronegative IMNM, TIF-1γ, NXP2, anti-OJ, and seronegative DM over age 40; intermediate with HMGCR, Mi-2, MDA5, SAE (NEJM 2026 Table 1)",
         "IBM: quadriceps and finger flexor weakness is almost pathognomonic; CK normal to moderately raised (NEJM 2026)",
         "Under age 30, distinguish early IMNM from genetic myopathy — antibody status matters most (NEJM 2026)",
-        "Statin-associated HMGCR myopathy persists or worsens after the statin is stopped (ENMC 2017)"
+        "Statin-associated HMGCR myopathy persists or worsens after the statin is stopped (ENMC 2017)",
+        "Raised ALT doesn't prove liver injury — ALT rises substantially with muscle necrosis; muscle disease raises AST/ALT with AST predominance early; screen with CK ± aldolase (Nathwani 2005; ACG 2017)"
       ],
       "verify": [],
       "relatedIds": [
@@ -3549,9 +4014,169 @@
       ],
       "sources": [
         "Allenbach Y, et al. 224th ENMC International Workshop: Clinico-sero-pathological classification of immune-mediated necrotizing myopathies. Neuromuscul Disord 2018;28:87-99",
-        "Allenbach Y, Benveniste O. Inflammatory Myopathies. N Engl J Med 2026;394:1925-1938. doi:10.1056/NEJMra2415426"
+        "Allenbach Y, Benveniste O. Inflammatory Myopathies. N Engl J Med 2026;394:1925-1938. doi:10.1056/NEJMra2415426",
+        "Nathwani RA, et al. Serum Alanine Aminotransferase in Skeletal Muscle Diseases. Hepatology 2005;41:380-382. doi:10.1002/hep.20548",
+        "Kwo PY, Cohen SM, Lim JK. ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries. Am J Gastroenterol 2017;112:18-35. doi:10.1038/ajg.2016.517"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "acute-hepatic-porphyria",
+      "title": "Suspected acute hepatic porphyria (AIP)",
+      "searchTerms": [
+        "AIP",
+        "acute intermittent porphyria",
+        "porphyria",
+        "acute hepatic porphyria",
+        "AHP",
+        "porphobilinogen",
+        "PBG",
+        "ALA",
+        "hemin",
+        "givosiran"
+      ],
+      "category": "NEUROMUSCULAR",
+      "consultQuestion": "Weakness or neuropathy with severe abdominal pain, hyponatremia, or seizures — could this be an acute porphyric attack?",
+      "keyHistory": [
+        "Recurrent severe abdominal pain without a clear cause after initial workup, especially in women 15–50 (AGA BPA 1)",
+        "Triggers: CYP450-inducing / porphyrinogenic drugs, progesterone (luteal phase), alcohol, tobacco, fasting, acute illness or stress (AGA BPA 6)",
+        "Prior similar attacks — mean delay to diagnosis ~15 years (AGA)",
+        "Family history — autosomal dominant with low penetrance (AGA BPA 3)"
+      ],
+      "keyExam": [
+        "Muscle weakness, neuropathy (AGA)",
+        "Tachycardia, hypertension (AGA)",
+        "Severe abdominal pain without peritoneal signs; cross-sectional imaging unrevealing (AGA)"
+      ],
+      "redFlags": [
+        "Seizures — barbiturates, hydantoins, carbamazepine, and valproate are contraindicated (AGA BPA 5)",
+        "Hyponatremia or hypomagnesemia (SIADH ± hypovolemia) (AGA BPA 5)",
+        "Progressive weakness — porphyria is a listed GBS mimic (Leonhard 2019 Box 2)"
+      ],
+      "differential": [
+        {
+          "dx": "Acute hepatic porphyria (AIP, HCP, VP; ALAD rare)",
+          "clues": [
+            "Random urine ALA and PBG ≥5× ULN (creatinine-normalized) during an attack (AGA Table 2)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Guillain-Barré syndrome",
+          "clues": [
+            "Progressive symmetric weakness with areflexia; CSF protein normal in 30–50% in week 1 (Leonhard 2019)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Secondary porphyrinuria",
+          "clues": [
+            "Mild urine porphyrin elevation only — not diagnostic of AHP and a common cause of overdiagnosis (AGA BPA 2)"
+          ],
+          "mustNotMiss": false
+        }
+      ],
+      "workup": [
+        {
+          "test": "Random (spot) urine ALA, PBG, and creatinine",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Collect BEFORE hemin — hemin normalizes ALA/PBG (AGA BPA 4)",
+            "Diagnostic: ALA and PBG ≥5× ULN normalized to creatinine; 24-h urine not recommended (AGA BPA 2, Table 2)",
+            "Reference-lab send-out; results often take 1–2 weeks; a rapid PBG test is FDA-approved but rarely stocked (AGA)"
+          ]
+        },
+        {
+          "test": "Sodium and magnesium",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Monitor during the attack; correct hyponatremia slowly (AGA BPA 5)"
+          ]
+        },
+        {
+          "test": "Genetic testing (HMBS, CPOX, PPOX, ALAD)",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Positive biochemical testing"
+          ],
+          "notes": [
+            "Confirms AHP type; not for initial screening (AGA BPA 3)"
+          ]
+        }
+      ],
+      "decisionRules": [
+        {
+          "order": 1,
+          "condition": "Woman 15–50 with unexplained recurrent severe abdominal pain after initial workup",
+          "recommendation": "Screen for AHP with random urine ALA, PBG, creatinine",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "AGA 2023 BPA 1–2 (expert review; statements carry no formal evidence rating)"
+          ]
+        },
+        {
+          "order": 2,
+          "condition": "Urine ALA and/or PBG elevated",
+          "recommendation": "Presume AHP and treat; confirm type later with genetic testing",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "AGA 2023 description; BPA 3"
+          ]
+        },
+        {
+          "order": 3,
+          "condition": "Attack severe enough to need admission",
+          "recommendation": "IV hemin daily, preferably into a high-flow central vein",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "AGA 2023 BPA 4"
+          ]
+        },
+        {
+          "order": 4,
+          "condition": "Seizures during an attack",
+          "recommendation": "Avoid barbiturates, hydantoins (phenytoin/fosphenytoin), carbamazepine, valproate; magnesium, benzodiazepines, and levetiracetam appear safe",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "AGA 2023 BPA 5 supporting text"
+          ]
+        }
+      ],
+      "initialSteps": [
+        "Stop CYP450-inducing / porphyrinogenic drugs; check every drug in an AHP drug-safety database (porphyria.org; drugs-porphyria.org) (AGA BPA 5–6)",
+        "IV hemin 3–4 mg/kg once daily, typically 4 days (3–5 days), via PICC or central port, after the urine sample is sent (AGA BPA 4)",
+        "IV carbohydrate ~300 g/day early in the attack; treat pain and nausea aggressively (AGA BPA 5)"
+      ],
+      "recsTemplate": [],
+      "disposition": [
+        "Admit if the attack needs IV hemin (AGA BPA 4)",
+        "≥4 attacks/year: outpatient prophylaxis (hemin or givosiran) with a porphyria specialist (AGA BPA 7)"
+      ],
+      "calculatorIds": [],
+      "institutionVaries": [
+        "Urine ALA/PBG sample handling (light protection, refrigeration/freezing) — follow the reference lab's instructions",
+        "Hemin ordering pathway (hematology / pharmacy)",
+        "Reference lab and turnaround for ALA/PBG"
+      ],
+      "pearls": [
+        "Don't screen with urine porphyrins alone — ALA and PBG are porphyrin precursors and are not included in porphyrin tests (AGA BPA 2)",
+        "Between attacks, 15–44% with sporadic AIP have normal urine ALA/PBG; in AIP they can stay elevated for months after an attack, in HCP/VP they fall quickly (AGA)",
+        "Porphyria is in the motor-CIDP differential (EAN/PNS 2021 Table 4)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:guillain-barre-syndrome",
+        "consult-workups:inpatient-neuropathy",
+        "acute-neuro:hyponatremia-ods"
+      ],
+      "sources": [
+        "Wang B, et al. AGA Clinical Practice Update on Diagnosis and Management of Acute Hepatic Porphyrias: Expert Review. Gastroenterology 2023;164:484-491. doi:10.1053/j.gastro.2022.11.034",
+        "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
+        "Van den Bergh PYK, et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of chronic inflammatory demyelinating polyradiculoneuropathy: Report of a joint Task Force—Second revision. Eur J Neurol 2021;28:3556-3583. doi:10.1111/ene.14959"
+      ],
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "myelopathy-workup",
@@ -3626,7 +4251,9 @@
         {
           "dx": "B12 deficiency / nitrous oxide / copper deficiency",
           "clues": [
-            "Posterior ± lateral columns, inverted-V; MMA/homocysteine; copper/ceruloplasmin"
+            "Posterior ± lateral columns, inverted-V; MMA/homocysteine; copper/ceruloplasmin",
+            "Nitrous oxide: serum B12 low in only 42% of users; homocysteine and MMA raised in ~80% (Ménétrier 2023)",
+            "Copper: prior gastric/bariatric surgery, malabsorption, excess zinc (supplements, denture cream); cytopenias often but not always (Kumar 2006)"
           ],
           "mustNotMiss": true
         },
@@ -3675,7 +4302,10 @@
           "test": "B12, MMA, homocysteine; copper, ceruloplasmin, zinc",
           "priority": "URGENT",
           "indication": [],
-          "notes": []
+          "notes": [
+            "Nitrous oxide: don't rely on total B12 — send MMA and homocysteine; interpret with eGFR, both rise in kidney disease (Ménétrier 2023)",
+            "Copper deficiency: zinc may be high even without supplements; B12 deficiency can coexist (Kumar 2006)"
+          ]
         },
         {
           "test": "HIV, HTLV-1, syphilis serology",
@@ -3690,7 +4320,9 @@
             "Systemic features"
           ],
           "notes": [
-            "Autoantibodies alone don't prove a connective-tissue cause — they occur in MS and NMOSD (Frohman 2010)"
+            "Autoantibodies alone don't prove a connective-tissue cause — they occur in MS and NMOSD (Frohman 2010)",
+            "ACE is insufficiently sensitive and specific in serum and CSF; ACE, CRP, and sIL-2R have no proven value for diagnosing neurosarcoidosis — don't use them to rule it in or out (Stern 2018)",
+            "Biopsy an accessible nonneural site to support probable neurosarcoidosis (Stern 2018)"
           ]
         },
         {
@@ -3753,7 +4385,8 @@
       "initialSteps": [
         "Compression: see acute-neuro:spinal-cord-compression",
         "NMOSD/MOGAD attack: see acute-neuro:nmosd-mogad-attack",
-        "Nutritional/nitrous oxide: replace B12/copper promptly"
+        "Nutritional/nitrous oxide: replace B12/copper promptly",
+        "Copper deficiency (Kumar/Mayo practice): elemental copper 6 mg/day PO for 1 week, 4 mg/day for 1 week, then 2 mg/day; stop excess zinc (stopping zinc alone may suffice); recheck serum copper"
       ],
       "recsTemplate": [
         "MRI entire spine with and without contrast; MRI brain with contrast",
@@ -3773,7 +4406,10 @@
       "pearls": [
         "Spondylotic myelopathy can show pancake-like transverse enhancement and mimic myelitis (Douglas 2022)",
         "Cord infarct imaging can be normal early — DWI is more sensitive (Douglas 2022)",
-        "Cavernous malformations: stepwise episodes with recovery; popcorn lesions with GRE blooming (Douglas 2022)"
+        "Cavernous malformations: stepwise episodes with recovery; popcorn lesions with GRE blooming (Douglas 2022)",
+        "Copper deficiency myelopathy mimics subacute combined degeneration — dorsal-column T2 signal, usually cervical, no enhancement (Kumar 2006)",
+        "Copper replacement: blood counts recover promptly; neurological recovery is variable but progression usually halts (Kumar 2006)",
+        "Ongoing decline after B12 replacement with a normal B12 level → check copper (Kumar 2006)"
       ],
       "verify": [],
       "relatedIds": [
@@ -3786,9 +4422,12 @@
       ],
       "sources": [
         "Frohman EM, Wingerchuk DM. Transverse Myelitis. N Engl J Med 2010;363:564-572",
-        "Douglas AG, Xu DJ, Shah MP. Approach to Myelopathy and Myelitis. Neurol Clin 2022;40:133-156. doi:10.1016/j.ncl.2021.08.009"
+        "Douglas AG, Xu DJ, Shah MP. Approach to Myelopathy and Myelitis. Neurol Clin 2022;40:133-156. doi:10.1016/j.ncl.2021.08.009",
+        "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384",
+        "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
+        "Stern BJ, et al. Definition and Consensus Diagnostic Criteria for Neurosarcoidosis. JAMA Neurol 2018;75:1546-1553. doi:10.1001/jamaneurol.2018.2295"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "acute-vertigo-hints",
@@ -5390,13 +6029,15 @@
       "relatedIds": [
         "consult-workups:thunderclap-headache",
         "consult-workups:young-stroke-workup",
-        "consult-workups:rapidly-progressive-dementia"
+        "consult-workups:rapidly-progressive-dementia",
+        "consult-workups:caa-related-inflammation",
+        "consult-workups:intravascular-lymphoma"
       ],
       "sources": [
-        "Salvarani C, Brown RD Jr, Hunder GG. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1056/NEJMra2314942",
+        "Salvarani C, Brown RD Jr, Hunder GG. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1161/STR.0000000000000422",
         "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "paraneoplastic-workup",
@@ -5600,6 +6241,329 @@
         "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
       ],
       "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "susac-syndrome",
+      "title": "Suspected Susac syndrome",
+      "searchTerms": [
+        "Susac",
+        "SuS",
+        "BRAO",
+        "branch retinal artery occlusion",
+        "snowball lesions",
+        "corpus callosum lesions",
+        "hearing loss encephalopathy",
+        "retinocochleocerebral vasculopathy"
+      ],
+      "category": "INFLAMMATORY_DEMYELINATING",
+      "consultQuestion": "Encephalopathy or new headache with callosal lesions, hearing loss, or visual symptoms — Susac rather than MS?",
+      "keyHistory": [
+        "New cognitive or behavioral change, focal symptoms, or new migrainous/oppressive headache preceding other features by ≤6 months (Kleffner Box 1)",
+        "New tinnitus, hearing loss, or peripheral vertigo (Kleffner Box 1)",
+        "Visual symptoms are often absent — visual impairment reported in 28% though 58% had field defects (Kleffner)",
+        "Prior MS diagnosis or MS therapy — MS is the most common misdiagnosis; MS immunotherapy may worsen SuS (Kleffner)"
+      ],
+      "keyExam": [
+        "Mental status and focal deficits",
+        "Funduscopy — branch retinal artery occlusions may be silent (Kleffner)"
+      ],
+      "redFlags": [
+        "Severe encephalopathy — can mask the other triad features (Kleffner)",
+        "Planned MS disease-modifying therapy in a patient who may have SuS (Kleffner)"
+      ],
+      "differential": [
+        {
+          "dx": "Susac syndrome",
+          "clues": [
+            "Complete triad at onset in only 13%",
+            "Callosal 'snowball' lesions; BRAO or arterial wall hyperfluorescence on FLA; low/mid-tone sensorineural hearing loss (Kleffner)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Multiple sclerosis",
+          "clues": [
+            "Most common misdiagnosis of SuS; intrathecal IgG/OCBs are rare in SuS (Kleffner)"
+          ],
+          "mustNotMiss": false
+        }
+      ],
+      "workup": [
+        {
+          "test": "MRI brain (sagittal FLAIR/T2; T1 ± gadolinium)",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Required for brain criterion: multifocal round T2/FLAIR lesions with ≥1 in the corpus callosum ('snowball') (Kleffner Box 1)",
+            "Supportive only: T1-hypointense lesions, gray-matter lesions, leptomeningeal enhancement"
+          ]
+        },
+        {
+          "test": "Fluorescein angiography",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Do it even without visual symptoms — BRAO may be silent (Kleffner Box 1)",
+            "BRAO or arterial wall hyperfluorescence (AWH; marker of activity) meets the retinal criterion"
+          ]
+        },
+        {
+          "test": "Pure-tone or speech audiogram",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Required to support hearing loss; typically low/mid-tone sensorineural (Kleffner Box 1)"
+          ]
+        },
+        {
+          "test": "Spectral-domain OCT",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Later disease, when FLA no longer shows BRAO/AWH"
+          ],
+          "notes": [
+            "Sectoral inner-retinal damage meets the retinal criterion (Kleffner)"
+          ]
+        },
+        {
+          "test": "Vestibular testing (caloric, VEMP)",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Vertigo"
+          ],
+          "notes": [
+            "Required to support vestibular vertigo (Kleffner Box 1)"
+          ]
+        },
+        {
+          "test": "LP",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "To exclude differential diagnoses"
+          ],
+          "notes": [
+            "Protein often raised; mild pleocytosis (median 12 cells) in 45%; intrathecal IgG/OCBs rare — not a criterion (Kleffner)"
+          ]
+        }
+      ],
+      "decisionRules": [
+        {
+          "order": 1,
+          "condition": "Brain, retinal, and vestibulocochlear criteria all met",
+          "recommendation": "Definite Susac syndrome",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "European Susac Consortium criteria, Kleffner 2016 Box 1"
+          ]
+        },
+        {
+          "order": 2,
+          "condition": "Two of the three criteria met",
+          "recommendation": "Probable Susac syndrome — treat as definite and re-examine frequently",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "Kleffner 2016 Box 1"
+          ]
+        },
+        {
+          "order": 3,
+          "condition": "Some features but fewer than two criteria",
+          "recommendation": "Possible SuS — keep in the differential, follow closely",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "Kleffner 2016 Box 1"
+          ]
+        },
+        {
+          "order": 4,
+          "condition": "Suspected SuS",
+          "recommendation": "Neurological exam, brain MRI, ophthalmology exam with FLA, audiogram, and vestibular testing in every patient",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "Kleffner 2016 conclusion"
+          ]
+        }
+      ],
+      "initialSteps": [
+        "Acute episode: high-dose corticosteroids; continuous immunosuppression to prevent relapses — no trials, empirical (Kleffner)"
+      ],
+      "recsTemplate": [],
+      "disposition": [
+        "Ophthalmology and audiology/ENT involvement",
+        "Probable SuS: thorough, frequent re-examination (Kleffner)"
+      ],
+      "calculatorIds": [],
+      "institutionVaries": [
+        "Inpatient fluorescein angiography access (ophthalmology)"
+      ],
+      "pearls": [
+        "Complete triad at onset in only 13% (Kleffner)",
+        "Brain, muscle, and skin biopsies are nonspecific — diagnose with less invasive testing (Kleffner)",
+        "No specific serologic marker; anti-endothelial cell antibodies >1:100 in only 25% (Kleffner)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:ms-relapse",
+        "consult-workups:cns-vasculitis-workup"
+      ],
+      "sources": [
+        "Kleffner I, et al. Diagnostic criteria for Susac syndrome (European Susac Consortium). J Neurol Neurosurg Psychiatry 2016 (published online first Oct 25, 2016). doi:10.1136/jnnp-2016-314295"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "intravascular-lymphoma",
+      "title": "Suspected intravascular large B-cell lymphoma (IVLBCL)",
+      "searchTerms": [
+        "IVL",
+        "IVLBCL",
+        "intravascular lymphoma",
+        "angiotropic lymphoma",
+        "random skin biopsy",
+        "angioendotheliomatosis",
+        "sIL-2R"
+      ],
+      "category": "INFLAMMATORY_DEMYELINATING",
+      "consultQuestion": "Progressive multifocal infarcts or encephalopathy with nonspecific MRI, high LDH, or unexplained fever — intravascular lymphoma? Skin biopsy before brain biopsy?",
+      "keyHistory": [
+        "Neurologic findings in 75–76%, constitutional symptoms (fever, sweats, weight loss), skin lesions (Rozenbaum)",
+        "Fever of unknown origin; HLH features (HLH mostly in the Asian variant) (Rozenbaum; Shimada)"
+      ],
+      "keyExam": [
+        "Skin: plaques, nodules, violaceous patches, petechiae, telangiectasias, cherry angiomas (Rozenbaum)"
+      ],
+      "redFlags": [
+        "Rapidly progressive course — aggressive lymphoma with poor prognosis (Shimada)",
+        "Neurological symptoms with unrevealing imaging — imaging detects CNS involvement in only about half (Shimada)"
+      ],
+      "differential": [
+        {
+          "dx": "Intravascular large B-cell lymphoma",
+          "clues": [
+            "LDH raised; anemia, thrombocytopenia (Rozenbaum; Shimada)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "CNS vasculitis (PACNS)",
+          "clues": [
+            "Imaging can be identical (Shimada); 25% of patients biopsied for IVL who didn't have it had CNS vasculitis (Rozenbaum)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Other CNS lymphoma",
+          "clues": [
+            "9% of alternative diagnoses (Rozenbaum)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Meningoencephalitis / encephalitis",
+          "clues": [
+            "7% of alternative diagnoses (Rozenbaum)"
+          ],
+          "mustNotMiss": false
+        }
+      ],
+      "workup": [
+        {
+          "test": "LDH, CBC, CRP, albumin",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "LDH raised in 10/11 Western patients (Rozenbaum), 104/106 (98%) in a Japanese cohort and 69% in a European series (Shimada)",
+            "Anemia 75%, thrombocytopenia 33% (Rozenbaum)"
+          ]
+        },
+        {
+          "test": "Soluble IL-2 receptor",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected IVLBCL"
+          ],
+          "notes": [
+            "sIL-2R >5000 U/mL in 63/96 (66%) of a Japanese cohort, significantly higher in Asian-variant than non-Asian IVLBCL — yield in Western patients not reported (Shimada)"
+          ]
+        },
+        {
+          "test": "Random skin biopsies",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "≥3 sites of normal-appearing skin plus any skin lesions and cherry angiomas; 4-mm punch deep enough to include subcutaneous fat (Rozenbaum)",
+            "Sensitivity 50% (12 cases), specificity 100%; positive in 1 of 10 patients evaluated (Rozenbaum)",
+            "Lesional skin more sensitive than uninvolved skin (67% vs 33%) (Rozenbaum)"
+          ]
+        },
+        {
+          "test": "MRI brain with DWI",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Nonspecific white-matter hyperintensity that can mimic small-vessel disease, demyelination, or vasculitis (Shimada)"
+          ]
+        },
+        {
+          "test": "Bone marrow biopsy",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Cytopenias",
+            "Skin biopsies negative"
+          ],
+          "notes": [
+            "Negative in all 9 Western patients who had it (Rozenbaum); intrasinusoidal involvement is common in Asian series and repeat biopsy may help (Shimada)"
+          ]
+        },
+        {
+          "test": "Brain biopsy",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Skin biopsies negative and suspicion persists"
+          ],
+          "notes": [
+            "6 of 12 IVL cases in Rozenbaum were diagnosed by other means, typically brain biopsy"
+          ]
+        }
+      ],
+      "decisionRules": [
+        {
+          "order": 1,
+          "condition": "Suspected IVLBCL",
+          "recommendation": "Random skin biopsies (≥3 normal-skin sites + lesions + angiomas, deep with fat) before brain biopsy",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Rozenbaum 2021: authors' suggested approach; skin-before-brain order not tested",
+            "Shimada 2009: random skin biopsy promising, data still limited"
+          ]
+        }
+      ],
+      "initialSteps": [
+        "Hematology/oncology once suspected — adding rituximab to chemotherapy has shown benefit (Shimada)"
+      ],
+      "recsTemplate": [],
+      "disposition": [
+        "Hematology/oncology"
+      ],
+      "calculatorIds": [],
+      "institutionVaries": [
+        "Dermatology availability for multiple deep punch biopsies",
+        "sIL-2R send-out turnaround"
+      ],
+      "pearls": [
+        "Very low HDL may be a clue (median 23 mg/dL; 2 patients <5) (Rozenbaum)",
+        "Random skin biopsy can be positive even where the cutaneous variant is rare (Shimada)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "consult-workups:cns-vasculitis-workup",
+        "consult-workups:rapidly-progressive-dementia"
+      ],
+      "sources": [
+        "Rozenbaum D, et al. Skin biopsy in the diagnosis of intravascular lymphoma: A retrospective diagnostic accuracy study. J Am Acad Dermatol 2021;85:665-670. doi:10.1016/j.jaad.2019.09.015",
+        "Shimada K, Kinoshita T, Naoe T, Nakamura S. Presentation and management of intravascular large B-cell lymphoma. Lancet Oncol 2009;10:895-902"
+      ],
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "post-cardiac-arrest-prognostication",

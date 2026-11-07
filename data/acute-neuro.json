@@ -1,8 +1,8 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "0.7.1",
-  "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-11-05",
+  "version": "0.8.0",
+  "schemaVersion": "1.1.0",
+  "lastUpdated": "2026-11-07",
   "entries": [
     {
       "id": "convulsive-status-epilepticus",
@@ -5106,10 +5106,12 @@
           "doseText": "Restart prior carbidopa/levodopa regimen promptly; NG if NPO",
           "dose": [],
           "notes": [
-            "If no enteral route: rotigotine patch is a non-oral option (convert via LEDD)"
+            "If no enteral route: rotigotine patch — dose it with the BMJ 2010 conversion on reference-cards:inpatient-parkinson-disease; don't use the calc:ledd (Jost) total as the input"
           ],
           "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [],
+          "evidenceNote": [
+            "BMJ 2010 practice pointer (rotigotine as non-oral option; ungraded)"
+          ],
           "formularyStatus": "AVAILABLE",
           "calculatorIds": [
             "ledd"
@@ -5132,14 +5134,16 @@
       "verify": [],
       "relatedIds": [
         "acute-neuro:serotonin-syndrome",
-        "acute-neuro:delirium-vs-encephalopathy"
+        "acute-neuro:delirium-vs-encephalopathy",
+        "reference-cards:inpatient-parkinson-disease"
       ],
       "sources": [
         "Gurrera RJ, et al. An international consensus study of neuroleptic malignant syndrome diagnostic criteria using the Delphi method. J Clin Psychiatry 2011;72(9):1222-1228. doi:10.4088/JCP.10m06438",
         "Pileggi DJ, Cook AM. Neuroleptic malignant syndrome: focus on treatment and rechallenge. Ann Pharmacother 2016;50(11):973-981. doi:10.1177/1060028016657553",
-        "Reulbach U, et al. Managing an effective treatment for neuroleptic malignant syndrome. Crit Care 2007;11(1):R4. doi:10.1186/cc5148"
+        "Reulbach U, et al. Managing an effective treatment for neuroleptic malignant syndrome. Crit Care 2007;11(1):R4. doi:10.1186/cc5148",
+        "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "wernicke-encephalopathy",
@@ -5971,6 +5975,1019 @@
         "Santomasso BD, et al. Management of immune-related adverse events in patients treated with CAR T-cell therapy: ASCO guideline. J Clin Oncol 2021;39(35):3978-3992"
       ],
       "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "status-migrainosus",
+      "title": "Status migrainosus / refractory migraine (inpatient)",
+      "category": "HEADACHE",
+      "searchTerms": [
+        "status migrainosus",
+        "refractory migraine",
+        "migraine cocktail",
+        "DHE",
+        "dihydroergotamine",
+        "DHE protocol",
+        "prochlorperazine",
+        "Compazine",
+        "metoclopramide",
+        "occipital nerve block",
+        "GONB",
+        "headache admission"
+      ],
+      "presentation": [
+        "Migraine attack typical of the patient's prior attacks except for duration and severity: unremitting >72 h (remissions up to 12 h from medication or sleep allowed) and debilitating (ICHD-3 1.4.1)",
+        "Milder attacks that aren't debilitating are coded probable migraine (ICHD-3 1.5.1)"
+      ],
+      "definitions": [
+        "ICHD-3 1.4.1: patient with migraine with or without aura; attack typical except duration/severity; unremitting >72 h and debilitating; not better accounted for by another ICHD-3 diagnosis",
+        "If medication overuse meets ICHD-3 8.2 criteria, code medication-overuse headache plus the migraine type, not status migrainosus (ICHD-3 comment)",
+        "Evidence base: AHS grades come from ED trials of single migraine attacks (AHS 2025; AHS 2016); the DHE regimen comes from an uncontrolled inpatient audit of refractory chronic migraine, cluster headache and NDPH (Nagy 2011). Status migrainosus itself wasn't studied as a separate population"
+      ],
+      "immediateActions": [
+        {
+          "order": 1,
+          "window": "On admission",
+          "action": "Confirm the attack matches the patient's usual migraine; if not, work up a secondary cause. Stop overused acute medications and any triptan"
+        },
+        {
+          "order": 2,
+          "window": "First line",
+          "action": "IV prochlorperazine 10–12.5 mg (low EPS risk) or bilateral greater occipital nerve block (AHS 2025 Level A); metoclopramide, ketorolac or SC sumatriptan are Level B options"
+        },
+        {
+          "order": 3,
+          "window": "Recurrence",
+          "action": "Single-dose dexamethasone to reduce recurrence (AHS 2016 Level B)"
+        },
+        {
+          "order": 4,
+          "window": "Refractory",
+          "action": "IV DHE course if no label contraindication — antiemetic before every dose; see dosing conflict on the DHE item"
+        },
+        {
+          "order": 5,
+          "window": "Throughout",
+          "action": "Avoid opioids (hydromorphone: AHS 2025 Level A must NOT offer)"
+        }
+      ],
+      "workup": [
+        {
+          "test": "ECG",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Baseline before DHE (Nagy)",
+            "DHE label: with CAD risk factors, consider an ECG right after the first dose"
+          ]
+        },
+        {
+          "test": "CBC with differential, BMP (incl. BUN, creatinine, glucose), Ca, Mg, phosphate, PT/INR, PTT",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "Nagy pre-DHE baseline",
+            "DHE label: contraindicated in severe hepatic or renal impairment"
+          ]
+        },
+        {
+          "test": "Urine pregnancy test",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Patient who could be pregnant"
+          ],
+          "notes": [
+            "DHE label: avoid in pregnancy (may cause preterm labor)"
+          ]
+        },
+        {
+          "test": "Urine toxicology",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "Nagy pre-DHE baseline"
+          ]
+        }
+      ],
+      "treatment": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Prochlorperazine",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "10–12.5 mg IV, ± diphenhydramine 25 mg IV (as given in trials)",
+          "dose": [
+            {
+              "label": "Prochlorperazine",
+              "amountMin": 10,
+              "amountMax": 12.5,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            },
+            {
+              "label": "Diphenhydramine (adjunct, as in trials)",
+              "amountMin": 25,
+              "amountMax": 25,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Akathisia, sedation; treat akathisia with diphenhydramine or benztropine (AHS 2025)",
+            "Akathisia prophylaxis — sources disagree: AHS 2025 says anticholinergic premedication may reduce EPS (no trial cited); a class 1 trial adding diphenhydramine 50 mg to metoclopramide found no difference in EPS (AHS 2016)",
+            "EPS risk factors: personal or family history of EPS, younger age, longer use; typical antipsychotics highest risk (AHS 2025)"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "AHS 2025: Level A – must offer, in patients at low risk of extrapyramidal symptoms; highly likely effective"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Greater occipital nerve block",
+          "routes": [
+            "PERINEURAL"
+          ],
+          "doseText": "0.5–3 mL of 0.5% bupivacaine or 1% lidocaine per side",
+          "dose": [
+            {
+              "label": "Volume per side",
+              "amountMin": 0.5,
+              "amountMax": 3,
+              "unit": "ML",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Volume: recommendation says 0.5–3 mL; Table 2 lists 0.75–3 mL (AHS 2025)",
+            "Bilateral in the class I trials; better response with experienced injectors (≥7 prior blocks) in one trial",
+            "Watch the total local anesthetic dose (systemic toxicity)",
+            "Requires no local-anesthetic or injection-site contraindication"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "AHS 2025: Level A – must offer; highly likely effective"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "SECOND_LINE",
+          "agent": "Metoclopramide",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "10 mg IV when prochlorperazine isn't appropriate or available",
+          "dose": [
+            {
+              "label": "Metoclopramide",
+              "amountMin": 10,
+              "amountMax": 10,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "2016 trials used 10–20 mg; the 2025 recommendation is 10 mg",
+            "Akathisia",
+            "Combination with dexketoprofen helped in trials (dexketoprofen not on this card)"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "AHS 2025: Level B – should offer; likely effective"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "SECOND_LINE",
+          "agent": "Ketorolac",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "30–60 mg IV if no NSAID contraindication",
+          "dose": [
+            {
+              "label": "Ketorolac",
+              "amountMin": 30,
+              "amountMax": 60,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "AHS 2025: Level B – should offer; likely effective"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "SECOND_LINE",
+          "agent": "Sumatriptan",
+          "routes": [
+            "SC"
+          ],
+          "doseText": "3–6 mg SC; best early or while pain is mild",
+          "dose": [
+            {
+              "label": "Sumatriptan",
+              "amountMin": 3,
+              "amountMax": 6,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Not with serious cardiovascular disease (AHS 2025)",
+            "Not within 24 h of DHE, ergotamine or another triptan (AHS 2016; DHE label)"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "AHS 2025: Level B – should offer; highly likely effective; not Level A because inferior to prochlorperazine"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Supraorbital nerve block",
+          "routes": [
+            "PERINEURAL"
+          ],
+          "doseText": "0.25 mL 1% lidocaine, if occipital blocks are insufficient or not an option",
+          "dose": [
+            {
+              "label": "Volume per side",
+              "amountMin": 0.25,
+              "amountMax": 0.25,
+              "unit": "ML",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Best combined with occipital block; occipital alone outperformed supraorbital alone (class I)"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "AHS 2025: Level B — wording inconsistent: recommendation 'may offer'; narrative 'should offer'; Table 2 'Level B – May offer'"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Valproate",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "400–1000 mg IV (≥800 mg may perform better)",
+          "dose": [
+            {
+              "label": "Valproate",
+              "amountMin": 400,
+              "amountMax": 1000,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Likely inferior to dopamine antagonists and ketorolac (AHS 2025)",
+            "Label contraindications and interactions: see antiseizure-medications:valproate"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "AHS 2025: Level C – may offer; possibly effective"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Chlorpromazine",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "12.5–25 mg IV when prochlorperazine or metoclopramide aren't options",
+          "dose": [
+            {
+              "label": "Chlorpromazine",
+              "amountMin": 12.5,
+              "amountMax": 25,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Postural hypotension, sedation, akathisia — more adverse effects than prochlorperazine"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "AHS 2025: Level C – may offer; likely effective, downgraded for adverse effects"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Haloperidol",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "5 mg IV when prochlorperazine or metoclopramide aren't options",
+          "dose": [
+            {
+              "label": "Haloperidol",
+              "amountMin": 5,
+              "amountMax": 5,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Typical antipsychotics carry the highest EPS risk (AHS 2025)"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "AHS 2025: Level C – may offer (2016 grade unchanged)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Droperidol",
+          "routes": [
+            "IM"
+          ],
+          "doseText": "2.75–8.25 mg IM when prochlorperazine or metoclopramide aren't options",
+          "dose": [
+            {
+              "label": "Droperidol",
+              "amountMin": 2.75,
+              "amountMax": 8.25,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Akathisia and drowsiness in up to ~50%; rare life-threatening arrhythmias (AHS 2016)"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "AHS 2025: Level C – may offer (2016 grade unchanged)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Dexamethasone",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "Recurrence prevention: single 10–24 mg IV dose (ideal dose unknown). Acute pain: 8–16 mg IV",
+          "dose": [
+            {
+              "label": "Recurrence prevention (single dose)",
+              "amountMin": 10,
+              "amountMax": 24,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            },
+            {
+              "label": "Acute pain",
+              "amountMin": 8,
+              "amountMax": 16,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Meta-analysis of 3 placebo-controlled class 1 trials: NNT 9 for recurrence (AHS 2016)",
+            "Consider cumulative steroid exposure and glycemic control (AHS 2025; AHS 2016)"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "AHS 2016: Level B – should offer to prevent recurrence; not re-assessed in 2025",
+            "AHS 2025: Level C – may offer for acute pain"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Magnesium",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "1–2 g IV; may be considered in migraine with aura",
+          "dose": [
+            {
+              "label": "Magnesium sulfate",
+              "amountMin": 1,
+              "amountMax": 2,
+              "unit": "G",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "AHS 2025: Level U – no recommendation; may be considered with aura"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "THIRD_LINE",
+          "agent": "Dihydroergotamine (DHE)",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "Nagy 5-day protocol: ondansetron 4 mg IV 30 min before each dose; 0.5 mg in 100 mL NS over 1 h → if tolerated, 0.75 mg in 250 mL over 1 h 8 h later → 1 mg in 250 mL over 1 h q8h × 10 doses (target cumulative 11.25 ± 1 mg). CONFLICT: exceeds the label maximum (IV 2 mg/24 h, 6 mg/week; not for chronic daily use)",
+          "dose": [
+            {
+              "label": "Nagy dose 1",
+              "amountMin": 0.5,
+              "amountMax": 0.5,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            },
+            {
+              "label": "Nagy dose 2 (8 h later, if tolerated)",
+              "amountMin": 0.75,
+              "amountMax": 0.75,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            },
+            {
+              "label": "Nagy doses 3–12",
+              "amountMin": 1,
+              "amountMax": 1,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "q8h"
+              ],
+              "duration": [
+                "10 doses (days 2–5)"
+              ]
+            },
+            {
+              "label": "Label regimen (IV)",
+              "amountMin": 1,
+              "amountMax": 1,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 2,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "may repeat at 1-h intervals"
+              ],
+              "duration": [
+                "≤6 mg/week"
+              ]
+            }
+          ],
+          "notes": [
+            "Control nausea — it predicted failure to become pain-free (Nagy). Ondansetron 8 mg if nauseated at baseline; rescue: ondansetron 8 mg q8h or extra 4 mg PRN, promethazine 12.5–25 mg IV q12h PRN, slow infusion to 2–3 h, hold escalation or reduce dose",
+            "Domperidone (Nagy's other antiemetic) has limited US availability (Nagy)",
+            "Vitals (HR, BP, RR, temp, SpO2) before each dose (Nagy)",
+            "Leg cramps or joint pain: naproxen 500 mg q12h PRN (Nagy)",
+            "Transient headache worsening often settles with the next infusion; slow the next infusion (Nagy)",
+            "Higher cumulative dose predicted pain freedom; improvement continued up to a month after discharge (Nagy audit)",
+            "Stop immediately for signs of vasoconstriction — numbness, tingling, cold or pale digits, limb or chest pain (label)",
+            "Label: pleural/retroperitoneal fibrosis with prolonged daily use; don't use for chronic daily administration",
+            "Contraindications: next item"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Nagy 2011: uncontrolled audit (n=163; 114 chronic migraine)",
+            "AHS 2025 / 2016: DHE IV/SC Level U – no recommendation (ED trials didn't test the repetitive inpatient protocol)",
+            "DHE PI (Provepharm, rev 2/2025): Dosage and Administration, Warnings"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "NOT_RECOMMENDED",
+          "agent": "DHE with a label contraindication",
+          "routes": [
+            "IV",
+            "IM",
+            "SC"
+          ],
+          "doseText": "Don't give with: potent CYP3A4 inhibitors (boxed warning — ritonavir, nelfinavir, indinavir, erythromycin, clarithromycin, troleandomycin, ketoconazole, itraconazole); ischemic heart disease or coronary vasospasm; uncontrolled hypertension; triptan, ergot or methysergide within 24 h; hemiplegic or basilar migraine; peripheral arterial disease; sepsis; after vascular surgery; severe hepatic or renal impairment; ergot hypersensitivity; peripheral or central vasoconstrictors. Avoid in pregnancy",
+          "dose": [],
+          "notes": [
+            "CAD risk factors (HTN, hyperlipidemia, smoking, obesity, diabetes, family history, postmenopausal women, men >40): label strongly advises against unless a cardiovascular evaluation is satisfactory",
+            "Less potent CYP3A4 inhibitors with caution: saquinavir, nefazodone, fluconazole, grapefruit juice, fluoxetine, fluvoxamine, zileuton, clotrimazole",
+            "Breastfeeding: not during treatment or for 3 days after the last dose (label)",
+            "Nagy's protocol list adds any prior cerebrovascular event and any impaired liver or renal function",
+            "Use only with a clear migraine diagnosis — fatal cerebrovascular events have followed DHE given for symptoms wrongly attributed to migraine (label)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "DHE PI: Boxed warning, Contraindications, Warnings, Nursing Mothers",
+            "Nagy 2011 protocol appendix"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "NOT_RECOMMENDED",
+          "agent": "Opioids (hydromorphone, morphine)",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "Hydromorphone 1 mg IV: must not offer. Morphine 0.1 mg/kg IV: may not offer",
+          "dose": [],
+          "notes": [
+            "Inferior to prochlorperazine; more ED returns; risk of medication-overuse headache",
+            "Rare exceptions: no alternative, stable prior opioid response, low dependence/MOH risk (AHS 2025)"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "AHS 2025: hydromorphone Level A – Must NOT offer (box and table; narrative says 'should NOT')",
+            "AHS 2025: morphine Level C – may NOT offer (2016 grade unchanged)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "NOT_RECOMMENDED",
+          "agent": "Acetaminophen IV",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "1000 mg IV — may not offer",
+          "dose": [],
+          "notes": [
+            "Negative class 1 placebo-controlled trial"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "AHS 2025: Level C – may NOT offer; likely ineffective"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "NOT_RECOMMENDED",
+          "agent": "Diphenhydramine for pain",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "50 mg IV as an analgesic — may not offer",
+          "dose": [],
+          "notes": [
+            "Still used adjunctively to treat akathisia (AHS 2025)"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "AHS 2025: Level C – may NOT offer"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        }
+      ],
+      "pitfalls": [
+        "AHS 2025 Level U (no recommendation): ketamine, IV lidocaine, propofol, IV caffeine, granisetron, IV ibuprofen, SPG block, eptinezumab, parenteral promethazine, trimethobenzamide; prolonged inpatient ketamine/lidocaine infusions weren't assessed",
+        "IV fluids alone didn't reduce pain (class II) — give them for dehydration from vomiting (AHS 2025)",
+        "Overused acute drugs (ergots, triptans, opioids ≥10 days/month) can cause medication-overuse headache (DHE label); Nagy stopped all overuse on admission and started preventives ~1 week after discharge",
+        "Not on card (US availability not addressed in sources): dexketoprofen, IV acetylsalicylic acid, IM diclofenac, lysine clonixinate; dipyrone is withdrawn from the US (AHS 2016)"
+      ],
+      "escalateWhen": [
+        "Attack differs from the patient's usual migraine, new focal deficit, or no response — reconsider a secondary cause (ICHD-3: not better accounted for by another diagnosis)",
+        "Chest pain or signs of vasoconstriction on DHE → stop DHE, ECG and evaluate before further doses (label)"
+      ],
+      "institutionVaries": [
+        "Who performs occipital/supraorbital nerve blocks on the ward",
+        "DHE order set, telemetry and infusion policy"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:valproate",
+        "consult-workups:thunderclap-headache",
+        "acute-neuro:post-dural-puncture-headache"
+      ],
+      "sources": [
+        "Headache Classification Committee of the International Headache Society (IHS). The International Classification of Headache Disorders, 3rd edition: 1.4.1 Status migrainosus. Cephalalgia 2018;38(1):1-211 (ichd-3.org, accessed 2026-11-07)",
+        "Robblee J, et al. 2025 guideline update to acute treatment of migraine for adults in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache 2026;66(1):53-76. doi:10.1111/head.70016",
+        "Orr SL, et al. Management of adults with acute migraine in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache 2016;56(6):911-940. doi:10.1111/head.12835",
+        "Nagy AJ, et al. Intravenous dihydroergotamine for inpatient management of refractory primary headaches. Neurology 2011;77:1827-1832",
+        "Dihydroergotamine mesylate injection US prescribing information. Provepharm; revised 2/2025"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "post-dural-puncture-headache",
+      "title": "Post-dural puncture headache (post-LP) and epidural blood patch",
+      "category": "HEADACHE",
+      "searchTerms": [
+        "PDPH",
+        "post-LP headache",
+        "post lumbar puncture headache",
+        "spinal headache",
+        "blood patch",
+        "EBP",
+        "epidural blood patch",
+        "low pressure headache"
+      ],
+      "presentation": [
+        "Headache or neurologic symptoms, often relieved lying flat, within 5 days of a neuraxial procedure — suspect PDPH",
+        "Often neck stiffness and subjective hearing symptoms; also spinal pain, visual disturbance, vertigo",
+        "Higher risk: younger adults and women (high certainty); prior headache history (moderate)"
+      ],
+      "definitions": [
+        "ICHD-3 (as summarized by the consensus): headache within 5 days of LP from CSF leak, usually with neck stiffness or hearing symptoms, remitting within 2 weeks or after the leak is sealed",
+        "Consensus caveats: onset can be >5 days; a postural component is usually present; the puncture may go unnoticed; headache can outlast 2 weeks"
+      ],
+      "immediateActions": [
+        {
+          "order": 1,
+          "window": "At diagnosis",
+          "action": "Confirm timing and postural pattern; check for imaging triggers (workup)"
+        },
+        {
+          "order": 2,
+          "window": "Conservative",
+          "action": "Oral hydration (IV only if oral not possible); scheduled acetaminophen + NSAID unless contraindicated; caffeine in the first 24 h of symptoms (≤900 mg/day)"
+        },
+        {
+          "order": 3,
+          "window": "If analgesia fails",
+          "action": "Short-term opioid may be considered; occipital nerve block may be offered after spinal with a ≥22 G needle"
+        },
+        {
+          "order": 4,
+          "window": "Refractory and impairing ADLs, or severe neuro symptoms",
+          "action": "Epidural blood patch (anesthesia or IR)"
+        },
+        {
+          "order": 5,
+          "window": "Until resolved",
+          "action": "Follow until headache resolves; urgent imaging if worse after EBP, new focal deficit, or headache changes"
+        }
+      ],
+      "workup": [
+        {
+          "test": "Brain imaging",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Non-orthostatic headache, or orthostatic headache that becomes non-orthostatic",
+            "Onset >5 days after dural puncture",
+            "Focal deficit, visual change, altered consciousness or seizure (especially postpartum)",
+            "Worsening despite EBP, new focal symptoms or change in headache"
+          ],
+          "notes": [
+            "Alternatives to exclude include subdural hematoma and CVST",
+            "Routine imaging before EBP: insufficient evidence (statement, low certainty)"
+          ]
+        },
+        {
+          "test": "Antithrombotic review, platelet count and temperature before EBP",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "Follow neuraxial antithrombotic guidance — see vascular-antithrombotics:periprocedural-holds-lp-evd (B, moderate)",
+            "Pregnancy: platelets ≥70,000/µL with normal function and coagulation → low epidural hematoma risk (statement, moderate)",
+            "Fever or systemic infection: caution; deferring EBP may be appropriate (C, moderate)"
+          ]
+        }
+      ],
+      "treatment": [
+        {
+          "role": "SUPPORTIVE",
+          "agent": "Hydration",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Maintain oral hydration; IV fluids only when oral intake can't be maintained",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Uppal 2023: grade C, low certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "SUPPORTIVE",
+          "agent": "Bed rest",
+          "routes": [
+            "NON_PHARM"
+          ],
+          "doseText": "Temporizing symptom relief only — not routine treatment",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Uppal 2023: grade C, low certainty (routine use not supported)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Multimodal analgesia (acetaminophen + NSAID)",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Scheduled, unless contraindicated (source gives no doses)",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Uppal 2023: grade B, low certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Caffeine",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "First 24 h of symptoms; max 900 mg/day (200–300 mg/day if breastfeeding); avoid multiple sources",
+          "dose": [],
+          "notes": [
+            "Evidence from 2 small RCTs; excess can cause withdrawal, dehydration, seizures"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Uppal 2023: grade B, low certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Opioid, short-term",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "May consider short-term if multimodal analgesia fails; no long-term use",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Uppal 2023: short-term grade C, low certainty; long-term grade D, moderate certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Greater occipital nerve block",
+          "routes": [
+            "PERINEURAL"
+          ],
+          "doseText": "May offer after spinal anesthesia with a narrower (≥22 G) needle (source gives no volume)",
+          "dose": [],
+          "notes": [
+            "Headache may recur; more severe headache may still need EBP",
+            "Benefit after wider-gauge punctures unclear (statement, low certainty)"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Uppal 2023: grade C, moderate certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "SECOND_LINE",
+          "agent": "Epidural blood patch",
+          "routes": [
+            "EPIDURAL"
+          ],
+          "doseText": "Autologous blood, usually 15–20 mL (optimal volume unknown; >30 mL adds nothing), at or one level below the puncture; inject slowly and stop for significant back pain or headache",
+          "dose": [
+            {
+              "label": "Usual volume (consensus statement)",
+              "amountMin": 15,
+              "amountMax": 20,
+              "unit": "ML",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Indications: refractory to conservative care and impairing ADLs (B, moderate); severe neurologic symptoms such as hearing loss or cranial neuropathy (C, moderate)",
+            "Within 48 h of dural puncture: counsel that a repeat EBP is more likely (B, moderate)",
+            "Complete relief 33–91% in recent series (statement, low)",
+            "Consent: repeat dural puncture, backache, neurologic complications (A, high)",
+            "Strict asepsis (B); no routine blood cultures (D, low)",
+            "Image guidance (fluoroscopy/CT, transforaminal) individualized — e.g., prior laminectomy or failed interlaminar EBP (C, moderate)",
+            "Persistent, worsening or changed backache after EBP → look for another diagnosis (C, low)",
+            "Prior EBP shouldn't stop future epidural analgesia (C, low)"
+          ],
+          "evidenceLevel": "MODERATE",
+          "evidenceNote": [
+            "Uppal 2023: grade B, moderate certainty (EBP when refractory and impairing ADLs)",
+            "Volume and success figures: ungraded consensus statements (low; >30 mL moderate)"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "NOT_RECOMMENDED",
+          "agent": "Abdominal binders, aromatherapy",
+          "routes": [
+            "NON_PHARM"
+          ],
+          "doseText": "Not supported",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Uppal 2023: grade D, low certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "NOT_RECOMMENDED",
+          "agent": "Spinal or epidural morphine",
+          "routes": [
+            "INTRATHECAL",
+            "EPIDURAL"
+          ],
+          "doseText": "Not supported",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Uppal 2023: grade D, low certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "NOT_RECOMMENDED",
+          "agent": "Routine drug therapy beyond analgesia/caffeine",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Hydrocortisone, theophylline, triptans, ACTH/cosyntropin, neostigmine/atropine, piritramide, methylergonovine, gabapentin — evidence doesn't support routine use",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Uppal 2023: grade I, low certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "NOT_RECOMMENDED",
+          "agent": "Other procedures",
+          "routes": [
+            "PERINEURAL",
+            "EPIDURAL",
+            "NON_PHARM"
+          ],
+          "doseText": "SPG block, acupuncture, epidural dextran/gelatin/hydroxyethyl starch, routine fibrin glue — evidence doesn't support routine use",
+          "dose": [],
+          "notes": [
+            "Fibrin glue: reserve for EBP-refractory PDPH or when EBP is contraindicated; anaphylaxis and aseptic meningitis reported",
+            "Epidural saline: temporary benefit at most (statement, low)"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Uppal 2023: grade I, low certainty"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        }
+      ],
+      "pitfalls": [
+        "No routine prophylactic EBP after dural puncture (I, low), no prophylactic bed rest (D, moderate), no routine prophylactic drugs or neuraxial injections (I, low)",
+        "Your own LPs: use noncutting (atraumatic) needles in all populations (A, high); if cutting, narrower gauge (A, high) with the bevel parallel to the spine's long axis (B, moderate); lateral decubitus and fewer attempts are associated with lower risk (statements, moderate)",
+        "Long-term associations: chronic headache, back/neck pain, depression, cranial nerve palsy, SDH, CVST (moderate); unknown whether EBP prevents them",
+        "Hand off: tell the primary team/PCP about the PDPH and arrange follow-up until resolution (B, moderate)"
+      ],
+      "escalateWhen": [
+        "Worsening despite EBP, new focal neurologic symptoms, or change in headache character → urgent neuroimaging and specialist referral (B, moderate)",
+        "Focal deficit, visual change, altered consciousness or seizure → neuroimaging for an alternative diagnosis (B, moderate)"
+      ],
+      "institutionVaries": [
+        "Who performs EBP (anesthesia vs interventional radiology) and with what image guidance",
+        "Post-LP follow-up pathway (consensus: centers doing LPs should have one)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "vascular-antithrombotics:periprocedural-holds-lp-evd",
+        "consult-workups:thunderclap-headache",
+        "acute-neuro:status-migrainosus"
+      ],
+      "sources": [
+        "Uppal V, et al. Consensus practice guidelines on postdural puncture headache from a multisociety, international working group: a summary report. JAMA Netw Open 2023;6(8):e2325387. doi:10.1001/jamanetworkopen.2023.25387"
+      ],
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }

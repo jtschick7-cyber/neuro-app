@@ -1,0 +1,1054 @@
+{
+  "title": "Antiseizure medication dosing",
+  "scopeNotes": [
+    "Adults; maintenance and titration only — loading doses live in the status epilepticus entries and load calculators",
+    "CRRT dosing not covered — no institutional or published source supplied; ask pharmacy",
+    "Phenobarbital not covered — no source supplied"
+  ],
+  "version": "1.0.0",
+  "schemaVersion": "1.0.0",
+  "lastUpdated": "2026-11-06",
+  "entries": [
+    {
+      "id": "levetiracetam",
+      "title": "Levetiracetam (Keppra) — maintenance dosing",
+      "searchTerms": [
+        "Keppra",
+        "LEV",
+        "levetiracetam renal dose",
+        "Keppra dialysis",
+        "Keppra IV to PO"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Levetiracetam",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Partial-onset (adults ≥16 y): start 500 mg q12h; may ↑ by 1000 mg/day every 2 weeks; max 3000 mg/day. JME myoclonic and PGTC: same start, titrate to 3000 mg/day",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 500,
+              "amountMax": 500,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 3000,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "q12h"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance (normal renal function)",
+              "amountMin": 500,
+              "amountMax": 1500,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 3000,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "q12h"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Label: no evidence that >3000 mg/day adds benefit"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Keppra injection label §2.1–2.3, Table 2 (normal-function row)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": [
+            "levetiracetam-load"
+          ]
+        }
+      ],
+      "renal": [
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 80,
+          "crclMax": null,
+          "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+          "label": "CrCl >80 mL/min/1.73 m² (normal)",
+          "doseText": "500–1500 mg q12h",
+          "dose": [
+            {
+              "label": "Normal",
+              "amountMin": 500,
+              "amountMax": 1500,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "q12h"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 50,
+          "crclMax": 80,
+          "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+          "label": "CrCl 50–80 mL/min/1.73 m² (mild)",
+          "doseText": "500–1000 mg q12h",
+          "dose": [
+            {
+              "label": "Mild",
+              "amountMin": 500,
+              "amountMax": 1000,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "q12h"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 30,
+          "crclMax": 50,
+          "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+          "label": "CrCl 30–50 mL/min/1.73 m² (moderate)",
+          "doseText": "250–750 mg q12h",
+          "dose": [
+            {
+              "label": "Moderate",
+              "amountMin": 250,
+              "amountMax": 750,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "q12h"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": null,
+          "crclMax": 30,
+          "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+          "label": "CrCl <30 mL/min/1.73 m² (severe)",
+          "doseText": "250–500 mg q12h",
+          "dose": [
+            {
+              "label": "Severe",
+              "amountMin": 250,
+              "amountMax": 500,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "q12h"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": []
+        },
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "ESRD on dialysis",
+          "doseText": "500–1000 mg q24h, plus a 250–500 mg supplemental dose after dialysis",
+          "dose": [
+            {
+              "label": "Daily",
+              "amountMin": 500,
+              "amountMax": 1000,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "q24h"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Post-dialysis supplement",
+              "amountMin": 250,
+              "amountMax": 500,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "After each dialysis session"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "~50% of body levetiracetam removed by a standard 4-h hemodialysis (label §12.3)"
+          ]
+        }
+      ],
+      "renalNotes": [
+        "Label bands use CrCl normalized to BSA: CrCl (mL/min) from Cockcroft-Gault × 1.73 / BSA (m²) (§2.7)",
+        "No pediatric renal dosing in label"
+      ],
+      "hepatic": [
+        "No adjustment: mild–moderate PK unchanged; severe (Child-Pugh C) clearance ↓50%, mostly from reduced renal clearance (§12.3)"
+      ],
+      "ivPo": [
+        "IV ↔ PO 1:1: same total daily dose and frequency in both directions (§2.4–2.5)",
+        "IV: dilute in 100 mL NS, LR or D5W; give over 15 min (§2.6)",
+        "No clinical study experience with IV levetiracetam beyond 4 days (§2.1)"
+      ],
+      "enteral": [
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [],
+      "interactions": [
+        "Unlikely to cause or be subject to PK interactions; not CYP450-dependent (§12.3)"
+      ],
+      "pearls": [
+        "Avoid abrupt withdrawal — risk of increased seizures and status epilepticus (§2.8)",
+        "Elderly: renally cleared — dose by renal function (§8.5)"
+      ],
+      "calculatorIds": [
+        "levetiracetam-load",
+        "cockcroft-gault"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:brivaracetam"
+      ],
+      "sources": [
+        "Keppra (levetiracetam) injection US prescribing information. UCB; revised 6/2025 (user-supplied label)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "lacosamide",
+      "title": "Lacosamide (Vimpat) — maintenance dosing",
+      "searchTerms": [
+        "Vimpat",
+        "LCM",
+        "lacosamide renal dose",
+        "Vimpat dialysis",
+        "Vimpat IV to PO"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Lacosamide — monotherapy (partial-onset)",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Adults ≥17 y: start 100 mg BID; ↑ by 50 mg BID weekly; maintenance 150–200 mg BID (300–400 mg/day)",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 100,
+              "amountMax": 100,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 150,
+              "amountMax": 200,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Vimpat label §2.1, Table 1"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Lacosamide — adjunctive (partial-onset or PGTC)",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Adults ≥17 y: start 50 mg BID; ↑ by 50 mg BID weekly; maintenance 100–200 mg BID (200–400 mg/day)",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 50,
+              "amountMax": 50,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 100,
+              "amountMax": 200,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Adjunctive trials: >400 mg/day was not more effective and had substantially more adverse reactions"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Vimpat label §2.1, Table 1"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Lacosamide — alternate initial regimen (faster to maintenance)",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Adults ≥17 y: single 200 mg loading dose, then 100 mg BID starting 12 h later for 1 week; then titrate weekly if needed",
+          "dose": [
+            {
+              "label": "Loading dose",
+              "amountMin": 200,
+              "amountMax": 200,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Then",
+              "amountMin": 100,
+              "amountMax": 100,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "BID, starting 12 h after load"
+              ],
+              "duration": [
+                "1 week, then titrate"
+              ]
+            }
+          ],
+          "notes": [
+            "Give the load under medical supervision — more CNS and cardiovascular adverse reactions (§2.2)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Vimpat label §2.2, Table 2"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 30,
+          "crclMax": null,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl ≥30 mL/min (Cockcroft-Gault)",
+          "doseText": "No adjustment",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": null,
+          "crclMax": 30,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl <30 mL/min (Cockcroft-Gault) or ESRD",
+          "doseText": "Reduce the maximum dosage by 25% (300 mg/day if the maximum is 400 mg/day)",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "Intermittent hemodialysis",
+          "doseText": "Effectively removed by HD; after a 4-h session consider supplementing up to 50% of the dose",
+          "dose": [],
+          "notes": []
+        }
+      ],
+      "renalNotes": [
+        "In all renal impairment, start and titrate by response and tolerability (§2.4)",
+        "With strong CYP3A4 and CYP2C9 inhibitors, a dose reduction may be needed in renal impairment (§2.4)"
+      ],
+      "hepatic": [
+        "Mild or moderate: reduce the maximum dosage by 25% (§2.5)",
+        "Severe: not recommended (§2.5)",
+        "With strong CYP3A4 and CYP2C9 inhibitors, a dose reduction may be needed in hepatic impairment (§2.5)"
+      ],
+      "ivPo": [
+        "IV and oral dosing are the same (§2.1)",
+        "IV over 30–60 min; adults may receive it over as little as 15 min if required (§2.7)",
+        "IV experience limited to 5 consecutive days (§2.1)"
+      ],
+      "enteral": [
+        "Tablets: swallow whole; do not divide (§2.6)",
+        "Oral solution may be given via NG or gastrostomy tube (§2.6)"
+      ],
+      "levels": [],
+      "interactions": [
+        "Strong CYP3A4/CYP2C9 inhibitors: dose reduction may be needed with renal or hepatic impairment (§2.4–2.5)",
+        "Phenytoin/fosphenytoin may lower lacosamide levels (Cerebyx label Table 7)"
+      ],
+      "pearls": [
+        "IV can cause bradycardia, AV block and ventricular tachyarrhythmia; ECG before starting and at steady state if proarrhythmic conditions or conduction-affecting drugs (§2.7)",
+        "Withdraw gradually over ≥1 week (§2.8)"
+      ],
+      "calculatorIds": [
+        "cockcroft-gault"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ],
+      "sources": [
+        "Vimpat (lacosamide) tablets, injection, oral solution US prescribing information. UCB; revised 5/2026 (user-supplied label)",
+        "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "brivaracetam",
+      "title": "Brivaracetam (Briviact) — maintenance dosing",
+      "searchTerms": [
+        "Briviact",
+        "BRV",
+        "brivaracetam liver dose",
+        "Briviact IV"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Brivaracetam",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Adults ≥16 y: 50 mg BID; adjust to 25–100 mg BID (50–200 mg/day) by response and tolerability; no titration needed",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 50,
+              "amountMax": 50,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance range",
+              "amountMin": 25,
+              "amountMax": 100,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 200,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Briviact label §2.1, Table 1"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "ESRD on dialysis",
+          "doseText": "Not recommended — no data (§8.6)",
+          "dose": [],
+          "notes": []
+        }
+      ],
+      "renalNotes": [
+        "No adjustment for renal impairment (§8.6)",
+        "<10% excreted unchanged; HD not expected to enhance clearance (§10)"
+      ],
+      "hepatic": [
+        "All Child-Pugh classes: start 25 mg BID; max 75 mg BID (150 mg/day) (§2.5, Table 2)"
+      ],
+      "ivPo": [
+        "IV = PO: same dose and frequency; tablets, solution and injection interchangeable (§2.1, §12.3)",
+        "IV over 2–15 min; undiluted or in NS, LR or D5W (§2.3)",
+        "IV experience up to 4 consecutive days (§2.1)"
+      ],
+      "enteral": [
+        "Tablets: swallow whole; do not chew or crush (§2.2)",
+        "Oral solution may be given via NG or gastrostomy tube (§2.2)"
+      ],
+      "levels": [],
+      "interactions": [
+        "Rifampin: increase brivaracetam dose by up to 100% (§2.6, §7.1)",
+        "Phenytoin: brivaracetam can raise phenytoin levels — monitor levels when adding or stopping (§7.3)",
+        "Carbamazepine: ↑ carbamazepine-epoxide; reduce carbamazepine if not tolerated (§7.2)",
+        "CYP2C19 poor metabolizers or CYP2C19 inhibitors may need a lower dose (§12.3)"
+      ],
+      "pearls": [
+        "No added benefit when combined with levetiracetam (§7.4)",
+        "Psychiatric adverse reactions (irritability, psychosis) can occur (§5.3)"
+      ],
+      "calculatorIds": [],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:levetiracetam",
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ],
+      "sources": [
+        "Briviact (brivaracetam) tablets, oral solution, injection US prescribing information. UCB; revised 4/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "valproate",
+      "title": "Valproate (Depacon IV / Depakote) — maintenance dosing",
+      "searchTerms": [
+        "Depakote",
+        "Depacon",
+        "VPA",
+        "valproic acid",
+        "divalproex",
+        "valproate level",
+        "free valproate"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Valproate — epilepsy (complex partial or absence)",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Adults and children ≥10 y: start 10–15 mg/kg/day; ↑ by 5–10 mg/kg/day weekly to response; max 60 mg/kg/day. Divide if >250 mg/day",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 10,
+              "amountMax": 15,
+              "unit": "MG",
+              "basis": "PER_KG",
+              "timing": "PER_DAY",
+              "weightBasis": "ACTUAL",
+              "caps": [],
+              "frequency": [
+                "Divided if >250 mg/day"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Weekly increment",
+              "amountMin": 5,
+              "amountMax": 10,
+              "unit": "MG",
+              "basis": "PER_KG",
+              "timing": "PER_DAY",
+              "weightBasis": "ACTUAL",
+              "caps": [],
+              "frequency": [
+                "Weekly"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Label maximum 60 mg/kg/day (not expressible as a DoseCap — per-kg)",
+            "Elderly: lower starting dose, slower titration (§2.2)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Valproate sodium injection label §2.1–2.2; Depakote label §2.2"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": [
+            "valproate-load"
+          ]
+        }
+      ],
+      "renal": [
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "Intermittent hemodialysis",
+          "doseText": "No dose adjustment per label; HD lowers valproate concentrations ~20%",
+          "dose": [],
+          "notes": []
+        }
+      ],
+      "renalNotes": [
+        "No adjustment in renal failure; CrCl <10 mL/min: unbound clearance ↓27% (IV label §12.3)",
+        "Protein binding substantially reduced in renal failure — total levels may mislead (IV label §12.3)"
+      ],
+      "hepatic": [
+        "Contraindicated in hepatic disease or significant hepatic dysfunction (label §4)",
+        "Hepatic disease: free levels may be high while total looks normal (IV label §12.3)"
+      ],
+      "ivPo": [
+        "Oral → IV: same total daily dose, same frequency; infuse over 60 min, ≤20 mg/min (IV label §2.1)",
+        "IV–oral equivalence shown only with q6h dosing; with BID/TID IV dosing, troughs may be lower — monitor trough levels (IV label §2.1)",
+        "IV use >14 days not studied — switch to oral when feasible (IV label §2.1)",
+        "Valproic acid → Depakote: same daily dose and schedule; once stable, BID or TID may be used (Depakote §2.2)"
+      ],
+      "enteral": [
+        "Depakote delayed-release: swallow whole; do not crush or chew (Depakote §2.1)",
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "Usual therapeutic range 50–100 mcg/mL total (epilepsy)",
+        "Thrombocytopenia risk rises at total ≥110 mcg/mL (women) or ≥135 mcg/mL (men)",
+        "Free fraction rises with concentration (~10% at 40 → 18.5% at 130 mcg/mL) and is higher in elderly, hyperlipidemia, hepatic and renal disease — total level is not a reliable index of active drug (IV label §12.2–12.3)"
+      ],
+      "interactions": [
+        "Carbapenems (meropenem, imipenem, ertapenem): clinically significant ↓ valproate levels with loss of seizure control — monitor levels; change antibiotic or ASM if levels drop",
+        "Phenytoin, carbamazepine, phenobarbital can double valproate clearance (IV label §7.1)",
+        "Aspirin: valproate free fraction ↑ ~4-fold (IV label §7.1)",
+        "Lamotrigine: valproate more than doubles lamotrigine levels — lamotrigine dose must be reduced; ↑ serious rash risk",
+        "Phenytoin: valproate displaces phenytoin (free fraction +60% in volunteers) — use free phenytoin levels; combination ↑ hyperammonemia risk",
+        "Topiramate: hyperammonemia and encephalopathy (IV label §7.3)"
+      ],
+      "pearls": [
+        "Check ammonia for unexplained lethargy, vomiting or mental-status change (label §5)",
+        "Boxed warnings: hepatotoxicity, fetal risk, pancreatitis",
+        "Contraindicated with POLG mitochondrial disease and urea cycle disorders (label §4)"
+      ],
+      "calculatorIds": [
+        "valproate-load"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "asm-interactions:carbapenems-valproate",
+        "antiseizure-medications:lamotrigine",
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ],
+      "sources": [
+        "Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)",
+        "Depakote (divalproex sodium) delayed-release tablets US prescribing information. AbbVie; revised 3/2026 (user-supplied label)",
+        "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)",
+        "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "phenytoin-fosphenytoin",
+      "title": "Phenytoin / fosphenytoin — maintenance dosing and levels",
+      "searchTerms": [
+        "Dilantin",
+        "Cerebyx",
+        "PHT",
+        "fosphenytoin maintenance",
+        "phenytoin level",
+        "free phenytoin",
+        "corrected phenytoin"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Fosphenytoin IV",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "Adult initial maintenance 4–6 mg PE/kg/day in divided doses; ≤150 mg PE/min; then individualize by levels",
+          "dose": [
+            {
+              "label": "Initial maintenance",
+              "amountMin": 4,
+              "amountMax": 6,
+              "unit": "MG_PE",
+              "basis": "PER_KG",
+              "timing": "PER_DAY",
+              "weightBasis": "ACTUAL",
+              "caps": [
+                {
+                  "amount": 150,
+                  "unit": "MG_PE",
+                  "scope": "MAX_RATE_PER_MIN"
+                }
+              ],
+              "frequency": [
+                "Divided doses"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Continuous ECG, BP and respiratory monitoring during and after IV infusion (boxed warning)",
+            "IM ordinarily not used (§2.4)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Cerebyx label §2.4, Table 3"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": [
+            "fosphenytoin-load",
+            "phenytoin-correction"
+          ]
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Phenytoin extended capsules (Dilantin)",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Adults: start 100 mg TID; most need 100 mg TID–QID; max 200 mg TID. Once-daily 300 mg only with extended capsules, once controlled on 100 mg TID",
+          "dose": [
+            {
+              "label": "Maintenance",
+              "amountMin": 100,
+              "amountMax": 100,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 600,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "TID–QID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Dilantin label §2.1"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": [
+            "phenytoin-correction"
+          ]
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Phenytoin oral suspension 125 mg/5 mL",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Adults: start 125 mg (5 mL) TID; up to 625 mg (25 mL)/day",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 125,
+              "amountMax": 125,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 625,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "TID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Free acid — ~8% more phenytoin than the sodium-salt products (capsules, IV); monitor levels when switching (§2.4)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Phenytoin oral suspension label §2.2, §2.4"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": [
+            "phenytoin-correction"
+          ]
+        }
+      ],
+      "renal": [],
+      "renalNotes": [
+        "No renal dose table; unbound fraction ↑ in renal disease — dose and monitor by free levels (Cerebyx §2.7; Dilantin §2.5)",
+        "After IV fosphenytoin in renal/hepatic disease or hypoalbuminemia, conversion to phenytoin may outpace phenytoin clearance → more adverse events (Cerebyx §2.7)",
+        "Fosphenytoin phosphate load 0.0037 mmol/mg PE — consider in severe renal impairment (Cerebyx §5.12)",
+        "Labels give no hemodialysis dosing"
+      ],
+      "hepatic": [
+        "Liver impairment: early toxicity possible; monitor unbound levels (Cerebyx §8.6)"
+      ],
+      "ivPo": [
+        "Oral phenytoin → fosphenytoin IV/IM: same total daily mg PE; levels may rise modestly (capsules ~90% bioavailable vs 100% IV/IM) (Cerebyx §2.6)",
+        "1 mg PE = 1 mg phenytoin sodium — no conversion between fosphenytoin and phenytoin sodium (Cerebyx §2.1, §5.1)",
+        "Suspension (free acid) ↔ capsules/IV (sodium salt): ~8% difference in drug content — monitor levels (Dilantin §2.4)"
+      ],
+      "enteral": [
+        "Enteral feeds lower phenytoin levels — don't give with a feed; check levels more often (Dilantin §7.4)",
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "Target 10–20 mcg/mL total; 1–2 mcg/mL free (Cerebyx §2.5; Dilantin §2.3)",
+        "Use free levels in renal or hepatic disease, hypoalbuminemia and pregnancy (Cerebyx §2.7, §2.9)",
+        "After fosphenytoin, wait ~2 h after IV (4 h after IM) to draw — immunoassays overestimate before conversion; if earlier, use EDTA tube (Cerebyx §2.5)",
+        "Steady state takes 7–10 days; don't change dose more often than every 7–10 days (Dilantin §2.3, §12.3)",
+        "Saturable metabolism: a ≥10% dose increase can raise levels disproportionately (Dilantin §12.3)",
+        "Toxicity is variable: nystagmus ~20, ataxia ~30, dysarthria/lethargy >40 mcg/mL (Cerebyx §10)"
+      ],
+      "interactions": [
+        "Valproate: displaces phenytoin and inhibits its metabolism — use free levels; ↑ hyperammonemia risk (Cerebyx §7.3)",
+        "Brivaracetam can raise phenytoin levels (Briviact §7.3)",
+        "Phenytoin lowers levels of apixaban, rivaroxaban, dabigatran, edoxaban, ticagrelor, nimodipine, lamotrigine (~40%) and lacosamide (Cerebyx Table 7; Lamictal Table 13)",
+        "TMP-SMX: ↑ phenytoin toxicity risk",
+        "Warfarin: PT/INR can rise or fall (Cerebyx Table 7)"
+      ],
+      "pearls": [
+        "IV contraindicated with sinus bradycardia, SA block, 2nd/3rd-degree AV block, Adams-Stokes (Cerebyx §4)",
+        "CYP2C9 *2/*3 carriers: start low and follow levels (Cerebyx §8.7)",
+        "Correction equations are estimates — see calc:phenytoin-correction; a measured free level is preferred"
+      ],
+      "calculatorIds": [
+        "phenytoin-correction",
+        "fosphenytoin-load"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "asm-interactions:tmp-smx-phenytoin",
+        "asm-interactions:inducing-asm-apixaban-rivaroxaban",
+        "asm-interactions:inducing-asm-warfarin",
+        "antiseizure-medications:valproate",
+        "calc:phenytoin-correction"
+      ],
+      "sources": [
+        "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)",
+        "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (DailyMed setid 86dd27d1-9cee-48ae-b55d-e2d2f7dbc593, accessed 2026-11-06)",
+        "Phenytoin oral suspension 125 mg/5 mL US prescribing information. Sun Pharmaceutical; revised 8/2025 (user-supplied label)",
+        "Briviact (brivaracetam) tablets, oral solution, injection US prescribing information. UCB; revised 4/2026 (user-supplied label)",
+        "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)",
+        "Kiang TK, Ensom MH. A comprehensive review on the predictive performance of the Sheiner-Tozer and derivative equations for the correction of phenytoin concentrations. Ann Pharmacother 2016;50(4):311-325. doi:10.1177/1060028016628166"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "lamotrigine",
+      "title": "Lamotrigine (Lamictal) — titration",
+      "searchTerms": [
+        "Lamictal",
+        "LTG",
+        "lamotrigine titration",
+        "lamotrigine valproate",
+        "lamotrigine restart"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Lamotrigine — WITH valproate",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Wk 1–2: 25 mg every other day. Wk 3–4: 25 mg daily. Then ↑ 25–50 mg/day every 1–2 wk. Usual maintenance 100–200 mg/day (valproate alone) or 100–400 mg/day (valproate + inducers), in 1–2 doses",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Lamictal label §2.2, Table 1 (epilepsy, >12 y)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Lamotrigine — NO valproate, NO inducers",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Wk 1–2: 25 mg daily. Wk 3–4: 50 mg daily. Then ↑ 50 mg/day every 1–2 wk. Usual maintenance 225–375 mg/day in 2 doses",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Lamictal label §2.2, Table 1 (epilepsy, >12 y)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Lamotrigine — WITH carbamazepine, phenytoin, phenobarbital or primidone (no valproate)",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Wk 1–2: 50 mg/day. Wk 3–4: 100 mg/day in 2 doses. Then ↑ 100 mg/day every 1–2 wk. Usual maintenance 300–500 mg/day in 2 doses",
+          "dose": [],
+          "notes": [
+            "Rifampin and lopinavir/ritonavir: use this column (§2.2)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Lamictal label §2.2, Table 1 (epilepsy, >12 y)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "Intermittent hemodialysis",
+          "doseText": "No supplemental dose stated; ~20% of body lamotrigine removed per 4-h session (§12.3)",
+          "dose": [],
+          "notes": []
+        }
+      ],
+      "renalNotes": [
+        "Start per concomitant medications; reduced maintenance doses may be effective in significant renal impairment; little experience in severe impairment — use caution (§2.1, §8.7)",
+        "Half-life roughly doubles in chronic renal failure (§8.7)"
+      ],
+      "hepatic": [
+        "Mild: no adjustment (§2.1)",
+        "Moderate or severe without ascites: reduce initial, escalation and maintenance doses by ~25% (§2.1)",
+        "Severe with ascites: reduce by ~50% (§2.1)"
+      ],
+      "ivPo": [
+        "Oral only — no parenteral formulation in label (§3)"
+      ],
+      "enteral": [
+        "Tablets for oral suspension: swallow whole, chew, or disperse in a small amount of water or diluted juice and take all of it (§2.5)",
+        "ODT: place on tongue; with or without water (§2.6)",
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "No established therapeutic range — dose by response; levels may help with interacting drugs (§2.1, §5.14)"
+      ],
+      "interactions": [
+        "Valproate: lamotrigine levels ↑ slightly more than 2-fold (Table 13)",
+        "Carbamazepine, phenytoin, phenobarbital/primidone, rifampin: lamotrigine ↓ ~40% (Table 13)",
+        "Estrogen-containing OCs: lamotrigine ↓ ~50%; maintenance often needs up to 2×; levels rise in the pill-free week (§2.1, §5.9)",
+        "Lopinavir/ritonavir ↓ ~50%; atazanavir/ritonavir ↓ ~32% (Table 13)",
+        "Avoid OCT2 substrates with a narrow therapeutic index (e.g., dofetilide) (§7)"
+      ],
+      "pearls": [
+        "Serious rash risk ↑ with valproate, exceeding the initial dose or escalation, HLA-B*1502; most within 2–8 weeks; stop at first rash unless clearly not drug-related (boxed warning)",
+        "Off >5 half-lives: restart with the initial titration; don't restart after lamotrigine rash unless benefit clearly outweighs risk (§2.1)",
+        "Class IB antiarrhythmic activity in vitro — weigh risk in structural/functional heart disease (§5.4)",
+        "Can cause false-positive PCP on rapid urine drug screens (§5.14)",
+        "Taper over ≥2 weeks (~50%/week) unless safety requires faster (§2.1)"
+      ],
+      "calculatorIds": [],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:valproate",
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ],
+      "sources": [
+        "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    }
+  ]
+}
