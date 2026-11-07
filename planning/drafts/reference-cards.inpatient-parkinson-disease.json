@@ -1,0 +1,463 @@
+{
+  "id": "inpatient-parkinson-disease",
+  "title": "Inpatient Parkinson disease: NPO, tube, antiemetics, psychosis",
+  "searchTerms": [
+    "Parkinson",
+    "PD",
+    "NPO Parkinson",
+    "rotigotine",
+    "Neupro",
+    "carbidopa levodopa",
+    "Sinemet",
+    "crush Sinemet",
+    "apomorphine",
+    "ondansetron apomorphine",
+    "pimavanserin",
+    "Nuplazid",
+    "quetiapine Parkinson",
+    "clozapine Parkinson",
+    "antiemetic Parkinson",
+    "LEDD"
+  ],
+  "scopeNote": "Rounds lookup for hospitalized adults with PD on dopaminergic therapy — not a protocol. Get movement-disorder input early when the usual regimen can't be given.",
+  "sections": [
+    {
+      "heading": "Keep dopaminergic therapy going",
+      "rows": [
+        {
+          "parameter": "Home regimen",
+          "condition": "Any admission, incl. perioperative",
+          "role": "RECOMMENDED",
+          "target": "Keep the usual drugs, doses and dose times; resume the usual dose as soon as oral medication is allowed",
+          "notes": [
+            "Labels: carbidopa-levodopa can continue up to anesthesia while oral medication is permitted; if interrupted, watch for an NMS-like syndrome",
+            "Abrupt reduction or withdrawal can cause hyperpyrexia, rigidity and altered consciousness — see acute-neuro:nms-parkinsonism-hyperpyrexia",
+            "Engage neurology / movement disorders early if the usual regimen can't be given (BMJ; Hwang)"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)",
+            "Hwang & Norris 2021 narrative review: ungraded",
+            "Sinemet and Sinemet CR PI, Interruption of Therapy: ungraded"
+          ],
+          "sources": [
+            "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+            "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+            "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018"
+          ]
+        },
+        {
+          "parameter": "Stopping rotigotine",
+          "condition": "Neupro taper",
+          "role": "RECOMMENDED",
+          "target": "Reduce by no more than 2 mg/24 h, preferably every other day — don't stop abruptly",
+          "notes": [
+            "Label §5.14: hyperpyrexia and confusion reported with rapid dose reduction, withdrawal or changes in antiparkinsonian therapy"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Neupro PI §2.4, §5.14"
+          ],
+          "sources": [
+            "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Enteral route first",
+      "rows": [
+        {
+          "parameter": "Tube route",
+          "condition": "Can't swallow, gut working",
+          "role": "RECOMMENDED",
+          "target": "Give carbidopa-levodopa via NG; immediate-release tablets can be crushed",
+          "notes": [
+            "Hwang: NG route for patients who can't continue their home regimen; a crushed IR dose in an acidic liquid (e.g., orange juice) is used as OFF-period rescue",
+            "Orally disintegrating carbidopa-levodopa still needs gut absorption (Hwang); BMJ cites two cases of worsening during ileus",
+            "The Sinemet IR label doesn't address crushing or tube administration — confirm flush/dispersal with pharmacy"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Hwang & Norris 2021 narrative review: ungraded",
+            "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)",
+            "Sinemet PI: silent on tube administration"
+          ],
+          "sources": [
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+            "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+            "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026"
+          ]
+        },
+        {
+          "parameter": "Controlled release",
+          "condition": "Sinemet CR",
+          "role": "NOT_RECOMMENDED",
+          "target": "Never crush or chew — swallow whole or half tablet",
+          "notes": [
+            "If switching CR → IR for tube use: CR levodopa bioavailability is ~70–75% of IR (label Table 2); BMJ suggests ~30% lower dose when switching CR to dispersible levodopa",
+            "Label IR → CR direction: give ~10% (up to 30%) more levodopa as CR",
+            "Other ER carbidopa-levodopa products aren't covered by the provided sources"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Sinemet CR PI: Dosage and Administration, Table 2; Precautions (information for patients)",
+            "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)"
+          ],
+          "sources": [
+            "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018",
+            "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718"
+          ]
+        },
+        {
+          "parameter": "Feeds and timing",
+          "condition": "Enteral feeds or meals",
+          "role": "RECOMMENDED",
+          "target": "Give doses on schedule; high-protein intake can delay and reduce levodopa absorption",
+          "notes": [
+            "Iron salts chelate levodopa — coadminister with caution (labels)",
+            "Avoid drugs that slow gastric emptying (Hwang)",
+            "No provided source gives a feed-hold interval — follow local pharmacy/nutrition practice"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Sinemet and Sinemet CR PI: Precautions, Drug Interactions: ungraded",
+            "Hwang & Norris 2021 narrative review: ungraded"
+          ],
+          "sources": [
+            "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+            "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018",
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "No reliable enteral route → rotigotine (BMJ 2010 algorithm)",
+      "rows": [
+        {
+          "parameter": "When",
+          "condition": "Non-oral route needed",
+          "role": "RECOMMENDED",
+          "target": "Both: oral route expected to be delayed AND ileus or another cause of poor absorption",
+          "notes": [
+            "Hwang: transdermal rotigotine or SC apomorphine may be considered"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods) (figure: indications box)",
+            "Hwang & Norris 2021 narrative review: ungraded"
+          ],
+          "sources": [
+            "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        },
+        {
+          "parameter": "LEDD — BMJ factors",
+          "condition": "Use BMJ's own factors, not calc:ledd",
+          "role": "RECOMMENDED",
+          "target": "A = levodopa mg/day (×0.7 if CR), then ×1.3 if on a COMT inhibitor. B = agonist mg/day × factor (ropinirole 20, rotigotine 20, pramipexole base 100, cabergoline 100, bromocriptine 10, apomorphine 10). LEDD = A + B",
+          "notes": [
+            "Levodopa dose excludes carbidopa",
+            "calc:ledd uses Jost 2023 factors, which differ (CR 0.75; COMT +0.33 or +0.5 of covered levodopa; pramipexole base 142.86; rotigotine 30.3) — don't feed its result into these steps"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods) (figure: LEF table)",
+            "Jost 2023 cited only for the factor comparison"
+          ],
+          "sources": [
+            "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+            "Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252"
+          ]
+        },
+        {
+          "parameter": "Rotigotine dose",
+          "condition": "BMJ adjusted LEDD ≤350 mg",
+          "role": "RECOMMENDED",
+          "target": "Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily",
+          "notes": [
+            "BMJ rounds up to 16 mg; the US label maximum is 6 mg/24 h (early PD) and 8 mg/24 h (advanced PD) — doses above 8 mg exceed the label",
+            "Example: levodopa IR 300 mg/day → 300 × 0.55 = 165 → 8.25 → 8 mg/24 h",
+            "Example: levodopa IR 600 mg/day → 330 → 16.5 → 16 mg/24 h per BMJ (twice the label maximum)",
+            "BMJ: the ×0.55 deliberately starts below equivalence; review and adjust early; may be too weak for high-dose regimens"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods) (figure: rotigotine box; text: switching section)",
+            "Neupro PI §2.1 (maximum doses)"
+          ],
+          "sources": [
+            "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+            "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+          ]
+        },
+        {
+          "parameter": "Patch handling",
+          "condition": "Neupro",
+          "role": "RECOMMENDED",
+          "target": "Strengths 1, 2, 3, 4, 6, 8 mg/24 h (combine patches for the dose); don't cut; remove before MRI or cardioversion (aluminum backing — burns)",
+          "notes": [
+            "Drug detectable ~3 h after application (range 1–8 h); Tmax 15–18 h; steady state in 2–3 days",
+            "No relevant PK change in renal impairment, including hemodialysis",
+            "Keep external heat off the patch — may increase absorption",
+            "Rotate sites; don't reuse a site within 14 days",
+            "Contains sodium metabisulfite (sulfite sensitivity)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Neupro PI §2.3, §3, §5.1, §5.12, §5.13, §12.3, §17"
+          ],
+          "sources": [
+            "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Antiemetics",
+      "rows": [
+        {
+          "parameter": "Ondansetron",
+          "condition": "Nausea, not on apomorphine",
+          "role": "RECOMMENDED",
+          "target": "Acceptable — doesn't appear to worsen motor symptoms",
+          "notes": [
+            "Contraindicated with apomorphine — see next row"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)",
+            "Hwang & Norris 2021 narrative review: ungraded"
+          ],
+          "sources": [
+            "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        },
+        {
+          "parameter": "5-HT3 antagonists",
+          "condition": "Patient on apomorphine",
+          "role": "NOT_RECOMMENDED",
+          "target": "Contraindicated: apomorphine with any 5-HT3 antagonist (ondansetron, granisetron, dolasetron, palonosetron, alosetron) — profound hypotension and loss of consciousness",
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Apokyn PI §2.2, §4 Contraindications, §7.1"
+          ],
+          "sources": [
+            "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022"
+          ]
+        },
+        {
+          "parameter": "Dopamine-blocking antiemetics",
+          "condition": "All PD patients",
+          "role": "NOT_RECOMMENDED",
+          "target": "Avoid metoclopramide, prochlorperazine, promethazine, chlorpromazine, haloperidol, droperidol",
+          "notes": [
+            "Apokyn §5.2 names haloperidol, chlorpromazine, promethazine, prochlorperazine and metoclopramide as worsening PD",
+            "Droperidol: class-level statement (dopamine-blocking antiemetics, Hwang); agent not named in provided sources",
+            "Metoclopramide may adversely affect disease control despite faster gastric emptying (Sinemet labels)",
+            "Dopamine antagonists may reduce the effect of rotigotine and apomorphine (labels)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Apokyn PI §5.2, §7.4; Neupro PI §7.1; Sinemet PI Drug Interactions: ungraded",
+            "BMJ 2010 practice pointer: ungraded; evidence mostly case reports (authors' methods)",
+            "Hwang & Norris 2021 narrative review: ungraded"
+          ],
+          "sources": [
+            "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
+            "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026",
+            "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+            "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Psychosis and agitation",
+      "rows": [
+        {
+          "parameter": "First steps",
+          "condition": "New hallucinations, psychosis or confusion",
+          "role": "RECOMMENDED",
+          "target": "Look for a trigger (infection, incl. UTI); then withdraw PD drugs in this order: anticholinergics → dopamine agonists → amantadine → MAO-B inhibitors → COMT inhibitors → levodopa",
+          "notes": [
+            "Weaning carbidopa-levodopa may be limited by motor severity — then add an antipsychotic (Hwang)"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Hwang & Norris 2021 narrative review: ungraded (Table 3)"
+          ],
+          "sources": [
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        },
+        {
+          "parameter": "Pimavanserin",
+          "condition": "PD psychosis (FDA indication)",
+          "role": "RECOMMENDED",
+          "target": "34 mg PO once daily, no titration (10 mg with a strong CYP3A4 inhibitor) — not a rapid agent: benefit shown over 6 weeks",
+          "notes": [
+            "QT prolongation — avoid with other QT-prolonging drugs; avoid strong or moderate CYP3A4 inducers",
+            "Capsule may be opened onto soft food; tube use not addressed in the label",
+            "Boxed warning: increased mortality in elderly patients with dementia-related psychosis (approved only when PD-related)"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "MDS 2019 (Seppi) Table 6: efficacious; acceptable risk without specialized monitoring; clinically useful",
+            "Nuplazid PI §1, §2, §5.2, §14"
+          ],
+          "sources": [
+            "Nuplazid (pimavanserin) capsules and tablets US prescribing information. Acadia; revised 4/2026",
+            "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602"
+          ]
+        },
+        {
+          "parameter": "Quetiapine",
+          "condition": "PD psychosis",
+          "role": "RECOMMENDED",
+          "target": "Low dose, off-label — MDS calls it a pragmatic first choice",
+          "notes": [
+            "No dose in the provided sources",
+            "No high-quality placebo RCT; similar efficacy to clozapine in clozapine-controlled trials",
+            "Blocks D2 but dissociates faster; used off-label with caution (Hwang)"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "MDS 2019 (Seppi) Table 6: insufficient evidence; acceptable risk without specialized monitoring; possibly useful",
+            "Hwang & Norris 2021 narrative review: ungraded"
+          ],
+          "sources": [
+            "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        },
+        {
+          "parameter": "Clozapine",
+          "condition": "PD psychosis, failed quetiapine/pimavanserin",
+          "role": "RECOMMENDED",
+          "target": "Efficacious but off-label, with label ANC monitoring: baseline ANC ≥1500/µL (≥1000 in benign ethnic neutropenia), weekly for 6 months; start 12.5 mg once or twice daily",
+          "notes": [
+            "Label indications are schizophrenia only",
+            "Boxed warnings: severe neutropenia; orthostatic hypotension, bradycardia, syncope (highest during titration); seizures; myocarditis/cardiomyopathy; dementia-related mortality",
+            "Anticholinergic GI hypomotility (ileus) — screen for constipation",
+            "Missed doses: 1 day → restart at 40–50%; 2 days → ~25%; longer → 12.5 mg",
+            "MDS: use when quetiapine or pimavanserin fail; can be first-line despite weekly blood counts"
+          ],
+          "evidenceLevel": "STRONG",
+          "evidenceNote": [
+            "MDS 2019 (Seppi) Table 6: efficacious; acceptable risk with specialized monitoring; clinically useful",
+            "Clozapine PI boxed warning, §2.1–2.6, §5.7",
+            "Hwang & Norris 2021 narrative review: ungraded"
+          ],
+          "sources": [
+            "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025",
+            "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        },
+        {
+          "parameter": "Olanzapine",
+          "condition": "PD psychosis",
+          "role": "NOT_RECOMMENDED",
+          "target": "Avoid — not efficacious, unacceptable risk",
+          "notes": [
+            "Based on a low-quality negative study (MDS)"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "MDS 2019 (Seppi) Table 6: not efficacious; unacceptable risk; not useful"
+          ],
+          "sources": [
+            "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602"
+          ]
+        },
+        {
+          "parameter": "Typical antipsychotics",
+          "condition": "All PD patients",
+          "role": "NOT_RECOMMENDED",
+          "target": "Avoid haloperidol and other typical antipsychotics — D2 blockade can irreversibly worsen motor symptoms",
+          "notes": [
+            "Also blunt rotigotine and apomorphine (labels)"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Hwang & Norris 2021 narrative review: ungraded",
+            "Apokyn PI §5.2, §7.4; Neupro PI §7.1"
+          ],
+          "sources": [
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+            "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
+            "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+          ]
+        },
+        {
+          "parameter": "Benzodiazepines",
+          "condition": "Agitation, insomnia",
+          "role": "NOT_RECOMMENDED",
+          "target": "Use sparingly; avoid long-term — linked in time to delirium, falls and balance impairment in advanced PD",
+          "notes": [
+            "Exception: benzodiazepines remain part of NMS / parkinsonism-hyperpyrexia treatment (see that entry)"
+          ],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Hwang & Norris 2021 narrative review: ungraded"
+          ],
+          "sources": [
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        },
+        {
+          "parameter": "Other deliriogenic drugs",
+          "condition": "Cognitive or neuropsychiatric symptoms",
+          "role": "NOT_RECOMMENDED",
+          "target": "Stop anticholinergics (strongest link to psychosis and delirium); avoid opioids where possible (delirium, falls, orthostasis, constipation); wean amantadine if confusion or psychosis",
+          "notes": [],
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Hwang & Norris 2021 narrative review: ungraded"
+          ],
+          "sources": [
+            "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277"
+          ]
+        }
+      ]
+    }
+  ],
+  "pitfalls": [
+    "calc:ledd (Jost 2023) and the BMJ algorithm use different factors — don't mix them",
+    "BMJ's adjusted LEDD >350 mg branch (continuous SC apomorphine with domperidone pre-load) is not on this card: the Apokyn label covers intermittent pen doses only (≤6 mg per dose)",
+    "Hallucinations, orthostasis and sudden sleep onset are dopaminergic adverse effects — consider them before adding drugs",
+    "Deep brain stimulator in situ: manufacturers advise avoiding electrocautery; bipolar diathermy if needed (BMJ)"
+  ],
+  "keyNumbers": [
+    "Rotigotine (BMJ 2010): LEDD (BMJ factors) × 0.55 ÷ 20 → nearest 2 mg, once daily",
+    "Neupro US max: 6 mg/24 h early PD, 8 mg/24 h advanced PD",
+    "Apomorphine + any 5-HT3 antagonist (incl. ondansetron): contraindicated",
+    "Sinemet CR: never crush; CR levodopa ≈70–75% as bioavailable as IR",
+    "Pimavanserin 34 mg daily (10 mg with strong CYP3A4 inhibitor) — benefit over weeks"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "calc:ledd",
+    "acute-neuro:nms-parkinsonism-hyperpyrexia"
+  ],
+  "sources": [
+    "Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718",
+    "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
+    "Sinemet (carbidopa and levodopa) tablets US prescribing information. Organon; revised 7/2026",
+    "Sinemet CR (carbidopa-levodopa) sustained-release tablets US prescribing information. Merck Sharp & Dohme; revised 4/2018",
+    "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026",
+    "Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252",
+    "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
+    "Nuplazid (pimavanserin) capsules and tablets US prescribing information. Acadia; revised 4/2026",
+    "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
+    "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

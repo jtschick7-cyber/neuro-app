@@ -1,0 +1,198 @@
+{
+  "id": "phenytoin-fosphenytoin",
+  "title": "Phenytoin / fosphenytoin — maintenance dosing and levels",
+  "searchTerms": [
+    "Dilantin",
+    "Cerebyx",
+    "PHT",
+    "fosphenytoin maintenance",
+    "phenytoin level",
+    "free phenytoin",
+    "corrected phenytoin"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Fosphenytoin IV",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Adult initial maintenance 4–6 mg PE/kg/day in divided doses; ≤150 mg PE/min; then individualize by levels",
+      "dose": [
+        {
+          "label": "Initial maintenance",
+          "amountMin": 4,
+          "amountMax": 6,
+          "unit": "MG_PE",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [
+            {
+              "amount": 150,
+              "unit": "MG_PE",
+              "scope": "MAX_RATE_PER_MIN"
+            }
+          ],
+          "frequency": [
+            "Divided doses"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Continuous ECG, BP and respiratory monitoring during and after IV infusion (boxed warning)",
+        "IM ordinarily not used (§2.4)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Cerebyx label §2.4, Table 3"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "fosphenytoin-load",
+        "phenytoin-correction"
+      ]
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Phenytoin extended capsules (Dilantin)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Adults: start 100 mg TID; most need 100 mg TID–QID; max 200 mg TID. Once-daily 300 mg only with extended capsules, once controlled on 100 mg TID",
+      "dose": [
+        {
+          "label": "Maintenance",
+          "amountMin": 100,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 600,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "TID–QID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Dilantin label §2.1"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "phenytoin-correction"
+      ]
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Phenytoin oral suspension 125 mg/5 mL",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Adults: start 125 mg (5 mL) TID; up to 625 mg (25 mL)/day",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 125,
+          "amountMax": 125,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 625,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "TID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Free acid — ~8% more phenytoin than the sodium-salt products (capsules, IV); monitor levels when switching (§2.4)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Phenytoin oral suspension label §2.2, §2.4"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "phenytoin-correction"
+      ]
+    }
+  ],
+  "renal": [],
+  "renalNotes": [
+    "No renal dose table; unbound fraction ↑ in renal disease — dose and monitor by free levels (Cerebyx §2.7; Dilantin §2.5)",
+    "After IV fosphenytoin in renal/hepatic disease or hypoalbuminemia, conversion to phenytoin may outpace phenytoin clearance → more adverse events (Cerebyx §2.7)",
+    "Fosphenytoin phosphate load 0.0037 mmol/mg PE — consider in severe renal impairment (Cerebyx §5.12)",
+    "Labels give no hemodialysis dosing"
+  ],
+  "hepatic": [
+    "Liver impairment: early toxicity possible; monitor unbound levels (Cerebyx §8.6)"
+  ],
+  "ivPo": [
+    "Oral phenytoin → fosphenytoin IV/IM: same total daily mg PE; levels may rise modestly (capsules ~90% bioavailable vs 100% IV/IM) (Cerebyx §2.6)",
+    "1 mg PE = 1 mg phenytoin sodium — no conversion between fosphenytoin and phenytoin sodium (Cerebyx §2.1, §5.1)",
+    "Suspension (free acid) ↔ capsules/IV (sodium salt): ~8% difference in drug content — monitor levels (Dilantin §2.4)"
+  ],
+  "enteral": [
+    "Enteral feeds lower phenytoin levels — don't give with a feed; check levels more often (Dilantin §7.4)",
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "Target 10–20 mcg/mL total; 1–2 mcg/mL free (Cerebyx §2.5; Dilantin §2.3)",
+    "Use free levels in renal or hepatic disease, hypoalbuminemia and pregnancy (Cerebyx §2.7, §2.9)",
+    "After fosphenytoin, wait ~2 h after IV (4 h after IM) to draw — immunoassays overestimate before conversion; if earlier, use EDTA tube (Cerebyx §2.5)",
+    "Steady state takes 7–10 days; don't change dose more often than every 7–10 days (Dilantin §2.3, §12.3)",
+    "Saturable metabolism: a ≥10% dose increase can raise levels disproportionately (Dilantin §12.3)",
+    "Toxicity is variable: nystagmus ~20, ataxia ~30, dysarthria/lethargy >40 mcg/mL (Cerebyx §10)"
+  ],
+  "interactions": [
+    "Valproate: displaces phenytoin and inhibits its metabolism — use free levels; ↑ hyperammonemia risk (Cerebyx §7.3)",
+    "Brivaracetam can raise phenytoin levels (Briviact §7.3)",
+    "Phenytoin lowers levels of apixaban, rivaroxaban, dabigatran, edoxaban, ticagrelor, nimodipine, lamotrigine (~40%) and lacosamide (Cerebyx Table 7; Lamictal Table 13)",
+    "TMP-SMX: ↑ phenytoin toxicity risk",
+    "Warfarin: PT/INR can rise or fall (Cerebyx Table 7)"
+  ],
+  "pearls": [
+    "IV contraindicated with sinus bradycardia, SA block, 2nd/3rd-degree AV block, Adams-Stokes (Cerebyx §4)",
+    "CYP2C9 *2/*3 carriers: start low and follow levels (Cerebyx §8.7)",
+    "Correction equations are estimates — see calc:phenytoin-correction; a measured free level is preferred"
+  ],
+  "calculatorIds": [
+    "phenytoin-correction",
+    "fosphenytoin-load"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "asm-interactions:tmp-smx-phenytoin",
+    "asm-interactions:inducing-asm-apixaban-rivaroxaban",
+    "asm-interactions:inducing-asm-warfarin",
+    "antiseizure-medications:valproate",
+    "calc:phenytoin-correction"
+  ],
+  "sources": [
+    "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)",
+    "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (DailyMed setid 86dd27d1-9cee-48ae-b55d-e2d2f7dbc593, accessed 2026-11-06)",
+    "Phenytoin oral suspension 125 mg/5 mL US prescribing information. Sun Pharmaceutical; revised 8/2025 (user-supplied label)",
+    "Briviact (brivaracetam) tablets, oral solution, injection US prescribing information. UCB; revised 4/2026 (user-supplied label)",
+    "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)",
+    "Kiang TK, Ensom MH. A comprehensive review on the predictive performance of the Sheiner-Tozer and derivative equations for the correction of phenytoin concentrations. Ann Pharmacother 2016;50(4):311-325. doi:10.1177/1060028016628166"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

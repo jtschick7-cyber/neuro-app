@@ -1,0 +1,158 @@
+{
+  "id": "acute-hepatic-porphyria",
+  "title": "Suspected acute hepatic porphyria (AIP)",
+  "searchTerms": [
+    "AIP",
+    "acute intermittent porphyria",
+    "porphyria",
+    "acute hepatic porphyria",
+    "AHP",
+    "porphobilinogen",
+    "PBG",
+    "ALA",
+    "hemin",
+    "givosiran"
+  ],
+  "category": "NEUROMUSCULAR",
+  "consultQuestion": "Weakness or neuropathy with severe abdominal pain, hyponatremia, or seizures — could this be an acute porphyric attack?",
+  "keyHistory": [
+    "Recurrent severe abdominal pain without a clear cause after initial workup, especially in women 15–50 (AGA BPA 1)",
+    "Triggers: CYP450-inducing / porphyrinogenic drugs, progesterone (luteal phase), alcohol, tobacco, fasting, acute illness or stress (AGA BPA 6)",
+    "Prior similar attacks — mean delay to diagnosis ~15 years (AGA)",
+    "Family history — autosomal dominant with low penetrance (AGA BPA 3)"
+  ],
+  "keyExam": [
+    "Muscle weakness, neuropathy (AGA)",
+    "Tachycardia, hypertension (AGA)",
+    "Severe abdominal pain without peritoneal signs; cross-sectional imaging unrevealing (AGA)"
+  ],
+  "redFlags": [
+    "Seizures — barbiturates, hydantoins, carbamazepine, and valproate are contraindicated (AGA BPA 5)",
+    "Hyponatremia or hypomagnesemia (SIADH ± hypovolemia) (AGA BPA 5)",
+    "Progressive weakness — porphyria is a listed GBS mimic (Leonhard 2019 Box 2)"
+  ],
+  "differential": [
+    {
+      "dx": "Acute hepatic porphyria (AIP, HCP, VP; ALAD rare)",
+      "clues": [
+        "Random urine ALA and PBG ≥5× ULN (creatinine-normalized) during an attack (AGA Table 2)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Guillain-Barré syndrome",
+      "clues": [
+        "Progressive symmetric weakness with areflexia; CSF protein normal in 30–50% in week 1 (Leonhard 2019)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Secondary porphyrinuria",
+      "clues": [
+        "Mild urine porphyrin elevation only — not diagnostic of AHP and a common cause of overdiagnosis (AGA BPA 2)"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "Random (spot) urine ALA, PBG, and creatinine",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Collect BEFORE hemin — hemin normalizes ALA/PBG (AGA BPA 4)",
+        "Diagnostic: ALA and PBG ≥5× ULN normalized to creatinine; 24-h urine not recommended (AGA BPA 2, Table 2)",
+        "Reference-lab send-out; results often take 1–2 weeks; a rapid PBG test is FDA-approved but rarely stocked (AGA)"
+      ]
+    },
+    {
+      "test": "Sodium and magnesium",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Monitor during the attack; correct hyponatremia slowly (AGA BPA 5)"
+      ]
+    },
+    {
+      "test": "Genetic testing (HMBS, CPOX, PPOX, ALAD)",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Positive biochemical testing"
+      ],
+      "notes": [
+        "Confirms AHP type; not for initial screening (AGA BPA 3)"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Woman 15–50 with unexplained recurrent severe abdominal pain after initial workup",
+      "recommendation": "Screen for AHP with random urine ALA, PBG, creatinine",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "AGA 2023 BPA 1–2 (expert review; statements carry no formal evidence rating)"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Urine ALA and/or PBG elevated",
+      "recommendation": "Presume AHP and treat; confirm type later with genetic testing",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "AGA 2023 description; BPA 3"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Attack severe enough to need admission",
+      "recommendation": "IV hemin daily, preferably into a high-flow central vein",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "AGA 2023 BPA 4"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Seizures during an attack",
+      "recommendation": "Avoid barbiturates, hydantoins (phenytoin/fosphenytoin), carbamazepine, valproate; magnesium, benzodiazepines, and levetiracetam appear safe",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "AGA 2023 BPA 5 supporting text"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Stop CYP450-inducing / porphyrinogenic drugs; check every drug in an AHP drug-safety database (porphyria.org; drugs-porphyria.org) (AGA BPA 5–6)",
+    "IV hemin 3–4 mg/kg once daily, typically 4 days (3–5 days), via PICC or central port, after the urine sample is sent (AGA BPA 4)",
+    "IV carbohydrate ~300 g/day early in the attack; treat pain and nausea aggressively (AGA BPA 5)"
+  ],
+  "recsTemplate": [],
+  "disposition": [
+    "Admit if the attack needs IV hemin (AGA BPA 4)",
+    "≥4 attacks/year: outpatient prophylaxis (hemin or givosiran) with a porphyria specialist (AGA BPA 7)"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Urine ALA/PBG sample handling (light protection, refrigeration/freezing) — follow the reference lab's instructions",
+    "Hemin ordering pathway (hematology / pharmacy)",
+    "Reference lab and turnaround for ALA/PBG"
+  ],
+  "pearls": [
+    "Don't screen with urine porphyrins alone — ALA and PBG are porphyrin precursors and are not included in porphyrin tests (AGA BPA 2)",
+    "Between attacks, 15–44% with sporadic AIP have normal urine ALA/PBG; in AIP they can stay elevated for months after an attack, in HCP/VP they fall quickly (AGA)",
+    "Porphyria is in the motor-CIDP differential (EAN/PNS 2021 Table 4)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:guillain-barre-syndrome",
+    "consult-workups:inpatient-neuropathy",
+    "acute-neuro:hyponatremia-ods"
+  ],
+  "sources": [
+    "Wang B, et al. AGA Clinical Practice Update on Diagnosis and Management of Acute Hepatic Porphyrias: Expert Review. Gastroenterology 2023;164:484-491. doi:10.1053/j.gastro.2022.11.034",
+    "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
+    "Van den Bergh PYK, et al. European Academy of Neurology/Peripheral Nerve Society guideline on diagnosis and treatment of chronic inflammatory demyelinating polyradiculoneuropathy: Report of a joint Task Force—Second revision. Eur J Neurol 2021;28:3556-3583. doi:10.1111/ene.14959"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

@@ -1,0 +1,234 @@
+{
+  "kind": "AGENT",
+  "id": "clopidogrel",
+  "title": "Clopidogrel (Plavix)",
+  "searchTerms": [
+    "Plavix",
+    "P2Y12 inhibitor",
+    "thienopyridine",
+    "DAPT"
+  ],
+  "drugClass": "ANTIPLATELET",
+  "subclass": "P2Y12 inhibitor (thienopyridine prodrug)",
+  "mechanism": "Active metabolite (via CYP2C19) irreversibly blocks the platelet P2Y12 ADP receptor",
+  "uses": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Clopidogrel + aspirin — minor stroke (NIHSS ≤3) or high-risk TIA (ABCD2 ≥4), no IVT",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Load 300–600 mg, then 75 mg daily with aspirin × 21 days (up to 90), then SAPT",
+      "dose": [
+        {
+          "label": "Load",
+          "amountMin": 300,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 75,
+          "amountMax": 75,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Start within 24 h (Kleindorfer: ideally 12–24 h, at least within 7 days)",
+        "CHANCE: 300 mg load, 21 days; POINT: 600 mg load, 90 days (more bleeding)",
+        "INSPIRES: up to 72 h with presumed atherosclerotic cause, 21 days (AHA 2026: COR 2a, B-R)",
+        "DAPT >90 days: excess hemorrhage (Kleindorfer: COR 3: Harm, A)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2026: COR 1, LOE A",
+        "Kleindorfer 2021: COR 1, LOE A"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Clopidogrel — noncardioembolic stroke/TIA (long-term SAPT)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "75 mg daily",
+      "dose": [
+        {
+          "label": "Maintenance",
+          "amountMin": 75,
+          "amountMax": 75,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Antiplatelet preferred over anticoagulation (AHA 2026 and Kleindorfer 2021: COR 1, A)",
+        "Choose agent on risk profile, cost, tolerance (AHA 2026: COR 1, C-EO)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 1, LOE A (aspirin 50–325 mg, clopidogrel 75 mg, or aspirin 25 mg/ER-dipyridamole 200 mg BID)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "renalHepatic": [],
+  "timing": {
+    "halfLifeText": "Parent ~6 h; active metabolite ~30 min; platelet effect lasts the platelet lifespan (7–10 days) (label)",
+    "holdBeforeProcedure": [
+      "Stop 5 days before elective surgery if an antiplatelet effect isn't wanted (label)"
+    ],
+    "thrombolysisRule": [
+      "Prior SAPT/DAPT doesn't exclude IVT — give if otherwise eligible (AHA 2026 §4.6.1 Rec 9: COR 1, B-NR); sICH +0.9% SAPT / +1.2% DAPT absolute",
+      "See vascular-antithrombotics:thrombolysis-with-prior-antithrombotics"
+    ]
+  },
+  "reversal": [
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Platelet transfusion — ICH without planned surgery",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Do not give (unstructured: recommendation against)",
+      "dose": [],
+      "notes": [
+        "NCS: against, regardless of agent, platelet-function result, volume or exam"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "NCS 2016: conditional against, low quality",
+        "AHA ICH 2022 harm recommendation is for aspirin specifically"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Platelet transfusion — before emergency neurosurgery",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "1 single-donor apheresis unit; platelet-function testing first if available",
+      "dose": [
+        {
+          "label": "Apheresis platelets",
+          "amountMin": 1,
+          "amountMax": 1,
+          "unit": "UNITS",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Repeat only if platelet function stays abnormal (NCS)",
+        "Don't transfuse if platelet function is normal or documented resistance (NCS strong)"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA ICH 2022 addresses aspirin only",
+        "NCS 2016: conditional, moderate quality (aspirin or ADP inhibitor)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Desmopressin",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "0.4 mcg/kg IV once",
+      "dose": [
+        {
+          "label": "Desmopressin",
+          "amountMin": 0.4,
+          "amountMax": 0.4,
+          "unit": "MCG",
+          "basis": "PER_KG",
+          "timing": "SINGLE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Watch sodium — hyponatremia risk",
+        "Can be combined with platelet transfusion before surgery (NCS)"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA ICH 2022: COR 2b, LOE C-LD (effectiveness uncertain)",
+        "NCS 2016: suggestion (conditional)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "monitoring": [
+    "CBC if TTP suspected (thrombocytopenia, anemia with schistocytes, neuro findings, renal dysfunction, fever) (label)"
+  ],
+  "interactions": [
+    "Avoid omeprazole and esomeprazole (CYP2C19 inhibition) (label)",
+    "Repaglinide exposure increased (CYP2C8) (label)"
+  ],
+  "pregnancy": [
+    "Pregnancy: use for the shortest duration needed; lactation: low infant risk on limited data (Miller 2026)"
+  ],
+  "formularyStatus": "AVAILABLE",
+  "calculatorIds": [],
+  "institutionVaries": [
+    "CYP2C19 genotype testing availability and turnaround"
+  ],
+  "pearls": [
+    "Boxed warning: reduced effect in CYP2C19 poor metabolizers — consider another P2Y12 inhibitor (label)",
+    "CYP2C19 loss-of-function carriers with minor stroke/TIA: ticagrelor + aspirin × 21 days may be reasonable instead (AHA 2026: COR 2b, B-R)",
+    "Without a load, the antiplatelet effect takes several days (label)",
+    "Platelet transfusion within 4 h of a load or 2 h of a maintenance dose may be less effective (label)",
+    "After IVT: antiplatelets in the first 24 h might be considered only with a compelling indication (AHA 2026: COR 2b, B-NR); usual practice is 24-h imaging first"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:aspirin",
+    "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics",
+    "vascular-antithrombotics:pregnancy-antithrombotics"
+  ],
+  "sources": [
+    "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
+    "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
+    "Clopidogrel bisulfate tablets US prescribing information. ACI Healthcare USA; revised 6/2020 (user-supplied label)",
+    "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

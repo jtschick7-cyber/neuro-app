@@ -1,0 +1,241 @@
+{
+  "id": "neuro-icu-targets",
+  "title": "Neuro-ICU targets (rounds lookup)",
+  "searchTerms": [
+    "neuro ICU targets",
+    "sodium goal",
+    "sodium target",
+    "hypertonic saline target",
+    "osmolar gap",
+    "mannitol monitoring",
+    "CPP",
+    "cerebral perfusion pressure",
+    "transfusion threshold",
+    "hemoglobin threshold",
+    "TRAIN",
+    "SAHaRA",
+    "SAHARA"
+  ],
+  "scopeNote": "Rounds lookup, not a protocol. Glucose and temperature are intentionally not on this card. aSAH-specific numbers: see aSAH numbers card.",
+  "sections": [
+    {
+      "heading": "Sodium & osmotherapy",
+      "rows": [
+        {
+          "parameter": "Sodium",
+          "condition": "Severe acute brain injury (any)",
+          "role": "RECOMMENDED",
+          "target": "Avoid hyponatremia",
+          "notes": [
+            "Hyponatremia can worsen cerebral edema",
+            "Correction limits for chronic hyponatremia: see hyponatremia-ods"
+          ],
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "Cook 2020: good practice statement"
+          ],
+          "sources": [
+            "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+          ]
+        },
+        {
+          "parameter": "Sodium / chloride",
+          "condition": "During hypertonic saline for ICP or edema",
+          "role": "TARGET",
+          "target": "Upper limit Na 155–160 mEq/L; Cl 110–115 mEq/L",
+          "notes": [
+            "A ceiling to limit AKI, not a treatment goal",
+            "Avoid severe hypernatremia and hyperchloremia (AKI association)",
+            "Monitor Na, Cl and renal function routinely; frequency from BID to q2h depending on how fast values are moving"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Cook 2020: ceiling — conditional, very low-quality evidence",
+            "Cook 2020: avoid severe hyperNa/hyperCl — conditional, low-quality evidence",
+            "Cook 2020: monitoring — good practice statements"
+          ],
+          "sources": [
+            "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+          ]
+        },
+        {
+          "parameter": "Sodium",
+          "condition": "Hypertonic saline for ICP or edema — SAH",
+          "role": "RECOMMENDED",
+          "target": "Symptom-based bolus HTS rather than dosing to a sodium target",
+          "notes": [
+            "Studies that targeted sodium used 145–155 mEq/L; data too limited to recommend a target",
+            "No HTS dosing strategy is recommended to improve neurological outcome"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Cook 2020: conditional, very low-quality evidence"
+          ],
+          "sources": [
+            "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+          ]
+        },
+        {
+          "parameter": "Sodium",
+          "condition": "Hypertonic saline for ICP or edema — ICH",
+          "role": "RECOMMENDED",
+          "target": "Either bolus dosing or a targeted sodium is acceptable",
+          "notes": [
+            "Targeted studies used 145–155 mEq/L; results conflicting"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Cook 2020: conditional, very low-quality evidence"
+          ],
+          "sources": [
+            "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+          ]
+        },
+        {
+          "parameter": "Sodium",
+          "condition": "Hypertonic saline for ICP or edema — TBI, AIS; continuous infusion to a sodium goal (any condition)",
+          "role": "EVIDENCE_SUMMARY",
+          "target": "No sodium target recommended",
+          "notes": [
+            "TBI: no substantial evidence for targeting a specific sodium",
+            "AIS: continuous 3% to 145–155 mEq/L didn't consistently reduce ICP crises or improve outcome (2 conflicting studies)",
+            "Any condition: insufficient evidence that a continuous infusion to a sodium goal improves outcome"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Cook 2020: evidence summary / insufficient-evidence statement — no recommendation made"
+          ],
+          "sources": [
+            "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+          ]
+        },
+        {
+          "parameter": "Osmolar gap",
+          "condition": "Mannitol",
+          "role": "RECOMMENDED",
+          "target": "Follow the osmolar gap, not a serum osmolality threshold",
+          "notes": [
+            "No gap cutoff is recommended: 20 mOsm/kg is used in practice but unsupported; one study correlated a gap ≥55 mOsm/kg with mannitol concentration",
+            "Recent studies: osmolality >320 mOsm/L did not change AKI incidence",
+            "Monitor renal function closely (good practice)"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "Cook 2020: conditional, very low-quality evidence",
+            "Cook 2020: no gap cutoff — insufficient evidence"
+          ],
+          "sources": [
+            "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Cerebral perfusion pressure",
+      "rows": [
+        {
+          "parameter": "CPP",
+          "condition": "Severe TBI",
+          "role": "TARGET",
+          "target": "60–70 mm Hg",
+          "notes": [
+            "Whether 60 or 70 is the minimum is unclear; may depend on autoregulatory status",
+            "No CPP target from a provided source for aSAH, ICH or AIS"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "BTF 4th ed: Level II B (low-quality evidence)"
+          ],
+          "sources": [
+            "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 17 Cerebral Perfusion Pressure Thresholds"
+          ]
+        },
+        {
+          "parameter": "CPP",
+          "condition": "Severe TBI",
+          "role": "RECOMMENDED",
+          "target": "Avoid aggressive fluids and pressors to hold CPP >70 mm Hg",
+          "notes": [
+            "Risk of adult respiratory failure"
+          ],
+          "evidenceLevel": "WEAK",
+          "evidenceNote": [
+            "BTF 4th ed: Level III"
+          ],
+          "sources": [
+            "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 17 Cerebral Perfusion Pressure Thresholds"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Hemoglobin — trial findings, not guideline targets",
+      "rows": [
+        {
+          "parameter": "Hemoglobin",
+          "condition": "Acute brain injury with Hb <9 g/dL (TBI 59%, aSAH 23%, ICH 18%) — TRAIN",
+          "role": "EVIDENCE_SUMMARY",
+          "target": "Transfusing at <9 vs <7 g/dL: less unfavorable outcome at 180 days",
+          "notes": [
+            "Unfavorable outcome (GOS-E 1–5): 62.6% vs 72.6%; adjusted RR 0.86 (95% CI 0.79–0.94)",
+            "≥1 cerebral ischemic event: 8.8% vs 13.5% (RR 0.65, 0.44–0.97)",
+            "Median 2 vs 0 units; strategy applied up to 28 days",
+            "Clinical teams unblinded; outcome assessors blinded"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Single RCT, 850 randomized (820 completed)"
+          ],
+          "sources": [
+            "Taccone FS, et al. Restrictive vs Liberal Transfusion Strategy in Patients With Acute Brain Injury: The TRAIN Randomized Clinical Trial. JAMA 2024;332:1623-1633. doi:10.1001/jama.2024.20424"
+          ]
+        },
+        {
+          "parameter": "Hemoglobin",
+          "condition": "aSAH with anemia — SAHARA",
+          "role": "EVIDENCE_SUMMARY",
+          "target": "Transfusing at ≤10 (mandatory) vs ≤8 g/dL (optional): no significant difference in 12-month outcome",
+          "notes": [
+            "mRS ≥4 at 12 months: 33.5% vs 37.7%; RR 0.88 (95% CI 0.72–1.09); P=0.22",
+            "12-month mortality 27.2% vs 27.1%; DCI and new infarction similar",
+            "Radiographic vasospasm (secondary): 31.5% vs 40.7% (RR 0.77, 0.63–0.95)",
+            "Thresholds held through day 21; median 2 vs 0 units"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Single RCT, 742 randomized at 23 centers"
+          ],
+          "sources": [
+            "English SW, et al. Liberal or Restrictive Transfusion Strategy in Aneurysmal Subarachnoid Hemorrhage (SAHARA). N Engl J Med 2025;392:1079-1088. doi:10.1056/NEJMoa2410962"
+          ]
+        }
+      ]
+    }
+  ],
+  "pitfalls": [
+    "Don't treat 145–155 mEq/L as a guideline target — it's the range used in studies (Cook 2020)",
+    "TRAIN and SAHARA used different thresholds and outcomes; TRAIN's aSAH subgroup was 23% of patients"
+  ],
+  "keyNumbers": [
+    "HTS ceiling: Na 155–160, Cl 110–115 mEq/L",
+    "No sodium goal endorsed for ICP; avoid hyponatremia",
+    "Mannitol: follow osmolar gap, not osm 320",
+    "Severe TBI: CPP 60–70 mm Hg",
+    "Hb: TRAIN <9 beat <7; SAHARA ≤10 = ≤8 (aSAH)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "reference-cards:asah-numbers",
+    "acute-neuro:elevated-icp-herniation",
+    "acute-neuro:hyponatremia-ods",
+    "calc:hypertonic-saline-dose",
+    "calc:mannitol-dose"
+  ],
+  "sources": [
+    "Cook AM, et al. Guidelines for the Acute Treatment of Cerebral Edema in Neurocritical Care Patients (NCS). Neurocrit Care 2020;32:647-666. doi:10.1007/s12028-020-00959-7",
+    "Brain Trauma Foundation. Guidelines for the Management of Severe Traumatic Brain Injury, 4th Edition. 2016; ch. 17 Cerebral Perfusion Pressure Thresholds",
+    "Taccone FS, et al. Restrictive vs Liberal Transfusion Strategy in Patients With Acute Brain Injury: The TRAIN Randomized Clinical Trial. JAMA 2024;332:1623-1633. doi:10.1001/jama.2024.20424",
+    "English SW, et al. Liberal or Restrictive Transfusion Strategy in Aneurysmal Subarachnoid Hemorrhage (SAHARA). N Engl J Med 2025;392:1079-1088. doi:10.1056/NEJMoa2410962"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

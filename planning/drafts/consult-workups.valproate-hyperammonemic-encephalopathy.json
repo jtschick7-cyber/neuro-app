@@ -1,0 +1,188 @@
+{
+  "id": "valproate-hyperammonemic-encephalopathy",
+  "title": "Valproate hyperammonemic encephalopathy",
+  "searchTerms": [
+    "VHE",
+    "valproate ammonia",
+    "VPA encephalopathy",
+    "hyperammonemia",
+    "Depakote",
+    "Depacon",
+    "carnitine",
+    "L-carnitine",
+    "valproate overdose"
+  ],
+  "category": "COGNITION_ENCEPHALOPATHY",
+  "consultQuestion": "Patient on valproate with new lethargy, vomiting, confusion, or hypothermia — hyperammonemic encephalopathy?",
+  "keyHistory": [
+    "Valproate start or dose change — hyperammonemic encephalopathy after starting valproate is reported in urea cycle disorders (label §5.6)",
+    "UCD risk features: unexplained encephalopathy/coma, encephalopathy after a protein load, pregnancy-related or postpartum encephalopathy, cyclical vomiting and lethargy, family history (label §5.6)",
+    "Concomitant topiramate — hyperammonemia ± encephalopathy even when each drug alone was tolerated (label §5.9)",
+    "Intentional or accidental overdose; amount ingested (Perrott)"
+  ],
+  "keyExam": [
+    "Lethargy, vomiting, change in mental status (label §5.8)",
+    "Core temperature — hypothermia <35 °C with or without hyperammonemia (label §5.10)"
+  ],
+  "redFlags": [
+    "Hypothermia (label §5.10)",
+    "Acute ingestion >100 mg/kg or valproate level >850 mg/L — higher risk of coma, respiratory depression, aspiration (Perrott)",
+    "Abdominal pain with vomiting — pancreatitis (boxed warning)"
+  ],
+  "differential": [
+    {
+      "dx": "Valproate hyperammonemic encephalopathy",
+      "clues": [
+        "Raised ammonia; can occur with normal liver tests (label §5.8)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Urea cycle disorder unmasked by valproate",
+      "clues": [
+        "Encephalopathy after starting valproate; risk features in label §5.6"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Valproate hepatotoxicity",
+      "clues": [
+        "Abnormal liver tests (boxed warning)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Acute valproate overdose",
+      "clues": [
+        "Somnolence, heart block, deep coma, hypernatremia (label §10); peak level can be delayed (Perrott)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Valproate pancreatitis",
+      "clues": [
+        "Abdominal pain, vomiting (boxed warning, §5.5)"
+      ],
+      "mustNotMiss": true
+    }
+  ],
+  "workup": [
+    {
+      "test": "Plasma ammonia",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "Any unexplained lethargy, vomiting, mental-status change, or hypothermia on valproate (label §5.8, §5.10)"
+      ]
+    },
+    {
+      "test": "Liver tests",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Normal LFTs do not exclude hyperammonemia (label §5.8)"
+      ]
+    },
+    {
+      "test": "Valproate level",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Overdose: peak at mean 7.4 h, ~15% >10 h after ingestion — repeat levels (Perrott)"
+      ]
+    },
+    {
+      "test": "Lipase",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Abdominal pain or vomiting"
+      ],
+      "notes": [
+        "Pancreatitis (boxed warning, §5.5)"
+      ]
+    },
+    {
+      "test": "Urea cycle disorder evaluation",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Hyperammonemic encephalopathy on valproate"
+      ],
+      "notes": [
+        "Label: evaluate for underlying UCD (§5.6, §5.8)"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "On valproate with unexplained lethargy, vomiting, mental-status change, or hypothermia",
+      "recommendation": "Check ammonia",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Valproate sodium injection label §5.8, §5.10"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Ammonia raised",
+      "recommendation": "Stop valproate; treat hyperammonemia; evaluate for urea cycle disorder",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Label §5.8"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Asymptomatic ammonia elevation",
+      "recommendation": "Monitor ammonia closely; consider stopping valproate if it persists",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Label §5.8"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Acute valproate overdose (>100 mg/kg) with decreased level of consciousness",
+      "recommendation": "Consider IV L-carnitine 100 mg/kg, then 50 mg/kg (max 3 g/dose) IV q8h until ammonia is falling (if raised) and the patient improves",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Perrott 2010: authors' regimen from 8 case reports; no comparative data",
+        "Not a source for VHE on therapeutic dosing — chronic-therapy toxicity was excluded from the review"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Overdose",
+      "recommendation": "Hemodialysis (± hemoperfusion) can remove significant drug; naloxone may reverse CNS depression — use with caution in epilepsy",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Label §10"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Stop valproate if ammonia is raised (label §5.8); choose an alternative ASM — see antiseizure-medications"
+  ],
+  "recsTemplate": [],
+  "disposition": [],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Ammonia specimen handling (e.g., on ice, prompt analysis) — follow lab instructions",
+    "IV L-carnitine availability"
+  ],
+  "pearls": [
+    "Hyperammonemia can occur with normal LFTs (label §5.8)",
+    "Topiramate + valproate hyperammonemia is not a pharmacokinetic interaction (label §5.9)",
+    "In overdose, ammonia didn't correlate with symptoms or outcome — don't use it alone to decide on L-carnitine (Perrott)",
+    "Hypothermia may be the presenting sign (label §5.10)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:valproate"
+  ],
+  "sources": [
+    "Valproate sodium injection US prescribing information. Hikma; revised 12/2023 (user-supplied label)",
+    "Perrott J, Murphy NG, Zed PJ. L-Carnitine for Acute Valproic Acid Overdose: A Systematic Review of Published Cases. Ann Pharmacother 2010;44:1287-1293"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

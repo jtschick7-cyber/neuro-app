@@ -1,0 +1,228 @@
+{
+  "id": "lacosamide",
+  "title": "Lacosamide (Vimpat) — maintenance dosing",
+  "searchTerms": [
+    "Vimpat",
+    "LCM",
+    "lacosamide renal dose",
+    "Vimpat dialysis",
+    "Vimpat IV to PO"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Lacosamide — monotherapy (partial-onset)",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Adults ≥17 y: start 100 mg BID; ↑ by 50 mg BID weekly; maintenance 150–200 mg BID (300–400 mg/day)",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 100,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 150,
+          "amountMax": 200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Vimpat label §2.1, Table 1"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Lacosamide — adjunctive (partial-onset or PGTC)",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Adults ≥17 y: start 50 mg BID; ↑ by 50 mg BID weekly; maintenance 100–200 mg BID (200–400 mg/day)",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 50,
+          "amountMax": 50,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 100,
+          "amountMax": 200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Adjunctive trials: >400 mg/day was not more effective and had substantially more adverse reactions"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Vimpat label §2.1, Table 1"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Lacosamide — alternate initial regimen (faster to maintenance)",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Adults ≥17 y: single 200 mg loading dose, then 100 mg BID starting 12 h later for 1 week; then titrate weekly if needed",
+      "dose": [
+        {
+          "label": "Loading dose",
+          "amountMin": 200,
+          "amountMax": 200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Once"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Then",
+          "amountMin": 100,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID, starting 12 h after load"
+          ],
+          "duration": [
+            "1 week, then titrate"
+          ]
+        }
+      ],
+      "notes": [
+        "Give the load under medical supervision — more CNS and cardiovascular adverse reactions (§2.2)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Vimpat label §2.2, Table 2"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [
+    {
+      "kind": "CRCL_BAND",
+      "crclMin": 30,
+      "crclMax": null,
+      "crclBasis": "CG_ML_MIN",
+      "label": "CrCl ≥30 mL/min (Cockcroft-Gault)",
+      "doseText": "No adjustment",
+      "dose": [],
+      "notes": []
+    },
+    {
+      "kind": "CRCL_BAND",
+      "crclMin": null,
+      "crclMax": 30,
+      "crclBasis": "CG_ML_MIN",
+      "label": "CrCl <30 mL/min (Cockcroft-Gault) or ESRD",
+      "doseText": "Reduce the maximum dosage by 25% (300 mg/day if the maximum is 400 mg/day)",
+      "dose": [],
+      "notes": []
+    },
+    {
+      "kind": "INTERMITTENT_HD",
+      "crclMin": null,
+      "crclMax": null,
+      "crclBasis": null,
+      "label": "Intermittent hemodialysis",
+      "doseText": "Effectively removed by HD; after a 4-h session consider supplementing up to 50% of the dose",
+      "dose": [],
+      "notes": []
+    }
+  ],
+  "renalNotes": [
+    "In all renal impairment, start and titrate by response and tolerability (§2.4)",
+    "With strong CYP3A4 and CYP2C9 inhibitors, a dose reduction may be needed in renal impairment (§2.4)"
+  ],
+  "hepatic": [
+    "Mild or moderate: reduce the maximum dosage by 25% (§2.5)",
+    "Severe: not recommended (§2.5)",
+    "With strong CYP3A4 and CYP2C9 inhibitors, a dose reduction may be needed in hepatic impairment (§2.5)"
+  ],
+  "ivPo": [
+    "IV and oral dosing are the same (§2.1)",
+    "IV over 30–60 min; adults may receive it over as little as 15 min if required (§2.7)",
+    "IV experience limited to 5 consecutive days (§2.1)"
+  ],
+  "enteral": [
+    "Tablets: swallow whole; do not divide (§2.6)",
+    "Oral solution may be given via NG or gastrostomy tube (§2.6)"
+  ],
+  "levels": [],
+  "interactions": [
+    "Strong CYP3A4/CYP2C9 inhibitors: dose reduction may be needed with renal or hepatic impairment (§2.4–2.5)",
+    "Phenytoin/fosphenytoin may lower lacosamide levels (Cerebyx label Table 7)"
+  ],
+  "pearls": [
+    "IV can cause bradycardia, AV block and ventricular tachyarrhythmia; ECG before starting and at steady state if proarrhythmic conditions or conduction-affecting drugs (§2.7)",
+    "Withdraw gradually over ≥1 week (§2.8)"
+  ],
+  "calculatorIds": [
+    "cockcroft-gault"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:phenytoin-fosphenytoin"
+  ],
+  "sources": [
+    "Vimpat (lacosamide) tablets, injection, oral solution US prescribing information. UCB; revised 5/2026 (user-supplied label)",
+    "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

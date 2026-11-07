@@ -1,0 +1,113 @@
+{
+  "id": "brivaracetam",
+  "title": "Brivaracetam (Briviact) — maintenance dosing",
+  "searchTerms": [
+    "Briviact",
+    "BRV",
+    "brivaracetam liver dose",
+    "Briviact IV"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Brivaracetam",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Adults ≥16 y: 50 mg BID; adjust to 25–100 mg BID (50–200 mg/day) by response and tolerability; no titration needed",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 50,
+          "amountMax": 50,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance range",
+          "amountMin": 25,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 200,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Briviact label §2.1, Table 1"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [
+    {
+      "kind": "INTERMITTENT_HD",
+      "crclMin": null,
+      "crclMax": null,
+      "crclBasis": null,
+      "label": "ESRD on dialysis",
+      "doseText": "Not recommended — no data (§8.6)",
+      "dose": [],
+      "notes": []
+    }
+  ],
+  "renalNotes": [
+    "No adjustment for renal impairment (§8.6)",
+    "<10% excreted unchanged; HD not expected to enhance clearance (§10)"
+  ],
+  "hepatic": [
+    "All Child-Pugh classes: start 25 mg BID; max 75 mg BID (150 mg/day) (§2.5, Table 2)"
+  ],
+  "ivPo": [
+    "IV = PO: same dose and frequency; tablets, solution and injection interchangeable (§2.1, §12.3)",
+    "IV over 2–15 min; undiluted or in NS, LR or D5W (§2.3)",
+    "IV experience up to 4 consecutive days (§2.1)"
+  ],
+  "enteral": [
+    "Tablets: swallow whole; do not chew or crush (§2.2)",
+    "Oral solution may be given via NG or gastrostomy tube (§2.2)"
+  ],
+  "levels": [],
+  "interactions": [
+    "Rifampin: increase brivaracetam dose by up to 100% (§2.6, §7.1)",
+    "Phenytoin: brivaracetam can raise phenytoin levels — monitor levels when adding or stopping (§7.3)",
+    "Carbamazepine: ↑ carbamazepine-epoxide; reduce carbamazepine if not tolerated (§7.2)",
+    "CYP2C19 poor metabolizers or CYP2C19 inhibitors may need a lower dose (§12.3)"
+  ],
+  "pearls": [
+    "No added benefit when combined with levetiracetam (§7.4)",
+    "Psychiatric adverse reactions (irritability, psychosis) can occur (§5.3)"
+  ],
+  "calculatorIds": [],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:levetiracetam",
+    "antiseizure-medications:phenytoin-fosphenytoin"
+  ],
+  "sources": [
+    "Briviact (brivaracetam) tablets, oral solution, injection US prescribing information. UCB; revised 4/2026 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

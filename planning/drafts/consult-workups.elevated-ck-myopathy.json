@@ -1,0 +1,253 @@
+{
+  "id": "elevated-ck-myopathy",
+  "title": "Elevated CK / suspected myopathy",
+  "searchTerms": [
+    "CK",
+    "myositis",
+    "statin myopathy",
+    "HMGCR",
+    "SRP",
+    "IMNM",
+    "necrotizing myopathy",
+    "dermatomyositis",
+    "inclusion body myositis"
+  ],
+  "category": "NEUROMUSCULAR",
+  "consultQuestion": "High CK with proximal weakness — statin myopathy, myositis, or something else?",
+  "keyHistory": [
+    "Tempo: rapid (IMNM, antisynthetase) vs slow over years (IBM, dystrophy)",
+    "Statin exposure, including past exposure — HMGCR myopathy can persist or worsen after stopping",
+    "Rash (heliotrope, Gottron, shawl), mechanic's hands, Raynaud, arthritis, dyspnea/cough (ILD)",
+    "Dysphagia",
+    "Cancer history or symptoms; checkpoint inhibitors",
+    "Family history of muscle disease"
+  ],
+  "keyExam": [
+    "Pattern: proximal symmetric (IMNM, DM, antisynthetase) vs quadriceps + finger flexors, often asymmetric (IBM)",
+    "Skin and nailfold findings",
+    "Neck flexor and bulbar weakness, respiratory muscle weakness"
+  ],
+  "redFlags": [
+    "Dysphagia or respiratory weakness",
+    "ILD symptoms (antisynthetase, anti-MDA5)",
+    "Myocarditis signs (troponin, arrhythmia) — especially with checkpoint inhibitors",
+    "Pigmenturia / AKI (rhabdomyolysis)"
+  ],
+  "differential": [
+    {
+      "dx": "Immune-mediated necrotizing myopathy (anti-HMGCR, anti-SRP, seronegative)",
+      "clues": [
+        "Rapid proximal, lumbopelvic weakness, very high CK; statin exposure (HMGCR)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Dermatomyositis",
+      "clues": [
+        "Typical rash; cancer risk high with TIF-1γ, NXP2"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Antisynthetase syndrome",
+      "clues": [
+        "Myositis, arthritis, ILD, mechanic's hands; anti-Jo-1 and others"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Inclusion-body myositis",
+      "clues": [
+        "Slow, quadriceps and finger flexors, dysphagia; CK normal to moderate"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Self-limited statin myalgia / toxic myopathy",
+      "clues": [
+        "Improves after stopping the statin"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Checkpoint inhibitor myositis (± myocarditis, MG overlap)",
+      "clues": [
+        "Recent ICI therapy"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Genetic myopathy (especially age <30), hypothyroid myopathy, rhabdomyolysis",
+      "clues": [
+        "Family history, TSH, triggers"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "CK, aldolase, LFTs (AST/ALT may be muscle), TSH, BMP",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Acute muscle injury: AST/ALT ratio >3, falling toward ~1 within days because AST clears faster; ratio ~1.2 in polymyositis (Nathwani 2005)",
+        "GGT confirms a hepatic source of alkaline phosphatase — it doesn't localize AST/ALT, and phenytoin and barbiturates raise it (ACG 2017)"
+      ]
+    },
+    {
+      "test": "Troponin and ECG",
+      "priority": "URGENT",
+      "indication": [
+        "High CK, especially with checkpoint inhibitors"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Myositis-specific antibodies including anti-HMGCR and anti-SRP",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Commercial line-blots don't cover all antibodies; methods differ (ENMC 2017)"
+      ]
+    },
+    {
+      "test": "EMG",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Myopathic pattern; guides biopsy site"
+      ]
+    },
+    {
+      "test": "Muscle MRI (STIR/T1)",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Choose biopsy site; distinguish edema from fatty replacement"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Muscle biopsy",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "No myositis-specific antibody",
+        "Suspected IBM"
+      ],
+      "notes": [
+        "Not mandatory with a well-defined clinical–serologic picture; essential if seronegative and for all IBM (NEJM 2026)"
+      ]
+    },
+    {
+      "test": "Chest CT, PFTs with DLCO",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Antisynthetase, anti-MDA5, or respiratory symptoms"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Cancer screening",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Dermatomyositis, HMGCR-positive, seronegative IMNM, age >40, dysphagia"
+      ],
+      "notes": [
+        "Intensity by risk — see pearls"
+      ]
+    },
+    {
+      "test": "Swallow evaluation, FVC/NIF",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Dysphagia or respiratory weakness"
+      ],
+      "notes": []
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Elevated CK + proximal weakness + anti-HMGCR",
+      "recommendation": "Anti-HMGCR myopathy (biopsy, EMG, MRI not required for subtyping); stop statin",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "ENMC 2017 IMNM classification"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Elevated CK + proximal weakness + anti-SRP",
+      "recommendation": "Anti-SRP myopathy",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "ENMC 2017"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Elevated CK + proximal weakness, no myositis-specific antibody, biopsy with scattered necrotic fibers, necrosis/regeneration at different stages, macrophage-predominant sparse infiltrates",
+      "recommendation": "Antibody-negative IMNM — exclude drug/toxin myopathy",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "ENMC 2017"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "HMGCR-positive IMNM",
+      "recommendation": "Malignancy workup recommended",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "ENMC 2017"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Idiopathic limb-girdle syndrome",
+      "recommendation": "Test anti-HMGCR and anti-SRP so a treatable myopathy isn't missed",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "ENMC 2017"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Stop the statin",
+    "IMNM treatment (steroids plus early second agent; IVIG for HMGCR, rituximab for SRP): see ENMC 2017 — rheumatology/neuromuscular co-management"
+  ],
+  "recsTemplate": [
+    "CK, aldolase, TSH, troponin, ECG",
+    "Myositis panel including HMGCR and SRP antibodies",
+    "EMG; muscle MRI to guide biopsy",
+    "Hold statin",
+    "Muscle biopsy [if seronegative or IBM suspected]",
+    "Age-appropriate cancer screening [risk-stratified]"
+  ],
+  "disposition": [
+    "Inpatient if dysphagia, respiratory weakness, myocarditis, or rhabdomyolysis",
+    "Neuromuscular and rheumatology follow-up"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Myositis panel send-out lab and turnaround",
+    "Muscle biopsy processing (needs a neuromuscular pathology lab)"
+  ],
+  "pearls": [
+    "Cancer occurs in about 10% of adults with myositis within 3 years of diagnosis; risk is high with seronegative IMNM, TIF-1γ, NXP2, anti-OJ, and seronegative DM over age 40; intermediate with HMGCR, Mi-2, MDA5, SAE (NEJM 2026 Table 1)",
+    "IBM: quadriceps and finger flexor weakness is almost pathognomonic; CK normal to moderately raised (NEJM 2026)",
+    "Under age 30, distinguish early IMNM from genetic myopathy — antibody status matters most (NEJM 2026)",
+    "Statin-associated HMGCR myopathy persists or worsens after the statin is stopped (ENMC 2017)",
+    "Raised ALT doesn't prove liver injury — ALT rises substantially with muscle necrosis; muscle disease raises AST/ALT with AST predominance early; screen with CK ± aldolase (Nathwani 2005; ACG 2017)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:acute-generalized-weakness"
+  ],
+  "sources": [
+    "Allenbach Y, et al. 224th ENMC International Workshop: Clinico-sero-pathological classification of immune-mediated necrotizing myopathies. Neuromuscul Disord 2018;28:87-99",
+    "Allenbach Y, Benveniste O. Inflammatory Myopathies. N Engl J Med 2026;394:1925-1938. doi:10.1056/NEJMra2415426",
+    "Nathwani RA, et al. Serum Alanine Aminotransferase in Skeletal Muscle Diseases. Hepatology 2005;41:380-382. doi:10.1002/hep.20548",
+    "Kwo PY, Cohen SM, Lim JK. ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries. Am J Gastroenterol 2017;112:18-35. doi:10.1038/ajg.2016.517"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

@@ -1,0 +1,265 @@
+{
+  "kind": "DECISION",
+  "id": "dapt-minor-stroke-tia",
+  "title": "DAPT for minor stroke and high-risk TIA",
+  "searchTerms": [
+    "DAPT",
+    "dual antiplatelet",
+    "CHANCE",
+    "POINT",
+    "THALES",
+    "INSPIRES",
+    "CHANCE-2",
+    "minor stroke",
+    "TIA"
+  ],
+  "question": "Who gets short-term DAPT after minor stroke or TIA, with which regimen, and for how long?",
+  "population": [
+    "Noncardioembolic minor ischemic stroke or high-risk TIA",
+    "Did not receive IVT (all DAPT trials excluded IVT)"
+  ],
+  "rules": [
+    {
+      "order": 1,
+      "condition": "NIHSS ≤3 or ABCD2 ≥4, within 24 h of onset",
+      "recommendation": "Clopidogrel (with load) + aspirin, start within 24 h, 21 days, then SAPT",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2026: COR 1, LOE A",
+        "Kleindorfer 2021: COR 1, LOE A — ideally within 12–24 h, at least within 7 days; 21–90 days"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "NIHSS ≤5 or ABCD2 ≥4 at 24–72 h, or NIHSS 4–5 within 24 h, with presumed atherosclerotic cause (≥50% stenosis likely causative, or new infarcts of presumed large-artery origin)",
+      "recommendation": "Clopidogrel + aspirin × 21 days, then SAPT (INSPIRES)",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "AHA 2026: COR 2a, LOE B-R"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier",
+      "recommendation": "Ticagrelor + aspirin × 21 days, then ticagrelor alone, in preference to clopidogrel-based DAPT (CHANCE-2)",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA 2026: COR 2b, LOE B-R"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Noncardioembolic minor stroke (NIHSS ≤5) or high-risk TIA (ABCD2 ≥6, or symptomatic ≥50% intracranial/extracranial stenosis that could account for the TIA), <24 h, no IVT (THALES)",
+      "recommendation": "Ticagrelor + aspirin × 30 days may be considered (THALES) — more severe bleeding including ICH",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA 2026: COR 2b, LOE B-R",
+        "Kleindorfer 2021 §5.19: COR 2b, LOE B-R (SR) — used ≥30% stenosis for any event"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Any regimen beyond 90 days, or adding a third antiplatelet",
+      "recommendation": "Don't — excess hemorrhage without added benefit",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 3: Harm, LOE A (DAPT >90 days or triple therapy)",
+        "AHA 2026: triple antiplatelet COR 3: Harm, LOE B-R"
+      ]
+    },
+    {
+      "order": 6,
+      "condition": "Received IVT in the past 24 h",
+      "recommendation": "DAPT not studied after IVT; any antiplatelet in the first 24 h only with a compelling indication — usually after 24-h imaging",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA 2026: COR 2b, LOE B-NR (antiplatelets within 24 h of IVT)"
+      ]
+    },
+    {
+      "order": 7,
+      "condition": "Already on aspirin at the time of the event",
+      "recommendation": "Raising the dose or switching agents is of unclear benefit; DAPT criteria above still apply",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA 2026: COR 2b, LOE B-NR"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Clopidogrel + aspirin",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Clopidogrel 300–600 mg load, then 75 mg daily; aspirin 160–325 mg load, then 75–100 mg daily",
+      "dose": [
+        {
+          "label": "Clopidogrel load",
+          "amountMin": 300,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Clopidogrel",
+          "amountMin": 75,
+          "amountMax": 75,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Aspirin load",
+          "amountMin": 160,
+          "amountMax": 325,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Aspirin",
+          "amountMin": 75,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "CHANCE: 300 mg load, 21 days; POINT: 600 mg load, 90 days",
+        "Agent details, interactions and holds: see the agent entries"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2026: COR 1, LOE A"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Ticagrelor + aspirin",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Ticagrelor 180 mg load, then 90 mg BID; aspirin 300–325 mg load (THALES) or 75–300 mg (CHANCE-2), then 75–100 mg daily",
+      "dose": [
+        {
+          "label": "Ticagrelor load",
+          "amountMin": 180,
+          "amountMax": 180,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Ticagrelor",
+          "amountMin": 90,
+          "amountMax": 90,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Aspirin load",
+          "amountMin": 160,
+          "amountMax": 325,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Aspirin",
+          "amountMin": 75,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Keep aspirin ≤100 mg/day with ticagrelor",
+        "Contraindicated with prior ICH",
+        "Agent details, interactions and holds: see the agent entries"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "AHA 2026: COR 2b, LOE B-R"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "contraindications": [
+    "Cardioembolic source needing anticoagulation",
+    "IVT within 24 h (see rule 6)",
+    "Prior ICH (ticagrelor)",
+    "NIHSS >5 — outside trial populations"
+  ],
+  "esoDiffers": [],
+  "institutionVaries": [
+    "CYP2C19 genotype testing availability and turnaround",
+    "Ticagrelor formulary restriction"
+  ],
+  "pearls": [
+    "Trial NNTs (AHA 2026 Table 9): CHANCE 28, INSPIRES 53, CHANCE-2 63, POINT 67, THALES 91; POINT, THALES, CHANCE-2 and INSPIRES had slightly more bleeding",
+    "In a large Italian registry only 7.8% of DAPT-treated patients met trial criteria (AHA 2026 knowledge gaps) — out-of-criteria use is untested",
+    "Stenosis thresholds differ by source: THALES enrollment and AHA 2026 use ≥50% as a high-risk-TIA criterion; Kleindorfer 2021 §5.19 used ≥30% for any event; ipsilateral >30% intracranial stenosis has its own recommendation (icad-symptomatic rule 3)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:clopidogrel",
+    "vascular-antithrombotics:aspirin",
+    "vascular-antithrombotics:ticagrelor",
+    "vascular-antithrombotics:icad-symptomatic"
+  ],
+  "sources": [
+    "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Johnston SC, et al. Ticagrelor and Aspirin or Aspirin Alone in Acute Ischemic Stroke or TIA (THALES). N Engl J Med 2020;383:207-217. doi:10.1056/NEJMoa1916870"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

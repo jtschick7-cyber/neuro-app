@@ -1,0 +1,194 @@
+{
+  "id": "caa-related-inflammation",
+  "title": "CAA-related inflammation (CAA-ri)",
+  "searchTerms": [
+    "CAA-ri",
+    "inflammatory CAA",
+    "amyloid angiitis",
+    "ABRA",
+    "cerebral amyloid angiopathy inflammation",
+    "ARIA-like"
+  ],
+  "category": "VASCULAR",
+  "consultQuestion": "Older patient with subacute cognitive change, seizures, or headache and asymmetric white-matter edema with lobar microbleeds — CAA-ri? Biopsy or treat?",
+  "keyHistory": [
+    "Subacute cognitive or behavioral change (58%), headache (42%), seizure (42%), focal deficit (19%) (Regenhardt)",
+    "Known CAA or prior lobar ICH (Auriel)",
+    "Anti-amyloid antibody therapy — ARIA has a similar clinicoradiologic picture (Auriel)",
+    "Cancer, immunosuppression, infection risk — criteria require excluding neoplastic and infectious causes (Auriel)"
+  ],
+  "keyExam": [
+    "Mental status, level of consciousness",
+    "Focal neurological signs"
+  ],
+  "redFlags": [
+    "Declining consciousness or mass effect from edema",
+    "Features of lymphoma or infection — steroids can obscure lymphoma (Auriel)",
+    "No steroid response within 3 weeks — consider brain biopsy (Auriel)"
+  ],
+  "differential": [
+    {
+      "dx": "CAA-related inflammation",
+      "clues": [
+        "Asymmetric T2/FLAIR WMH extending to the immediately subcortical white matter plus lobar microbleeds, macrobleed, or cortical superficial siderosis (Auriel)",
+        "APOE ε4/ε4 in 77% vs 5% of noninflammatory CAA (Kinnecom)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Primary CNS lymphoma",
+      "clues": [
+        "Steroids may obscure the diagnosis (Auriel)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Infection",
+      "clues": [
+        "Criteria require exclusion (Auriel)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "PACNS / other CNS vasculitis",
+      "clues": [
+        "See cns-vasculitis-workup"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "Noninflammatory CAA with extensive WMH",
+      "clues": [
+        "Extensive WMH is common in noninflammatory CAA — possible criteria only 68% specific (Auriel)"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "MRI brain: FLAIR, SWI/GRE, gadolinium",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Probable criteria: asymmetric WMH to the immediately subcortical WM (not from past ICH) + ≥1 cortico-subcortical macrobleed, microbleed, or cSS (Auriel Table 1)",
+        "Small DWI lesions and gadolinium enhancement are not reliable for diagnosis (Auriel); enhancement in 34% (Regenhardt)"
+      ]
+    },
+    {
+      "test": "LP: cells, protein, glucose, cytology, flow cytometry, infectious studies",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "CSF protein >45 mg/dL in 92%, cells >5/μL in 26% (Regenhardt)",
+        "Neither sensitive nor specific — mainly to exclude mimics (Auriel)"
+      ]
+    },
+    {
+      "test": "Brain and leptomeningeal biopsy",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "No steroid response within 3 weeks",
+        "Probable criteria not met or a mimic is suspected"
+      ],
+      "notes": [
+        "Focal, segmental inflammation can be missed on biopsy (Auriel)",
+        "Stereotactic biopsy: mortality 0–1%, significant morbidity 3–5% (Auriel)"
+      ]
+    },
+    {
+      "test": "Surveillance MRI",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "After treatment"
+      ],
+      "notes": [
+        "Detects recurrence (Regenhardt)"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Age ≥40; ≥1 of headache, decreased consciousness, behavioral change, focal signs/seizures (not from acute ICH); asymmetric WMH extending to immediately subcortical WM (not from past ICH); ≥1 cortico-subcortical macrobleed, microbleed, or cSS; no neoplastic, infectious, or other cause",
+      "recommendation": "Probable CAA-ri — sensitivity 82%, specificity 97%",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Auriel 2016 Table 1; 17 pathology-proven cases vs 37 noninflammatory CAA controls"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Same, but WMH need not be asymmetric",
+      "recommendation": "Possible CAA-ri — sensitivity 82%, specificity 68%",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Auriel 2016 Table 1"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Meets probable criteria",
+      "recommendation": "Empiric immunosuppression without brain biopsy",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Auriel 2016 conclusion"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Empirically treated, no response within 3 weeks",
+      "recommendation": "Consider brain biopsy",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Auriel 2016 (citing Chung 2011)"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Treating CAA-ri",
+      "recommendation": "IV methylprednisolone 1 g daily for 3–5 days, then oral prednisone 60 mg daily tapered over months",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Regenhardt 2020: most common regimen, called reasonable by the authors",
+        "Retrospective: improvement 94% treated vs 50% untreated; recurrence 26% vs 71% (HR 0.19)"
+      ]
+    },
+    {
+      "order": 6,
+      "condition": "Recurrent episodes",
+      "recommendation": "Cyclophosphamide or mycophenolate can be considered — sparse data",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Regenhardt 2020"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Where feasible, exclude lymphoma and infection before empiric steroids (Auriel)"
+  ],
+  "recsTemplate": [],
+  "disposition": [
+    "Surveillance MRI for recurrence (Regenhardt)"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Brain biopsy access (neurosurgery)"
+  ],
+  "pearls": [
+    "APOE ε4/ε4: 10/13 (77%) CAA-ri vs 2/39 (5%) noninflammatory CAA, OR 61.7 (Kinnecom); 15/33 (45%) in Regenhardt",
+    "Cognition improved and seizures resolved within 1–2 weeks of treatment in responders (Kinnecom)",
+    "All symptomatic recurrences in Kinnecom occurred off immunosuppression; one ICH occurred in a region of recurrent hyperintensity",
+    "CSF anti-Aβ autoantibodies are research-only (Auriel)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:cns-vasculitis-workup",
+    "consult-workups:ich-etiology-workup"
+  ],
+  "sources": [
+    "Auriel E, et al. Validation of Clinicoradiological Criteria for the Diagnosis of Cerebral Amyloid Angiopathy-Related Inflammation. JAMA Neurol 2016;73:197-202. doi:10.1001/jamaneurol.2015.4078",
+    "Regenhardt RW, et al. Association Between Immunosuppressive Treatment and Outcomes of Cerebral Amyloid Angiopathy-Related Inflammation. JAMA Neurol 2020;77:1261-1269. doi:10.1001/jamaneurol.2020.1782",
+    "Kinnecom C, et al. Course of cerebral amyloid angiopathy-related inflammation. Neurology 2007;68:1411-1416"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

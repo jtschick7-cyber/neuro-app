@@ -1,0 +1,807 @@
+{
+  "id": "thrombophilia-test-validity",
+  "title": "Thrombophilia tests: validity by timing and anticoagulant",
+  "searchTerms": [
+    "thrombophilia",
+    "hypercoagulable workup",
+    "test interference",
+    "lupus anticoagulant on DOAC",
+    "protein C warfarin",
+    "protein S",
+    "antithrombin heparin",
+    "factor V Leiden",
+    "prothrombin gene",
+    "antiphospholipid",
+    "JAK2",
+    "PNH",
+    "lipoprotein(a)",
+    "homocysteine"
+  ],
+  "scopeNote": "Whether each result can be trusted during acute thrombosis or on UFH/LMWH, a VKA or a DOAC. Inherited thrombophilia testing rarely changes default antiplatelet therapy after arterial stroke unless it shows APS or venous thrombosis (Kleindorfer 2021). AT, protein C and protein S deficiency can be acquired, and levels vary within a person (Middeldorp 2023). \"Not addressed by sources\" means no source in this app covers that cell.",
+  "sections": [
+    {
+      "kind": "MATRIX",
+      "heading": "Test validity by setting",
+      "columns": [
+        {
+          "key": "acute-thrombosis",
+          "label": "Acute thrombosis"
+        },
+        {
+          "key": "ufh-lmwh",
+          "label": "UFH / LMWH"
+        },
+        {
+          "key": "vka",
+          "label": "VKA"
+        },
+        {
+          "key": "doac",
+          "label": "DOAC"
+        }
+      ],
+      "rows": [
+        {
+          "test": "Factor V Leiden / prothrombin 20210A (PCR genotype)",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "VALID",
+              "direction": null,
+              "text": "Genotype is accurate at any time",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+              ]
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "VALID",
+              "direction": null,
+              "text": "Unaffected",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+              ]
+            },
+            {
+              "column": "vka",
+              "status": "VALID",
+              "direction": null,
+              "text": "Unaffected",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+              ]
+            },
+            {
+              "column": "doac",
+              "status": "VALID",
+              "direction": null,
+              "text": "Unaffected",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                "Favaloro 2019: single-lab ex vivo audit (ungraded)",
+                "ASCP Choosing Wisely: society recommendation (no formal grading)"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+                "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020"
+              ]
+            }
+          ],
+          "notes": [
+            {
+              "text": "The functional APCR screen is not the genotype: it is unreliable on DOACs and warfarin, and the direction depends on the assay (false APCR-positive ratios in an RVVT-based audit; ICSH lists APCR among results a DOAC can falsely raise). On anticoagulation, send PCR.",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ICSH 2018: consensus recommendation (Table 3)",
+                "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+              ],
+              "sources": [
+                "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480",
+                "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+              ]
+            }
+          ]
+        },
+        {
+          "test": "Anticardiolipin / anti-β2-glycoprotein I (solid-phase)",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "VALID",
+              "direction": null,
+              "text": "Accurate at any time",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+              ]
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "VALID",
+              "direction": null,
+              "text": "Reliable on anticoagulation",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+              ]
+            },
+            {
+              "column": "vka",
+              "status": "VALID",
+              "direction": null,
+              "text": "Reliable on anticoagulation",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+              ]
+            },
+            {
+              "column": "doac",
+              "status": "VALID",
+              "direction": null,
+              "text": "ELISA-based aCL/aβ2GPI unaffected",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                "ASCP Choosing Wisely: society recommendation (no formal grading)"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020"
+              ]
+            }
+          ],
+          "notes": [
+            {
+              "text": "Confirm a positive result at ≥12 weeks — transient antibodies occur with infection.",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2014: consensus guidance"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Testing for antiphospholipid antibodies with solid phase assays: guidance from the SSC of the ISTH. J Thromb Haemost 2014;12:792-795. doi:10.1111/jth.12537"
+              ]
+            },
+            {
+              "text": "IgM rheumatoid factor can falsely raise IgM aCL/aβ2GPI; avoid hemolyzed, icteric or lipemic samples. Interpret together with the LA result.",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2014: consensus guidance"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Testing for antiphospholipid antibodies with solid phase assays: guidance from the SSC of the ISTH. J Thromb Haemost 2014;12:792-795. doi:10.1111/jth.12537"
+              ]
+            }
+          ]
+        },
+        {
+          "test": "Lupus anticoagulant (dRVVT + aPTT-based)",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "CAUTION",
+              "direction": "EITHER",
+              "text": "Acute-phase FVIII can mask LA; CRP can cause false positives. Interpret with caution — acute testing may still be needed in a new stroke when APS is suspected",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+              ]
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "ASSAY_DEPENDENT",
+              "direction": "FALSE_HIGH",
+              "text": "Many reagents neutralize heparin; false positives at supratherapeutic anti-Xa. LMWH: draw ≥12 h after the dose, near the next one, with an anti-Xa level",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)",
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047",
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+              ]
+            },
+            {
+              "column": "vka",
+              "status": "UNRELIABLE",
+              "direction": "EITHER",
+              "text": "False positives and negatives; mixing with normal plasma is not reliable. If feasible, test 1–2 weeks after stopping the VKA (LMWH bridge if needed)",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+              ]
+            },
+            {
+              "column": "doac",
+              "status": "UNRELIABLE",
+              "direction": "FALSE_HIGH",
+              "text": "False positives even at low DOAC levels. If feasible, hold the DOAC ≥48 h (longer with renal impairment) and check a DOAC level; adsorbents only with lab input",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)",
+                "ICSH 2018: consensus recommendation (Table 3)",
+                "ASCP Choosing Wisely: society recommendation (no formal grading)"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047",
+                "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480",
+                "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020"
+              ]
+            }
+          ],
+          "notes": [
+            {
+              "text": "Repeat a positive LA at ≥12 weeks to confirm persistence; interpret with aCL and aβ2GPI.",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+              ]
+            },
+            {
+              "text": "Put the anticoagulant on the request — the lab needs it to interpret the result.",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+              ]
+            },
+            {
+              "text": "In pregnancy, positive or negative results are unreliable; retest after delivery (≥6 weeks, ideally 3 months).",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ISTH-SSC 2020: consensus guidance (Table 1; §2.2, §3.2)"
+              ],
+              "sources": [
+                "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047"
+              ]
+            }
+          ]
+        },
+        {
+          "test": "Antithrombin (activity)",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "UNRELIABLE",
+              "direction": "FALSE_LOW",
+              "text": "Can be low from consumption — don't diagnose hereditary deficiency during an active clot",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                "ASCP Choosing Wisely: society recommendation (no formal grading)",
+                "AHA/ASA 2021: supportive text (ungraded)"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+                "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375"
+              ]
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "UNRELIABLE",
+              "direction": "FALSE_LOW",
+              "text": "UFH and LMWH lowered AT in an ex vivo audit; avoid testing on heparin",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Favaloro 2019: single-lab ex vivo audit (ungraded)",
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+              ],
+              "sources": [
+                "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+              ]
+            },
+            {
+              "column": "vka",
+              "status": "VALID",
+              "direction": null,
+              "text": "Warfarin did not affect AT in an ex vivo audit (single lab, chromogenic assay)",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+              ],
+              "sources": [
+                "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+              ]
+            },
+            {
+              "column": "doac",
+              "status": "ASSAY_DEPENDENT",
+              "direction": "FALSE_HIGH",
+              "text": "Falsely high when the kit's substrate matches the drug (FXa-based kit with anti-Xa DOACs; thrombin-based kit with dabigatran); the other substrate is unaffected",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ICSH 2018: consensus recommendation (Table 3)"
+              ],
+              "sources": [
+                "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480"
+              ]
+            }
+          ],
+          "notes": [
+            {
+              "text": "AT, protein C and protein S deficiency can be acquired (comorbidity, hormones), and levels fluctuate within a person.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ASH 2023: ungraded background statement"
+              ],
+              "sources": [
+                "Middeldorp S, et al. American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing. Blood Adv 2023;7:7101-7138. doi:10.1182/bloodadvances.2023010177"
+              ]
+            }
+          ]
+        },
+        {
+          "test": "Protein C / protein S",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "UNRELIABLE",
+              "direction": "FALSE_LOW",
+              "text": "Can be low from consumption; defer or repeat ≥4–6 weeks after the event",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing",
+                "ASCP Choosing Wisely: society recommendation (no formal grading)",
+                "AHA/ASA 2021: supportive text (ungraded)"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+                "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+                "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375"
+              ]
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "ASSAY_DEPENDENT",
+              "direction": null,
+              "text": "Most kits contain heparin neutralizers; little effect seen ex vivo (chromogenic PC, free PS antigen)",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Favaloro 2019: single-lab ex vivo audit (ungraded)"
+              ],
+              "sources": [
+                "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041"
+              ]
+            },
+            {
+              "column": "vka",
+              "status": "UNRELIABLE",
+              "direction": "FALSE_LOW",
+              "text": "Vitamin K–dependent: falsely low on warfarin",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Favaloro 2019: single-lab ex vivo audit (ungraded)",
+                "ASCP Choosing Wisely: society recommendation (no formal grading)",
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+              ],
+              "sources": [
+                "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+                "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+              ]
+            },
+            {
+              "column": "doac",
+              "status": "ASSAY_DEPENDENT",
+              "direction": "FALSE_HIGH",
+              "text": "Clot-based PC/PS activity falsely high (can mask deficiency); chromogenic PC and free PS antigen unaffected",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "ICSH 2018: consensus recommendation (Table 3)"
+              ],
+              "sources": [
+                "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480"
+              ]
+            }
+          ],
+          "notes": [
+            {
+              "text": "Pregnancy, female sex and estrogen lower protein S: use sex-specific ranges; test before pregnancy or off estrogen.",
+              "evidenceLevel": "CONSENSUS",
+              "evidenceNote": [
+                "Anticoagulation Forum 2016: guidance statement (guidelines + consensus expert opinion), Q6 timing"
+              ],
+              "sources": [
+                "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1"
+              ]
+            }
+          ]
+        },
+        {
+          "test": "JAK2 V617F / CALR / MPL",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            },
+            {
+              "column": "vka",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            },
+            {
+              "column": "doac",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            }
+          ],
+          "notes": [
+            {
+              "text": "Screen for JAK2 V617F in unexplained splanchnic vein thrombosis with normal blood counts.",
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "BSH 2021: GRADE 1B"
+              ],
+              "sources": [
+                "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766"
+              ]
+            },
+            {
+              "text": "Consider JAK2 V617F in selected unexplained cerebral venous thrombosis; consider CALR in splanchnic or cerebral venous thrombosis.",
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "BSH 2021: GRADE 2C"
+              ],
+              "sources": [
+                "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766"
+              ]
+            },
+            {
+              "text": "Consider JAK2/CALR/MPL in arterial or unprovoked venous thrombosis with a mildly or variably raised hematocrit or platelet count persisting 2–3 months.",
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "BSH 2021: GRADE 2C"
+              ],
+              "sources": [
+                "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766"
+              ]
+            },
+            {
+              "text": "Very low allele burdens (e.g. JAK2 V617F <1%) are reported as such — their significance is less certain because low-level JAK2 V617F occurs in the general population.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "BSH 2021: ungraded text"
+              ],
+              "sources": [
+                "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766"
+              ]
+            },
+            {
+              "text": "Peripheral blood is adequate; assay sensitivity varies by method and sequencing can miss low-level mutations.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Xia 2016: narrative review (ungraded)"
+              ],
+              "sources": [
+                "Xia D, Hasserjian RP. Molecular testing for JAK2, MPL, and CALR in myeloproliferative neoplasms. Am J Hematol 2016;91:1277-1280. doi:10.1002/ajh.24578"
+              ]
+            }
+          ]
+        },
+        {
+          "test": "PNH (flow cytometry)",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            },
+            {
+              "column": "vka",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            },
+            {
+              "column": "doac",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            }
+          ],
+          "notes": [
+            {
+              "text": "Test with thrombosis at unusual sites (intra-abdominal, cerebral or dermal veins), hemolysis or cytopenia.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Devalet 2015: narrative review (ungraded)",
+                "Preis 2014: educational review (ungraded)"
+              ],
+              "sources": [
+                "Devalet B, et al. Pathophysiology, diagnosis, and treatment of paroxysmal nocturnal hemoglobinuria: a review. Eur J Haematol 2015;95:190-198. doi:10.1111/ejh.12543",
+                "Preis M, Lowrey CH. Laboratory tests for paroxysmal nocturnal hemoglobinuria. Am J Hematol 2014;89:339-341. doi:10.1002/ajh.23612"
+              ]
+            },
+            {
+              "text": "Use granulocyte/monocyte (FLAER-based) analysis — the red-cell clone is underestimated after hemolysis or transfusion.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Preis 2014: educational review (ungraded)",
+                "Devalet 2015: narrative review (ungraded)"
+              ],
+              "sources": [
+                "Preis M, Lowrey CH. Laboratory tests for paroxysmal nocturnal hemoglobinuria. Am J Hematol 2014;89:339-341. doi:10.1002/ajh.23612",
+                "Devalet B, et al. Pathophysiology, diagnosis, and treatment of paroxysmal nocturnal hemoglobinuria: a review. Eur J Haematol 2015;95:190-198. doi:10.1111/ejh.12543"
+              ]
+            }
+          ]
+        },
+        {
+          "test": "Lipoprotein(a)",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "CAUTION",
+              "direction": "FALSE_HIGH",
+              "text": "Possible acute-phase rise (uncertain)",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "NHLBI working group 2018 (ungraded)",
+                "Koutsogianni 2023: narrative review (ungraded)"
+              ],
+              "sources": [
+                "Tsimikas S, et al. Unmet Needs in Understanding Lipoprotein(a) Pathophysiology: NHLBI Working Group Recommendations to Reduce Risk of Cardiovascular Disease and Aortic Stenosis. J Am Coll Cardiol 2018;71:177-192. doi:10.1016/j.jacc.2017.11.014",
+                "Koutsogianni AD, et al. Effects of Lipid-Modifying and Other Drugs on Lipoprotein(a) Levels—Potent Clinical Implications. Pharmaceuticals 2023;16:750. doi:10.3390/ph16050750"
+              ]
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            },
+            {
+              "column": "vka",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            },
+            {
+              "column": "doac",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            }
+          ],
+          "notes": [
+            {
+              "text": "Mostly genetic and stable over a lifetime — one measurement usually suffices.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Tsimikas 2017: review (ungraded)",
+                "Koutsogianni 2023: narrative review (ungraded)"
+              ],
+              "sources": [
+                "Tsimikas S. A Test in Context: Lipoprotein(a): Diagnosis, Prognosis, Controversies, and Emerging Therapies. J Am Coll Cardiol 2017;69:692-711. doi:10.1016/j.jacc.2016.11.042",
+                "Koutsogianni AD, et al. Effects of Lipid-Modifying and Other Drugs on Lipoprotein(a) Levels—Potent Clinical Implications. Pharmaceuticals 2023;16:750. doi:10.3390/ph16050750"
+              ]
+            },
+            {
+              "text": "mg/dL and nmol/L are not interchangeable (apo(a) size varies); compare results in the same unit.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "NHLBI working group 2018 (ungraded)"
+              ],
+              "sources": [
+                "Tsimikas S, et al. Unmet Needs in Understanding Lipoprotein(a) Pathophysiology: NHLBI Working Group Recommendations to Reduce Risk of Cardiovascular Disease and Aortic Stenosis. J Am Coll Cardiol 2018;71:177-192. doi:10.1016/j.jacc.2017.11.014"
+              ]
+            }
+          ]
+        },
+        {
+          "test": "Homocysteine (total)",
+          "cells": [
+            {
+              "column": "acute-thrombosis",
+              "status": "CAUTION",
+              "direction": "FALSE_LOW",
+              "text": "Acute value may underestimate (lower acutely in some cohorts; unchanged at 3 months in a large one) — recheck at ≥3 months if it changes management",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Nygård 1999: review (ungraded)",
+                "Meiklejohn 2001: prospective cohort, n=82 resampled (ungraded)",
+                "Haapaniemi 2007: serial-measurement cohort (ungraded)",
+                "Shi 2018: prospective cohort, n=2800 (ungraded)"
+              ],
+              "sources": [
+                "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454",
+                "Meiklejohn DJ, et al. Plasma homocysteine concentrations in the acute and convalescent periods of atherothrombotic stroke. Stroke 2001;32:57-62",
+                "Haapaniemi E, et al. Serial measurements of plasma homocysteine levels in early and late phases of ischemic stroke. Eur J Neurol 2007;14:12-17. doi:10.1111/j.1468-1331.2006.01518.x",
+                "Shi Z, et al. Changes in total homocysteine levels after acute stroke and recurrence of stroke. Sci Rep 2018;8:6993. doi:10.1038/s41598-018-25398-5"
+              ]
+            },
+            {
+              "column": "ufh-lmwh",
+              "status": "CAUTION",
+              "direction": "FALSE_LOW",
+              "text": "Enoxaparin lowered total homocysteine over 3 days in warfarin-treated patients (n=24); UFH not studied",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Haviv 2002: prospective before-after study, n=24 (ungraded)"
+              ],
+              "sources": [
+                "Haviv Y, et al. Effect of enoxaparin on homocysteine concentration in warfarin-treated patients. Ann Pharmacother 2002;36:1355-1359"
+              ]
+            },
+            {
+              "column": "vka",
+              "status": "CAUTION",
+              "direction": "FALSE_HIGH",
+              "text": "Higher levels with lower folate on long-term VKA with a vitamin K–restricted diet (n=20) — attributed to diet/folate, not warfarin itself",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Muruá 2001: cross-sectional brief report, n=20 vs 35 (ungraded)"
+              ],
+              "sources": [
+                "Muruá A, et al. Unsuspected hyperhomocysteinemia in chronically anticoagulated patients. Blood Coagul Fibrinolysis 2001;12:79-80"
+              ]
+            },
+            {
+              "column": "doac",
+              "status": "NOT_ADDRESSED",
+              "direction": null,
+              "text": "Not addressed by sources",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [],
+              "sources": []
+            }
+          ],
+          "notes": [
+            {
+              "text": "Pre-analytic: levels rise about 15–20% per hour in unseparated blood at room temperature — keep on ice or separate promptly.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Nygård 1999: review (ungraded)"
+              ],
+              "sources": [
+                "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454"
+              ]
+            },
+            {
+              "text": "Raised by renal impairment, B12/folate deficiency, methotrexate, nitrous oxide and anticonvulsants.",
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Nygård 1999: review (ungraded)"
+              ],
+              "sources": [
+                "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pitfalls": [
+    "Sending the full panel during the acute admission — AT, protein C/S and LA are least reliable then; genotypes and solid-phase aPL are not affected (Stevens 2016; Devreese 2020)",
+    "Treating an abnormal APCR on a DOAC or warfarin as factor V Leiden — send PCR (Favaloro 2019)",
+    "Leaving the anticoagulant off the LA request (Devreese 2020)"
+  ],
+  "keyNumbers": [
+    "LA on LMWH: draw ≥12 h after the dose, with anti-Xa (Devreese 2020)",
+    "LA on a DOAC: hold ≥48 h if feasible (longer with renal impairment) and check a DOAC level (Devreese 2020)",
+    "Positive aPL: repeat at ≥12 weeks (Devreese 2014, 2020)",
+    "Homocysteine after stroke: recheck at ≥3 months if it changes management (Meiklejohn 2001; Haapaniemi 2007; Shi 2018)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:young-stroke-workup",
+    "vascular-antithrombotics:cvt-anticoagulation",
+    "vascular-antithrombotics:pregnancy-antithrombotics"
+  ],
+  "sources": [
+    "Stevens SM, et al. Guidance for the evaluation and treatment of hereditary and acquired thrombophilia (Anticoagulation Forum). J Thromb Thrombolysis 2016;41:154-164. doi:10.1007/s11239-015-1316-1",
+    "Favaloro EJ. Danger of false negative (exclusion) or false positive (diagnosis) for 'congenital thrombophilia' in the age of anticoagulants. Clin Chem Lab Med 2019;57:873-882. doi:10.1515/cclm-2018-1041",
+    "American Society for Clinical Pathology. Thirty Five Things Physicians and Patients Should Question (Choosing Wisely), items 18 and 28. Choosing Wisely list, released 2014-2020",
+    "Gosselin RC, et al. International Council for Standardization in Haematology (ICSH) Recommendations for Laboratory Measurement of Direct Oral Anticoagulants. Thromb Haemost 2018;118:437-450. doi:10.1055/s-0038-1627480",
+    "Devreese KMJ, et al. Testing for antiphospholipid antibodies with solid phase assays: guidance from the SSC of the ISTH. J Thromb Haemost 2014;12:792-795. doi:10.1111/jth.12537",
+    "Devreese KMJ, et al. Guidance from the Scientific and Standardization Committee for lupus anticoagulant/antiphospholipid antibodies of the ISTH: update of the guidelines for lupus anticoagulant detection and interpretation. J Thromb Haemost 2020;18:2828-2839. doi:10.1111/jth.15047",
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Middeldorp S, et al. American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing. Blood Adv 2023;7:7101-7138. doi:10.1182/bloodadvances.2023010177",
+    "Cross NCP, et al. The use of genetic tests to diagnose and manage patients with myeloproliferative and myeloproliferative/myelodysplastic neoplasms, and related disorders (BSH Good Practice Paper). Br J Haematol 2021;195:338-351. doi:10.1111/bjh.17766",
+    "Xia D, Hasserjian RP. Molecular testing for JAK2, MPL, and CALR in myeloproliferative neoplasms. Am J Hematol 2016;91:1277-1280. doi:10.1002/ajh.24578",
+    "Devalet B, et al. Pathophysiology, diagnosis, and treatment of paroxysmal nocturnal hemoglobinuria: a review. Eur J Haematol 2015;95:190-198. doi:10.1111/ejh.12543",
+    "Preis M, Lowrey CH. Laboratory tests for paroxysmal nocturnal hemoglobinuria. Am J Hematol 2014;89:339-341. doi:10.1002/ajh.23612",
+    "Tsimikas S, et al. Unmet Needs in Understanding Lipoprotein(a) Pathophysiology: NHLBI Working Group Recommendations to Reduce Risk of Cardiovascular Disease and Aortic Stenosis. J Am Coll Cardiol 2018;71:177-192. doi:10.1016/j.jacc.2017.11.014",
+    "Koutsogianni AD, et al. Effects of Lipid-Modifying and Other Drugs on Lipoprotein(a) Levels—Potent Clinical Implications. Pharmaceuticals 2023;16:750. doi:10.3390/ph16050750",
+    "Tsimikas S. A Test in Context: Lipoprotein(a): Diagnosis, Prognosis, Controversies, and Emerging Therapies. J Am Coll Cardiol 2017;69:692-711. doi:10.1016/j.jacc.2016.11.042",
+    "Nygård O, et al. Total homocysteine and cardiovascular disease. J Intern Med 1999;246:425-454",
+    "Meiklejohn DJ, et al. Plasma homocysteine concentrations in the acute and convalescent periods of atherothrombotic stroke. Stroke 2001;32:57-62",
+    "Haapaniemi E, et al. Serial measurements of plasma homocysteine levels in early and late phases of ischemic stroke. Eur J Neurol 2007;14:12-17. doi:10.1111/j.1468-1331.2006.01518.x",
+    "Shi Z, et al. Changes in total homocysteine levels after acute stroke and recurrence of stroke. Sci Rep 2018;8:6993. doi:10.1038/s41598-018-25398-5",
+    "Haviv Y, et al. Effect of enoxaparin on homocysteine concentration in warfarin-treated patients. Ann Pharmacother 2002;36:1355-1359",
+    "Muruá A, et al. Unsuspected hyperhomocysteinemia in chronically anticoagulated patients. Blood Coagul Fibrinolysis 2001;12:79-80"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

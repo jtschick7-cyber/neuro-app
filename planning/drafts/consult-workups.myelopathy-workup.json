@@ -1,0 +1,251 @@
+{
+  "id": "myelopathy-workup",
+  "title": "Myelopathy / transverse myelitis workup",
+  "searchTerms": [
+    "myelopathy",
+    "myelitis",
+    "transverse myelitis",
+    "LETM",
+    "spinal cord infarct",
+    "dural AV fistula",
+    "subacute combined degeneration"
+  ],
+  "category": "SPINAL",
+  "consultQuestion": "Spinal cord syndrome — compressive, vascular, nutritional, or inflammatory?",
+  "keyHistory": [
+    "Tempo: hyperacute (minutes — infarct), hours–days (myelitis), weeks–months (DAVF, nutritional, spondylotic)",
+    "Aortic surgery/procedures or bypass (cord infarct)",
+    "Bariatric surgery, malabsorption, zinc products, nitrous oxide",
+    "Optic neuritis, area postrema symptoms (NMOSD), prior demyelinating events (MS)",
+    "Preceding infection or vaccination",
+    "Systemic disease: sarcoid, lupus, Sjögren, cancer"
+  ],
+  "keyExam": [
+    "Sensory level, dissociated sensory loss",
+    "Pattern: anterior (spared vibration/proprioception — anterior spinal artery), posterior columns (B12, copper)",
+    "UMN signs; may be areflexic acutely",
+    "Bladder/bowel function; Lhermitte sign"
+  ],
+  "redFlags": [
+    "Compressive lesion on MRI — neurosurgery now",
+    "Hyperacute onset with back pain — cord infarct or hematoma",
+    "Fever/back pain — epidural abscess",
+    "Area postrema or optic neuritis — NMOSD"
+  ],
+  "differential": [
+    {
+      "dx": "Compressive (disc, spondylosis, metastasis, abscess, hematoma)",
+      "clues": [
+        "Back/radicular pain, extradural lesion"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Spinal cord infarction",
+      "clues": [
+        "Hyperacute, aortic procedure; anterior pencil-like T2, DWI restriction"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Dural AV fistula",
+      "clues": [
+        "Man >50, subacute progression; central T2 often to the conus, flow voids; spinal angiogram"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "NMOSD (AQP4) or MOGAD",
+      "clues": [
+        "Longitudinally extensive (≥3 segments) lesion; AQP4/MOG antibodies"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Multiple sclerosis",
+      "clues": [
+        "Short (<2 segments), peripheral lesions; brain lesions; oligoclonal bands"
+      ],
+      "mustNotMiss": false
+    },
+    {
+      "dx": "B12 deficiency / nitrous oxide / copper deficiency",
+      "clues": [
+        "Posterior ± lateral columns, inverted-V; MMA/homocysteine; copper/ceruloplasmin",
+        "Nitrous oxide: serum B12 low in only 42% of users; homocysteine and MMA raised in ~80% (Ménétrier 2023)",
+        "Copper: prior gastric/bariatric surgery, malabsorption, excess zinc (supplements, denture cream); cytopenias often but not always (Kumar 2006)"
+      ],
+      "mustNotMiss": true
+    },
+    {
+      "dx": "Neurosarcoidosis, infection (HIV, HTLV-1, syphilis, VZV), paraneoplastic, spondylotic myelopathy with enhancement",
+      "clues": [
+        "Trident sign (sarcoid); pancake-like enhancement (spondylotic)"
+      ],
+      "mustNotMiss": false
+    }
+  ],
+  "workup": [
+    {
+      "test": "MRI entire spine with and without gadolinium",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "Image the whole cord — a thoracic sensory level can come from a cervical lesion (Frohman 2010); DWI for suspected infarct (Douglas 2022)"
+      ]
+    },
+    {
+      "test": "MRI brain with gadolinium",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "MS lesions; NMOSD/MOGAD patterns"
+      ]
+    },
+    {
+      "test": "LP: cells, protein, glucose, oligoclonal bands, IgG index, cytology, infectious studies",
+      "priority": "URGENT",
+      "indication": [
+        "No compressive lesion"
+      ],
+      "notes": [
+        "Pleocytosis or raised IgG index supports myelitis (Frohman 2010)"
+      ]
+    },
+    {
+      "test": "Serum AQP4-IgG and MOG-IgG (cell-based)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "B12, MMA, homocysteine; copper, ceruloplasmin, zinc",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Nitrous oxide: don't rely on total B12 — send MMA and homocysteine; interpret with eGFR, both rise in kidney disease (Ménétrier 2023)",
+        "Copper deficiency: zinc may be high even without supplements; B12 deficiency can coexist (Kumar 2006)"
+      ]
+    },
+    {
+      "test": "HIV, HTLV-1, syphilis serology",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "ACE / chest CT for sarcoidosis; ANA/SSA/SSB",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Systemic features"
+      ],
+      "notes": [
+        "Autoantibodies alone don't prove a connective-tissue cause — they occur in MS and NMOSD (Frohman 2010)",
+        "ACE is insufficiently sensitive and specific in serum and CSF; ACE, CRP, and sIL-2R have no proven value for diagnosing neurosarcoidosis — don't use them to rule it in or out (Stern 2018)",
+        "Biopsy an accessible nonneural site to support probable neurosarcoidosis (Stern 2018)"
+      ]
+    },
+    {
+      "test": "Spinal catheter angiography",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected dural AV fistula"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Paraneoplastic antibodies",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Cancer risk or LETM without AQP4/MOG"
+      ],
+      "notes": [
+        "See neural-antibodies (e.g., CRMP5, amphiphysin)"
+      ]
+    }
+  ],
+  "decisionRules": [
+    {
+      "order": 1,
+      "condition": "Any acute myelopathy",
+      "recommendation": "Exclude compression first with whole-spine MRI",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Frohman 2010; Douglas 2022"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Transverse myelitis criteria: bilateral sensory/motor/autonomic cord dysfunction with sensory level, peak 4 h–21 days, plus inflammation (CSF pleocytosis or raised IgG index, or gadolinium-enhancing lesion), with compressive, radiation, neoplastic and vascular causes excluded",
+      "recommendation": "Idiopathic or disease-associated transverse myelitis",
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "Transverse Myelitis Consortium criteria, Frohman 2010 Table 1"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Lesion ≥3 vertebral segments (LETM)",
+      "recommendation": "Test AQP4-IgG and MOG-IgG; NMOSD likely if AQP4-positive",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Frohman 2010; Douglas 2022"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Normal spinal MRI",
+      "recommendation": "Reconsider myelopathy — central or peripheral alternative",
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Frohman 2010"
+      ]
+    }
+  ],
+  "initialSteps": [
+    "Compression: see acute-neuro:spinal-cord-compression",
+    "NMOSD/MOGAD attack: see acute-neuro:nmosd-mogad-attack",
+    "Nutritional/nitrous oxide: replace B12/copper promptly",
+    "Copper deficiency (Kumar/Mayo practice): elemental copper 6 mg/day PO for 1 week, 4 mg/day for 1 week, then 2 mg/day; stop excess zinc (stopping zinc alone may suffice); recheck serum copper"
+  ],
+  "recsTemplate": [
+    "MRI entire spine with and without contrast; MRI brain with contrast",
+    "LP: cells, protein, glucose, OCB, IgG index, cytology, infectious studies",
+    "AQP4-IgG and MOG-IgG (serum)",
+    "B12, MMA, homocysteine, copper, ceruloplasmin, zinc, HIV, HTLV-1, RPR",
+    "Bladder scan / post-void residual"
+  ],
+  "disposition": [
+    "Admit for acute myelopathy",
+    "Neuroimmunology follow-up for myelitis"
+  ],
+  "calculatorIds": [],
+  "institutionVaries": [
+    "Spinal angiography availability (neuro-IR)"
+  ],
+  "pearls": [
+    "Spondylotic myelopathy can show pancake-like transverse enhancement and mimic myelitis (Douglas 2022)",
+    "Cord infarct imaging can be normal early — DWI is more sensitive (Douglas 2022)",
+    "Cavernous malformations: stepwise episodes with recovery; popcorn lesions with GRE blooming (Douglas 2022)",
+    "Copper deficiency myelopathy mimics subacute combined degeneration — dorsal-column T2 signal, usually cervical, no enhancement (Kumar 2006)",
+    "Copper replacement: blood counts recover promptly; neurological recovery is variable but progression usually halts (Kumar 2006)",
+    "Ongoing decline after B12 replacement with a normal B12 level → check copper (Kumar 2006)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:spinal-cord-compression",
+    "acute-neuro:nmosd-mogad-attack",
+    "acute-neuro:ms-relapse",
+    "neural-antibodies:aqp4",
+    "neural-antibodies:mog",
+    "neural-antibodies:cv2-crmp5"
+  ],
+  "sources": [
+    "Frohman EM, Wingerchuk DM. Transverse Myelitis. N Engl J Med 2010;363:564-572",
+    "Douglas AG, Xu DJ, Shah MP. Approach to Myelopathy and Myelitis. Neurol Clin 2022;40:133-156. doi:10.1016/j.ncl.2021.08.009",
+    "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384",
+    "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
+    "Stern BJ, et al. Definition and Consensus Diagnostic Criteria for Neurosarcoidosis. JAMA Neurol 2018;75:1546-1553. doi:10.1001/jamaneurol.2018.2295"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

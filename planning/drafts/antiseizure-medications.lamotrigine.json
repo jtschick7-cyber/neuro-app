@@ -1,0 +1,119 @@
+{
+  "id": "lamotrigine",
+  "title": "Lamotrigine (Lamictal) — titration",
+  "searchTerms": [
+    "Lamictal",
+    "LTG",
+    "lamotrigine titration",
+    "lamotrigine valproate",
+    "lamotrigine restart"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Lamotrigine — WITH valproate",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Wk 1–2: 25 mg every other day. Wk 3–4: 25 mg daily. Then ↑ 25–50 mg/day every 1–2 wk. Usual maintenance 100–200 mg/day (valproate alone) or 100–400 mg/day (valproate + inducers), in 1–2 doses",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Lamictal label §2.2, Table 1 (epilepsy, >12 y)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Lamotrigine — NO valproate, NO inducers",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Wk 1–2: 25 mg daily. Wk 3–4: 50 mg daily. Then ↑ 50 mg/day every 1–2 wk. Usual maintenance 225–375 mg/day in 2 doses",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Lamictal label §2.2, Table 1 (epilepsy, >12 y)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Lamotrigine — WITH carbamazepine, phenytoin, phenobarbital or primidone (no valproate)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Wk 1–2: 50 mg/day. Wk 3–4: 100 mg/day in 2 doses. Then ↑ 100 mg/day every 1–2 wk. Usual maintenance 300–500 mg/day in 2 doses",
+      "dose": [],
+      "notes": [
+        "Rifampin and lopinavir/ritonavir: use this column (§2.2)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Lamictal label §2.2, Table 1 (epilepsy, >12 y)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [
+    {
+      "kind": "INTERMITTENT_HD",
+      "crclMin": null,
+      "crclMax": null,
+      "crclBasis": null,
+      "label": "Intermittent hemodialysis",
+      "doseText": "No supplemental dose stated; ~20% of body lamotrigine removed per 4-h session (§12.3)",
+      "dose": [],
+      "notes": []
+    }
+  ],
+  "renalNotes": [
+    "Start per concomitant medications; reduced maintenance doses may be effective in significant renal impairment; little experience in severe impairment — use caution (§2.1, §8.7)",
+    "Half-life roughly doubles in chronic renal failure (§8.7)"
+  ],
+  "hepatic": [
+    "Mild: no adjustment (§2.1)",
+    "Moderate or severe without ascites: reduce initial, escalation and maintenance doses by ~25% (§2.1)",
+    "Severe with ascites: reduce by ~50% (§2.1)"
+  ],
+  "ivPo": [
+    "Oral only — no parenteral formulation in label (§3)"
+  ],
+  "enteral": [
+    "Tablets for oral suspension: swallow whole, chew, or disperse in a small amount of water or diluted juice and take all of it (§2.5)",
+    "ODT: place on tongue; with or without water (§2.6)",
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "No established therapeutic range — dose by response; levels may help with interacting drugs (§2.1, §5.14)"
+  ],
+  "interactions": [
+    "Valproate: lamotrigine levels ↑ slightly more than 2-fold (Table 13)",
+    "Carbamazepine, phenytoin, phenobarbital/primidone, rifampin: lamotrigine ↓ ~40% (Table 13)",
+    "Estrogen-containing OCs: lamotrigine ↓ ~50%; maintenance often needs up to 2×; levels rise in the pill-free week (§2.1, §5.9)",
+    "Lopinavir/ritonavir ↓ ~50%; atazanavir/ritonavir ↓ ~32% (Table 13)",
+    "Avoid OCT2 substrates with a narrow therapeutic index (e.g., dofetilide) (§7)"
+  ],
+  "pearls": [
+    "Serious rash risk ↑ with valproate, exceeding the initial dose or escalation, HLA-B*1502; most within 2–8 weeks; stop at first rash unless clearly not drug-related (boxed warning)",
+    "Off >5 half-lives: restart with the initial titration; don't restart after lamotrigine rash unless benefit clearly outweighs risk (§2.1)",
+    "Class IB antiarrhythmic activity in vitro — weigh risk in structural/functional heart disease (§5.4)",
+    "Can cause false-positive PCP on rapid urine drug screens (§5.14)",
+    "Taper over ≥2 weeks (~50%/week) unless safety requires faster (§2.1)"
+  ],
+  "calculatorIds": [],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:valproate",
+    "antiseizure-medications:phenytoin-fosphenytoin"
+  ],
+  "sources": [
+    "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
