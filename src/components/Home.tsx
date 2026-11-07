@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ChevronRight, Search } from 'lucide-react';
-import { APP_NAME } from '../content/copy';
+import { APP_NAME, SEARCH_COPY } from '../content/copy';
 import { SECTIONS, type SectionId } from '../lib/nav';
 import { search } from '../lib/search';
 
@@ -55,12 +55,16 @@ export default function Home() {
           {failed && <p className="text-sm text-red-300">Couldn’t load search. Reload the app.</p>}
           {!failed && !index && <p className="text-sm text-slate-400">Loading…</p>}
           {index && hits.length === 0 && <p className="text-sm text-slate-400">No matches.</p>}
+          {hits.length > 0 && !hits[0].complete && <p className="mb-1.5 text-sm text-slate-400">{SEARCH_COPY.partial}</p>}
           <ul className="space-y-1.5">
             {hits.map((h) => (
               <li key={h.doc.href}>
                 <a href={h.doc.href} className="block min-h-12 rounded-xl border border-slate-700 bg-slate-900 px-4 py-2 hover:border-sky-500">
                   <div className="text-base text-slate-100">{h.doc.title}</div>
-                  <div className="text-xs text-slate-500">{h.doc.context}</div>
+                  <div className="truncate text-xs text-slate-400">
+                    {h.doc.context}
+                    {h.section && <span className="text-slate-300"> · {h.section}</span>}
+                  </div>
                 </a>
               </li>
             ))}
