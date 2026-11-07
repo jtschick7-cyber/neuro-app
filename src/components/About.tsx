@@ -1,4 +1,16 @@
-import { ABOUT, DISCLAIMER_GATE, EVIDENCE_LEGEND, FORMULARY_LEGEND, INTERACTION_TIER_LEGEND, MG_TIER_LEGEND, NORMAL_LIKELIHOOD_LEGEND, PNS_RISK_LEGEND } from '../content/copy';
+import {
+  ABOUT,
+  DISCLAIMER_GATE,
+  EVIDENCE_LEGEND,
+  FORMULARY_LEGEND,
+  INTERACTION_TIER_LEGEND,
+  MATRIX_DIRECTION_LEGEND,
+  MATRIX_STATUS_LEGEND,
+  MG_TIER_LEGEND,
+  NORMAL_LIKELIHOOD_LEGEND,
+  PNS_RISK_LEGEND,
+  TARGET_ROLE_LEGEND,
+} from '../content/copy';
 import { Bullets } from './ProtocolParts';
 import about from '../../generated/about.json';
 
@@ -9,6 +21,9 @@ const LEGENDS: [string, readonly (readonly [string, string])[]][] = [
   ['Interaction tier', INTERACTION_TIER_LEGEND],
   ['Cancer risk (PNS-Care)', PNS_RISK_LEGEND],
   ['Normal-result likelihood (antibodies)', NORMAL_LIKELIHOOD_LEGEND],
+  ['Reference-card row role', TARGET_ROLE_LEGEND],
+  ['Test-validity matrix', MATRIX_STATUS_LEGEND],
+  ['Matrix direction', MATRIX_DIRECTION_LEGEND],
 ];
 
 function Block({ title, children, open = false }: { title: string; children: React.ReactNode; open?: boolean }) {

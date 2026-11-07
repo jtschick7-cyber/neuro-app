@@ -3,6 +3,7 @@ import { Droplets, Pill, Zap, FlaskConical } from 'lucide-react';
 import { NeedWeight, NumberField } from './CalculatorCard';
 import { Card, FocusContext, Result, loadBadge, parseNonNegative, safe } from './calcShared';
 import { IvigCard, SodiumCard } from './ImmunoSodiumCalculators';
+import { PhenytoinCard } from './PhenytoinCard';
 import { Abcd2Card, Cha2ds2VascCard, HasBledCard, IchScoreCard, ThrombolyticsCard } from './StrokeCalculators';
 import {
   COMT_FACTORS,
@@ -196,6 +197,7 @@ export default function Calculators({
     <div className="space-y-4">
       <ThrombolyticsCard weightKg={weightKg} />
       <Anticonvulsants weightKg={weightKg} />
+      <PhenytoinCard weightKg={weightKg} />
       <IcpCard weightKg={weightKg} />
       <IchScoreCard age={age} />
       <Abcd2Card age={age} />

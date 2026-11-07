@@ -6,6 +6,8 @@ import consultRaw from '../../data/consult-workups.json';
 import vascularRaw from '../../data/vascular-antithrombotics.json';
 import antibodyRaw from '../../data/neural-antibodies.json';
 import asmRaw from '../../data/asm-interactions.json';
+import asmDosingRaw from '../../data/antiseizure-medications.json';
+import referenceRaw from '../../data/reference-cards.json';
 import { CALCULATOR_META } from './calculators';
 import { CAUTION_LISTS } from './registry';
 import { CALC_CARD, getRegistry, type RegistryId } from './nav';
@@ -40,6 +42,7 @@ export const CALC_ALIASES: Record<string, string[]> = {
   'valproate-load': ['Depacon', 'Depakote', 'valproic acid', 'status epilepticus', 'seizure'],
   'fosphenytoin-load': ['Cerebyx', 'Sesquient', 'phenytoin', 'Dilantin', 'status epilepticus', 'seizure'],
   'lacosamide-load': ['Vimpat', 'status epilepticus', 'seizure'],
+  'phenytoin-correction': ['phenytoin level', 'free phenytoin', 'albumin', 'Sheiner-Tozer', 'Winter-Tozer', 'Dilantin', 'Cerebyx', 'reload'],
   'hypertonic-saline-bolus': ['3% saline', '23.4%', 'ICP', 'herniation', 'cerebral edema'],
   'mannitol-dose': ['ICP', 'herniation', 'osmolar gap', 'cerebral edema'],
   'tnk-dose': ['TNK', 'TNKase', 'thrombolysis', 'lytic', 'stroke'],
@@ -70,6 +73,12 @@ export function buildDocs(): SearchDoc[] {
   docs.push(...registryDocs('vascular-antithrombotics', vascularRaw.entries as unknown as Row[], (e) => [String(e.subclass ?? ''), String(e.drugClass ?? '')]));
   docs.push(...registryDocs('neural-antibodies', antibodyRaw.entries as unknown as Row[]));
   docs.push(...registryDocs('asm-interactions', asmRaw.entries as unknown as Row[], (e) => [...strings(e.objectDrugs), ...strings(e.precipitantDrugs)]));
+  docs.push(...registryDocs('antiseizure-medications', asmDosingRaw.entries as unknown as Row[], (e) =>
+    (Array.isArray(e.maintenance) ? (e.maintenance as { agent: string }[]).map((m) => m.agent) : [])));
+  docs.push(...registryDocs('reference-cards', referenceRaw.entries as unknown as Row[], (e) => {
+    const sections = (Array.isArray(e.sections) ? e.sections : []) as { heading: string; rows: { parameter?: string; test?: string }[] }[];
+    return sections.flatMap((s) => [s.heading, ...s.rows.map((r) => r.parameter ?? r.test ?? '')]).filter((t) => t !== '');
+  }));
   for (const l of CAUTION_LISTS) {
     docs.push(...registryDocs(l.id, l.list.entries as unknown as Row[], (e) => [String(e.drugClass ?? ''), ...strings(e.generics), ...strings(e.brands)]));
   }
