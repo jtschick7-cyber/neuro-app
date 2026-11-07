@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -1925,7 +1925,7 @@
         "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
         "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "id": "neuromuscular-respiratory-failure",

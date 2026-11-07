@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-07",
   "entries": [
@@ -2377,7 +2377,7 @@
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "kind": "AGENT",
@@ -3374,7 +3374,7 @@
         "Ticagrelor tablets US prescribing information. AiPing Pharmaceutical; revised 6/2026 (user-supplied label)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "kind": "AGENT",
@@ -5572,7 +5572,7 @@
       "sources": [
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-07"
     },
     {
       "kind": "DECISION",
