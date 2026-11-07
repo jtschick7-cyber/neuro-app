@@ -80,7 +80,7 @@ function RenalRows({ rows, crcl }: { rows: RenalRow[]; crcl: number | null }) {
             >
               <div className="font-semibold text-slate-100">{r.label}</div>
               <p className="text-slate-200">{r.doseText}</p>
-              {r.crclBasis && <p className="text-xs text-slate-500">{CRCL_BASIS_LABEL[r.crclBasis] ?? r.crclBasis}</p>}
+              {r.crclBasis && <p className="text-xs text-slate-400">{CRCL_BASIS_LABEL[r.crclBasis] ?? r.crclBasis}</p>}
               <Bullets items={r.notes} tone="text-slate-400" />
             </li>
           );
@@ -124,7 +124,7 @@ function AsmEntryView({ e, crcl }: { e: AsmEntry; crcl: number | null }) {
 
 function RowSources({ items }: { items: string[] }) {
   return (
-    <details className="mt-0.5 text-xs text-slate-500">
+    <details className="mt-0.5 text-xs text-slate-400">
       <summary className="cursor-pointer">{REFERENCE_COPY.rowSources}</summary>
       <ul className="mt-1 list-inside list-disc">
         {items.map((s) => (
@@ -152,7 +152,7 @@ function TargetRows({ rows }: { rows: TargetRow[] }) {
             <div className="mt-1">
               <EvidenceBadge level={r.evidenceLevel} />
             </div>
-            <Bullets items={r.evidenceNote} tone="text-xs text-slate-500" />
+            <Bullets items={r.evidenceNote} tone="text-xs text-slate-400" />
             <RowSources items={r.sources} />
           </li>
         );
@@ -190,7 +190,7 @@ export function MatrixView({ section }: { section: MatrixSection }) {
   const grid = { gridTemplateColumns: `repeat(${section.columns.length}, minmax(0, 1fr))` };
   return (
     <div>
-      <p className="mb-1 text-xs text-slate-500">{REFERENCE_COPY.matrixHint}</p>
+      <p className="mb-1 text-xs text-slate-400">{REFERENCE_COPY.matrixHint}</p>
       <div className="grid gap-1 px-2 py-1 text-[11px] font-semibold text-slate-400" style={grid} aria-hidden="true">
         {section.columns.map((c) => (
           <span key={c.key} className="break-words text-center leading-tight">
@@ -225,7 +225,7 @@ export function MatrixView({ section }: { section: MatrixSection }) {
                         <div className="mt-0.5">
                           <EvidenceBadge level={c.evidenceLevel} />
                         </div>
-                        <Bullets items={c.evidenceNote} tone="text-xs text-slate-500" />
+                        <Bullets items={c.evidenceNote} tone="text-xs text-slate-400" />
                         <RowSources items={c.sources} />
                       </>
                     )}
@@ -241,7 +241,7 @@ export function MatrixView({ section }: { section: MatrixSection }) {
                           <div className="mt-0.5">
                             <EvidenceBadge level={n.evidenceLevel} />
                           </div>
-                          <Bullets items={n.evidenceNote} tone="text-xs text-slate-500" />
+                          <Bullets items={n.evidenceNote} tone="text-xs text-slate-400" />
                           <RowSources items={n.sources} />
                         </li>
                       ))}
@@ -253,7 +253,7 @@ export function MatrixView({ section }: { section: MatrixSection }) {
           </li>
         ))}
       </ul>
-      <ul className="mt-2 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-slate-500">
+      <ul className="mt-2 flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] text-slate-400">
         {MATRIX_DIRECTION_LEGEND.map(([k, t]) => (
           <li key={k}>{t}</li>
         ))}

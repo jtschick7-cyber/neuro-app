@@ -21,7 +21,7 @@ function Group({ title, items }: { title: string; items: { id: string; title: st
               className="flex min-h-12 items-center justify-between gap-2 rounded-xl border border-slate-800 bg-slate-900/90 px-4 py-2 text-base text-slate-100 hover:border-sky-500"
             >
               {e.title}
-              <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-slate-500" />
+              <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-slate-400" />
             </a>
           </li>
         ))}

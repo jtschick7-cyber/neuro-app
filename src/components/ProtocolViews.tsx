@@ -84,7 +84,7 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
                   className="flex min-h-12 items-center justify-between gap-2 rounded-xl border border-slate-800 bg-slate-900/90 px-4 py-2 text-base text-slate-100 hover:border-sky-500"
                 >
                   {e.title}
-                  <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-slate-500" />
+                  <ChevronRight size={18} aria-hidden="true" className="shrink-0 text-slate-400" />
                 </a>
               </li>
             ))}
@@ -97,7 +97,7 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
   return (
     <div className="space-y-3">
       <div className="relative">
-        <Search size={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
+        <Search size={18} className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
         <input
           type="search"
           value={query}
@@ -107,11 +107,11 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
           className="w-full rounded-lg border border-slate-700 bg-slate-900/90 py-2 pl-10 pr-3 text-base text-slate-100 placeholder:text-slate-400 focus:border-sky-400 focus:outline-none focus:ring-1 focus:ring-sky-400/50"
         />
       </div>
-      <p className="text-xs text-slate-500">
+      <p className="text-xs text-slate-400">
         {shown} of {entries.length} · v{state.data.version}
       </p>
       {state.data.scopeNotes?.map((n) => (
-        <p key={n} className="text-xs text-slate-500">
+        <p key={n} className="text-xs text-slate-400">
           {n}
         </p>
       ))}
@@ -132,7 +132,7 @@ export function EntryShell({
   return (
     <article className="rounded-xl border border-slate-700 bg-slate-900 p-4">
       <h1 className="text-lg font-semibold text-slate-100">{entry.title}</h1>
-      <p className="text-xs text-slate-500">{CATEGORY_LABEL[entry.category] ?? entry.category}</p>
+      <p className="text-xs text-slate-400">{CATEGORY_LABEL[entry.category] ?? entry.category}</p>
       <BannerList entry={entry} />
       {children}
       {entry.verify.length > 0 && (
@@ -231,7 +231,7 @@ function ConsultEntryView({ e }: { e: ConsultEntry }) {
                 <div className="mt-0.5">
                   <EvidenceBadge level={r.evidenceLevel} />
                 </div>
-                <Bullets items={r.evidenceNote} tone="text-xs text-slate-500" />
+                <Bullets items={r.evidenceNote} tone="text-xs text-slate-400" />
               </li>
             ))}
           </ol>

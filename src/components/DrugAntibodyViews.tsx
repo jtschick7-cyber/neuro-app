@@ -44,7 +44,7 @@ function VascularEntryView({ e }: { e: VascularEntry }) {
                 <div className="mt-0.5">
                   <EvidenceBadge level={r.evidenceLevel} />
                 </div>
-                <Bullets items={r.evidenceNote} tone="text-xs text-slate-500" />
+                <Bullets items={r.evidenceNote} tone="text-xs text-slate-400" />
               </li>
             ))}
           </ol>
@@ -161,7 +161,7 @@ function FindingBlock({ label, f }: { label: string; f: AntibodyEntry['csf'] }) 
   return (
     <Section title={label}>
       <EnumBadge label={LIKELIHOOD_LABEL[f.normalLikelihood] ?? f.normalLikelihood} help={LIKELIHOOD_HELP[f.normalLikelihood]} />
-      <Bullets items={f.normalPercentText} tone="text-xs text-slate-500" />
+      <Bullets items={f.normalPercentText} tone="text-xs text-slate-400" />
       <Bullets items={f.typicalFindings} />
     </Section>
   );
@@ -180,7 +180,7 @@ function AntibodyEntryView({ e }: { e: AntibodyEntry }) {
           {e.syndromes.map((s) => (
             <li key={s.syndrome} className={s.typical ? 'text-slate-100' : 'text-slate-400'}>
               {s.syndrome}
-              {!s.typical && <span className="text-xs text-slate-500"> (less typical)</span>}
+              {!s.typical && <span className="text-xs text-slate-400"> (less typical)</span>}
             </li>
           ))}
         </ul>
@@ -195,7 +195,7 @@ function AntibodyEntryView({ e }: { e: AntibodyEntry }) {
           <ul className="space-y-0.5 text-sm text-slate-300">
             {e.tumors.map((t) => (
               <li key={t.tumor}>
-                {t.tumor} <span className="text-slate-500">— {t.frequencyText}</span>
+                {t.tumor} <span className="text-slate-400">— {t.frequencyText}</span>
               </li>
             ))}
           </ul>

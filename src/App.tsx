@@ -36,12 +36,12 @@ export default function App() {
   return (
     <DisclaimerGate>
       <div className="min-h-screen bg-slate-950 text-slate-200">
-        <ContextBar context={context} onChange={update} onClear={clear} />
+        <ContextBar context={context} onChange={update} onClear={clear} forceExpanded={route.kind === 'calc'} />
         <main className="mx-auto max-w-3xl px-3 py-4" style={{ paddingBottom: 'calc(5.5rem + env(safe-area-inset-bottom))' }}>
           <Screen route={route} context={context} />
-          <p className="mt-6 text-center text-xs text-slate-600">
+          <p className="mt-6 text-center text-xs text-slate-400">
             Decision support only — verify doses before ordering. Content {about.contentVersion} · Build {__BUILD_ID__} ·{' '}
-            <a href="#/about" className="text-slate-500 underline">
+            <a href="#/about" className="text-slate-400 underline">
               About
             </a>
           </p>

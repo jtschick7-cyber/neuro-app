@@ -105,7 +105,7 @@ export function AlteplaseResult({ r }: { r: CalcResult | string }) {
 /** Formula, caps, rounding and sources straight from CALCULATOR_META; version and ids are tucked inside. */
 function MetaFooter({ ids }: { ids: string[] }) {
   return (
-    <details className="mt-2 text-xs text-slate-500">
+    <details className="mt-2 text-xs text-slate-400">
       <summary className="cursor-pointer">Formula and sources</summary>
       {ids.map((id) => {
         const m = CALCULATOR_META[id];
@@ -123,8 +123,8 @@ function MetaFooter({ ids }: { ids: string[] }) {
           </div>
         );
       })}
-      <p className="mt-2 text-[11px] text-slate-500">{calcFooterText(about.contentVersion)}</p>
-      <p className="text-[11px] text-slate-600">{ids.map((id) => `calc:${id}`).join(' · ')}</p>
+      <p className="mt-2 text-[11px] text-slate-400">{calcFooterText(about.contentVersion)}</p>
+      <p className="text-[11px] text-slate-400">{ids.map((id) => `calc:${id}`).join(' · ')}</p>
     </details>
   );
 }

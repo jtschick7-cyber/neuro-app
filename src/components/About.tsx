@@ -78,7 +78,7 @@ export default function About() {
         <ul className="space-y-0.5">
           {about.calculators.map((c) => (
             <li key={c.id}>
-              {c.title} <span className="text-xs text-slate-500">({c.id}{c.openVerify > 0 ? ` · ${c.openVerify} open VERIFY` : ''})</span>
+              {c.title} <span className="text-xs text-slate-400">({c.id}{c.openVerify > 0 ? ` · ${c.openVerify} open VERIFY` : ''})</span>
             </li>
           ))}
         </ul>
