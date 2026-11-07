@@ -34,6 +34,14 @@
                 "type": "string",
                 "minLength": 1
               },
+              "keyNumbers": {
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
               "searchTerms": {
                 "type": "array",
                 "items": {
@@ -681,6 +689,14 @@
               "title": {
                 "type": "string",
                 "minLength": 1
+              },
+              "keyNumbers": {
+                "maxItems": 5,
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
               },
               "searchTerms": {
                 "type": "array",

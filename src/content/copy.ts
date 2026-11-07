@@ -154,9 +154,47 @@ export const SYNDROME_FILTER = {
   empty: "No antibodies match this syndrome and search.",
 };
 
-/** Global search (Home). */
+/** Entry layout (task group 4): jump chips, evidence disclosure. */
+export const ENTRY_LAYOUT_COPY = {
+  evidence: "Evidence",
+  jumpTo: "Jump to section",
+  sources: "Sources",
+};
+
+/** 4.7: preferred-specimen badge on antibody cards (enum `testing.preferredSpecimen`). */
+export const SPECIMEN_BADGE = {
+  heading: "Send",
+  SERUM: { label: "SERUM", detail: "Serum preferred" },
+  CSF: { label: "CSF", detail: "CSF preferred" },
+  BOTH: { label: "PAIRED", detail: "Serum and CSF" },
+} as const;
+
+/** 4.4: pinned favorites (entry ids only). */
+export const PINS_COPY = {
+  heading: "Pinned",
+  pin: "Pin to Home",
+  unpin: "Unpin from Home",
+};
+
+/** 4.6: link from a block repeated across agent cards to the entry that owns it. */
+export const CANONICAL_COPY = {
+  prefix: "Full guidance:",
+  "antiplatelet-ich": "Antiplatelet-associated ICH",
+  "four-factor-pcc": "4F-PCC",
+  "periprocedural-holds-lp-evd": "Holds before LP, lumbar drain or EVD",
+} as const;
+
+/** Global search (Home and the search button on every other screen). */
 export const SEARCH_COPY = {
   partial: "No entry matches every word — closest matches:",
+  placeholder: "Search TNK, Keppra, status...",
+  label: "Search all references and calculators",
+  title: "Search",
+  open: "Search all references and calculators",
+  close: "Close search",
+  loading: "Loading…",
+  none: "No matches.",
+  failed: "Couldn’t load search. Reload the app.",
 };
 
 /** Patient context bar (collapsed chip). */

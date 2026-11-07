@@ -30,7 +30,7 @@ To build: `tnk-dose`, `alteplase-dose`, `ich-score`, `abcd2`, `cha2ds2-vasc`, `h
 1. Disclaimer gate (`DisclaimerGate`, built) on first launch and whenever `DISCLAIMER_REVISION` changes.
 2. Footer on every entry/calculator: `FOOTER` with the entry's `lastReviewed` and `contentVersion`; entry id visible at the bottom (caution cards done).
 3. Banners from `BANNERS`: UNREVIEWED, VERIFY, NOT_US_MARKETED (sort last, grey, never hide), STALE (> `STALE_AFTER_MONTHS`), CALC_INSTITUTIONAL, CALC_LABEL_DIFFERS.
-4. **No patient data persisted.** The context bar and calculator inputs are memory-only. Allowed localStorage keys: bedside notes and the disclaimer acknowledgment.
+4. **No patient data persisted.** The context bar and calculator inputs are memory-only. Allowed localStorage keys: bedside notes, pinned favorites (`neurohosp.pins.v1`, entry ids only) and the disclaimer acknowledgment.
 5. Offline: everything precached; cache tied to `contentVersion`; full function in airplane mode.
 6. Badges from enums only, with legends from `copy.ts`.
 7. Global search across all registries (titles, `searchTerms`, generics, brands, antigen names). Must find: "mag", "TNK", "ICH", "Botox", "Keppra", "status".

@@ -1,6 +1,7 @@
 import BedsideNotes from './BedsideNotes';
 import BannerList from './BannerList';
 import EntryFooter from './EntryFooter';
+import { PinButton } from './Pins';
 import RelatedLinks from './RelatedLinks';
 import { MG_TIER_LEGEND } from '../content/copy';
 import { toHash } from '../lib/route';
@@ -69,6 +70,9 @@ export default function ReferenceCard({ entry, listId, detail = false }: { entry
           ))}
         </ul>
       </details>
+      <div className="mt-2 flex justify-end">
+        <PinButton registryId={listId} entryId={entry.id} />
+      </div>
       <EntryFooter registryId={listId} entryId={entry.id} lastReviewed={entry.lastReviewed} />
       {/* MG notes keep their original key (`mg-<id>`) so notes saved by earlier builds still appear. */}
       <BedsideNotes noteId={listId === 'mg-contraindications' ? `mg-${entry.id}` : `${listId}-${entry.id}`} />

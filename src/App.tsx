@@ -8,6 +8,7 @@ import { AntibodiesView, AntithromboticsView, InteractionsView } from './compone
 import { AsmView, ReferenceCardsView } from './components/ReferenceViews';
 import About from './components/About';
 import Home from './components/Home';
+import { SearchLauncher } from './components/GlobalSearch';
 import DisclaimerGate from './components/DisclaimerGate';
 import { usePatientContext, type PatientContext } from './lib/patientContext';
 import { useRoute } from './lib/useRoute';
@@ -46,6 +47,7 @@ export default function App() {
             </a>
           </p>
         </main>
+        {route.kind !== 'home' && <SearchLauncher key={hash} />}
         <NavBar active={sectionOf(route)} />
       </div>
     </DisclaimerGate>

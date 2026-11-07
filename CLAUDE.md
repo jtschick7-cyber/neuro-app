@@ -16,7 +16,7 @@ Offline mobile PWA for one neurologist's inpatient consults (React 18 + Vite + T
 
 ## App guardrails
 - **TypeScript first:** never use `any`.
-- **No persistence of patient data:** the patient context bar and calculator inputs live in memory only. The only localStorage keys allowed are bedside notes (`neurohosp.note.v1.*`) and the disclaimer acknowledgment.
+- **No persistence of patient data:** the patient context bar and calculator inputs live in memory only. The only localStorage keys allowed are bedside notes (`neurohosp.note.v1.*`), pinned favorites (`neurohosp.pins.v1`, a list of `"registry:id"` entry ids only — never patient data or free text), and the disclaimer acknowledgment.
 - **No runtime network calls,** analytics or accounts. Everything is bundled and precached for offline use.
 - **Zero UI bloat:** Tailwind utilities and Lucide icons only; keep the bundle small.
 - Badges come from enums (tier, evidence level, formulary) — never free text.

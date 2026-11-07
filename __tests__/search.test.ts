@@ -103,9 +103,10 @@ describe('task 3 acceptance queries (right entry in the top 3)', () => {
     expect(hit?.section).toMatch(/^Reversal · /);
   });
   it('keeps the index lazy-loaded (only a dynamic import from the UI)', () => {
-    const home = readFileSync('src/components/Home.tsx', 'utf8');
-    expect(home).toMatch(/import\('\.\.\/lib\/searchIndex'\)/);
-    expect(home).not.toMatch(/^import .*searchIndex/m);
+    const ui = readFileSync('src/components/GlobalSearch.tsx', 'utf8'); // shared by Home and the search launcher (4.1)
+    expect(ui).toMatch(/import\('\.\.\/lib\/searchIndex'\)/);
+    expect(ui).not.toMatch(/^import .*searchIndex/m);
+    expect(readFileSync('src/components/Home.tsx', 'utf8')).not.toMatch(/searchIndex/);
   });
 });
 

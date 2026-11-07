@@ -266,12 +266,6 @@ function ReferenceCardView({ e }: { e: ReferenceCardEntry }) {
   return (
     <EntryShell registry="reference-cards" entry={e}>
       <p className="mt-1 text-sm text-slate-400">{e.scopeNote}</p>
-      {e.keyNumbers.length > 0 && (
-        <div className="my-3 rounded-lg border border-sky-800 bg-sky-950/30 px-3 py-2">
-          <div className="text-xs font-semibold uppercase tracking-wider text-sky-300">{REFERENCE_COPY.keyNumbers}</div>
-          <Bullets items={e.keyNumbers} tone="text-slate-100" />
-        </div>
-      )}
       {e.sections.map((s) => (
         <Section key={s.heading} title={s.heading} open>
           {'kind' in s ? <MatrixView section={s} /> : <TargetRows rows={s.rows} />}

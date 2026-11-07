@@ -3,7 +3,7 @@ import { KebabId, RelatedId, ReviewDate, Source, Text, registryEnvelope } from "
 import { WorkupItem } from "./acute-neuro";
 import { DecisionRule } from "./vascular-antithrombotics";
 
-export const CONSULT_WORKUPS_SCHEMA_VERSION = "2.0.0";
+export const CONSULT_WORKUPS_SCHEMA_VERSION = "2.1.0";
 
 export const ConsultCategory = z.enum([
   "VASCULAR",
@@ -34,6 +34,7 @@ export const ConsultWorkupEntry = z
     searchTerms: z.array(Text),
     category: ConsultCategory,
     consultQuestion: Text,
+    keyNumbers: z.array(Text).max(5).optional(), // 4.2: same element shape as reference-cards; copied signed-off numbers only
     keyHistory: z.array(Text).min(1),
     keyExam: z.array(Text).min(1),
     redFlags: z.array(Text).min(1),

@@ -2,13 +2,14 @@ import { z } from "zod";
 import { KebabId, RelatedId, ReviewDate, Source, Text, registryEnvelope } from "./common";
 import { EvidenceLevel, FormularyStatus, TreatmentItem } from "./acute-neuro";
 
-export const VASCULAR_ANTITHROMBOTICS_SCHEMA_VERSION = "1.0.0";
+export const VASCULAR_ANTITHROMBOTICS_SCHEMA_VERSION = "1.1.0";
 
 export const DrugClass = z.enum(["ANTIPLATELET", "ANTICOAGULANT", "THROMBOLYTIC", "REVERSAL"]);
 
 const shared = {
   id: KebabId,
   title: Text,
+  keyNumbers: z.array(Text).max(5).optional(), // 4.2: same element shape as reference-cards; copied signed-off numbers only
   searchTerms: z.array(Text),
   institutionVaries: z.array(Text),
   pearls: z.array(Text),

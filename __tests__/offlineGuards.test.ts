@@ -35,8 +35,8 @@ describe('offline guards', () => {
   });
 
   it('uses only allowed localStorage keys', () => {
-    // Notes prefix, disclaimer acknowledgment, and the legacy patient-context key (purged on load, never written).
-    const allowed = new Set(['neurohosp.note.v1.', 'neurohosp.disclaimerAck', 'neurohosp.patientContext.v1']);
+    // Notes prefix, disclaimer acknowledgment, pinned entry ids (4.4, approved), and the legacy patient-context key (purged on load, never written).
+    const allowed = new Set(['neurohosp.note.v1.', 'neurohosp.disclaimerAck', 'neurohosp.pins.v1', 'neurohosp.patientContext.v1']);
     const found = new Set(files.flatMap((f) => f.text.match(/neurohosp\.[A-Za-z0-9.]+/g) ?? []));
     expect([...found].filter((k) => !allowed.has(k))).toEqual([]);
   });

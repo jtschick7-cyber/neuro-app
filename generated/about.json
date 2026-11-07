@@ -1,13 +1,13 @@
 {
   "appVersion": "2.0.0",
-  "contentVersion": "2.0.0+c432e48c",
+  "contentVersion": "2.0.0+c0903b69",
   "builtAt": "2026-11-07",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "1.0.1",
-      "schemaVersion": "1.1.0",
+      "version": "1.1.1",
+      "schemaVersion": "1.2.0",
       "lastUpdated": "2026-11-07",
       "entries": 22,
       "reviewed": 22,
@@ -45,8 +45,8 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "1.0.1",
-      "schemaVersion": "2.0.0",
+      "version": "1.1.1",
+      "schemaVersion": "2.1.0",
       "lastUpdated": "2026-11-07",
       "entries": 24,
       "reviewed": 24,
@@ -123,14 +123,14 @@
     {
       "id": "vascular-antithrombotics",
       "title": "Vascular antithrombotics",
-      "version": "0.9.1",
-      "schemaVersion": "1.0.0",
+      "version": "0.10.1",
+      "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-07",
       "entries": 35,
       "reviewed": 35,
       "unreviewedIds": [],
       "openVerify": 0,
-      "oldestReview": "2026-11-05",
+      "oldestReview": "2026-11-07",
       "newestReview": "2026-11-07"
     }
   ],

@@ -1,9 +1,9 @@
 import DrugTabs from './DrugTabs';
 import RelatedLinks from './RelatedLinks';
-import { EntryShell, RegistryScreen } from './ProtocolViews';
+import { EntryShell, RegistryScreen, jumpTargets } from './ProtocolViews';
 import SyndromeBrowse from './SyndromeBrowse';
-import { Bullets, EnumBadge, EvidenceBadge, Section, TreatmentList } from './ProtocolParts';
-import { INTERACTION_TIER_LEGEND, NORMAL_LIKELIHOOD_LEGEND, PNS_RISK_LEGEND } from '../content/copy';
+import { Bullets, EnumBadge, EvidenceBadge, EvidenceNote, Section, TreatmentList } from './ProtocolParts';
+import { CANONICAL_COPY, INTERACTION_TIER_LEGEND, NORMAL_LIKELIHOOD_LEGEND, PNS_RISK_LEGEND, SPECIMEN_BADGE } from '../content/copy';
 import { loadAntibodies, loadInteractions, loadVascular, type AntibodyEntry, type InteractionEntry, type VascularEntry } from '../lib/protocols';
 
 const PNS_HELP = Object.fromEntries(PNS_RISK_LEGEND) as Record<string, string>;
@@ -14,10 +14,45 @@ const PNS_TONE: Record<string, string> = {
   LOW: 'bg-slate-600 text-slate-100',
   NOT_CLASSIFIED: 'border border-slate-600 text-slate-400',
 };
-const PNS_LABEL: Record<string, string> = { HIGH: 'Cancer risk: high', INTERMEDIATE: 'Cancer risk: intermediate', LOW: 'Cancer risk: low', NOT_CLASSIFIED: 'Cancer risk: not classified' };
-const LIKELIHOOD_LABEL: Record<string, string> = { OFTEN_NORMAL: 'Often normal', SOMETIMES_NORMAL: 'Sometimes normal', RARELY_NORMAL: 'Rarely normal', UNKNOWN: 'Frequency unknown' };
-const SPECIMEN_LABEL: Record<string, string> = { CSF: 'CSF', SERUM: 'Serum', BOTH: 'Serum and CSF' };
-const RESPONSE_LABEL: Record<string, string> = { USUALLY_GOOD: 'Immunotherapy: usually good', VARIABLE: 'Immunotherapy: variable', USUALLY_POOR: 'Immunotherapy: usually poor' };
+const PNS_LABEL: Record<string, string> = {
+  HIGH: 'Cancer risk: high',
+  INTERMEDIATE: 'Cancer risk: intermediate',
+  LOW: 'Cancer risk: low',
+  NOT_CLASSIFIED: 'Cancer risk: not classified',
+};
+const LIKELIHOOD_LABEL: Record<string, string> = {
+  OFTEN_NORMAL: 'Often normal',
+  SOMETIMES_NORMAL: 'Sometimes normal',
+  RARELY_NORMAL: 'Rarely normal',
+  UNKNOWN: 'Frequency unknown',
+};
+const RESPONSE_LABEL: Record<string, string> = {
+  USUALLY_GOOD: 'Immunotherapy: usually good',
+  VARIABLE: 'Immunotherapy: variable',
+  USUALLY_POOR: 'Immunotherapy: usually poor',
+};
+
+type CanonicalId = Exclude<keyof typeof CANONICAL_COPY, 'prefix'>;
+
+/**
+ * 4.6: blocks repeated across agent cards (platelet transfusion / desmopressin, 4F-PCC, the neuraxial boxed warning)
+ * stay in full — their grading differs by agent — and get a link to the entry that owns the full guidance.
+ */
+export function reversalCanonical(agent: string): CanonicalId | undefined {
+  if (/^(Platelet transfusion|Desmopressin)\b/.test(agent)) return 'antiplatelet-ich';
+  if (/^4F-PCC\b/.test(agent)) return 'four-factor-pcc';
+  return undefined;
+}
+export const NEURAXIAL_PEARL = /^Boxed warning: spinal\/epidural hematoma/;
+
+function CanonicalLink({ id, self }: { id: CanonicalId | undefined; self: string }) {
+  if (!id || id === self) return null;
+  return (
+    <a href={`#/vascular-antithrombotics/${id}`} className="mt-1 inline-flex min-h-8 items-center text-xs font-medium text-sky-400 hover:text-sky-300">
+      {CANONICAL_COPY.prefix}&nbsp;<span className="underline">{CANONICAL_COPY[id]}</span>&nbsp;→
+    </a>
+  );
+}
 
 function VascularEntryView({ e }: { e: VascularEntry }) {
   if (e.kind === 'DECISION') {
@@ -44,7 +79,7 @@ function VascularEntryView({ e }: { e: VascularEntry }) {
                 <div className="mt-0.5">
                   <EvidenceBadge level={r.evidenceLevel} />
                 </div>
-                <Bullets items={r.evidenceNote} tone="text-xs text-slate-400" />
+                <EvidenceNote items={r.evidenceNote} />
               </li>
             ))}
           </ol>
@@ -78,61 +113,72 @@ function VascularEntryView({ e }: { e: VascularEntry }) {
       </EntryShell>
     );
   }
+  // 4.5: reversal → thrombolysis rule → hold before procedure → uses and doses (collapsed) → renal/hepatic → monitoring → interactions → pregnancy → pearls.
+  const t = e.timing;
+  const jump = jumpTargets([
+    ['sec-reversal', 'Reversal', e.reversal.length > 0],
+    ['sec-lysis', 'Thrombolysis', t.thrombolysisRule.length > 0],
+    ['sec-hold', 'Hold', t.holdBeforeProcedure.length > 0],
+    ['sec-uses', 'Uses', true],
+    ['sec-renal', 'Renal/hepatic', e.renalHepatic.length > 0],
+    ['sec-monitoring', 'Monitoring', e.monitoring.length > 0],
+    ['sec-interactions', 'Interactions', e.interactions.length > 0],
+    ['sec-pregnancy', 'Pregnancy', e.pregnancy.length > 0],
+    ['sec-pearls', 'Pearls', e.pearls.length > 0],
+    ['sec-varies', 'Institution', e.institutionVaries.length > 0],
+  ]);
   return (
-    <EntryShell registry="vascular-antithrombotics" entry={e}>
+    <EntryShell registry="vascular-antithrombotics" entry={e} jump={jump}>
       <p className="mt-2 text-sm text-slate-200">
         {e.subclass} · {e.mechanism}
       </p>
-      <Section title="Uses and doses" open>
-        <TreatmentList items={e.uses} />
-      </Section>
-      <Section title="Timing" open>
-        <p className="text-sm text-slate-300">Half-life: {e.timing.halfLifeText}</p>
-        {e.timing.holdBeforeProcedure.length > 0 && (
-          <>
-            <div className="mt-1 text-xs font-semibold text-slate-400">Hold before procedure</div>
-            <Bullets items={e.timing.holdBeforeProcedure} />
-          </>
-        )}
-        {e.timing.thrombolysisRule.length > 0 && (
-          <>
-            <div className="mt-1 text-xs font-semibold text-slate-400">Thrombolysis</div>
-            <Bullets items={e.timing.thrombolysisRule} />
-          </>
-        )}
-      </Section>
+      <p className="text-sm text-slate-300">Half-life: {t.halfLifeText}</p>
       {e.reversal.length > 0 && (
-        <Section title="Reversal" open>
-          <TreatmentList items={e.reversal} />
+        <Section id="sec-reversal" title="Reversal" open>
+          <TreatmentList items={e.reversal} canonical={(t) => <CanonicalLink id={reversalCanonical(t.agent)} self={e.id} />} />
         </Section>
       )}
+      {t.thrombolysisRule.length > 0 && (
+        <Section id="sec-lysis" title="Thrombolysis" open>
+          <Bullets items={t.thrombolysisRule} />
+        </Section>
+      )}
+      {t.holdBeforeProcedure.length > 0 && (
+        <Section id="sec-hold" title="Hold before procedure" open>
+          <Bullets items={t.holdBeforeProcedure} />
+        </Section>
+      )}
+      <Section id="sec-uses" title="Uses and doses">
+        <TreatmentList items={e.uses} />
+      </Section>
       {e.renalHepatic.length > 0 && (
-        <Section title="Renal / hepatic">
+        <Section id="sec-renal" title="Renal / hepatic">
           <Bullets items={e.renalHepatic} />
         </Section>
       )}
       {e.monitoring.length > 0 && (
-        <Section title="Monitoring">
+        <Section id="sec-monitoring" title="Monitoring">
           <Bullets items={e.monitoring} />
         </Section>
       )}
       {e.interactions.length > 0 && (
-        <Section title="Interactions">
+        <Section id="sec-interactions" title="Interactions">
           <Bullets items={e.interactions} />
         </Section>
       )}
       {e.pregnancy.length > 0 && (
-        <Section title="Pregnancy">
+        <Section id="sec-pregnancy" title="Pregnancy">
           <Bullets items={e.pregnancy} />
         </Section>
       )}
       {e.pearls.length > 0 && (
-        <Section title="Pearls">
+        <Section id="sec-pearls" title="Pearls">
           <Bullets items={e.pearls} />
+          <CanonicalLink id={e.pearls.some((p) => NEURAXIAL_PEARL.test(p)) ? 'periprocedural-holds-lp-evd' : undefined} self={e.id} />
         </Section>
       )}
       {e.institutionVaries.length > 0 && (
-        <Section title="Varies by institution">
+        <Section id="sec-varies" title="Varies by institution">
           <Bullets items={e.institutionVaries} />
         </Section>
       )}
@@ -167,12 +213,43 @@ function FindingBlock({ label, f }: { label: string; f: AntibodyEntry['csf'] }) 
   );
 }
 
+const SPECIMEN_TONE: Record<AntibodyEntry['testing']['preferredSpecimen'], string> = {
+  SERUM: 'border-rose-400 bg-rose-950/40 text-rose-100',
+  CSF: 'border-sky-400 bg-sky-950/40 text-sky-100',
+  BOTH: 'border-purple-400 bg-purple-950/40 text-purple-100',
+};
+
+/** 4.7: large preferred-specimen badge at the top of each antibody card (from `testing.preferredSpecimen`). */
+/** Signed-off testing lines about drawing before immunotherapy (e.g. MOG). Shown verbatim next to the badge; never authored here. */
+const BEFORE_IMMUNOTHERAPY = /\bbefore\b[^.;]*\b(steroids|IVIG|IVIg|PLEX|immunotherapy)\b/i;
+export function drawBeforeLines(t: AntibodyEntry['testing']): string[] {
+  return [...t.rationale, ...t.methodNotes].filter((x) => BEFORE_IMMUNOTHERAPY.test(x));
+}
+
+function SpecimenBadge({ specimen, drawBefore }: { specimen: AntibodyEntry['testing']['preferredSpecimen']; drawBefore: string[] }) {
+  const b = SPECIMEN_BADGE[specimen];
+  return (
+    <div className={`mt-3 rounded-lg border-2 px-3 py-2 ${SPECIMEN_TONE[specimen]}`}>
+      <div className="flex items-baseline gap-3">
+        <span className="text-xs font-semibold uppercase tracking-wider opacity-80">{SPECIMEN_BADGE.heading}</span>
+        <span className="text-2xl font-bold tracking-wide">{b.label}</span>
+        <span className="text-sm opacity-90">{b.detail}</span>
+      </div>
+      {drawBefore.map((l) => (
+        <p key={l} className="mt-1 text-sm font-semibold">
+          {l}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 function AntibodyEntryView({ e }: { e: AntibodyEntry }) {
   return (
     <EntryShell registry="neural-antibodies" entry={e}>
+      <SpecimenBadge specimen={e.testing.preferredSpecimen} drawBefore={drawBeforeLines(e.testing)} />
       <div className="mt-2 flex flex-wrap gap-2">
         <EnumBadge label={PNS_LABEL[e.pnsRisk] ?? e.pnsRisk} help={PNS_HELP[e.pnsRisk]} tone={PNS_TONE[e.pnsRisk]} />
-        <EnumBadge label={`Test: ${SPECIMEN_LABEL[e.testing.preferredSpecimen] ?? e.testing.preferredSpecimen}`} />
         <EnumBadge label={RESPONSE_LABEL[e.immunotherapyResponse] ?? e.immunotherapyResponse} />
       </div>
       <Section title="Syndromes" open>
@@ -234,8 +311,16 @@ export function AntibodiesView({ entryId }: { entryId?: string }) {
 }
 
 const TIER_HELP = Object.fromEntries(INTERACTION_TIER_LEGEND) as Record<string, string>;
-const TIER_TONE: Record<string, string> = { AVOID: 'bg-red-600 text-white', HIGH_RISK: 'bg-orange-500 text-black', CAUTION: 'bg-yellow-400 text-black' };
-const TIER_LABEL: Record<string, string> = { AVOID: 'Avoid', HIGH_RISK: 'High risk', CAUTION: 'Caution' };
+const TIER_TONE: Record<string, string> = {
+  AVOID: 'bg-red-600 text-white',
+  HIGH_RISK: 'bg-orange-500 text-black',
+  CAUTION: 'bg-yellow-400 text-black',
+};
+const TIER_LABEL: Record<string, string> = {
+  AVOID: 'Avoid',
+  HIGH_RISK: 'High risk',
+  CAUTION: 'Caution',
+};
 
 function InteractionEntryView({ e }: { e: InteractionEntry }) {
   return (
