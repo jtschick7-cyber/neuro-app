@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "2.1.1",
+  "version": "2.2.1",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-08",
   "entries": [
@@ -8,7 +8,7 @@
       "id": "young-stroke-workup",
       "title": "Young adult stroke (<50): extended workup",
       "keyNumbers": [
-        "Confirmed APS: Warfarin is reasonable; target INR 2–3 over >3",
+        "Confirmed APS: Warfarin is reasonable; target INR 2–3 rather than >3",
         "Repeat APS testing at 12 weeks",
         "Protein C, protein S, antithrombin, factor VIII: Defer or repeat ≥4–6 weeks after stroke; factor VIII up to 6 months (Kleindorfer)",
         "Age 18–60, nonlacunar cryptogenic stroke, PFO: Closure decision by PFO features — see esus-antithrombotic"
@@ -246,7 +246,7 @@
         {
           "order": 3,
           "condition": "Confirmed APS",
-          "recommendation": "Warfarin is reasonable; target INR 2–3 over >3",
+          "recommendation": "Warfarin is reasonable; target INR 2–3 rather than >3",
           "evidenceLevel": "MODERATE",
           "evidenceNote": [
             "Kleindorfer 2021: COR 2a (C-LD; INR target B-R)"
@@ -705,11 +705,20 @@
           "test": "CTA head",
           "priority": "STAT",
           "indication": [
-            "SAH on CT"
+            "SAH on CT",
+            "CT negative, xanthochromia on LP"
           ],
           "notes": [
             "Sensitivity for aneurysms <3 mm ~61%"
           ]
+        },
+        {
+          "test": "Imaging for other thunderclap causes: CTA/MRA head and neck, CT/MR venography, MRI brain — see thunderclap-headache",
+          "priority": "URGENT",
+          "indication": [
+            "Features of cervical artery dissection, RCVS, CVT or pituitary apoplexy"
+          ],
+          "notes": []
         },
         {
           "test": "Catheter DSA",
@@ -3940,11 +3949,11 @@
         },
         {
           "order": 4,
-          "condition": "Angiography highly suggestive of medium-to-large-vessel vasculitis",
-          "recommendation": "Biopsy only to rule out other diagnoses",
-          "evidenceLevel": "EXPERT_OPINION",
+          "condition": "Vascular abnormalities on DSA, CTA or MRA",
+          "recommendation": "Decide on brain biopsy case by case in a multidisciplinary team with PACNS expertise",
+          "evidenceLevel": "CONSENSUS",
           "evidenceNote": [
-            "ESO guideline as cited in Salvarani 2024"
+            "ESO 2023 PICO 8 expert consensus statement"
           ]
         },
         {
