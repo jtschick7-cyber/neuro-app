@@ -1,13 +1,13 @@
 {
-  "appVersion": "2.0.0",
-  "contentVersion": "2.0.0+b2eb738a",
+  "appVersion": "2.1.0",
+  "contentVersion": "2.1.0+21958290",
   "builtAt": "2026-11-08",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "1.2.7",
-      "schemaVersion": "1.2.0",
+      "version": "1.3.1",
+      "schemaVersion": "1.3.0",
       "lastUpdated": "2026-11-08",
       "entries": 22,
       "reviewed": 22,
@@ -123,8 +123,8 @@
     {
       "id": "vascular-antithrombotics",
       "title": "Vascular antithrombotics",
-      "version": "0.13.3",
-      "schemaVersion": "1.1.0",
+      "version": "0.14.1",
+      "schemaVersion": "1.2.0",
       "lastUpdated": "2026-11-08",
       "entries": 35,
       "reviewed": 35,
@@ -1431,6 +1431,13 @@
       ]
     },
     {
+      "citation": "Michigan Department of Health and Human Services. Notification requirements for communicable disease reporting (reportable conditions pyramid), rev. 2024-03. https://www.michigan.gov/documents/mdch/ReportableCDPyramid_317048_7.pdf",
+      "year": 2024,
+      "citedBy": [
+        "acute-neuro:neuromuscular-respiratory-failure"
+      ]
+    },
+    {
       "citation": "Middeldorp S, et al. American Society of Hematology 2023 guidelines for management of venous thromboembolism: thrombophilia testing. Blood Adv 2023;7:7101-7138. doi:10.1182/bloodadvances.2023010177",
       "year": 2023,
       "citedBy": [
@@ -2178,6 +2185,17 @@
       "year": 2006,
       "citedBy": [
         "vascular-antithrombotics:aspirin"
+      ]
+    },
+    {
+      "citation": "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa",
+      "year": 2025,
+      "citedBy": [
+        "vascular-antithrombotics:anticoag-reversal-ich",
+        "vascular-antithrombotics:apixaban",
+        "vascular-antithrombotics:edoxaban",
+        "vascular-antithrombotics:four-factor-pcc",
+        "vascular-antithrombotics:rivaroxaban"
       ]
     },
     {

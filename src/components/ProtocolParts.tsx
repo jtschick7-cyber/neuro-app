@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react';
 import RelatedLinks from './RelatedLinks';
 import { ENTRY_LAYOUT_COPY, EVIDENCE_LEGEND, FORMULARY_LEGEND, REFERENCE_COPY } from '../content/copy';
-import { EVIDENCE_LABEL, FORMULARY_LABEL, PRIORITY_LABEL, ROLE_LABEL } from '../lib/protocols';
+import { EVIDENCE_LABEL, FORMULARY_LABEL, PRIORITY_LABEL, ROLE_LABEL, usMarketedFirst } from '../lib/protocols';
 import type { TreatmentItem } from '../../schema/acute-neuro';
 import type { z } from 'zod';
 
@@ -187,14 +187,19 @@ export function Sources({ items }: { items: string[] }) {
 export function TreatmentList({ items, canonical }: { items: z.infer<typeof TreatmentItem>[]; canonical?: (t: z.infer<typeof TreatmentItem>) => ReactNode }) {
   return (
     <ul className="space-y-3">
-      {items.map((t) => (
-        <li key={`${t.role}-${t.agent}`} className={t.role === 'NOT_RECOMMENDED' ? 'opacity-60' : ''}>
+      {usMarketedFirst(items).map((t) => {
+        const notMarketed = t.formularyStatus === 'NOT_US_MARKETED';
+        return (
+        <li
+          key={`${t.role}-${t.agent}`}
+          className={notMarketed ? 'rounded-lg border border-slate-600 bg-slate-800/60 p-2' : t.role === 'NOT_RECOMMENDED' ? 'opacity-60' : ''}
+        >
           <div className="flex flex-wrap items-center gap-2">
             <RoleBadge role={t.role} />
-            <span className="text-sm font-semibold text-slate-100">{t.agent}</span>
+            <span className={`text-sm font-semibold ${notMarketed ? 'text-slate-400' : 'text-slate-100'}`}>{t.agent}</span>
             <span className="text-xs text-slate-400">{t.routes.join(', ')}</span>
           </div>
-          <p className="text-sm text-slate-200">{t.doseText}</p>
+          <p className={`text-sm ${notMarketed ? 'text-slate-400' : 'text-slate-200'}`}>{t.doseText}</p>
           <Bullets items={t.notes} tone="text-slate-400" />
           <div className="mt-1 flex flex-wrap items-center gap-2">
             <EvidenceBadge level={t.evidenceLevel} />
@@ -204,7 +209,8 @@ export function TreatmentList({ items, canonical }: { items: z.infer<typeof Trea
           {canonical?.(t)}
           <RelatedLinks relatedIds={[]} calculatorIds={t.calculatorIds} />
         </li>
-      ))}
+        );
+      })}
     </ul>
   );
 }

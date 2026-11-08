@@ -154,7 +154,13 @@ export const FORMULARY_LABEL: Record<string, string> = {
   AVAILABLE: 'Stocked',
   NOT_STOCKED_LOCAL: 'Not stocked locally',
   INSTITUTION_VARIES: 'Institution varies',
+  NOT_US_MARKETED: 'Not US-marketed',
 };
+
+/** NOT_US_MARKETED treatment items sort last; everything else keeps its signed-off order. */
+export function usMarketedFirst<T extends { formularyStatus: string }>(items: readonly T[]): T[] {
+  return [...items.filter((t) => t.formularyStatus !== 'NOT_US_MARKETED'), ...items.filter((t) => t.formularyStatus === 'NOT_US_MARKETED')];
+}
 
 export const EVIDENCE_LABEL: Record<string, string> = {
   STRONG: 'Strong',

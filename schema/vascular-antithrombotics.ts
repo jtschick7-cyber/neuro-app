@@ -2,7 +2,7 @@ import { z } from "zod";
 import { KebabId, RelatedId, ReviewDate, Source, Text, registryEnvelope } from "./common";
 import { EvidenceLevel, FormularyStatus, TreatmentItem } from "./acute-neuro";
 
-export const VASCULAR_ANTITHROMBOTICS_SCHEMA_VERSION = "1.1.0";
+export const VASCULAR_ANTITHROMBOTICS_SCHEMA_VERSION = "1.2.0";
 
 export const DrugClass = z.enum(["ANTIPLATELET", "ANTICOAGULANT", "THROMBOLYTIC", "REVERSAL"]);
 

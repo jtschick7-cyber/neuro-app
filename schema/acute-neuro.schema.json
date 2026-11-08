@@ -352,7 +352,8 @@
                     "LOCAL_PREFERRED",
                     "AVAILABLE",
                     "NOT_STOCKED_LOCAL",
-                    "INSTITUTION_VARIES"
+                    "INSTITUTION_VARIES",
+                    "NOT_US_MARKETED"
                   ]
                 },
                 "calculatorIds": {

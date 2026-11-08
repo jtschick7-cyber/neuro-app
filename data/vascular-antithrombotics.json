@@ -1,7 +1,7 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "0.13.3",
-  "schemaVersion": "1.1.0",
+  "version": "0.14.1",
+  "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-08",
   "entries": [
     {
@@ -796,7 +796,7 @@
             }
           ],
           "notes": [
-            "Your formulary's factor Xa reversal agent (andexanet not stocked)",
+            "Your formulary's factor Xa reversal agent (andexanet was withdrawn from the US market in Dec 2025)",
             "Activated charcoal 50 g if the DOAC was taken within ~2 h and the airway is protected"
           ],
           "evidenceLevel": "WEAK",
@@ -870,9 +870,10 @@
       "sources": [
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
-        "Kcentra (prothrombin complex concentrate, human) US prescribing information. CSL Behring (label text via Drugs.com, accessed 2026-11-04)"
+        "Kcentra (prothrombin complex concentrate, human) US prescribing information. CSL Behring (label text via Drugs.com, accessed 2026-11-04)",
+        "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "kind": "AGENT",
@@ -1240,17 +1241,17 @@
           "routes": [
             "IV"
           ],
-          "doseText": "Dose depends on agent, dose and time since last dose (unstructured: not stocked locally)",
+          "doseText": "Not available in the US (unstructured: withdrawn from the US market Dec 2025)",
           "dose": [],
           "notes": [
-            "Not stocked — not part of local pathway",
+            "Withdrawn from the US market effective Dec 22, 2025, after an FDA safety communication (Dec 18, 2025)",
             "Not mentioned in the current apixaban label"
           ],
           "evidenceLevel": "MODERATE",
           "evidenceNote": [
-            "AHA ICH 2022: COR 2a, LOE B-NR"
+            "AHA ICH 2022: COR 2a, LOE B-NR — predates the 2025 US withdrawal"
           ],
-          "formularyStatus": "NOT_STOCKED_LOCAL",
+          "formularyStatus": "NOT_US_MARKETED",
           "calculatorIds": []
         },
         {
@@ -1311,9 +1312,10 @@
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
-        "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
+        "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
+        "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "kind": "AGENT",
@@ -1493,17 +1495,17 @@
           "routes": [
             "IV"
           ],
-          "doseText": "Dose depends on agent, dose and time since last dose (unstructured: not stocked locally)",
+          "doseText": "Not available in the US (unstructured: withdrawn from the US market Dec 2025)",
           "dose": [],
           "notes": [
-            "Not stocked — not part of local pathway",
+            "Withdrawn from the US market effective Dec 22, 2025, after an FDA safety communication (Dec 18, 2025)",
             "Not mentioned in the current rivaroxaban label"
           ],
           "evidenceLevel": "MODERATE",
           "evidenceNote": [
-            "AHA ICH 2022: COR 2a, LOE B-NR"
+            "AHA ICH 2022: COR 2a, LOE B-NR — predates the 2025 US withdrawal"
           ],
-          "formularyStatus": "NOT_STOCKED_LOCAL",
+          "formularyStatus": "NOT_US_MARKETED",
           "calculatorIds": []
         },
         {
@@ -1564,9 +1566,10 @@
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
-        "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
+        "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
+        "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "kind": "AGENT",
@@ -1745,17 +1748,17 @@
           "routes": [
             "IV"
           ],
-          "doseText": "Dose depends on agent, dose and time since last dose (unstructured: not stocked locally)",
+          "doseText": "Not available in the US (unstructured: withdrawn from the US market Dec 2025)",
           "dose": [],
           "notes": [
-            "Not stocked — not part of local pathway",
+            "Withdrawn from the US market effective Dec 22, 2025, after an FDA safety communication (Dec 18, 2025)",
             "Not mentioned in the current edoxaban label"
           ],
           "evidenceLevel": "MODERATE",
           "evidenceNote": [
-            "AHA ICH 2022: COR 2a, LOE B-NR"
+            "AHA ICH 2022: COR 2a, LOE B-NR — predates the 2025 US withdrawal"
           ],
-          "formularyStatus": "NOT_STOCKED_LOCAL",
+          "formularyStatus": "NOT_US_MARKETED",
           "calculatorIds": []
         },
         {
@@ -1815,9 +1818,10 @@
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
-        "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
+        "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
+        "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "kind": "AGENT",
@@ -3865,7 +3869,7 @@
       "keyNumbers": [
         "NIHSS ≤3 or ABCD2 ≥4, within 24 h of onset: Clopidogrel (with load) + aspirin, start within 24 h, 21 days, then SAPT",
         "NIHSS ≤5 or ABCD2 ≥4 at 24–72 h, or NIHSS 4–5 within 24 h, with presumed atherosclerotic cause (≥50% stenosis likely causative, or new infarcts of presumed large-artery origin): Clopidogrel + aspirin × 21 days, then SAPT (INSPIRES)",
-        "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier: Ticagrelor + aspirin × 21 days, then ticagrelor alone, in preference to clopidogrel-based DAPT (CHANCE-2)",
+        "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier: Ticagrelor + aspirin × 21 days, then ticagrelor alone, may be reasonable instead of clopidogrel-based DAPT (CHANCE-2)",
         "Any regimen beyond 90 days, or adding a third antiplatelet: Don't — excess hemorrhage without added benefit",
         "Clopidogrel 300–600 mg load, then 75 mg daily; aspirin 160–325 mg load, then 75–100 mg daily"
       ],
@@ -3908,7 +3912,7 @@
         {
           "order": 3,
           "condition": "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier",
-          "recommendation": "Ticagrelor + aspirin × 21 days, then ticagrelor alone, in preference to clopidogrel-based DAPT (CHANCE-2)",
+          "recommendation": "Ticagrelor + aspirin × 21 days, then ticagrelor alone, may be reasonable instead of clopidogrel-based DAPT (CHANCE-2)",
           "evidenceLevel": "WEAK",
           "evidenceNote": [
             "AHA 2026: COR 2b, LOE B-R"
@@ -4128,7 +4132,7 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Johnston SC, et al. Ticagrelor and Aspirin or Aspirin Alone in Acute Ischemic Stroke or TIA (THALES). N Engl J Med 2020;383:207-217. doi:10.1056/NEJMoa1916870"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "kind": "DECISION",
@@ -4847,7 +4851,7 @@
       "keyNumbers": [
         "Warfarin, INR ≥2.0: 4F-PCC (INR-banded) in preference to FFP, then IV vitamin K right after",
         "Warfarin, INR 1.3–1.9: PCC may be reasonable",
-        "Apixaban, rivaroxaban or edoxaban: 4F-PCC 50 U/kg (local pathway); andexanet is not stocked",
+        "Apixaban, rivaroxaban or edoxaban: 4F-PCC 50 U/kg (local pathway); andexanet was withdrawn from the US market (Dec 2025)",
         "Dabigatran: Idarucizumab is not stocked — 4F-PCC (or aPCC) 50 U/kg and consider dialysis; call pharmacy about idarucizumab or transfer",
         "IV or SC unfractionated heparin: Protamine 1 mg per 100 U given in the prior 2–3 h, max 50 mg"
       ],
@@ -4894,10 +4898,10 @@
         {
           "order": 4,
           "condition": "Apixaban, rivaroxaban or edoxaban",
-          "recommendation": "4F-PCC 50 U/kg (local pathway); andexanet is not stocked",
+          "recommendation": "4F-PCC 50 U/kg (local pathway); andexanet was withdrawn from the US market (Dec 2025)",
           "evidenceLevel": "WEAK",
           "evidenceNote": [
-            "AHA ICH 2022: 4F-PCC/aPCC COR 2b, LOE B-NR; andexanet COR 2a, LOE B-NR"
+            "AHA ICH 2022: 4F-PCC/aPCC COR 2b, LOE B-NR; andexanet COR 2a, LOE B-NR (predates the US withdrawal)"
           ]
         },
         {
@@ -4954,9 +4958,9 @@
       "pearls": [
         "PT/INR don't reflect factor Xa reversal after PCC — don't titrate to them (edoxaban label)",
         "Speed matters: door-to-reversal-agent ≤60 min was linked to lower in-hospital death or hospice in a 9,492-patient cohort; 2024 AHA/ASA ICH performance measures target ≤90 min from arrival (Li 2025)",
-        "PCC and andexanet preparation takes 20–45 min depending on site logistics; idarucizumab needs no reconstitution (Li 2025)",
+        "PCC preparation takes 20–45 min depending on site logistics; idarucizumab needs no reconstitution (Li 2025)",
         "Warfarin threshold: NCS 2016 and the 2024 AHA/ASA ICH performance measures use INR ≥1.4, so most clinicians give 4F-PCC at INR ≥1.4 (Li 2025)",
-        "ANNEXA-I (2024): andexanet vs usual care (mostly PCC) — better hemostasis (67% vs 53%) but more thrombotic events (10% vs 5.6%, mostly ischemic stroke); no difference in 30-day death or mRS (Li 2025)"
+        "ANNEXA-I (2024): andexanet vs usual care (mostly PCC) — better hemostasis (67% vs 53%) but more thrombotic events (10% vs 5.6%, mostly ischemic stroke); no difference in 30-day death or mRS (Li 2025); andexanet was withdrawn from the US market in Dec 2025 (FDA)"
       ],
       "verify": [],
       "relatedIds": [
@@ -4970,9 +4974,10 @@
       "sources": [
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407",
         "Frontera JA, et al. Guideline for reversal of antithrombotics in intracranial hemorrhage: executive summary (NCS/SCCM). Crit Care Med 2016;44:2251-2257",
-        "Li M, Frontera JA. Emergency reversal of antithrombotics in intracerebral hemorrhage: an update. Curr Neurol Neurosci Rep 2025;25:81. doi:10.1007/s11910-025-01469-9"
+        "Li M, Frontera JA. Emergency reversal of antithrombotics in intracerebral hemorrhage: an update. Curr Neurol Neurosci Rep 2025;25:81. doi:10.1007/s11910-025-01469-9",
+        "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "kind": "DECISION",
