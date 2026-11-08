@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-08",
   "entries": [
@@ -311,7 +311,7 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2025;23:731-744. doi:10.1016/j.jtha.2024.10.022"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "ich-etiology-workup",
@@ -835,7 +835,7 @@
       "sources": [
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "caa-related-inflammation",
@@ -3986,7 +3986,7 @@
         "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048",
         "Pascarella R, et al. European Stroke Organisation (ESO) guidelines on Primary Angiitis of the Central Nervous System (PACNS). Eur Stroke J 2023;8(4):842-879. doi:10.1177/23969873231190431"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "paraneoplastic-workup",
