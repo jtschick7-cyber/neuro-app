@@ -452,7 +452,7 @@ Approved by Jason in chat 2026-11-08. Drafts: `planning/drafts/followups-2/` (ba
 
 ### Open items
 - `verify[]`: none.
-- Jason: `npm run signoff`, then `npm run release`.
+- Sign-off and release: done. Jason signed all 8 entries 2026-11-08 (acute-neuro 1.2.7, consult-workups 2.1.1, vascular-antithrombotics 0.12.1, the PATCH bumps from sign-off); content 2.0.0+4b315abc; merged as PR #34.
 - Noticed, not changed: see `planning/drafts/followups-2/README.md`; tracked in `NEURO_APP_TASKS.md` §10.
 
 ## 2026-11-08 — Follow-up batch 3
@@ -488,5 +488,9 @@ Grading rule adopted (thrombolysis-with-prior-antithrombotics): `evidenceLevel` 
 
 ### Open items
 - `verify[]`: none.
-- Jason: `npm run signoff`, then `npm run release`.
+- Sign-off and release: done. Jason signed all 8 entries 2026-11-08 (consult-workups 2.2.1, vascular-antithrombotics 0.13.1, the PATCH bumps from sign-off); content 2.0.0+36470240; merged as PR #35.
 - Disposition Ledger: see `planning/drafts/followups-3/README.md`; every row closed.
+
+## 2026-11-08 — Kopp citation cleanup
+
+Requested by Jason in chat 2026-11-08. `vascular-antithrombotics:periprocedural-holds-lp-evd`: Kopp source title corrected to the published title, the same string batch 3 item 9 set in `pregnancy-antithrombotics`, so the paper is one citation. DOI unchanged. Entry reset to `UNREVIEWED` for re-signing. vascular-antithrombotics 0.13.1 → 0.13.2 (PATCH: citation wording, no clinical meaning changed).
