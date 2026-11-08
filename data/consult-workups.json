@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-08",
   "entries": [
@@ -578,7 +578,7 @@
       "sources": [
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "caa-related-inflammation",
@@ -1503,7 +1503,7 @@
         "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
         "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "elevated-ck-myopathy",
@@ -1746,7 +1746,7 @@
         "Nathwani RA, et al. Serum Alanine Aminotransferase in Skeletal Muscle Diseases. Hepatology 2005;41:380-382. doi:10.1002/hep.20548",
         "Kwo PY, Cohen SM, Lim JK. ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries. Am J Gastroenterol 2017;112:18-35. doi:10.1038/ajg.2016.517"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "acute-hepatic-porphyria",
@@ -2157,7 +2157,7 @@
         "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
         "Stern BJ, et al. Definition and Consensus Diagnostic Criteria for Neurosarcoidosis. JAMA Neurol 2018;75:1546-1553. doi:10.1001/jamaneurol.2018.2295"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "acute-vision-loss",
@@ -2407,7 +2407,7 @@
         "Dejaco C, et al. EULAR recommendations for the use of imaging in large vessel vasculitis in clinical practice: 2023 update. Ann Rheum Dis 2024;83:741-751. doi:10.1136/ard-2023-224543",
         "Eggenberger E. Optic Neuritis. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):407-435"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "thunderclap-headache",
@@ -2626,7 +2626,7 @@
         "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048",
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "new-demyelinating-lesion",
@@ -2866,7 +2866,7 @@
         "Montalban X, et al. Diagnosis of multiple sclerosis: 2024 revisions of the McDonald criteria. Lancet Neurol 2025;24:850-865",
         "Eggenberger E. Optic Neuritis. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):407-435"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "cns-vasculitis-workup",
@@ -3468,7 +3468,7 @@
       "sources": [
         "Kleffner I, et al. Diagnostic criteria for Susac syndrome (European Susac Consortium). J Neurol Neurosurg Psychiatry 2016 (published online first Oct 25, 2016). doi:10.1136/jnnp-2016-314295"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "intravascular-lymphoma",
