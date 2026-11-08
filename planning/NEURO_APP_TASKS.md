@@ -533,11 +533,25 @@ context-bar chip, safe-area top unchanged.
 
 Content items: each needs an approved draft (docs/VERSIONING.md) before any edit.
 
-- [ ] GBS: `searchTerms` lacks "GQ1b". The PLEX line in `keyNumbers` is shortened from `doseText`.
-- [ ] cvt-anticoagulation: no back-link to `pregnancy-antithrombotics`. The enoxaparin CrCl <30 dose has no `dose[]` object. `rules[0].evidenceNote` says "AHA scientific statement 2024" rather than "Saposnik 2024".
-- [ ] sah-workup: no `relatedIds` to `cervical-artery-dissection` or `cvt-anticoagulation`, though both are in the differential.
-- [ ] pregnancy-antithrombotics: the Kopp 2025 citation has an online-first placeholder (0:1-29). `pearls[0]` overstates the ACOG endorsement.
-- [ ] cns-vasculitis: the ESO PACNS guideline is used only "as cited in Salvarani 2024" and isn't in `sources`. "Sousa 2026" vs "de Sousa IA".
-- [ ] young-stroke: `keyNumbers[0]` looks truncated ("…over >3"). The in-text labels still say "ISTH 2024".
-- [ ] AHA 2026 Table 8 has no LMWH row (Powers 2019 had one): check against `enoxaparin` and `thrombolysis-with-prior-antithrombotics`. Table 8's coagulopathy row gives both "aPTT>40s" and "PTT abnormal by local standards".
-- [ ] ticagrelor: `uses[0].evidenceNote` cites "§5.19 … ≥30% stenosis" (the ≥30% subgroup is in §5.1.1). `uses[3].evidenceNote` names no section.
+- [x] (settled 2026-11-08, batch 2 items 1, 1b) GBS: `searchTerms` lacks "GQ1b". The PLEX line in `keyNumbers` is shortened from `doseText`.
+- [x] (settled 2026-11-08, batch 2 items 2a, 2b, 2c) cvt-anticoagulation: no back-link to `pregnancy-antithrombotics`. The enoxaparin CrCl <30 dose has no `dose[]` object. `rules[0].evidenceNote` says "AHA scientific statement 2024" rather than "Saposnik 2024".
+- [x] (settled 2026-11-08, batch 2 items 3) sah-workup: no `relatedIds` to `cervical-artery-dissection` or `cvt-anticoagulation`, though both are in the differential.
+- [x] (settled 2026-11-08, batch 2 items 4a, 4b) pregnancy-antithrombotics: the Kopp 2025 citation has an online-first placeholder (0:1-29). `pearls[0]` overstates the ACOG endorsement.
+- [x] (settled 2026-11-08, batch 2 items 5a, 5b) cns-vasculitis: the ESO PACNS guideline is used only "as cited in Salvarani 2024" and isn't in `sources`. "Sousa 2026" vs "de Sousa IA".
+- [x] (settled 2026-11-08, batch 2 items 6) young-stroke: `keyNumbers[0]` looks truncated ("…over >3"). The in-text labels still say "ISTH 2024".
+- [x] (settled 2026-11-08, batch 2 items 7) AHA 2026 Table 8 has no LMWH row (Powers 2019 had one): check against `enoxaparin` and `thrombolysis-with-prior-antithrombotics`. Table 8's coagulopathy row gives both "aPTT>40s" and "PTT abnormal by local standards".
+- [x] (settled 2026-11-08, batch 2 items 8) ticagrelor: `uses[0].evidenceNote` cites "§5.19 … ≥30% stenosis" (the ≥30% subgroup is in §5.1.1). `uses[3].evidenceNote` names no section.
+
+### Noticed in follow-up batch 2 (2026-11-08), not changed
+
+Each needs an approved draft before any edit. Detail: `planning/drafts/followups-2/README.md`.
+
+- [ ] sah-workup: dissection and CVT are mustNotMiss, but the workup has no neck vessel imaging or CTV/MRV; CTA head is indicated only for "SAH on CT".
+- [ ] young-stroke-workup: if "over >3" is too terse, reword `decisionRules[2].recommendation` (e.g. "target INR 2–3 rather than >3"); `keyNumbers[0]` would then need to change to stay a copy. Some labels say "Kleindorfer" and others "Kleindorfer 2021".
+- [ ] cns-vasculitis-workup: `decisionRules[3]` follows Salvarani's paraphrase; citing ESO directly would mean rewording to ESO's multidisciplinary-team wording (PICO 8), its own item. The de Sousa paper wasn't attached, so the surname form wasn't checked against it.
+- [ ] ticagrelor: `uses[0]` "for any event" doesn't match Rec 4's "an artery that could account for the event"; the agent text uses ≥50% stenosis (AHA 2026/THALES) and Kleindorfer Rec 4 says ≥30%. `uses[3]` follows Rec 3's ">30%"; the supportive text says "≥30%".
+- [ ] pregnancy-antithrombotics: Kopp source title differs from the PDF title ("ASRA Pain Medicine…" vs "American Society of Regional Anesthesia and Pain Medicine…"); the DOI matches.
+- [ ] cvt-anticoagulation: `options[0].dose[0]` is labeled "Enoxaparin" next to "CrCl <30" (the enoxaparin entry says "q12h"). The label's renal dose is for DVT/PE with warfarin, so using it for CVT is an extrapolation, as with the existing q12h dose.
+- [ ] enoxaparin: `keyNumbers[1]` copies only the opening clause of its field (the pattern item 1b fixed in GBS).
+- [ ] AHA 2026 PDF: the attached copy cuts Table 8 off mid-row ("Amyloid…") at the bottom of p. 94/245. No LMWH row up to that point; the rest of the table wasn't checked.
+- [ ] thrombolysis-with-prior-antithrombotics: Table 8 rows are CONSENSUS in `rules[0]`/`rules[1]` but EXPERT_OPINION in `rules[2]`; `heparin-ufh` says "expert opinion, not graded"; Table 8 says it rests on "expert opinions and limited data". `rules[4]` is STRONG on a Powers 2019 recommendation that AHA 2026 replaced.

@@ -1,8 +1,8 @@
 {
   "title": "Consult workups",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "schemaVersion": "2.1.0",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-08",
   "entries": [
     {
       "id": "young-stroke-workup",
@@ -150,7 +150,7 @@
           ],
           "notes": [
             "Confirm persistence 12 weeks apart (Kleindorfer)",
-            "Lupus anticoagulant testing is discouraged on anticoagulation (false positives and negatives); DOAC removal or alternate assays only with lab input (ISTH 2024)"
+            "Lupus anticoagulant testing is discouraged on anticoagulation (false positives and negatives); DOAC removal or alternate assays only with lab input (ISTH 2025)"
           ]
         },
         {
@@ -311,7 +311,7 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2025;23:731-744. doi:10.1016/j.jtha.2024.10.022"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "ich-etiology-workup",
@@ -828,12 +828,14 @@
       "relatedIds": [
         "consult-workups:ich-etiology-workup",
         "consult-workups:thunderclap-headache",
-        "reference-cards:asah-numbers"
+        "reference-cards:asah-numbers",
+        "vascular-antithrombotics:cervical-artery-dissection",
+        "vascular-antithrombotics:cvt-anticoagulation"
       ],
       "sources": [
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "caa-related-inflammation",
@@ -3921,18 +3923,19 @@
           "order": 2,
           "condition": "Strong clinical suspicion, normal CTA/MRA",
           "recommendation": "Consider catheter DSA",
-          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceLevel": "WEAK",
           "evidenceNote": [
-            "ESO guideline as cited in Salvarani 2024"
+            "ESO 2023 PICO 5: weak recommendation for DSA if MRA normal (very low quality)",
+            "ESO 2023 PICO 4 expert consensus statement: consider DSA when MRA/CTA not diagnostic"
           ]
         },
         {
           "order": 3,
           "condition": "Suspected small-vessel vasculitis with normal angiogram",
           "recommendation": "Brain biopsy",
-          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceLevel": "CONSENSUS",
           "evidenceNote": [
-            "ESO guideline as cited in Salvarani 2024"
+            "ESO 2023 PICO 8 expert consensus statement"
           ]
         },
         {
@@ -3950,7 +3953,7 @@
           "recommendation": "Score with RCVS2 before labeling vasculitis — see thunderclap-headache",
           "evidenceLevel": "EXPERT_OPINION",
           "evidenceNote": [
-            "Sousa 2026"
+            "de Sousa 2026"
           ]
         }
       ],
@@ -3980,9 +3983,10 @@
       ],
       "sources": [
         "Salvarani C, Hunder GG, Brown RD Jr. Primary Central Nervous System Vasculitis. N Engl J Med 2024;391:1028-1037. doi:10.1056/NEJMra2314942",
-        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048"
+        "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048",
+        "Pascarella R, et al. European Stroke Organisation (ESO) guidelines on Primary Angiitis of the Central Nervous System (PACNS). Eur Stroke J 2023;8(4):842-879. doi:10.1177/23969873231190431"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "paraneoplastic-workup",

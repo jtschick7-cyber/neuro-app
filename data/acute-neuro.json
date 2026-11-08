@@ -1,8 +1,8 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "schemaVersion": "1.2.0",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-08",
   "entries": [
     {
       "id": "convulsive-status-epilepticus",
@@ -1639,7 +1639,7 @@
       "category": "NEUROMUSCULAR",
       "keyNumbers": [
         "IVIG: 0.4 g/kg/day IV ×5 days (2 g/kg total)",
-        "Plasma exchange (PLEX): 12–15 L total in 4–5 exchanges over 1–2 weeks (within 4 weeks of onset, unable to walk unaided)",
+        "Plasma exchange (PLEX): 12–15 L total in 4–5 exchanges over 1–2 weeks (within 4 weeks of onset, unable to walk unaided); 2 exchanges if able to walk but not run (within 2 weeks)",
         "Ward → ICU: FVC <60% predicted, SBC <20, autonomic instability, worsening bulbar/neck weakness, or mEGRIS ≥23 (EAN/PNS 2023 Fig. 2)",
         "FVC fall >30% in 24 h → immediate ICU transfer; 50% fall in <24 h → likely needs ventilation",
         "In ICU: FVC <20 mL/kg, MEP <30 cmH2O, MIP <40 cmH2O, or FVC >30% below baseline → consider elective intubation before FVC ≤10 mL/kg"
@@ -1653,7 +1653,8 @@
         "ascending paralysis",
         "EGRIS",
         "Bickerstaff",
-        "BBE"
+        "BBE",
+        "GQ1b"
       ],
       "presentation": [
         "Progressive bilateral limb weakness with reduced/absent reflexes; nadir within 4 weeks",
@@ -1919,7 +1920,7 @@
         "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
         "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "neuromuscular-respiratory-failure",
