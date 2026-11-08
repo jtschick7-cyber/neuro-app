@@ -16,7 +16,7 @@ describe('parseHash', () => {
   });
   it('parses calculator routes', () => {
     expect(parseHash('#/calc')).toEqual({ kind: 'calc', calcId: undefined });
-    expect(parseHash('#/calc/tnk-dose')).toEqual({ kind: 'calc', calcId: 'tnk-dose' });
+    expect(parseHash('#/calc/ledd')).toEqual({ kind: 'calc', calcId: 'ledd' });
   });
   it('parses the about route', () => {
     expect(parseHash('#/about')).toEqual({ kind: 'about' });
@@ -37,7 +37,7 @@ describe('toHash', () => {
   const routes: Route[] = [
     { kind: 'home' },
     { kind: 'calc' },
-    { kind: 'calc', calcId: 'abcd2' },
+    { kind: 'calc', calcId: 'ledd' },
     ...REGISTRIES.flatMap<Route>((r) => [
       { kind: 'registry', registry: r.id },
       { kind: 'registry', registry: r.id, entryId: 'some-entry' },

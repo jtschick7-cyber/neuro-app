@@ -16,7 +16,7 @@ export const TIERS: Tier[] = [
   { tier: 7, slug: "unplaced", heading: "Unplaced registries (add a rule in scripts/rereview-queue.ts)" },
 ];
 
-const REVERSAL_DECISIONS = new Set(["thrombolysis-with-prior-antithrombotics", "sich-after-thrombolysis", "anticoag-reversal-ich", "antiplatelet-ich"]);
+const REVERSAL_DECISIONS = new Set(["thrombolysis-with-prior-antithrombotics", "anticoag-reversal-ich", "antiplatelet-ich"]);
 const CAUTION = ["mg-contraindications", "seizure-threshold", "rcvs-triggers", "asm-interactions"];
 
 function tierOf(registry: string, e: QueueEntry): number {

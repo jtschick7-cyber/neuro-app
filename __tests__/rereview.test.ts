@@ -28,7 +28,7 @@ describe('re-review queue (task 2.1)', () => {
     expect(tierOf('vascular-antithrombotics:anticoag-reversal-ich')).toBe(3);
     expect(tierOf('vascular-antithrombotics:thrombolysis-with-prior-antithrombotics')).toBe(3);
     expect(tierOf('vascular-antithrombotics:esus-antithrombotic')).toBe(4);
-    expect(tierOf('consult-workups:sah-workup')).toBe(4);
+    expect(tierOf('consult-workups:thunderclap-headache')).toBe(4);
     expect(tierOf('mg-contraindications:' + regs['mg-contraindications'].entries[0].id)).toBe(5);
     expect(tierOf('neural-antibodies:lgi1')).toBe(6);
     expect(tierOf('antiseizure-medications:levetiracetam')).toBe(2);

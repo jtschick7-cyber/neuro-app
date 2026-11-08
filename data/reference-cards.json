@@ -1,8 +1,8 @@
 {
   "title": "Reference Cards",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "schemaVersion": "1.1.0",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-08",
   "entries": [
     {
       "id": "neuro-icu-targets",
@@ -694,7 +694,6 @@
       "verify": [],
       "relatedIds": [
         "reference-cards:neuro-icu-targets",
-        "consult-workups:sah-workup",
         "antiseizure-medications:levetiracetam",
         "antiseizure-medications:phenytoin-fosphenytoin"
       ],
@@ -702,7 +701,7 @@
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436",
         "Nimodipine capsules US prescribing information. Bionpharma Inc.; revised 12/2025 (DailyMed label)"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "thrombophilia-test-validity",

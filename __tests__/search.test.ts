@@ -86,9 +86,10 @@ describe('task 3 acceptance queries (right entry in the top 3)', () => {
     ['apixaban ICH', '#/vascular-antithrombotics/apixaban'],
     ['apixaban ICH', '#/vascular-antithrombotics/anticoag-reversal-ich'],
     ['mag', '#/mg-contraindications/magnesium'],
-    ['TNK', '#/calc/tnk-dose'],
-    ['TNK', '#/vascular-antithrombotics/tenecteplase'],
-    ['ICH', '#/calc/ich-score'],
+    ['TNK', '#/vascular-antithrombotics/thrombolysis-with-prior-antithrombotics'],
+    ['tPA', '#/vascular-antithrombotics/thrombolysis-with-prior-antithrombotics'],
+    ['ICH', '#/consult-workups/ich-etiology-workup'],
+    ['ICH', '#/vascular-antithrombotics/anticoag-reversal-ich'],
     ['Botox', '#/mg-contraindications/botulinum-toxin'],
     ['Keppra', '#/calc/levetiracetam-load'],
     ['Keppra', '#/antiseizure-medications/levetiracetam'],
@@ -113,9 +114,8 @@ describe('task 3 acceptance queries (right entry in the top 3)', () => {
 describe('global search over the real data', () => {
   it('finds the required queries', () => {
     expect(hrefs('mag')).toContain('#/mg-contraindications/magnesium');
-    expect(hrefs('TNK')).toContain('#/calc/tnk-dose');
-    expect(hrefs('TNK')).toContain('#/vascular-antithrombotics/tenecteplase');
-    expect(hrefs('ICH')).toContain('#/calc/ich-score');
+    expect(hrefs('TNK')).toContain('#/vascular-antithrombotics/thrombolysis-with-prior-antithrombotics');
+    expect(hrefs('ICH')).toContain('#/consult-workups/ich-etiology-workup');
     expect(hrefs('ICH').some((h) => h.startsWith('#/vascular-antithrombotics/'))).toBe(true);
     expect(hrefs('Botox')).toContain('#/mg-contraindications/botulinum-toxin');
     expect(hrefs('Keppra')).toContain('#/calc/levetiracetam-load');

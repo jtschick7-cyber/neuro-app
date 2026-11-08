@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "2.2.1",
+  "version": "3.0.1",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-08",
   "entries": [
@@ -560,9 +560,7 @@
         "Neuro ICU or stroke unit",
         "Repeat DSA at 3–6 months if cause still unexplained"
       ],
-      "calculatorIds": [
-        "ich-score"
-      ],
+      "calculatorIds": [],
       "institutionVaries": [
         "Who orders and reads the CTA (ED vs stroke team)"
       ],
@@ -579,270 +577,6 @@
       ],
       "sources": [
         "Greenberg SM, et al. 2022 Guideline for the Management of Patients With Spontaneous Intracerebral Hemorrhage (AHA/ASA). Stroke 2022;53:e282-e361. doi:10.1161/STR.0000000000000407"
-      ],
-      "lastReviewed": "2026-11-07"
-    },
-    {
-      "id": "sah-workup",
-      "title": "Suspected subarachnoid hemorrhage",
-      "keyNumbers": [
-        "Noncontrast head CT: <6 h from onset, no new deficit, high-quality scanner read by neuroradiology: sensitivity ~98.7%",
-        "Presentation >6 h, or new neurological deficit: CT; if negative, LP",
-        "Ottawa SAH Rule: further testing if any of age ≥40, neck pain/stiffness, witnessed LOC, onset with exertion, thunderclap (instant peak), limited neck flexion",
-        "Secure the aneurysm early, preferably within 24 h (AHA 2023 key message)",
-        "No routine seizure prophylaxis (consider in high-risk patients); avoid phenytoin; new seizures → ASM for 7 days (AHA 2023 key message)"
-      ],
-      "searchTerms": [
-        "SAH",
-        "thunderclap",
-        "worst headache",
-        "xanthochromia",
-        "Ottawa SAH rule",
-        "aneurysm",
-        "LP after CT"
-      ],
-      "category": "VASCULAR",
-      "consultQuestion": "Sudden severe headache — rule out SAH? CT negative, need LP?",
-      "keyHistory": [
-        "Time to peak intensity (instant/within 1 h)",
-        "Onset during exertion, sex, Valsalva",
-        "Loss of consciousness, seizure, vomiting",
-        "Neck pain or stiffness",
-        "Prior sentinel headache in recent weeks",
-        "Family history of aneurysm/SAH, polycystic kidney disease"
-      ],
-      "keyExam": [
-        "GCS, Hunt-Hess and WFNS grade",
-        "Meningismus, limited neck flexion",
-        "Third-nerve palsy (PCOM aneurysm)",
-        "Subhyaloid hemorrhage on fundoscopy"
-      ],
-      "redFlags": [
-        "Decreased consciousness or focal deficit",
-        "Third-nerve palsy with pupil involvement",
-        "Hydrocephalus on CT",
-        "Rebleeding (sudden worsening)"
-      ],
-      "differential": [
-        {
-          "dx": "Aneurysmal SAH",
-          "clues": [
-            "Diffuse basal cisternal blood",
-            "Thunderclap onset"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Perimesencephalic nonaneurysmal SAH",
-          "clues": [
-            "Blood anterior to the midbrain/pons only, good grade"
-          ],
-          "mustNotMiss": false
-        },
-        {
-          "dx": "RCVS",
-          "clues": [
-            "Recurrent thunderclap headaches, convexity SAH, segmental vasoconstriction"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Cervical artery dissection",
-          "clues": [
-            "Neck pain, Horner, focal deficits"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Cerebral venous thrombosis",
-          "clues": [
-            "Progressive headache, papilledema, seizures"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Pituitary apoplexy",
-          "clues": [
-            "Visual loss, ophthalmoplegia, known adenoma"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Convexity SAH from CAA",
-          "clues": [
-            "Older, transient focal spells, superficial siderosis"
-          ],
-          "mustNotMiss": false
-        },
-        {
-          "dx": "Primary thunderclap or exertional headache",
-          "clues": [
-            "Diagnosis of exclusion after negative workup"
-          ],
-          "mustNotMiss": false
-        }
-      ],
-      "workup": [
-        {
-          "test": "Noncontrast head CT",
-          "priority": "STAT",
-          "indication": [],
-          "notes": [
-            "<6 h from onset, no new deficit, high-quality scanner read by neuroradiology: sensitivity ~98.7%"
-          ]
-        },
-        {
-          "test": "LP: opening pressure, cell counts in tubes 1 and 4, xanthochromia (spectrophotometry if available)",
-          "priority": "URGENT",
-          "indication": [
-            "CT negative and presentation >6 h from onset or new neurological deficit"
-          ],
-          "notes": [
-            "Often done >6–12 h after onset; xanthochromia sensitivity 100%, specificity 95.2% (pooled)"
-          ]
-        },
-        {
-          "test": "CTA head",
-          "priority": "STAT",
-          "indication": [
-            "SAH on CT",
-            "CT negative, xanthochromia on LP"
-          ],
-          "notes": [
-            "Sensitivity for aneurysms <3 mm ~61%"
-          ]
-        },
-        {
-          "test": "Imaging for other thunderclap causes: CTA/MRA head and neck, CT/MR venography, MRI brain — see thunderclap-headache",
-          "priority": "URGENT",
-          "indication": [
-            "Features of cervical artery dissection, RCVS, CVT or pituitary apoplexy"
-          ],
-          "notes": []
-        },
-        {
-          "test": "Catheter DSA",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Diffuse SAH with negative or inconclusive CTA",
-            "Aneurysm confirmed — to plan treatment"
-          ],
-          "notes": []
-        },
-        {
-          "test": "ECG, troponin, electrolytes (sodium)",
-          "priority": "URGENT",
-          "indication": [
-            "Confirmed SAH"
-          ],
-          "notes": []
-        }
-      ],
-      "decisionRules": [
-        {
-          "order": 1,
-          "condition": "Acute severe headache",
-          "recommendation": "Prompt workup to diagnose or exclude aSAH",
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "AHA 2023 aSAH: COR 1, LOE B-NR"
-          ]
-        },
-        {
-          "order": 2,
-          "condition": "Alert, >15 y, severe nontraumatic headache peaking within 1 h",
-          "recommendation": "Ottawa SAH Rule: further testing if any of age ≥40, neck pain/stiffness, witnessed LOC, onset with exertion, thunderclap (instant peak), limited neck flexion",
-          "evidenceLevel": "WEAK",
-          "evidenceNote": [
-            "AHA 2023 aSAH: COR 2b, LOE B-NR",
-            "100% sensitive, 7.6–15.3% specific in validation"
-          ]
-        },
-        {
-          "order": 3,
-          "condition": "Presentation <6 h, no new deficit",
-          "recommendation": "Negative high-quality CT read by neuroradiology is reasonable to exclude aSAH",
-          "evidenceLevel": "MODERATE",
-          "evidenceNote": [
-            "AHA 2023 aSAH: COR 2a, LOE B-NR"
-          ]
-        },
-        {
-          "order": 4,
-          "condition": "Presentation >6 h, or new neurological deficit",
-          "recommendation": "CT; if negative, LP",
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "AHA 2023 aSAH: COR 1, LOE B-NR"
-          ]
-        },
-        {
-          "order": 5,
-          "condition": "Spontaneous SAH with high concern for aneurysm, CTA negative or inconclusive",
-          "recommendation": "Catheter DSA",
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "AHA 2023 aSAH: COR 1, LOE B-NR"
-          ]
-        },
-        {
-          "order": 6,
-          "condition": "Confirmed aneurysm",
-          "recommendation": "DSA can help plan treatment",
-          "evidenceLevel": "MODERATE",
-          "evidenceNote": [
-            "AHA 2023 aSAH: COR 2a, LOE B-NR"
-          ]
-        },
-        {
-          "order": 7,
-          "condition": "Confirmed aSAH",
-          "recommendation": "Grade with Hunt-Hess or WFNS for severity and prognosis",
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "AHA 2023 aSAH: COR 1, LOE B-NR"
-          ]
-        },
-        {
-          "order": 8,
-          "condition": "Confirmed aSAH at a low-volume hospital",
-          "recommendation": "Timely transfer to a high-volume center with neurocritical care and cerebrovascular/endovascular expertise",
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "AHA 2023 aSAH: COR 1, LOE B-NR"
-          ]
-        }
-      ],
-      "initialSteps": [
-        "Neurosurgery/neuroendovascular now; neuro ICU (AHA 2023: COR 1)",
-        "Secure the aneurysm early, preferably within 24 h (AHA 2023 key message)",
-        "Enteral nimodipine early (AHA 2023 key message); routine antifibrinolytics don't improve outcome",
-        "No routine seizure prophylaxis (consider in high-risk patients); avoid phenytoin; new seizures → ASM for 7 days (AHA 2023 key message)"
-      ],
-      "disposition": [
-        "Confirmed aSAH: neuro ICU at a high-volume center",
-        "Negative CT + LP: consider other thunderclap causes"
-      ],
-      "calculatorIds": [],
-      "institutionVaries": [
-        "Spectrophotometric xanthochromia availability vs visual inspection",
-        "CTA-first vs LP-first for CT-negative patients (no head-to-head data; AHA 2023)"
-      ],
-      "pearls": [
-        "Sentinel headache precedes aSAH in 10–43% (AHA 2023)",
-        "Negative CT within 6 h may miss <1.5 per 1000 SAH — but this doesn't apply to atypical presentations (neck pain, syncope, seizure, focal deficit) (AHA 2023)",
-        "Perimesencephalic SAH: CTA alone vs DSA is in equipoise (AHA 2023)"
-      ],
-      "verify": [],
-      "relatedIds": [
-        "consult-workups:ich-etiology-workup",
-        "consult-workups:thunderclap-headache",
-        "reference-cards:asah-numbers",
-        "vascular-antithrombotics:cervical-artery-dissection",
-        "vascular-antithrombotics:cvt-anticoagulation"
-      ],
-      "sources": [
-        "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
       ],
       "lastReviewed": "2026-11-08"
     },
@@ -1488,405 +1222,6 @@
       "lastReviewed": "2026-11-07"
     },
     {
-      "id": "acute-generalized-weakness",
-      "title": "Acute generalized weakness: localize first",
-      "searchTerms": [
-        "weakness",
-        "can't walk",
-        "paraparesis",
-        "quadriparesis",
-        "GBS vs",
-        "bulbar weakness",
-        "floppy"
-      ],
-      "category": "NEUROMUSCULAR",
-      "consultQuestion": "Weak all over — where's the lesion, and is the airway at risk?",
-      "keyHistory": [
-        "Tempo (hours, days, weeks) and pattern (ascending, descending, fluctuating, fatigable)",
-        "Sensory symptoms, back pain, bladder/bowel",
-        "Preceding infection, vaccination, travel, tick exposure, home-canned food or injection drug use",
-        "New drugs: statins, steroids, checkpoint inhibitors, neuromuscular blockers, aminoglycosides, magnesium",
-        "Diplopia, ptosis, dysphagia, dyspnea"
-      ],
-      "keyExam": [
-        "Reflexes (absent → peripheral; brisk → central)",
-        "Sensory level, saddle anesthesia, rectal tone",
-        "Pattern: proximal vs distal, symmetric, fatigable, bulbar/ocular",
-        "Pupils (botulism), ophthalmoplegia",
-        "Neck flexion strength, single-breath count, FVC/NIF"
-      ],
-      "redFlags": [
-        "Bulbar weakness, neck flexion weakness, rising respiratory rate or paradox — check FVC/NIF and involve ICU",
-        "Sensory level or sphincter dysfunction — emergent MRI spine",
-        "Dilated pupils with descending paralysis — botulism",
-        "Autonomic instability"
-      ],
-      "differential": [
-        {
-          "dx": "Spinal cord compression or myelopathy",
-          "clues": [
-            "Sensory level, sphincters, back pain, upper motor neuron signs (may be areflexic acutely)"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Guillain-Barré syndrome",
-          "clues": [
-            "Ascending, areflexic, paresthesias, preceding infection"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Myasthenic crisis",
-          "clues": [
-            "Fatigable ocular/bulbar/proximal weakness, normal reflexes and sensation"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Botulism",
-          "clues": [
-            "Descending paralysis, cranial nerves first, dilated pupils, no sensory loss"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Electrolyte causes (hypokalemia, hypophosphatemia, hypermagnesemia)",
-          "clues": [
-            "Abnormal labs, periodic paralysis"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Myopathy / rhabdomyolysis / necrotizing myositis",
-          "clues": [
-            "Proximal weakness, high CK"
-          ],
-          "mustNotMiss": false
-        },
-        {
-          "dx": "Tick paralysis, toxins, critical illness weakness",
-          "clues": [
-            "Exposure, ICU course"
-          ],
-          "mustNotMiss": false
-        }
-      ],
-      "workup": [
-        {
-          "test": "FVC and NIF (serial), ABG/VBG",
-          "priority": "STAT",
-          "indication": [],
-          "notes": [
-            "Single-breath count at bedside"
-          ]
-        },
-        {
-          "test": "BMP with K, Mg, phos, Ca; CK; TSH; CBC",
-          "priority": "STAT",
-          "indication": [],
-          "notes": []
-        },
-        {
-          "test": "MRI spine (whole) ± brain",
-          "priority": "STAT",
-          "indication": [
-            "Sensory level, sphincter involvement, UMN signs, or unclear localization"
-          ],
-          "notes": []
-        },
-        {
-          "test": "LP: cells, protein",
-          "priority": "URGENT",
-          "indication": [
-            "Suspected GBS"
-          ],
-          "notes": [
-            "Protein may be normal in week 1"
-          ]
-        },
-        {
-          "test": "EMG/NCS with repetitive nerve stimulation",
-          "priority": "URGENT",
-          "indication": [],
-          "notes": []
-        },
-        {
-          "test": "AChR/MuSK antibodies; anti-GQ1b",
-          "priority": "URGENT",
-          "indication": [
-            "Fatigable or ocular/bulbar weakness; ophthalmoplegia-ataxia"
-          ],
-          "notes": []
-        },
-        {
-          "test": "Botulinum toxin testing via health department",
-          "priority": "STAT",
-          "indication": [
-            "Descending paralysis with cranial nerve involvement"
-          ],
-          "notes": [
-            "Don't wait for results to request antitoxin"
-          ]
-        }
-      ],
-      "decisionRules": [
-        {
-          "order": 1,
-          "condition": "Weakness with sensory level, sphincter loss, or UMN signs",
-          "recommendation": "Image the whole spine emergently before LP",
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [
-            "Frohman 2010; Douglas 2022"
-          ]
-        },
-        {
-          "order": 2,
-          "condition": "Ascending areflexic weakness ± paresthesias",
-          "recommendation": "Work up GBS — see acute-neuro:guillain-barre-syndrome",
-          "evidenceLevel": "CONSENSUS",
-          "evidenceNote": [
-            "EAN/PNS 2023"
-          ]
-        },
-        {
-          "order": 3,
-          "condition": "Severe respiratory failure with only mild limb weakness",
-          "recommendation": "Reconsider GBS — think MG, botulism, myopathy",
-          "evidenceLevel": "CONSENSUS",
-          "evidenceNote": [
-            "EAN/PNS 2023"
-          ]
-        },
-        {
-          "order": 4,
-          "condition": "Descending paralysis starting with cranial nerves",
-          "recommendation": "Treat as botulism until proven otherwise; call the health department",
-          "evidenceLevel": "CONSENSUS",
-          "evidenceNote": [
-            "CDC 2021 botulism guideline"
-          ]
-        }
-      ],
-      "initialSteps": [
-        "Airway: see acute-neuro:neuromuscular-respiratory-failure",
-        "Avoid MG-worsening drugs until MG excluded"
-      ],
-      "disposition": [
-        "ICU for bulbar weakness, falling FVC/NIF, or dysautonomia"
-      ],
-      "calculatorIds": [],
-      "institutionVaries": [
-        "EMG availability after hours and weekends"
-      ],
-      "pearls": [
-        "Acute cord lesions can be areflexic early (spinal shock) — a sensory level still points to the cord (Frohman 2010)"
-      ],
-      "verify": [],
-      "relatedIds": [
-        "acute-neuro:guillain-barre-syndrome",
-        "acute-neuro:myasthenic-crisis",
-        "acute-neuro:neuromuscular-respiratory-failure",
-        "acute-neuro:spinal-cord-compression",
-        "consult-workups:myelopathy-workup"
-      ],
-      "sources": [
-        "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
-        "Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. Neurology 2021;96(3):114-122. doi:10.1212/WNL.0000000000011124",
-        "Rao AK, et al. Clinical guidelines for diagnosis and treatment of botulism, 2021. MMWR Recomm Rep 2021;70(2):1-30. doi:10.15585/mmwr.rr7002a1",
-        "Frohman EM, Wingerchuk DM. Transverse Myelitis. N Engl J Med 2010;363:564-572",
-        "Douglas AG, Xu DJ, Shah MP. Approach to Myelopathy and Myelitis. Neurol Clin 2022;40:133-156. doi:10.1016/j.ncl.2021.08.009"
-      ],
-      "lastReviewed": "2026-11-07"
-    },
-    {
-      "id": "icu-acquired-weakness",
-      "title": "ICU-acquired weakness (CIP/CIM)",
-      "keyNumbers": [
-        "Diagnose by manual muscle testing; average MRC <4 = ICUAW"
-      ],
-      "searchTerms": [
-        "ICUAW",
-        "critical illness polyneuropathy",
-        "critical illness myopathy",
-        "CIP",
-        "CIM",
-        "can't wean",
-        "failure to wean"
-      ],
-      "category": "NEUROMUSCULAR",
-      "consultQuestion": "Weak after a long ICU stay and won't wean — ICU-acquired weakness, or something else?",
-      "keyHistory": [
-        "Sepsis, multiorgan failure, prolonged ventilation, difficult weaning",
-        "Steroids and neuromuscular blockers",
-        "Strength before the ICU stay; prior neuromuscular disease",
-        "Weakness timing: present at admission (pre-existing disease) vs developed in ICU"
-      ],
-      "keyExam": [
-        "Symmetric, limb > facial weakness; facial and ocular muscles relatively spared",
-        "MRC sum score in a cooperative patient",
-        "Reflexes reduced or normal; distal sensory loss suggests polyneuropathy",
-        "Asymmetry, ptosis/ophthalmoplegia, or UMN signs point elsewhere"
-      ],
-      "redFlags": [
-        "Asymmetric weakness, UMN signs, sensory level — image brain/spine",
-        "Ocular or bulbar fatigability — test for MG",
-        "Weakness present before ICU course — GBS, MG, ALS, myopathy"
-      ],
-      "differential": [
-        {
-          "dx": "ICU-acquired weakness (critical illness polyneuropathy, myopathy, or both)",
-          "clues": [
-            "Symmetric limb weakness after sepsis/prolonged ventilation, facial sparing"
-          ],
-          "mustNotMiss": false
-        },
-        {
-          "dx": "Guillain-Barré syndrome",
-          "clues": [
-            "Weakness that began before or early in admission, CSF protein, demyelinating NCS"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Myasthenia gravis / Lambert-Eaton",
-          "clues": [
-            "Ptosis, ophthalmoplegia, fatigability, decrement on RNS"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Cervical myelopathy or brainstem lesion",
-          "clues": [
-            "UMN signs, sensory level"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Prolonged neuromuscular blockade",
-          "clues": [
-            "Recent NMB, renal/hepatic failure"
-          ],
-          "mustNotMiss": false
-        },
-        {
-          "dx": "Electrolyte disorders (phosphate, potassium, magnesium)",
-          "clues": [
-            "Abnormal labs"
-          ],
-          "mustNotMiss": false
-        }
-      ],
-      "workup": [
-        {
-          "test": "Structured manual muscle testing (MRC) once awake and cooperative",
-          "priority": "URGENT",
-          "indication": [],
-          "notes": [
-            "Reference standard: average MRC <4 across muscles tested (ATS 2014)"
-          ]
-        },
-        {
-          "test": "BMP, Mg, phos, CK",
-          "priority": "URGENT",
-          "indication": [],
-          "notes": []
-        },
-        {
-          "test": "EMG/NCS (± direct muscle stimulation)",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Not cooperative for MMT",
-            "Weakness persists or atypical features"
-          ],
-          "notes": [
-            "In-ICU EMG: PPV 50%, NPV 89% for final weakness diagnosis (one study, ATS 2014)"
-          ]
-        },
-        {
-          "test": "MRI brain/cervical spine",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Asymmetry, UMN signs, or encephalopathy out of proportion"
-          ],
-          "notes": []
-        },
-        {
-          "test": "AChR/MuSK antibodies, RNS",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Ocular/bulbar or fatigable weakness"
-          ],
-          "notes": []
-        },
-        {
-          "test": "Muscle or nerve biopsy",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Atypical course where diagnosis changes management"
-          ],
-          "notes": [
-            "Rarely used (ATS 2014)"
-          ]
-        }
-      ],
-      "decisionRules": [
-        {
-          "order": 1,
-          "condition": "Cooperative patient",
-          "recommendation": "Diagnose by manual muscle testing; average MRC <4 = ICUAW",
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [
-            "ATS 2014 reference standard (MMT in cooperative patients; electrophysiology in uncooperative)"
-          ]
-        },
-        {
-          "order": 2,
-          "condition": "Uncooperative patient",
-          "recommendation": "Electrophysiological testing",
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [
-            "ATS 2014"
-          ]
-        },
-        {
-          "order": 3,
-          "condition": "ICUAW identified",
-          "recommendation": "Physical rehabilitation — low risk; very low-quality evidence of benefit specific to ICUAW",
-          "evidenceLevel": "WEAK",
-          "evidenceNote": [
-            "ATS 2014 (research recommendations; no treatment-specific recommendation)"
-          ]
-        }
-      ],
-      "initialSteps": [
-        "Early PT/OT; minimize steroids and neuromuscular blockers when possible",
-        "Glucose control per ICU protocol"
-      ],
-      "disposition": [
-        "Rehabilitation planning; recovery over months"
-      ],
-      "calculatorIds": [],
-      "institutionVaries": [
-        "Bedside EMG in the ICU"
-      ],
-      "pearls": [
-        "About 25% of patients on prolonged ventilation develop ICUAW (ATS 2014)",
-        "Associated with severe sepsis, difficult weaning, and prolonged ventilation (ATS 2014)",
-        "Diagnosing ICUAW avoids unnecessary testing for alternatives (ATS 2014)"
-      ],
-      "verify": [],
-      "relatedIds": [
-        "consult-workups:acute-generalized-weakness",
-        "acute-neuro:guillain-barre-syndrome",
-        "acute-neuro:myasthenic-crisis"
-      ],
-      "sources": [
-        "Fan E, et al. An Official American Thoracic Society Clinical Practice Guideline: The Diagnosis of Intensive Care Unit-acquired Weakness in Adults. Am J Respir Crit Care Med 2014;190:1437-1446. doi:10.1164/rccm.201411-2011ST"
-      ],
-      "lastReviewed": "2026-11-07"
-    },
-    {
       "id": "inpatient-neuropathy",
       "title": "Acute or subacute neuropathy on the wards",
       "keyNumbers": [
@@ -2156,7 +1491,6 @@
       "relatedIds": [
         "acute-neuro:guillain-barre-syndrome",
         "consult-workups:myelopathy-workup",
-        "consult-workups:acute-generalized-weakness",
         "consult-workups:acute-hepatic-porphyria"
       ],
       "sources": [
@@ -2169,7 +1503,7 @@
         "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
         "Kumar N. Copper Deficiency Myelopathy (Human Swayback). Mayo Clin Proc 2006;81:1371-1384"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "elevated-ck-myopathy",
@@ -2405,16 +1739,14 @@
         "Raised ALT doesn't prove liver injury — ALT rises substantially with muscle necrosis; muscle disease raises AST/ALT with AST predominance early; screen with CK ± aldolase (Nathwani 2005; ACG 2017)"
       ],
       "verify": [],
-      "relatedIds": [
-        "consult-workups:acute-generalized-weakness"
-      ],
+      "relatedIds": [],
       "sources": [
         "Allenbach Y, et al. 224th ENMC International Workshop: Clinico-sero-pathological classification of immune-mediated necrotizing myopathies. Neuromuscul Disord 2018;28:87-99",
         "Allenbach Y, Benveniste O. Inflammatory Myopathies. N Engl J Med 2026;394:1925-1938. doi:10.1056/NEJMra2415426",
         "Nathwani RA, et al. Serum Alanine Aminotransferase in Skeletal Muscle Diseases. Hepatology 2005;41:380-382. doi:10.1002/hep.20548",
         "Kwo PY, Cohen SM, Lim JK. ACG Clinical Guideline: Evaluation of Abnormal Liver Chemistries. Am J Gastroenterol 2017;112:18-35. doi:10.1038/ajg.2016.517"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "acute-hepatic-porphyria",
@@ -2814,7 +2146,6 @@
       "relatedIds": [
         "acute-neuro:spinal-cord-compression",
         "acute-neuro:nmosd-mogad-attack",
-        "acute-neuro:ms-relapse",
         "neural-antibodies:aqp4",
         "neural-antibodies:mog",
         "neural-antibodies:cv2-crmp5"
@@ -2826,7 +2157,7 @@
         "Ménétrier T, Denimal D. Vitamin B12 Status in Recreational Users of Nitrous Oxide: A Systematic Review Focusing on the Prevalence of Laboratory Abnormalities. Antioxidants 2023;12:1191. doi:10.3390/antiox12061191",
         "Stern BJ, et al. Definition and Consensus Diagnostic Criteria for Neurosarcoidosis. JAMA Neurol 2018;75:1546-1553. doi:10.1001/jamaneurol.2018.2295"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "acute-vision-loss",
@@ -3046,7 +2377,7 @@
       ],
       "initialSteps": [
         "GCA: start steroids on suspicion (dosing per rheumatology/ophthalmology) — imaging/biopsy must not delay treatment",
-        "Optic neuritis treatment: see acute-neuro:ms-relapse or acute-neuro:nmosd-mogad-attack"
+        "Optic neuritis treatment if NMOSD/MOGAD is suspected: see acute-neuro:nmosd-mogad-attack"
       ],
       "disposition": [
         "CRAO: admit for stroke workup",
@@ -3066,7 +2397,6 @@
       ],
       "verify": [],
       "relatedIds": [
-        "acute-neuro:ms-relapse",
         "acute-neuro:nmosd-mogad-attack",
         "neural-antibodies:aqp4",
         "neural-antibodies:mog"
@@ -3077,231 +2407,7 @@
         "Dejaco C, et al. EULAR recommendations for the use of imaging in large vessel vasculitis in clinical practice: 2023 update. Ann Rheum Dis 2024;83:741-751. doi:10.1136/ard-2023-224543",
         "Eggenberger E. Optic Neuritis. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):407-435"
       ],
-      "lastReviewed": "2026-11-07"
-    },
-    {
-      "id": "diplopia-ptosis",
-      "title": "Diplopia and ptosis",
-      "keyNumbers": [
-        "ESR and CRP: Age >50 with new binocular diplopia, even transient",
-        "Age >50 with vascular risk and presumed microvascular III, IV or VI palsy: Still obtain MRI (61% of nonmicrovascular causes had vascular risk factors) and ESR/CRP"
-      ],
-      "searchTerms": [
-        "double vision",
-        "diplopia",
-        "ptosis",
-        "third nerve palsy",
-        "sixth nerve palsy",
-        "INO",
-        "ocular myasthenia",
-        "skew"
-      ],
-      "category": "NEURO_OPHTH_VESTIBULAR",
-      "consultQuestion": "New double vision or droopy eyelid — which nerve, and is it an aneurysm, stroke, or myasthenia?",
-      "keyHistory": [
-        "Monocular (resolves covering the other eye? no → ocular cause) vs binocular",
-        "Horizontal vs vertical; worse at distance or near; worse in which gaze",
-        "Fatigability: worse later in the day, better after rest (MG)",
-        "Headache or eye pain (aneurysm, Tolosa-Hunt, GCA)",
-        "Age >50 with GCA symptoms; vascular risk factors"
-      ],
-      "keyExam": [
-        "Pupils: dilated pupil with third nerve palsy = compressive until proven otherwise",
-        "Ductions/versions, cover testing; slowed adducting saccades (INO)",
-        "Ptosis fatigability, Cogan lid twitch, ice-pack test",
-        "Other cranial nerves, ataxia, areflexia (Miller Fisher), proptosis (thyroid eye disease)"
-      ],
-      "redFlags": [
-        "Third nerve palsy, especially pupil-involving — CTA/MRA now",
-        "Multiple cranial nerves — cavernous sinus, orbital apex, granulomatous disease, Miller Fisher",
-        "Skew deviation or other brainstem signs — stroke",
-        "Bulbar or respiratory symptoms with ocular weakness — myasthenic crisis risk"
-      ],
-      "differential": [
-        {
-          "dx": "PCOM aneurysm (third nerve palsy)",
-          "clues": [
-            "Pupil involvement, headache"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Brainstem stroke (skew, INO, nuclear palsies)",
-          "clues": [
-            "Other brainstem signs"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Giant cell arteritis",
-          "clues": [
-            "Age >50, headache, jaw claudication"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Myasthenia gravis",
-          "clues": [
-            "Fluctuating, asymmetric ptosis and ophthalmoparesis; pupils spared"
-          ],
-          "mustNotMiss": false
-        },
-        {
-          "dx": "Microvascular cranial nerve palsy",
-          "clues": [
-            "Age >50 with vascular risk; resolves over weeks to months — still image"
-          ],
-          "mustNotMiss": false
-        },
-        {
-          "dx": "Cavernous sinus / orbital apex lesion, Tolosa-Hunt",
-          "clues": [
-            "Multiple ipsilateral nerves, pain"
-          ],
-          "mustNotMiss": true
-        },
-        {
-          "dx": "Thyroid eye disease, CPEO, OPMD",
-          "clues": [
-            "Restrictive pattern; slowly progressive symmetric ptosis without diplopia (CPEO/OPMD)"
-          ],
-          "mustNotMiss": false
-        },
-        {
-          "dx": "Horner syndrome",
-          "clues": [
-            "Mild ptosis with miosis — carotid dissection if acute"
-          ],
-          "mustNotMiss": true
-        }
-      ],
-      "workup": [
-        {
-          "test": "CTA or MRA head",
-          "priority": "STAT",
-          "indication": [
-            "Any new third nerve palsy"
-          ],
-          "notes": [
-            "Screen for PCOM aneurysm; catheter angiography only if suspicion remains high (Mackay 2025)"
-          ]
-        },
-        {
-          "test": "MRI brain ± orbits with contrast (thin cuts/CISS through the suspected region)",
-          "priority": "URGENT",
-          "indication": [
-            "Acute III, IV, or VI palsy, even if microvascular suspected",
-            "Other localization"
-          ],
-          "notes": []
-        },
-        {
-          "test": "ESR and CRP",
-          "priority": "URGENT",
-          "indication": [
-            "Age >50 with new binocular diplopia, even transient"
-          ],
-          "notes": []
-        },
-        {
-          "test": "AChR (± MuSK) antibodies; ice-pack test; repetitive stimulation/single-fiber EMG",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Fluctuating ptosis or ophthalmoparesis, pupils spared"
-          ],
-          "notes": []
-        },
-        {
-          "test": "Thyroid function and antibodies",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Restrictive pattern, proptosis"
-          ],
-          "notes": []
-        },
-        {
-          "test": "Anti-GQ1b antibody",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Ophthalmoplegia with ataxia/areflexia"
-          ],
-          "notes": []
-        },
-        {
-          "test": "CTA neck / MRI neck",
-          "priority": "IF_INDICATED",
-          "indication": [
-            "Acute Horner syndrome"
-          ],
-          "notes": [
-            "Carotid dissection"
-          ]
-        }
-      ],
-      "decisionRules": [
-        {
-          "order": 1,
-          "condition": "Monocular diplopia",
-          "recommendation": "Ocular cause (refractive, dry eye, lens) — ophthalmology, not neuroimaging",
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [
-            "Mackay 2025"
-          ]
-        },
-        {
-          "order": 2,
-          "condition": "New third nerve palsy",
-          "recommendation": "Vascular imaging (CTA or MRA) plus brain MRI with contrast in all patients",
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [
-            "Mackay 2025"
-          ]
-        },
-        {
-          "order": 3,
-          "condition": "Age >50 with vascular risk and presumed microvascular III, IV or VI palsy",
-          "recommendation": "Still obtain MRI (61% of nonmicrovascular causes had vascular risk factors) and ESR/CRP",
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [
-            "Mackay 2025"
-          ]
-        },
-        {
-          "order": 4,
-          "condition": "Normal pupils with diplopia",
-          "recommendation": "Pupil involvement excludes myasthenia as the cause (beware preexisting pupil abnormalities)",
-          "evidenceLevel": "EXPERT_OPINION",
-          "evidenceNote": [
-            "Mackay 2025"
-          ]
-        }
-      ],
-      "initialSteps": [
-        "Myasthenia with bulbar/respiratory symptoms: see acute-neuro:myasthenic-crisis"
-      ],
-      "disposition": [
-        "Admit: pupil-involving third nerve palsy until aneurysm excluded, brainstem stroke, or bulbar MG",
-        "Outpatient neuro-ophthalmology for isolated stable palsies after imaging"
-      ],
-      "calculatorIds": [],
-      "institutionVaries": [
-        "CISS/thin-cut MRI protocols"
-      ],
-      "pearls": [
-        "Pseudo-INO from MG: symmetric saccadic velocities; true INO: slowed adducting saccades (Mackay 2025)",
-        "Skew deviation is a supranuclear vertical misalignment — look for lateral medullary stroke (Mackay 2025)",
-        "In MG, extraocular muscles are involved in ~80% of patients; weakness fluctuates within the day (Keene 2022)",
-        "Cavernous sinus disease: CN III in ~80%, VI ~70%, IV ~30% (Keene 2022)"
-      ],
-      "verify": [],
-      "relatedIds": [
-        "acute-neuro:myasthenic-crisis"
-      ],
-      "sources": [
-        "Mackay DD. Approach to Diplopia. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):463-478",
-        "Keene KR, et al. Clinical and imaging clues to the diagnosis and follow-up of ptosis and ophthalmoparesis. J Cachexia Sarcopenia Muscle 2022. doi:10.1002/jcsm.13089"
-      ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "thunderclap-headache",
@@ -3459,7 +2565,7 @@
         {
           "order": 1,
           "condition": "Thunderclap headache",
-          "recommendation": "Exclude SAH first — see sah-workup",
+          "recommendation": "Exclude SAH first: noncontrast CT; LP if CT is negative and >6 h from onset or new deficit",
           "evidenceLevel": "STRONG",
           "evidenceNote": [
             "AHA 2023 aSAH: COR 1, LOE B-NR"
@@ -3511,7 +2617,6 @@
       ],
       "verify": [],
       "relatedIds": [
-        "consult-workups:sah-workup",
         "vascular-antithrombotics:cvt-anticoagulation",
         "vascular-antithrombotics:cervical-artery-dissection",
         "acute-neuro:pres"
@@ -3521,7 +2626,7 @@
         "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048",
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "new-demyelinating-lesion",
@@ -3734,7 +2839,6 @@
         }
       ],
       "initialSteps": [
-        "Relapse treatment: see acute-neuro:ms-relapse",
         "NMOSD/MOGAD suspected: see acute-neuro:nmosd-mogad-attack"
       ],
       "disposition": [
@@ -3752,7 +2856,6 @@
       ],
       "verify": [],
       "relatedIds": [
-        "acute-neuro:ms-relapse",
         "acute-neuro:nmosd-mogad-attack",
         "consult-workups:acute-vision-loss",
         "consult-workups:myelopathy-workup",
@@ -3763,7 +2866,7 @@
         "Montalban X, et al. Diagnosis of multiple sclerosis: 2024 revisions of the McDonald criteria. Lancet Neurol 2025;24:850-865",
         "Eggenberger E. Optic Neuritis. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):407-435"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "cns-vasculitis-workup",
@@ -4360,13 +3463,12 @@
       ],
       "verify": [],
       "relatedIds": [
-        "acute-neuro:ms-relapse",
         "consult-workups:cns-vasculitis-workup"
       ],
       "sources": [
         "Kleffner I, et al. Diagnostic criteria for Susac syndrome (European Susac Consortium). J Neurol Neurosurg Psychiatry 2016 (published online first Oct 25, 2016). doi:10.1136/jnnp-2016-314295"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "intravascular-lymphoma",
