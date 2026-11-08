@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-08",
   "entries": [
@@ -2146,7 +2146,7 @@
         "Rao AK, et al. Clinical guidelines for diagnosis and treatment of botulism, 2021. MMWR Recomm Rep 2021;70(2):1-30. doi:10.15585/mmwr.rr7002a1",
         "Michigan Department of Health and Human Services. Notification requirements for communicable disease reporting (reportable conditions pyramid), rev. 2024-03. https://www.michigan.gov/documents/mdch/ReportableCDPyramid_317048_7.pdf"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "id": "autoimmune-encephalitis",
