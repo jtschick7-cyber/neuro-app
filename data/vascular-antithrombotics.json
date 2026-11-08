@@ -3865,7 +3865,7 @@
       "keyNumbers": [
         "NIHSS ≤3 or ABCD2 ≥4, within 24 h of onset: Clopidogrel (with load) + aspirin, start within 24 h, 21 days, then SAPT",
         "NIHSS ≤5 or ABCD2 ≥4 at 24–72 h, or NIHSS 4–5 within 24 h, with presumed atherosclerotic cause (≥50% stenosis likely causative, or new infarcts of presumed large-artery origin): Clopidogrel + aspirin × 21 days, then SAPT (INSPIRES)",
-        "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier: Ticagrelor + aspirin × 21 days, then ticagrelor alone, in preference to clopidogrel-based DAPT (CHANCE-2)",
+        "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier: Ticagrelor + aspirin × 21 days, then ticagrelor alone, may be reasonable instead of clopidogrel-based DAPT (CHANCE-2)",
         "Any regimen beyond 90 days, or adding a third antiplatelet: Don't — excess hemorrhage without added benefit",
         "Clopidogrel 300–600 mg load, then 75 mg daily; aspirin 160–325 mg load, then 75–100 mg daily"
       ],
@@ -3908,7 +3908,7 @@
         {
           "order": 3,
           "condition": "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier",
-          "recommendation": "Ticagrelor + aspirin × 21 days, then ticagrelor alone, in preference to clopidogrel-based DAPT (CHANCE-2)",
+          "recommendation": "Ticagrelor + aspirin × 21 days, then ticagrelor alone, may be reasonable instead of clopidogrel-based DAPT (CHANCE-2)",
           "evidenceLevel": "WEAK",
           "evidenceNote": [
             "AHA 2026: COR 2b, LOE B-R"
@@ -4128,7 +4128,7 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Johnston SC, et al. Ticagrelor and Aspirin or Aspirin Alone in Acute Ischemic Stroke or TIA (THALES). N Engl J Med 2020;383:207-217. doi:10.1056/NEJMoa1916870"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",

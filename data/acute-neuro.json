@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "1.2.7",
+  "version": "1.3.0",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-08",
   "entries": [
@@ -1928,7 +1928,7 @@
       "keyNumbers": [
         "20/30/40 rule (GBS cohort): VC <20 mL/kg, MIP weaker than −30 cmH2O, MEP <40 cmH2O predict need for ventilation (Lawn 2001)",
         "EAN/PNS 2023 (GBS): consider elective ventilation at FVC ≤20 mL/kg, MEP <30 cmH2O, or MIP <40 cmH2O; SBC <20 → ICU",
-        "Michigan: MDHHS 517-335-8165",
+        "Michigan: MDHHS 517-335-8165 (office hours); 517-335-9030 (after hours)",
         "Poison Control 1-800-222-1222"
       ],
       "category": "NEUROMUSCULAR",
@@ -1974,7 +1974,7 @@
         {
           "order": 5,
           "window": "Botulism suspected",
-          "action": "Call the state health department now for consultation and antitoxin (BAT) — Michigan: MDHHS 517-335-8165. Don't wait for lab confirmation (CDC 2021)"
+          "action": "Call the state health department now for consultation and antitoxin (BAT) — Michigan: MDHHS 517-335-8165 (office hours) or 517-335-9030 (after hours). Don't wait for lab confirmation (CDC 2021)"
         },
         {
           "order": 6,
@@ -2130,7 +2130,7 @@
         "Suspected botulism → health department call immediately"
       ],
       "institutionVaries": [
-        "MDHHS botulism consult line 517-335-8165 (supplied by local reviewer) — confirm after-hours routing",
+        "MDHHS Communicable Disease Division 517-335-8165 (office hours); after-hours emergency line 517-335-9030 (MDHHS reporting guide) — confirm local health department routing",
         "RT availability for bedside FVC/NIF"
       ],
       "verify": [],
@@ -2143,9 +2143,10 @@
       "sources": [
         "Lawn ND, et al. Anticipating mechanical ventilation in Guillain-Barré syndrome. Arch Neurol 2001;58(6):893-898.",
         "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
-        "Rao AK, et al. Clinical guidelines for diagnosis and treatment of botulism, 2021. MMWR Recomm Rep 2021;70(2):1-30. doi:10.15585/mmwr.rr7002a1"
+        "Rao AK, et al. Clinical guidelines for diagnosis and treatment of botulism, 2021. MMWR Recomm Rep 2021;70(2):1-30. doi:10.15585/mmwr.rr7002a1",
+        "Michigan Department of Health and Human Services. Notification requirements for communicable disease reporting (reportable conditions pyramid), rev. 2024-03. https://www.michigan.gov/documents/mdch/ReportableCDPyramid_317048_7.pdf"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "autoimmune-encephalitis",
