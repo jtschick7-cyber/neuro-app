@@ -14,17 +14,18 @@
 | `generated/about.json` | `contentVersion`, review status, deduped sources | About/Sources page; footer; cache key |
 
 ## Registries → screen types
-- `acute-neuro` — emergency protocol (immediate actions, workup, treatment, pitfalls) — **to build**
-- `consult-workups` — consult workup (differential, workup priorities, decision rules, recs template) — **to build**
-- `vascular-antithrombotics` — union on `kind`: `AGENT` (drug card) | `DECISION` (ordered rules) — **to build**
-- `neural-antibodies` — antibody card — **to build**
+- `acute-neuro` — emergency protocol (immediate actions, workup, treatment, pitfalls) — **built**
+- `consult-workups` — consult workup (differential, workup priorities, decision rules, recs template) — **built**
+- `vascular-antithrombotics` — union on `kind`: `AGENT` (drug card) | `DECISION` (ordered rules) — **built**
+- `neural-antibodies` — antibody card — **built**
 - Caution lists (`schema/caution-list.ts`): `mg-contraindications`, `seizure-threshold`, `rcvs-triggers` — **built** (`MgRegistryView`, `ReferenceCard`)
-- Interaction list (`schema/drug-interactions.ts`): `asm-interactions` — **to build**
-- Cross-links: `relatedIds` are `"registry:id"`; `"calc:<id>"` and `calculatorIds` open calculators — **to build** (needs routing)
+- Interaction list (`schema/drug-interactions.ts`): `asm-interactions` — **built**
+- Cross-links: `relatedIds` are `"registry:id"`; `"calc:<id>"` and `calculatorIds` open calculators — **built** (`RelatedLinks`, `src/lib/links.ts`)
 
 ## Calculators
-Built: antiseizure loads (incl. lacosamide fixed range), hypertonic saline (local protocol), mannitol + osmolar gap, Cockcroft-Gault, LEDD.
-To build: `tnk-dose`, `alteplase-dose`, `ich-score`, `abcd2`, `cha2ds2-vasc`, `has-bled`, `ivig-dose` (+ ideal/adjusted body weight helpers), `sodium-correction` (`hyponatremiaBolus`, `sodiumCorrectionCheck`). Every manifest id in `data/calculators.manifest.json` needs a UI.
+All 13 ids in `data/calculators.manifest.json` are built: `levetiracetam-load`, `valproate-load`, `fosphenytoin-load`, `phenytoin-correction`, `hypertonic-saline-bolus`, `mannitol-dose`, `ledd`, `cockcroft-gault`, `ich-score`, `abcd2`, `tnk-dose`, `alteplase-dose`, `sodium-correction`. Every manifest id needs a UI.
+
+`lacosamide-load`, `cha2ds2-vasc`, `has-bled` and `ivig-dose` are in `CALCULATOR_META` but not in the manifest and have no card.
 
 ## Hard requirements
 1. Disclaimer gate (`DisclaimerGate`, built) on first launch and whenever `DISCLAIMER_REVISION` changes.
