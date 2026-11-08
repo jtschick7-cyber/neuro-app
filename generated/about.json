@@ -1,20 +1,20 @@
 {
   "appVersion": "2.0.0",
-  "contentVersion": "2.0.0+cdd3c332",
-  "builtAt": "2026-11-07",
+  "contentVersion": "2.0.0+4b315abc",
+  "builtAt": "2026-11-08",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "1.2.5",
+      "version": "1.2.7",
       "schemaVersion": "1.2.0",
-      "lastUpdated": "2026-11-07",
+      "lastUpdated": "2026-11-08",
       "entries": 22,
       "reviewed": 22,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-07"
+      "newestReview": "2026-11-08"
     },
     {
       "id": "antiseizure-medications",
@@ -45,15 +45,15 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "2.0.1",
+      "version": "2.1.1",
       "schemaVersion": "2.1.0",
-      "lastUpdated": "2026-11-07",
+      "lastUpdated": "2026-11-08",
       "entries": 22,
       "reviewed": 22,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-07"
+      "newestReview": "2026-11-08"
     },
     {
       "id": "mg-contraindications",
@@ -123,15 +123,15 @@
     {
       "id": "vascular-antithrombotics",
       "title": "Vascular antithrombotics",
-      "version": "0.11.1",
+      "version": "0.12.1",
       "schemaVersion": "1.1.0",
-      "lastUpdated": "2026-11-07",
+      "lastUpdated": "2026-11-08",
       "entries": 35,
       "reviewed": 35,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-07"
+      "newestReview": "2026-11-08"
     }
   ],
   "calculators": [
@@ -1376,6 +1376,7 @@
       "citation": "Lovenox (enoxaparin sodium) US prescribing information. Sanofi; revised 5/2025 (user-supplied label)",
       "year": 2025,
       "citedBy": [
+        "vascular-antithrombotics:cvt-anticoagulation",
         "vascular-antithrombotics:enoxaparin"
       ]
     },
@@ -1616,6 +1617,13 @@
       "year": 2024,
       "citedBy": [
         "acute-neuro:cns-infection-immunocompromised"
+      ]
+    },
+    {
+      "citation": "Pascarella R, et al. European Stroke Organisation (ESO) guidelines on Primary Angiitis of the Central Nervous System (PACNS). Eur Stroke J 2023;8(4):842-879. doi:10.1177/23969873231190431",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:cns-vasculitis-workup"
       ]
     },
     {

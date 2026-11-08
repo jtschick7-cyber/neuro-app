@@ -1,0 +1,289 @@
+{
+  "kind": "DECISION",
+  "id": "pregnancy-antithrombotics",
+  "title": "Stroke and antithrombotics in pregnancy and postpartum",
+  "keyNumbers": [
+    "Antiplatelet needed: Aspirin <100 mg daily first choice (safe in lactation; no hold for neuraxial); clopidogrel for the shortest needed duration; ticagrelor/prasugrel minimal data",
+    "Neuraxial anesthesia timing: Aspirin: no hold; prophylactic LMWH ≥12 h; therapeutic LMWH ≥24 h; low-dose UFH 4–6 h",
+    "Enoxaparin — prophylactic: 40 mg daily (or 30 mg q12h) — fixed dosing preferred to weight-based for prophylaxis in pregnancy",
+    "Mechanical valve, warfarin >5 mg/day needed: Dose-adjusted LMWH ≥BID (anti-Xa 0.8–1.2 U/mL 4–6 h post-dose) in first trimester, then warfarin; IV UFH (aPTT 2× control) if LMWH unavailable"
+  ],
+  "searchTerms": [
+    "pregnancy",
+    "postpartum",
+    "maternal stroke",
+    "lactation",
+    "breastfeeding",
+    "pregnant tPA",
+    "LMWH pregnancy"
+  ],
+  "question": "Which acute treatments and antithrombotics are used in pregnancy, postpartum and lactation?",
+  "population": [
+    "Pregnant or postpartum patients with stroke or a stroke-prevention indication"
+  ],
+  "rules": [
+    {
+      "order": 1,
+      "condition": "AIS in pregnancy or postpartum",
+      "recommendation": "Don't delay standard treatment. IVT when benefit outweighs risk (alteplase and TNK don't cross the placenta; TNK data limited); individualize with planned or recent cesarean or neuraxial anesthesia",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026 (AHA statement, ACOG-endorsed)"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "LVO",
+      "recommendation": "EVT as in nonpregnant patients; transradial approach preferred; consider continuous fetal monitoring in third trimester",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Antiplatelet needed",
+      "recommendation": "Aspirin <100 mg daily first choice (safe in lactation; no hold for neuraxial); clopidogrel for the shortest needed duration; ticagrelor/prasugrel minimal data",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026 Table 2"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "Anticoagulant needed",
+      "recommendation": "LMWH first choice (safe in lactation); UFH safe; warfarin teratogenic in first trimester (select mechanical-valve cases after) and safe in lactation; DOACs — insufficient data",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026 Table 2",
+        "Saposnik 2024: DOACs contraindicated in breastfeeding"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Secondary prevention after prior ischemic stroke/TIA",
+      "recommendation": "Low-dose aspirin for most; therapeutic LMWH for antiphospholipid syndrome, mechanical valve or prior cardioembolic stroke",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026"
+      ]
+    },
+    {
+      "order": 6,
+      "condition": "Cryptogenic stroke with PFO, planning pregnancy",
+      "recommendation": "PFO closure may be considered before a future pregnancy if RoPE ≥7",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026"
+      ]
+    },
+    {
+      "order": 7,
+      "condition": "CVT during pregnancy",
+      "recommendation": "Full-dose LMWH throughout pregnancy, then LMWH or VKA ≥6 weeks postpartum (≥3 months total); LMWH prophylaxis in future pregnancies",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Saposnik 2024"
+      ]
+    },
+    {
+      "order": 8,
+      "condition": "Mechanical valve",
+      "recommendation": "Therapeutic anticoagulation with frequent monitoring; shared decision on strategy",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Otto 2020: COR 1, LOE B-NR"
+      ]
+    },
+    {
+      "order": 9,
+      "condition": "Mechanical valve, warfarin ≤5 mg/day keeps INR therapeutic",
+      "recommendation": "Continuing warfarin through all trimesters is reasonable after counseling",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Otto 2020: COR 2a, LOE B-NR"
+      ]
+    },
+    {
+      "order": 10,
+      "condition": "Mechanical valve, warfarin >5 mg/day needed",
+      "recommendation": "Dose-adjusted LMWH ≥BID (anti-Xa 0.8–1.2 U/mL 4–6 h post-dose) in first trimester, then warfarin; IV UFH (aPTT 2× control) if LMWH unavailable",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Otto 2020: COR 2a, LOE B-NR"
+      ]
+    },
+    {
+      "order": 11,
+      "condition": "Mechanical valve, approaching planned delivery",
+      "recommendation": "Warfarin → BID LMWH or IV UFH ≥1 week before; LMWH → UFH ≥36 h before; stop UFH ≥6 h before vaginal delivery; labor on warfarin → cesarean after reversal",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Otto 2020: COR 1, LOE C-LD"
+      ]
+    },
+    {
+      "order": 12,
+      "condition": "Neuraxial anesthesia timing",
+      "recommendation": "Aspirin: no hold; prophylactic LMWH ≥12 h; therapeutic LMWH ≥24 h; low-dose UFH 4–6 h",
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026 Table 2 (from ASRA)"
+      ]
+    }
+  ],
+  "options": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Aspirin (low dose)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "<100 mg daily (e.g., 81 mg)",
+      "dose": [
+        {
+          "label": "Aspirin",
+          "amountMin": 81,
+          "amountMax": 81,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Safe in lactation"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Enoxaparin — prophylactic",
+      "routes": [
+        "SC"
+      ],
+      "doseText": "40 mg daily (or 30 mg q12h) — fixed dosing preferred to weight-based for prophylaxis in pregnancy",
+      "dose": [
+        {
+          "label": "Daily",
+          "amountMin": 40,
+          "amountMax": 40,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        },
+        {
+          "label": "q12h",
+          "amountMin": 30,
+          "amountMax": 30,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026 Table 2"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Enoxaparin — therapeutic",
+      "routes": [
+        "SC"
+      ],
+      "doseText": "1 mg/kg q12h or 1.5 mg/kg daily; mechanical valve: dose-adjust to anti-Xa 0.8–1.2 U/mL",
+      "dose": [
+        {
+          "label": "q12h",
+          "amountMin": 1,
+          "amountMax": 1,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DOSE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Daily",
+          "amountMin": 1.5,
+          "amountMax": 1.5,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DOSE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Miller 2026 Table 2; Otto 2020 for anti-Xa target"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "cockcroft-gault"
+      ]
+    }
+  ],
+  "contraindications": [
+    "Warfarin in the first trimester outside mechanical-valve decisions",
+    "DOACs in pregnancy and breastfeeding"
+  ],
+  "esoDiffers": [],
+  "institutionVaries": [
+    "Maternal stroke alert pathway (L&D vs ED) and MFM/anesthesia co-management"
+  ],
+  "pearls": [
+    "Miller 2026 is an AHA scientific statement endorsed by ACOG (January 2026); per its title page it \"should be construed as ACOG clinical guidance\"",
+    "Pregnancy-associated CVT risk is >8-fold (Miller 2026)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:cvt-anticoagulation",
+    "vascular-antithrombotics:mechanical-valve-stroke",
+    "vascular-antithrombotics:enoxaparin",
+    "vascular-antithrombotics:aspirin",
+    "vascular-antithrombotics:warfarin"
+  ],
+  "sources": [
+    "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
+    "Otto CM, et al. 2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease. Circulation 2021;143:e72-e227. doi:10.1161/CIR.0000000000000923",
+    "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
+    "Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: ASRA Pain Medicine evidence-based guidelines (fifth edition). Reg Anesth Pain Med 2025;0:1-29. doi:10.1136/rapm-2024-105766"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

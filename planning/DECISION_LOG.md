@@ -427,3 +427,30 @@ Not edited: `vascular-antithrombotics:pregnancy-antithrombotics` (proposed back-
 - All 7 edited entries reset to UNREVIEWED. Versions: acute-neuro 1.2.3 → 1.2.4 (PATCH, navigation only); consult-workups 1.1.3 → 2.0.0 (MAJOR, entries removed); seizure-threshold 0.2.3 → 0.2.4 (PATCH).
 - A pin to a removed entry now shows its star on the "No entry" page so it can be unpinned.
 - ICH score (and all two-column calculator rows): inputs bottom-aligned so a wrapped label doesn't push its input down.
+
+## 2026-11-08 — Follow-up batch 2
+
+Approved by Jason in chat 2026-11-08. Drafts: `planning/drafts/followups-2/` (base `main` 2be7f92). All 8 entries `lastReviewed: "UNREVIEWED"`.
+
+| Draft | Item | Change |
+|---|---|---|
+| `acute-neuro.guillain-barre-syndrome.json` | 1, 1b | `searchTerms` += "GQ1b"; `keyNumbers[1]` restored as an exact copy of PLEX agent + doseText |
+| `consult-workups.sah-workup.json` | 3 | `relatedIds` += `vascular-antithrombotics:cervical-artery-dissection`, `vascular-antithrombotics:cvt-anticoagulation` |
+| `consult-workups.young-stroke-workup.json` | 6 | "ISTH 2024" → "ISTH 2025" in `workup[5].notes[1]`; `keyNumbers[0]` checked, unchanged |
+| `consult-workups.cns-vasculitis-workup.json` | 5a, 5b | ESO 2023 (Pascarella) added to `sources`; `decisionRules[1]` EXPERT_OPINION → WEAK (PICO 5), `decisionRules[2]` EXPERT_OPINION → CONSENSUS (PICO 8), both cited directly; "Sousa 2026" → "de Sousa 2026" |
+| `vascular-antithrombotics.cvt-anticoagulation.json` | 2a, 2b, 2c | `relatedIds` += `pregnancy-antithrombotics`; `rules[0]` note → "Saposnik 2024"; structured enoxaparin CrCl <30 dose (1 mg/kg daily) from Lovenox label §2.2/§2.3 Table 1; Lovenox PI added to `sources` |
+| `vascular-antithrombotics.pregnancy-antithrombotics.json` | 4a, 4b | `pearls[0]` reworded to Miller 2026's endorsement wording; Kopp placeholder kept (still online-first) |
+| `vascular-antithrombotics.enoxaparin.json` | 7 | LMWH-before-IVT line keeps Powers 2019, now with "§3.5.5 Rec 7" |
+| `vascular-antithrombotics.ticagrelor.json` | 8 | `uses[0]` → "Kleindorfer 2021 §5.19 Rec 4"; `uses[3]` → "Kleindorfer 2021 §5.1.1 Rec 3" |
+
+### Version
+| registry | from | to | level |
+|---|---|---|---|
+| acute-neuro | 1.2.5 | 1.2.6 | PATCH (search term; keyNumbers copy restored, no dose changed) |
+| consult-workups | 2.0.1 | 2.1.0 | MINOR (ESO 2023 source added; two evidence levels changed) |
+| vascular-antithrombotics | 0.11.1 | 0.12.0 | MINOR (new structured dose and new source) |
+
+### Open items
+- `verify[]`: none.
+- Jason: `npm run signoff`, then `npm run release`.
+- Noticed, not changed: see `planning/drafts/followups-2/README.md`; tracked in `NEURO_APP_TASKS.md` §10.
