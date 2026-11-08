@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "0.13.2",
+  "version": "0.13.3",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-08",
   "entries": [
@@ -5784,7 +5784,7 @@
       "sources": [
         "Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: American Society of Regional Anesthesia and Pain Medicine Evidence-Based Guidelines (fifth edition). Reg Anesth Pain Med 2025;0:1-29. doi:10.1136/rapm-2024-105766"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-08"
     },
     {
       "kind": "DECISION",

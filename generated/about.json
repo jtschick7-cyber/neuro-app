@@ -1,6 +1,6 @@
 {
   "appVersion": "2.0.0",
-  "contentVersion": "2.0.0+36470240",
+  "contentVersion": "2.0.0+b2eb738a",
   "builtAt": "2026-11-08",
   "registries": [
     {
@@ -123,7 +123,7 @@
     {
       "id": "vascular-antithrombotics",
       "title": "Vascular antithrombotics",
-      "version": "0.13.1",
+      "version": "0.13.3",
       "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-08",
       "entries": 35,
@@ -1285,14 +1285,8 @@
       "citation": "Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: American Society of Regional Anesthesia and Pain Medicine Evidence-Based Guidelines (fifth edition). Reg Anesth Pain Med 2025;0:1-29. doi:10.1136/rapm-2024-105766",
       "year": 2025,
       "citedBy": [
+        "vascular-antithrombotics:periprocedural-holds-lp-evd",
         "vascular-antithrombotics:pregnancy-antithrombotics"
-      ]
-    },
-    {
-      "citation": "Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: ASRA Pain Medicine evidence-based guidelines (fifth edition). Reg Anesth Pain Med 2025;0:1-29. doi:10.1136/rapm-2024-105766",
-      "year": 2025,
-      "citedBy": [
-        "vascular-antithrombotics:periprocedural-holds-lp-evd"
       ]
     },
     {
