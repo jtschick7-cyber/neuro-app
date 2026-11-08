@@ -494,3 +494,13 @@ Grading rule adopted (thrombolysis-with-prior-antithrombotics): `evidenceLevel` 
 ## 2026-11-08 — Kopp citation cleanup
 
 Requested by Jason in chat 2026-11-08. `vascular-antithrombotics:periprocedural-holds-lp-evd`: Kopp source title corrected to the published title, the same string batch 3 item 9 set in `pregnancy-antithrombotics`, so the paper is one citation. DOI unchanged. Entry reset to `UNREVIEWED` for re-signing. vascular-antithrombotics 0.13.1 → 0.13.2 (PATCH: citation wording, no clinical meaning changed).
+
+## 2026-11-08 — Review cuts and planned-item decisions
+
+Decided by Jason in chat 2026-11-08 (review: planning/REVIEW_TASKS_2026-11-08.md).
+
+- Cut (entries): consult-workups `acute-generalized-weakness`, `diplopia-ptosis`, `icu-acquired-weakness`, `sah-workup`; acute-neuro `ms-relapse`, `post-dural-puncture-headache`; vascular-antithrombotics `tenecteplase`, `alteplase`, `sich-after-thrombolysis`. Same test as the 2026-11-07 cuts: content Jason knows cold or doesn't look up on rounds. `sah-workup` deleted outright (not merged); no `ms-relapse` lines carried over.
+- Cut (calculator UIs): `tnk-dose`, `alteplase-dose`, `abcd2`, `ich-score`. Functions, tests and CALCULATOR_META kept in calculators.ts (task 6.3 precedent).
+- Superseded: review task 1.4 (ICH score NCS caveat; approved, then superseded by the ich-score cut) and task 3.1 (TNK 1-kg option; moot without the card or calculator UI). NCS ICH prognosis guidance can go on the planned neuroprognostication card (review task 4.2).
+- Planned items: dropped NEURO_APP_TASKS 7.4 (specimen handling, high-dose thiamine, Ma1/Ma2 ordering), 7.6 (SS vs NMS view), 7.10 (lab order codes); kept 7.8 as review task 3.7.
+- Cross-reference wording: see REVIEW_TASKS_2026-11-08 §2.1b.

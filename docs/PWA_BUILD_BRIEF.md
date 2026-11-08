@@ -23,7 +23,7 @@
 - Cross-links: `relatedIds` are `"registry:id"`; `"calc:<id>"` and `calculatorIds` open calculators — **built** (`RelatedLinks`, `src/lib/links.ts`)
 
 ## Calculators
-All 13 ids in `data/calculators.manifest.json` are built: `levetiracetam-load`, `valproate-load`, `fosphenytoin-load`, `phenytoin-correction`, `hypertonic-saline-bolus`, `mannitol-dose`, `ledd`, `cockcroft-gault`, `ich-score`, `abcd2`, `tnk-dose`, `alteplase-dose`, `sodium-correction`. Every manifest id needs a UI.
+All 9 ids in `data/calculators.manifest.json` are built: `levetiracetam-load`, `valproate-load`, `fosphenytoin-load`, `phenytoin-correction`, `hypertonic-saline-bolus`, `mannitol-dose`, `ledd`, `cockcroft-gault`, `sodium-correction`. Every manifest id needs a UI.
 
 `lacosamide-load`, `cha2ds2-vasc`, `has-bled` and `ivig-dose` are in `CALCULATOR_META` but not in the manifest and have no card.
 

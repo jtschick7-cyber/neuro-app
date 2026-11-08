@@ -356,7 +356,7 @@ seizure prophylaxis stance. Source: AHA aSAH 2023, NCS edema 2020, primary trial
   All drafts `lastReviewed: "UNREVIEWED"`.
 - Status: content drafted — ready for Claude Code.
 
-**7.4 Merge collection rules into existing entries (small edits):**
+**7.4 Merge collection rules into existing entries (small edits):** (settled 2026-11-08: dropped; see REVIEW_TASKS_2026-11-08)
 - `rapidly-progressive-dementia`: CSF for RT-QuIC in polypropylene tube, non-bloody (tube 3–4), blood
   contamination can cause rejection/false 14-3-3; NPDPSC as performing lab. Verify any t-tau or
   t-tau/p-tau ratio cutoff before adding.
@@ -403,7 +403,7 @@ Keep the existing caveat that inherited thrombophilia testing rarely changes art
   All drafts `lastReviewed: "UNREVIEWED"`.
 - Status: content drafted — ready for Claude Code.
 
-**7.6 Serotonin toxicity vs NMS side-by-side view** (UI over the two existing acute entries — no
+**7.6 Serotonin toxicity vs NMS side-by-side view** (settled 2026-11-08: dropped; see REVIEW_TASKS_2026-11-08) (UI over the two existing acute entries — no
 duplicate content): onset, neuromuscular signature, GI/pupils, criteria, treatment. Link from both entries.
 
 **7.7 Inpatient Parkinson disease card** (links to the existing LEDD calculator). Corrected from the external spec:
@@ -449,7 +449,7 @@ duplicate content): onset, neuromuscular signature, GI/pupils, criteria, treatme
   `acute-neuro` registry MINOR (shared). All drafts `lastReviewed: "UNREVIEWED"`.
 - Status: content drafted — ready for Claude Code.
 
-**7.8 Expand short lists.** `seizure-threshold`: isoniazid (pyridoxine), metronidazole, ifosfamide,
+**7.8 Expand short lists.** (settled 2026-11-08: moved to task 3.7; see REVIEW_TASKS_2026-11-08) `seizure-threshold`: isoniazid (pyridoxine), metronidazole, ifosfamide,
 calcineurin inhibitors, baclofen withdrawal (± others Jason picks). `asm-interactions`: inducers with
 tacrolimus/cyclosporine, antiretrovirals, oral chemo; valproate–lamotrigine; others Jason picks.
 
@@ -491,7 +491,7 @@ akathisia prophylaxis, IV valproate, magnesium, nerve blocks; avoid opioids), po
   All drafts `lastReviewed: "UNREVIEWED"`.
 - Status: content drafted — ready for Claude Code.
 
-**7.10 Lab order codes (optional, last).** **[JASON]** first: which reference lab(s) does Trinity Health
+**7.10 Lab order codes (optional, last).** (settled 2026-11-08: dropped; see REVIEW_TASKS_2026-11-08) **[JASON]** first: which reference lab(s) does Trinity Health
 Grand Rapids send to (Mayo, Quest, ARUP, other)? Only add that vendor's codes. Add `orderCodes`
 (vendor, code, specimen, volume, container, catalog URL, access date) to `neural-antibodies` and relevant
 consult entries — not a separate duplicated matrix. Every code goes in `verify[]` until checked against

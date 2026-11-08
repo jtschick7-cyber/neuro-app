@@ -26,7 +26,7 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [x] `calc:ivig-dose` — IVIG
 - [x] `calc:sodium-correction` — Hyponatremia: 3% bolus and correction limits
 
-## 2. Acute protocols with doses, then ASM dosing cards (28/28)
+## 2. Acute protocols with doses, then ASM dosing cards (26/26)
 
 - [x] `acute-neuro:convulsive-status-epilepticus` — Convulsive status epilepticus (adult)
 - [x] `acute-neuro:refractory-super-refractory-se` — Refractory & super-refractory status epilepticus (incl. NORSE)
@@ -39,7 +39,6 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [x] `acute-neuro:viral-encephalitis` — Viral encephalitis (HSV, VZV, arboviral incl. West Nile)
 - [x] `acute-neuro:cns-infection-immunocompromised` — CNS infection in the immunocompromised (HIV, transplant, biologics)
 - [x] `acute-neuro:nmosd-mogad-attack` — NMOSD / MOGAD acute attack
-- [x] `acute-neuro:ms-relapse` — Multiple sclerosis relapse
 - [x] `acute-neuro:spinal-cord-compression` — Acute spinal cord compression (malignant, epidural abscess)
 - [x] `acute-neuro:elevated-icp-herniation` — Elevated ICP / cerebral herniation
 - [x] `acute-neuro:pres` — Posterior reversible encephalopathy syndrome (PRES)
@@ -49,7 +48,6 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [x] `acute-neuro:hyponatremia-ods` — Severe hyponatremia & osmotic demyelination syndrome
 - [x] `acute-neuro:icans-car-t-neurotoxicity` — ICANS (immune effector cell–associated neurotoxicity)
 - [x] `acute-neuro:status-migrainosus` — Status migrainosus / refractory migraine (inpatient)
-- [x] `acute-neuro:post-dural-puncture-headache` — Post-dural puncture headache (post-LP) and epidural blood patch
 - [x] `antiseizure-medications:levetiracetam` — Levetiracetam (Keppra) — maintenance dosing
 - [x] `antiseizure-medications:lacosamide` — Lacosamide (Vimpat) — maintenance dosing
 - [x] `antiseizure-medications:brivaracetam` — Brivaracetam (Briviact) — maintenance dosing
@@ -57,12 +55,9 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [x] `antiseizure-medications:phenytoin-fosphenytoin` — Phenytoin / fosphenytoin — maintenance dosing and levels
 - [x] `antiseizure-medications:lamotrigine` — Lamotrigine (Lamictal) — titration
 
-## 3. Antithrombotic reversal and thrombolysis rules (19/19)
+## 3. Antithrombotic reversal and thrombolysis rules (16/16)
 
-- [x] `vascular-antithrombotics:tenecteplase` — Tenecteplase (TNK)
-- [x] `vascular-antithrombotics:alteplase` — Alteplase (tPA)
 - [x] `vascular-antithrombotics:thrombolysis-with-prior-antithrombotics` — Thrombolysis in patients on antithrombotics or with coagulopathy
-- [x] `vascular-antithrombotics:sich-after-thrombolysis` — Symptomatic ICH within 24 h of thrombolysis
 - [x] `vascular-antithrombotics:apixaban` — Apixaban (Eliquis)
 - [x] `vascular-antithrombotics:rivaroxaban` — Rivaroxaban (Xarelto)
 - [x] `vascular-antithrombotics:edoxaban` — Edoxaban (Savaysa)
@@ -79,24 +74,18 @@ All entries were batch-signed on 2026-11-05. This queue lets Jason re-review the
 - [x] `vascular-antithrombotics:anticoag-reversal-ich` — Anticoagulant-associated ICH: reversal by agent
 - [x] `vascular-antithrombotics:antiplatelet-ich` — Antiplatelet-associated ICH: platelets and desmopressin
 
-## 4. Other decision rules and reference cards (44/44)
+## 4. Other decision rules and reference cards (38/38)
 
 - [x] `consult-workups:young-stroke-workup` — Young adult stroke (<50): extended workup
 - [x] `consult-workups:ich-etiology-workup` — Intracerebral hemorrhage: cause and early course
-- [x] `consult-workups:sah-workup` — Suspected subarachnoid hemorrhage
 - [x] `consult-workups:caa-related-inflammation` — CAA-related inflammation (CAA-ri)
-- [x] `consult-workups:first-unprovoked-seizure` — First unprovoked seizure in an adult
 - [x] `consult-workups:rapidly-progressive-dementia` — Rapidly progressive dementia (incl. CJD)
 - [x] `consult-workups:valproate-hyperammonemic-encephalopathy` — Valproate hyperammonemic encephalopathy
-- [x] `consult-workups:acute-generalized-weakness` — Acute generalized weakness: localize first
-- [x] `consult-workups:icu-acquired-weakness` — ICU-acquired weakness (CIP/CIM)
 - [x] `consult-workups:inpatient-neuropathy` — Acute or subacute neuropathy on the wards
 - [x] `consult-workups:elevated-ck-myopathy` — Elevated CK / suspected myopathy
 - [x] `consult-workups:acute-hepatic-porphyria` — Suspected acute hepatic porphyria (AIP)
 - [x] `consult-workups:myelopathy-workup` — Myelopathy / transverse myelitis workup
-- [x] `consult-workups:acute-vertigo-hints` — Acute dizziness / vertigo: stroke or inner ear?
 - [x] `consult-workups:acute-vision-loss` — Acute monocular vision loss
-- [x] `consult-workups:diplopia-ptosis` — Diplopia and ptosis
 - [x] `consult-workups:thunderclap-headache` — Thunderclap headache
 - [x] `consult-workups:new-demyelinating-lesion` — New demyelinating event or lesions: is it MS?
 - [x] `consult-workups:cns-vasculitis-workup` — Suspected primary CNS vasculitis

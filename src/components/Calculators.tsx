@@ -4,7 +4,6 @@ import { NeedWeight, NumberField } from './CalculatorCard';
 import { Card, FocusContext, Result, loadBadge, parseNonNegative, safe } from './calcShared';
 import { SodiumCard } from './ImmunoSodiumCalculators';
 import { PhenytoinCard } from './PhenytoinCard';
-import { Abcd2Card, IchScoreCard, ThrombolyticsCard } from './StrokeCalculators';
 import {
   COMT_FACTORS,
   LEVODOPA_FACTORS,
@@ -193,12 +192,9 @@ export default function Calculators({
   return (
     <FocusContext.Provider value={focusNoteId}>
     <div className="space-y-4">
-      <ThrombolyticsCard weightKg={weightKg} />
       <Anticonvulsants weightKg={weightKg} />
       <PhenytoinCard weightKg={weightKg} />
       <IcpCard weightKg={weightKg} />
-      <IchScoreCard age={age} />
-      <Abcd2Card age={age} />
       <CrClCard weightKg={weightKg} age={age} sex={sex} creatinine={creatinine} />
       <LeddCard />
       <SodiumCard weightKg={weightKg} />
