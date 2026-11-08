@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-08",
   "entries": [
@@ -8,7 +8,7 @@
       "id": "young-stroke-workup",
       "title": "Young adult stroke (<50): extended workup",
       "keyNumbers": [
-        "Confirmed APS: Warfarin is reasonable; target INR 2–3 over >3",
+        "Confirmed APS: Warfarin is reasonable; target INR 2–3 rather than >3",
         "Repeat APS testing at 12 weeks",
         "Protein C, protein S, antithrombin, factor VIII: Defer or repeat ≥4–6 weeks after stroke; factor VIII up to 6 months (Kleindorfer)",
         "Age 18–60, nonlacunar cryptogenic stroke, PFO: Closure decision by PFO features — see esus-antithrombotic"
@@ -246,7 +246,7 @@
         {
           "order": 3,
           "condition": "Confirmed APS",
-          "recommendation": "Warfarin is reasonable; target INR 2–3 over >3",
+          "recommendation": "Warfarin is reasonable; target INR 2–3 rather than >3",
           "evidenceLevel": "MODERATE",
           "evidenceNote": [
             "Kleindorfer 2021: COR 2a (C-LD; INR target B-R)"
@@ -311,7 +311,7 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Devreese KMJ, et al. An update on laboratory detection and interpretation of antiphospholipid antibodies for diagnosis of antiphospholipid syndrome: guidance from the ISTH-SSC Subcommittee on Lupus Anticoagulant/Antiphospholipid Antibodies. J Thromb Haemost 2025;23:731-744. doi:10.1016/j.jtha.2024.10.022"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "ich-etiology-workup",
@@ -705,11 +705,20 @@
           "test": "CTA head",
           "priority": "STAT",
           "indication": [
-            "SAH on CT"
+            "SAH on CT",
+            "CT negative, xanthochromia on LP"
           ],
           "notes": [
             "Sensitivity for aneurysms <3 mm ~61%"
           ]
+        },
+        {
+          "test": "Imaging for other thunderclap causes: CTA/MRA head and neck, CT/MR venography, MRI brain — see thunderclap-headache",
+          "priority": "URGENT",
+          "indication": [
+            "Features of cervical artery dissection, RCVS, CVT or pituitary apoplexy"
+          ],
+          "notes": []
         },
         {
           "test": "Catheter DSA",
@@ -835,7 +844,7 @@
       "sources": [
         "Hoh BL, et al. 2023 Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage (AHA/ASA). Stroke 2023;54:e314-e370. doi:10.1161/STR.0000000000000436"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "caa-related-inflammation",
@@ -3940,11 +3949,11 @@
         },
         {
           "order": 4,
-          "condition": "Angiography highly suggestive of medium-to-large-vessel vasculitis",
-          "recommendation": "Biopsy only to rule out other diagnoses",
-          "evidenceLevel": "EXPERT_OPINION",
+          "condition": "Vascular abnormalities on DSA, CTA or MRA",
+          "recommendation": "Decide on brain biopsy case by case in a multidisciplinary team with PACNS expertise",
+          "evidenceLevel": "CONSENSUS",
           "evidenceNote": [
-            "ESO guideline as cited in Salvarani 2024"
+            "ESO 2023 PICO 8 expert consensus statement"
           ]
         },
         {
@@ -3986,7 +3995,7 @@
         "de Sousa IA, et al. Reversible cerebral vasoconstriction syndrome: A narrative review. Headache 2026;66:1162-1180. doi:10.1111/head.70048",
         "Pascarella R, et al. European Stroke Organisation (ESO) guidelines on Primary Angiitis of the Central Nervous System (PACNS). Eur Stroke J 2023;8(4):842-879. doi:10.1177/23969873231190431"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "paraneoplastic-workup",

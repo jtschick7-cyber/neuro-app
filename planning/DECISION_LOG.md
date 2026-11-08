@@ -454,3 +454,39 @@ Approved by Jason in chat 2026-11-08. Drafts: `planning/drafts/followups-2/` (ba
 - `verify[]`: none.
 - Jason: `npm run signoff`, then `npm run release`.
 - Noticed, not changed: see `planning/drafts/followups-2/README.md`; tracked in `NEURO_APP_TASKS.md` §10.
+
+## 2026-11-08 — Follow-up batch 3
+
+Approved by Jason in chat 2026-11-08. Drafts: `planning/drafts/followups-3/` (base `main` 814629f). All 8 entries `lastReviewed: "UNREVIEWED"`.
+
+| Draft | Item | Change |
+|---|---|---|
+| `consult-workups.sah-workup.json` | 1, L1, L2 | New `workup[3]` pointer row (dissection, RCVS, CVT, pituitary apoplexy → thunderclap-headache); `workup[2].indication` += "CT negative, xanthochromia on LP" (Hoh 2023 Fig 2) |
+| `consult-workups.cns-vasculitis-workup.json` | 6 | `decisionRules[3]` → ESO 2023 PICO 8 wording, CONSENSUS, cited directly |
+| `consult-workups.young-stroke-workup.json` | 7 | "over >3" → "rather than >3" in `decisionRules[2]` and `keyNumbers[0]` |
+| `vascular-antithrombotics.thrombolysis-with-prior-antithrombotics.json` | 2, L5, L6 | `rules[0]`/`[1]` → EXPERT_OPINION; `rules[4]`, `rules[5]` → NOT_GRADED; notes added; `keyNumbers[2]` exact copy |
+| `vascular-antithrombotics.ticagrelor.json` | 4 | `uses[0].evidenceNote[1]` describes Kleindorfer Rec 4 correctly |
+| `vascular-antithrombotics.cvt-anticoagulation.json` | 5 | `dose[0].label` → "q12h"; extrapolation note added |
+| `vascular-antithrombotics.enoxaparin.json` | 8 | `keyNumbers[1]` exact copy of `timing.thrombolysisRule[0]` |
+| `vascular-antithrombotics.pregnancy-antithrombotics.json` | 9 | Kopp source title corrected |
+
+Grading rule adopted (thrombolysis-with-prior-antithrombotics): `evidenceLevel` reflects the current guideline; if it is ungraded, use what the source says the statement rests on; if the source states no basis, NOT_GRADED, with any older grade kept in `evidenceNote`.
+
+### Version
+| registry | from | to | level |
+|---|---|---|---|
+| consult-workups | 2.1.1 | 2.2.0 | MINOR (new workup row/indication; recommendation and evidence level changed) |
+| vascular-antithrombotics | 0.12.1 | 0.13.0 | MINOR (four evidence levels changed) |
+
+### ACCEPT (not raised again)
+- Item 3 (AHA 2026 Table 8 vs enoxaparin, heparin-ufh, thrombolysis-with-prior-antithrombotics): the complete Table 8 has no LMWH row and matches all three entries; no change needed.
+- Item 7b (young-stroke-workup "Kleindorfer" vs "Kleindorfer 2021" labels): the entry has one Kleindorfer source, so the short label is unambiguous.
+- L4 (thunderclap-headache "Sousa 2026" labels): its source string correctly reads "de Sousa IA…", so the paper is findable; label only.
+
+### PARK
+- None.
+
+### Open items
+- `verify[]`: none.
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/followups-3/README.md`; every row closed.
