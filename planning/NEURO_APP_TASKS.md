@@ -32,7 +32,7 @@ an acceptance check. Tasks marked **[JASON]** need the clinician — stop and as
 
 ## 1. Accuracy fixes (small content edits — do first)
 
-**1.1 Andexanet → not US-marketed.**
+**1.1 Andexanet → not US-marketed.** (settled 2026-11-08: done as review task 1.1; see REVIEW_TASKS_2026-11-08)
 Andexanet alfa was withdrawn from the US market effective 2025-12-22 (FDA safety communication
 2025-12-18). It currently appears as an `ALTERNATIVE` (AHA ICH 2022 COR 2a, "not stocked locally") in
 `vascular-antithrombotics`: `apixaban`, `rivaroxaban`, `edoxaban` reversal blocks and

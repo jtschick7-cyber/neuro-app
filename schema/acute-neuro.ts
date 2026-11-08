@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { KebabId, RelatedId, ReviewDate, Source, Text, registryEnvelope } from "./common";
 
-export const ACUTE_NEURO_SCHEMA_VERSION = "1.2.0";
+export const ACUTE_NEURO_SCHEMA_VERSION = "1.3.0";
 
 export const AcuteNeuroCategory = z.enum([
   "SEIZURE",
@@ -78,6 +78,7 @@ export const FormularyStatus = z.enum([
   "AVAILABLE",
   "NOT_STOCKED_LOCAL",
   "INSTITUTION_VARIES",
+  "NOT_US_MARKETED", // 1.3.0 (review task 1.1): andexanet
 ]);
 
 export const DoseUnit = z.enum(["MG", "G", "MCG", "MG_PE", "UNITS", "ML", "MEQ", "MMOL"]);

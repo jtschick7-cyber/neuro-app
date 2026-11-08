@@ -54,6 +54,7 @@ export const FORMULARY_LEGEND = [
   ["LOCAL_PREFERRED", "Preferred at the author's institution"],
   ["AVAILABLE", "Stocked"],
   ["NOT_STOCKED_LOCAL", "Not stocked locally — shown for completeness and transfers"],
+  ["NOT_US_MARKETED", "Not marketed in the US — shown for reference"],
 ] as const;
 
 export const PNS_RISK_LEGEND = [
