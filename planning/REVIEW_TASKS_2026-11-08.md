@@ -270,12 +270,15 @@ a changed entry is. See `docs/VERSIONING.md`, "Encoding approved drafts".
 | 3.6 | MG/NMOSD patients on FcRn or complement inhibitors | `acute-neuro:myasthenic-crisis`, `nmosd-mogad-attack` | R6. **DRAFTED (2026-11-11)**: [PR #45](https://github.com/jtschick7-cyber/neuro-app/pull/45); signed and released 2026-11-11 (2.3.1) |
 | 3.7 | Seizure-threshold and ASM-interaction expansion (old 7.8) | `seizure-threshold`, `asm-interactions` | R7. **DRAFTED (2026-11-11)**: [PR #46](https://github.com/jtschick7-cyber/neuro-app/pull/46); signed and released 2026-11-11 (seizure-threshold 0.3.1, asm-interactions 0.2.1) |
 | 3.8 | ASM NPO/tube coverage for home ASMs not in the registry; phenobarbital | `antiseizure-medications` (new entries or an NPO table) | R8. **DRAFTED (2026-11-11)**: [PR #47](https://github.com/jtschick7-cyber/neuro-app/pull/47); signed and released 2026-11-11 (1.1.1) |
-| 3.9 | ESUS: ARCADIA line | `vascular-antithrombotics:esus-antithrombotic` | R9 |
+| 3.9 | ESUS: ARCADIA line | `vascular-antithrombotics:esus-antithrombotic` | R9. **DRAFTED (2026-11-11)**: [PR #48](https://github.com/jtschick7-cyber/neuro-app/pull/48) |
 | 3.10 | Serotonin syndrome: "triptans + SSRI/SNRI" example wording | `acute-neuro:serotonin-syndrome` `presentation[0]` | R10 |
 | 3.11 | ~~Old 7.4 specimen-handling items~~ | **DROPPED (2026-11-08, decision 2.2)**. Don't do it | ~~R11~~ not needed |
 
 Open under 3.2:
 - [ ] Recheck restart-antithrombotic-after-ich pearls[3]–[4] against the ENRICH-AF peer-reviewed publication; revisit the dose-eligibility subgroup (R2 B1) then.
+
+Open under 3.9:
+- [ ] Check the source of the "ARCADIA cancer subgroup" line in cancer-associated-stroke (R9 P2); consider ARCADIA secondary analyses as a new item (R9 P1).
 
 ---
 
