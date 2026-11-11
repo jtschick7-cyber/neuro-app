@@ -678,3 +678,49 @@ LEDD check (C1): Jost 2023 Table 1 gives subcutaneous foslevodopa/foscarbidopa "
 Encoded 2026-11-11 on `content-r5-2026-11-09` (base `8d903bc`). Render check: the pump section shows second with three Recommended / Not graded rows; key numbers wrap cleanly at phone width; search finds the card for "Vyalev", "Onapgo" and "Duopa".
 
 Update 2026-11-11: signed by Jason (`inpatient-parkinson-disease`, `lastReviewed` 2026-11-11) and released: reference-cards 1.3.1, content 2.2.1+29d8aa57. The sign-off/release open item above is closed; PARK D8b, C2, A4, A7 and A10 stay available to revive.
+
+## 2026-11-09 — Review item R6 (MG/NMOSD on FcRn or complement inhibitors)
+
+Approved by Jason in chat 2026-11-09 ("approve"; recommendations as offered). Draft: `planning/drafts/review-2026-11-08/R6/` (base: review-2026-11-08 export packet). Both entries `lastReviewed: "UNREVIEWED"`.
+
+Finding: `myasthenic-crisis` and `nmosd-mogad-attack` had no guidance for patients already on a complement C5 inhibitor or an FcRn blocker who need PLEX or IVIG, and no meningococcal warning. Sources: Soliris PI 6/2026, Ultomiris PI 10/2026, Zilbrysq PI 1/2026, Vyvgart PI 5/2026, Vyvgart Hytrulo PI 5/2026, Rystiggo PI 12/2025, Imaavy (nipocalimab) PI 8/2026, Uplizna PI 9/2026, Enspryng PI 10/2026. Soliris and Ultomiris give supplemental doses after PLEX (and Ultomiris after any IVIG cycle; Soliris none for acute-rescue IVIG). Zilbrysq, the four FcRn-blocker labels, Uplizna and Enspryng give no PLEX/IVIG dosing guidance.
+
+| Draft | Findings | Change |
+|---|---|---|
+| `acute-neuro.myasthenic-crisis.json` | F1–F7, K1–K2, D2, D4 (i–iii) | New ADJUNCT `treatment[2]` "Already on a C5 inhibitor": eculizumab 300/600 mg within 60 min after each PLEX (by most recent dose), no supplement for acute-rescue IVIG; ravulizumab 1,200–1,800 mg within 4 h after each PLEX (by weight and most recent dose), 600 mg within 4 h after an IVIG cycle; zilucoplan label silent. New ADJUNCT `treatment[3]` "Already on an FcRn blocker": no label interval; may reduce effect of IVIG and IgG mAbs incl. eculizumab/ravulizumab; labels silent on PLEX; delay dose with active infection. Pitfalls += meningococcal (boxed warning), Safety Card 3/8/2 months, rozanolixizumab aseptic meningitis, inebilizumab no PLEX/IVIG guidance. institutionVaries += REMS dispensing. relatedIds += bacterial-meningitis. 16 search terms; 8 label sources; keyNumbers[2], [3] made exact copies |
+| `acute-neuro.nmosd-mogad-attack.json` | N1–N4, K3, D2, D4 (ii) | New ADJUNCT `treatment[3]` C5 supplemental dosing (eculizumab PLEX only — IVIG table is gMG-only; ravulizumab PLEX and IVIG). Pitfalls += meningococcal, Safety Card 3/8 months, inebilizumab/satralizumab no PLEX/IVIG guidance. institutionVaries += REMS. relatedIds += bacterial-meningitis. 9 search terms; 4 label sources; keyNumbers[2] made an exact copy |
+
+Rules adopted:
+- Patients already on a biologic get an ADJUNCT treatment row ("Already on …") when the label gives doses or a concrete action; otherwise a pitfall line.
+- When a label is silent on an interaction we'd look up (PLEX/IVIG), the entry says so explicitly rather than staying silent or inferring.
+- Label rows are NOT_GRADED with "<Drug> PI §…" in `evidenceNote` (as R5).
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| acute-neuro | 2.2.1 | 2.3.0 | MINOR (new dosed treatment rows, sources and safety lines; 2 entries) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- D5: starting a C5 or FcRn inhibitor during crisis (Gilhus 2024 p6 rec iv; ICG 2020 p6 antibiotic cover; label urgent-start prophylaxis) — candidate new item.
+- D6: gefurulimab (EMA CHMP positive opinion 17 Sep 2026, Klygefa); no US approval found 2026-11-09 — recheck.
+- A5: Imaavy latent viral reactivation / serious EBV events (§5.1).
+- A6: Vyvgart Hytrulo CIDP worsening when switching from IVIG (§6.2).
+
+### ACCEPT (not raised again)
+- D3: FcRn half-lives not encoded (labels don't link them to IVIG/PLEX timing).
+- A1: Ultomiris §7.1 cross-reference typo (§2.5 → table is §2.4).
+- A2: Soliris FFP supplemental row not encoded.
+- A3: eculizumab PLEX clearance data not encoded (dosing table covers it).
+- A4: PLEX removal of FcRn blockers or zilucoplan not inferred.
+- A7: Vyvgart indication broadened (5/2026) not encoded.
+- A8: NMOSD-label screening and premedication items not encoded.
+- A9: `IV` route on the advisory FcRn row.
+- A10: labels as uploaded; no further DailyMed check.
+
+### Open items
+- `verify[]`: none.
+- K1–K3 (keyNumbers made exact copies) were not offered in chat; revert to PARK if Jason prefers.
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R6/README.md`.
+
+Encoded 2026-11-11 on `content-r6-2026-11-09` (base `6fc359b`). Render check: the new ADJUNCT rows show Not graded and Institution varies badges in both entries; the long C5 dose text and the new key numbers wrap cleanly at phone width; the bacterial-meningitis link is present in both; search finds each entry for its listed brand names. The entry page shows `doseText` only, so the four structured doses are not displayed anywhere.

@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -1299,8 +1299,8 @@
       "keyNumbers": [
         "FVC <20 mL/kg, NIF weaker than −30 cmH2O, or rapid decline (thresholds extrapolated from GBS)",
         "Single breath count <20",
-        "IVIG: 2 g/kg total over 2–5 days",
-        "Plasma exchange (PLEX): 1–1.5 total plasma volumes per exchange; 3–6 exchanges over 10–14 days (daily or alternate days)"
+        "IVIG: 2 g/kg total over 2–5 days (Gilhus 2024: over 3–5 consecutive days; e.g., 0.4 g/kg/day ×5)",
+        "Plasma exchange (PLEX): 1–1.5 total plasma volumes per exchange; 3–6 exchanges over 10–14 days (daily or alternate days); albumin replacement"
       ],
       "category": "NEUROMUSCULAR",
       "searchTerms": [
@@ -1308,7 +1308,23 @@
         "myasthenia gravis exacerbation",
         "bulbar weakness",
         "AChR",
-        "MuSK"
+        "MuSK",
+        "eculizumab",
+        "Soliris",
+        "ravulizumab",
+        "Ultomiris",
+        "zilucoplan",
+        "Zilbrysq",
+        "efgartigimod",
+        "Vyvgart",
+        "rozanolixizumab",
+        "Rystiggo",
+        "nipocalimab",
+        "Imaavy",
+        "inebilizumab",
+        "Uplizna",
+        "FcRn blocker",
+        "complement inhibitor"
       ],
       "presentation": [
         "Rapidly worsening bulbar weakness (dysphagia, nasal speech, weak cough, pooled secretions), neck flexor weakness, dyspnea/orthopnea",
@@ -1509,6 +1525,108 @@
         },
         {
           "role": "ADJUNCT",
+          "agent": "Already on a C5 inhibitor (eculizumab, ravulizumab, zilucoplan): supplemental dose with PLEX or IVIG",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "Eculizumab: after each PLEX session, 300 mg if the most recent dose was 300 mg, or 600 mg if it was ≥600 mg, within 60 min; acute-rescue IVIG needs no supplement. Ravulizumab: after each PLEX session, within 4 h — 40 to <60 kg: 1,200 mg (most recent dose 2,400 mg) or 1,500 mg (3,000 mg); 60 to <100 kg: 1,500 mg (2,700 mg) or 1,800 mg (3,300 mg); ≥100 kg: 1,500 mg (3,000 mg) or 1,800 mg (3,600 mg); after completing an IVIG cycle, 600 mg within 4 h. Zilucoplan: label gives no PLEX/IVIG guidance",
+          "dose": [
+            {
+              "label": "Eculizumab after PLEX (most recent dose 300 mg)",
+              "amountMin": 300,
+              "amountMax": 300,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Within 60 min after each PLEX session"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Eculizumab after PLEX (most recent dose ≥600 mg)",
+              "amountMin": 600,
+              "amountMax": 600,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Within 60 min after each PLEX session"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Ravulizumab after PLEX (by weight and most recent dose — see doseText)",
+              "amountMin": 1200,
+              "amountMax": 1800,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Within 4 h after each PLEX session"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Ravulizumab after an IVIG cycle",
+              "amountMin": 600,
+              "amountMax": 600,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Within 4 h after completing the IVIG cycle"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Eculizumab with scheduled (non-rescue) IVIG in gMG: 300 or 600 mg supplement by IVIG frequency and most recent dose (Soliris Table 3)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Soliris PI §2.5 (Tables 2–3), §7.1",
+            "Ultomiris PI §2.4 (Table 3), §7.1",
+            "Zilbrysq PI: no PLEX/IVIG statement; no drug-interaction section"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Already on an FcRn blocker (efgartigimod IV or SC, rozanolixizumab, nipocalimab): IVIG, PLEX or a C5 inhibitor",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "No label dose adjustment or timing interval. Labels: FcRn blockers may lower exposure and reduce effectiveness of drugs that bind FcRn (IVIG, IgG monoclonal antibodies) — monitor for reduced effect",
+          "dose": [],
+          "notes": [
+            "Eculizumab and ravulizumab labels: FcRn blockers may lower their exposure — monitor for reduced effect",
+            "FcRn-blocker labels say nothing about PLEX",
+            "Active infection: labels say delay the FcRn-blocker dose; serious infection: consider withholding until resolved",
+            "Long-term need for an FcRn-binding drug: labels say consider stopping the FcRn blocker"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Vyvgart PI §5.1, §7.1",
+            "Vyvgart Hytrulo PI §5.1, §7.1",
+            "Rystiggo PI §5.1, §7.1",
+            "Imaavy PI §5.1, §7.1",
+            "Soliris PI §7.2; Ultomiris PI §7.2"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
           "agent": "Prednisone / prednisolone (or IV methylprednisolone in ICU)",
           "routes": [
             "PO",
@@ -1601,7 +1719,11 @@
         "Steroid initiation can worsen MG in the first ~2 weeks",
         "Common inpatient triggers: fluoroquinolones, macrolides, aminoglycosides, IV magnesium, beta-blockers, ICIs; use iodinated contrast cautiously",
         "ICI-associated MG is often severe with high crisis rates (ICG 2020)",
-        "The 20/30/40 thresholds are borrowed from GBS cohorts; trajectory matters more than any single value"
+        "The 20/30/40 thresholds are borrowed from GBS cohorts; trajectory matters more than any single value",
+        "On a C5 inhibitor (eculizumab, ravulizumab, zilucoplan): signs of meningococcal infection → evaluate immediately, even if vaccinated (boxed warning); consider interrupting the drug during treatment of serious meningococcal infection",
+        "Meningococcal Patient Safety Card (REMS) is carried after stopping eculizumab (3 months), ravulizumab (8 months) or zilucoplan (2 months)",
+        "Rozanolixizumab: serious drug-induced aseptic meningitis reported — work up per standard care; trial headache 44%, pyrexia 17%",
+        "Inebilizumab (Uplizna, also gMG-indicated): label gives no PLEX/IVIG guidance"
       ],
       "escalateWhen": [
         "FVC <20 mL/kg, NIF weaker than −30 cmH2O, or rapid decline (thresholds extrapolated from GBS)",
@@ -1612,7 +1734,8 @@
         "IVIG product and dosing weight in obesity (actual vs adjusted)",
         "PLEX access (peripheral vs central) and exchange schedule",
         "Whether IgA level is checked before IVIG",
-        "Steroid strategy in crisis (concurrent high-dose start vs delayed start; ICU IV methylprednisolone use)"
+        "Steroid strategy in crisis (concurrent high-dose start vs delayed start; ICU IV methylprednisolone use)",
+        "REMS: eculizumab and ravulizumab are dispensed only by REMS-certified healthcare settings and pharmacies — confirm before PLEX so the supplemental dose can be given"
       ],
       "verify": [],
       "relatedIds": [
@@ -1621,7 +1744,8 @@
         "mg-contraindications:macrolides",
         "mg-contraindications:aminoglycosides",
         "mg-contraindications:magnesium",
-        "mg-contraindications:immune-checkpoint-inhibitors"
+        "mg-contraindications:immune-checkpoint-inhibitors",
+        "acute-neuro:bacterial-meningitis"
       ],
       "sources": [
         "Sanders DB, et al. International consensus guidance for management of myasthenia gravis: executive summary. Neurology 2016;87(4):419-425. doi:10.1212/WNL.0000000000002790",
@@ -1629,9 +1753,17 @@
         "Patwa HS, et al. Evidence-based guideline: intravenous immunoglobulin in the treatment of neuromuscular disorders (AAN). Neurology 2012;78(13):1009-1015.",
         "Seneviratne J, et al. Noninvasive ventilation in myasthenic crisis. Arch Neurol 2008;65(1):54-58.",
         "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (MG fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043",
-        "Gilhus NE, et al. Generalized myasthenia gravis with acetylcholine receptor antibodies: a guidance for treatment. Eur J Neurol 2024;31:e16229. doi:10.1111/ene.16229"
+        "Gilhus NE, et al. Generalized myasthenia gravis with acetylcholine receptor antibodies: a guidance for treatment. Eur J Neurol 2024;31:e16229. doi:10.1111/ene.16229",
+        "Soliris (eculizumab) injection US prescribing information. Alexion Pharmaceuticals; revised 6/2026",
+        "Ultomiris (ravulizumab-cwvz) injection US prescribing information. Alexion Pharmaceuticals; revised 10/2026",
+        "Zilbrysq (zilucoplan) injection US prescribing information. UCB; revised 1/2026",
+        "Vyvgart (efgartigimod alfa-fcab) injection US prescribing information. argenx; revised 5/2026",
+        "Vyvgart Hytrulo (efgartigimod alfa and hyaluronidase-qvfc) injection US prescribing information. argenx; revised 5/2026",
+        "Rystiggo (rozanolixizumab-noli) injection US prescribing information. UCB; revised 12/2025",
+        "Imaavy (nipocalimab-aahu) injection US prescribing information. Janssen Biotech; revised 8/2026",
+        "Uplizna (inebilizumab-cdon) injection US prescribing information. Horizon Therapeutics (Amgen); revised 9/2026"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "guillain-barre-syndrome",
@@ -3671,7 +3803,7 @@
       "keyNumbers": [
         "IV methylprednisolone 1 g daily ×3–5 days",
         "Severe attack, or poor response to steroids → PLEX within 5 days of onset",
-        "Plasma exchange (PLEX): 1–1.5 total plasma volumes per exchange, daily or every other day; median 5 exchanges over ~10 days (range 2–10)",
+        "Plasma exchange (PLEX): 1–1.5 total plasma volumes per exchange, daily or every other day; median 5 exchanges over ~10 days (range 2–10); albumin replacement",
         "IVIG: 0.4 g/kg/day ×5 days if PLEX not feasible"
       ],
       "category": "NEUROIMMUNOLOGY",
@@ -3683,7 +3815,16 @@
         "MOGAD",
         "LETM",
         "optic neuritis",
-        "area postrema"
+        "area postrema",
+        "eculizumab",
+        "Soliris",
+        "ravulizumab",
+        "Ultomiris",
+        "inebilizumab",
+        "Uplizna",
+        "satralizumab",
+        "Enspryng",
+        "complement inhibitor"
       ],
       "presentation": [
         "Severe or bilateral optic neuritis; longitudinally extensive myelitis",
@@ -3849,13 +3990,92 @@
           "evidenceNote": [],
           "formularyStatus": "LOCAL_PREFERRED",
           "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Already on a C5 inhibitor (eculizumab, ravulizumab): supplemental dose with PLEX or IVIG",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "Eculizumab: after each PLEX session, 300 mg if the most recent dose was 300 mg, or 600 mg if it was ≥600 mg, within 60 min. Ravulizumab: after each PLEX session, within 4 h — 40 to <60 kg: 1,200 mg (most recent dose 2,400 mg) or 1,500 mg (3,000 mg); 60 to <100 kg: 1,500 mg (2,700 mg) or 1,800 mg (3,300 mg); ≥100 kg: 1,500 mg (3,000 mg) or 1,800 mg (3,600 mg); after completing an IVIG cycle, 600 mg within 4 h",
+          "dose": [
+            {
+              "label": "Eculizumab after PLEX (most recent dose 300 mg)",
+              "amountMin": 300,
+              "amountMax": 300,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Within 60 min after each PLEX session"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Eculizumab after PLEX (most recent dose ≥600 mg)",
+              "amountMin": 600,
+              "amountMax": 600,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Within 60 min after each PLEX session"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Ravulizumab after PLEX (by weight and most recent dose — see doseText)",
+              "amountMin": 1200,
+              "amountMax": 1800,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Within 4 h after each PLEX session"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Ravulizumab after an IVIG cycle",
+              "amountMin": 600,
+              "amountMax": 600,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Within 4 h after completing the IVIG cycle"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Eculizumab with IVIG: the label's IVIG supplement table is gMG-only — no NMOSD statement"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Soliris PI §2.5 (Table 2), §7.1",
+            "Ultomiris PI §2.4 (Table 3), §7.1"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
         }
       ],
       "pitfalls": [
         "Don't wait for AQP4/MOG results to treat",
         "Interferon-beta, natalizumab, and fingolimod can worsen NMOSD",
         "Low-titer MOG-IgG has lower specificity — interpret with the clinical/MRI picture",
-        "Bilateral optic neuritis and myelitis have the poorest remission rates — escalate early"
+        "Bilateral optic neuritis and myelitis have the poorest remission rates — escalate early",
+        "On a C5 inhibitor (eculizumab, ravulizumab): signs of meningococcal infection → evaluate immediately, even if vaccinated (boxed warning); consider interrupting the drug during treatment of serious meningococcal infection",
+        "Meningococcal Patient Safety Card (REMS) is carried after stopping eculizumab (3 months) or ravulizumab (8 months)",
+        "Inebilizumab (Uplizna) and satralizumab (Enspryng): labels give no PLEX/IVIG guidance"
       ],
       "escalateWhen": [
         "Severe attack, or poor response to steroids → PLEX within 5 days of onset",
@@ -3864,22 +4084,28 @@
       ],
       "institutionVaries": [
         "AQP4/MOG send-out lab (live vs fixed cell-based assay)",
-        "Whether PLEX is started concurrently with steroids for severe attacks"
+        "Whether PLEX is started concurrently with steroids for severe attacks",
+        "REMS: eculizumab and ravulizumab are dispensed only by REMS-certified healthcare settings and pharmacies — confirm before PLEX so the supplemental dose can be given"
       ],
       "verify": [],
       "relatedIds": [
         "acute-neuro:autoimmune-encephalitis",
         "neural-antibodies:aqp4",
-        "neural-antibodies:mog"
+        "neural-antibodies:mog",
+        "acute-neuro:bacterial-meningitis"
       ],
       "sources": [
         "Wingerchuk DM, et al. International consensus diagnostic criteria for neuromyelitis optica spectrum disorders. Neurology 2015;85(2):177-189. doi:10.1212/WNL.0000000000001729",
         "Banwell B, et al. Diagnosis of myelin oligodendrocyte glycoprotein antibody-associated disease: International MOGAD Panel proposed criteria. Lancet Neurol 2023;22:268-282",
         "Kleiter I, et al. Neuromyelitis optica: evaluation of 871 attacks and 1,153 treatment courses. Ann Neurol 2016;79(2):206-216. doi:10.1002/ana.24554",
         "Cortese I, et al. Evidence-based guideline update: plasmapheresis in neurologic disorders (AAN; since retired). Neurology 2011;76(3):294-300. doi:10.1212/WNL.0b013e318207b1f6",
-        "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (NMOSD fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043"
+        "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (NMOSD fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043",
+        "Soliris (eculizumab) injection US prescribing information. Alexion Pharmaceuticals; revised 6/2026",
+        "Ultomiris (ravulizumab-cwvz) injection US prescribing information. Alexion Pharmaceuticals; revised 10/2026",
+        "Uplizna (inebilizumab-cdon) injection US prescribing information. Horizon Therapeutics (Amgen); revised 9/2026",
+        "Enspryng (satralizumab-mwge) injection US prescribing information. Genentech; revised 10/2026"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "spinal-cord-compression",
