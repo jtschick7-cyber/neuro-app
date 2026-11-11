@@ -895,3 +895,57 @@ Rules applied:
 Encoded 2026-11-11 on `content-r10-2026-11-10` (base `caf1ffc`). The draft gave no numbers ("as found → next MINOR"); the registry was at 2.3.1 after R3, R4 and R6, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
 
 Update 2026-11-11: signed by Jason (`serotonin-syndrome`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.4.1, content 2.2.1+8087811d. The sign-off/release open item above is closed; PARK P1 and P2 stay open.
+
+## 2026-11-10 — Review item R12 (neuroprognostication card)
+
+Approved by Jason in chat 2026-11-10 ("approve as recommended"). Draft: `planning/drafts/review-2026-11-08/R12/` (new entry; no base). Entry `lastReviewed: "UNREVIEWED"`.
+
+Finding: the app had neuroprognostication only for cardiac arrest. The NCS GRADE series also covers ICH (Hwang 2024), AIS (Mainali 2026), SE (Madzar 2026), GBS (Busl 2023) and moderate–severe TBI (Muehlschlegel 2024). No NCS aSAH neuroprognostication guideline was found (web search 2026-11-10). No guideline rates any predictor or model "reliable"; moderately reliable: ENI (AIS, good outcome); bulbar/limb weakness, EGRIS, EGOS, mEGOS (GBS); bilateral nonreactive pupils on admission, CRASH, IMPACT (TBI).
+
+| Draft | Findings | Change |
+|---|---|---|
+| `reference-cards.neuroprognostication.json` | N1–N7, K1–K5, V1–V2 | New card `neuroprognostication`, 5 row-list sections: ICH (defer ≥48–72 h except clinically devastated; recovery days to years; not reliable alone for function ≥3 mo or 30-day mortality, incl. original and max-ICH scores), AIS (ENI NIHSS 0–1 at 24 h moderately reliable for good outcome; no fixed timing window; LHI goals before decline; recovery horizon; feeding tube/trach; not-reliable variables and models), SE (defer until etiology workup; disease-specific predictors; confounders incl. prolonged postictal 4–10 days; RSE/SRSE counseling; nothing reliable for in-hospital mortality), GBS (bulbar/limb weakness and EGRIS for ventilation ≤14 d; EGOS, mEGOS for walking ≥3 mo, with point tables; counsel on ventilation and enteral nutrition; not-reliable list), TBI (≥3 days, ideally 1–2 weeks; bilateral nonreactive pupils; CRASH/IMPACT; not-reliable list); 4 pitfalls; 5 keyNumbers; 2 verify items; 4 relatedIds; 5 sources |
+
+Rules adopted:
+- NCS neuroprognostication grades: weak recommendation → WEAK; good-practice "strong recommendation, evidence cannot be graded" → STRONG; "conditional recommendation, evidence not graded" → WEAK. Verbatim wording in `evidenceNote`.
+- Moderately reliable predictor/model → RECOMMENDED; not reliable → NOT_RECOMMENDED, collapsed to one row per outcome per disease with per-item grades in `evidenceNote`.
+- Generic good-practice statements (complete clinical condition, baseline function, acceptable outcomes, no nihilism) are not encoded.
+
+Mapping check (C1): mismatch on good-practice statements. `consult-workups:post-cardiac-arrest-prognostication` encodes NCS 2023 good practice statements ("strong, evidence cannot be graded") as `evidenceLevel: "CONSENSUS"` (decisionRules 1–4 and 10), where R12 uses STRONG; weak recommendations are WEAK in both. Reliability there is free text in `decisionRules[].recommendation` ("Reliable predictor of poor outcome", "Moderately reliable predictors (use in combination)", "Not reliable predictors on their own"); consult-workup decision rules have no role field, so RECOMMENDED/NOT_RECOMMENDED has no counterpart. Neither entry was changed. GBS entry overlap (C2): no duplicate. `acute-neuro:guillain-barre-syndrome` has "EGRIS" as a search term and uses the modified score (mEGRIS, EAN/PNS 2023 Fig. 2: "mEGRIS ≥23" for ward → ICU; "mEGRIS 25–32 (>70% ventilation risk)" for high risk); it has no EGRIS 0–7 point table and no EGOS or mEGOS content. The card's EGRIS (0–7) and the entry's mEGRIS (0–32) are different scores. Entry not changed.
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| reference-cards | 1.3.1 | 1.4.0 | MINOR (new entry) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- C2: possible EGRIS/EGOS overlap with acute-neuro:guillain-barre-syndrome.
+- D8: back-links to the card from the GBS, RSE/SRSE and cardiac-arrest entries.
+- A4: "not-reliable variables may sit inside reliable models" pitfall (Madzar p.367).
+- A5: GBS disability scale as an EGOS note.
+- A7: calculators for EGRIS/EGOS/mEGOS/CRASH/IMPACT.
+
+### ACCEPT (not raised again)
+- C1 (pending Claude Code's read-only check): grade and role mapping as approved.
+- S1: no NCS aSAH neuroprognostication guideline.
+- A1: generic good-practice statements not encoded.
+- A2: AIS Table 6 recovery by deficit not encoded.
+- A3: reliability definitions not encoded beyond `pitfalls[1]`.
+- A6: supplementary appendices not reviewed; main-text statements only.
+- A8: guideline versions as uploaded.
+
+### Open items
+- `verify[]`: V1 ASTRAL grade (Mainali Table 3 vs p.758); V2 Helsinki CT "strong recommendation" (Muehlschlegel p.473).
+- Jason: resolve verify[], then `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R12/README.md`.
+
+Encoded 2026-11-11 on `content-r12-2026-11-10` (base `221d346`). The draft gave no numbers ("as found → next MINOR"); the registry was at 1.3.1 after R5, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts"). Render check in the dev app (375 px): 5 sections in order, 19 Recommended and 7 Not recommended rows (the latter dimmed), long lines wrap with no horizontal scroll, point-table notes render as bullet lists, all five searches find the card, all four related links resolve. One oddity, content not changed: the SE "Known etiology" note shows the raw id "See consult-workups:post-cardiac-arrest-prognostication" as plain text.
+
+Update 2026-11-11 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, reference-cards stays 1.4.0):
+- V1 closed (ASTRAL grade, Mainali 2026). Reason: internal inconsistency in the guideline (Table 3 moderate vs p.758 low quality); both grades are shown in the evidence note; the not-reliable rating and weak recommendation strength are unaffected.
+- V2 closed (Helsinki CT "strong recommendation", Muehlschlegel 2024 p.473). Reason: probable misprint; the printed grade is quoted in the evidence note; the not-reliable rating is unaffected. A web search on 2026-11-11 (PubMed, PMC) found no erratum or correction; the journal's own article page was not checked.
+- With `verify[]` empty, the two pointers "(see verify)" (AIS models row) and "— see verify" (TBI not-reliable row) were dropped from the evidence notes; no other wording changed.
+- C1 decided: good-practice statements ("strong recommendation, evidence cannot be graded / not graded") are `CONSENSUS` on this card, matching `consult-workups:post-cardiac-arrest-prognostication`. 11 rows changed from STRONG to CONSENSUS (ICH 1, AIS 4, SE 4, GBS 1, TBI 1). This replaces the "→ STRONG" mapping in "Rules adopted" above and in the draft README (D6). Hwang good practice statement #1 ("conditional recommendation, evidence not graded") stays WEAK as drafted. The data entry therefore differs from the draft JSON in `verify`, those 11 `evidenceLevel` values and the two evidence-note pointers.
+- Open: sign-off and release, when Jason asks.
+
+Update 2026-11-11 (2): signed by Jason (`neuroprognostication`, `lastReviewed` 2026-11-11) and released: reference-cards 1.4.1, content 2.2.1+e56cc26d. The sign-off/release open item above is closed; PARK items C2, D8, A4, A5 and A7 stay open.
