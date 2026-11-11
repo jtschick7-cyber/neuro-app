@@ -1,0 +1,40 @@
+{
+  "id": "carbapenems-valproate",
+  "title": "Carbapenems with valproate",
+  "searchTerms": [
+    "meropenem Depakote",
+    "valproate level drop",
+    "breakthrough seizures meropenem"
+  ],
+  "objectDrugs": [
+    "valproate"
+  ],
+  "precipitantDrugs": [
+    "meropenem",
+    "imipenem",
+    "ertapenem"
+  ],
+  "tier": "HIGH_RISK",
+  "effect": [
+    "Clinically significant ↓ valproate level → loss of seizure control"
+  ],
+  "mechanism": [
+    "Not well understood (label)"
+  ],
+  "management": [
+    "Monitor valproate levels frequently after starting a carbapenem",
+    "If levels drop significantly or seizures worsen, change the antibiotic or the antiseizure medication",
+    "Imipenem label: generally not recommended — raising the valproate dose may not be enough; prefer a non-carbapenem; if imipenem is necessary, consider supplemental ASM therapy (Primaxin §5.3, §7.3)"
+  ],
+  "population": [],
+  "pearls": [],
+  "verify": [],
+  "relatedIds": [
+    "seizure-threshold:beta-lactams-carbapenems"
+  ],
+  "sources": [
+    "Valproic acid oral solution US prescribing information. Atlantic Biologicals; revised 5/2024 (user-supplied label)",
+    "Primaxin (imipenem and cilastatin) for injection US prescribing information. Merck Sharp & Dohme; revised 7/2024 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

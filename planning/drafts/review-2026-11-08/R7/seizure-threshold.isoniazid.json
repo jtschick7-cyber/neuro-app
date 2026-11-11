@@ -1,0 +1,40 @@
+{
+  "id": "isoniazid",
+  "title": "Isoniazid",
+  "searchTerms": [
+    "INH",
+    "tuberculosis",
+    "isoniazid overdose",
+    "pyridoxine"
+  ],
+  "drugClass": "Antimycobacterial",
+  "generics": [
+    "isoniazid"
+  ],
+  "brands": [],
+  "tier": "CAUTION",
+  "fdaBoxedWarning": false,
+  "usMarketed": true,
+  "effect": [
+    "Convulsions uncommon at conventional doses; overdose → severe, intractable seizures, coma and severe metabolic acidosis within 30 min–3 h"
+  ],
+  "mechanism": [],
+  "pearls": [
+    "Gross overdose 80–150 mg/kg can be fatal; acute ingestion >80 mg/kg gets IV pyridoxine even if asymptomatic",
+    "Pyridoxine IV gram for gram equal to the isoniazid dose; amount unknown: 5 g (adult)",
+    "Symptomatic: give pyridoxine as a slow IV bolus over 3–5 min; asymptomatic with unknown amount: 5 g over 30–60 min",
+    "Seizures continue: repeat pyridoxine (rarely >10 g; maximum safe dose unknown); no response: diazepam",
+    "Phenytoin only with caution — isoniazid inhibits its metabolism",
+    "Isoniazid raises carbamazepine and phenytoin levels — check a carbamazepine level before starting; adjust the ASM dose"
+  ],
+  "saferAlternatives": [],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:convulsive-status-epilepticus",
+    "antiseizure-medications:phenytoin-fosphenytoin"
+  ],
+  "sources": [
+    "Isoniazid tablets USP US prescribing information. Marlex; revised 9/2025 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

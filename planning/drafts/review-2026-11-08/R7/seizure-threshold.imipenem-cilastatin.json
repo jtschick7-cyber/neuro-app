@@ -1,0 +1,40 @@
+{
+  "id": "imipenem-cilastatin",
+  "title": "Imipenem-cilastatin",
+  "searchTerms": [
+    "Primaxin",
+    "imipenem seizure",
+    "carbapenem seizure"
+  ],
+  "drugClass": "Carbapenem antibiotic",
+  "generics": [
+    "imipenem-cilastatin"
+  ],
+  "brands": [
+    "Primaxin"
+  ],
+  "tier": "CAUTION",
+  "fdaBoxedWarning": false,
+  "usMarketed": true,
+  "effect": [
+    "Seizures 0.4% in adult trials; also confusion and myoclonus — mostly with CNS disorders (brain lesions, prior seizures), renal impairment or above-recommended doses"
+  ],
+  "mechanism": [],
+  "pearls": [
+    "CrCl ≤30 mL/min, with or without hemodialysis: higher seizure risk — dose strictly to renal function (§2.3, §8.6)",
+    "CrCl <15 mL/min: don't give unless hemodialysis starts within 48 h; on hemodialysis only if benefit outweighs seizure risk (§2.3–2.4)",
+    "Focal tremor, myoclonus or seizure: evaluate, start an ASM if not on one, and reduce the dose or stop (§5.2)",
+    "Ganciclovir: generalized seizures reported — avoid together unless benefit outweighs risk (§7.1)",
+    "Valproate: generally not recommended — see asm-interactions (§5.3)"
+  ],
+  "saferAlternatives": [],
+  "verify": [],
+  "relatedIds": [
+    "asm-interactions:carbapenems-valproate",
+    "seizure-threshold:beta-lactams-carbapenems"
+  ],
+  "sources": [
+    "Primaxin (imipenem and cilastatin) for injection US prescribing information. Merck Sharp & Dohme; revised 7/2024 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

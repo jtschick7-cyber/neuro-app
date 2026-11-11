@@ -4,9 +4,9 @@
     "Selected interactions relevant to stroke and inpatient care — not a complete interaction checker",
     "Beers 2023 entries apply to adults ≥65"
   ],
-  "version": "0.1.1",
+  "version": "0.2.1",
   "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-11",
   "entries": [
     {
       "id": "inducing-asm-apixaban-rivaroxaban",
@@ -111,7 +111,8 @@
       ],
       "management": [
         "Monitor valproate levels frequently after starting a carbapenem",
-        "If levels drop significantly or seizures worsen, change the antibiotic or the antiseizure medication"
+        "If levels drop significantly or seizures worsen, change the antibiotic or the antiseizure medication",
+        "Imipenem label: generally not recommended — raising the valproate dose may not be enough; prefer a non-carbapenem; if imipenem is necessary, consider supplemental ASM therapy (Primaxin §5.3, §7.3)"
       ],
       "population": [],
       "pearls": [],
@@ -120,9 +121,10 @@
         "seizure-threshold:beta-lactams-carbapenems"
       ],
       "sources": [
-        "Valproic acid oral solution US prescribing information. Atlantic Biologicals; revised 5/2024 (user-supplied label)"
+        "Valproic acid oral solution US prescribing information. Atlantic Biologicals; revised 5/2024 (user-supplied label)",
+        "Primaxin (imipenem and cilastatin) for injection US prescribing information. Merck Sharp & Dohme; revised 7/2024 (user-supplied label)"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "tmp-smx-phenytoin",
@@ -227,6 +229,276 @@
         "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
       ],
       "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "inducing-asm-calcineurin-inhibitors",
+      "title": "Enzyme-inducing antiseizure medications with tacrolimus or cyclosporine",
+      "searchTerms": [
+        "Prograf Tegretol",
+        "tacrolimus phenytoin",
+        "cyclosporine carbamazepine",
+        "transplant seizure medication",
+        "rejection"
+      ],
+      "objectDrugs": [
+        "tacrolimus",
+        "cyclosporine"
+      ],
+      "precipitantDrugs": [
+        "carbamazepine",
+        "phenytoin",
+        "fosphenytoin",
+        "phenobarbital",
+        "oxcarbazepine"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "↓ tacrolimus/cyclosporine levels → rejection risk"
+      ],
+      "mechanism": [
+        "CYP3A induction"
+      ],
+      "management": [
+        "Tacrolimus: increase the dose and monitor whole-blood troughs (Prograf Table 15)",
+        "Cyclosporine: adjust the dose to target levels (Neoral Drug Interactions)",
+        "Carbamazepine label: monitor tacrolimus levels and adjust (Tegretol)"
+      ],
+      "population": [],
+      "pearls": [
+        "Oxcarbazepine is named in the cyclosporine label only",
+        "Fosphenytoin is a phenytoin prodrug — same interaction",
+        "Carbamazepine and phenytoin labels also list cyclosporine as lowered (Tegretol; Dilantin Table 3)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ],
+      "sources": [
+        "Prograf (tacrolimus) capsules, injection, granules US prescribing information. Astellas; revised 8/2023 (user-supplied label)",
+        "Neoral (cyclosporine) capsules and oral solution (modified) US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+        "Tegretol (carbamazepine) tablets, suspension, XR tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+        "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "cyp3a4-inhibitors-carbamazepine",
+      "title": "Macrolides, azoles or isoniazid with carbamazepine",
+      "searchTerms": [
+        "Tegretol clarithromycin",
+        "Biaxin",
+        "erythromycin carbamazepine",
+        "fluconazole Tegretol",
+        "carbamazepine toxicity"
+      ],
+      "objectDrugs": [
+        "carbamazepine"
+      ],
+      "precipitantDrugs": [
+        "clarithromycin",
+        "erythromycin",
+        "fluconazole",
+        "voriconazole",
+        "isoniazid"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "↑ carbamazepine levels → toxicity",
+        "Fluconazole: serum carbamazepine +30% observed (fluconazole label)"
+      ],
+      "mechanism": [
+        "CYP3A4 inhibition (Tegretol)"
+      ],
+      "management": [
+        "Monitor carbamazepine levels closely; dose adjustment may be required (Tegretol)",
+        "Isoniazid: check a carbamazepine level before starting; watch for toxicity and adjust (isoniazid label)"
+      ],
+      "population": [],
+      "pearls": [
+        "Voriconazole with carbamazepine is contraindicated — carbamazepine lowers voriconazole (voriconazole §4); see the voriconazole entry",
+        "Carbamazepine raises isoniazid hepatotoxicity (Tegretol)",
+        "Tegretol label also lists ciprofloxacin, diltiazem, verapamil, fluoxetine, omeprazole, aprepitant, protease inhibitors, grapefruit juice"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Tegretol (carbamazepine) tablets, suspension, XR tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+        "Fluconazole tablets USP US prescribing information. ANI; revised 8/2025 (user-supplied label)",
+        "Isoniazid tablets USP US prescribing information. Marlex; revised 9/2025 (user-supplied label)",
+        "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "azoles-phenytoin",
+      "title": "Fluconazole or voriconazole with phenytoin",
+      "searchTerms": [
+        "Diflucan Dilantin",
+        "Vfend phenytoin",
+        "phenytoin toxicity",
+        "azole antifungal seizure medication"
+      ],
+      "objectDrugs": [
+        "phenytoin"
+      ],
+      "precipitantDrugs": [
+        "fluconazole",
+        "voriconazole"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "↑ phenytoin levels → toxicity",
+        "Fluconazole 200 mg/day: phenytoin AUC +88% (range 16–247%) in volunteers; nonlinear kinetics make the size unpredictable (fluconazole label)"
+      ],
+      "mechanism": [
+        "CYP2C9 inhibition (voriconazole Table 11)"
+      ],
+      "management": [
+        "Monitor phenytoin levels closely (both labels)",
+        "Voriconazole: also monitor frequently for phenytoin adverse effects (Table 11)",
+        "Voriconazole maintenance must be increased with phenytoin: 4 → 5 mg/kg IV q12h, or 200 → 400 mg PO q12h (100 → 200 mg if <40 kg) (voriconazole §2.7, Table 10)"
+      ],
+      "population": [],
+      "pearls": [
+        "Two-way: phenytoin significantly lowers voriconazole",
+        "Phenytoin impairs efficacy of fluconazole, ketoconazole, itraconazole, posaconazole and voriconazole (Dilantin Table 3)",
+        "Fosphenytoin is a phenytoin prodrug — same interaction"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:phenytoin-fosphenytoin",
+        "calc:phenytoin-correction"
+      ],
+      "sources": [
+        "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (user-supplied label)",
+        "Fluconazole tablets USP US prescribing information. ANI; revised 8/2025 (user-supplied label)",
+        "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "inducing-asm-dabigatran-edoxaban",
+      "title": "Carbamazepine or phenytoin with dabigatran or edoxaban",
+      "searchTerms": [
+        "Pradaxa Tegretol",
+        "Savaysa Dilantin",
+        "DOAC seizure medication"
+      ],
+      "objectDrugs": [
+        "dabigatran",
+        "edoxaban"
+      ],
+      "precipitantDrugs": [
+        "carbamazepine",
+        "phenytoin",
+        "fosphenytoin"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "↓ dabigatran/edoxaban levels → reduced anticoagulant effect"
+      ],
+      "mechanism": [
+        "Dabigatran and edoxaban are P-gp substrates; P-gp inducers lower exposure (Pradaxa §5.5; Savaysa §12.3)"
+      ],
+      "management": [
+        "Carbamazepine: avoid with dabigatran or edoxaban (Tegretol names both)",
+        "Phenytoin: lowers dabigatran and edoxaban levels (Dilantin Table 3); Pradaxa: P-gp inducers should generally be avoided (§5.5); Savaysa: avoid rifampin (§7.2) — neither names phenytoin"
+      ],
+      "population": [],
+      "pearls": [
+        "Fosphenytoin is a phenytoin prodrug — same interaction"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "vascular-antithrombotics:dabigatran",
+        "vascular-antithrombotics:edoxaban",
+        "asm-interactions:inducing-asm-apixaban-rivaroxaban"
+      ],
+      "sources": [
+        "Tegretol (carbamazepine) tablets, suspension, XR tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+        "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (user-supplied label)",
+        "Pradaxa (dabigatran etexilate) capsules US prescribing information. Boehringer Ingelheim; revised 6/2025 (user-supplied label)",
+        "Savaysa (edoxaban) tablets US prescribing information. Daiichi Sankyo; revised 7/2025 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "lacosamide-conduction-drugs",
+      "title": "Lacosamide with drugs that affect cardiac conduction",
+      "searchTerms": [
+        "Vimpat beta-blocker",
+        "lacosamide PR interval",
+        "AV block",
+        "bradycardia"
+      ],
+      "objectDrugs": [
+        "lacosamide"
+      ],
+      "precipitantDrugs": [
+        "sodium channel blockers (including sodium channel-blocking ASMs)",
+        "beta-blockers",
+        "calcium channel blockers",
+        "potassium channel blockers",
+        "other PR-prolonging drugs"
+      ],
+      "tier": "CAUTION",
+      "effect": [
+        "Further PR prolongation; AV block, bradycardia, ventricular tachyarrhythmia — rarely asystole, cardiac arrest, death (§5.3)"
+      ],
+      "mechanism": [],
+      "management": [
+        "ECG before starting and after titration to steady state (§5.3, §7.2)",
+        "Monitor closely if given IV (§7.2)"
+      ],
+      "population": [],
+      "pearls": [
+        "Also caution with marked 1st-degree AV block, 2nd-degree or higher AV block, sick sinus without pacemaker, severe cardiac disease, Brugada (§5.3)",
+        "Profound bradycardia (26 bpm) during a 15-min 150 mg IV infusion in a patient on a beta-blocker (§6.1)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:lacosamide"
+      ],
+      "sources": [
+        "Vimpat (lacosamide) tablets, injection, oral solution US prescribing information. UCB; revised 5/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "inducing-asm-voriconazole",
+      "title": "Carbamazepine or long-acting barbiturates with voriconazole",
+      "searchTerms": [
+        "Vfend Tegretol",
+        "voriconazole phenobarbital",
+        "antifungal seizure medication"
+      ],
+      "objectDrugs": [
+        "voriconazole"
+      ],
+      "precipitantDrugs": [
+        "carbamazepine",
+        "long-acting barbiturates (e.g., phenobarbital)"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "↓ voriconazole levels (likely significant) → loss of antifungal efficacy"
+      ],
+      "mechanism": [
+        "CYP450 induction (voriconazole Table 10)"
+      ],
+      "management": [
+        "Contraindicated (voriconazole §4)"
+      ],
+      "population": [],
+      "pearls": [
+        "Phenytoin is not contraindicated — increase the voriconazole dose; see the fluconazole/voriconazole–phenytoin entry"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
     }
   ]
 }

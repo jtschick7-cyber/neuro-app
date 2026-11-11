@@ -726,3 +726,52 @@ Rules adopted:
 Encoded 2026-11-11 on `content-r6-2026-11-09` (base `6fc359b`). Render check: the new ADJUNCT rows show Not graded and Institution varies badges in both entries; the long C5 dose text and the new key numbers wrap cleanly at phone width; the bacterial-meningitis link is present in both; search finds each entry for its listed brand names. The entry page shows `doseText` only, so the four structured doses are not displayed anywhere.
 
 Update 2026-11-11: Jason in chat: keep K1–K3 (keyNumbers exact copies). Signed by Jason (`myasthenic-crisis`, `nmosd-mogad-attack`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.3.1, content 2.2.1+e949db2a. The K1–K3 and sign-off/release open items above are closed; PARK D5, D6 (gefurulimab recheck), A5 and A6 stay open.
+
+## 2026-11-09 — Review item R7 (seizure-threshold and ASM-interaction lists)
+
+Approved by Jason in chat 2026-11-09 ("Approve"; all recommendations as offered). Draft: `planning/drafts/review-2026-11-08/R7/` (base: review-2026-11-08 export packet). All 13 entries `lastReviewed: "UNREVIEWED"`.
+
+Finding: the seizure-threshold list lacked isoniazid, imipenem, calcineurin inhibitors, ifosfamide, intrathecal baclofen and busulfan; the ASM-interaction list lacked inducer–calcineurin-inhibitor, CYP3A4-inhibitor–carbamazepine, azole–phenytoin, inducer–dabigatran/edoxaban, lacosamide–conduction-drug and inducer–voriconazole entries. Sources: isoniazid PI (Marlex) 9/2025, Primaxin PI 7/2024, Prograf PI 8/2023, Neoral PI 8/2026, Ifex PI 10/2026, Gablofen PI 5/2026, Lioresal Intrathecal PI 12/2022, Busulfex PI 10/2026, Tegretol PI 8/2026, Dilantin PI 8/2023, fluconazole PI (ANI) 8/2025, voriconazole PI (Aurobindo) 4/2026, Pradaxa PI 6/2025, Savaysa PI 7/2025, Vimpat PI 5/2026. The Primaxin label makes no comparison with other carbapenems, so "strongest carbapenem signal" was not encoded.
+
+| Registry | New / edited | Change |
+|---|---|---|
+| seizure-threshold | isoniazid, imipenem-cilastatin, calcineurin-inhibitors, ifosfamide, intrathecal-baclofen, busulfan (new) | Isoniazid: overdose seizures; pyridoxine gram for gram, 5 g if unknown; diazepam. Imipenem: 0.4% seizures; CrCl ≤30 higher risk; <15 only with HD within 48 h; ganciclovir. Tacrolimus/cyclosporine: PRES, seizures; cyclosporine PRES risk factors. Ifosfamide: encephalopathy incl. seizures; methylene blue (no label dose); CYP3A4 inducers. IT baclofen (AVOID abrupt interruption): withdrawal and overdose seizures; restore IT dose; physostigmine 2 mg ≤1 mg/min; CSF 30–40 mL. Busulfan: label ASM prophylaxis 12 h before to 24 h after |
+| asm-interactions | inducing-asm-calcineurin-inhibitors, cyp3a4-inhibitors-carbamazepine, azoles-phenytoin, inducing-asm-dabigatran-edoxaban, lacosamide-conduction-drugs, inducing-asm-voriconazole (new); carbapenems-valproate (edited) | Inducers ↓ tacrolimus/cyclosporine (CAUTION). Macrolides, fluconazole (+30%), voriconazole, isoniazid ↑ carbamazepine (CAUTION). Fluconazole (AUC +88%) / voriconazole ↑ phenytoin; voriconazole dose ↑ with phenytoin (CAUTION). Carbamazepine/phenytoin with dabigatran/edoxaban (AVOID; Tegretol names both; Pradaxa/Savaysa name only rifampin). Lacosamide + conduction-affecting drugs: ECG before and at steady state (CAUTION). Voriconazole contraindicated with carbamazepine and long-acting barbiturates (AVOID). carbapenems-valproate: + Primaxin "generally not recommended" line and source; tier unchanged |
+
+Rules adopted:
+- `fdaBoxedWarning` is true only when the boxed warning itself names seizures; a boxed warning on a related hazard (encephalopathy, withdrawal) is named in a pearl instead.
+- When a tier word could be misread (IT baclofen AVOID), the title and `pearls[0]` say what is to be avoided.
+- When labels disagree in strength for drugs sharing an entry, the entry takes the strongest label wording as its tier and states each label's own wording in `management`.
+- New entries link only to ids already in `valid-ids.txt`; links between entries added in the same item are text until a later PATCH.
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| seizure-threshold | 0.2.5 | 0.3.0 | MINOR (6 new entries) |
+| asm-interactions | 0.1.1 | 0.2.0 | MINOR (6 new entries; 1 edited) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- D8: general ASM + oral chemotherapy / antiretroviral entry (Tegretol and Dilantin label-named pairs) — candidate item.
+- D9e: Beers 2023 baclofen eGFR <60 encephalopathy (oral baclofen).
+
+### ACCEPT (not raised again)
+- A1: "imipenem = strongest carbapenem signal" not encoded (no label comparison).
+- A2: methylene blue dose for ifosfamide encephalopathy not encoded (label gives none).
+- A3: Primaxin VPA-glucuronide mechanism hypothesis not added.
+- A4: Sandimmune label not read; search term only.
+- A5: macrolide labels not uploaded; Tegretol is the source.
+- A6: fosphenytoin covered by the prodrug pearl (Cerebyx not re-uploaded).
+- A7: common-knowledge items left out.
+- A8: no Beers 2023 seizure row applies.
+- A9: existing apixaban/rivaroxaban entry unchanged.
+- A10: labels as uploaded; no further DailyMed check.
+- A11: cross-links between new R7 entries left for a later PATCH.
+
+### Open items
+- `verify[]`: none.
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R7/README.md`.
+
+Encoded 2026-11-11 on `content-r7-2026-11-09` (base `d79f02f`). Render check: tier badges as specified; no boxed-warning badge on any new threshold entry; all 13 pages wrap at phone width; all 12 related links open; every listed search finds its entry. Searching "INH" matches as a substring ("inhibitors"), so isoniazid is result 15 of 39.
+
+Update 2026-11-11: signed by Jason (all 13 R7 entries by name, `lastReviewed` 2026-11-11) and released: seizure-threshold 0.3.1, asm-interactions 0.2.1, content 2.2.1+e683ebcc. The sign-off/release open item above is closed; PARK D8 and D9e stay available to revive.

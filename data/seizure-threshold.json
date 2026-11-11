@@ -4,9 +4,9 @@
   "scopeNotes": [
     "Labels and an FDA safety communication; Beers 2023 items apply to adults ≥65"
   ],
-  "version": "0.2.5",
+  "version": "0.3.1",
   "schemaVersion": "3.0.0",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-11",
   "entries": [
     {
       "id": "bupropion",
@@ -347,6 +347,262 @@
         "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
       ],
       "lastReviewed": "2026-11-05"
+    },
+    {
+      "id": "isoniazid",
+      "title": "Isoniazid",
+      "searchTerms": [
+        "INH",
+        "tuberculosis",
+        "isoniazid overdose",
+        "pyridoxine"
+      ],
+      "drugClass": "Antimycobacterial",
+      "generics": [
+        "isoniazid"
+      ],
+      "brands": [],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Convulsions uncommon at conventional doses; overdose → severe, intractable seizures, coma and severe metabolic acidosis within 30 min–3 h"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Gross overdose 80–150 mg/kg can be fatal; acute ingestion >80 mg/kg gets IV pyridoxine even if asymptomatic",
+        "Pyridoxine IV gram for gram equal to the isoniazid dose; amount unknown: 5 g (adult)",
+        "Symptomatic: give pyridoxine as a slow IV bolus over 3–5 min; asymptomatic with unknown amount: 5 g over 30–60 min",
+        "Seizures continue: repeat pyridoxine (rarely >10 g; maximum safe dose unknown); no response: diazepam",
+        "Phenytoin only with caution — isoniazid inhibits its metabolism",
+        "Isoniazid raises carbamazepine and phenytoin levels — check a carbamazepine level before starting; adjust the ASM dose"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:convulsive-status-epilepticus",
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ],
+      "sources": [
+        "Isoniazid tablets USP US prescribing information. Marlex; revised 9/2025 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "imipenem-cilastatin",
+      "title": "Imipenem-cilastatin",
+      "searchTerms": [
+        "Primaxin",
+        "imipenem seizure",
+        "carbapenem seizure"
+      ],
+      "drugClass": "Carbapenem antibiotic",
+      "generics": [
+        "imipenem-cilastatin"
+      ],
+      "brands": [
+        "Primaxin"
+      ],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Seizures 0.4% in adult trials; also confusion and myoclonus — mostly with CNS disorders (brain lesions, prior seizures), renal impairment or above-recommended doses"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "CrCl ≤30 mL/min, with or without hemodialysis: higher seizure risk — dose strictly to renal function (§2.3, §8.6)",
+        "CrCl <15 mL/min: don't give unless hemodialysis starts within 48 h; on hemodialysis only if benefit outweighs seizure risk (§2.3–2.4)",
+        "Focal tremor, myoclonus or seizure: evaluate, start an ASM if not on one, and reduce the dose or stop (§5.2)",
+        "Ganciclovir: generalized seizures reported — avoid together unless benefit outweighs risk (§7.1)",
+        "Valproate: generally not recommended — see asm-interactions (§5.3)"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "asm-interactions:carbapenems-valproate",
+        "seizure-threshold:beta-lactams-carbapenems"
+      ],
+      "sources": [
+        "Primaxin (imipenem and cilastatin) for injection US prescribing information. Merck Sharp & Dohme; revised 7/2024 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "calcineurin-inhibitors",
+      "title": "Tacrolimus and cyclosporine",
+      "searchTerms": [
+        "Prograf",
+        "FK506",
+        "Neoral",
+        "Sandimmune",
+        "calcineurin inhibitor",
+        "transplant PRES"
+      ],
+      "drugClass": "Calcineurin inhibitor immunosuppressants",
+      "generics": [
+        "tacrolimus",
+        "cyclosporine"
+      ],
+      "brands": [
+        "Prograf",
+        "Neoral"
+      ],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Tacrolimus: PRES, delirium, seizures and coma; also tremor, paresthesias, headache — linked to troughs at or above range (Prograf §5.6)",
+        "Cyclosporine: convulsions, especially with high-dose methylprednisolone; encephalopathy including PRES (Neoral Warnings)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Tacrolimus neurotoxicity: check the trough; consider dose reduction or stopping (Prograf §5.6)",
+        "Cyclosporine PRES risk factors: hypertension, hypomagnesemia, hypocholesterolemia, high-dose steroids, high cyclosporine levels, GVHD; liver > kidney transplant (Neoral Warnings)",
+        "Cyclosporine encephalopathy usually reverses after stopping; some improve with dose reduction (Neoral Warnings)",
+        "Cyclosporine: rare optic disc edema/papilledema from intracranial hypertension (Neoral Warnings)",
+        "Strong CYP3A inhibitors (voriconazole, posaconazole, clarithromycin, ritonavir): rapid, sharp tacrolimus rise despite dose reduction — neurotoxicity risk (Prograf §5.11, Table 15)",
+        "Enzyme-inducing ASMs lower both drugs' levels — see asm-interactions"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:pres"
+      ],
+      "sources": [
+        "Prograf (tacrolimus) capsules, injection, granules US prescribing information. Astellas; revised 8/2023 (user-supplied label)",
+        "Neoral (cyclosporine) capsules and oral solution (modified) US prescribing information. Novartis; revised 8/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "ifosfamide",
+      "title": "Ifosfamide",
+      "searchTerms": [
+        "Ifex",
+        "ifosfamide encephalopathy",
+        "methylene blue"
+      ],
+      "drugClass": "Alkylating agent (antineoplastic)",
+      "generics": [
+        "ifosfamide"
+      ],
+      "brands": [
+        "Ifex"
+      ],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Encephalopathy, sometimes fatal: confusion, somnolence, coma, hallucinations, extrapyramidal signs, seizures; onset hours to days after a dose and may recur (§5.2)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Boxed warning: encephalopathy (seizures are among its signs, §5.2)",
+        "Risk factors: high dose, hypoalbuminemia, renal impairment, poor performance status, bulky abdominal-pelvic disease, nephrotoxic drugs incl. cisplatin, CNS-active drugs, alcohol (§5.2)",
+        "Label: consider methylene blue for encephalopathy — no dose given (§5.2)",
+        "CYP3A4 inducers may increase chloroacetaldehyde, the neurotoxic metabolite — monitor for toxicity (§7.1)",
+        "Rechallenge after neurotoxicity: some recurred, including fatal events (§6.2)"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:pres"
+      ],
+      "sources": [
+        "Ifex (ifosfamide) for injection US prescribing information. Baxter; revised 10/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "intrathecal-baclofen",
+      "title": "Intrathecal baclofen — abrupt withdrawal or overdose",
+      "searchTerms": [
+        "Gablofen",
+        "Lioresal Intrathecal",
+        "baclofen pump",
+        "ITB withdrawal",
+        "pump failure",
+        "baclofen overdose"
+      ],
+      "drugClass": "GABA-B agonist (intrathecal)",
+      "generics": [
+        "baclofen (intrathecal)"
+      ],
+      "brands": [
+        "Gablofen",
+        "Lioresal Intrathecal"
+      ],
+      "tier": "AVOID",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Seizures with withdrawal, with overdose, and at therapeutic doses (Gablofen §5.5)",
+        "Convulsion on maintenance infusion: 4.7% (spinal origin), 10.0% (cerebral origin) in trials (Gablofen §6.1, Tables 1–2)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "AVOID = avoid abrupt interruption (boxed warning: \"Do not discontinue abruptly\")",
+        "Abrupt stop → high fever, altered mental status, rebound spasticity, rigidity; rarely rhabdomyolysis, multiorgan failure, death (boxed warning)",
+        "Early withdrawal: return of spasticity, pruritus, hypotension, paresthesias; onset hours to a few days (§5.5)",
+        "Advanced withdrawal can resemble autonomic dysreflexia, sepsis, malignant hyperthermia or NMS (§5.5)",
+        "Common causes: catheter malfunction (especially disconnection), low reservoir volume, pump battery end of life (§5.5)",
+        "Higher risk: spinal cord injury at T6 or above, communication difficulties, prior withdrawal (boxed warning)",
+        "Treat withdrawal: restore intrathecal baclofen at or near the prior dose; if delayed, oral/enteral baclofen or oral/enteral/IV benzodiazepines — oral baclofen alone isn't enough (§5.5)",
+        "Overdose: drowsiness, respiratory depression, seizures, rostral hypotonia, coma up to 72 h; no antidote — remove residual drug from the pump, intubate if needed (§10)",
+        "Overdose: physostigmine 2 mg IM/IV at ≤1 mg/min may reverse drowsiness and respiratory depression (anecdotal), but can induce seizures and bradycardia (§10)",
+        "Overdose: if LP not contraindicated, consider withdrawing 30–40 mL CSF (§10)"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:nms-parkinsonism-hyperpyrexia",
+        "acute-neuro:convulsive-status-epilepticus"
+      ],
+      "sources": [
+        "Gablofen (baclofen injection) intrathecal US prescribing information. Piramal Critical Care; revised 5/2026 (user-supplied label)",
+        "Lioresal Intrathecal (baclofen injection) US prescribing information. Amneal; revised 12/2022 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "busulfan",
+      "title": "Busulfan (high-dose IV conditioning)",
+      "searchTerms": [
+        "Busulfex",
+        "HSCT conditioning",
+        "busulfan seizure prophylaxis"
+      ],
+      "drugClass": "Alkylating agent (transplant conditioning)",
+      "generics": [
+        "busulfan"
+      ],
+      "brands": [
+        "Busulfex"
+      ],
+      "tier": "CAUTION",
+      "fdaBoxedWarning": false,
+      "usMarketed": true,
+      "effect": [
+        "Seizures with high-dose busulfan; 1/42 seized despite phenytoin prophylaxis, 36 h after the last dose (§5.2)"
+      ],
+      "mechanism": [],
+      "pearls": [
+        "Label requires ASM prophylaxis: start 12 h before the first dose and continue to 24 h after the last (§2.1)",
+        "Label options: benzodiazepines, phenytoin, valproic acid or levetiracetam (§2.1, §5.2)",
+        "Phenytoin ↑ busulfan clearance ≥15%; label PK was studied on phenytoin, so exposure may be higher without it (§7.2)",
+        "Use caution with prior seizures, head trauma or other epileptogenic drugs (§5.2)"
+      ],
+      "saferAlternatives": [],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:levetiracetam",
+        "antiseizure-medications:phenytoin-fosphenytoin"
+      ],
+      "sources": [
+        "Busulfex (busulfan) injection US prescribing information. Otsuka; revised 10/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "2026-11-11"
     }
   ]
 }

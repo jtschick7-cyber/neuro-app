@@ -1,0 +1,48 @@
+{
+  "id": "cyp3a4-inhibitors-carbamazepine",
+  "title": "Macrolides, azoles or isoniazid with carbamazepine",
+  "searchTerms": [
+    "Tegretol clarithromycin",
+    "Biaxin",
+    "erythromycin carbamazepine",
+    "fluconazole Tegretol",
+    "carbamazepine toxicity"
+  ],
+  "objectDrugs": [
+    "carbamazepine"
+  ],
+  "precipitantDrugs": [
+    "clarithromycin",
+    "erythromycin",
+    "fluconazole",
+    "voriconazole",
+    "isoniazid"
+  ],
+  "tier": "CAUTION",
+  "effect": [
+    "↑ carbamazepine levels → toxicity",
+    "Fluconazole: serum carbamazepine +30% observed (fluconazole label)"
+  ],
+  "mechanism": [
+    "CYP3A4 inhibition (Tegretol)"
+  ],
+  "management": [
+    "Monitor carbamazepine levels closely; dose adjustment may be required (Tegretol)",
+    "Isoniazid: check a carbamazepine level before starting; watch for toxicity and adjust (isoniazid label)"
+  ],
+  "population": [],
+  "pearls": [
+    "Voriconazole with carbamazepine is contraindicated — carbamazepine lowers voriconazole (voriconazole §4); see the voriconazole entry",
+    "Carbamazepine raises isoniazid hepatotoxicity (Tegretol)",
+    "Tegretol label also lists ciprofloxacin, diltiazem, verapamil, fluoxetine, omeprazole, aprepitant, protease inhibitors, grapefruit juice"
+  ],
+  "verify": [],
+  "relatedIds": [],
+  "sources": [
+    "Tegretol (carbamazepine) tablets, suspension, XR tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+    "Fluconazole tablets USP US prescribing information. ANI; revised 8/2025 (user-supplied label)",
+    "Isoniazid tablets USP US prescribing information. Marlex; revised 9/2025 (user-supplied label)",
+    "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "calcineurin-inhibitors",
+  "title": "Tacrolimus and cyclosporine",
+  "searchTerms": [
+    "Prograf",
+    "FK506",
+    "Neoral",
+    "Sandimmune",
+    "calcineurin inhibitor",
+    "transplant PRES"
+  ],
+  "drugClass": "Calcineurin inhibitor immunosuppressants",
+  "generics": [
+    "tacrolimus",
+    "cyclosporine"
+  ],
+  "brands": [
+    "Prograf",
+    "Neoral"
+  ],
+  "tier": "CAUTION",
+  "fdaBoxedWarning": false,
+  "usMarketed": true,
+  "effect": [
+    "Tacrolimus: PRES, delirium, seizures and coma; also tremor, paresthesias, headache — linked to troughs at or above range (Prograf §5.6)",
+    "Cyclosporine: convulsions, especially with high-dose methylprednisolone; encephalopathy including PRES (Neoral Warnings)"
+  ],
+  "mechanism": [],
+  "pearls": [
+    "Tacrolimus neurotoxicity: check the trough; consider dose reduction or stopping (Prograf §5.6)",
+    "Cyclosporine PRES risk factors: hypertension, hypomagnesemia, hypocholesterolemia, high-dose steroids, high cyclosporine levels, GVHD; liver > kidney transplant (Neoral Warnings)",
+    "Cyclosporine encephalopathy usually reverses after stopping; some improve with dose reduction (Neoral Warnings)",
+    "Cyclosporine: rare optic disc edema/papilledema from intracranial hypertension (Neoral Warnings)",
+    "Strong CYP3A inhibitors (voriconazole, posaconazole, clarithromycin, ritonavir): rapid, sharp tacrolimus rise despite dose reduction — neurotoxicity risk (Prograf §5.11, Table 15)",
+    "Enzyme-inducing ASMs lower both drugs' levels — see asm-interactions"
+  ],
+  "saferAlternatives": [],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:pres"
+  ],
+  "sources": [
+    "Prograf (tacrolimus) capsules, injection, granules US prescribing information. Astellas; revised 8/2023 (user-supplied label)",
+    "Neoral (cyclosporine) capsules and oral solution (modified) US prescribing information. Novartis; revised 8/2026 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

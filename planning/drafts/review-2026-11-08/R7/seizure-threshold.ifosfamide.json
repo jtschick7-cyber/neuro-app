@@ -1,0 +1,39 @@
+{
+  "id": "ifosfamide",
+  "title": "Ifosfamide",
+  "searchTerms": [
+    "Ifex",
+    "ifosfamide encephalopathy",
+    "methylene blue"
+  ],
+  "drugClass": "Alkylating agent (antineoplastic)",
+  "generics": [
+    "ifosfamide"
+  ],
+  "brands": [
+    "Ifex"
+  ],
+  "tier": "CAUTION",
+  "fdaBoxedWarning": false,
+  "usMarketed": true,
+  "effect": [
+    "Encephalopathy, sometimes fatal: confusion, somnolence, coma, hallucinations, extrapyramidal signs, seizures; onset hours to days after a dose and may recur (§5.2)"
+  ],
+  "mechanism": [],
+  "pearls": [
+    "Boxed warning: encephalopathy (seizures are among its signs, §5.2)",
+    "Risk factors: high dose, hypoalbuminemia, renal impairment, poor performance status, bulky abdominal-pelvic disease, nephrotoxic drugs incl. cisplatin, CNS-active drugs, alcohol (§5.2)",
+    "Label: consider methylene blue for encephalopathy — no dose given (§5.2)",
+    "CYP3A4 inducers may increase chloroacetaldehyde, the neurotoxic metabolite — monitor for toxicity (§7.1)",
+    "Rechallenge after neurotoxicity: some recurred, including fatal events (§6.2)"
+  ],
+  "saferAlternatives": [],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:pres"
+  ],
+  "sources": [
+    "Ifex (ifosfamide) for injection US prescribing information. Baxter; revised 10/2026 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
