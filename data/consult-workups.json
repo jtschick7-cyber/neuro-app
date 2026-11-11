@@ -4265,7 +4265,7 @@
           "evidenceLevel": "NOT_GRADED",
           "evidenceNote": [
             "Label warning, not graded (Leqembi PI §5.1, p.11; Kisunla PI §5.1, p.10)",
-            "AHA 2026 Table 8 is not restated here (see verify)"
+            "AHA 2026 Table 8 is not restated here"
           ]
         },
         {
@@ -4369,13 +4369,13 @@
           "evidenceLevel": "EXPERT_OPINION",
           "evidenceNote": [
             "Donanemab AUR §5.4 and Table 8, pp.10–11; §5.6, p.12",
-            "Lecanemab AUR p.10 (text) and Table 8, p.30. Its Fig 2 shows a suspend path for asymptomatic severe ARIA; see verify"
+            "Lecanemab AUR p.10 (text) and Table 8, p.30. Its Fig 2 shows a suspend path for asymptomatic severe ARIA"
           ]
         },
         {
           "order": 13,
           "condition": "Stopping rules for lecanemab (AUR)",
-          "recommendation": "Discontinue for: severe radiographic ARIA, severe symptomatic ARIA, any macrohemorrhage, >10 microhemorrhages since starting, more than 1 area of superficial siderosis (AUR text says 1 area; see verify), more than 2 ARIA episodes, or any condition requiring an anticoagulant.",
+          "recommendation": "Discontinue for: severe radiographic ARIA, severe symptomatic ARIA, any macrohemorrhage, >10 microhemorrhages since starting, more than 1 area of superficial siderosis (AUR text says 1 area), more than 2 ARIA episodes, or any condition requiring an anticoagulant.",
           "evidenceLevel": "EXPERT_OPINION",
           "evidenceNote": [
             "Lecanemab AUR pp.10–11 (text) and Fig 2"
@@ -4461,13 +4461,7 @@
         "Seizure and status epilepticus can occur with ARIA (both PIs §5.1). With severe ARIA, encephalopathy, stupor and lateralizing signs can also occur (lecanemab AUR p.10)",
         "In trials 74%–97% of ARIA was asymptomatic and found on routine MRI (ASNR 2025 p.24)"
       ],
-      "verify": [
-        "AHA 2026 Table 8: the uploaded extract ends after the aortic arch dissection row and does not contain the amyloid immunotherapy/ARIA row. Its wording was not confirmed. This entry links to the thrombolysis entry and does not restate Table 8.",
-        "Lecanemab AUR, superficial siderosis stop threshold: the text says 1 area; Fig 2 and the donanemab AUR say more than 1. This entry shows more than 1.",
-        "Lecanemab AUR, asymptomatic severe ARIA: Fig 2 shows a suspend-and-resume path; the text and Table 8 say discontinue. This entry follows the text and Table 8.",
-        "Lecanemab AUR is cited by author-manuscript page numbers; confirm against the final journal pagination.",
-        "Currency of the labels (Leqembi revised 7/2026, Kisunla revised 7/2025) was checked by web search snippet only; confirm on DailyMed before sign-off."
-      ],
+      "verify": [],
       "relatedIds": [
         "consult-workups:caa-related-inflammation",
         "consult-workups:ich-etiology-workup",

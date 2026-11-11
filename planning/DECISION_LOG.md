@@ -1047,3 +1047,13 @@ Overlap check (C1): no duplicate; one existing line to weigh against rule 1. A s
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R14/README.md`.
 
 Encoded 2026-11-11 on `content-r14-2026-11-10` (base `00e95a2`). The draft gave no numbers ("as found → next MINOR"); the registry was at 3.0.1, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, consult-workups stays 3.1.0). All five verify items closed:
+- V1 (AHA 2026 Table 8 amyloid row not seen). Reason: the entry restates nothing from Table 8 and links to `vascular-antithrombotics:thrombolysis-with-prior-antithrombotics`; this log already records that the complete Table 8 was checked against that entry and matched, and it lists "Amyloid immunotherapy or ARIA" in the absolute tier.
+- V2 (lecanemab AUR siderosis threshold, text 1 area vs Fig 2 more than 1). Reason: internal inconsistency in the AUR; the rule itself says "(AUR text says 1 area)", so both readings are visible. The entry keeps "more than 1".
+- V3 (lecanemab AUR, asymptomatic severe ARIA, Fig 2 vs text and Table 8). Reason: the entry follows the text and Table 8, which agree and are the stricter reading; the evidence note names the Fig 2 difference.
+- V4 (lecanemab AUR cited by author-manuscript pages). Reason: the source line says "Author manuscript pages"; page numbers are a finding aid, not content.
+- V5 (label currency). Reason: Leqembi — DailyMed shows revised 7/2026, matching the draft (web check 2026-11-11). Kisunla — Lilly's current label page prints "Revised: 7/2025" in the Highlights, matching the draft, and "Revised: 8/2025" at the end (version 7, effective 2025-08-12), with Recent Major Changes all dated 07/2025; the ARIA sections were not compared line by line against the 7/2025 PDF. Closed with that noted.
+- With `verify[]` empty, the "see verify" pointers were dropped from three lines (rule 1 evidence note; rule 12 evidence note; rule 13 recommendation, which keeps "(AUR text says 1 area)"). No other wording changed. The data entry therefore differs from the draft JSON in `verify` and those three lines.
+- Left as drafted: rule 1 uses the label wording ("consider whether the symptoms could be due to ARIA-E before giving a thrombolytic"), softer than the thrombolysis entry's absolute contraindication; it links there.
+- Open: sign-off and release, when Jason asks.
