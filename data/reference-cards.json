@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -2836,7 +2836,7 @@
       "sources": [
         "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     }
   ]
 }
