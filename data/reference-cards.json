@@ -2131,7 +2131,7 @@
               "notes": [
                 "Functional recovery seen in 50–64% at up to 32 months; psychological recovery may take several years (GPS #4 rationale, p.402)"
               ],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Hwang 2024 good practice statement #4: strong recommendation, evidence not graded (Table 2, p.401)"
               ],
@@ -2196,7 +2196,7 @@
               "role": "RECOMMENDED",
               "target": "Avoid premature prognostication; no fixed window — set the observation period by expected evolution, confounders and completed imaging",
               "notes": [],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Mainali 2026 good practice statement 6 (Table 5, p.753): strong recommendation, evidence cannot be graded"
               ],
@@ -2210,7 +2210,7 @@
               "role": "RECOMMENDED",
               "target": "Discuss prognosis and goals of care before deterioration where feasible, so there is time to decide on decompressive craniectomy",
               "notes": [],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Mainali 2026 good practice statement 10 (Table 5, p.753): strong recommendation, evidence cannot be graded"
               ],
@@ -2224,7 +2224,7 @@
               "role": "RECOMMENDED",
               "target": "Severe AIS: incremental gains up to 6 months, sometimes longer; mild–moderate: most recovery within 3 months",
               "notes": [],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Mainali 2026 good practice statement 7 (Table 5, p.753): strong recommendation, evidence cannot be graded"
               ],
@@ -2238,7 +2238,7 @@
               "role": "RECOMMENDED",
               "target": "Swallow recovery and feeding-tube removal likely, not certain, within several months; decannulation possible within several months",
               "notes": [],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Mainali 2026 good practice statements 8–9 (Table 5, p.753): strong recommendation, evidence cannot be graded"
               ],
@@ -2269,7 +2269,7 @@
               "evidenceLevel": "WEAK",
               "evidenceNote": [
                 "Mainali 2026 Table 3 #10–13 (p.752): all weak recommendation — ASTRAL: moderate quality; DRAGON scores: very low quality; iScore: moderate quality; THRIVE scores: low quality evidence",
-                "ASTRAL: the text on p.758 states low quality evidence (see verify)"
+                "ASTRAL: the text on p.758 states low quality evidence"
               ],
               "sources": [
                 "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3"
@@ -2286,7 +2286,7 @@
               "role": "RECOMMENDED",
               "target": "Defer neuroprognostication until the diagnostic workup for the cause is done (run it alongside seizure treatment)",
               "notes": [],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Madzar 2026 good practice statement 6 (Table 3, p.380): strong recommendation, evidence cannot be graded"
               ],
@@ -2302,7 +2302,7 @@
               "notes": [
                 "See consult-workups:post-cardiac-arrest-prognostication"
               ],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Madzar 2026 good practice statement 4 (Table 3, p.380): strong recommendation, evidence cannot be graded"
               ],
@@ -2318,7 +2318,7 @@
               "notes": [
                 "Prolonged postictal impaired consciousness of 4–10 days has been reported (GPS 5 rationale, p.374)"
               ],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Madzar 2026 good practice statement 5 (Table 3, p.380): strong recommendation, evidence cannot be graded"
               ],
@@ -2332,7 +2332,7 @@
               "role": "RECOMMENDED",
               "target": "Coma and dependence on an artificial airway and enteral nutrition may last days to months; recovery to or near baseline is feasible",
               "notes": [],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Madzar 2026 good practice statements 2–3 (Table 3, p.380): strong recommendation, evidence cannot be graded"
               ],
@@ -2445,7 +2445,7 @@
               "notes": [
                 "10–30% need ventilation; of those, 7 of 10 need prolonged ventilation via tracheostomy, usually with a gastrostomy (GPS 2 rationale, p.571)"
               ],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Busl 2023 good practice statement 2 (p.571): strong recommendation, evidence cannot be graded"
               ],
@@ -2486,7 +2486,7 @@
                 "Exceptions: irreversible brainstem damage with imminent death, or documented wishes against critical care",
                 "Prognosis may stay uncertain after 2 weeks, especially if the patient remains unconscious"
               ],
-              "evidenceLevel": "STRONG",
+              "evidenceLevel": "CONSENSUS",
               "evidenceNote": [
                 "Muehlschlegel 2024 good practice statement 2 (p.464): strong recommendation, evidence cannot be graded"
               ],
@@ -2539,7 +2539,7 @@
               "evidenceNote": [
                 "Muehlschlegel 2024 pp.464–469 (clinical variables), pp.471–474 (CT scores); Table 2, p.454",
                 "Weak recommendation, mostly low-quality evidence; moderate-quality: age, unilateral pupil and GCS (function), major extracranial injury, Marshall and Helsinki CT (mortality); very low-quality: elevated ICP (mortality), hypernatremia",
-                "Helsinki CT for 6-month poor outcome printed as \"strong recommendation; low-quality evidence\" (p.473) — see verify"
+                "Helsinki CT for 6-month poor outcome printed as \"strong recommendation; low-quality evidence\" (p.473)"
               ],
               "sources": [
                 "Muehlschlegel S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Moderate–Severe Traumatic Brain Injury. Neurocrit Care 2024;40:448-476. doi:10.1007/s12028-023-01902-2"
@@ -2561,10 +2561,7 @@
         "EGRIS: Score 0–7 → predicted risk of respiratory failure 1–90%",
         "SE of unclear etiology: Defer neuroprognostication until the diagnostic workup for the cause is done (run it alongside seizure treatment)"
       ],
-      "verify": [
-        "Mainali 2026 ASTRAL grade: Table 3 #10 (p.752) states moderate quality evidence; the PICO 10 text (p.758) states low quality evidence — confirm which (AIS row \"Prediction models — not reliable\")",
-        "Muehlschlegel 2024 Helsinki CT model for poor outcome at 6 months (p.473) is printed as \"strong recommendation; low-quality evidence\", unlike every other predictor (weak) — check for an erratum (TBI row \"Not reliable alone\")"
-      ],
+      "verify": [],
       "relatedIds": [
         "consult-workups:post-cardiac-arrest-prognostication",
         "acute-neuro:guillain-barre-syndrome",
