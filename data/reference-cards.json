@@ -1,8 +1,8 @@
 {
   "title": "Reference Cards",
-  "version": "1.2.3",
+  "version": "1.3.1",
   "schemaVersion": "1.1.0",
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-11",
   "entries": [
     {
       "id": "neuro-icu-targets",
@@ -1512,7 +1512,7 @@
     },
     {
       "id": "inpatient-parkinson-disease",
-      "title": "Inpatient Parkinson disease: NPO, tube, antiemetics, psychosis",
+      "title": "Inpatient Parkinson disease: NPO, tube, pumps, antiemetics, psychosis",
       "searchTerms": [
         "Parkinson",
         "PD",
@@ -1529,7 +1529,14 @@
         "quetiapine Parkinson",
         "clozapine Parkinson",
         "antiemetic Parkinson",
-        "LEDD"
+        "LEDD",
+        "Vyalev",
+        "foslevodopa",
+        "Onapgo",
+        "apomorphine infusion",
+        "Duopa",
+        "LCIG",
+        "PEG-J"
       ],
       "scopeNote": "Rounds lookup for hospitalized adults with PD on dopaminergic therapy — not a protocol. Get movement-disorder input early when the usual regimen can't be given.",
       "sections": [
@@ -1573,6 +1580,75 @@
               ],
               "sources": [
                 "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Admitted on an infusion pump (Vyalev, Onapgo, Duopa)",
+          "rows": [
+            {
+              "parameter": "Vyalev (foscarbidopa/foslevodopa SC)",
+              "condition": "Admitted on the VYAFUSER pump",
+              "role": "RECOMMENDED",
+              "target": "Keep it running at the home settings. Off >1 h: new infusion set at a new site; off >3 h: loading dose (Vyalev or oral IR carbidopa-levodopa) before restarting. Prolonged stop: the patient's backup oral carbidopa-levodopa — no abrupt stop or rapid reduction",
+              "notes": [
+                "Subcutaneous — bypasses the gut; food doesn't change absorption (§12.3)",
+                "Off <1 h (e.g., shower, short procedure): no new set or site needed (§17)",
+                "Suspected site infection (28% in the pivotal trial; most often cellulitis): remove the cannula; new cannula at a new site, or oral carbidopa-levodopa if the interruption will be prolonged (§5.4)",
+                "Label conversion, oral → pump only: foslevodopa mg/day = IR levodopa mg/day × 1.3; 240 mg foslevodopa/mL (§2.3, §3). No label pump → oral conversion — use the backup regimen",
+                "New seizures: check vitamin B6 — B6-deficiency seizures on carbidopa-levodopa were refractory to ASMs and resolved only with B6 (§5.7)",
+                "Pump imaging (MRI) guidance isn't in the drug label — check the VYAFUSER pump IFU"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Vyalev PI §2.3, §2.5, §3, §5.4, §5.5, §5.7, §12.3, §17"
+              ],
+              "sources": [
+                "Vyalev (foscarbidopa and foslevodopa) injection US prescribing information. AbbVie; revised 3/2026"
+              ]
+            },
+            {
+              "parameter": "Onapgo (continuous SC apomorphine)",
+              "condition": "Admitted on the Onapgo pump",
+              "role": "RECOMMENDED",
+              "target": "Keep it running over the waking day at the home rate. Restarting after a ≥1 h break: an extra dose may serve as a loading dose (max 2 mg; ≥3 h apart; ≤3/day). Prolonged stop: the patient's oral PD medications; taper rather than stop abruptly",
+              "notes": [
+                "No 5-HT3 antagonists — see Antiemetics",
+                "Most are also on oral levodopa (all trial patients were, §14) — the NPO plan above still applies to it",
+                "New cartridge, cartridge holder and infusion site every day (§2.4)",
+                "Pump IFU: not to be used in or next to an MRI scanner",
+                "SC only — never IV: thrombus and pulmonary embolism from crystallization (§5.1)",
+                "QTc: dose-related prolongation, mean +12.5 ms at 6 mg/h — caution with other QT-prolonging drugs (§5.12, §7.5, §12.2)",
+                "New anemia: consider hemolytic anemia; many reported cases were Coombs-positive (§5.9)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Onapgo PI §2.3, §2.4, §2.6, §5.1, §5.6, §5.9, §5.12, §7.5, §12.2, §14; Patient IFU (pump storage; symbols)"
+              ],
+              "sources": [
+                "Onapgo (apomorphine hydrochloride) injection US prescribing information and Patient Instructions for Use. MDD US Operations (Supernus); PI revised 5/2026, IFU revised 6/2026"
+              ]
+            },
+            {
+              "parameter": "Duopa (carbidopa-levodopa enteral suspension)",
+              "condition": "Admitted on the PEG-J (or NJ) pump",
+              "role": "RECOMMENDED",
+              "target": "Keep the 16-h infusion and the night-time oral IR carbidopa-levodopa dose. Off <2 h: no oral supplement needed; off >2 h: oral IR carbidopa-levodopa until restarted. No abrupt stop — taper or switch to oral IR",
+              "notes": [
+                "Abdominal pain, prolonged constipation, nausea, vomiting, fever or melena: think tube/GI complication — bezoar, ileus, intussusception, obstruction, perforation, pancreatitis, aspiration pneumonia (§5.1)",
+                "Kinked, knotted or blocked tube → PD worsens (Medication Guide)",
+                "20 mg levodopa/mL; levodopa bioavailability 97% of oral IR (§3, §12.3). No label pump → oral conversion — use the backup oral IR supply (Medication Guide)",
+                "Pump (CADD-Legacy 1400): remove for MRI; don't expose to therapeutic radiation or direct ultrasound; may interfere with ECG equipment (operator's manual)",
+                "New seizures: check vitamin B6 (§5.9)",
+                "Generalized, mostly axonal polyneuropathy in 5% of trial patients (§5.10)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Duopa PI §2.2, §2.5, §3, §5.1, §5.9, §5.10, §12.3, §17; Medication Guide; CADD-Legacy 1400 Operator's Manual (warnings)"
+              ],
+              "sources": [
+                "Duopa (carbidopa and levodopa) enteral suspension US prescribing information, Medication Guide and CADD-Legacy 1400 Operator's Manual. AbbVie; revised 3/2026 (operator's manual: Smiths Medical, revised 3/2019)"
               ]
             }
           ]
@@ -1691,7 +1767,8 @@
               "role": "RECOMMENDED",
               "target": "Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily",
               "notes": [
-                "BMJ rounds up to 16 mg; the US label maximum is 6 mg/24 h (early PD) and 8 mg/24 h (advanced PD) — doses above 8 mg exceed the label",
+                "Neupro US label maximum: 6 mg/24 h (early PD), 8 mg/24 h (advanced PD) — doses above 8 mg exceed the label",
+                "BMJ rounds up to 16 mg",
                 "Example: levodopa IR 300 mg/day → 300 × 0.55 = 165 → 8.25 → 8 mg/24 h",
                 "Example: levodopa IR 600 mg/day → 330 → 16.5 → 16 mg/24 h per BMJ (twice the label maximum)",
                 "BMJ: the ×0.55 deliberately starts below equivalence; review and adjust early; may be too weak for high-dose regimens"
@@ -1757,10 +1834,29 @@
               "notes": [],
               "evidenceLevel": "NOT_GRADED",
               "evidenceNote": [
-                "Apokyn PI §2.2, §4 Contraindications, §7.1"
+                "Apokyn PI §2.2, §4 Contraindications, §7.1",
+                "Onapgo PI §2.2, §4, §7.1"
               ],
               "sources": [
-                "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022"
+                "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
+                "Onapgo (apomorphine hydrochloride) injection US prescribing information and Patient Instructions for Use. MDD US Operations (Supernus); PI revised 5/2026, IFU revised 6/2026"
+              ]
+            },
+            {
+              "parameter": "Trimethobenzamide",
+              "condition": "Patient on apomorphine",
+              "role": "RECOMMENDED",
+              "target": "Only antiemetic studied with apomorphine: label premedication 300 mg PO TID; ↑ somnolence, dizziness, falls",
+              "notes": [
+                "Onapgo label: other antiemetics' effect on apomorphine nausea not studied; continue only as long as needed, generally ≤2 months (§2.2, §5.2)",
+                "Local availability: check pharmacy"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Onapgo PI §2.2, §5.2, §17"
+              ],
+              "sources": [
+                "Onapgo (apomorphine hydrochloride) injection US prescribing information and Patient Instructions for Use. MDD US Operations (Supernus); PI revised 5/2026, IFU revised 6/2026"
               ]
             },
             {
@@ -1943,16 +2039,16 @@
       ],
       "pitfalls": [
         "calc:ledd (Jost 2023) and the BMJ algorithm use different factors — don't mix them",
-        "BMJ's adjusted LEDD >350 mg branch (continuous SC apomorphine with domperidone pre-load) is not on this card: the Apokyn label covers intermittent pen doses only (≤6 mg per dose)",
+        "BMJ's adjusted LEDD >350 mg branch (continuous SC apomorphine with domperidone pre-load) is not on this card. Apokyn covers intermittent pen doses only (≤6 mg per dose); Onapgo (continuous SC apomorphine) is labeled for motor fluctuations in advanced PD — its label doesn't address use as a bridge when the oral route fails",
         "Hallucinations, orthostasis and sudden sleep onset are dopaminergic adverse effects — consider them before adding drugs",
         "Deep brain stimulator in situ: manufacturers advise avoiding electrocautery; bipolar diathermy if needed (BMJ)"
       ],
       "keyNumbers": [
-        "Rotigotine (BMJ 2010): LEDD (BMJ factors) × 0.55 ÷ 20 → nearest 2 mg, once daily",
-        "Neupro US max: 6 mg/24 h early PD, 8 mg/24 h advanced PD",
-        "Apomorphine + any 5-HT3 antagonist (incl. ondansetron): contraindicated",
-        "Sinemet CR: never crush; CR levodopa ≈70–75% as bioavailable as IR",
-        "Pimavanserin 34 mg daily (10 mg with strong CYP3A4 inhibitor) — benefit over weeks"
+        "Rotigotine dose: Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily",
+        "Neupro US label maximum: 6 mg/24 h (early PD), 8 mg/24 h (advanced PD) — doses above 8 mg exceed the label",
+        "Contraindicated: apomorphine with any 5-HT3 antagonist (ondansetron, granisetron, dolasetron, palonosetron, alosetron) — profound hypotension and loss of consciousness",
+        "Sinemet CR: Never crush or chew — swallow whole or half tablet",
+        "Pimavanserin: 34 mg PO once daily, no titration (10 mg with a strong CYP3A4 inhibitor) — not a rapid agent: benefit shown over 6 weeks"
       ],
       "verify": [],
       "relatedIds": [
@@ -1969,9 +2065,12 @@
         "Apokyn (apomorphine hydrochloride injection) US prescribing information. MDD US Operations; revised 6/2022",
         "Nuplazid (pimavanserin) capsules and tablets US prescribing information. Acadia; revised 4/2026",
         "Seppi K, et al. Update on treatments for nonmotor symptoms of Parkinson's disease—an evidence-based medicine review (MDS). Mov Disord 2019;34(2):180-198. doi:10.1002/mds.27602",
-        "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025"
+        "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025",
+        "Vyalev (foscarbidopa and foslevodopa) injection US prescribing information. AbbVie; revised 3/2026",
+        "Onapgo (apomorphine hydrochloride) injection US prescribing information and Patient Instructions for Use. MDD US Operations (Supernus); PI revised 5/2026, IFU revised 6/2026",
+        "Duopa (carbidopa and levodopa) enteral suspension US prescribing information, Medication Guide and CADD-Legacy 1400 Operator's Manual. AbbVie; revised 3/2026 (operator's manual: Smiths Medical, revised 3/2019)"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-11"
     }
   ]
 }
