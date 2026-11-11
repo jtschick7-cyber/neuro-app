@@ -724,3 +724,5 @@ Rules adopted:
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R6/README.md`.
 
 Encoded 2026-11-11 on `content-r6-2026-11-09` (base `6fc359b`). Render check: the new ADJUNCT rows show Not graded and Institution varies badges in both entries; the long C5 dose text and the new key numbers wrap cleanly at phone width; the bacterial-meningitis link is present in both; search finds each entry for its listed brand names. The entry page shows `doseText` only, so the four structured doses are not displayed anywhere.
+
+Update 2026-11-11: Jason in chat: keep K1–K3 (keyNumbers exact copies). Signed by Jason (`myasthenic-crisis`, `nmosd-mogad-attack`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.3.1, content 2.2.1+e949db2a. The K1–K3 and sign-off/release open items above are closed; PARK D5, D6 (gefurulimab recheck), A5 and A6 stay open.
