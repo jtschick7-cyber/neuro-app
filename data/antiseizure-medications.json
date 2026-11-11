@@ -5,7 +5,7 @@
     "CRRT dosing not covered — no institutional or published source supplied; ask pharmacy",
     "Phenobarbital: no current FDA-approved adult label; card sourced from the AES 2024 ASM summary"
   ],
-  "version": "1.1.0",
+  "version": "1.1.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -1269,7 +1269,7 @@
         "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)",
         "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "carbamazepine",
@@ -1396,7 +1396,7 @@
         "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
         "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "topiramate",
@@ -1572,7 +1572,7 @@
         "Topamax (topiramate) tablets and sprinkle capsules US prescribing information. Janssen Pharmaceuticals; revised 3/2026 (user-supplied label)",
         "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "clobazam",
@@ -1686,7 +1686,7 @@
         "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
         "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "zonisamide",
@@ -1794,7 +1794,7 @@
         "Zonisade (zonisamide) oral suspension US prescribing information. Azurity Pharmaceuticals; revised 9/2025 (user-supplied label)",
         "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "cenobamate",
@@ -1922,7 +1922,7 @@
         "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
         "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "perampanel",
@@ -2069,7 +2069,7 @@
         "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)",
         "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "phenobarbital",
@@ -2172,7 +2172,7 @@
         "Tegretol (carbamazepine) tablets and suspension; Tegretol-XR extended-release tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
         "Zonegran (zonisamide) capsules US prescribing information. Advanz Pharma; revised 9/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     }
   ]
 }
