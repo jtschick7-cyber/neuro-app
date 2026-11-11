@@ -256,6 +256,10 @@ Each package arrives as full replacement entries + `CHANGES.md` + decision-log t
 `planning/drafts/followups-3/`. Encode word for word, keep everything UNREVIEWED, run validate,
 tests and review-sheets, show diffs against the CHANGES tables, and open a PR. Don't merge.
 
+**Version numbers in a package (rule from 2026-11-11):** treat the README's bump as a level (MAJOR, MINOR or PATCH)
+applied to the registry's current version, not as fixed numbers. A different registry version is not a reason to stop;
+a changed entry is. See `docs/VERSIONING.md`, "Encoding approved drafts".
+
 | # | Task | Target | Package |
 |---|---|---|---|
 | 3.1 | ~~TNK "1-kg dosing <50 kg": confirm the source or remove the option~~ | **MOOT (2026-11-08)**: 2.1 removes the `tenecteplase` entry and the TNK calculator UI. Don't do it. The retained `tnkDose` function keeps the unverified option; resolve it only if the UI is ever restored | ~~R1~~ not needed |
