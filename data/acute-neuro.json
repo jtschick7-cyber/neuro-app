@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -7128,7 +7128,7 @@
         "Workowski KA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep 2021;70(No. RR-4):1-187. doi:10.15585/mmwr.rr7004a1",
         "Papp JR, et al. CDC Laboratory Recommendations for Syphilis Testing, United States, 2024. MMWR Recomm Rep 2024;73(No. RR-1):1-32. doi:10.15585/mmwr.rr7301a1"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     }
   ]
 }
