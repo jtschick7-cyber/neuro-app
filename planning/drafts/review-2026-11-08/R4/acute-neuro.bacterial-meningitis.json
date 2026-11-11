@@ -1,0 +1,472 @@
+{
+  "id": "bacterial-meningitis",
+  "title": "Bacterial meningitis (community-acquired & post-neurosurgical, adult)",
+  "keyNumbers": [
+    "Dexamethasone 0.15 mg/kg IV q6h, started 10–20 min before or with the first antibiotic dose (IDSA A-I)",
+    "Vancomycin: 30–45 mg/kg/day divided q8–12h (IDSA 2004); load and monitor per institutional AUC/trough protocol",
+    "Ceftriaxone: 2 g IV q12h (IDSA adult total 4 g/day, interval q12–24h)",
+    "Ampicillin (Listeria coverage): 2 g IV q4h (12 g/day) — add if age >50, immunocompromised, or alcohol use disorder",
+    "Acyclovir: 10 mg/kg IV q8h until HSV excluded — see viral-encephalitis"
+  ],
+  "category": "CNS_INFECTION",
+  "searchTerms": [
+    "meningitis",
+    "ABM",
+    "CT before LP",
+    "dexamethasone",
+    "Listeria",
+    "pneumococcal",
+    "EVD",
+    "ventriculitis",
+    "shunt infection"
+  ],
+  "presentation": [
+    "Fever, headache, neck stiffness, altered mental status — classic triad often incomplete",
+    "Petechial/purpuric rash → meningococcus",
+    "Older, immunocompromised, or alcohol use → Listeria risk",
+    "Recent neurosurgery, shunt, EVD, or penetrating trauma → staphylococci, C. acnes (P. acnes), and gram-negative rods"
+  ],
+  "definitions": [
+    "IDSA CT-before-LP criteria (any): immunocompromise (HIV, immunosuppressants, transplant); history of CNS disease (mass, stroke, focal infection); new-onset seizure within 1 week; papilledema; abnormal level of consciousness; focal neurologic deficit (B-II)",
+    "Typical bacterial CSF: neutrophilic pleocytosis, low CSF glucose / low CSF:serum ratio, high protein, elevated opening pressure",
+    "EVD/shunt CSF culture (IDSA 2017): contamination = single positive culture or Gram stain, normal CSF cells/glucose/protein, no symptoms; colonization = multiple positives, normal CSF, no symptoms; infection = ≥1 positive culture + pleocytosis and/or low glucose or rising cell count + symptoms (Rec 22: strong, high)",
+    "After neurosurgery or head trauma: CoNS in enrichment broth only or on 1 of multiple cultures, normal CSF, no fever → not infection (IDSA 2017 Rec 26: strong, low)",
+    "After neurosurgery, infection (vs chemical meningitis) more likely if CSF WBC >7500/mm³ or CSF glucose <10 mg/dL; fever ≥40 °C or >1 week more suggestive in one study. No single variable reliably separates them (IDSA 2017 evidence summary, ungraded)"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "0–30 min",
+      "action": "Blood cultures ×2 — then give dexamethasone and antibiotics; do NOT wait for CT or LP"
+    },
+    {
+      "order": 2,
+      "window": "With first antibiotic",
+      "action": "Dexamethasone 0.15 mg/kg IV q6h, started 10–20 min before or with the first antibiotic dose (IDSA A-I)"
+    },
+    {
+      "order": 3,
+      "window": "Decide imaging",
+      "action": "CT before LP only if IDSA criteria met — antibiotics go in before the patient leaves for CT"
+    },
+    {
+      "order": 4,
+      "window": "LP",
+      "action": "Opening pressure, cell count/diff, glucose (paired serum), protein, Gram stain, culture; multiplex PCR if available; save extra CSF"
+    },
+    {
+      "order": 5,
+      "window": "Organism known",
+      "action": "Continue dexamethasone only if Gram stain shows gram-positive diplococci or blood/CSF grows S. pneumoniae; otherwise stop. Narrow antibiotics to organism"
+    },
+    {
+      "order": 6,
+      "window": "Suspected meningococcus",
+      "action": "Droplet precautions; notify public health for contact prophylaxis"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Blood cultures ×2",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "Before antibiotics",
+        "VA shunt: recommended — bacteremia in >90% of infected VA shunts (IDSA 2017 Rec 20: strong, high); VP or ventriculopleural shunt: may be considered (Rec 21: weak, low)"
+      ]
+    },
+    {
+      "test": "CBC, BMP, coagulation profile, lactate",
+      "priority": "STAT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Non-contrast CT head",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Any IDSA CT-before-LP criterion"
+      ],
+      "notes": [
+        "Most head CTs before LP don't change management — only 1.5% did in one cohort (CID 2017)"
+      ]
+    },
+    {
+      "test": "LP with opening pressure",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "CSF culture yield falls within hours of antibiotics; cell profile persists"
+      ]
+    },
+    {
+      "test": "CSF multiplex PCR",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Pretreated with antibiotics or Gram stain negative"
+      ],
+      "notes": []
+    },
+    {
+      "test": "Shunt/EVD CSF culture",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected shunt or EVD infection"
+      ],
+      "notes": [
+        "If initial cultures negative: hold ≥10 days for C. acnes (IDSA 2017 Rec 17: strong, high)"
+      ]
+    },
+    {
+      "test": "CSF lactate ± CSF procalcitonin",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected post-neurosurgical, shunt, or EVD meningitis"
+      ],
+      "notes": [
+        "May help diagnose (IDSA 2017 Rec 30: weak, moderate)",
+        "Study data (ungraded): CSF lactate cutoff 4 mmol/L after neurosurgery — sensitivity 88%, specificity 98% (LP within 40 days of surgery)",
+        "SAH and brain injury raise CSF lactate; shunt infection: lactate normal in ~20%, and a 4 mmol/L cutoff missed almost half in one series",
+        "Study data (ungraded): CSF procalcitonin 0.075 ng/mL + CSF lactate 3.45 mmol/L combined — sensitivity 96%, NPV 97.6% (one small study)"
+      ]
+    },
+    {
+      "test": "CSF β-D-glucan and galactomannan",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected fungal ventriculitis or meningitis"
+      ],
+      "notes": [
+        "May help diagnose (IDSA 2017 Rec 33: strong, moderate); a negative culture does not exclude fungal infection",
+        "Study data (ungraded): CSF β-D-glucan ≥80 pg/mL (manufacturer cutoff) — sensitivity 96%, specificity 95% in the 2012 contaminated-methylprednisolone outbreak"
+      ]
+    },
+    {
+      "test": "HIV test",
+      "priority": "ROUTINE",
+      "indication": [],
+      "notes": []
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Dexamethasone",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "0.15 mg/kg IV q6h ×2–4 days; first dose 10–20 min before or with the first antibiotic. Many adult protocols use 10 mg q6h ×4 days (de Gans 2002 regimen)",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 0.15,
+          "amountMax": 0.15,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DOSE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "q6h"
+          ],
+          "duration": [
+            "2–4 days"
+          ]
+        }
+      ],
+      "notes": [
+        "IDSA: give for suspected or proven pneumococcal meningitis; many give to all adults since etiology is unknown at presentation (B-III)",
+        "Do NOT start if antibiotics already given — unlikely to help (A-I)",
+        "Some experts add rifampin when dexamethasone is used (B-III), given reduced CSF vancomycin penetration concerns"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA 2004: A-I (adults, suspected/proven pneumococcal)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Vancomycin",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "30–45 mg/kg/day divided q8–12h (IDSA 2004); load and monitor per institutional AUC/trough protocol",
+      "dose": [
+        {
+          "label": "Daily total",
+          "amountMin": 30,
+          "amountMax": 45,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Divided q8–12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Covers resistant pneumococcus pending susceptibilities"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA 2004 Table 4 (A-III); adult dose 30–45 mg/kg/day q8–12h (dosing table)"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Ceftriaxone",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "2 g IV q12h (IDSA adult total 4 g/day, interval q12–24h)",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 2,
+          "amountMax": 2,
+          "unit": "G",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Cefotaxime 8–12 g/day divided q4–6h is the IDSA alternative"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA 2004 empiric regimen"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Ampicillin (Listeria coverage)",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "2 g IV q4h (12 g/day) — add if age >50, immunocompromised, or alcohol use disorder",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 2,
+          "amountMax": 2,
+          "unit": "G",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q4h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "IDSA empiric indication: age >50 (Table 4); many also add for immunocompromise, pregnancy, or alcohol use disorder",
+        "Listeria alternatives: TMP-SMX or meropenem (B-III)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA 2004 Table 4 (A-III); doses Table 5"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Post-neurosurgery / penetrating trauma / CSF shunt or drain: vancomycin + cefepime, ceftazidime, or meropenem",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Vancomycin 30–60 mg/kg/day divided q8–12h (trough 15–20 μg/mL if intermittent bolus) + one of: cefepime 2 g q8h, ceftazidime 2 g q8h, or meropenem 2 g q8h; choose the beta-lactam by local susceptibility",
+      "dose": [
+        {
+          "label": "Beta-lactam dose",
+          "amountMin": 2,
+          "amountMax": 2,
+          "unit": "G",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q8h"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Vancomycin daily total",
+          "amountMin": 30,
+          "amountMax": 60,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Divided q8–12h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Pseudomonas coverage required",
+        "Infected EVD: remove. Infected shunt: remove completely, replace with EVD + IV antibiotics (IDSA 2017 Recs 62–63: strong, moderate)",
+        "Duration: CoNS or C. acnes with no/minimal pleocytosis, normal glucose, few symptoms: 10 days; with significant pleocytosis, low glucose, or symptoms: 10–14 days; S. aureus or gram-negative bacilli: 10–14 days (some experts 21 days for gram-negative, weak, low); repeatedly positive cultures: 10–14 days after the last positive (IDSA 2017 Recs 58–61: strong, low)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA 2017 Rec 37: strong, low; Rec 38 (vancomycin trough): strong, low; adult doses Table 2"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Intraventricular antibiotics (shunt/EVD infection)",
+      "routes": [
+        "INTRATHECAL"
+      ],
+      "doseText": "Intraventricular via EVD, preservative-free; clamp drain 15–60 min. Adult vancomycin 5 mg (slit ventricles), 10 mg (normal), 15–20 mg (enlarged); gentamicin 2 / 3 / 4–5 mg. Interval by EVD output per 24 h: <50 mL every 3rd day; 50–100 mL every 2nd day; 100–150 mL daily; 150–200 mL add 5 mg vancomycin / 1 mg gentamicin, daily; 200–250 mL add 10 mg / 2 mg, daily",
+      "dose": [],
+      "notes": [
+        "Consider only when infection responds poorly to IV therapy alone (Rec 55: strong, low)",
+        "Adjust dose and interval to CSF concentration 10–20× the organism's MIC, ventricle size, and EVD output (Rec 57: strong, low)",
+        "No intraventricular/intrathecal penicillins or cephalosporins — neurotoxicity, especially seizures",
+        "Not FDA-approved by this route; dosing is empiric and not validated"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA 2017 Recs 55–57: strong, low; clamp time Rec 56; doses Table 3"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Severe beta-lactam allergy",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Per ID: vancomycin + moxifloxacin 400 mg IV q24h (IDSA alternative); add TMP-SMX for Listeria if indicated; aztreonam or ciprofloxacin as gram-negative alternatives",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "IDSA 2004 Table 5 alternatives (mostly B-III)"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Acyclovir",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "10 mg/kg IV q8h until HSV excluded — see viral-encephalitis",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 10,
+          "amountMax": 10,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DOSE",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "q8h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Rifampin",
+      "routes": [
+        "IV",
+        "PO"
+      ],
+      "doseText": "600 mg q24h (IDSA adult dose) — consider with dexamethasone or for ceftriaxone-nonsusceptible pneumococcus",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 600,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q24h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Never as monotherapy",
+        "Staphylococcal infection with a CSF shunt, drain, or other intracranial/spinal hardware, rifampin-susceptible isolate: add as part of combination therapy (IDSA 2017 Rec 44: strong, low; adult 600 mg q24h, Table 2)"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "IDSA 2004: some experts (B-III)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Never delay antibiotics for imaging or LP",
+    "Avoid piperacillin-tazobactam — poor CNS penetration",
+    "CSF can sterilize within hours of antibiotics — blood cultures first, multiplex PCR helps",
+    "Over-use of CT before LP delays treatment; apply the IDSA criteria",
+    "EVD not being used to treat a shunt infection: no routine daily CSF cultures/analysis unless clinically indicated (IDSA 2017 Rec 69: strong, low). Infected, with an EVD: repeat CSF cultures until negative (Rec 67: strong, low)"
+  ],
+  "escalateWhen": [
+    "Altered consciousness, seizures, shock, or rising ICP → ICU",
+    "Hydrocephalus, abscess, or empyema on imaging → neurosurgery",
+    "No clinical improvement at 48 h → repeat LP/imaging, reconsider organism/resistance"
+  ],
+  "institutionVaries": [
+    "Vancomycin dosing protocol (AUC vs trough)",
+    "Local pneumococcal resistance (antibiogram)",
+    "CSF multiplex PCR availability"
+  ],
+  "verify": [
+    "IDSA 2017 vancomycin trough target 15–20 μg/mL (Rec 38) predates AUC-based dosing; reconcile with the local vancomycin protocol",
+    "Intraventricular gentamicin: IDSA 2017 Table 3 footnote d gives 4–8 mg for adults, but footnote e (by ventricle size) gives 2 / 3 / 4–5 mg; confirm which to show"
+  ],
+  "relatedIds": [
+    "acute-neuro:viral-encephalitis",
+    "acute-neuro:cns-infection-immunocompromised"
+  ],
+  "sources": [
+    "Tunkel AR, et al. Practice guidelines for the management of bacterial meningitis (IDSA). Clin Infect Dis 2004;39(9):1267-1284. doi:10.1086/425368",
+    "Cranial imaging before lumbar puncture in adults with community-acquired meningitis: clinical utility and adherence to the IDSA guidelines. Clin Infect Dis 2017;64(12):1657-1662. doi:10.1093/cid/cix240",
+    "de Gans J, van de Beek D. Dexamethasone in adults with bacterial meningitis. N Engl J Med 2002;347(20):1549-1556",
+    "Tunkel AR, et al. 2017 Infectious Diseases Society of America's clinical practice guidelines for healthcare-associated ventriculitis and meningitis. Clin Infect Dis 2017;64(6):e34-e65. doi:10.1093/cid/ciw861"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

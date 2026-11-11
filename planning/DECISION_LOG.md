@@ -580,3 +580,53 @@ Rules adopted:
 Encoded 2026-11-11 on `content-r3-2026-11-09` (base `a2c145e`). C1 result: the `odsRisk` checkbox label in `src/components/ImmunoSodiumCalculators.tsx` read "High ODS risk (Na ≤105, alcoholism, malnutrition, liver disease, hypokalemia)", which differed from Verbalis Table 3 ("liver disease" for "advanced liver disease"; "alcoholism" for the entry's "alcohol use disorder"). Jason in chat 2026-11-11: fix it in this PR; the list now reads "Na ≤105, hypokalemia, alcohol use disorder, malnutrition, advanced liver disease", matching `definitions[1]`. No test asserted the old warning string or META text, so `__tests__/calculators.test.ts` is unchanged.
 
 Update 2026-11-11: signed by Jason (`hyponatremia-ods`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.1.1, app 2.2.1, content 2.2.1+76906193. The sign-off/release open item above is closed.
+
+## 2026-11-09 — Review item R4 (healthcare-associated ventriculitis and meningitis)
+
+Approved by Jason in chat 2026-11-09. Draft: `planning/drafts/review-2026-11-08/R4/` (base: review-2026-11-08 export packet). Entry `lastReviewed: "UNREVIEWED"`.
+
+Finding: the post-neurosurgical/shunt row in `bacterial-meningitis` cited IDSA 2004. The specific guideline is IDSA 2017 (Tunkel, Clin Infect Dis 2017;64(6):e34–e65). Same empiric regimen (Rec 37, strong, low) and the same adult beta-lactam doses (Table 2), but vancomycin 30–60 mg/kg/day q8–12h with trough 15–20 μg/mL (Table 2, Rec 38), so the row no longer points to the 2004 community dose. No newer version found (web check 2026-11-09).
+
+| Draft | Findings | Change |
+|---|---|---|
+| `acute-neuro.bacterial-meningitis.json` | F1–F7, K1–K2, N1–N4, N6, N7, N9–N13 | `treatment[4]` → IDSA 2017: vancomycin 30–60 mg/kg/day (+ structured dose), beta-lactam by local susceptibility, device removal (Recs 62–63), duration (Recs 58–61); new `treatment[5]` intraventricular antibiotics (Recs 55–57, Table 3; route INTRATHECAL); definitions += EVD culture classification (Rec 22), CoNS contaminant (Rec 26), post-neurosurgery infection vs chemical meningitis (ungraded); blood cultures += VA/VP shunt (Recs 20–21); workup += shunt/EVD culture hold ≥10 days (Rec 17), CSF lactate ± PCT (Rec 30), CSF β-D-glucan/galactomannan (Rec 33); rifampin += hardware note (Rec 44); pitfalls += EVD CSF sampling (Recs 67, 69); presentation += C. acnes; searchTerms += EVD, ventriculitis, shunt infection; keyNumbers[1], [4] exact copies; sources += IDSA 2017 |
+
+Rules adopted:
+- Community-acquired rows stay on IDSA 2004; IDSA 2017 applies only to the healthcare-associated rows.
+- GRADE strong → STRONG and weak → WEAK regardless of evidence quality; the guideline's "strong, low"-style wording is kept in `evidenceNote` or the line.
+- Data from an evidence summary only (study cutoffs, single cohorts) is encoded as "study data (ungraded)", never as a graded recommendation.
+- Intraventricular dosing uses route `INTRATHECAL` with "intraventricular" in the text (no schema change).
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| acute-neuro | 2.1.1 | 2.2.0 | MINOR (dose and evidence source changed; new source; new workup and treatment rows) |
+
+### PARK (offered, not picked; can be revived)
+- N5: serum procalcitonin (Rec 31, weak, low).
+- N8: MRI with gadolinium + DWI (Rec 35, strong, moderate).
+- N14: no prolonged EVD prophylaxis, no fixed-interval exchange (Recs 76, 78).
+- N15: basilar skull fracture CSF leak (Recs 81–83); guideline vaccine schedule outdated.
+
+### ACCEPT (not raised again)
+- A1: community vancomycin stays 30–45 mg/kg/day (IDSA 2004).
+- A2: healthcare-associated beta-lactam doses match IDSA 2017 Table 2.
+- A3: Rec 39 allergy alternatives not added; the allergy row already names aztreonam and ciprofloxacin.
+- A4: organism-directed therapy (Recs 41–54, Table 1) not encoded, except Rec 44.
+- A5: shunt reimplantation timing (Recs 70–73) not encoded.
+- A6: other IDSA 2017 recommendations not encoded (common knowledge, device-specific, or not picked).
+- A7: no newer guideline found.
+- A8: vancomycin structured dose uses actual body weight, matching the community row; the guideline is silent.
+
+### Open items
+- `verify[]`: V1 vancomycin trough target vs AUC dosing; V2 intraventricular gentamicin 4–8 mg (Table 3 footnote d) vs 2 / 3 / 4–5 mg by ventricle size (footnote e).
+- Jason: resolve V1–V2, then `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R4/README.md`.
+
+Encoded 2026-11-11 on `content-r4-2026-11-09` (base `0fa999d`). Render check: `treatment[5]` shows route `INTRATHECAL` and its dose text with no errors; the entry page shows `doseText` only, so the structured doses on `treatment[4]` are not displayed anywhere.
+
+### Verify item closed (Jason, 2026-11-11), no content change
+- `bacterial-meningitis` V2 (intraventricular gentamicin): Jason in chat: the entry should show 2 / 3 / 4–5 mg (IDSA 2017 Table 3 footnote e, by ventricle size), which is what `treatment[5].doseText` already says. The 4–8 mg figure (footnote d) is not shown.
+- `bacterial-meningitis` V1 (vancomycin trough target): Jason in chat 2026-11-11: the local vancomycin protocol uses AUC 400–600 and takes precedence. `treatment[4].doseText` keeps the IDSA 2017 trough target (15–20 μg/mL if intermittent bolus, Rec 38) as written; no content change.
+
+Update 2026-11-11: V1 and V2 closed by Jason (above); signed by Jason (`bacterial-meningitis`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.2.1, content 2.2.1+8661e2e8. The verify and sign-off/release open items above are closed; PARK N5, N8, N14 and N15 stay available to revive.
