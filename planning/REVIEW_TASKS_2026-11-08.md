@@ -268,7 +268,7 @@ a changed entry is. See `docs/VERSIONING.md`, "Encoding approved drafts".
 | 3.4 | Post-neurosurgical meningitis: IDSA 2017 source + EVD-relevant recs | `acute-neuro:bacterial-meningitis` (post-neurosurgery item and related rows) | R4. **DRAFTED (2026-11-11)**: [PR #43](https://github.com/jtschick7-cyber/neuro-app/pull/43); signed and released 2026-11-11 (2.2.1) |
 | 3.5 | PD: continuous infusion therapies now US-marketed; "admitted on a pump" row | `reference-cards:inpatient-parkinson-disease` `pitfalls[1]` (+ optional row) | R5. **DRAFTED (2026-11-11)**: [PR #44](https://github.com/jtschick7-cyber/neuro-app/pull/44); signed and released 2026-11-11 (1.3.1) |
 | 3.6 | MG/NMOSD patients on FcRn or complement inhibitors | `acute-neuro:myasthenic-crisis`, `nmosd-mogad-attack` | R6. **DRAFTED (2026-11-11)**: [PR #45](https://github.com/jtschick7-cyber/neuro-app/pull/45); signed and released 2026-11-11 (2.3.1) |
-| 3.7 | Seizure-threshold and ASM-interaction expansion (old 7.8) | `seizure-threshold`, `asm-interactions` | R7. **DRAFTED (2026-11-11)**: [PR #46](https://github.com/jtschick7-cyber/neuro-app/pull/46) |
+| 3.7 | Seizure-threshold and ASM-interaction expansion (old 7.8) | `seizure-threshold`, `asm-interactions` | R7. **DRAFTED (2026-11-11)**: [PR #46](https://github.com/jtschick7-cyber/neuro-app/pull/46); signed and released 2026-11-11 (seizure-threshold 0.3.1, asm-interactions 0.2.1) |
 | 3.8 | ASM NPO/tube coverage for home ASMs not in the registry; phenobarbital | `antiseizure-medications` (new entries or an NPO table) | R8 |
 | 3.9 | ESUS: ARCADIA line | `vascular-antithrombotics:esus-antithrombotic` | R9 |
 | 3.10 | Serotonin syndrome: "triptans + SSRI/SNRI" example wording | `acute-neuro:serotonin-syndrome` `presentation[0]` | R10 |

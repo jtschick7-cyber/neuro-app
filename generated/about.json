@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+e949db2a",
+  "contentVersion": "2.2.1+e683ebcc",
   "builtAt": "2026-11-11",
   "registries": [
     {
@@ -32,15 +32,15 @@
     {
       "id": "asm-interactions",
       "title": "Antiseizure medication interactions",
-      "version": "0.1.1",
+      "version": "0.2.1",
       "schemaVersion": "1.0.0",
-      "lastUpdated": "2026-11-05",
-      "entries": 6,
-      "reviewed": 6,
+      "lastUpdated": "2026-11-11",
+      "entries": 12,
+      "reviewed": 12,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
-      "newestReview": "2026-11-05"
+      "newestReview": "2026-11-11"
     },
     {
       "id": "consult-workups",
@@ -110,15 +110,15 @@
     {
       "id": "seizure-threshold",
       "title": "Drugs that lower the seizure threshold",
-      "version": "0.2.5",
+      "version": "0.3.1",
       "schemaVersion": "3.0.0",
-      "lastUpdated": "2026-11-07",
-      "entries": 9,
-      "reviewed": 9,
+      "lastUpdated": "2026-11-11",
+      "entries": 15,
+      "reviewed": 15,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
-      "newestReview": "2026-11-07"
+      "newestReview": "2026-11-11"
     },
     {
       "id": "vascular-antithrombotics",
@@ -396,6 +396,13 @@
       ]
     },
     {
+      "citation": "Busulfex (busulfan) injection US prescribing information. Otsuka; revised 10/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "seizure-threshold:busulfan"
+      ]
+    },
+    {
       "citation": "Carvajal-González A, et al. Glycine receptor antibodies in PERM and related syndromes: characteristics, clinical features and outcomes. Brain 2014;137(8):2178-2192. doi:10.1093/brain/awu142",
       "year": 2014,
       "citedBy": [
@@ -636,6 +643,15 @@
       ]
     },
     {
+      "citation": "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (user-supplied label)",
+      "year": 2023,
+      "citedBy": [
+        "asm-interactions:azoles-phenytoin",
+        "asm-interactions:inducing-asm-calcineurin-inhibitors",
+        "asm-interactions:inducing-asm-dabigatran-edoxaban"
+      ]
+    },
+    {
       "citation": "Do LD, Chanson E, Desestret V, et al. Characteristics in limbic encephalitis with anti-adenylate kinase 5 autoantibodies. Neurology 2017;88:514-524",
       "year": 2017,
       "citedBy": [
@@ -760,6 +776,14 @@
       ]
     },
     {
+      "citation": "Fluconazole tablets USP US prescribing information. ANI; revised 8/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "asm-interactions:azoles-phenytoin",
+        "asm-interactions:cyp3a4-inhibitors-carbamazepine"
+      ]
+    },
+    {
       "citation": "Flumazenil injection US prescribing information. Akorn-Strides; revised 5/2008 (user-supplied label)",
       "year": 2008,
       "citedBy": [
@@ -791,6 +815,13 @@
         "vascular-antithrombotics:rivaroxaban",
         "vascular-antithrombotics:ticagrelor",
         "vascular-antithrombotics:vitamin-k"
+      ]
+    },
+    {
+      "citation": "Gablofen (baclofen injection) intrathecal US prescribing information. Piramal Critical Care; revised 5/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "seizure-threshold:intrathecal-baclofen"
       ]
     },
     {
@@ -1099,10 +1130,25 @@
       ]
     },
     {
+      "citation": "Ifex (ifosfamide) for injection US prescribing information. Baxter; revised 10/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "seizure-threshold:ifosfamide"
+      ]
+    },
+    {
       "citation": "Imaavy (nipocalimab-aahu) injection US prescribing information. Janssen Biotech; revised 8/2026",
       "year": 2026,
       "citedBy": [
         "acute-neuro:myasthenic-crisis"
+      ]
+    },
+    {
+      "citation": "Isoniazid tablets USP US prescribing information. Marlex; revised 9/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "asm-interactions:cyp3a4-inhibitors-carbamazepine",
+        "seizure-threshold:isoniazid"
       ]
     },
     {
@@ -1326,6 +1372,13 @@
       ]
     },
     {
+      "citation": "Lioresal Intrathecal (baclofen injection) US prescribing information. Amneal; revised 12/2022 (user-supplied label)",
+      "year": 2022,
+      "citedBy": [
+        "seizure-threshold:intrathecal-baclofen"
+      ]
+    },
+    {
       "citation": "Liu Y, Gao GH, Lin J, Sun C, Zhao YY. Case report: subacute combined degeneration of the spinal cord mimic accompanying adaptor protein-3B2-IgG. Front Immunol 2025;16:1598033. doi:10.3389/fimmu.2025.1598033",
       "year": 2025,
       "citedBy": [
@@ -1507,6 +1560,14 @@
       ]
     },
     {
+      "citation": "Neoral (cyclosporine) capsules and oral solution (modified) US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "asm-interactions:inducing-asm-calcineurin-inhibitors",
+        "seizure-threshold:calcineurin-inhibitors"
+      ]
+    },
+    {
       "citation": "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026",
       "year": 2026,
       "citedBy": [
@@ -1685,6 +1746,13 @@
       ]
     },
     {
+      "citation": "Pradaxa (dabigatran etexilate) capsules US prescribing information. Boehringer Ingelheim; revised 6/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "asm-interactions:inducing-asm-dabigatran-edoxaban"
+      ]
+    },
+    {
       "citation": "Pradaxa (dabigatran etexilate) US prescribing information. Boehringer Ingelheim; revised 6/2025 (user-supplied label)",
       "year": 2025,
       "citedBy": [
@@ -1696,6 +1764,22 @@
       "year": 2014,
       "citedBy": [
         "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Primaxin (imipenem and cilastatin) for injection US prescribing information. Merck Sharp & Dohme; revised 7/2024 (user-supplied label)",
+      "year": 2024,
+      "citedBy": [
+        "asm-interactions:carbapenems-valproate",
+        "seizure-threshold:imipenem-cilastatin"
+      ]
+    },
+    {
+      "citation": "Prograf (tacrolimus) capsules, injection, granules US prescribing information. Astellas; revised 8/2023 (user-supplied label)",
+      "year": 2023,
+      "citedBy": [
+        "asm-interactions:inducing-asm-calcineurin-inhibitors",
+        "seizure-threshold:calcineurin-inhibitors"
       ]
     },
     {
@@ -1856,6 +1940,13 @@
       "year": 2026,
       "citedBy": [
         "consult-workups:rapidly-progressive-dementia"
+      ]
+    },
+    {
+      "citation": "Savaysa (edoxaban) tablets US prescribing information. Daiichi Sankyo; revised 7/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "asm-interactions:inducing-asm-dabigatran-edoxaban"
       ]
     },
     {
@@ -2048,6 +2139,15 @@
       "year": 2026,
       "citedBy": [
         "acute-neuro:spinal-cord-compression"
+      ]
+    },
+    {
+      "citation": "Tegretol (carbamazepine) tablets, suspension, XR tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "asm-interactions:cyp3a4-inhibitors-carbamazepine",
+        "asm-interactions:inducing-asm-calcineurin-inhibitors",
+        "asm-interactions:inducing-asm-dabigatran-edoxaban"
       ]
     },
     {
@@ -2281,7 +2381,17 @@
       "citation": "Vimpat (lacosamide) tablets, injection, oral solution US prescribing information. UCB; revised 5/2026 (user-supplied label)",
       "year": 2026,
       "citedBy": [
-        "antiseizure-medications:lacosamide"
+        "antiseizure-medications:lacosamide",
+        "asm-interactions:lacosamide-conduction-drugs"
+      ]
+    },
+    {
+      "citation": "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "asm-interactions:azoles-phenytoin",
+        "asm-interactions:cyp3a4-inhibitors-carbamazepine",
+        "asm-interactions:inducing-asm-voriconazole"
       ]
     },
     {

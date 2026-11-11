@@ -773,3 +773,5 @@ Rules adopted:
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R7/README.md`.
 
 Encoded 2026-11-11 on `content-r7-2026-11-09` (base `d79f02f`). Render check: tier badges as specified; no boxed-warning badge on any new threshold entry; all 13 pages wrap at phone width; all 12 related links open; every listed search finds its entry. Searching "INH" matches as a substring ("inhibitors"), so isoniazid is result 15 of 39.
+
+Update 2026-11-11: signed by Jason (all 13 R7 entries by name, `lastReviewed` 2026-11-11) and released: seizure-threshold 0.3.1, asm-interactions 0.2.1, content 2.2.1+e683ebcc. The sign-off/release open item above is closed; PARK D8 and D9e stay available to revive.
