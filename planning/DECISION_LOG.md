@@ -628,3 +628,5 @@ Encoded 2026-11-11 on `content-r4-2026-11-09` (base `0fa999d`). Render check: `t
 ### Verify item closed (Jason, 2026-11-11), no content change
 - `bacterial-meningitis` V2 (intraventricular gentamicin): Jason in chat: the entry should show 2 / 3 / 4–5 mg (IDSA 2017 Table 3 footnote e, by ventricle size), which is what `treatment[5].doseText` already says. The 4–8 mg figure (footnote d) is not shown.
 - `bacterial-meningitis` V1 (vancomycin trough target): Jason in chat 2026-11-11: the local vancomycin protocol uses AUC 400–600 and takes precedence. `treatment[4].doseText` keeps the IDSA 2017 trough target (15–20 μg/mL if intermittent bolus, Rec 38) as written; no content change.
+
+Update 2026-11-11: V1 and V2 closed by Jason (above); signed by Jason (`bacterial-meningitis`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.2.1, content 2.2.1+8661e2e8. The verify and sign-off/release open items above are closed; PARK N5, N8, N14 and N15 stay available to revive.
