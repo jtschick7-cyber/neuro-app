@@ -1,0 +1,103 @@
+{
+  "id": "phenobarbital",
+  "title": "Phenobarbital — maintenance dosing and levels (AES summary)",
+  "searchTerms": [
+    "PB",
+    "phenobarbital level",
+    "phenobarbital maintenance",
+    "barbiturate",
+    "phenobarbital elixir"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Phenobarbital",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Adults and children ≥13 y: initial 60 mg/day or 1–4 mg/kg/day; maintenance 1–4 mg/kg/day; adult maximum 240 mg daily",
+      "dose": [
+        {
+          "label": "Initial",
+          "amountMin": 60,
+          "amountMax": 60,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 240,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Per-kg doses kept as text: the source doesn't state which weight to use",
+        "Source dose is not route-specific",
+        "No current FDA-approved adult label; AES took phenobarbital data from an older PI (1997 PDR)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "AES 2024 summary Table 1, phenobarbital row (p. 15)"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [],
+  "renalNotes": [
+    "25–50% excreted unchanged by the kidneys; no renal dose rule in source",
+    "Elimination ↑ by diuretics, alkaline urine and activated charcoal"
+  ],
+  "hepatic": [
+    "Do not use in hepatic encephalopathy or marked hepatic impairment"
+  ],
+  "ivPo": [
+    "Forms: tablets, elixir 4 mg/mL, IV solution; oral bioavailability ~95%; source gives no IV ↔ PO conversion"
+  ],
+  "enteral": [
+    "Elixir 4 mg/mL",
+    "Tube administration not addressed in source — confirm with pharmacy"
+  ],
+  "levels": [
+    "15–45 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)",
+    "Half-life 79 h"
+  ],
+  "interactions": [
+    "Strong CYP3A4 inducer: ↑ metabolism of phenytoin, lamotrigine, oral contraceptives, warfarin, corticosteroids and many other drugs (AES Table 1)",
+    "Valproate ↓ phenobarbital elimination; MAOIs prolong its effects (AES Table 1)",
+    "Synergistic CNS and respiratory depression with alcohol and sedatives; caution with pain medications and CNS depressants (AES Table 1)",
+    "Cenobamate ↑ phenobarbital — consider reducing phenobarbital (Xcopri Table 5)",
+    "Phenobarbital ↓ oxcarbazepine MHD 25–49% (Trileptal §7.2), ↓ carbamazepine (Tegretol Precautions), shortens zonisamide half-life (Zonegran Clinical Pharmacology)"
+  ],
+  "pearls": [
+    "Taper very slowly after chronic use — barbiturate withdrawal can cause convulsions and delirium and may be fatal (AES Table 1)",
+    "Do not use in porphyria or marked respiratory disease (AES Table 1)",
+    "Can cause respiratory depression, hypoventilation, bradycardia and hypotension (AES Table 1)",
+    "Monitor CBC and CMP (AES Table 1)"
+  ],
+  "calculatorIds": [],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:valproate",
+    "antiseizure-medications:lamotrigine",
+    "antiseizure-medications:phenytoin-fosphenytoin",
+    "asm-interactions:inducing-asm-warfarin"
+  ],
+  "sources": [
+    "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)",
+    "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+    "Trileptal (oxcarbazepine) film-coated tablets and oral suspension US prescribing information. Novartis; revised 10/2026 (user-supplied label)",
+    "Tegretol (carbamazepine) tablets and suspension; Tegretol-XR extended-release tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+    "Zonegran (zonisamide) capsules US prescribing information. Advanz Pharma; revised 9/2026 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "zonisamide",
+  "title": "Zonisamide (Zonegran / Zonisade) — maintenance dosing and NPO options",
+  "searchTerms": [
+    "Zonegran",
+    "Zonisade",
+    "ZNS",
+    "zonisamide suspension",
+    "zonisamide renal",
+    "zonisamide sulfa"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Zonisamide (capsules or oral suspension)",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Adults >16 y: 100 mg daily; after 2 weeks 200 mg/day; then 300 and 400 mg/day, each stable ≥2 weeks. 100–600 mg/day effective; no suggestion of more response above 400 mg/day; max 600 mg/day. Once or twice daily",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 100,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Once or twice daily"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 200,
+          "amountMax": 400,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 600,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "Once or twice daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Steady state up to 2 weeks after each change (half-life ~63 h) (Zonegran D&A, Clinical Pharmacology)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Zonegran label, Dosage and Administration; Zonisade label §2.2"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [],
+  "renalNotes": [
+    "Avoid in renal failure (estimated GFR <50 mL/min) — insufficient dosing and toxicity experience (Zonegran Precautions; Zonisade §8.6)",
+    "Stop with acute renal failure or a sustained clinically significant ↑ creatinine/BUN (Zonegran Precautions; Zonisade §8.6)",
+    "Mean ~8% ↑ creatinine and BUN, interpreted as a GFR effect (Zonegran Precautions)",
+    "Renal disease: caution, slower titration, more frequent monitoring (Zonegran D&A)"
+  ],
+  "hepatic": [
+    "Not studied; caution, slower titration, more frequent monitoring (Zonegran D&A, Clinical Pharmacology)"
+  ],
+  "ivPo": [
+    "Oral only — no parenteral formulation (Zonegran How Supplied; Zonisade §3)"
+  ],
+  "enteral": [
+    "Zonegran capsules 25 and 100 mg: swallow whole (Zonegran D&A)",
+    "Zonisade oral suspension 100 mg/5 mL; same mg dosing as capsules; shake well; use an accurate measuring device; discard 30 days after opening (Zonisade §2.2–2.3, §3)",
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "10–40 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)"
+  ],
+  "interactions": [
+    "Phenytoin, carbamazepine, phenobarbital shorten zonisamide half-life to 27–38 h (vs ~63 h); dose adjustment may be needed when inducers are started, changed or stopped; monitor with rifampin (Zonegran Clinical Pharmacology)",
+    "CYP3A4 inhibitors (ketoconazole, cimetidine): no dose change needed (Zonegran Clinical Pharmacology)",
+    "Other carbonic anhydrase inhibitors (topiramate, acetazolamide): more severe acidosis, hyperammonemia, kidney stones — monitor (Zonegran Clinical Pharmacology; Zonisade §7.2)"
+  ],
+  "pearls": [
+    "Sulfonamide: contraindicated with sulfonamide or zonisamide hypersensitivity (Zonegran Contraindications)",
+    "Hyperchloremic non-anion-gap metabolic acidosis: baseline and periodic bicarbonate (Zonegran Warnings; Zonisade §2.1)",
+    "Taper gradually (Zonisade §2.4)"
+  ],
+  "calculatorIds": [],
+  "verify": [],
+  "relatedIds": [],
+  "sources": [
+    "Zonegran (zonisamide) capsules US prescribing information. Advanz Pharma; revised 9/2026 (user-supplied label)",
+    "Zonisade (zonisamide) oral suspension US prescribing information. Azurity Pharmaceuticals; revised 9/2025 (user-supplied label)",
+    "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

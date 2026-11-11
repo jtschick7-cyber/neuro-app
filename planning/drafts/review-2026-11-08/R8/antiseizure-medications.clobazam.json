@@ -1,0 +1,114 @@
+{
+  "id": "clobazam",
+  "title": "Clobazam (Onfi / Sympazan) — maintenance dosing and NPO options",
+  "searchTerms": [
+    "Onfi",
+    "Sympazan",
+    "CLB",
+    "clobazam suspension",
+    "clobazam film",
+    "clobazam crush",
+    "N-desmethylclobazam"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Clobazam (tablets, suspension or oral film)",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Label dosing (LGS, ≥2 y): ≤30 kg: 5 mg/day → 10 mg/day from day 7 → 20 mg/day from day 14. >30 kg: 10 → 20 → 40 mg/day. >5 mg/day in 2 divided doses; escalate no faster than weekly",
+      "dose": [
+        {
+          "label": "Start (>30 kg)",
+          "amountMin": 10,
+          "amountMax": 10,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Divided BID"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maximum (>30 kg)",
+          "amountMin": 40,
+          "amountMax": 40,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 40,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "Divided BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Label indication is adjunctive treatment of LGS only (§1)",
+        "Steady state: clobazam 5 days, N-desmethylclobazam 9 days (§2.1)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Onfi label §2.1, Table 1; Sympazan label §2.1"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [],
+  "renalNotes": [
+    "No adjustment for mild or moderate renal impairment; essentially no experience in severe impairment or ESRD; dialyzability unknown (Onfi §2.6, §8.7)"
+  ],
+  "hepatic": [
+    "Mild–moderate (Child-Pugh 5–9): start 5 mg/day; titrate to half the Table 1 doses; may titrate to the maximum from day 21 (Onfi §2.7)",
+    "Severe: no dosing recommendation (Onfi §2.7)"
+  ],
+  "ivPo": [
+    "Oral only — no parenteral formulation (Onfi §3; Sympazan §3)"
+  ],
+  "enteral": [
+    "Onfi tablets 10 and 20 mg: whole, broken in half along the score, or crushed and mixed in applesauce (Onfi §2.3)",
+    "Onfi oral suspension 2.5 mg/mL; shake well; use the supplied syringe and adapter (Onfi §2.3, §3)",
+    "Sympazan oral film 5, 10, 20 mg: on top of the tongue; don't give with liquids; one film at a time; bioequivalent to clobazam tablets (Sympazan §2.3, §12.3)",
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "Clobazam 30–300 ng/mL; N-desmethylclobazam 300–3000 ng/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)"
+  ],
+  "interactions": [
+    "Opioids: profound sedation, respiratory depression, death — limit dose and duration (boxed warning; Onfi §7.1)",
+    "Strong (fluconazole, fluvoxamine, ticlopidine) or moderate (omeprazole) CYP2C19 inhibitors: up to 5-fold ↑ N-desmethylclobazam — dose adjustment may be needed (Onfi §7.4, §12.3)",
+    "Cenobamate ↑ N-desmethylclobazam — consider a lower clobazam dose (Xcopri Table 5)",
+    "Phenobarbital, phenytoin, carbamazepine: no significant change in clobazam or N-desmethylclobazam PK (Onfi §12.3)",
+    "CYP2D6 substrates: lower doses may be needed (Onfi §7.3)",
+    "Alcohol ↑ clobazam exposure ~50% (Onfi §7.2)"
+  ],
+  "pearls": [
+    "Boxed warnings: opioids; abuse, misuse and addiction; dependence and withdrawal",
+    "Taper: ↓ total daily dose by 5–10 mg/day weekly; abrupt stop can cause life-threatening withdrawal (Onfi §2.2)",
+    "Elderly or known CYP2C19 poor metabolizers: start 5 mg/day; titrate to half the Table 1 doses (Onfi §2.4–2.5)",
+    "Half-life 36–42 h; N-desmethylclobazam 71–82 h (Onfi §12.3)"
+  ],
+  "calculatorIds": [],
+  "verify": [],
+  "relatedIds": [],
+  "sources": [
+    "Onfi (clobazam) tablets and oral suspension US prescribing information. Lundbeck; revised 10/2026 (user-supplied label)",
+    "Sympazan (clobazam) oral film US prescribing information. Aquestive Therapeutics; revised 12/2025 (user-supplied label)",
+    "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+    "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
