@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -2071,6 +2071,514 @@
         "Duopa (carbidopa and levodopa) enteral suspension US prescribing information, Medication Guide and CADD-Legacy 1400 Operator's Manual. AbbVie; revised 3/2026 (operator's manual: Smiths Medical, revised 3/2019)"
       ],
       "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "neuroprognostication",
+      "title": "Neuroprognostication: ICH, AIS, SE, GBS, TBI (NCS guidelines)",
+      "searchTerms": [
+        "prognosis",
+        "prognostication",
+        "neuroprognostication",
+        "goals of care",
+        "family meeting",
+        "surrogate counseling",
+        "WLST",
+        "withdrawal of life-sustaining therapy",
+        "ICH score",
+        "max-ICH",
+        "early neurological improvement",
+        "ASTRAL",
+        "DRAGON",
+        "THRIVE",
+        "iScore",
+        "STESS",
+        "EMSE",
+        "EGRIS",
+        "EGOS",
+        "mEGOS",
+        "Erasmus",
+        "CRASH",
+        "IMPACT",
+        "fixed pupils"
+      ],
+      "scopeNote": "When to prognosticate, and which predictors the NCS GRADE guidelines rate moderately reliable vs not reliable, for counseling patients and surrogates. Post–cardiac arrest lives in its own entry.",
+      "sections": [
+        {
+          "heading": "ICH (Hwang 2024)",
+          "rows": [
+            {
+              "parameter": "Timing",
+              "condition": "ICH",
+              "role": "RECOMMENDED",
+              "target": "Defer neuroprognostication ≥48–72 h of ICU admission, except the most clinically devastated",
+              "notes": [
+                "Clinically devastated = an immediate threat to life from a neurologic cause (GPS #1 rationale, p.402)",
+                "Panel agrees with AHA/ASA 2022: postpone DNAR orders or other limits on life-sustaining treatment until at least the second full day (GPS #1 rationale, p.402)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Hwang 2024 good practice statement #1: conditional recommendation, evidence not graded (Table 2, p.401)"
+              ],
+              "sources": [
+                "Hwang DY, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Intracerebral Hemorrhage. Neurocrit Care 2024;40:395-414. doi:10.1007/s12028-023-01854-7"
+              ]
+            },
+            {
+              "parameter": "Recovery horizon",
+              "condition": "ICH survivors",
+              "role": "RECOMMENDED",
+              "target": "Counsel that recovery may take several days to several months or years",
+              "notes": [
+                "Functional recovery seen in 50–64% at up to 32 months; psychological recovery may take several years (GPS #4 rationale, p.402)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Hwang 2024 good practice statement #4: strong recommendation, evidence not graded (Table 2, p.401)"
+              ],
+              "sources": [
+                "Hwang DY, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Intracerebral Hemorrhage. Neurocrit Care 2024;40:395-414. doi:10.1007/s12028-023-01854-7"
+              ]
+            },
+            {
+              "parameter": "Not reliable alone",
+              "condition": "Poor function ≥3 months",
+              "role": "NOT_RECOMMENDED",
+              "target": "Age; admission exam; ICH volume; infratentorial location; IVH; anticoagulation at onset; original ICH score; max-ICH score",
+              "notes": [],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Hwang 2024 Table 2 (p.401): all weak recommendation — age: very low quality evidence; the other seven: low quality evidence"
+              ],
+              "sources": [
+                "Hwang DY, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Intracerebral Hemorrhage. Neurocrit Care 2024;40:395-414. doi:10.1007/s12028-023-01854-7"
+              ]
+            },
+            {
+              "parameter": "Not reliable",
+              "condition": "30-day mortality",
+              "role": "NOT_RECOMMENDED",
+              "target": "Original ICH score; no individual variable alone. Max-ICH score: evidence insufficient for a recommendation",
+              "notes": [],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Hwang 2024 Table 2 (p.401): original ICH score — weak recommendation; very low quality evidence",
+                "Table 2 footnote a: none of the individual variables reliable alone for 30-day mortality (details in Supplementary Appendix 3)",
+                "Table 2 footnote b: not sufficient evidence for a formal recommendation on the max-ICH score"
+              ],
+              "sources": [
+                "Hwang DY, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Intracerebral Hemorrhage. Neurocrit Care 2024;40:395-414. doi:10.1007/s12028-023-01854-7"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Acute ischemic stroke (Mainali 2026)",
+          "rows": [
+            {
+              "parameter": "Early neurological improvement (ENI)",
+              "condition": "Predicting a GOOD outcome ≥3 months",
+              "role": "RECOMMENDED",
+              "target": "NIHSS 0–1 at 24 h after revascularization (or 24 h after admission if not a revascularization candidate) = moderately reliable for a good outcome",
+              "notes": [
+                "The only AIS predictor rated above not reliable"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Mainali 2026 Table 3 #7 (p.752): weak recommendation; low quality evidence"
+              ],
+              "sources": [
+                "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3"
+              ]
+            },
+            {
+              "parameter": "Timing",
+              "condition": "AIS, including severe",
+              "role": "RECOMMENDED",
+              "target": "Avoid premature prognostication; no fixed window — set the observation period by expected evolution, confounders and completed imaging",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Mainali 2026 good practice statement 6 (Table 5, p.753): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3"
+              ]
+            },
+            {
+              "parameter": "Large hemispheric infarction",
+              "condition": "Before neurological decline",
+              "role": "RECOMMENDED",
+              "target": "Discuss prognosis and goals of care before deterioration where feasible, so there is time to decide on decompressive craniectomy",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Mainali 2026 good practice statement 10 (Table 5, p.753): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3"
+              ]
+            },
+            {
+              "parameter": "Recovery horizon",
+              "condition": "AIS survivors",
+              "role": "RECOMMENDED",
+              "target": "Severe AIS: incremental gains up to 6 months, sometimes longer; mild–moderate: most recovery within 3 months",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Mainali 2026 good practice statement 7 (Table 5, p.753): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3"
+              ]
+            },
+            {
+              "parameter": "Feeding tube and tracheostomy",
+              "condition": "AIS survivors",
+              "role": "RECOMMENDED",
+              "target": "Swallow recovery and feeding-tube removal likely, not certain, within several months; decannulation possible within several months",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Mainali 2026 good practice statements 8–9 (Table 5, p.753): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3"
+              ]
+            },
+            {
+              "parameter": "Not reliable alone",
+              "condition": "Function ≥3 months",
+              "role": "NOT_RECOMMENDED",
+              "target": "Age; admission NIHSS; admission hyperglycemia; collateral status; infarct size; hemorrhagic transformation; prior stroke; successful revascularization (for a good outcome)",
+              "notes": [],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Mainali 2026 Table 3 #1–6, #8–9 (p.752): all weak recommendation — very low quality evidence, except successful revascularization: moderate quality evidence"
+              ],
+              "sources": [
+                "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3"
+              ]
+            },
+            {
+              "parameter": "Prediction models — not reliable",
+              "condition": "Function ≥3 months",
+              "role": "NOT_RECOMMENDED",
+              "target": "ASTRAL; DRAGON / MR-DRAGON / MT-DRAGON; iScore (poor outcome); THRIVE / THRIVE-c / THRIVE-EVT (good outcome)",
+              "notes": [],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Mainali 2026 Table 3 #10–13 (p.752): all weak recommendation — ASTRAL: moderate quality; DRAGON scores: very low quality; iScore: moderate quality; THRIVE scores: low quality evidence",
+                "ASTRAL: the text on p.758 states low quality evidence (see verify)"
+              ],
+              "sources": [
+                "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Status epilepticus (Madzar 2026) — in-hospital mortality only",
+          "rows": [
+            {
+              "parameter": "Timing",
+              "condition": "SE of unclear etiology",
+              "role": "RECOMMENDED",
+              "target": "Defer neuroprognostication until the diagnostic workup for the cause is done (run it alongside seizure treatment)",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Madzar 2026 good practice statement 6 (Table 3, p.380): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Madzar D, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Status Epilepticus. Neurocrit Care 2026;44:365-383. doi:10.1007/s12028-025-02425-8"
+              ]
+            },
+            {
+              "parameter": "Known etiology",
+              "condition": "SE with an established cause",
+              "role": "RECOMMENDED",
+              "target": "Use validated predictors for the underlying disease (e.g., post–cardiac arrest predictors)",
+              "notes": [
+                "See consult-workups:post-cardiac-arrest-prognostication"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Madzar 2026 good practice statement 4 (Table 3, p.380): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Madzar D, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Status Epilepticus. Neurocrit Care 2026;44:365-383. doi:10.1007/s12028-025-02425-8"
+              ]
+            },
+            {
+              "parameter": "Confounders",
+              "condition": "Before prognosticating",
+              "role": "RECOMMENDED",
+              "target": "Prognosticate off residual sedation, toxic-metabolic encephalopathy and prolonged postictal encephalopathy, where feasible",
+              "notes": [
+                "Prolonged postictal impaired consciousness of 4–10 days has been reported (GPS 5 rationale, p.374)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Madzar 2026 good practice statement 5 (Table 3, p.380): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Madzar D, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Status Epilepticus. Neurocrit Care 2026;44:365-383. doi:10.1007/s12028-025-02425-8"
+              ]
+            },
+            {
+              "parameter": "RSE / SRSE counseling",
+              "condition": "Refractory or super-refractory SE",
+              "role": "RECOMMENDED",
+              "target": "Coma and dependence on an artificial airway and enteral nutrition may last days to months; recovery to or near baseline is feasible",
+              "notes": [],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Madzar 2026 good practice statements 2–3 (Table 3, p.380): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Madzar D, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Status Epilepticus. Neurocrit Care 2026;44:365-383. doi:10.1007/s12028-025-02425-8"
+              ]
+            },
+            {
+              "parameter": "Not reliable alone",
+              "condition": "In-hospital mortality",
+              "role": "NOT_RECOMMENDED",
+              "target": "Age; Charlson index; acute symptomatic or potentially fatal etiology; prior seizures/epilepsy; semiology; consciousness before treatment; SE duration; refractory SE; super-refractory SE / anesthetics; STESS; mSTESS; EMSE",
+              "notes": [
+                "Evidence was sufficient only for mortality — no recommendations on functional, cognitive or neuropsychiatric outcome (pp.380–381)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Madzar 2026 Table 3 (p.380): all weak recommendation — age, STESS, mSTESS: low quality; Charlson index, EMSE: moderate quality; the others: very low quality evidence"
+              ],
+              "sources": [
+                "Madzar D, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Status Epilepticus. Neurocrit Care 2026;44:365-383. doi:10.1007/s12028-025-02425-8"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Guillain–Barré syndrome (Busl 2023)",
+          "rows": [
+            {
+              "parameter": "Bulbar or limb weakness",
+              "condition": "Mechanical ventilation within 14 days of onset",
+              "role": "RECOMMENDED",
+              "target": "Moderately reliable: bulbar weakness; limb strength below antigravity in arms and legs (MRC, on admission or at nadir)",
+              "notes": [
+                "MRC thresholds varied between studies (p.572)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Busl 2023 p.572: bulbar weakness — weak recommendation; very low-quality evidence",
+                "Busl 2023 p.572: degree of motor weakness — weak recommendation; low-quality evidence"
+              ],
+              "sources": [
+                "Busl KM, et al. Guidelines for Neuroprognostication in Adults with Guillain–Barré Syndrome. Neurocrit Care 2023;38:564-583. doi:10.1007/s12028-023-01707-3"
+              ]
+            },
+            {
+              "parameter": "EGRIS",
+              "condition": "Mechanical ventilation within 14 days of onset",
+              "role": "RECOMMENDED",
+              "target": "Score 0–7 → predicted risk of respiratory failure 1–90%",
+              "notes": [
+                "Days from onset of weakness to admission: >7 = 0; 4–7 = 1; ≤3 = 2",
+                "Facial and/or bulbar weakness at admission: present = 1",
+                "MRC sum score at admission: 51–60 = 0; 41–50 = 1; 31–40 = 2; 21–30 = 3; ≤20 = 4",
+                "Scored at admission; predicts ventilation within the first week of admission (p.577)",
+                "Online tool: gbstools.erasmusmc.nl"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Busl 2023 p.577: weak recommendation; moderate-quality evidence (score: Table 4, p.576)"
+              ],
+              "sources": [
+                "Busl KM, et al. Guidelines for Neuroprognostication in Adults with Guillain–Barré Syndrome. Neurocrit Care 2023;38:564-583. doi:10.1007/s12028-023-01707-3"
+              ]
+            },
+            {
+              "parameter": "EGOS",
+              "condition": "Independent walking ≥3 months",
+              "role": "RECOMMENDED",
+              "target": "Moderately reliable when scored within 2 weeks of admission; score 1–7",
+              "notes": [
+                "Age at onset: >60 = 1; 41–60 = 0.5; ≤40 = 0",
+                "Diarrhea (≤4 weeks): present = 1",
+                "GBS disability score 2 weeks after entry: 0 or 1 = 1; 2 = 2; 3 = 3; 4 = 4; 5 = 5",
+                "Predicts inability to walk independently at 6 months; the guideline gives no score → probability table"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Busl 2023 p.578: weak recommendation; moderate-quality evidence (score: Table 5, p.577)"
+              ],
+              "sources": [
+                "Busl KM, et al. Guidelines for Neuroprognostication in Adults with Guillain–Barré Syndrome. Neurocrit Care 2023;38:564-583. doi:10.1007/s12028-023-01707-3"
+              ]
+            },
+            {
+              "parameter": "mEGOS",
+              "condition": "Independent walking ≥3 months",
+              "role": "RECOMMENDED",
+              "target": "Moderately reliable at admission (score 0–9) and at day 7 (score 0–12)",
+              "notes": [
+                "Age at onset: ≤40 = 0; 41–60 = 1; >60 = 2",
+                "Preceding diarrhea: present = 1",
+                "MRC sum score at admission: 51–60 = 0; 41–50 = 2; 31–40 = 4; ≤30 = 6",
+                "MRC sum score at day 7: 51–60 = 0; 41–50 = 3; 31–40 = 6; ≤30 = 9",
+                "Predicts inability to walk independently at 4 weeks, 3 months and 6 months; probabilities via the online tool (gbstools.erasmusmc.nl)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Busl 2023 p.578: weak recommendation; moderate-quality evidence (score: Table 6, p.578)"
+              ],
+              "sources": [
+                "Busl KM, et al. Guidelines for Neuroprognostication in Adults with Guillain–Barré Syndrome. Neurocrit Care 2023;38:564-583. doi:10.1007/s12028-023-01707-3"
+              ]
+            },
+            {
+              "parameter": "Acute-phase counseling",
+              "condition": "GBS",
+              "role": "RECOMMENDED",
+              "target": "Discuss the possible need for mechanical ventilation and enteral nutrition bypassing the oral route",
+              "notes": [
+                "10–30% need ventilation; of those, 7 of 10 need prolonged ventilation via tracheostomy, usually with a gastrostomy (GPS 2 rationale, p.571)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Busl 2023 good practice statement 2 (p.571): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Busl KM, et al. Guidelines for Neuroprognostication in Adults with Guillain–Barré Syndrome. Neurocrit Care 2023;38:564-583. doi:10.1007/s12028-023-01707-3"
+              ]
+            },
+            {
+              "parameter": "Not reliable",
+              "condition": "Ventilation, walking, function",
+              "role": "NOT_RECOMMENDED",
+              "target": "Ventilation ≤14 days: rapid progression; neck weakness; autonomic dysfunction; Sharshar model; Ning score. Walking ≥3 months: nadir disability grade; age; progression of weakness. Poor function ≥6 months: need for ventilation; axonal subtype; age; nadir disability grade. EGOS, mEGOS and EGRIS: not reliable for function",
+              "notes": [
+                "EGOS and mEGOS predict walking, not overall function; EGRIS predicts ventilation (pp.578–579)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Busl 2023 pp.573–579: all weak recommendation",
+                "Ventilation: rapid progression, neck weakness, autonomic dysfunction — very low-quality; Sharshar, Ning — low-quality evidence",
+                "Walking: nadir disability, age — low-quality; progression of weakness — very low-quality evidence",
+                "Function: ventilation, age, nadir disability — low-quality; axonal subtype — very low-quality; EGOS, mEGOS, EGRIS — low-quality evidence"
+              ],
+              "sources": [
+                "Busl KM, et al. Guidelines for Neuroprognostication in Adults with Guillain–Barré Syndrome. Neurocrit Care 2023;38:564-583. doi:10.1007/s12028-023-01707-3"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Moderate–severe TBI (Muehlschlegel 2024)",
+          "rows": [
+            {
+              "parameter": "Timing",
+              "condition": "msTBI",
+              "role": "RECOMMENDED",
+              "target": "No prognosis on injury features from the first 3 days; give ≥3 days of full critical care, ideally 1–2 weeks, before prognosticating",
+              "notes": [
+                "Exceptions: irreversible brainstem damage with imminent death, or documented wishes against critical care",
+                "Prognosis may stay uncertain after 2 weeks, especially if the patient remains unconscious"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "Muehlschlegel 2024 good practice statement 2 (p.464): strong recommendation, evidence cannot be graded"
+              ],
+              "sources": [
+                "Muehlschlegel S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Moderate–Severe Traumatic Brain Injury. Neurocrit Care 2024;40:448-476. doi:10.1007/s12028-023-01902-2"
+              ]
+            },
+            {
+              "parameter": "Bilateral nonreactive pupils on admission",
+              "condition": "In-hospital mortality; poor function ≥6 months",
+              "role": "RECOMMENDED",
+              "target": "Moderately reliable — only if assessed accurately, without confounding drugs or injuries",
+              "notes": [
+                "Confounders named: medication, orbital trauma, midbrain diffuse axonal injury, TBI-related seizures, prior surgery (p.464)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Muehlschlegel 2024 p.464: mortality — weak recommendation, low-quality of evidence",
+                "Muehlschlegel 2024 pp.467–468: function — weak recommendation; moderate-quality evidence"
+              ],
+              "sources": [
+                "Muehlschlegel S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Moderate–Severe Traumatic Brain Injury. Neurocrit Care 2024;40:448-476. doi:10.1007/s12028-023-01902-2"
+              ]
+            },
+            {
+              "parameter": "CRASH and IMPACT models",
+              "condition": "Mortality; poor function ≥6 months",
+              "role": "RECOMMENDED",
+              "target": "Moderately reliable: CRASH-basic / CRASH-CT (14-day mortality; function ≥6 months); IMPACT-core / extended / lab (6-month mortality; function ≥6 months)",
+              "notes": [
+                "CRASH-basic: age, GCS, pupils, major extracranial injury; CRASH-CT adds CT findings (p.470)",
+                "IMPACT-core: age, GCS motor score, pupils; extended adds hypotension, hypoxia, Marshall CT class, traumatic SAH, epidural hematoma; lab adds admission glucose and hemoglobin (pp.470–471)",
+                "Online calculators: CRASH (shows 95% CI); IMPACT at tbi-impact.org (no CI)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Muehlschlegel 2024 pp.470–473: all weak recommendation; moderate-quality evidence"
+              ],
+              "sources": [
+                "Muehlschlegel S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Moderate–Severe Traumatic Brain Injury. Neurocrit Care 2024;40:448-476. doi:10.1007/s12028-023-01902-2"
+              ]
+            },
+            {
+              "parameter": "Not reliable alone",
+              "condition": "Mortality or function",
+              "role": "NOT_RECOMMENDED",
+              "target": "Age; unilateral nonreactive pupil; GCS / motor GCS; hypotension; hypoxia; elevated ICP; major extracranial injury; AKI; positive alcohol test; hypernatremia; post-traumatic infarction; Marshall, Rotterdam, Helsinki and Stockholm CT scores",
+              "notes": [],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "Muehlschlegel 2024 pp.464–469 (clinical variables), pp.471–474 (CT scores); Table 2, p.454",
+                "Weak recommendation, mostly low-quality evidence; moderate-quality: age, unilateral pupil and GCS (function), major extracranial injury, Marshall and Helsinki CT (mortality); very low-quality: elevated ICP (mortality), hypernatremia",
+                "Helsinki CT for 6-month poor outcome printed as \"strong recommendation; low-quality evidence\" (p.473) — see verify"
+              ],
+              "sources": [
+                "Muehlschlegel S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Moderate–Severe Traumatic Brain Injury. Neurocrit Care 2024;40:448-476. doi:10.1007/s12028-023-01902-2"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "None of the five guidelines rates any predictor or model \"reliable\"",
+        "A moderately reliable single predictor counts only alongside another reliable or moderately reliable predictor; the outcome is then \"likely\", with \"substantial\" uncertainty. Moderately reliable probability models (EGRIS, EGOS, mEGOS, CRASH, IMPACT) may be used alone — present the result as an objective estimate subject to considerable uncertainty (Muehlschlegel p.451; Madzar p.367)",
+        "EGRIS overpredicted ventilation in IGOS (observed 10% vs predicted 21%, needing recalibration); AUC 0.63 in a Peruvian cohort (Busl p.577)",
+        "Age >85 after thrombectomy: treat trial outcomes as a best-case estimate and present the full range of outcomes (Mainali p.753)"
+      ],
+      "keyNumbers": [
+        "ICH: Defer neuroprognostication ≥48–72 h of ICU admission, except the most clinically devastated",
+        "msTBI: No prognosis on injury features from the first 3 days; give ≥3 days of full critical care, ideally 1–2 weeks, before prognosticating",
+        "Early neurological improvement (ENI): NIHSS 0–1 at 24 h after revascularization (or 24 h after admission if not a revascularization candidate) = moderately reliable for a good outcome",
+        "EGRIS: Score 0–7 → predicted risk of respiratory failure 1–90%",
+        "SE of unclear etiology: Defer neuroprognostication until the diagnostic workup for the cause is done (run it alongside seizure treatment)"
+      ],
+      "verify": [
+        "Mainali 2026 ASTRAL grade: Table 3 #10 (p.752) states moderate quality evidence; the PICO 10 text (p.758) states low quality evidence — confirm which (AIS row \"Prediction models — not reliable\")",
+        "Muehlschlegel 2024 Helsinki CT model for poor outcome at 6 months (p.473) is printed as \"strong recommendation; low-quality evidence\", unlike every other predictor (weak) — check for an erratum (TBI row \"Not reliable alone\")"
+      ],
+      "relatedIds": [
+        "consult-workups:post-cardiac-arrest-prognostication",
+        "acute-neuro:guillain-barre-syndrome",
+        "acute-neuro:refractory-super-refractory-se",
+        "consult-workups:brain-death-determination"
+      ],
+      "sources": [
+        "Hwang DY, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Intracerebral Hemorrhage. Neurocrit Care 2024;40:395-414. doi:10.1007/s12028-023-01854-7",
+        "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3",
+        "Madzar D, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Status Epilepticus. Neurocrit Care 2026;44:365-383. doi:10.1007/s12028-025-02425-8",
+        "Busl KM, et al. Guidelines for Neuroprognostication in Adults with Guillain–Barré Syndrome. Neurocrit Care 2023;38:564-583. doi:10.1007/s12028-023-01707-3",
+        "Muehlschlegel S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Moderate–Severe Traumatic Brain Injury. Neurocrit Care 2024;40:448-476. doi:10.1007/s12028-023-01902-2"
+      ],
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }
