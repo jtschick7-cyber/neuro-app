@@ -504,3 +504,39 @@ Decided by Jason in chat 2026-11-08 (review: planning/REVIEW_TASKS_2026-11-08.md
 - Superseded: review task 1.4 (ICH score NCS caveat; approved, then superseded by the ich-score cut) and task 3.1 (TNK 1-kg option; moot without the card or calculator UI). NCS ICH prognosis guidance can go on the planned neuroprognostication card (review task 4.2).
 - Planned items: dropped NEURO_APP_TASKS 7.4 (specimen handling, high-dose thiamine, Ma1/Ma2 ordering), 7.6 (SS vs NMS view), 7.10 (lab order codes); kept 7.8 as review task 3.7.
 - Cross-reference wording: see REVIEW_TASKS_2026-11-08 §2.1b.
+
+## 2026-11-09 — Review item R2 (restart anticoagulation after ICH)
+
+Approved by Jason in chat 2026-11-09. Draft: `planning/drafts/review-2026-11-08/R2/` (base: review-2026-11-08 export packet). Entry `lastReviewed: "UNREVIEWED"`.
+
+| Draft | Findings | Change |
+|---|---|---|
+| `vascular-antithrombotics.restart-antithrombotic-after-ich.json` | F1–F9, F12, F13 | `rules[2].evidenceNote` += ESO-EANS 2025 PICO 6.2 (no evidence-based recommendation; expert consensus 14/15: DOAC may be considered); `rules[4].evidenceNote` += ESO PICO 6.3 expert consensus (CAA example); `pearls[0]` → AHA ICH 2022 §9.1.1 recurrence HRs; pearls added: ESO "may not benefit" criteria (ungraded), PRESTIGE-AF, ENRICH-AF (unpublished), lobar ICH/cSAH; searchTerms += PRESTIGE-AF, ENRICH-AF, microbleeds; relatedIds += consult-workups:ich-etiology-workup; sources += ESO-EANS 2025, PRESTIGE-AF, ENRICH-AF slides, ESC press release |
+
+Rules adopted:
+- Trial results go in `pearls`, never `rules`. A guideline that agrees in direction but grades differently goes in the rule's `evidenceNote`, not `esoDiffers`. `evidenceLevel` stays on the current graded statement (AHA ICH 2022).
+- Unpublished trial data may be encoded as a labelled pearl when every figure is confirmed against primary presentation material read in full. The publication recheck is tracked here and in REVIEW_TASKS, not in `verify[]`.
+
+### Version
+| registry | from | to | level |
+|---|---|---|---|
+| vascular-antithrombotics | 1.0.1 | 1.1.0 | MINOR (new sources and evidence statements; no rule, tier or evidence level changed) |
+
+### ACCEPT (not raised again)
+- F10: ESO-EANS 2025 PICO 6.4 (antiplatelet) agrees with AHA Rec 2; not added (outside R2).
+- F11: 7–8-week timing kept; still the only graded timing statement (ESO-EANS 2025 has none).
+- B2: DOAC over VKA left out as common knowledge.
+- B3: A3ICH has no results (recruiting, 2026-11-09).
+- B4: AHA ICH 2022 is still the current AHA/ASA ICH guideline.
+
+### PARK
+- F5b: recheck `pearls[3]`–`[4]` (ENRICH-AF) against the peer-reviewed publication.
+- B1: ENRICH-AF major bleeding by label-based dose eligibility (60 mg HR 3.95 vs 30 mg HR 0.97, interaction p=0.002; slide 17). Not encoded; revisit at publication.
+
+### Open items
+- `verify[]`: none.
+- PARK F5b and B1 (above).
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R2/README.md`.
+
+Update 2026-11-11: signed by Jason (`restart-antithrombotic-after-ich`, `lastReviewed` 2026-11-11) and released: vascular-antithrombotics 1.1.1, content 2.2.0+4e5af9ee. The sign-off/release open item above is closed; PARK F5b and B1 stay open.
