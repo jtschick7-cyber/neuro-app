@@ -949,3 +949,51 @@ Update 2026-11-11 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, ref
 - Open: sign-off and release, when Jason asks.
 
 Update 2026-11-11 (2): signed by Jason (`neuroprognostication`, `lastReviewed` 2026-11-11) and released: reference-cards 1.4.1, content 2.2.1+e56cc26d. The sign-off/release open item above is closed; PARK items C2, D8, A4, A5 and A7 stay open.
+
+## 2026-11-10 — Review item R13 (neurosyphilis entry)
+
+Approved by Jason in chat 2026-11-10 ("approve as recommended"). Draft: `planning/drafts/review-2026-11-08/R13/` (new entry; no base). Entry `lastReviewed: "UNREVIEWED"`.
+
+Finding: the app had no neurosyphilis, ocular or otic syphilis content. Sources: CDC STI Treatment Guidelines 2021 (MMWR Recomm Rep 2021;70[RR-4]) and CDC Laboratory Recommendations for Syphilis Testing 2024 (MMWR Recomm Rep 2024;73[RR-1]). CDC 2021 is still current (web check 2026-11-10); its 2023 erratum does not touch the neurosyphilis pages.
+
+| Draft | Findings | Change |
+|---|---|---|
+| `acute-neuro.neurosyphilis.json` | N1–N12, K1–K5 | New entry `neurosyphilis` (CNS_INFECTION): LP indications (neuro signs; ocular with CN dysfunction; ocular symptoms with normal exam; tertiary; treatment failure) and when LP is not needed (isolated ocular with findings; isolated otic); CSF interpretation (CSF-VDRL specific/insensitive, diagnostic with neuro signs; CSF FTA-ABS sensitive, negative excludes; CSF TP-PA with both CDC views; HIV CSF WBC >20/mm³); regimens (aqueous PCN G 18–24 MU/day × 10–14 d; procaine + probenecid × 10–14 d; ceftriaxone 1–2 g × 10–14 d for penicillin allergy; optional benzathine × 1–3 wk after); penicillin allergy (low/high-risk history, skin test → amoxicillin 250 mg challenge → desensitization by allergist; pregnancy penicillin only); HIV testing; follow-up (RPR normalization predicts CSF normalization; failure definition); stage regimens when CSF normal; 7 pitfalls; 5 keyNumbers; 5 relatedIds; 2 sources |
+
+Rules adopted:
+- CDC STI guideline regimens are ungraded → `NOT_GRADED`, with CDC's label ("Recommended Regimen", "Alternative Regimen", "Limited data indicate", "can be considered") quoted in `evidenceNote`.
+- Where CDC documents disagree (CSF TP-PA), both views are shown and neither is presented as an equal option.
+- Penicillin doses are encoded in `UNITS` as integers.
+
+Overlap check (C1): no duplicate and no contradiction. A search of all `data/*.json` for "syphilis", "VDRL", "FTA-ABS" and "treponem" found 14 lines in 6 entries, all of them test-ordering, history or differential mentions with no regimen, dose or LP rule: `acute-neuro:autoimmune-encephalitis` (workup[8]); `acute-neuro:viral-encephalitis` (immediateActions[2] and workup[1], CSF "VDRL" in the LP panel); `consult-workups:young-stroke-workup` (keyHistory[3], workup[9], decisionRules[0]); `consult-workups:myelopathy-workup` (differential[6], workup[5]); `consult-workups:acute-vision-loss` (differential[6], workup[7]); `consult-workups:cns-vasculitis-workup` (keyHistory[4], differential[3], workup[4], workup[5]). `acute-neuro:cns-infection-immunocompromised` and `consult-workups:rapidly-progressive-dementia` have no syphilis content. One thing to know, not a contradiction: viral-encephalitis lists CSF VDRL alone in its LP panel, and the new entry says CSF-VDRL is insensitive (a negative doesn't exclude neurosyphilis). No entry was changed. Rendering check (C2): the `UNITS` structured doses (3000000–4000000; 18000000–24000000; 2400000) are not displayed anywhere; no component reads the structured `dose[]` amounts, so only `doseText` shows ("18–24 million units/day as 3–4 million units IV q4h…", "2.4 million units IM…"). Five treatment rows render with First line, Alternative ×2, Adjunct and Supportive badges and five "Not graded" badges; ceftriaxone shows "Stocked", the other four "Institution varies". `definitions[10]` and `keyNumbers[1]` wrap cleanly at 375 px with no horizontal page scroll. Search finds the entry first for "neurosyphilis", "ocular syphilis", "VDRL", "FTA-ABS", "desensitization" and "otosyphilis". All five related links point at existing entries. Nothing was changed to affect rendering.
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| acute-neuro | 2.4.1 | 2.5.0 | MINOR (new entry) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- C1: syphilis content in other entries (back-links and any duplicates).
+- A4: Bicillin L-A shortage details (secondary sources; listed only as institution-varies).
+- A6: CSF specimen handling for syphilis serology (LAB24 p.13).
+- A8: back-links to this entry from related entries.
+- A9: delayed-dose rules for weekly benzathine (CDC21 p.44).
+
+### ACCEPT (not raised again)
+- A1: stage features beyond timing, partner management, PrEP details, direct-detection and point-of-care tests not encoded.
+- A2: stage-based titer schedules not encoded (no neurosyphilis-specific schedule in the sources).
+- A3: skin-test reagents and the desensitization protocol not encoded.
+- A5: CDC 2021 erratum does not affect encoded lines.
+- A7: CSF RPR not encoded.
+- A10: adults only.
+- A11: formulary statuses as approved (ceftriaxone AVAILABLE; others INSTITUTION_VARIES).
+- C2 (pending Claude Code's report): UNITS integers as encoded.
+
+### Open items
+- `verify[]`: none.
+- Jason: review, then `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R13/README.md`.
+
+Encoded 2026-11-11 on `content-r13-2026-11-10` (base `a620fcb`). The draft gave no numbers ("as found → next MINOR"); the registry was at 2.4.1 after R10, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11: signed by Jason (`neurosyphilis`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.5.1, content 2.2.1+d25d664b. The sign-off/release open item above is closed; PARK items C1, A4, A6, A8 and A9 stay open.

@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "2.4.1",
+  "version": "2.5.1",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -6728,6 +6728,407 @@
         "Dihydroergotamine mesylate injection US prescribing information. Provepharm; revised 2/2025"
       ],
       "lastReviewed": "2026-11-08"
+    },
+    {
+      "id": "neurosyphilis",
+      "title": "Neurosyphilis, ocular and otic syphilis (adult)",
+      "keyNumbers": [
+        "Aqueous crystalline penicillin G: 18–24 million units/day as 3–4 million units IV q4h or continuous infusion × 10–14 days",
+        "Procaine penicillin G + probenecid: 2.4 million units IM once daily + 500 mg PO 4 times/day, both × 10–14 days — only if adherence can be ensured",
+        "Ceftriaxone (penicillin allergy): 1–2 g IV or IM daily × 10–14 days",
+        "HIV: CSF WBC >5/mm³ can reflect HIV alone; a >20/mm³ cutoff may improve neurosyphilis specificity",
+        "Fourfold titer change (2 dilutions, e.g., 1:16 → 1:4) is significant; use the same test (RPR and VDRL titers not interchangeable; RPR often slightly higher), ideally the same lab"
+      ],
+      "category": "CNS_INFECTION",
+      "searchTerms": [
+        "neurosyphilis",
+        "ocular syphilis",
+        "otosyphilis",
+        "otic syphilis",
+        "syphilitic uveitis",
+        "CSF VDRL",
+        "FTA-ABS",
+        "RPR",
+        "treponemal",
+        "penicillin G",
+        "penicillin allergy",
+        "desensitization",
+        "tabes dorsalis",
+        "general paresis",
+        "meningovascular syphilis",
+        "Jarisch-Herxheimer"
+      ],
+      "presentation": [
+        "Early neurosyphilis (first months–years): cranial nerve dysfunction, meningitis, meningovascular syphilis, stroke, acute altered mental status; late (10 to >30 years): tabes dorsalis, general paresis — CNS involvement can occur at any stage",
+        "Ocular syphilis: often panuveitis; also conjunctivitis, anterior uveitis, posterior interstitial keratitis, optic neuropathy, retinal vasculitis, neuroretinitis — any stage, with or without CNS involvement; can cause permanent vision loss",
+        "Otosyphilis: tinnitus, vertigo, sensorineural hearing loss — unilateral or bilateral, can be sudden and progress rapidly; can be permanent"
+      ],
+      "definitions": [
+        "Serologic diagnosis needs both a nontreponemal (RPR/VDRL) and a treponemal test (TP-PA, EIA/CIA, FTA-ABS); either alone can misclassify",
+        "Reverse algorithm (EIA/CIA first): reactive → reflex quantitative RPR; RPR nonreactive → second treponemal test (TP-PA preferred). TP-PA reactive: previously treated → nothing more unless re-exposure; untreated → treat as late latent / unknown duration. TP-PA nonreactive + low risk → no further workup or treatment",
+        "Fourfold titer change (2 dilutions, e.g., 1:16 → 1:4) is significant; use the same test (RPR and VDRL titers not interchangeable; RPR often slightly higher), ideally the same lab",
+        "Neurosyphilis diagnosis = CSF tests (cell count, protein, CSF-VDRL) + reactive serum nontreponemal and treponemal tests + neurologic signs or symptoms; no single test is diagnostic in all cases",
+        "CSF-VDRL: highly specific, insensitive; the only FDA-cleared CSF test. Reactive CSF-VDRL (no blood contamination) + neurologic signs or symptoms = diagnostic",
+        "CSF-VDRL negative but neurologic signs, reactive serology, and lymphocytic pleocytosis or high protein → neurosyphilis still possible: send CSF FTA-ABS (highly sensitive, less specific). Negative CSF FTA-ABS makes neurosyphilis highly unlikely",
+        "CSF TP-PA: CDC 2021 — sensitivity and specificity appear similar to CSF FTA-ABS; CDC 2024 lab — more data needed before it can be recommended off-label",
+        "HIV: CSF WBC >5/mm³ can reflect HIV alone; a >20/mm³ cutoff may improve neurosyphilis specificity",
+        "Ocular and otic syphilis: CSF-VDRL sensitivity <50% (ocular) and <10% (otic); no CSF treponemal test is recommended without neurologic signs",
+        "Penicillin allergy, low-risk history: GI symptoms, headache, pruritus without rash, localized rash, delayed rash (>24 h), symptoms unknown, family history only, or on the record but denied → amoxicillin oral challenge can document no allergy; 3rd-generation cephalosporins are often given without testing",
+        "Penicillin allergy, high-risk history: anaphylaxis within 6 h of a dose (within the past 10 years), SJS/TEN/DRESS/AGEP, or other severe non-IgE reactions (kidney or liver injury, hemolytic anemia, thrombocytopenia) → no β-lactam, skin test or challenge in an ambulatory setting; allergist. After SJS/TEN or other severe non-IgE reactions: not a candidate for skin test or challenge; avoid penicillin and all β-lactams indefinitely",
+        "No neurologic, ocular or otic findings (or normal CSF): treat by stage — primary, secondary, early latent: benzathine penicillin G 2.4 million units IM ×1; late latent / unknown duration, or tertiary with normal CSF: 2.4 million units IM weekly ×3 (7.2 million units total)"
+      ],
+      "immediateActions": [
+        {
+          "order": 1,
+          "window": "Neurologic signs",
+          "action": "Reactive serology + cranial nerve dysfunction, meningitis, stroke, acute or chronic altered mental status, cognitive dysfunction, motor or sensory deficit, or loss of vibration sense → LP before treatment"
+        },
+        {
+          "order": 2,
+          "window": "Ocular symptoms",
+          "action": "Full ocular exam incl. cranial nerves; urgent ophthalmology. Cranial nerve dysfunction → LP. Isolated ocular findings confirmed on exam → no LP needed; treat as neurosyphilis even if CSF is normal. Symptoms but normal eye exam → LP may help"
+        },
+        {
+          "order": 3,
+          "window": "Isolated otic symptoms",
+          "action": "Normal neuro exam → no LP (CSF likely normal; doesn't change management); otologic exam, ENT; treat as neurosyphilis"
+        },
+        {
+          "order": 4,
+          "window": "At diagnosis",
+          "action": "HIV test; offer HIV PrEP if negative"
+        },
+        {
+          "order": 5,
+          "window": "After diagnosis",
+          "action": "Report to the local or state health department (provider and/or lab, per state law)"
+        }
+      ],
+      "workup": [
+        {
+          "test": "Quantitative serum RPR or VDRL (endpoint titer) + treponemal test",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Baseline titer for follow-up — use the same test type afterwards",
+            "Nonreactive undiluted test despite signs of syphilis → ask the lab to rule out prozone (dilution series)"
+          ]
+        },
+        {
+          "test": "LP: cell count, protein, CSF-VDRL",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Neurologic signs or symptoms",
+            "Ocular syphilis with cranial nerve dysfunction or other neurologic findings",
+            "Ocular symptoms with a normal eye exam (may help)",
+            "Tertiary syphilis (before therapy)",
+            "Suspected treatment failure (≥4-fold titer rise or recurrent signs) with neurologic findings or no recent sexual exposure"
+          ],
+          "notes": [
+            "Avoid blood contamination — causes false-positive CSF tests",
+            "Not routine in primary, secondary or latent syphilis without neurologic, ocular or otic findings, with or without HIV"
+          ]
+        },
+        {
+          "test": "CSF FTA-ABS",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "CSF-VDRL negative with neurologic signs, reactive serology, and pleocytosis or high protein"
+          ],
+          "notes": [
+            "Off-label; send to a lab experienced with CSF testing",
+            "Value is the negative result; a positive result is not diagnostic"
+          ]
+        },
+        {
+          "test": "HIV test",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "HIV and syphilis: thorough neurologic, ocular and otic exam; CSF only if the neurologic exam is abnormal"
+          ]
+        },
+        {
+          "test": "Ophthalmologic slit-lamp exam",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Ocular symptoms"
+          ],
+          "notes": []
+        },
+        {
+          "test": "Otologic exam",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Auditory or vestibular symptoms"
+          ],
+          "notes": []
+        },
+        {
+          "test": "Follow-up serum RPR or VDRL (same test as baseline)",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "After treatment"
+          ],
+          "notes": [
+            "Serum RPR normalization predicts CSF normalization — repeat LP unnecessary with serologic and clinical response (HIV-negative, or HIV on ART)",
+            "HIV: CSF parameters may normalize more slowly, especially with advanced immunosuppression",
+            "Persistent or recurrent signs, or ≥4-fold titer rise sustained >2 weeks → reinfection or treatment failure: re-evaluate (CSF if neurologic findings) and retest HIV"
+          ]
+        }
+      ],
+      "treatment": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Aqueous crystalline penicillin G",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "18–24 million units/day as 3–4 million units IV q4h or continuous infusion × 10–14 days",
+          "dose": [
+            {
+              "label": "Dose (intermittent)",
+              "amountMin": 3000000,
+              "amountMax": 4000000,
+              "unit": "UNITS",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "q4h"
+              ],
+              "duration": [
+                "10–14 days"
+              ]
+            },
+            {
+              "label": "Daily total",
+              "amountMin": 18000000,
+              "amountMax": 24000000,
+              "unit": "UNITS",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Divided q4h or continuous infusion"
+              ],
+              "duration": [
+                "10–14 days"
+              ]
+            }
+          ],
+          "notes": [
+            "Same regimen for ocular syphilis (even if CSF is normal) and otosyphilis",
+            "Same regimen with HIV",
+            "Pregnancy: penicillin only — desensitize if allergic"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "CDC 2021: Recommended Regimen (p.46); no grade assigned",
+            "Ocular: \"treated similarly to neurosyphilis, even if a CSF examination is normal\"; otic: \"same regimen as for neurosyphilis\" (p.46); HIV p.49; pregnancy p.47"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Procaine penicillin G + probenecid",
+          "routes": [
+            "IM",
+            "PO"
+          ],
+          "doseText": "2.4 million units IM once daily + 500 mg PO 4 times/day, both × 10–14 days — only if adherence can be ensured",
+          "dose": [
+            {
+              "label": "Procaine penicillin G",
+              "amountMin": 2400000,
+              "amountMax": 2400000,
+              "unit": "UNITS",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once daily"
+              ],
+              "duration": [
+                "10–14 days"
+              ]
+            },
+            {
+              "label": "Probenecid",
+              "amountMin": 500,
+              "amountMax": 500,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "4 times/day"
+              ],
+              "duration": [
+                "10–14 days"
+              ]
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "CDC 2021: Alternative Regimen, \"if compliance with therapy can be ensured\" (p.46); no grade assigned"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Ceftriaxone (penicillin allergy)",
+          "routes": [
+            "IV",
+            "IM"
+          ],
+          "doseText": "1–2 g IV or IM daily × 10–14 days",
+          "dose": [
+            {
+              "label": "Dose",
+              "amountMin": 1,
+              "amountMax": 2,
+              "unit": "G",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once daily"
+              ],
+              "duration": [
+                "10–14 days"
+              ]
+            }
+          ],
+          "notes": [
+            "Cross-reactivity of 3rd-generation cephalosporins in IgE-mediated penicillin allergy <1% (CDC: negligible)",
+            "If concern about ceftriaxone safety: penicillin skin test, then desensitization with a specialist if positive",
+            "Pregnancy: not an option — data insufficient; desensitize to penicillin",
+            "HIV: same option (small observational studies, 1–2 g IV daily × 10–14 days)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "CDC 2021: \"Limited data indicate\" ceftriaxone \"can be used as an alternative\" (p.47); HIV p.49; no grade assigned",
+            "Cross-reactivity <1% p.57; pregnancy p.51"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Benzathine penicillin G after the IV or procaine course",
+          "routes": [
+            "IM"
+          ],
+          "doseText": "2.4 million units IM weekly × 1–3 weeks after completing the neurosyphilis regimen — can be considered, for a total duration comparable to latent syphilis treatment",
+          "dose": [
+            {
+              "label": "Dose",
+              "amountMin": 2400000,
+              "amountMax": 2400000,
+              "unit": "UNITS",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once weekly"
+              ],
+              "duration": [
+                "1–3 weeks"
+              ]
+            }
+          ],
+          "notes": [
+            "Never the neurosyphilis treatment by itself"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "CDC 2021: \"can be considered\" (p.46); no grade assigned"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "SUPPORTIVE",
+          "agent": "Penicillin allergy: skin test → amoxicillin challenge → desensitization",
+          "routes": [
+            "NON_PHARM",
+            "PO"
+          ],
+          "doseText": "Skin test (major + minor determinants); if negative, observed amoxicillin 250 mg PO challenge (1 h observation), then penicillin. Positive skin test and no alternative → allergist desensitization in a monitored inpatient setting",
+          "dose": [
+            {
+              "label": "Amoxicillin oral challenge",
+              "amountMin": 250,
+              "amountMax": 250,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Desensitization is required when penicillin allergy is documented and no alternative exists (e.g., pregnancy, neurosyphilis)",
+            "No antihistamines within 7 days before skin testing",
+            "Skin testing in pregnancy is considered safe; oral challenge only where support services are available",
+            "High-risk history (see definitions) → no skin test or challenge; allergist"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "CDC 2021: Management of Persons Who Have a History of Penicillin Allergy, pp.57–59 (validation steps p.57; allergist, monitored inpatient p.58; antihistamines, pregnancy, desensitization p.59); no grade assigned"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        }
+      ],
+      "pitfalls": [
+        "Benzathine penicillin alone is not a neurosyphilis regimen (poor CNS levels); Bicillin C-R (benzathine + procaine) is not appropriate for any stage — check the product name",
+        "Fever, headache, myalgia within 24 h of starting therapy = Jarisch-Herxheimer reaction, not penicillin allergy; antipyretics treat symptoms but don't prevent it. In pregnancy it can trigger labor — don't delay treatment",
+        "Systemic steroids are often used for ocular and otic syphilis but are not proven beneficial",
+        "Treponemal tests stay reactive for life in most (15–25% treated in the primary stage revert); don't use treponemal titers to judge response",
+        "CSF abnormalities are common in early syphilis without neurologic findings and have unknown significance — no routine LP",
+        "HIV: CD4 ≤350 or RPR ≥1:32 is linked to CSF abnormalities, but LP-guided treatment without neurologic signs hasn't improved outcomes — LP only for an abnormal neuro exam",
+        "A reactive CSF FTA-ABS doesn't confirm neurosyphilis: specificity 55–100% in syphilis without symptomatic neurosyphilis (serum antibody crossing an inflamed blood–brain barrier)"
+      ],
+      "escalateWhen": [
+        "Suspected ocular syphilis → immediate ophthalmology referral and co-management",
+        "Otosyphilis → co-manage with ENT",
+        "Positive penicillin skin test, or high-risk allergy history → allergist (desensitization) + ID; no other neurosyphilis regimen is adequately evaluated",
+        "Pregnancy → penicillin only (desensitize if allergic); involve obstetrics",
+        "Tertiary or cardiovascular syphilis → ID (some treat all cardiovascular syphilis with a neurosyphilis regimen)",
+        "Complex titer interpretation → STD Clinical Consultation Network (stdccn.org)"
+      ],
+      "institutionVaries": [
+        "Lab serology algorithm (traditional vs reverse) and whether CSF FTA-ABS is sent out",
+        "Benzathine penicillin G (Bicillin L-A) availability — check pharmacy and current shortage notices",
+        "Penicillin skin testing / allergy service availability",
+        "Health department reporting and partner services (Michigan)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:cns-infection-immunocompromised",
+        "acute-neuro:bacterial-meningitis",
+        "consult-workups:acute-vision-loss",
+        "consult-workups:cns-vasculitis-workup",
+        "consult-workups:rapidly-progressive-dementia"
+      ],
+      "sources": [
+        "Workowski KA, et al. Sexually Transmitted Infections Treatment Guidelines, 2021. MMWR Recomm Rep 2021;70(No. RR-4):1-187. doi:10.15585/mmwr.rr7004a1",
+        "Papp JR, et al. CDC Laboratory Recommendations for Syphilis Testing, United States, 2024. MMWR Recomm Rep 2024;73(No. RR-1):1-32. doi:10.15585/mmwr.rr7301a1"
+      ],
+      "lastReviewed": "2026-11-11"
     }
   ]
 }
