@@ -995,3 +995,5 @@ Overlap check (C1): no duplicate and no contradiction. A search of all `data/*.j
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R13/README.md`.
 
 Encoded 2026-11-11 on `content-r13-2026-11-10` (base `a620fcb`). The draft gave no numbers ("as found → next MINOR"); the registry was at 2.4.1 after R10, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11: signed by Jason (`neurosyphilis`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.5.1, content 2.2.1+d25d664b. The sign-off/release open item above is closed; PARK items C1, A4, A6, A8 and A9 stay open.
