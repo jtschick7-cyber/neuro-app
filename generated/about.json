@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+1ebce094",
+  "contentVersion": "2.2.1+33071d2e",
   "builtAt": "2026-11-11",
   "registries": [
     {
@@ -97,11 +97,11 @@
     {
       "id": "reference-cards",
       "title": "Reference Cards",
-      "version": "1.4.1",
+      "version": "1.5.1",
       "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-11",
-      "entries": 5,
-      "reviewed": 5,
+      "entries": 6,
+      "reviewed": 6,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
@@ -438,6 +438,13 @@
       "year": 2024,
       "citedBy": [
         "neural-antibodies:anna3-dach1"
+      ]
+    },
+    {
+      "citation": "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3",
+      "year": 2022,
+      "citedBy": [
+        "reference-cards:boston-criteria-caa"
       ]
     },
     {

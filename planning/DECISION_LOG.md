@@ -1155,3 +1155,5 @@ Rendering check (C1): in the dev app at 375 px, the card shows 3 sections in the
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R16/README.md`.
 
 Encoded 2026-11-11 on `content-r16-2026-11-11` (base `86fbb76`). The draft gave no numbers ("as found → next MINOR"); the registry was at 1.4.1 after R12, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11: signed by Jason (`boston-criteria-caa`, `lastReviewed` 2026-11-11) and released: reference-cards 1.5.1, content 2.2.1+33071d2e. The sign-off/release open item above is closed; PARK items B3, B5, B6, B9, B11, B12 and C2 stay open.
