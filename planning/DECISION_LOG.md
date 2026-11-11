@@ -1109,3 +1109,51 @@ Overlap check (C1): no duplicate and no contradiction. A search of all `data/*.j
 Encoded 2026-11-11 on `content-r15-2026-11-11` (base `07662c6`). The draft gave no numbers ("as found → next MINOR"); the registry was at 2.5.1 after R13, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
 
 Update 2026-11-11: signed by Jason (`lyme-neuroborreliosis`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.6.1, content 2.2.1+1ebce094. The sign-off/release open item above is closed; PARK items C1, A3, A5, A6, A7, A8 and A12 stay open.
+
+## 2026-11-11 — Review item R16 (Boston criteria v2.0 card)
+
+Approved by Jason in chat 2026-11-11 ("Approve as recommended"). Draft: `planning/drafts/review-2026-11-08/R16/` (new entry; no base). Entry `lastReviewed: "UNREVIEWED"`.
+
+Finding: the app had no Boston criteria content; `ich-etiology-workup` only names CAA in its differential. Source: Charidimou 2022 (Lancet Neurol), published article; cited by Panel, table and journal page. No newer version of the criteria was found (web search 2026-11-11).
+
+| Draft | Findings | Change |
+|---|---|---|
+| `reference-cards.boston-criteria-caa.json` | N1–N5, K1–K5, V1–V3 | New card `boston-criteria-caa`, 3 row-list sections: Criteria (applies to age ≥50 with spontaneous ICH, TFNE or cognitive impairment/dementia; probable = ≥2 strictly lobar hemorrhagic lesions or 1 + 1 white matter feature; possible = 1 lobar hemorrhagic lesion or 1 white matter feature; exclusions; pathology-based categories), Lesion definitions (severe CSO-PVS >20; WMH multispot >10; multifocal cSS; acute cSAH near cSS), Accuracy vs autopsy for probable CAA (all 74.5% / 95.0%; ICH 90.2% / 92.9%; non-ICH 55.1% / 96.2%); 5 pitfalls; 5 keyNumbers; no verify items; 3 relatedIds; 1 source |
+
+Rules adopted:
+- Diagnostic criteria and lesion definitions on a reference card use role TARGET; diagnostic accuracy figures use EVIDENCE_SUMMARY; both NOT_GRADED, with the source location in `evidenceNote`.
+- Cite the published version of a paper, not the author manuscript: labels and pages differ (here Table 2 → Panel, Table 5 → Table 4), and the manuscript had a cut-off footnote and two wording differences.
+
+Rendering check (C1): in the dev app at 375 px, the card shows 3 sections in the order Criteria, Lesion definitions, Accuracy vs autopsy. The 9 criteria and definition rows carry a filled blue "Target" badge; on a diagnostic criterion ("Target — Probable CAA", "Target — Exclusions") the word reads a little oddly, since it suggests a treatment goal. The 3 accuracy rows carry an outlined grey "Evidence summary" badge and their figures are set in italics, so they are clearly distinct from the Target rows. All 12 rows show "Not graded". The long Probable CAA target and `keyNumbers[0]` wrap cleanly with no horizontal page scroll; "≥", ">" and "T2*" display correctly. Search finds the card first for "Boston", "cSS", "perivascular" and "TFNE", second for "siderosis" (after aria-anti-amyloid) and third for "CAA" (after caa-related-inflammation and ich-etiology-workup). All three related links point at existing entries. Nothing was changed to affect rendering. Overlap with existing entries (C2): no Boston criteria content elsewhere; nothing duplicates or contradicts the card. A search of `data/` for "Boston", "probable CAA", "possible CAA", "siderosis" and "perivascular" found: `consult-workups:caa-related-inflammation` keyNumbers[0] and decisionRules[0]–[1] "Probable CAA-ri — sensitivity 82%, specificity 97%" / "Possible CAA-ri — sensitivity 82%, specificity 68%" (the Auriel criteria for CAA-ri, a different diagnosis from the card's probable/possible CAA) and differential[0].clues[0] (cortical superficial siderosis as an imaging clue); `consult-workups:ich-etiology-workup` differential[1].clues[0] "Lobar, older age, lobar microbleeds, cortical superficial siderosis"; `vascular-antithrombotics:restart-antithrombotic-after-ich` pearls[0]–[1] (recurrence hazard ratios and ESO-EANS wording that mention siderosis); `consult-workups:aria-anti-amyloid` (ARIA-H siderosis grading and stop rules, eight lines); `neural-antibodies:gfap` (perivascular enhancement). None states a Boston criterion, cut-off or accuracy figure. One thing to know: "probable" and "possible" now label two different criteria sets (CAA here, CAA-ri there) with different accuracy figures. No entry was changed, and no relatedId to `aria-anti-amyloid` was added (B11), although that entry now exists.
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| reference-cards | 1.4.1 | 1.5.0 | MINOR (new entry) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- B3: probable+possible accuracy and whole-sample or cohort figures.
+- B5: Kropp 2026 memory-clinic validation (not read).
+- B6: Edinburgh CT criteria (needs Rodrigues 2018).
+- B9: amyloid PET and CSF amyloid-β not yet validated.
+- B11: link to `consult-workups:aria-anti-amyloid` once R14 has merged.
+- B12: back-links to the card from ich-etiology-workup, caa-related-inflammation and restart-antithrombotic-after-ich.
+- C2: possible overlap with caa-related-inflammation.
+
+### ACCEPT (not raised again)
+- B1: criteria counts encoded as numerals (the published Panel prints "One").
+- B2: no "criterion" role; TARGET used, no schema change.
+- B4: v1.5 comparison and what changed from v1.5 not encoded.
+- B7: lobar lacunes and superficial cerebellar microbleeds not encoded.
+- B8: odds ratios, kappas, study design and pathophysiology not encoded.
+- B10: supplementary material not reviewed.
+- C1 (pending Claude Code's read-only check): role mapping as approved.
+
+### Open items
+- `verify[]`: none. Two first-draft items (manuscript citations; cut-off footnote) were closed against the published article before encoding.
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R16/README.md`.
+
+Encoded 2026-11-11 on `content-r16-2026-11-11` (base `86fbb76`). The draft gave no numbers ("as found → next MINOR"); the registry was at 1.4.1 after R12, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11: signed by Jason (`boston-criteria-caa`, `lastReviewed` 2026-11-11) and released: reference-cards 1.5.1, content 2.2.1+33071d2e. The sign-off/release open item above is closed; PARK items B3, B5, B6, B9, B11, B12 and C2 stay open.

@@ -1,0 +1,261 @@
+{
+  "id": "boston-criteria-caa",
+  "title": "Boston criteria v2.0 for cerebral amyloid angiopathy",
+  "searchTerms": [
+    "CAA",
+    "cerebral amyloid angiopathy",
+    "Boston criteria",
+    "Boston 2.0",
+    "probable CAA",
+    "possible CAA",
+    "cortical superficial siderosis",
+    "cSS",
+    "convexity SAH",
+    "cSAH",
+    "lobar microbleeds",
+    "lobar ICH",
+    "perivascular spaces",
+    "CSO-PVS",
+    "multispot",
+    "TFNE",
+    "amyloid spells"
+  ],
+  "scopeNote": "MRI criteria for sporadic CAA (Boston v2.0): categories, lesion definitions and cut-offs, and accuracy against autopsy. ICH cause workup, CAA-related inflammation and antithrombotic decisions live in their own entries.",
+  "sections": [
+    {
+      "heading": "Criteria (Charidimou 2022)",
+      "rows": [
+        {
+          "parameter": "Applies to",
+          "condition": "Probable and possible CAA",
+          "role": "TARGET",
+          "target": "Age ≥50 presenting with spontaneous ICH, TFNE, or cognitive impairment/dementia",
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Panel (p.720): diagnostic criteria, not a graded recommendation"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "Probable CAA",
+          "condition": "Clinical data and MRI",
+          "role": "TARGET",
+          "target": "≥2 strictly lobar hemorrhagic lesions on T2* MRI in any combination (ICH, microbleed, cSS/cSAH foci), OR 1 lobar hemorrhagic lesion + 1 white matter feature (severe CSO-PVS or WMH multispot)",
+          "notes": [
+            "Exclusions row applies"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Panel (p.720): diagnostic criteria, not a graded recommendation"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "Possible CAA",
+          "condition": "Clinical data and MRI",
+          "role": "TARGET",
+          "target": "1 strictly lobar hemorrhagic lesion on T2* MRI (ICH, microbleed, cSS/cSAH focus), OR 1 white matter feature (severe CSO-PVS or WMH multispot)",
+          "notes": [
+            "Exclusions row applies"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Panel (p.720): diagnostic criteria, not a graded recommendation"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "Exclusions",
+          "condition": "Probable and possible CAA",
+          "role": "TARGET",
+          "target": "No deep hemorrhagic lesion (ICH, microbleed) on T2* MRI; no other cause of hemorrhagic lesions",
+          "notes": [
+            "Other causes: antecedent head trauma, hemorrhagic transformation of an ischemic stroke, AVM, hemorrhagic tumor, CNS vasculitis",
+            "Cerebellar hemorrhagic lesions count as neither lobar nor deep",
+            "Other causes of cSS and acute cSAH should also be excluded"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Panel and footnote (p.720): diagnostic criteria, not a graded recommendation"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "Pathology-based categories",
+          "condition": "Autopsy, evacuated hematoma or cortical biopsy",
+          "role": "TARGET",
+          "target": "Definite CAA: full post-mortem showing severe CAA with vasculopathy. Probable CAA with supporting pathology: some degree of CAA in an evacuated hematoma or cortical biopsy",
+          "notes": [
+            "Both: presentation with spontaneous ICH, TFNE, cSAH, or cognitive impairment/dementia; absence of other diagnostic lesion",
+            "Both categories retained unchanged in v2.0 (Methods, p.717)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Panel (p.720): diagnostic criteria, not a graded recommendation"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Lesion definitions",
+      "rows": [
+        {
+          "parameter": "Severe CSO-PVS",
+          "condition": "White matter feature",
+          "role": "TARGET",
+          "target": ">20 visible perivascular spaces in the centrum semiovale of one hemisphere",
+          "notes": [
+            "Rated on axial T2-weighted images"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Figure 1 (p.717) and Methods, Procedures (p.716): definition, not graded"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "WMH multispot pattern",
+          "condition": "White matter feature",
+          "role": "TARGET",
+          "target": ">10 small circular or ovoid T2/FLAIR-hyperintense lesions in the subcortical white matter of both hemispheres",
+          "notes": [
+            "Less widely studied than CSO-PVS and may be less robust; needs independent replication (Discussion, p.723)",
+            "Periventricular and deep WMH severity was not associated with CAA (Results, p.718)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Figure 1 (p.717) and Methods, Procedures (p.716): definition, not graded"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "Multifocal cSS",
+          "condition": "Counts as ≥2 hemorrhagic lesions",
+          "role": "TARGET",
+          "target": "cSS in gyri separated by uninvolved areas, or in ≥3 adjacent gyri",
+          "notes": [
+            "Single focus: still one focus if it extends to an adjacent gyrus",
+            "cSS adjacent to a lobar ICH is not counted",
+            "Multifocal cSAH/cSS alone can meet probable CAA, without ICH or microbleeds"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Discussion (p.722): definition, not graded"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "Acute cSAH near cSS",
+          "condition": "Counts as 2 hemorrhagic lesions",
+          "role": "TARGET",
+          "target": "Acute cSAH connected to or close to cSS = 2 hemorrhagic markers (dissemination in time)",
+          "notes": [
+            "cSAH and cSS are rated as equivalent markers: acute and chronic forms of the same process"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Discussion (p.722): definition, not graded"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Accuracy vs autopsy (probable CAA)",
+      "rows": [
+        {
+          "parameter": "Probable CAA, all presentations",
+          "condition": "Autopsy subgroup, n=150",
+          "role": "EVIDENCE_SUMMARY",
+          "target": "Sensitivity 74.5%, specificity 95.0%",
+          "notes": [
+            "95% CI: sensitivity 65.4–82.4%, specificity 83.1–99.4%; AUC 0.848"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Table 4 (p.722): diagnostic accuracy study, not graded"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "Probable CAA, ICH presentation",
+          "condition": "Autopsy subgroup, n=75",
+          "role": "EVIDENCE_SUMMARY",
+          "target": "Sensitivity 90.2%, specificity 92.9%",
+          "notes": [
+            "95% CI: sensitivity 79.8–96.3%, specificity 66.1–99.8%; AUC 0.915"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Table 4 (p.722): diagnostic accuracy study, not graded"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        },
+        {
+          "parameter": "Probable CAA, non-ICH presentation",
+          "condition": "Autopsy subgroup, n=75",
+          "role": "EVIDENCE_SUMMARY",
+          "target": "Sensitivity 55.1%, specificity 96.2%",
+          "notes": [
+            "95% CI: sensitivity 40.2–69.3%, specificity 80.4–99.9%; AUC 0.756"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Charidimou 2022 Table 4 (p.722): diagnostic accuracy study, not graded"
+          ],
+          "sources": [
+            "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+          ]
+        }
+      ]
+    }
+  ],
+  "pitfalls": [
+    "Mixed lobar + deep hemorrhagic lesions are not addressed: only 36 such cases, too few to derive criteria",
+    "Not validated in iatrogenic or hereditary CAA, or in asymptomatic people",
+    "Derived almost entirely from white participants of European ancestry",
+    "Needs T2*-weighted (hemorrhagic lesions) and T2-weighted (perivascular spaces) MRI; accuracy appeared highest with SWI",
+    "Accuracy is likely overestimated: every case needed brain tissue (spectrum bias)"
+  ],
+  "keyNumbers": [
+    "Probable CAA: ≥2 strictly lobar hemorrhagic lesions on T2* MRI in any combination (ICH, microbleed, cSS/cSAH foci), OR 1 lobar hemorrhagic lesion + 1 white matter feature (severe CSO-PVS or WMH multispot)",
+    "Possible CAA: 1 strictly lobar hemorrhagic lesion on T2* MRI (ICH, microbleed, cSS/cSAH focus), OR 1 white matter feature (severe CSO-PVS or WMH multispot)",
+    "Severe CSO-PVS: >20 visible perivascular spaces in the centrum semiovale of one hemisphere",
+    "WMH multispot pattern: >10 small circular or ovoid T2/FLAIR-hyperintense lesions in the subcortical white matter of both hemispheres",
+    "Multifocal cSS: cSS in gyri separated by uninvolved areas, or in ≥3 adjacent gyri"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "consult-workups:ich-etiology-workup",
+    "consult-workups:caa-related-inflammation",
+    "vascular-antithrombotics:restart-antithrombotic-after-ich"
+  ],
+  "sources": [
+    "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
