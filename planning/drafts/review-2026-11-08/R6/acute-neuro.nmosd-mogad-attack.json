@@ -1,0 +1,310 @@
+{
+  "id": "nmosd-mogad-attack",
+  "title": "NMOSD / MOGAD acute attack",
+  "keyNumbers": [
+    "IV methylprednisolone 1 g daily ×3–5 days",
+    "Severe attack, or poor response to steroids → PLEX within 5 days of onset",
+    "Plasma exchange (PLEX): 1–1.5 total plasma volumes per exchange, daily or every other day; median 5 exchanges over ~10 days (range 2–10); albumin replacement",
+    "IVIG: 0.4 g/kg/day ×5 days if PLEX not feasible"
+  ],
+  "category": "NEUROIMMUNOLOGY",
+  "searchTerms": [
+    "NMO",
+    "NMOSD",
+    "AQP4",
+    "MOG",
+    "MOGAD",
+    "LETM",
+    "optic neuritis",
+    "area postrema",
+    "eculizumab",
+    "Soliris",
+    "ravulizumab",
+    "Ultomiris",
+    "inebilizumab",
+    "Uplizna",
+    "satralizumab",
+    "Enspryng",
+    "complement inhibitor"
+  ],
+  "presentation": [
+    "Severe or bilateral optic neuritis; longitudinally extensive myelitis",
+    "Area postrema syndrome: intractable hiccups, nausea, vomiting",
+    "Brainstem, diencephalic, or cerebral syndromes",
+    "MOGAD: optic disc edema, perineural enhancement, ADEM, conus lesions, cortical encephalitis with seizures"
+  ],
+  "definitions": [
+    "AQP4-IgG+ NMOSD (Wingerchuk 2015): ≥1 core clinical characteristic + positive AQP4-IgG (cell-based assay recommended) + exclusion of alternatives. Core: optic neuritis, acute myelitis, area postrema syndrome, acute brainstem syndrome, symptomatic narcolepsy/diencephalic syndrome with typical lesions, symptomatic cerebral syndrome with typical lesions",
+    "AQP4-negative/unknown NMOSD: ≥2 core characteristics with dissemination, ≥1 being optic neuritis, LETM, or area postrema syndrome, plus MRI requirements",
+    "MOGAD (Banwell 2023): (A) core demyelinating event + (B) positive serum MOG-IgG by cell-based assay (clear positive alone; low positive/no titer/CSF-only needs AQP4-negative + ≥1 supporting clinical/MRI feature) + (C) exclusion of better diagnosis incl. MS"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "Before treatment if possible",
+      "action": "Serum AQP4-IgG and MOG-IgG (live cell-based assay preferred); steroids, IVIG, and PLEX can lower detection"
+    },
+    {
+      "order": 2,
+      "window": "Immediately — don't wait for antibodies",
+      "action": "IV methylprednisolone 1 g daily ×3–5 days"
+    },
+    {
+      "order": 3,
+      "window": "Severe attack or no response in 48–72 h",
+      "action": "Poor or absent steroid response → PLEX, ideally within 5 days of attack onset; in severe attacks give PLEX first-line or alongside steroids"
+    },
+    {
+      "order": 4,
+      "window": "Within 24 h",
+      "action": "MRI brain, orbits, and whole spine with contrast"
+    },
+    {
+      "order": 5,
+      "window": "Until MS excluded",
+      "action": "Avoid starting MS disease-modifying therapies — some worsen NMOSD"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Serum AQP4-IgG (cell-based assay)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Serum MOG-IgG (live cell-based assay preferred)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Serum preferred over CSF; repeat ≥3 months later or at relapse if negative and suspicion high"
+      ]
+    },
+    {
+      "test": "MRI brain, orbits, whole spine with contrast",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "LP: cells, protein, OCB",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "OCB usually absent in NMOSD/MOGAD; pleocytosis can be marked"
+      ]
+    },
+    {
+      "test": "Infection, B12/copper, ANA/SSA, ACE as indicated",
+      "priority": "ROUTINE",
+      "indication": [],
+      "notes": [
+        "Myelitis mimics"
+      ]
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Methylprednisolone",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "1 g IV daily ×3–5 days, then oral taper (MOGAD relapses can occur during weaning)",
+      "dose": [
+        {
+          "label": "Pulse",
+          "amountMin": 1,
+          "amountMax": 1,
+          "unit": "G",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": [
+            "3–5 days"
+          ]
+        }
+      ],
+      "notes": [
+        "Taper length individualized (weeks for AQP4; often longer for MOGAD)"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Standard practice; no RCT for attack treatment"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SECOND_LINE",
+      "agent": "Plasma exchange (PLEX)",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "1–1.5 total plasma volumes per exchange, daily or every other day; median 5 exchanges over ~10 days (range 2–10); albumin replacement",
+      "dose": [],
+      "notes": [
+        "Each day of delay cut the odds of complete remission by ~6.3% (ASFA, citing Bonnan 2018/Kleiter 2018)",
+        "Steroids ×5 days then PLEX restored baseline in 51% vs 16.6% with steroids alone (ASFA, citing Abboud 2016)",
+        "Immunoadsorption performs similarly where available",
+        "AAN 2011 (since retired): possibly effective for fulminant CNS demyelination (Level C)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "ASFA 2023: Category II, Grade 1B (acute attack/relapse)",
+        "Kleiter 2016 (n=871 attacks, retrospective)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "IVIG",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "0.4 g/kg/day ×5 days if PLEX not feasible",
+      "dose": [
+        {
+          "label": "Daily",
+          "amountMin": 0.4,
+          "amountMax": 0.4,
+          "unit": "G",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": [
+            "5 days"
+          ]
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [],
+      "formularyStatus": "LOCAL_PREFERRED",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Already on a C5 inhibitor (eculizumab, ravulizumab): supplemental dose with PLEX or IVIG",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Eculizumab: after each PLEX session, 300 mg if the most recent dose was 300 mg, or 600 mg if it was ≥600 mg, within 60 min. Ravulizumab: after each PLEX session, within 4 h — 40 to <60 kg: 1,200 mg (most recent dose 2,400 mg) or 1,500 mg (3,000 mg); 60 to <100 kg: 1,500 mg (2,700 mg) or 1,800 mg (3,300 mg); ≥100 kg: 1,500 mg (3,000 mg) or 1,800 mg (3,600 mg); after completing an IVIG cycle, 600 mg within 4 h",
+      "dose": [
+        {
+          "label": "Eculizumab after PLEX (most recent dose 300 mg)",
+          "amountMin": 300,
+          "amountMax": 300,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Within 60 min after each PLEX session"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Eculizumab after PLEX (most recent dose ≥600 mg)",
+          "amountMin": 600,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Within 60 min after each PLEX session"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Ravulizumab after PLEX (by weight and most recent dose — see doseText)",
+          "amountMin": 1200,
+          "amountMax": 1800,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Within 4 h after each PLEX session"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Ravulizumab after an IVIG cycle",
+          "amountMin": 600,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Within 4 h after completing the IVIG cycle"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Eculizumab with IVIG: the label's IVIG supplement table is gMG-only — no NMOSD statement"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Soliris PI §2.5 (Table 2), §7.1",
+        "Ultomiris PI §2.4 (Table 3), §7.1"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Don't wait for AQP4/MOG results to treat",
+    "Interferon-beta, natalizumab, and fingolimod can worsen NMOSD",
+    "Low-titer MOG-IgG has lower specificity — interpret with the clinical/MRI picture",
+    "Bilateral optic neuritis and myelitis have the poorest remission rates — escalate early",
+    "On a C5 inhibitor (eculizumab, ravulizumab): signs of meningococcal infection → evaluate immediately, even if vaccinated (boxed warning); consider interrupting the drug during treatment of serious meningococcal infection",
+    "Meningococcal Patient Safety Card (REMS) is carried after stopping eculizumab (3 months) or ravulizumab (8 months)",
+    "Inebilizumab (Uplizna) and satralizumab (Enspryng): labels give no PLEX/IVIG guidance"
+  ],
+  "escalateWhen": [
+    "Severe attack, or poor response to steroids → PLEX within 5 days of onset",
+    "Respiratory compromise from high cervical myelitis → ICU",
+    "Confirmed diagnosis → neuroimmunology for relapse prevention"
+  ],
+  "institutionVaries": [
+    "AQP4/MOG send-out lab (live vs fixed cell-based assay)",
+    "Whether PLEX is started concurrently with steroids for severe attacks",
+    "REMS: eculizumab and ravulizumab are dispensed only by REMS-certified healthcare settings and pharmacies — confirm before PLEX so the supplemental dose can be given"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:autoimmune-encephalitis",
+    "neural-antibodies:aqp4",
+    "neural-antibodies:mog",
+    "acute-neuro:bacterial-meningitis"
+  ],
+  "sources": [
+    "Wingerchuk DM, et al. International consensus diagnostic criteria for neuromyelitis optica spectrum disorders. Neurology 2015;85(2):177-189. doi:10.1212/WNL.0000000000001729",
+    "Banwell B, et al. Diagnosis of myelin oligodendrocyte glycoprotein antibody-associated disease: International MOGAD Panel proposed criteria. Lancet Neurol 2023;22:268-282",
+    "Kleiter I, et al. Neuromyelitis optica: evaluation of 871 attacks and 1,153 treatment courses. Ann Neurol 2016;79(2):206-216. doi:10.1002/ana.24554",
+    "Cortese I, et al. Evidence-based guideline update: plasmapheresis in neurologic disorders (AAN; since retired). Neurology 2011;76(3):294-300. doi:10.1212/WNL.0b013e318207b1f6",
+    "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (NMOSD fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043",
+    "Soliris (eculizumab) injection US prescribing information. Alexion Pharmaceuticals; revised 6/2026",
+    "Ultomiris (ravulizumab-cwvz) injection US prescribing information. Alexion Pharmaceuticals; revised 10/2026",
+    "Uplizna (inebilizumab-cdon) injection US prescribing information. Horizon Therapeutics (Amgen); revised 9/2026",
+    "Enspryng (satralizumab-mwge) injection US prescribing information. Genentech; revised 10/2026"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

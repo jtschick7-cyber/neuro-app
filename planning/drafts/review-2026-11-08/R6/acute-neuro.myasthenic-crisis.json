@@ -1,0 +1,472 @@
+{
+  "id": "myasthenic-crisis",
+  "title": "Myasthenic crisis (impending and manifest)",
+  "keyNumbers": [
+    "FVC <20 mL/kg, NIF weaker than −30 cmH2O, or rapid decline (thresholds extrapolated from GBS)",
+    "Single breath count <20",
+    "IVIG: 2 g/kg total over 2–5 days (Gilhus 2024: over 3–5 consecutive days; e.g., 0.4 g/kg/day ×5)",
+    "Plasma exchange (PLEX): 1–1.5 total plasma volumes per exchange; 3–6 exchanges over 10–14 days (daily or alternate days); albumin replacement"
+  ],
+  "category": "NEUROMUSCULAR",
+  "searchTerms": [
+    "MG crisis",
+    "myasthenia gravis exacerbation",
+    "bulbar weakness",
+    "AChR",
+    "MuSK",
+    "eculizumab",
+    "Soliris",
+    "ravulizumab",
+    "Ultomiris",
+    "zilucoplan",
+    "Zilbrysq",
+    "efgartigimod",
+    "Vyvgart",
+    "rozanolixizumab",
+    "Rystiggo",
+    "nipocalimab",
+    "Imaavy",
+    "inebilizumab",
+    "Uplizna",
+    "FcRn blocker",
+    "complement inhibitor"
+  ],
+  "presentation": [
+    "Rapidly worsening bulbar weakness (dysphagia, nasal speech, weak cough, pooled secretions), neck flexor weakness, dyspnea/orthopnea",
+    "Limb weakness may be mild relative to respiratory/bulbar involvement",
+    "Triggers: infection, surgery, MG-worsening drugs, steroid start or taper, pregnancy/postpartum, immune checkpoint inhibitors"
+  ],
+  "definitions": [
+    "Impending crisis: rapid clinical worsening that, in the treating physician's opinion, could lead to crisis in days to weeks (ICG 2016)",
+    "Manifest crisis: worsening myasthenic weakness requiring intubation or NIV to avoid intubation, excluding routine postoperative use (ICG 2016)"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "On arrival",
+      "action": "Bedside respiratory set: FVC (mL/kg), NIF/MIP, single breath count, cough, secretions, neck flexion; repeat every few hours"
+    },
+    {
+      "order": 2,
+      "window": "On arrival",
+      "action": "Early signs of crisis → ICU admission (Gilhus 2024); at minimum close respiratory/bulbar monitoring for impending crisis (ICG 2016)"
+    },
+    {
+      "order": 3,
+      "window": "Early",
+      "action": "Low threshold for elective intubation; BiPAP trial reasonable before intubation if no significant hypercapnia or bulbar failure (hypercapnia predicts NIV failure)"
+    },
+    {
+      "order": 4,
+      "window": "Within hours",
+      "action": "Start IVIG (local default) or PLEX (available 24/7); favor PLEX for MuSK-MG or when fastest response needed"
+    },
+    {
+      "order": 5,
+      "window": "Concurrently",
+      "action": "Stop MG-worsening drugs (see mg-contraindications); treat trigger"
+    },
+    {
+      "order": 6,
+      "window": "With IVIG/PLEX",
+      "action": "Corticosteroids: either start high dose alongside IVIG/PLEX (covers the steroid dip) or wait several days for IVIG/PLEX effect — both endorsed; see treatment"
+    },
+    {
+      "order": 7,
+      "window": "If intubated",
+      "action": "Stop pyridostigmine during crisis (secretions, airway plugging); restart before weaning from ventilation"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Serial FVC and NIF",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "Facial weakness → poor seal; use face mask"
+      ]
+    },
+    {
+      "test": "ABG/VBG",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Hypercapnia is late; a normal gas does not exclude impending failure"
+      ]
+    },
+    {
+      "test": "Infection screen: CXR, UA, cultures as indicated",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "BMP with K, Mg, Ca, phos; CBC; TSH",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Renal function and coagulation before IVIG/PLEX",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "CK, troponin, ECG",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "On immune checkpoint inhibitor"
+      ],
+      "notes": [
+        "Screen for myositis/myocarditis overlap"
+      ]
+    },
+    {
+      "test": "AChR binding/modulating, MuSK antibodies",
+      "priority": "ROUTINE",
+      "indication": [],
+      "notes": [
+        "If serostatus unknown; send before IVIG/PLEX"
+      ]
+    },
+    {
+      "test": "CT chest (thymoma)",
+      "priority": "ROUTINE",
+      "indication": [],
+      "notes": [
+        "If not previously done"
+      ]
+    },
+    {
+      "test": "hCG",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Patient of childbearing potential"
+      ],
+      "notes": []
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "IVIG",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "2 g/kg total over 2–5 days (Gilhus 2024: over 3–5 consecutive days; e.g., 0.4 g/kg/day ×5)",
+      "dose": [
+        {
+          "label": "5-day course",
+          "amountMin": 0.4,
+          "amountMax": 0.4,
+          "unit": "G",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": [
+            "5 days"
+          ]
+        },
+        {
+          "label": "2-day course",
+          "amountMin": 1,
+          "amountMax": 1,
+          "unit": "G",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": [
+            "2 days"
+          ]
+        }
+      ],
+      "notes": [
+        "Caution: thrombosis risk, renal failure, volume overload, IgA deficiency with anti-IgA antibodies",
+        "Avoid in hypercoagulable states and renal failure (ICG 2016)",
+        "IVIG efficacy less certain in mild or ocular MG",
+        "Prolonged/severe crisis expected: sequential PLEX first, then IVIG, is superior (Gilhus 2024)"
+      ],
+      "evidenceLevel": "CONSENSUS",
+      "evidenceNote": [
+        "ICG 2016: IVIG and PLEX probably equally effective in severe generalized MG",
+        "AAN 2012: IVIG effective in moderate–severe MG (Level B)",
+        "ASFA 2023: IVIG and TPE generally regarded as equally effective in acute MG",
+        "Gilhus 2024: PLEX and IVIG are the primary crisis treatments; choose by availability and patient factors"
+      ],
+      "formularyStatus": "LOCAL_PREFERRED",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Plasma exchange (PLEX)",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "1–1.5 total plasma volumes per exchange; 3–6 exchanges over 10–14 days (daily or alternate days); albumin replacement",
+      "dose": [],
+      "notes": [
+        "Effect within hours to days, lasts ~3–6 weeks — start/adjust immunosuppression",
+        "ASFA: TPE favored with severe respiratory impairment, and more effective if started early in the admission; may be more effective in MuSK-MG",
+        "Contraindicated in sepsis (ICG 2016); hypotension, citrate hypocalcemia, line complications",
+        "Don't give PLEX shortly after IVIG (removes it)",
+        "Meta-analysis: slightly higher response rate and faster improvement with PLEX (Gilhus 2024)"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "ASFA 2023: Category I, Grade 1B (acute short-term treatment incl. crisis)",
+        "ICG 2016: expert consensus — PLEX faster and possibly more effective in crisis"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Already on a C5 inhibitor (eculizumab, ravulizumab, zilucoplan): supplemental dose with PLEX or IVIG",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Eculizumab: after each PLEX session, 300 mg if the most recent dose was 300 mg, or 600 mg if it was ≥600 mg, within 60 min; acute-rescue IVIG needs no supplement. Ravulizumab: after each PLEX session, within 4 h — 40 to <60 kg: 1,200 mg (most recent dose 2,400 mg) or 1,500 mg (3,000 mg); 60 to <100 kg: 1,500 mg (2,700 mg) or 1,800 mg (3,300 mg); ≥100 kg: 1,500 mg (3,000 mg) or 1,800 mg (3,600 mg); after completing an IVIG cycle, 600 mg within 4 h. Zilucoplan: label gives no PLEX/IVIG guidance",
+      "dose": [
+        {
+          "label": "Eculizumab after PLEX (most recent dose 300 mg)",
+          "amountMin": 300,
+          "amountMax": 300,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Within 60 min after each PLEX session"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Eculizumab after PLEX (most recent dose ≥600 mg)",
+          "amountMin": 600,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Within 60 min after each PLEX session"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Ravulizumab after PLEX (by weight and most recent dose — see doseText)",
+          "amountMin": 1200,
+          "amountMax": 1800,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Within 4 h after each PLEX session"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Ravulizumab after an IVIG cycle",
+          "amountMin": 600,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Within 4 h after completing the IVIG cycle"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Eculizumab with scheduled (non-rescue) IVIG in gMG: 300 or 600 mg supplement by IVIG frequency and most recent dose (Soliris Table 3)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Soliris PI §2.5 (Tables 2–3), §7.1",
+        "Ultomiris PI §2.4 (Table 3), §7.1",
+        "Zilbrysq PI: no PLEX/IVIG statement; no drug-interaction section"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Already on an FcRn blocker (efgartigimod IV or SC, rozanolixizumab, nipocalimab): IVIG, PLEX or a C5 inhibitor",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "No label dose adjustment or timing interval. Labels: FcRn blockers may lower exposure and reduce effectiveness of drugs that bind FcRn (IVIG, IgG monoclonal antibodies) — monitor for reduced effect",
+      "dose": [],
+      "notes": [
+        "Eculizumab and ravulizumab labels: FcRn blockers may lower their exposure — monitor for reduced effect",
+        "FcRn-blocker labels say nothing about PLEX",
+        "Active infection: labels say delay the FcRn-blocker dose; serious infection: consider withholding until resolved",
+        "Long-term need for an FcRn-binding drug: labels say consider stopping the FcRn blocker"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Vyvgart PI §5.1, §7.1",
+        "Vyvgart Hytrulo PI §5.1, §7.1",
+        "Rystiggo PI §5.1, §7.1",
+        "Imaavy PI §5.1, §7.1",
+        "Soliris PI §7.2; Ultomiris PI §7.2"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Prednisone / prednisolone (or IV methylprednisolone in ICU)",
+      "routes": [
+        "PO",
+        "NG",
+        "IV"
+      ],
+      "doseText": "Moderate–severe gMG: 0.75–1.00 mg/kg/day PO. When rapid response needed: 30–50 mg daily from the start, combined with IVIG/PLEX. ICU add-on option: prednisone 3–4 mg/kg or IV methylprednisolone 500 mg/day (Gilhus 2024)",
+      "dose": [
+        {
+          "label": "High-dose oral",
+          "amountMin": 0.75,
+          "amountMax": 1,
+          "unit": "MG",
+          "basis": "PER_KG",
+          "timing": "PER_DAY",
+          "weightBasis": "ACTUAL",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Rapid-start with IVIG/PLEX",
+          "amountMin": 30,
+          "amountMax": 50,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Transient worsening within the first 2 weeks — why it is paired with IVIG/PLEX (ICG 2020; Gilhus 2024)",
+        "ICG 2016 alternative: wait several days for IVIG/PLEX effect before starting",
+        "The ICU 'very high dose' option (3–4 mg/kg prednisone, MP 500 mg/day) rests on a single cited reference in a position paper — confirm against local practice before use"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Gilhus 2024 Nordic position paper (ungraded)",
+        "ICG 2016 consensus on timing"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Pyridostigmine",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Discontinue during crisis; restart before weaning from mechanical ventilation",
+      "dose": [],
+      "notes": [
+        "Increases airway secretions (ICG 2016)",
+        "True cholinergic crisis is rare — don't escalate pyridostigmine to treat crisis"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Gilhus 2024"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SUPPORTIVE",
+      "agent": "Aspiration precautions, NPO until swallow eval, chest physiotherapy",
+      "routes": [
+        "NON_PHARM"
+      ],
+      "doseText": "N/A",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Vital capacity and blood gases do not reliably predict the need for ventilation (Gilhus 2024) — trend function and bulbar signs",
+    "SpO2 and ABG stay normal until late — trend FVC/NIF and bulbar function",
+    "Neck flexor weakness parallels diaphragm weakness",
+    "Steroid initiation can worsen MG in the first ~2 weeks",
+    "Common inpatient triggers: fluoroquinolones, macrolides, aminoglycosides, IV magnesium, beta-blockers, ICIs; use iodinated contrast cautiously",
+    "ICI-associated MG is often severe with high crisis rates (ICG 2020)",
+    "The 20/30/40 thresholds are borrowed from GBS cohorts; trajectory matters more than any single value",
+    "On a C5 inhibitor (eculizumab, ravulizumab, zilucoplan): signs of meningococcal infection → evaluate immediately, even if vaccinated (boxed warning); consider interrupting the drug during treatment of serious meningococcal infection",
+    "Meningococcal Patient Safety Card (REMS) is carried after stopping eculizumab (3 months), ravulizumab (8 months) or zilucoplan (2 months)",
+    "Rozanolixizumab: serious drug-induced aseptic meningitis reported — work up per standard care; trial headache 44%, pyrexia 17%",
+    "Inebilizumab (Uplizna, also gMG-indicated): label gives no PLEX/IVIG guidance"
+  ],
+  "escalateWhen": [
+    "FVC <20 mL/kg, NIF weaker than −30 cmH2O, or rapid decline (thresholds extrapolated from GBS)",
+    "Unable to handle secretions, weak cough, or rising PaCO2",
+    "Single breath count <20"
+  ],
+  "institutionVaries": [
+    "IVIG product and dosing weight in obesity (actual vs adjusted)",
+    "PLEX access (peripheral vs central) and exchange schedule",
+    "Whether IgA level is checked before IVIG",
+    "Steroid strategy in crisis (concurrent high-dose start vs delayed start; ICU IV methylprednisolone use)",
+    "REMS: eculizumab and ravulizumab are dispensed only by REMS-certified healthcare settings and pharmacies — confirm before PLEX so the supplemental dose can be given"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:neuromuscular-respiratory-failure",
+    "mg-contraindications:fluoroquinolones",
+    "mg-contraindications:macrolides",
+    "mg-contraindications:aminoglycosides",
+    "mg-contraindications:magnesium",
+    "mg-contraindications:immune-checkpoint-inhibitors",
+    "acute-neuro:bacterial-meningitis"
+  ],
+  "sources": [
+    "Sanders DB, et al. International consensus guidance for management of myasthenia gravis: executive summary. Neurology 2016;87(4):419-425. doi:10.1212/WNL.0000000000002790",
+    "Narayanaswami P, et al. International consensus guidance for management of myasthenia gravis: 2020 update. Neurology 2021;96(3):114-122. doi:10.1212/WNL.0000000000011124",
+    "Patwa HS, et al. Evidence-based guideline: intravenous immunoglobulin in the treatment of neuromuscular disorders (AAN). Neurology 2012;78(13):1009-1015.",
+    "Seneviratne J, et al. Noninvasive ventilation in myasthenic crisis. Arch Neurol 2008;65(1):54-58.",
+    "Connelly-Smith L, et al. ASFA guidelines on the use of therapeutic apheresis in clinical practice, 9th special issue (MG fact sheet). J Clin Apher 2023;38(2):77-278. doi:10.1002/jca.22043",
+    "Gilhus NE, et al. Generalized myasthenia gravis with acetylcholine receptor antibodies: a guidance for treatment. Eur J Neurol 2024;31:e16229. doi:10.1111/ene.16229",
+    "Soliris (eculizumab) injection US prescribing information. Alexion Pharmaceuticals; revised 6/2026",
+    "Ultomiris (ravulizumab-cwvz) injection US prescribing information. Alexion Pharmaceuticals; revised 10/2026",
+    "Zilbrysq (zilucoplan) injection US prescribing information. UCB; revised 1/2026",
+    "Vyvgart (efgartigimod alfa-fcab) injection US prescribing information. argenx; revised 5/2026",
+    "Vyvgart Hytrulo (efgartigimod alfa and hyaluronidase-qvfc) injection US prescribing information. argenx; revised 5/2026",
+    "Rystiggo (rozanolixizumab-noli) injection US prescribing information. UCB; revised 12/2025",
+    "Imaavy (nipocalimab-aahu) injection US prescribing information. Janssen Biotech; revised 8/2026",
+    "Uplizna (inebilizumab-cdon) injection US prescribing information. Horizon Therapeutics (Amgen); revised 9/2026"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
