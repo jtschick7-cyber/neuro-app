@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -3942,7 +3942,9 @@
         "RESPECT ESUS",
         "PFO",
         "patent foramen ovale",
-        "loop recorder"
+        "loop recorder",
+        "ARCADIA",
+        "atrial cardiopathy"
       ],
       "question": "What antithrombotic and workup decisions follow stroke of undetermined source?",
       "population": [
@@ -4030,18 +4032,21 @@
       ],
       "pearls": [
         "High-risk PFO features vary by trial (larger shunt, atrial septal aneurysm) — RoPE/PASCAL not in the stored sources",
-        "Serious periprocedural complications of closure ~4.9% at ≤60 y vs 10.9% older (claims data, Kleindorfer)"
+        "Serious periprocedural complications of closure ~4.9% at ≤60 y vs 10.9% older (claims data, Kleindorfer)",
+        "ARCADIA (cryptogenic stroke, age ≥45, no AF, atrial cardiopathy = PTFV1 >5000 μV·ms, NT-proBNP >250 pg/mL or LA diameter index ≥3 cm/m²; apixaban vs aspirin 81 mg, n=1015): recurrent stroke 4.4%/yr in both arms (HR 1.00); stopped for futility; no greater benefit at higher biomarker levels"
       ],
       "verify": [],
       "relatedIds": [
         "vascular-antithrombotics:dapt-minor-stroke-tia",
-        "vascular-antithrombotics:af-stroke-anticoag-timing"
+        "vascular-antithrombotics:af-stroke-anticoag-timing",
+        "vascular-antithrombotics:cancer-associated-stroke"
       ],
       "sources": [
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
-        "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513"
+        "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
+        "Kamel H, et al. Apixaban to Prevent Recurrence After Cryptogenic Stroke in Patients With Atrial Cardiopathy: The ARCADIA Randomized Clinical Trial. JAMA 2024;331(7):573-581. doi:10.1001/jama.2023.27188"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "2026-11-11"
     },
     {
       "kind": "DECISION",

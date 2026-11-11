@@ -1,0 +1,121 @@
+{
+  "kind": "DECISION",
+  "id": "esus-antithrombotic",
+  "title": "ESUS / cryptogenic stroke: antithrombotic and PFO",
+  "keyNumbers": [
+    "Age 18–60, nonlacunar stroke of undetermined cause, PFO with high-risk anatomic features: PFO closure + long-term antiplatelet over antiplatelet alone",
+    "Age 18–60, PFO without high-risk features: Benefit of closure not well established"
+  ],
+  "searchTerms": [
+    "ESUS",
+    "cryptogenic",
+    "NAVIGATE ESUS",
+    "RESPECT ESUS",
+    "PFO",
+    "patent foramen ovale",
+    "loop recorder",
+    "ARCADIA",
+    "atrial cardiopathy"
+  ],
+  "question": "What antithrombotic and workup decisions follow stroke of undetermined source?",
+  "population": [
+    "Nonlacunar stroke without a cause after standard workup (ESUS / cryptogenic)"
+  ],
+  "rules": [
+    {
+      "order": 1,
+      "condition": "No AF or other anticoagulation indication found",
+      "recommendation": "Antiplatelet therapy, not empiric anticoagulation (NAVIGATE ESUS and RESPECT ESUS showed no DOAC benefit)",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021 and AHA 2026: COR 1, LOE A (antiplatelet over OAC in noncardioembolic stroke)"
+      ]
+    },
+    {
+      "order": 2,
+      "condition": "Minor stroke or high-risk TIA within the DAPT window",
+      "recommendation": "Short-term DAPT per dapt-minor-stroke-tia",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "AHA 2026: COR 1, LOE A"
+      ]
+    },
+    {
+      "order": 3,
+      "condition": "Cryptogenic stroke without contraindication to anticoagulation",
+      "recommendation": "Long-term rhythm monitoring (mobile outpatient telemetry, implantable loop recorder) to find intermittent AF",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2a, LOE B-R"
+      ]
+    },
+    {
+      "order": 4,
+      "condition": "ESUS — looking for cardioaortic source or shunt",
+      "recommendation": "TEE, cardiac CT or cardiac MRI might be reasonable",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE C-LD"
+      ]
+    },
+    {
+      "order": 5,
+      "condition": "Age 18–60, nonlacunar stroke of undetermined cause, PFO with high-risk anatomic features",
+      "recommendation": "PFO closure + long-term antiplatelet over antiplatelet alone",
+      "evidenceLevel": "MODERATE",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2a, LOE B-R"
+      ]
+    },
+    {
+      "order": 6,
+      "condition": "Age 18–60, PFO without high-risk features",
+      "recommendation": "Benefit of closure not well established",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE C-LD"
+      ]
+    },
+    {
+      "order": 7,
+      "condition": "Closure vs warfarin",
+      "recommendation": "Comparative benefit unknown",
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 2b, LOE C-LD"
+      ]
+    },
+    {
+      "order": 8,
+      "condition": "AF later detected",
+      "recommendation": "Switch to oral anticoagulation — see af-stroke-anticoag-timing",
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "Kleindorfer 2021: COR 1, LOE A (OAC with AF)"
+      ]
+    }
+  ],
+  "options": [],
+  "contraindications": [],
+  "esoDiffers": [],
+  "institutionVaries": [
+    "Loop-recorder referral pathway and PFO-closure heart team"
+  ],
+  "pearls": [
+    "High-risk PFO features vary by trial (larger shunt, atrial septal aneurysm) — RoPE/PASCAL not in the stored sources",
+    "Serious periprocedural complications of closure ~4.9% at ≤60 y vs 10.9% older (claims data, Kleindorfer)",
+    "ARCADIA (cryptogenic stroke, age ≥45, no AF, atrial cardiopathy = PTFV1 >5000 μV·ms, NT-proBNP >250 pg/mL or LA diameter index ≥3 cm/m²; apixaban vs aspirin 81 mg, n=1015): recurrent stroke 4.4%/yr in both arms (HR 1.00); stopped for futility; no greater benefit at higher biomarker levels"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:dapt-minor-stroke-tia",
+    "vascular-antithrombotics:af-stroke-anticoag-timing",
+    "vascular-antithrombotics:cancer-associated-stroke"
+  ],
+  "sources": [
+    "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
+    "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
+    "Kamel H, et al. Apixaban to Prevent Recurrence After Cryptogenic Stroke in Patients With Atrial Cardiopathy: The ARCADIA Randomized Clinical Trial. JAMA 2024;331(7):573-581. doi:10.1001/jama.2023.27188"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

@@ -823,3 +823,39 @@ Rules adopted:
 Encoded 2026-11-11 on `content-r8-2026-11-09` (base `72766b5`). Render check: Institution varies and Not graded badges on every maintenance item; renal rows as specified (oxcarbazepine CrCl <30 Cockcroft-Gault; topiramate CrCl <70 BSA-normalized plus HD; HD rows on cenobamate and perampanel; notes only on the other four); all 8 cards wrap at phone width; all 9 distinct links open; every listed search returns its card first.
 
 Update 2026-11-11: signed by Jason (all 8 R8 cards by name, `lastReviewed` 2026-11-11) and released: antiseizure-medications 1.1.1, content 2.2.1+2b86eaac. The sign-off/release open item above is closed; PARK D7 and P2 stay available to revive.
+
+## 2026-11-10 — Review item R9 (ESUS: ARCADIA)
+
+Approved by Jason in chat 2026-11-10. Draft: `planning/drafts/review-2026-11-08/R9/` (base: review-2026-11-08 export packet). Entry `lastReviewed: "UNREVIEWED"`.
+
+| Draft | Findings | Change |
+|---|---|---|
+| `vascular-antithrombotics.esus-antithrombotic.json` | F1, F2, D4 | `pearls[2]` ARCADIA (cryptogenic stroke + atrial cardiopathy, no AF; apixaban vs aspirin 81 mg, n=1015; recurrent stroke 4.4%/yr both, HR 1.00; stopped for futility; no greater benefit at higher biomarker levels), ungraded; searchTerms += ARCADIA, atrial cardiopathy; relatedIds += vascular-antithrombotics:cancer-associated-stroke; sources += Kamel 2024 (JAMA) |
+
+Rules applied:
+- Trial results go in `pearls`, never `rules` (R2 rule). A pearl carries a grade only if a guideline grades the trial; AHA 2026 (full text) does not cite ARCADIA and Kleindorfer 2021 predates it, so the pearl is ungraded.
+
+### Version
+| registry | from | to | level |
+|---|---|---|---|
+| vascular-antithrombotics | 1.1.1 | 1.2.0 | MINOR (new source and evidence statement; no rule, tier or evidence level changed) |
+
+### ACCEPT (not raised again)
+- D1b: ARCADIA not added to the `rules[0]` parenthetical.
+- D2: no guideline grade for ARCADIA (AHA 2026 silent; Kleindorfer 2021 predates it).
+- A1: `rules[0]` AHA 2026 statement confirmed as §4.8 Rec 5 (COR 1, LOE A, p e378).
+- A2–A4: ARCADIA safety outcomes, post-randomization AF analysis and trial exclusions left out of the pearl.
+
+### PARK
+- P1: ARCADIA secondary analyses (ARCADIA-MRI covert infarcts, JAMA Neurol 2025; LV systolic dysfunction post hoc, 2025): not read; candidate new item.
+- P2: `cancer-associated-stroke` "ARCADIA cancer subgroup" line: not in the primary paper; check its source.
+
+### Open items
+- `verify[]`: none.
+- PARK P1 and P2 (above).
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R9/README.md`.
+
+Encoded 2026-11-11 on `content-r9-2026-11-10` (base `413176d`). The draft expected 0.14.0 → 0.15.0; the registry was at 1.1.1 after R2, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11: signed by Jason (`esus-antithrombotic`, `lastReviewed` 2026-11-11) and released: vascular-antithrombotics 1.2.1, content 2.2.1+a21ac651. The sign-off/release open item above is closed; PARK P1 and P2 stay open.
