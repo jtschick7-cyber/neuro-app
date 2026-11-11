@@ -1,0 +1,42 @@
+# vascular-antithrombotics:restart-antithrombotic-after-ich — CHANGES
+
+Review 2026-11-08, item R2 (drafted 2026-11-09). Base: signed `current.vascular-antithrombotics.restart-antithrombotic-after-ich.json` from the review-2026-11-08 export packet (lastReviewed 2026-11-07).
+
+| field path | current | new | source | why |
+|---|---|---|---|---|
+| `searchTerms[5]`–`[7]` | (absent) | "PRESTIGE-AF", "ENRICH-AF", "microbleeds" | — | F12: findable by trial name and by the pearl topic (PATCH-level) |
+| `rules[2].evidenceNote[1]` | (absent) | ESO-EANS 2025 PICO 6.2: no evidence-based recommendation (net benefit uncertain; low quality); expert consensus (14/15): DOAC may be considered after individual risk–benefit review | Steiner 2025 (sources[1]) PICO 6.2, p 1058: Evidence-based Recommendation "there is uncertainty about the net benefit of long-term oral anticoagulation (OAC)… we encourage recruitment to randomised controlled trials", Quality of evidence: Low ⊕⊕, Strength of recommendation: –; Expert consensus statement "DOAC may be considered after careful evaluation of the individual risk-benefit profile", Vote: 14/15 | F3, decision 3 (b): ESO agrees in direction with AHA Rec 3 but grades no recommendation; recorded beside the AHA grade, not in `esoDiffers`. `evidenceLevel` stays WEAK (AHA ICH 2022 Rec 3 is the current graded statement) |
+| `rules[4].evidenceNote[1]` | (absent) | ESO-EANS 2025 PICO 6.3 expert consensus (15/15): e.g., imaging or pathological evidence of CAA | Steiner 2025 PICO 6.3, p 1060: Expert consensus statement A, LAAO "may be considered… who are considered unsuitable for long-term OAC therapy (e.g. people with imaging or pathological evidence of cerebral amyloid angiopathy)", Vote: 15/15 (evidence-based statement: uncertainty, Very low ⊕, Strength –) | F9: same direction as AHA Rec 5; adds the CAA example. `evidenceLevel` stays WEAK |
+| `pearls[0]` | Recurrence risk is higher after lobar ICH and with more lobar microbleeds (AHA ICH 2022 prognosis text) — weigh in the decision | Recurrence risk: prior lobar ICH HR 4.8; lobar microbleeds HR 1.88 (1), 2.93 (2–4), 4.12 (>4); disseminated cortical siderosis HR 4.69 (AHA ICH 2022 §9.1.1) | Greenberg 2022 (sources[0]) §9.1.1 Recommendation-Specific Supportive Text 1, p e332: "a prior lobar ICH (HR, 4.8)… the number of lobar microbleeds (HR, 1.88 for 1 microbleed, 2.93 for 2–4 microbleeds, 4.12 for >4 microbleeds), and the presence of disseminated cortical siderosis (HR, 4.69)" | F7: replaces a vague pearl with the numbers; corrects the location label ("prognosis text" → §9.1.1) |
+| `pearls[1]` | (absent) | ESO-EANS 2025: OAC may not benefit — CAA-unrelated ICH with ≥10 microbleeds; CAA-related ICH with superficial siderosis or non-aneurysmal cSAH, or ≥5 lobar microbleeds; uncontrolled hypertension; chronic alcohol abuse (ungraded) | Steiner 2025 PICO 6.2 Additional information, p 1060: "Selection criteria for adults with prior ICH and NVAF that may not benefit from the resumption or the initiation of OAC include the following: 1. patients with CAA-unrelated ICH and ⩾10 CMBs, 2. patients with CAA-related ICH with superficial siderosis or non-aneurysmal convexity SAH, 3. patients with CAA-related ICH with the presence of ⩾5 lobar CMBs, 4. uncontrolled hypertension, 5. chronic alcohol abuse" | F8: bedside thresholds for the lobar/CAA caution; ungraded narrative text, so labelled "(ungraded)" |
+| `pearls[2]` | (absent) | PRESTIGE-AF (DOAC vs no OAC, n=319, enrolled 14 d–12 mo after ICH, median 49 d): ischemic stroke 0.83 vs 8.60/100 pt-yr (HR 0.05); all ICH 5.00 vs 0.82/100 pt-yr, recurrent-ICH non-inferiority not met (HR 10.89); NNT 13/yr, NNH 24/yr | Veltkamp 2025 (sources[2]): enrolment 14 days–12 months, p 929; n=319, median 49 days ICH→enrolment, ischaemic stroke 0·83 vs 8·60 per 100 patient-years, NNT 13, p 931; Table 2 p 931 (first ischaemic stroke HR 0·05 [95% CI 0·01–0·36]; first recurrent ICH HR 10·89 [90% CI 1·95–60·72], margin <1·735); all ICH 5·00 vs 0·82 per 100 patient-years and NNH 24, p 932 | F4: trial result → pearl (DECISION schema has no evidence-summary role) |
+| `pearls[3]` | (absent) | ENRICH-AF (presented ESC 2026, unpublished; edoxaban vs no OAC, n=948, median 74 d after intracranial hemorrhage incl. SDH/cSAH): stroke/SE 11.8% vs 12.8% (HR 0.88, NS); ischemic stroke HR 0.57, hemorrhagic stroke HR 2.99; ISTH major bleeding 11.6% vs 5.2% (HR 2.23) | Shoamanesh 2026 slides (sources[3]): slide 9 (randomized n=948), slide 10 (days ICH→randomization median 74 [IQR 32–167]; qualifying ICH 84%, SDH 14%, cSAH 2%), slide 12 (HR 0.88 [0.61–1.26], p=0.48), slide 13 (ischemic stroke HR 0.57 [0.36–0.90]; hemorrhagic stroke HR 2.99 [1.41–6.37]), slide 16 (ISTH major bleeding 54 [11.6%] vs 25 [5.2%], HR 2.23 [1.39–3.59]); ESC press release (sources[4]) p 3 (11.8% vs 12.8%) | F5, decision 1 (a): included before publication, labelled unpublished; no `verify[]` item (figures confirmed against the primary slides); recheck at publication tracked in the decision log (PARK) |
+| `pearls[4]` | (absent) | Lobar ICH or cSAH: ENRICH-AF stopped enrolling them (2023) for excess recurrent intracranial hemorrhage on edoxaban: 7.4 vs 3.2/100 pt-yr (non-lobar ICH 2.4 vs 1.0). PRESTIGE-AF (post hoc) found no location effect | Shoamanesh 2026 slides: slide 6 (lobar ICH and isolated cSAH excluded effective June and September 2023 after DSMB review of recurrent ICrH with edoxaban); slide 18 (recurrent ICrH per 100 patient-years, edoxaban vs control: lobar ICH or cSAH 7.4 vs 3.2; non-lobar ICH 2.4 vs 1.0); press release p 3; Veltkamp 2025 p 934 (recurrent ICH increase "did not seem to depend on haematoma location", post hoc, appendix p 13) | F6: lobar/cSAH caution; conflicting PRESTIGE-AF post hoc finding kept visible |
+| `relatedIds[1]` | (absent) | consult-workups:ich-etiology-workup | `valid-ids.txt` | F13: where microbleeds/siderosis/CAA are assessed |
+| `sources[1]` | (absent) | Steiner T, et al. European Stroke Organisation (ESO) and European Association of Neurosurgical Societies (EANS) guideline on stroke due to spontaneous intracerebral haemorrhage. Eur Stroke J 2025;10(4):1007-1086. doi:10.1177/23969873251340815 | Title page | F1 |
+| `sources[2]` | (absent) | Veltkamp R, et al. Direct oral anticoagulants versus no anticoagulation for the prevention of stroke in survivors of intracerebral haemorrhage with atrial fibrillation (PRESTIGE-AF): a multicentre, open-label, randomised, phase 3 trial. Lancet 2025;405:927-936. doi:10.1016/S0140-6736(25)00333-2 | p 927 | F2 |
+| `sources[3]` | (absent) | Shoamanesh A, et al. Primary Results of the ENRICH-AF Trial (NCT03950076). ESC Congress 2026, Hot Line, Munich, 29 August 2026 (presentation slides, user-supplied; not yet published) | Slide 1 | Decision 1 (a) |
+| `sources[4]` | (absent) | European Society of Cardiology. Safer stroke prevention strategies are needed for patients with atrial fibrillation after intracranial haemorrhage (ENRICH-AF press release). escardio.org, 28 August 2026 (user-supplied) | Press release header (dated 28 Aug 2026; Munich dateline 29 August 2026) | Decision 1 (a) |
+| `lastReviewed` | 2026-11-07 | UNREVIEWED | Rule 4 | Edited entry |
+
+## Checked, not changed
+- `rules[0]`–`[4]` condition, recommendation and evidenceLevel: match AHA ICH 2022 §9.1.3 Recs 1–5 (p e333: COR 2a C-LD; 2b B-R; 2b B-NR; 2b C-LD; 2b C-LD); mapping per `acute-neuro.ts` (2a → MODERATE, 2b → WEAK).
+- `rules[3]` (≈7–8 weeks, COR 2b, C-LD): kept; still the only graded timing statement. ESO-EANS 2025 gives no timing statement.
+- `keyNumbers[0]`: unchanged; exact copy of `rules[3]` condition + ": " + recommendation (unedited).
+- `rules[1]` (antiplatelet): ESO-EANS 2025 PICO 6.4 (weak for, moderate quality; p 1061) agrees; not added (outside the brief; ACCEPT).
+- `institutionVaries`, `question`, `population`, `options`, `contraindications`, `esoDiffers`: unchanged.
+- AHA ICH 2022 is still the current AHA/ASA ICH guideline (web check 2026-11-09).
+
+## Disposition
+- F1, F2, F3, F4, F5, F6, F7, F8, F9, F12, F13: FIX.
+- F11 (timing): ACCEPT.
+- ENRICH-AF publication recheck: PARK (decision log open item; not `verify[]`).
+- ENRICH-AF dose-eligibility subgroup: PARK.
+- F10 (ESO PICO 6.4): ACCEPT.
+- See README Disposition Ledger.
+
+## Open verify[]
+- None (`verify: []`).
+
+## Registry version
+- vascular-antithrombotics: MINOR, applied once at assembly (expected 0.13.0 → 0.14.0; see README).
