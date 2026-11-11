@@ -578,3 +578,5 @@ Rules adopted:
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R3/README.md`.
 
 Encoded 2026-11-11 on `content-r3-2026-11-09` (base `a2c145e`). C1 result: the `odsRisk` checkbox label in `src/components/ImmunoSodiumCalculators.tsx` read "High ODS risk (Na ≤105, alcoholism, malnutrition, liver disease, hypokalemia)", which differed from Verbalis Table 3 ("liver disease" for "advanced liver disease"; "alcoholism" for the entry's "alcohol use disorder"). Jason in chat 2026-11-11: fix it in this PR; the list now reads "Na ≤105, hypokalemia, alcohol use disorder, malnutrition, advanced liver disease", matching `definitions[1]`. No test asserted the old warning string or META text, so `__tests__/calculators.test.ts` is unchanged.
+
+Update 2026-11-11: signed by Jason (`hyponatremia-ods`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.1.1, app 2.2.1, content 2.2.1+76906193. The sign-off/release open item above is closed.
