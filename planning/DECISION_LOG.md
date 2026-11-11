@@ -821,3 +821,5 @@ Rules adopted:
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R8/README.md`.
 
 Encoded 2026-11-11 on `content-r8-2026-11-09` (base `72766b5`). Render check: Institution varies and Not graded badges on every maintenance item; renal rows as specified (oxcarbazepine CrCl <30 Cockcroft-Gault; topiramate CrCl <70 BSA-normalized plus HD; HD rows on cenobamate and perampanel; notes only on the other four); all 8 cards wrap at phone width; all 9 distinct links open; every listed search returns its card first.
+
+Update 2026-11-11: signed by Jason (all 8 R8 cards by name, `lastReviewed` 2026-11-11) and released: antiseizure-medications 1.1.1, content 2.2.1+2b86eaac. The sign-off/release open item above is closed; PARK D7 and P2 stay available to revive.

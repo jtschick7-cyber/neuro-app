@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+e683ebcc",
+  "contentVersion": "2.2.1+2b86eaac",
   "builtAt": "2026-11-11",
   "registries": [
     {
@@ -19,15 +19,15 @@
     {
       "id": "antiseizure-medications",
       "title": "Antiseizure medication dosing",
-      "version": "1.0.1",
+      "version": "1.1.1",
       "schemaVersion": "1.0.0",
-      "lastUpdated": "2026-11-07",
-      "entries": 6,
-      "reviewed": 6,
+      "lastUpdated": "2026-11-11",
+      "entries": 14,
+      "reviewed": 14,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-07"
+      "newestReview": "2026-11-11"
     },
     {
       "id": "asm-interactions",
@@ -815,6 +815,15 @@
         "vascular-antithrombotics:rivaroxaban",
         "vascular-antithrombotics:ticagrelor",
         "vascular-antithrombotics:vitamin-k"
+      ]
+    },
+    {
+      "citation": "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)",
+      "year": 2024,
+      "citedBy": [
+        "antiseizure-medications:carbamazepine",
+        "antiseizure-medications:oxcarbazepine",
+        "antiseizure-medications:perampanel"
       ]
     },
     {
@@ -1617,6 +1626,13 @@
       ]
     },
     {
+      "citation": "Onfi (clobazam) tablets and oral suspension US prescribing information. Lundbeck; revised 10/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:clobazam"
+      ]
+    },
+    {
       "citation": "Orr SL, et al. Management of adults with acute migraine in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache 2016;56(6):911-940. doi:10.1111/head.12835",
       "year": 2016,
       "citedBy": [
@@ -1636,6 +1652,13 @@
       "citedBy": [
         "vascular-antithrombotics:mechanical-valve-stroke",
         "vascular-antithrombotics:pregnancy-antithrombotics"
+      ]
+    },
+    {
+      "citation": "Oxtellar XR (oxcarbazepine) extended-release tablets US prescribing information. Supernus Pharmaceuticals; revised 10/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:oxcarbazepine"
       ]
     },
     {
@@ -2128,6 +2151,13 @@
       ]
     },
     {
+      "citation": "Sympazan (clobazam) oral film US prescribing information. Aquestive Therapeutics; revised 12/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "antiseizure-medications:clobazam"
+      ]
+    },
+    {
       "citation": "Taccone FS, et al. Restrictive vs Liberal Transfusion Strategy in Patients With Acute Brain Injury: The TRAIN Randomized Clinical Trial. JAMA 2024;332:1623-1633. doi:10.1001/jama.2024.20424",
       "year": 2024,
       "citedBy": [
@@ -2139,6 +2169,14 @@
       "year": 2026,
       "citedBy": [
         "acute-neuro:spinal-cord-compression"
+      ]
+    },
+    {
+      "citation": "Tegretol (carbamazepine) tablets and suspension; Tegretol-XR extended-release tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:carbamazepine",
+        "antiseizure-medications:phenobarbital"
       ]
     },
     {
@@ -2193,6 +2231,21 @@
       "year": 2014,
       "citedBy": [
         "neural-antibodies:dppx"
+      ]
+    },
+    {
+      "citation": "Topamax (topiramate) tablets and sprinkle capsules US prescribing information. Janssen Pharmaceuticals; revised 3/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:topiramate"
+      ]
+    },
+    {
+      "citation": "Trileptal (oxcarbazepine) film-coated tablets and oral suspension US prescribing information. Novartis; revised 10/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:oxcarbazepine",
+        "antiseizure-medications:phenobarbital"
       ]
     },
     {
@@ -2395,6 +2448,19 @@
       ]
     },
     {
+      "citation": "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)",
+      "year": 2024,
+      "citedBy": [
+        "antiseizure-medications:cenobamate",
+        "antiseizure-medications:clobazam",
+        "antiseizure-medications:oxcarbazepine",
+        "antiseizure-medications:perampanel",
+        "antiseizure-medications:phenobarbital",
+        "antiseizure-medications:topiramate",
+        "antiseizure-medications:zonisamide"
+      ]
+    },
+    {
       "citation": "Vyalev (foscarbidopa and foslevodopa) injection US prescribing information. AbbVie; revised 3/2026",
       "year": 2026,
       "citedBy": [
@@ -2470,6 +2536,16 @@
       ]
     },
     {
+      "citation": "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "antiseizure-medications:carbamazepine",
+        "antiseizure-medications:cenobamate",
+        "antiseizure-medications:clobazam",
+        "antiseizure-medications:phenobarbital"
+      ]
+    },
+    {
       "citation": "Xia D, Hasserjian RP. Molecular testing for JAK2, MPL, and CALR in myeloproliferative neoplasms. Am J Hematol 2016;91:1277-1280. doi:10.1002/ajh.24578",
       "year": 2016,
       "citedBy": [
@@ -2502,6 +2578,21 @@
       "year": 2026,
       "citedBy": [
         "acute-neuro:myasthenic-crisis"
+      ]
+    },
+    {
+      "citation": "Zonegran (zonisamide) capsules US prescribing information. Advanz Pharma; revised 9/2026 (user-supplied label)",
+      "year": 2026,
+      "citedBy": [
+        "antiseizure-medications:phenobarbital",
+        "antiseizure-medications:zonisamide"
+      ]
+    },
+    {
+      "citation": "Zonisade (zonisamide) oral suspension US prescribing information. Azurity Pharmaceuticals; revised 9/2025 (user-supplied label)",
+      "year": 2025,
+      "citedBy": [
+        "antiseizure-medications:zonisamide"
       ]
     }
   ],
