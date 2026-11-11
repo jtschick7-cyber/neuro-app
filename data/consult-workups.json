@@ -1,8 +1,8 @@
 {
   "title": "Consult workups",
-  "version": "3.0.1",
+  "version": "3.1.1",
   "schemaVersion": "2.1.0",
-  "lastUpdated": "2026-11-08",
+  "lastUpdated": "2026-11-11",
   "entries": [
     {
       "id": "young-stroke-workup",
@@ -4103,6 +4103,383 @@
         "Lewis A, Kirschen MP, Greer D. The 2023 AAN/AAP/CNS/SCCM Pediatric and Adult Brain Death/Death by Neurologic Criteria Consensus Practice Guideline: A Comparison With the 2010 and 2011 Guidelines. Neurol Clin Pract 2023;13:e200189. doi:10.1212/CPJ.0000000000200189"
       ],
       "lastReviewed": "2026-11-07"
+    },
+    {
+      "id": "aria-anti-amyloid",
+      "title": "ARIA on anti-amyloid therapy (lecanemab, donanemab)",
+      "keyNumbers": [
+        "Lecanemab: baseline; after 1 month (before 3rd IV or 5th SC dose), 2, 3 and 6 months; MRI within about 1 week before the next dose (Leqembi PI §2.4, p.6)",
+        "Donanemab: baseline; before infusions 2, 3, 4 and 7 (Kisunla PI §2.3, p.5)",
+        "ARIA-E: mild <5 cm in one location; moderate 5–10 cm or >1 site (each <10 cm); severe >10 cm with gyral swelling and sulcal effacement",
+        "ARIA-H new microhemorrhages: mild ≤4, moderate 5–9, severe ≥10; superficial siderosis: mild 1 focal area, moderate 2, severe >2",
+        "Consider early high-dose glucocorticoid: methylprednisolone 1 g IV daily for 5 days, then oral taper over several weeks (AUR only; not in either label)"
+      ],
+      "searchTerms": [
+        "ARIA",
+        "ARIA-E",
+        "ARIA-H",
+        "amyloid related imaging abnormalities",
+        "lecanemab",
+        "Leqembi",
+        "donanemab",
+        "Kisunla",
+        "anti-amyloid antibody",
+        "ApoE e4",
+        "microhemorrhage",
+        "superficial siderosis",
+        "stroke mimic"
+      ],
+      "category": "COGNITION_ENCEPHALOPATHY",
+      "consultQuestion": "On lecanemab or donanemab with new symptoms or MRI findings: is it ARIA, how severe, and do we hold or stop the drug?",
+      "keyHistory": [
+        "Which drug, route, start date, number of doses and date of last dose",
+        "Prior ARIA episodes (the count matters for AUR stopping rules)",
+        "ApoE ε4 status if known (labels: management does not differ by genotype)",
+        "Baseline MRI: ≥2 microhemorrhages or ≥1 area of superficial siderosis raises ARIA risk",
+        "Anticoagulant or antiplatelet use; any thrombolytic given",
+        "Symptoms and onset relative to the last dose"
+      ],
+      "keyExam": [
+        "Focal deficits (ARIA-E can mimic ischemic stroke)",
+        "Mental status: confusion, encephalopathy, stupor",
+        "Seizure activity",
+        "Symptom severity for the dosing tables (definitions in the Grade ARIA row)"
+      ],
+      "redFlags": [
+        "Stroke-like deficit on an anti-amyloid antibody: fatal ICH has followed thrombolysis in patients with ARIA",
+        "Seizure, status epilepticus, encephalopathy or stupor",
+        "Large FLAIR edema with or without mass effect, or numerous microhemorrhages (severe ARIA, CAA-ri pattern)",
+        "Intracerebral hemorrhage >1 cm",
+        "Radiographically severe ARIA, even if asymptomatic",
+        "New indication for an anticoagulant"
+      ],
+      "differential": [
+        {
+          "dx": "Acute ischemic stroke",
+          "clues": [
+            "ARIA-E can cause focal deficits that mimic ischemic stroke (both PIs §5.1)",
+            "DWI separates ARIA-E from ischemia; severe ARIA-E can show punctate restricted diffusion, typically much smaller than the edema and hemorrhage (ASNR 2025 p.27; donanemab AUR §5.3)",
+            "A stroke-protocol head CT/CTA may miss even advanced ARIA (donanemab AUR §5.3)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "ARIA-E or ARIA-H (drug effect)",
+          "clues": [
+            "ARIA-E: edema or sulcal effusion on FLAIR; ARIA-H: microhemorrhage or superficial siderosis on T2* GRE",
+            "Usually asymptomatic; reported symptoms include headache, confusion, visual changes, dizziness, nausea, gait difficulty, focal deficits (Kisunla PI §5.1)",
+            "Most ARIA-E occurs early but can occur at any time and recur"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Intracerebral hemorrhage >1 cm (macrohemorrhage)",
+          "clues": [
+            "Reported on both drugs, some fatal; higher with anticoagulation (PIs §5.1; lecanemab AUR p.9)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Spontaneous CAA-related inflammation",
+          "clues": [
+            "Severe ARIA has the radiographic syndrome of CAA-ri: large edema with or without mass effect, microhemorrhages in the same regions (donanemab AUR §5.5)",
+            "ARIA can occur spontaneously in Alzheimer disease, particularly with pretreatment microhemorrhage or superficial siderosis (Kisunla PI §5.1)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "PRES",
+          "clues": [
+            "Severe ARIA may be mistaken for PRES: overlapping clinical and radiographic features (donanemab AUR §5.5)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "Seizure or status epilepticus",
+          "clues": [
+            "Can be the presentation of serious ARIA (both PIs §5.1; lecanemab AUR p.10)"
+          ],
+          "mustNotMiss": false
+        }
+      ],
+      "workup": [
+        {
+          "test": "MRI brain without contrast: T2 FLAIR, T2* GRE, DWI",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": [
+            "Emergent when stroke vs ARIA is in question and EVT or thrombolysis is being considered (ASNR 2025 p.27)",
+            "If MRI is not available, keep ARIA-E in the differential for CT hypodensity (ASNR 2025 p.27)",
+            "Compare with the baseline MRI (ASNR 2025 p.29)",
+            "Field strength: 3T recommended, 1.5T or higher adequate, below 1.5T inadequate (ASNR 2025 p.29)",
+            "Contrast not recommended for monitoring; may be added for a symptomatic differential (ASNR 2025 p.27)"
+          ]
+        },
+        {
+          "test": "Grade ARIA on MRI (same thresholds in both labels)",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "ARIA-E: mild <5 cm in one location; moderate 5–10 cm or >1 site (each <10 cm); severe >10 cm with gyral swelling and sulcal effacement",
+            "ARIA-H new microhemorrhages: mild ≤4, moderate 5–9, severe ≥10; superficial siderosis: mild 1 focal area, moderate 2, severe >2",
+            "Kisunla counts new or worsening superficial siderosis (Kisunla PI Table 5, p.10; Leqembi PI Table 5, p.12)",
+            "Symptom severity for the dosing tables: mild = discomfort noticed, no disruption of normal daily activity; moderate = discomfort sufficient to reduce or affect normal daily activity; severe = incapacitating, unable to work or perform normal daily activity (Leqembi PI Table 3 footnote, p.7; Kisunla PI Table 2 footnote, p.6)"
+          ]
+        },
+        {
+          "test": "Surveillance MRI schedule: lecanemab",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "Lecanemab: baseline; after 1 month (before 3rd IV or 5th SC dose), 2, 3 and 6 months; MRI within about 1 week before the next dose (Leqembi PI §2.4, p.6)",
+            "Enhanced clinical vigilance for ARIA during the first 14 weeks (Leqembi PI §5.1, p.13)",
+            "The lecanemab AUR schedule (5th, 7th, 14th infusion) is older than the current label; not used here"
+          ]
+        },
+        {
+          "test": "Surveillance MRI schedule: donanemab",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "Donanemab: baseline; before infusions 2, 3, 4 and 7 (Kisunla PI §2.3, p.5)",
+            "Enhanced clinical vigilance for ARIA during the first 24 weeks (Kisunla PI §5.1, p.11)"
+          ]
+        },
+        {
+          "test": "Follow-up MRI after ARIA",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "ARIA on MRI, symptomatic or not"
+          ],
+          "notes": [
+            "AUR: monthly noncontrast MRI until ARIA-E resolves and ARIA-H stabilizes (lecanemab AUR p.10; donanemab AUR §5.4, p.10; ASNR 2025 p.27)",
+            "Label: consider a follow-up MRI 2 to 4 months after initial identification (Leqembi PI Tables 3 and 4, p.7; Kisunla PI Tables 2 and 3, p.6)"
+          ]
+        }
+      ],
+      "decisionRules": [
+        {
+          "order": 1,
+          "condition": "Stroke-like deficit on lecanemab or donanemab",
+          "recommendation": "Consider whether the symptoms could be due to ARIA-E before giving a thrombolytic. For IVT, see vascular-antithrombotics:thrombolysis-with-prior-antithrombotics.",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Label warning, not graded (Leqembi PI §5.1, p.11; Kisunla PI §5.1, p.10)",
+            "AHA 2026 Table 8 is not restated here"
+          ]
+        },
+        {
+          "order": 2,
+          "condition": "Acute stroke on lecanemab or donanemab (AUR, stricter than the labels)",
+          "recommendation": "Lecanemab AUR: no acute thrombolytics. Donanemab AUR: no IVT without a pre-treatment MRI unequivocally excluding ARIA; consider thrombectomy without a thrombolytic for large-vessel occlusion.",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Lecanemab AUR p.6",
+            "Donanemab AUR p.6 and §5.3, p.10"
+          ]
+        },
+        {
+          "order": 3,
+          "condition": "ARIA-E mild on MRI, asymptomatic",
+          "recommendation": "May continue dosing (Kisunla: at current dose and schedule).",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Label dosing table; both AURs agree (Leqembi PI Table 3, pp.6–7; Kisunla PI Table 2, pp.5–6; lecanemab AUR p.10; donanemab AUR Table 8, p.11)"
+          ]
+        },
+        {
+          "order": 4,
+          "condition": "ARIA-E mild on MRI with mild symptoms (label)",
+          "recommendation": "May continue dosing based on clinical judgment.",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Leqembi PI Table 3, p.7; Kisunla PI Table 2, p.6",
+            "The AURs are more conservative: see the next rule"
+          ]
+        },
+        {
+          "order": 5,
+          "condition": "ARIA with mild or moderate symptoms, or radiographically moderate ARIA (AUR). Includes the case the label lets you continue: mild ARIA-E with mild symptoms",
+          "recommendation": "Suspend dosing.",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Lecanemab AUR p.10: moderate or severe radiographic ARIA, or symptoms, suspend; Table 8, p.30",
+            "Donanemab AUR §5.4, p.10: suspend if symptomatic or radiographically moderate. The AUR notes the label allows continuing with mild symptoms and mild ARIA-E and says it recommends a slightly more conservative approach. Table 8, p.11"
+          ]
+        },
+        {
+          "order": 6,
+          "condition": "ARIA-E moderate or severe on MRI, or moderate or severe symptoms at any grade (label)",
+          "recommendation": "Suspend dosing until MRI shows radiographic resolution and symptoms, if present, resolve. Consider a follow-up MRI 2 to 4 months after initial identification. Resumption is guided by clinical judgment.",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Leqembi PI Table 3 and footnote 3, p.7; Kisunla PI Table 2 and footnote b, p.6"
+          ]
+        },
+        {
+          "order": 7,
+          "condition": "ARIA-H mild on MRI, asymptomatic (label)",
+          "recommendation": "May continue dosing (Kisunla: at current dose and schedule).",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Leqembi PI Table 4, p.7; Kisunla PI Table 3, p.6"
+          ]
+        },
+        {
+          "order": 8,
+          "condition": "ARIA-H moderate on MRI, or mild or moderate ARIA-H with symptoms (label)",
+          "recommendation": "Suspend dosing until MRI shows radiographic stabilization and symptoms, if present, resolve. Resumption is guided by clinical judgment. Consider a follow-up MRI 2 to 4 months after initial identification.",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Leqembi PI Table 4 and footnote 2, p.7; Kisunla PI Table 3 and footnote a, p.6"
+          ]
+        },
+        {
+          "order": 9,
+          "condition": "ARIA-H severe on MRI, any symptoms (label)",
+          "recommendation": "Suspend dosing until MRI shows radiographic stabilization and symptoms, if present, resolve. Use clinical judgment in considering whether to continue or permanently discontinue.",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Leqembi PI Table 4 and footnote 3, p.7; Kisunla PI Table 3 and footnote b, p.6"
+          ]
+        },
+        {
+          "order": 10,
+          "condition": "Intracerebral hemorrhage >1 cm during treatment (label)",
+          "recommendation": "Suspend dosing until MRI shows radiographic stabilization and symptoms, if present, resolve. Use clinical judgment in considering whether to continue after stabilization and symptom resolution or permanently discontinue.",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Leqembi PI §2.4, p.7; Kisunla PI §2.3, p.6"
+          ]
+        },
+        {
+          "order": 11,
+          "condition": "Recurrent ARIA-E (label)",
+          "recommendation": "Use clinical judgment in considering whether to continue dosing.",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Leqembi PI §5.1, p.13; Kisunla PI §5.1, p.11",
+            "Leqembi PI: no experience continuing through symptomatic ARIA-E or asymptomatic radiographically severe ARIA-E"
+          ]
+        },
+        {
+          "order": 12,
+          "condition": "Radiographically severe ARIA-E or ARIA-H, or severe symptoms at any grade (AUR)",
+          "recommendation": "Discontinue.",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Donanemab AUR §5.4 and Table 8, pp.10–11; §5.6, p.12",
+            "Lecanemab AUR p.10 (text) and Table 8, p.30. Its Fig 2 shows a suspend path for asymptomatic severe ARIA"
+          ]
+        },
+        {
+          "order": 13,
+          "condition": "Stopping rules for lecanemab (AUR)",
+          "recommendation": "Discontinue for: severe radiographic ARIA, severe symptomatic ARIA, any macrohemorrhage, >10 microhemorrhages since starting, more than 1 area of superficial siderosis (AUR text says 1 area), more than 2 ARIA episodes, or any condition requiring an anticoagulant.",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Lecanemab AUR pp.10–11 (text) and Fig 2"
+          ]
+        },
+        {
+          "order": 14,
+          "condition": "Stopping rules for donanemab (AUR)",
+          "recommendation": "Discontinue for: severe radiographic ARIA-E or ARIA-H, any macrohemorrhage, >10 new microhemorrhages since starting, more than 1 area of superficial siderosis, a third ARIA event even if mild and asymptomatic, a seriously symptomatic episode, or a new indication for an anticoagulant. If only 1 area of siderosis emerges, re-evaluate risk and benefit.",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Donanemab AUR §5.6, p.12"
+          ]
+        },
+        {
+          "order": 15,
+          "condition": "Resuming after a suspension (AUR)",
+          "recommendation": "Donanemab AUR: resume if symptoms have fully resolved, ARIA-E has resolved, ARIA-H has stabilized, stopping rules are not met, and the patient and care partners want to continue. Lecanemab AUR: once symptoms and ARIA-E resolve, consider restarting after a risk-benefit discussion.",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Donanemab AUR §5.4, p.10",
+            "Lecanemab AUR p.10"
+          ]
+        },
+        {
+          "order": 16,
+          "condition": "Serious or severe symptomatic ARIA-E (AUR)",
+          "recommendation": "Consider early high-dose glucocorticoid: methylprednisolone 1 g IV daily for 5 days, then oral taper over several weeks (AUR only; not in either label)",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Lecanemab AUR p.10; donanemab AUR §5.5, p.11",
+            "Neither label addresses steroids"
+          ]
+        },
+        {
+          "order": 17,
+          "condition": "Patient on lecanemab or donanemab needs an anticoagulant or antithrombotic (label)",
+          "recommendation": "Use additional caution when starting an antithrombotic or thrombolytic. Caution is also advised for patients who need to be on an anticoagulant.",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Leqembi PI §5.1, p.11; Kisunla PI §5.1, p.10"
+          ]
+        },
+        {
+          "order": 18,
+          "condition": "Patient on lecanemab or donanemab needs an anticoagulant (AUR)",
+          "recommendation": "Stop the antibody. Lecanemab AUR: reinstate if anticoagulation is no longer medically indicated. Donanemab AUR: discontinue.",
+          "evidenceLevel": "EXPERT_OPINION",
+          "evidenceNote": [
+            "Lecanemab AUR p.9",
+            "Donanemab AUR §5.6, p.12"
+          ]
+        }
+      ],
+      "initialSteps": [
+        "Symptoms suggestive of ARIA: clinical evaluation including MRI (both labels)",
+        "Serious or severe ARIA: MRI promptly with DWI to exclude ischemic stroke; admission to hospital or a critical care unit with staff experienced in cerebral edema may be needed (lecanemab AUR p.10; donanemab AUR §5.5)",
+        "Seizures: monitor and treat if they occur (lecanemab AUR p.10); see acute-neuro:convulsive-status-epilepticus",
+        "Steroids for serious or severe ARIA: see the steroid rule (AUR only)"
+      ],
+      "disposition": [
+        "Serious or severe ARIA: hospital or critical care unit may be needed (AURs)",
+        "Resumption after a suspension is guided by clinical judgment (labels); AUR conditions are in the resume rule",
+        "Follow-up MRI schedule: see the Follow-up MRI row"
+      ],
+      "calculatorIds": [],
+      "institutionVaries": [
+        "Who prescribes and runs the infusion program, and who is called when a dose is suspended",
+        "Emergent MRI access, scanner field strength, and who reads ARIA",
+        "Level of care for severe ARIA (ward vs ICU)",
+        "Whether a written serious-ARIA protocol exists (AURs ask prescribing centers to have one)"
+      ],
+      "pearls": [
+        "Timing: most ARIA-E radiographic events occur early, within the first 7 doses for lecanemab (Study 2) and the first 24 weeks for donanemab (Study 1); ARIA can occur at any time and patients can have more than 1 episode (PIs §5.1)",
+        "Lecanemab Study 2: ARIA-E resolved on MRI in 52% by 12 weeks, 81% by 17 weeks, 100% overall after detection (Leqembi PI §5.1, p.13)",
+        "Donanemab Study 1: ARIA-E resolved on MRI in 63% by 12 weeks, 80% by 20 weeks, 83% overall after the first event; symptoms resolved in about 85% (Kisunla PI §5.1, pp.8, 11)",
+        "ApoE ε4, lecanemab Study 2: ARIA in homozygotes 45%, heterozygotes 19%, noncarriers 13% (placebo 22%, 9%, 4%); symptomatic ARIA-E 9%, 2%, 1%; serious ARIA 3%, about 1%, about 1%; severe radiographic ARIA-E 5%, 0.4%, 0%; severe ARIA-H 13.5%, 2.1%, 1.1% (Leqembi PI §5.1, pp.11, 13)",
+        "ApoE ε4, donanemab Study 1: ARIA in homozygotes 55%, heterozygotes 36%, noncarriers 25% (placebo 22%, 13%, 12%); symptomatic ARIA-E 8%, 7%, 4%; serious ARIA 3%, 2%, 1%; severe ARIA-E 3%, 2%, 0.4%; severe ARIA-H 22%, 8%, 4% (Kisunla PI §5.1, pp.9–11)",
+        "ICH >1 cm: lecanemab 0.7% (6/898) vs 0.1% on placebo (Study 2); donanemab 0.5% vs 0.2% on placebo (Study 1) and 1% (Study 2). Fatal ICH has occurred on both (PIs §5.1)",
+        "Antithrombotics, lecanemab Study 2: ICH >1 cm 0.9% (3/328) with any antithrombotic vs 0.6% (3/545) without; 2.5% (2/79) on an anticoagulant alone or with an antiplatelet or aspirin vs none on placebo (Leqembi PI §5.1, p.11)",
+        "Antithrombotics, donanemab Study 1: ICH >1 cm 0.6% (2/349) with vs 0.4% (2/504) without; ARIA-H 30% vs 29% (Kisunla PI §5.1, p.10)",
+        "Fatal ICH has followed thrombolytic use in patients with ARIA symptoms on anti-amyloid antibodies (both PIs §5.1)",
+        "Seizure and status epilepticus can occur with ARIA (both PIs §5.1). With severe ARIA, encephalopathy, stupor and lateralizing signs can also occur (lecanemab AUR p.10)",
+        "In trials 74%–97% of ARIA was asymptomatic and found on routine MRI (ASNR 2025 p.24)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "consult-workups:caa-related-inflammation",
+        "consult-workups:ich-etiology-workup",
+        "consult-workups:rapidly-progressive-dementia",
+        "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics",
+        "vascular-antithrombotics:af-stroke-anticoag-timing",
+        "vascular-antithrombotics:restart-antithrombotic-after-ich",
+        "acute-neuro:pres",
+        "acute-neuro:convulsive-status-epilepticus"
+      ],
+      "sources": [
+        "Eisai. LEQEMBI (lecanemab-irmb) prescribing information, revised 7/2026: boxed warning, §2.4 (Tables 3, 4), §5.1 (Table 5). Page numbers are PDF pages.",
+        "Eli Lilly. KISUNLA (donanemab-azbt) prescribing information, revised 7/2025: boxed warning, §2.3 (Tables 2, 3), §5.1 (Table 5). Page numbers are PDF pages.",
+        "Cummings J, et al. Lecanemab: appropriate use recommendations. J Prev Alzheimers Dis 2023;10(3):362-377. doi:10.14283/jpad.2023.30. Author manuscript pages.",
+        "Rabinovici GD, et al. Donanemab: appropriate use recommendations. J Prev Alzheimers Dis 2025;12:100150. doi:10.1016/j.tjpad.2025.100150",
+        "Cogswell PM, et al. Alzheimer disease anti-amyloid immunotherapies: imaging recommendations and practice considerations for monitoring of amyloid-related imaging abnormalities. AJNR Am J Neuroradiol 2025;46:24-32. doi:10.3174/ajnr.A8469"
+      ],
+      "lastReviewed": "2026-11-11"
     }
   ]
 }

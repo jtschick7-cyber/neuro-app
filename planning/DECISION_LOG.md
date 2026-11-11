@@ -997,3 +997,65 @@ Overlap check (C1): no duplicate and no contradiction. A search of all `data/*.j
 Encoded 2026-11-11 on `content-r13-2026-11-10` (base `a620fcb`). The draft gave no numbers ("as found → next MINOR"); the registry was at 2.4.1 after R10, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
 
 Update 2026-11-11: signed by Jason (`neurosyphilis`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.5.1, content 2.2.1+d25d664b. The sign-off/release open item above is closed; PARK items C1, A4, A6, A8 and A9 stay open.
+
+## 2026-11-10 — Review item R14 (ARIA on anti-amyloid therapy entry)
+
+Approved by Jason in chat 2026-11-10 ("Otherwise approved"), after the proposal with decisions D1–D12 as recommended. Draft: `planning/drafts/review-2026-11-08/R14/` (new entry; no base). Entry `lastReviewed: "UNREVIEWED"`.
+
+Finding: the app had no ARIA or anti-amyloid therapy content. Sources: Leqembi PI (rev 7/2026), Kisunla PI (rev 7/2025), Lecanemab AUR (Cummings, JPAD 2023), Donanemab AUR (Rabinovici, JPAD 2025), ASNR imaging recommendations (Cogswell, AJNR 2025). Both labels match the current DailyMed/FDA versions by search snippet only (web check 2026-11-10). The uploaded AHA 2026 Table 8 extract stops before the amyloid immunotherapy/ARIA row; nothing is encoded from it.
+
+| Draft | Findings | Change |
+|---|---|---|
+| `consult-workups.aria-anti-amyloid.json` | A1–A14, K1–K5 | New entry `aria-anti-amyloid` (COGNITION_ENCEPHALOPATHY): recognition and mimics (stroke, ICH >1 cm, CAA-ri, PRES, seizure); MRI FLAIR, GRE, DWI and grading (ARIA-E by size, ARIA-H by count); surveillance schedules per label (lecanemab: 1, 2, 3, 6 months; donanemab: before infusions 2, 3, 4, 7); label hold rules (ARIA-E and ARIA-H tables, ICH >1 cm, recurrent ARIA-E); AUR rules shown separately (suspend with symptoms, discontinue for severe, drug-specific stopping lists, resume criteria); steroids (AUR only: methylprednisolone 1 g IV daily for 5 days, then oral taper over several weeks); antithrombotics (label caution; AUR stop the antibody if an anticoagulant is needed); thrombolysis as a link plus one label rule and one AUR rule; ApoE ε4 rates per drug; 18 decision rules; 11 pearls; 5 keyNumbers; 5 verify; 8 relatedIds; 5 sources |
+
+Rules adopted:
+- Label statements are `NOT_GRADED`. AUR and ASNR statements are `EXPERT_OPINION`, with the document named in `evidenceNote`. Neither AUR is a formal Delphi, so nothing is `CONSENSUS`.
+- Where a label and an AUR differ (mild symptoms with mild ARIA-E; severe radiographic ARIA; anticoagulant needed; follow-up MRI interval), both are shown as separate rules and neither is picked.
+- Label MRI schedules only; the older lecanemab AUR schedule is not used.
+- Seizures: source-stated content only; no antiseizure medication or dose.
+- AHA 2026 Table 8 is not restated; IVT is a link to `vascular-antithrombotics:thrombolysis-with-prior-antithrombotics`.
+
+Overlap check (C1): no duplicate; one existing line to weigh against rule 1. A search of all `data/*.json` for "ARIA", "amyloid", "lecanemab", "donanemab", "Leqembi" and "Kisunla" found hits in 3 entries outside the new one. (1) `vascular-antithrombotics:thrombolysis-with-prior-antithrombotics` contraindications[3]: "Amyloid immunotherapy or ARIA", listed under contraindications[4] "(All AHA 2026 Table 8, absolute tier)". The new entry's rule 1 (label: "Consider whether the symptoms could be due to ARIA-E before giving a thrombolytic") is softer than that absolute contraindication; it links to the thrombolysis entry and says Table 8 is not restated, so the two don't conflict, but rule 1 read alone understates the signed line. This signed line also bears on verify item 1 (the Table 8 amyloid row). (2) `consult-workups:caa-related-inflammation`: searchTerms[2], [4], [5] ("ARIA-like"), keyHistory[2] "Anti-amyloid antibody therapy — ARIA has a similar clinicoradiologic picture (Auriel)", and three source titles; its steroid regimen (IV methylprednisolone 1 g daily for 3–5 days, then oral prednisone 60 mg daily tapered over months) is for CAA-ri, a different condition from the AUR ARIA regimen (5 days, taper over several weeks), so not a contradiction. (3) `consult-workups:ich-etiology-workup`: searchTerms[4] and differential[1], cerebral amyloid angiopathy only. `consult-workups:rapidly-progressive-dementia` has no hit. No entry was changed. Rendering check (C2): in the dev app at 375 px, the 18 decision rules appear in order with 10 "Not graded" and 8 "Expert opinion" badges, matching the data. The long lines (`decisionRules[12]`, `[13]`, `[14]`, `[17]`, `workup[1].notes[3]`) wrap with no horizontal page scroll. The five keyNumbers display and are exact copies of their source fields. All five `verify[]` items display. Search finds the entry first for "ARIA", "lecanemab", "donanemab", "Leqembi", "Kisunla", "amyloid related imaging abnormalities" and "superficial siderosis". All eight related links point at existing entries. One oddity, content not changed: rule 1 shows the raw id "see vascular-antithrombotics:thrombolysis-with-prior-antithrombotics" as plain text, not a link.
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| consult-workups | 3.0.1 | 3.1.0 | MINOR (new entry) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- C1: ARIA or anti-amyloid mentions in other entries.
+- B8: overall ARIA incidence by arm and serious or fatal ARIA counts.
+- B9: AUR Table 9 resource list for serious ARIA (one line in institutionVaries only).
+
+### ACCEPT (not raised again)
+- B1: category COGNITION_ENCEPHALOPATHY.
+- B2: hold/stop and steroid rules held as DecisionRules in consult-workups despite the schema header comment; no schema change.
+- B3: label follow-up MRI at 2 to 4 months and AUR monthly MRI both shown.
+- B4: older lecanemab AUR and ASNR MRI schedule not used.
+- B5: ANA white paper rule as quoted in ASNR not encoded (secondary).
+- B6: radiology workflow items (GRE TE values, vendor protocols, templates, orders, communication) not encoded.
+- B7: eligibility and exclusion rules, infusion reactions, amyloid confirmation and PET stopping rules not encoded.
+- B10: steroid reference (Regenhardt 2020) not read; regimen from the two AURs only.
+- B11: local ICU, MRI and prescriber details left as institution-varies.
+- B12: aducanumab not covered.
+- B13: common knowledge left out (ARIA pathophysiology, antibody mechanism, general status epilepticus care, general stroke workup).
+- C2 (pending Claude Code's report): rendering of long rule lines.
+
+### Open items
+- `verify[]` (5): AHA 2026 Table 8 amyloid row not seen; lecanemab AUR siderosis threshold (text vs Fig 2); lecanemab AUR Fig 2 vs text on asymptomatic severe ARIA; lecanemab AUR cited by manuscript pages; label currency checked by snippet only.
+- Jason: clear the verify[] items, review, then `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R14/README.md`.
+
+Encoded 2026-11-11 on `content-r14-2026-11-10` (base `00e95a2`). The draft gave no numbers ("as found → next MINOR"); the registry was at 3.0.1, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, consult-workups stays 3.1.0). All five verify items closed:
+- V1 (AHA 2026 Table 8 amyloid row not seen). Reason: the entry restates nothing from Table 8 and links to `vascular-antithrombotics:thrombolysis-with-prior-antithrombotics`; this log already records that the complete Table 8 was checked against that entry and matched, and it lists "Amyloid immunotherapy or ARIA" in the absolute tier.
+- V2 (lecanemab AUR siderosis threshold, text 1 area vs Fig 2 more than 1). Reason: internal inconsistency in the AUR; the rule itself says "(AUR text says 1 area)", so both readings are visible. The entry keeps "more than 1".
+- V3 (lecanemab AUR, asymptomatic severe ARIA, Fig 2 vs text and Table 8). Reason: the entry follows the text and Table 8, which agree and are the stricter reading; the evidence note names the Fig 2 difference.
+- V4 (lecanemab AUR cited by author-manuscript pages). Reason: the source line says "Author manuscript pages"; page numbers are a finding aid, not content.
+- V5 (label currency). Reason: Leqembi — DailyMed shows revised 7/2026, matching the draft (web check 2026-11-11). Kisunla — Lilly's current label page prints "Revised: 7/2025" in the Highlights, matching the draft, and "Revised: 8/2025" at the end (version 7, effective 2025-08-12), with Recent Major Changes all dated 07/2025; the ARIA sections were not compared line by line against the 7/2025 PDF. Closed with that noted.
+- With `verify[]` empty, the "see verify" pointers were dropped from three lines (rule 1 evidence note; rule 12 evidence note; rule 13 recommendation, which keeps "(AUR text says 1 area)"). No other wording changed. The data entry therefore differs from the draft JSON in `verify` and those three lines.
+- Left as drafted: rule 1 uses the label wording ("consider whether the symptoms could be due to ARIA-E before giving a thrombolytic"), softer than the thrombolysis entry's absolute contraindication; it links there.
+- Open: sign-off and release, when Jason asks.
+
+Update 2026-11-11 (2): signed by Jason (`aria-anti-amyloid`, `lastReviewed` 2026-11-11) and released: consult-workups 3.1.1, content 2.2.1+a806b227. The sign-off/release open item above is closed; PARK items C1, B8 and B9 stay open.
