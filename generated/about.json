@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+8087811d",
+  "contentVersion": "2.2.1+e56cc26d",
   "builtAt": "2026-11-11",
   "registries": [
     {
@@ -97,11 +97,11 @@
     {
       "id": "reference-cards",
       "title": "Reference Cards",
-      "version": "1.3.1",
+      "version": "1.4.1",
       "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-11",
-      "entries": 4,
-      "reviewed": 4,
+      "entries": 5,
+      "reviewed": 5,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
@@ -393,6 +393,13 @@
       "year": 2023,
       "citedBy": [
         "seizure-threshold:bupropion"
+      ]
+    },
+    {
+      "citation": "Busl KM, et al. Guidelines for Neuroprognostication in Adults with Guillain–Barré Syndrome. Neurocrit Care 2023;38:564-583. doi:10.1007/s12028-023-01707-3",
+      "year": 2023,
+      "citedBy": [
+        "reference-cards:neuroprognostication"
       ]
     },
     {
@@ -1132,6 +1139,13 @@
       ]
     },
     {
+      "citation": "Hwang DY, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Intracerebral Hemorrhage. Neurocrit Care 2024;40:395-414. doi:10.1007/s12028-023-01854-7",
+      "year": 2024,
+      "citedBy": [
+        "reference-cards:neuroprognostication"
+      ]
+    },
+    {
       "citation": "Hwang H, Norris SA. Managing advanced Parkinson disease. J Geriatr Psychiatry Neurol 2021;34(4):289-300. doi:10.1177/08919887211018277",
       "year": 2021,
       "citedBy": [
@@ -1424,6 +1438,20 @@
       ]
     },
     {
+      "citation": "Madzar D, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Status Epilepticus. Neurocrit Care 2026;44:365-383. doi:10.1007/s12028-025-02425-8",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:neuroprognostication"
+      ]
+    },
+    {
+      "citation": "Mainali S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Acute Ischemic Stroke. Neurocrit Care 2026;44:745-769. doi:10.1007/s12028-026-02486-3",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:neuroprognostication"
+      ]
+    },
+    {
       "citation": "McKay JH, Dimberg EL, Lopez Chiriboga AS. A systematic review of gamma-aminobutyric acid receptor type B autoimmunity. Neurol Neurochir Pol 2019;53(1):1-7. doi:10.5603/PJNNS.a2018.0005",
       "year": 2019,
       "citedBy": [
@@ -1503,6 +1531,13 @@
       "year": 2022,
       "citedBy": [
         "acute-neuro:elevated-icp-herniation"
+      ]
+    },
+    {
+      "citation": "Muehlschlegel S, et al. Guidelines for Neuroprognostication in Critically Ill Adults with Moderate–Severe Traumatic Brain Injury. Neurocrit Care 2024;40:448-476. doi:10.1007/s12028-023-01902-2",
+      "year": 2024,
+      "citedBy": [
+        "reference-cards:neuroprognostication"
       ]
     },
     {

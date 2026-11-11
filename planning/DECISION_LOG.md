@@ -947,3 +947,5 @@ Update 2026-11-11 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, ref
 - With `verify[]` empty, the two pointers "(see verify)" (AIS models row) and "— see verify" (TBI not-reliable row) were dropped from the evidence notes; no other wording changed.
 - C1 decided: good-practice statements ("strong recommendation, evidence cannot be graded / not graded") are `CONSENSUS` on this card, matching `consult-workups:post-cardiac-arrest-prognostication`. 11 rows changed from STRONG to CONSENSUS (ICH 1, AIS 4, SE 4, GBS 1, TBI 1). This replaces the "→ STRONG" mapping in "Rules adopted" above and in the draft README (D6). Hwang good practice statement #1 ("conditional recommendation, evidence not graded") stays WEAK as drafted. The data entry therefore differs from the draft JSON in `verify`, those 11 `evidenceLevel` values and the two evidence-note pointers.
 - Open: sign-off and release, when Jason asks.
+
+Update 2026-11-11 (2): signed by Jason (`neuroprognostication`, `lastReviewed` 2026-11-11) and released: reference-cards 1.4.1, content 2.2.1+e56cc26d. The sign-off/release open item above is closed; PARK items C2, D8, A4, A5 and A7 stay open.

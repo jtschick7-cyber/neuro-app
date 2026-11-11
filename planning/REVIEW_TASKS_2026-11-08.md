@@ -290,7 +290,7 @@ Open under 3.10:
 | # | Item | Status |
 |---|---|---|
 | 4.1 | **"Can it go down the tube?" view** — one screen listing route/tube lines already in signed content. Phase 1 (UI only): aggregate `antiseizure-medications.*.enteral[]` + `ivPo[]`, and deep-link to the PD card's "Enteral route first" section and the aSAH card's nimodipine row. Phase 2 (schema + content): an optional `enteral: Text[]` on vascular AGENT entries, filled by **moving** existing signed pearls word for word (ticagrelor "can be crushed…", dabigatran "swallow capsules whole…"), plus label-sourced lines from R8. | Phase 1: Claude Code proposes the design → Jason approves. Phase 2: propose the schema first |
-| 4.2 | Neuroprognostication card (NCS series: GBS, ICH, SE, ± AIS/aSAH/TBI). Include the NCS ICH guidance from superseded task 1.4 (don't use the ICH score alone for prognosis or limiting care) | R12. **DRAFTED (2026-11-11)**: [PR #50](https://github.com/jtschick7-cyber/neuro-app/pull/50) |
+| 4.2 | Neuroprognostication card (NCS series: GBS, ICH, SE, ± AIS/aSAH/TBI). Include the NCS ICH guidance from superseded task 1.4 (don't use the ICH score alone for prognosis or limiting care) | R12. **DRAFTED (2026-11-11)**: [PR #50](https://github.com/jtschick7-cyber/neuro-app/pull/50); signed and released 2026-11-11 (1.4.1) |
 | 4.3 | Neurosyphilis / ocular and otic syphilis entry | BLOCKED (R13) |
 | 4.4 | ARIA on anti-amyloid therapy entry | BLOCKED (R14) |
 | 4.5 | Optional: Lyme neuroborreliosis | BLOCKED (R15) |
