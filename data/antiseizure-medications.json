@@ -3,11 +3,11 @@
   "scopeNotes": [
     "Adults; maintenance and titration only — loading doses live in the status epilepticus entries and load calculators",
     "CRRT dosing not covered — no institutional or published source supplied; ask pharmacy",
-    "Phenobarbital not covered — no source supplied"
+    "Phenobarbital: no current FDA-approved adult label; card sourced from the AES 2024 ASM summary"
   ],
-  "version": "1.0.1",
+  "version": "1.1.0",
   "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-11",
   "entries": [
     {
       "id": "levetiracetam",
@@ -1049,6 +1049,1130 @@
         "Lamictal (lamotrigine) tablets, tablets for oral suspension, ODT US prescribing information. GlaxoSmithKline; revised 10/2025 (user-supplied label)"
       ],
       "lastReviewed": "2026-11-07"
+    },
+    {
+      "id": "oxcarbazepine",
+      "title": "Oxcarbazepine (Trileptal / Oxtellar XR) — maintenance dosing and NPO options",
+      "searchTerms": [
+        "Trileptal",
+        "Oxtellar XR",
+        "OXC",
+        "oxcarbazepine suspension",
+        "oxcarbazepine NPO",
+        "oxcarbazepine hyponatremia",
+        "MHD level"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Oxcarbazepine IR (Trileptal tablets or suspension)",
+          "routes": [
+            "PO",
+            "NG"
+          ],
+          "doseText": "Adults: start 600 mg/day BID; ↑ by ≤600 mg/day at ~weekly intervals. Adjunctive: recommended 1200 mg/day. Conversion to monotherapy: up to 2400 mg/day",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 300,
+              "amountMax": 300,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Adjunctive (recommended)",
+              "amountMin": 600,
+              "amountMax": 600,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 1200,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Monotherapy (maximum recommended)",
+              "amountMin": 1200,
+              "amountMax": 1200,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 2400,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Adjunctive >1200 mg/day: somewhat more effective, but most patients couldn't tolerate 2400 mg/day (CNS effects) (§2.1)",
+            "Strong CYP3A4 or UGT inducers: dose adjustment recommended (§2.1, §7.2)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Trileptal label §2.1–2.3"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Oxcarbazepine XR (Oxtellar XR)",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Adults: 600 mg once daily for 1 week; ↑ by 600 mg/day weekly to 1200–2400 mg once daily. With strong CYP3A4 inducers (carbamazepine, phenobarbital, phenytoin) or UGT inducers (rifampin): consider starting 900 mg once daily",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 600,
+              "amountMax": 600,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once daily"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 1200,
+              "amountMax": 2400,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 2400,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "Once daily"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Take on an empty stomach (≥1 h before or ≥2 h after meals) — food raises peak levels and adverse reactions (§2.1)",
+            "Geriatric: consider starting 300 or 450 mg/day; ↑ by 300–450 mg/day weekly (§2.4)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Oxtellar XR label §2.1–2.2, §2.4–2.5"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": null,
+          "crclMax": 30,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl <30 mL/min",
+          "doseText": "Start at half the usual starting dose (300 mg/day; IR given BID) and increase slowly. XR: ↑ by 300–450 mg/day weekly",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 300,
+              "amountMax": 300,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "IR: BID; XR: once daily"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": []
+        }
+      ],
+      "renalNotes": [
+        "CrCl <30 mL/min: MHD half-life prolonged to 19 h, AUC 2-fold (Trileptal §12.3)",
+        "Label units are mL/min, not BSA-normalized",
+        "Labels give no hemodialysis dosing"
+      ],
+      "hepatic": [
+        "Mild–moderate: no effect on oxcarbazepine or MHD PK (Trileptal §12.3)",
+        "Severe: not evaluated; Oxtellar XR not recommended (Oxtellar §8.7)"
+      ],
+      "ivPo": [
+        "Oral only — no parenteral formulation (Trileptal §3; Oxtellar §3)"
+      ],
+      "enteral": [
+        "Trileptal oral suspension 300 mg/5 mL (60 mg/mL); tablets and suspension substitute at equal doses (Trileptal §2.8, §3)",
+        "Suspension: shake well; may be mixed in a small glass of water or given straight from the syringe (Trileptal §2.8)",
+        "Oxtellar XR: swallow whole — do not cut, crush or chew; for difficulty swallowing use multiples of lower-strength tablets (Oxtellar §2.1)",
+        "XR once daily is not bioequivalent to IR BID: at 1200 mg/day, XR MHD AUC and Cmax ~19% lower, Cmin ~16% lower (Oxtellar §12.3). IR → XR may need higher doses (§2.7); no label XR → IR conversion",
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "MHD 10–35 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)",
+        "With strong CYP3A4/UGT inducers, monitor MHD levels during titration (Trileptal §7.2)"
+      ],
+      "interactions": [
+        "Phenytoin: levels rise with oxcarbazepine >1200 mg/day — monitor phenytoin levels; phenytoin dose may need to be reduced (Trileptal §7.1)",
+        "Strong CYP450/UGT inducers (rifampin, carbamazepine, phenytoin, phenobarbital) ↓ MHD 25–49%; adjust when inducers are started, changed or stopped (Trileptal §7.2)",
+        "Perampanel: oxcarbazepine ↓ perampanel levels (Fycompa §7.2)"
+      ],
+      "pearls": [
+        "Hyponatremia: Na <125 mmol/L in 2.5% in trials; usually in the first 3 months, sometimes after >1 year; SIADH reported. Check Na with other Na-lowering drugs or symptoms (nausea, lethargy, confusion, more seizures) (Trileptal §5.1)",
+        "Elderly: MHD AUC 30–60% higher (age-related CrCl); close Na monitoring if at risk (Trileptal §8.5)",
+        "~25–30% of patients with carbamazepine hypersensitivity react to oxcarbazepine (Trileptal §5.3)",
+        "Contraindicated with hypersensitivity to oxcarbazepine or eslicarbazepine (Trileptal §4)",
+        "Withdraw gradually; rapid stop can be considered for a serious adverse event (Trileptal §5.6)"
+      ],
+      "calculatorIds": [
+        "cockcroft-gault"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:phenytoin-fosphenytoin",
+        "acute-neuro:hyponatremia-ods"
+      ],
+      "sources": [
+        "Trileptal (oxcarbazepine) film-coated tablets and oral suspension US prescribing information. Novartis; revised 10/2026 (user-supplied label)",
+        "Oxtellar XR (oxcarbazepine) extended-release tablets US prescribing information. Supernus Pharmaceuticals; revised 10/2026 (user-supplied label)",
+        "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)",
+        "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "carbamazepine",
+      "title": "Carbamazepine (Tegretol / Tegretol-XR) — maintenance dosing and NPO options",
+      "searchTerms": [
+        "Tegretol",
+        "Tegretol XR",
+        "CBZ",
+        "carbamazepine suspension",
+        "carbamazepine NPO",
+        "Carnexiv",
+        "IV carbamazepine",
+        "carbamazepine level"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Carbamazepine (tablets, XR tablets or suspension)",
+          "routes": [
+            "PO",
+            "NG"
+          ],
+          "doseText": "Adults and children >12 y: start 200 mg BID (tablets or XR) or 100 mg (1 tsp) QID (suspension) = 400 mg/day; ↑ by up to 200 mg/day weekly — XR BID, other forms TID–QID. Usual maintenance 800–1200 mg/day. Generally ≤1200 mg/day above age 15; up to 1600 mg/day in adults in rare instances",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 400,
+              "amountMax": 400,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Tablets/XR: BID; suspension: QID"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 800,
+              "amountMax": 1200,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 1200,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "XR: BID; tablets or suspension: TID–QID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Take with meals (D&A)",
+            "When added to other ASMs, add gradually; phenytoin may have to be increased (D&A)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Tegretol label, Dosage and Administration (epilepsy, >12 y) and Dosage Information table"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [],
+      "renalNotes": [
+        "No renal dose adjustment in label"
+      ],
+      "hepatic": [
+        "Baseline and periodic LFTs, especially with a history of liver disease; stop for new or worsening liver dysfunction or active liver disease (Precautions, Laboratory Tests)"
+      ],
+      "ivPo": [
+        "Oral only — no parenteral formulation in label (Description)"
+      ],
+      "enteral": [
+        "Suspension 100 mg/5 mL. Tablets → suspension: same mg/day in smaller, more frequent doses (BID tablets → TID suspension) (D&A)",
+        "Suspension gives higher peaks than tablets at the same dose — start low (D&A; Clinical Pharmacology)",
+        "Don't give the suspension at the same time as other liquid medicines or diluents — precipitate with chlorpromazine and thioridazine solutions (D&A; Precautions)",
+        "XR: swallow whole, never crush or chew; discard damaged tablets or those without a release portal. Tablets → XR: same total daily dose (D&A)",
+        "Suspension contains propylene glycol 25 mg/mL — count total propylene glycol from all sources (Description; Warnings)",
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "Usual adult therapeutic level 4–12 mcg/mL (Clinical Pharmacology)",
+        "Autoinduction completes after 3–5 weeks; half-life 25–65 h initially, 12–17 h on repeated dosing (Clinical Pharmacology)"
+      ],
+      "interactions": [
+        "CYP3A4 inhibitors ↑ carbamazepine: macrolides, azoles, isoniazid, diltiazem, verapamil, cimetidine, omeprazole, fluoxetine, protease inhibitors, grapefruit juice — monitor levels (Precautions, Drug Interactions)",
+        "Valproate, brivaracetam, quetiapine, loxapine ↑ carbamazepine-epoxide — adjust dose or monitor (Precautions)",
+        "Inducers ↓ carbamazepine: phenytoin/fosphenytoin, phenobarbital, primidone, rifampin, felbamate, theophylline, cisplatin, doxorubicin (Precautions)",
+        "Avoid with apixaban, rivaroxaban, dabigatran and edoxaban — anticoagulant levels may be inadequate (Precautions)",
+        "Lowers levels of many drugs, incl. warfarin, tacrolimus, cyclosporine, corticosteroids (dexamethasone, prednisolone), lamotrigine, valproate, phenytoin, topiramate, zonisamide, oxcarbazepine, methadone, haloperidol, clozapine, aripiprazole (double its dose) (Precautions)",
+        "Resistance to nondepolarizing neuromuscular blockers (pancuronium, vecuronium, rocuronium, cisatracurium) — faster recovery, higher infusion rates (Precautions)",
+        "Lithium: ↑ neurotoxicity risk (Precautions)",
+        "Nefazodone: contraindicated. MAOIs: stop ≥14 days before (Contraindications)",
+        "Cenobamate ↓ carbamazepine (Xcopri Table 5); perampanel ↓ by carbamazepine (Fycompa §7.2)"
+      ],
+      "pearls": [
+        "Hyponatremia, often SIADH; risk dose-related, higher in elderly and with diuretics; consider stopping if symptomatic (Warnings, General)",
+        "Boxed warnings: SJS/TEN with HLA-B*1502; aplastic anemia and agranulocytosis",
+        "Avoid in hepatic porphyria (Warnings, General)",
+        "Withdraw gradually (Warnings, General)",
+        "IV carbamazepine (Carnexiv) is not in this label — confirm availability with pharmacy"
+      ],
+      "calculatorIds": [],
+      "verify": [],
+      "relatedIds": [
+        "asm-interactions:inducing-asm-apixaban-rivaroxaban",
+        "asm-interactions:inducing-asm-warfarin",
+        "antiseizure-medications:lamotrigine",
+        "antiseizure-medications:valproate",
+        "antiseizure-medications:brivaracetam",
+        "acute-neuro:hyponatremia-ods"
+      ],
+      "sources": [
+        "Tegretol (carbamazepine) tablets and suspension; Tegretol-XR extended-release tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+        "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+        "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "topiramate",
+      "title": "Topiramate (Topamax) — maintenance dosing and NPO options",
+      "searchTerms": [
+        "Topamax",
+        "TPM",
+        "topiramate sprinkle",
+        "topiramate renal dose",
+        "topiramate dialysis",
+        "topiramate acidosis"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Topiramate — adjunctive (adults ≥17 y)",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Start 25–50 mg/day; ↑ by 25–50 mg/day weekly. Recommended 200–400 mg/day in 2 divided doses (focal or LGS); 400 mg/day for PGTC. >400 mg/day no added benefit (focal)",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 25,
+              "amountMax": 50,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Daily"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 100,
+              "amountMax": 200,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 400,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "25 mg/day weekly increments may delay reaching an effective dose (§2.2)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Topamax label §2.2"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": [
+            "cockcroft-gault"
+          ]
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Topiramate — monotherapy (adults and children ≥10 y)",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Target 400 mg/day in 2 doses: 25 mg BID wk 1, 50 BID wk 2, 75 BID wk 3, 100 BID wk 4, 150 BID wk 5, 200 BID wk 6",
+          "dose": [
+            {
+              "label": "Target",
+              "amountMin": 200,
+              "amountMax": 200,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 400,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "BID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Topamax label §2.1, Table 1"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": [
+            "cockcroft-gault"
+          ]
+        }
+      ],
+      "renal": [
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": null,
+          "crclMax": 70,
+          "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+          "label": "CrCl <70 mL/min/1.73 m²",
+          "doseText": "One-half the usual adult dose",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "Intermittent hemodialysis",
+          "doseText": "A supplemental dose may be required; label gives no amount — base it on dialysis duration, dialyzer clearance and the patient's renal clearance",
+          "dose": [],
+          "notes": [
+            "HD clears topiramate 4–6 times faster than normal (§8.7); 120 mL/min dialyzer clearance vs 20–30 mL/min total oral clearance (§12.3)"
+          ]
+        }
+      ],
+      "renalNotes": [
+        "Moderate (30–69) and severe (<30 mL/min/1.73 m²) impairment both reduce clearance (§8.6)",
+        "Elderly: adjust for age-related CrCl <70 mL/min/1.73 m² (§8.5)"
+      ],
+      "hepatic": [
+        "Moderate–severe: plasma clearance ↓ ~26%; no dose rule in label (§12.3)"
+      ],
+      "ivPo": [
+        "Oral only — no parenteral formulation (§3)"
+      ],
+      "enteral": [
+        "Tablets: don't break — bitter taste (§2.4)",
+        "Sprinkle capsules 15 mg and 25 mg: swallow whole, or open and sprinkle the entire contents on a teaspoon of soft food; swallow immediately without chewing; don't store (§2.4, §3)",
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "7–30 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)"
+      ],
+      "interactions": [
+        "Phenytoin ↓ topiramate 48%; carbamazepine ↓ 40% — dose adjustment may be needed (§7.1, Table 11)",
+        "Valproate: hyperammonemia with or without encephalopathy, and hypothermia — check ammonia (§5.14, §5.16, §7.1)",
+        "Other carbonic anhydrase inhibitors (zonisamide, acetazolamide): more severe acidosis, kidney stones — monitor (§7.2)",
+        "Lithium: exposure ↑ at high-dose topiramate — monitor levels (§7.7)",
+        "Hydrochlorothiazide ↑ topiramate; dose decrease may be needed (§7.5)"
+      ],
+      "pearls": [
+        "Hyperchloremic non-anion-gap metabolic acidosis at any time; baseline and periodic bicarbonate. Additive with renal disease, severe respiratory disorders, status epilepticus, diarrhea, ketogenic diet (§5.4)",
+        "Acute myopia and secondary angle-closure glaucoma: stop as soon as possible (§5.1)",
+        "Encephalopathic symptoms: measure ammonia (§5.14)",
+        "Withdraw gradually (§5.8)"
+      ],
+      "calculatorIds": [
+        "cockcroft-gault"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:valproate",
+        "consult-workups:valproate-hyperammonemic-encephalopathy"
+      ],
+      "sources": [
+        "Topamax (topiramate) tablets and sprinkle capsules US prescribing information. Janssen Pharmaceuticals; revised 3/2026 (user-supplied label)",
+        "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "clobazam",
+      "title": "Clobazam (Onfi / Sympazan) — maintenance dosing and NPO options",
+      "searchTerms": [
+        "Onfi",
+        "Sympazan",
+        "CLB",
+        "clobazam suspension",
+        "clobazam film",
+        "clobazam crush",
+        "N-desmethylclobazam"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Clobazam (tablets, suspension or oral film)",
+          "routes": [
+            "PO",
+            "NG"
+          ],
+          "doseText": "Label dosing (LGS, ≥2 y): ≤30 kg: 5 mg/day → 10 mg/day from day 7 → 20 mg/day from day 14. >30 kg: 10 → 20 → 40 mg/day. >5 mg/day in 2 divided doses; escalate no faster than weekly",
+          "dose": [
+            {
+              "label": "Start (>30 kg)",
+              "amountMin": 10,
+              "amountMax": 10,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Divided BID"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maximum (>30 kg)",
+              "amountMin": 40,
+              "amountMax": 40,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 40,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "Divided BID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Label indication is adjunctive treatment of LGS only (§1)",
+            "Steady state: clobazam 5 days, N-desmethylclobazam 9 days (§2.1)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Onfi label §2.1, Table 1; Sympazan label §2.1"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [],
+      "renalNotes": [
+        "No adjustment for mild or moderate renal impairment; essentially no experience in severe impairment or ESRD; dialyzability unknown (Onfi §2.6, §8.7)"
+      ],
+      "hepatic": [
+        "Mild–moderate (Child-Pugh 5–9): start 5 mg/day; titrate to half the Table 1 doses; may titrate to the maximum from day 21 (Onfi §2.7)",
+        "Severe: no dosing recommendation (Onfi §2.7)"
+      ],
+      "ivPo": [
+        "Oral only — no parenteral formulation (Onfi §3; Sympazan §3)"
+      ],
+      "enteral": [
+        "Onfi tablets 10 and 20 mg: whole, broken in half along the score, or crushed and mixed in applesauce (Onfi §2.3)",
+        "Onfi oral suspension 2.5 mg/mL; shake well; use the supplied syringe and adapter (Onfi §2.3, §3)",
+        "Sympazan oral film 5, 10, 20 mg: on top of the tongue; don't give with liquids; one film at a time; bioequivalent to clobazam tablets (Sympazan §2.3, §12.3)",
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "Clobazam 30–300 ng/mL; N-desmethylclobazam 300–3000 ng/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)"
+      ],
+      "interactions": [
+        "Opioids: profound sedation, respiratory depression, death — limit dose and duration (boxed warning; Onfi §7.1)",
+        "Strong (fluconazole, fluvoxamine, ticlopidine) or moderate (omeprazole) CYP2C19 inhibitors: up to 5-fold ↑ N-desmethylclobazam — dose adjustment may be needed (Onfi §7.4, §12.3)",
+        "Cenobamate ↑ N-desmethylclobazam — consider a lower clobazam dose (Xcopri Table 5)",
+        "Phenobarbital, phenytoin, carbamazepine: no significant change in clobazam or N-desmethylclobazam PK (Onfi §12.3)",
+        "CYP2D6 substrates: lower doses may be needed (Onfi §7.3)",
+        "Alcohol ↑ clobazam exposure ~50% (Onfi §7.2)"
+      ],
+      "pearls": [
+        "Boxed warnings: opioids; abuse, misuse and addiction; dependence and withdrawal",
+        "Taper: ↓ total daily dose by 5–10 mg/day weekly; abrupt stop can cause life-threatening withdrawal (Onfi §2.2)",
+        "Elderly or known CYP2C19 poor metabolizers: start 5 mg/day; titrate to half the Table 1 doses (Onfi §2.4–2.5)",
+        "Half-life 36–42 h; N-desmethylclobazam 71–82 h (Onfi §12.3)"
+      ],
+      "calculatorIds": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Onfi (clobazam) tablets and oral suspension US prescribing information. Lundbeck; revised 10/2026 (user-supplied label)",
+        "Sympazan (clobazam) oral film US prescribing information. Aquestive Therapeutics; revised 12/2025 (user-supplied label)",
+        "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+        "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "zonisamide",
+      "title": "Zonisamide (Zonegran / Zonisade) — maintenance dosing and NPO options",
+      "searchTerms": [
+        "Zonegran",
+        "Zonisade",
+        "ZNS",
+        "zonisamide suspension",
+        "zonisamide renal",
+        "zonisamide sulfa"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Zonisamide (capsules or oral suspension)",
+          "routes": [
+            "PO",
+            "NG"
+          ],
+          "doseText": "Adults >16 y: 100 mg daily; after 2 weeks 200 mg/day; then 300 and 400 mg/day, each stable ≥2 weeks. 100–600 mg/day effective; no suggestion of more response above 400 mg/day; max 600 mg/day. Once or twice daily",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 100,
+              "amountMax": 100,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once or twice daily"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 200,
+              "amountMax": 400,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 600,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "Once or twice daily"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Steady state up to 2 weeks after each change (half-life ~63 h) (Zonegran D&A, Clinical Pharmacology)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Zonegran label, Dosage and Administration; Zonisade label §2.2"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [],
+      "renalNotes": [
+        "Avoid in renal failure (estimated GFR <50 mL/min) — insufficient dosing and toxicity experience (Zonegran Precautions; Zonisade §8.6)",
+        "Stop with acute renal failure or a sustained clinically significant ↑ creatinine/BUN (Zonegran Precautions; Zonisade §8.6)",
+        "Mean ~8% ↑ creatinine and BUN, interpreted as a GFR effect (Zonegran Precautions)",
+        "Renal disease: caution, slower titration, more frequent monitoring (Zonegran D&A)"
+      ],
+      "hepatic": [
+        "Not studied; caution, slower titration, more frequent monitoring (Zonegran D&A, Clinical Pharmacology)"
+      ],
+      "ivPo": [
+        "Oral only — no parenteral formulation (Zonegran How Supplied; Zonisade §3)"
+      ],
+      "enteral": [
+        "Zonegran capsules 25 and 100 mg: swallow whole (Zonegran D&A)",
+        "Zonisade oral suspension 100 mg/5 mL; same mg dosing as capsules; shake well; use an accurate measuring device; discard 30 days after opening (Zonisade §2.2–2.3, §3)",
+        "Tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "10–40 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)"
+      ],
+      "interactions": [
+        "Phenytoin, carbamazepine, phenobarbital shorten zonisamide half-life to 27–38 h (vs ~63 h); dose adjustment may be needed when inducers are started, changed or stopped; monitor with rifampin (Zonegran Clinical Pharmacology)",
+        "CYP3A4 inhibitors (ketoconazole, cimetidine): no dose change needed (Zonegran Clinical Pharmacology)",
+        "Other carbonic anhydrase inhibitors (topiramate, acetazolamide): more severe acidosis, hyperammonemia, kidney stones — monitor (Zonegran Clinical Pharmacology; Zonisade §7.2)"
+      ],
+      "pearls": [
+        "Sulfonamide: contraindicated with sulfonamide or zonisamide hypersensitivity (Zonegran Contraindications)",
+        "Hyperchloremic non-anion-gap metabolic acidosis: baseline and periodic bicarbonate (Zonegran Warnings; Zonisade §2.1)",
+        "Taper gradually (Zonisade §2.4)"
+      ],
+      "calculatorIds": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Zonegran (zonisamide) capsules US prescribing information. Advanz Pharma; revised 9/2026 (user-supplied label)",
+        "Zonisade (zonisamide) oral suspension US prescribing information. Azurity Pharmaceuticals; revised 9/2025 (user-supplied label)",
+        "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "cenobamate",
+      "title": "Cenobamate (Xcopri) — titration and NPO options",
+      "searchTerms": [
+        "Xcopri",
+        "CNB",
+        "cenobamate titration",
+        "cenobamate crush",
+        "cenobamate NG tube",
+        "cenobamate phenytoin"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Cenobamate",
+          "routes": [
+            "PO",
+            "NG"
+          ],
+          "doseText": "Adults: 12.5 mg once daily wk 1–2; 25 mg wk 3–4; 50 mg wk 5–6; 100 mg wk 7–8; 150 mg wk 9–10; 200 mg once daily from wk 11. If needed ↑ by 50 mg every 2 weeks to max 400 mg once daily. Don't exceed this schedule",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 12.5,
+              "amountMax": 12.5,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once daily"
+              ],
+              "duration": [
+                "Weeks 1–2"
+              ]
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 200,
+              "amountMax": 200,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 400,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "Once daily"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Faster titration risks serious adverse reactions incl. DRESS (§2.2, §5.1)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Xcopri label §2.2, Table 1"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": [
+            "cockcroft-gault"
+          ]
+        }
+      ],
+      "renal": [
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "ESRD on dialysis",
+          "doseText": "Not recommended (§8.6)",
+          "dose": [],
+          "notes": []
+        }
+      ],
+      "renalNotes": [
+        "Mild–moderate (CLcr 30 to <90 mL/min) and severe (<30 mL/min): use with caution; dose reduction may be considered (§8.6)"
+      ],
+      "hepatic": [
+        "Baseline ALT, AST and total bilirubin before starting if none within 3 months (§2.1)",
+        "Mild–moderate (Child-Pugh A–B): max 200 mg once daily; further reduction may be considered (§2.3, §8.7)",
+        "Severe (Child-Pugh C): not recommended (§2.3)"
+      ],
+      "ivPo": [
+        "Oral only — no parenteral formulation (§3)"
+      ],
+      "enteral": [
+        "Tablets may be crushed, mixed with 25 mL water and given by mouth or NG tube; flush with 10 mL water; confirm no particles remain (§2.4)",
+        "Crushed tablets by mouth or NG tube: Cmax and AUC similar to whole tablets; median Tmax 0.5 h (§12.3)"
+      ],
+      "levels": [
+        "10–35 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)"
+      ],
+      "interactions": [
+        "Phenytoin: up to 2-fold ↑ — gradually ↓ phenytoin dose by up to 50% during titration (§7.1, Table 5)",
+        "Phenobarbital and N-desmethylclobazam ↑ — consider reducing phenobarbital or clobazam (Table 5)",
+        "Lamotrigine and carbamazepine ↓ — increase as needed (Table 5)",
+        "CYP2C19 substrates ↑ (consider reducing); CYP2B6 and CYP3A substrates ↓ (increase as needed) (Table 5)",
+        "Drugs that shorten QT: use caution (§7.2)"
+      ],
+      "pearls": [
+        "Contraindicated in familial short QT syndrome (§4)",
+        "DRESS, incl. one death, with weekly or faster titration; none in 1339 patients started at 12.5 mg and titrated every 2 weeks (§5.1)",
+        "Taper over ≥2 weeks unless safety requires abrupt stop (§2.5)",
+        "Half-life 50–60 h (§12.3)"
+      ],
+      "calculatorIds": [
+        "cockcroft-gault"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:phenytoin-fosphenytoin",
+        "antiseizure-medications:lamotrigine"
+      ],
+      "sources": [
+        "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+        "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "perampanel",
+      "title": "Perampanel (Fycompa) — maintenance dosing and NPO options",
+      "searchTerms": [
+        "Fycompa",
+        "PER",
+        "perampanel suspension",
+        "perampanel inducers",
+        "perampanel aggression"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Perampanel — no moderate/strong CYP3A4 inducer",
+          "routes": [
+            "PO",
+            "NG"
+          ],
+          "doseText": "Start 2 mg once daily at bedtime; ↑ by 2 mg/day no more often than weekly. Maintenance 8–12 mg once daily (focal; some respond to 4 mg); 8 mg once daily for PGTC, up to 12 mg if tolerated",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 2,
+              "amountMax": 2,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once daily at bedtime"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 8,
+              "amountMax": 12,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 12,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "Once daily at bedtime"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "12 mg: somewhat greater seizure reduction than 8 mg, with substantially more adverse reactions (§2.1)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Fycompa label §2.1–2.2"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Perampanel — WITH moderate/strong CYP3A4 inducer (phenytoin, carbamazepine, oxcarbazepine)",
+          "routes": [
+            "PO",
+            "NG"
+          ],
+          "doseText": "Start 4 mg once daily at bedtime; ↑ by 2 mg/day no more often than weekly. No established maintenance dose; highest studied 12 mg once daily",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 4,
+              "amountMax": 4,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "Once daily at bedtime"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Fycompa label §2.3"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "Hemodialysis",
+          "doseText": "Not recommended (§2.5)",
+          "dose": [],
+          "notes": []
+        }
+      ],
+      "renalNotes": [
+        "Mild: no adjustment; moderate: use with close monitoring, consider slower titration; severe: not recommended (§2.5, §8.7)"
+      ],
+      "hepatic": [
+        "Mild or moderate: start 2 mg; ↑ by 2 mg no more often than every 2 weeks; max 6 mg (mild) or 4 mg (moderate) (§2.4)",
+        "Severe: not recommended (§2.4)"
+      ],
+      "ivPo": [
+        "Oral only — no parenteral formulation (§3)"
+      ],
+      "enteral": [
+        "Oral suspension 0.5 mg/mL; comparable bioavailability to tablets — interchangeable (§3, §12.3)",
+        "Suspension: shake well; use the supplied adapter and syringe; discard 90 days after opening (§2.7)",
+        "Crushing tablets or tube administration not addressed in label — confirm with pharmacy"
+      ],
+      "levels": [
+        "No established range — AES 2024 summary Table 1"
+      ],
+      "interactions": [
+        "Moderate/strong CYP3A4 inducers (carbamazepine, phenytoin, oxcarbazepine) ↓ perampanel ~50–67%; monitor and adjust when started or stopped (§7.2)",
+        "Alcohol and CNS depressants: additive CNS depression (§7.3)"
+      ],
+      "pearls": [
+        "Boxed warning: aggression, hostility, homicidal ideation — reduce dose if they occur; stop if severe or worsening (§5.1)",
+        "Half-life ~105 h: steady state 2–3 weeks; levels fall gradually even after abrupt stop (§5.6, §12.3)",
+        "Elderly: ↑ dose no more often than every 2 weeks (§2.6)",
+        "Falls: monitor (§5.4)"
+      ],
+      "calculatorIds": [],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)",
+        "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "phenobarbital",
+      "title": "Phenobarbital — maintenance dosing and levels (AES summary)",
+      "searchTerms": [
+        "PB",
+        "phenobarbital level",
+        "phenobarbital maintenance",
+        "barbiturate",
+        "phenobarbital elixir"
+      ],
+      "maintenance": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Phenobarbital",
+          "routes": [
+            "PO",
+            "IV"
+          ],
+          "doseText": "Adults and children ≥13 y: initial 60 mg/day or 1–4 mg/kg/day; maintenance 1–4 mg/kg/day; adult maximum 240 mg daily",
+          "dose": [
+            {
+              "label": "Initial",
+              "amountMin": 60,
+              "amountMax": 60,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 240,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "Daily"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Per-kg doses kept as text: the source doesn't state which weight to use",
+            "Source dose is not route-specific",
+            "No current FDA-approved adult label; AES took phenobarbital data from an older PI (1997 PDR)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "AES 2024 summary Table 1, phenobarbital row (p. 15)"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        }
+      ],
+      "renal": [],
+      "renalNotes": [
+        "25–50% excreted unchanged by the kidneys; no renal dose rule in source",
+        "Elimination ↑ by diuretics, alkaline urine and activated charcoal"
+      ],
+      "hepatic": [
+        "Do not use in hepatic encephalopathy or marked hepatic impairment"
+      ],
+      "ivPo": [
+        "Forms: tablets, elixir 4 mg/mL, IV solution; oral bioavailability ~95%; source gives no IV ↔ PO conversion"
+      ],
+      "enteral": [
+        "Elixir 4 mg/mL",
+        "Tube administration not addressed in source — confirm with pharmacy"
+      ],
+      "levels": [
+        "15–45 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)",
+        "Half-life 79 h"
+      ],
+      "interactions": [
+        "Strong CYP3A4 inducer: ↑ metabolism of phenytoin, lamotrigine, oral contraceptives, warfarin, corticosteroids and many other drugs (AES Table 1)",
+        "Valproate ↓ phenobarbital elimination; MAOIs prolong its effects (AES Table 1)",
+        "Synergistic CNS and respiratory depression with alcohol and sedatives; caution with pain medications and CNS depressants (AES Table 1)",
+        "Cenobamate ↑ phenobarbital — consider reducing phenobarbital (Xcopri Table 5)",
+        "Phenobarbital ↓ oxcarbazepine MHD 25–49% (Trileptal §7.2), ↓ carbamazepine (Tegretol Precautions), shortens zonisamide half-life (Zonegran Clinical Pharmacology)"
+      ],
+      "pearls": [
+        "Taper very slowly after chronic use — barbiturate withdrawal can cause convulsions and delirium and may be fatal (AES Table 1)",
+        "Do not use in porphyria or marked respiratory disease (AES Table 1)",
+        "Can cause respiratory depression, hypoventilation, bradycardia and hypotension (AES Table 1)",
+        "Monitor CBC and CMP (AES Table 1)"
+      ],
+      "calculatorIds": [],
+      "verify": [],
+      "relatedIds": [
+        "antiseizure-medications:valproate",
+        "antiseizure-medications:lamotrigine",
+        "antiseizure-medications:phenytoin-fosphenytoin",
+        "asm-interactions:inducing-asm-warfarin"
+      ],
+      "sources": [
+        "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)",
+        "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+        "Trileptal (oxcarbazepine) film-coated tablets and oral suspension US prescribing information. Novartis; revised 10/2026 (user-supplied label)",
+        "Tegretol (carbamazepine) tablets and suspension; Tegretol-XR extended-release tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+        "Zonegran (zonisamide) capsules US prescribing information. Advanz Pharma; revised 9/2026 (user-supplied label)"
+      ],
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }
