@@ -425,7 +425,7 @@ export function hyponatremiaBolus(mode: "ese" | "salsa-moderate" | "salsa-severe
   return { value: ml, unit: "mL", display: `${ml} mL 3% NaCl (${perKg} mL/kg, SALSA bolus arm)`, capped: false, warnings: [], parts: { mlPerKg: perKg } };
 }
 
-/** ESE 2014: ≤10 mmol/L in the first 24 h (≤8 if ODS risk), then ≤8 per 24 h. */
+/** ESE 2014: ≤10 mmol/L in the first 24 h, then ≤8 per 24 h. High ODS risk: ≤8 in any 24 h (Verbalis 2013). */
 export function sodiumCorrectionCheck(i: { startNa: number; currentNa: number; periodNumber: number; odsRisk: boolean }): CalcResult {
   req("startNa", i.startNa, 95, 160); req("currentNa", i.currentNa, 95, 175); req("periodNumber", i.periodNumber, 1, 10);
   const limit = i.periodNumber === 1 && !i.odsRisk ? 10 : 8;
@@ -433,7 +433,7 @@ export function sodiumCorrectionCheck(i: { startNa: number; currentNa: number; p
   const over = rise > limit;
   return {
     value: rise, unit: "mmol/L", display: `Rise ${fmt(rise)} mmol/L in this 24-h period (limit ${limit})`,
-    capped: false, warnings: over ? ["Limit exceeded — re-lower with D5W ± desmopressin (ESE 2014) and involve nephrology"] : [], parts: { limit },
+    capped: false, warnings: over ? ["Limit exceeded — re-lower with D5W ± desmopressin (ESE 2014; ODS risk: Verbalis 2013) and involve nephrology"] : [], parts: { limit },
   };
 }
 
@@ -450,6 +450,7 @@ const S = {
   amin2023: "Amin HP, et al. Diagnosis, Workup, Risk Reduction of Transient Ischemic Attack in the Emergency Department Setting: A Scientific Statement From the AHA. Stroke 2023;54:e109-e121. doi:10.1161/STR.0000000000000418",
   ese2014: "Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170(3):G1-G47. doi:10.1530/EJE-13-1020",
   salsa2021: "Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519",
+  verbalis2013: "Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1-S42. doi:10.1016/j.amjmed.2013.07.006",
   gbs2023: "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
   xarelto: "Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label)",
   kiang2016: "Kiang TK, Ensom MH. A comprehensive review on the predictive performance of the Sheiner-Tozer and derivative equations for the correction of phenytoin concentrations. Ann Pharmacother 2016;50(4):311-325. doi:10.1177/1060028016628166",
@@ -484,5 +485,5 @@ export const CALCULATOR_META: Record<string, CalcMeta> = {
   "tnk-dose": { id: "tnk-dose", title: "Tenecteplase (stroke)", formula: "0.25 mg/kg via 10-kg bands; optional 1-kg dosing <50 kg", caps: ["25 mg"], rounding: "label band chart", weightBasis: "ACTUAL", sources: [S.aha2026, S.tnkLabel], verify: [] },
   "alteplase-dose": { id: "alteplase-dose", title: "Alteplase (stroke)", formula: "0.9 mg/kg; 10% bolus, 90% over 60 min", caps: ["90 mg"], rounding: "0.1 mg", weightBasis: "ACTUAL", sources: [S.aha2026, S.activase], verify: [] },
   "ivig-dose": { id: "ivig-dose", title: "IVIG", formula: "2 g/kg total over 2–5 days", caps: [], rounding: "daily dose to nearest 5 g (app convention)", weightBasis: "SELECTABLE", sources: [S.gbs2023], verify: [] },
-  "sodium-correction": { id: "sodium-correction", title: "Hyponatremia: 3% bolus and correction limits", formula: "ESE 150 mL; SALSA 2 or 4 mL/kg; limit ≤10 (≤8 if ODS risk) first 24 h, ≤8 thereafter", caps: [], rounding: "nearest 10 mL", weightBasis: "ACTUAL", sources: [S.ese2014, S.salsa2021], verify: [] },
+  "sodium-correction": { id: "sodium-correction", title: "Hyponatremia: 3% bolus and correction limits", formula: "ESE 150 mL; SALSA 2 or 4 mL/kg; limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)", caps: [], rounding: "nearest 10 mL", weightBasis: "ACTUAL", sources: [S.ese2014, S.salsa2021, S.verbalis2013], verify: [] },
 };

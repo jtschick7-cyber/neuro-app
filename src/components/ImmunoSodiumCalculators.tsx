@@ -38,7 +38,7 @@ export function SodiumCard({ weightKg }: { weightKg: number | null }) {
           <NumberField label="Current Na" value={currentNa} onChange={setCurrentNa} step="1" placeholder="126" />
           <NumberField label="24-h period #" value={period} onChange={setPeriod} step="1" placeholder="1" />
         </div>
-        <CheckField label="High ODS risk (Na ≤105, alcoholism, malnutrition, liver disease, hypokalemia)" checked={ods} onChange={setOds} />
+        <CheckField label="High ODS risk (Na ≤105, hypokalemia, alcohol use disorder, malnutrition, advanced liver disease)" checked={ods} onChange={setOds} />
         {s !== null && c !== null && p !== null && (
           <Result label="Correction" r={safe(() => sodiumCorrectionCheck({ startNa: s, currentNa: c, periodNumber: p, odsRisk: ods }))} />
         )}
