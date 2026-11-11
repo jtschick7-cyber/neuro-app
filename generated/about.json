@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+d25d664b",
+  "contentVersion": "2.2.1+a806b227",
   "builtAt": "2026-11-11",
   "registries": [
     {
@@ -45,15 +45,15 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "3.0.1",
+      "version": "3.1.1",
       "schemaVersion": "2.1.0",
-      "lastUpdated": "2026-11-08",
-      "entries": 18,
-      "reviewed": 18,
+      "lastUpdated": "2026-11-11",
+      "entries": 19,
+      "reviewed": 19,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-08"
+      "newestReview": "2026-11-11"
     },
     {
       "id": "mg-contraindications",
@@ -483,6 +483,13 @@
       ]
     },
     {
+      "citation": "Cogswell PM, et al. Alzheimer disease anti-amyloid immunotherapies: imaging recommendations and practice considerations for monitoring of amyloid-related imaging abnormalities. AJNR Am J Neuroradiol 2025;46:24-32. doi:10.3174/ajnr.A8469",
+      "year": 2025,
+      "citedBy": [
+        "consult-workups:aria-anti-amyloid"
+      ]
+    },
+    {
       "citation": "Collins MP, et al. Peripheral Nerve Society Guideline on the classification, diagnosis, investigation, and immunosuppressive therapy of non-systemic vasculitic neuropathy: executive summary. J Peripher Nerv Syst 2010;15:176-184. doi:10.1111/j.1529-8027.2010.00281.x",
       "year": 2010,
       "citedBy": [
@@ -539,6 +546,13 @@
       "year": 2021,
       "citedBy": [
         "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Cummings J, et al. Lecanemab: appropriate use recommendations. J Prev Alzheimers Dis 2023;10(3):362-377. doi:10.14283/jpad.2023.30. Author manuscript pages.",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:aria-anti-amyloid"
       ]
     },
     {
@@ -707,6 +721,20 @@
       "citedBy": [
         "consult-workups:acute-vision-loss",
         "consult-workups:new-demyelinating-lesion"
+      ]
+    },
+    {
+      "citation": "Eisai. LEQEMBI (lecanemab-irmb) prescribing information, revised 7/2026: boxed warning, §2.4 (Tables 3, 4), §5.1 (Table 5). Page numbers are PDF pages.",
+      "year": 2026,
+      "citedBy": [
+        "consult-workups:aria-anti-amyloid"
+      ]
+    },
+    {
+      "citation": "Eli Lilly. KISUNLA (donanemab-azbt) prescribing information, revised 7/2025: boxed warning, §2.3 (Tables 2, 3), §5.1 (Table 5). Page numbers are PDF pages.",
+      "year": 2025,
+      "citedBy": [
+        "consult-workups:aria-anti-amyloid"
       ]
     },
     {
@@ -1871,6 +1899,13 @@
         "neural-antibodies:cv2-crmp5",
         "neural-antibodies:ma2",
         "neural-antibodies:tr-dner"
+      ]
+    },
+    {
+      "citation": "Rabinovici GD, et al. Donanemab: appropriate use recommendations. J Prev Alzheimers Dis 2025;12:100150. doi:10.1016/j.tjpad.2025.100150",
+      "year": 2025,
+      "citedBy": [
+        "consult-workups:aria-anti-amyloid"
       ]
     },
     {

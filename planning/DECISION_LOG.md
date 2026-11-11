@@ -1057,3 +1057,5 @@ Update 2026-11-11 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, con
 - With `verify[]` empty, the "see verify" pointers were dropped from three lines (rule 1 evidence note; rule 12 evidence note; rule 13 recommendation, which keeps "(AUR text says 1 area)"). No other wording changed. The data entry therefore differs from the draft JSON in `verify` and those three lines.
 - Left as drafted: rule 1 uses the label wording ("consider whether the symptoms could be due to ARIA-E before giving a thrombolytic"), softer than the thrombolysis entry's absolute contraindication; it links there.
 - Open: sign-off and release, when Jason asks.
+
+Update 2026-11-11 (2): signed by Jason (`aria-anti-amyloid`, `lastReviewed` 2026-11-11) and released: consult-workups 3.1.1, content 2.2.1+a806b227. The sign-off/release open item above is closed; PARK items C1, B8 and B9 stay open.
