@@ -293,7 +293,7 @@ Open under 3.10:
 | 4.2 | Neuroprognostication card (NCS series: GBS, ICH, SE, ± AIS/aSAH/TBI). Include the NCS ICH guidance from superseded task 1.4 (don't use the ICH score alone for prognosis or limiting care) | R12. **DRAFTED (2026-11-11)**: [PR #50](https://github.com/jtschick7-cyber/neuro-app/pull/50); signed and released 2026-11-11 (1.4.1) |
 | 4.3 | Neurosyphilis / ocular and otic syphilis entry | R13. **DRAFTED (2026-11-11)**: [PR #51](https://github.com/jtschick7-cyber/neuro-app/pull/51); signed and released 2026-11-11 (2.5.1) |
 | 4.4 | ARIA on anti-amyloid therapy entry | R14. **DRAFTED (2026-11-11)**: [PR #52](https://github.com/jtschick7-cyber/neuro-app/pull/52); signed and released 2026-11-11 (3.1.1) |
-| 4.5 | Optional: Lyme neuroborreliosis | R15. **DRAFTED (2026-11-11)**: [PR #53](https://github.com/jtschick7-cyber/neuro-app/pull/53) |
+| 4.5 | Optional: Lyme neuroborreliosis | R15. **DRAFTED (2026-11-11)**: [PR #53](https://github.com/jtschick7-cyber/neuro-app/pull/53); signed and released 2026-11-11 (2.6.1) |
 | 4.6 | Optional: Boston criteria 2.0 rows in `ich-etiology-workup` | BLOCKED (R16) |
 
 For new registries or fields: propose the schema change and entry list first, one registry at a time.
