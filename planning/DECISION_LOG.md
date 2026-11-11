@@ -540,3 +540,41 @@ Rules adopted:
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R2/README.md`.
 
 Update 2026-11-11: signed by Jason (`restart-antithrombotic-after-ich`, `lastReviewed` 2026-11-11) and released: vascular-antithrombotics 1.1.1, content 2.2.0+4e5af9ee. The sign-off/release open item above is closed; PARK F5b and B1 stay open.
+
+## 2026-11-09 — Review item R3 (hyponatremia ODS-risk correction limit)
+
+Approved by Jason in chat 2026-11-09. Draft: `planning/drafts/review-2026-11-08/R3/` (base: review-2026-11-08 export packet). Entry `lastReviewed: "UNREVIEWED"`.
+
+Finding: ESE 2014 has no 8 mmol/L first-24-h limit for high-risk patients (recommendations 7.1.2.4, 7.2.1.6, 7.4.1.4, 7.5.1.1 and rationale checked). The stricter limit is Verbalis 2013 (US expert panel, ungraded, S21): 8 mmol/L in any 24-hour period for high ODS risk (Table 3, S20), goal 4–6 mmol/L/day. Calculator logic already matches (ODS risk: 8 every period; otherwise ESE 10 then 8) and is unchanged.
+
+| Draft | Findings | Change |
+|---|---|---|
+| `acute-neuro.hyponatremia-ods.json` | F1–F3, F6–F8 | `definitions[1]` → Verbalis 2013 (any 24 h; goal 4–6 mmol/L/day; high risk: Na ≤105, hypokalemia, alcohol use disorder, malnutrition, advanced liver disease), `keyNumbers[2]` exact copy; `immediateActions[2].action` → "Na at 6 h, 12 h, then daily (ESE 2D); if Na ≤120: q4–6h until ≥125 (Verbalis); …", `keyNumbers[3]` exact copy; `treatment[1].evidenceNote` += Verbalis re-lowering (>8 in any 24 h, high risk); `pitfalls[2]` deleted (unsourced duplicate, Na ≤120 conflicted with Table 3); sources += Verbalis 2013 |
+| `src/lib/calculators.ts` (`sodium-correction`) | F4, F5 | Docstring, META `formula` and `sources` (+ `S.verbalis2013`) attribute the ODS-risk limit to Verbalis 2013; warning text "(ESE 2014; ODS risk: Verbalis 2013)". No formula, cap or rounding change |
+
+Rules adopted:
+- A limit from an ungraded source is labelled with the source and "ungraded" in the line itself; ESE 2014 stays the graded primary limit, and `evidenceLevel` follows ESE.
+- Truncated keyNumbers copies are fixed to exact copies whenever an item touches the entry.
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| acute-neuro | 2.0.1 | 2.1.0 | MINOR (threshold re-attributed and reworded; new source; monitoring interval) |
+| app (package.json) | 2.2.0 | 2.2.1 | PATCH (calculator docstring, warning text, META; no formula change) |
+
+### ACCEPT (not raised again)
+- A1: ESE's ODS risk-factor list (alcohol abuse, liver disease, thiazides/antidepressants, degree and duration) not encoded; ESE sets no separate limit for it.
+- A2: `definitions[0]` "(1D) … until Na 130" matches ESE 7.1.2.4.
+- A3: "chronic" qualifier left out as common knowledge.
+- A4: Verbalis normal-risk limits (10–12/24 h, 18/48 h), acute-hyponatremia exemption and a 48-h calculator check are outside R3.
+- A5: no newer ESE or US hyponatremia guideline (web check 2026-11-09).
+- A6: observational data questioning strict limits (MacMillan 2023, Seethapathy 2023, Chauhan 2025) not encoded.
+- A7: Verbalis 2013 was funded by an unrestricted Otsuka grant; context only.
+
+### Open items
+- `verify[]`: none.
+- C1 result (calculator `odsRisk` label): see PR.
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R3/README.md`.
+
+Encoded 2026-11-11 on `content-r3-2026-11-09` (base `a2c145e`). C1 result: the `odsRisk` checkbox label in `src/components/ImmunoSodiumCalculators.tsx` read "High ODS risk (Na ≤105, alcoholism, malnutrition, liver disease, hypokalemia)", which differed from Verbalis Table 3 ("liver disease" for "advanced liver disease"; "alcoholism" for the entry's "alcohol use disorder"). Jason in chat 2026-11-11: fix it in this PR; the list now reads "Na ≤105, hypokalemia, alcohol use disorder, malnutrition, advanced liver disease", matching `definitions[1]`. No test asserted the old warning string or META text, so `__tests__/calculators.test.ts` is unchanged.
