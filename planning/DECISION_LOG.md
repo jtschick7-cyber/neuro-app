@@ -630,3 +630,49 @@ Encoded 2026-11-11 on `content-r4-2026-11-09` (base `0fa999d`). Render check: `t
 - `bacterial-meningitis` V1 (vancomycin trough target): Jason in chat 2026-11-11: the local vancomycin protocol uses AUC 400–600 and takes precedence. `treatment[4].doseText` keeps the IDSA 2017 trough target (15–20 μg/mL if intermittent bolus, Rec 38) as written; no content change.
 
 Update 2026-11-11: V1 and V2 closed by Jason (above); signed by Jason (`bacterial-meningitis`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.2.1, content 2.2.1+8661e2e8. The verify and sign-off/release open items above are closed; PARK N5, N8, N14 and N15 stay available to revive.
+
+## 2026-11-09 — Review item R5 (Parkinson infusion therapies)
+
+Approved by Jason in chat 2026-11-09 ("approve as recommended"). Draft: `planning/drafts/review-2026-11-08/R5/` (base: review-2026-11-08 export packet). Entry `lastReviewed: "UNREVIEWED"`.
+
+Finding: `inpatient-parkinson-disease` `pitfalls[1]` implied there is no US label for continuous SC apomorphine. Onapgo (continuous SC apomorphine; approved Feb 4, 2025) is labeled for motor fluctuations in advanced PD; Apokyn still covers pen doses only. The card had no guidance for patients admitted on Vyalev, Onapgo or Duopa. Sources: Vyalev PI 3/2026, Onapgo PI 5/2026 + Patient IFU 6/2026, Duopa PI and Medication Guide 3/2026 + CADD-Legacy 1400 Operator's Manual. No label addresses NPO status directly.
+
+| Draft | Findings | Change |
+|---|---|---|
+| `reference-cards.inpatient-parkinson-disease.json` | F1–F5, E1–E4, K1–K5, D8 | New `sections[1]` "Admitted on an infusion pump": Vyalev (keep running; off >1 h new set/site, >3 h loading dose; backup oral carbidopa-levodopa; site infection; ×1.3 oral → pump; B6 seizures; pump MRI guidance not in label), Onapgo (keep running over waking day; ≥1 h break → extra dose as loading dose, max 2 mg, ≥3 h apart, ≤3/day; oral PD meds for prolonged stop; daily site/cartridge; no MRI; never IV; QTc; hemolytic anemia), Duopa (16-h infusion + night oral IR; off >2 h → oral IR; GI/tube complications; 20 mg/mL, 97% bioavailability; pump off for MRI; B6 seizures; polyneuropathy 5%); new Antiemetics row trimethobenzamide (only antiemetic studied with apomorphine; 300 mg PO TID); 5-HT3 row += Onapgo; `pitfalls[1]` reworded; Rotigotine dose `notes[0]` split (wording); keyNumbers[0]–[4] exact copies; title += pumps; 7 search terms; sources += 3 labels |
+
+Rules adopted:
+- Label-only rows are NOT_GRADED, with "<Drug> PI §…" in `evidenceNote`; a pump IFU or operator's manual is cited inside that product's label source string.
+- Labels give oral → pump conversions only; the card states that and points to the patient's prescribed backup regimen rather than deriving a pump → oral conversion.
+- keyNumbers are exact copies of one field, optionally prefixed by the row's `parameter` or `condition` + ": " (applies to reference cards as R3/R4 applied it to acute-neuro).
+
+LEDD check (C1): Jost 2023 Table 1 gives subcutaneous foslevodopa/foscarbidopa "DD × 0.75", DD = foslevodopa mg (Table 3 example). Calculator: `foslevodopa-foscarbidopa-sc` factor 0.75 in `LEVODOPA_FACTORS`, applied to the mg/day entered for "Foslevodopa SC (Vyalev)" (card subtitle "Total daily doses (mg/day) — Jost 2023"), so foslevodopa mg/day × 0.75: matches Jost 2023 Table 1. C2: the calculator also has LCIG (Duopa) × 1.11 and a single "Apomorphine SC" item × 10 (mg/day, no separate infusion item); both match Jost. No calculator change.
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| reference-cards | 1.2.3 | 1.3.0 | MINOR (new rows and sources; pitfall meaning changed) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- D8b: sourced Vyalev MRI line (needs the VYAFUSER pump IFU).
+- C2: calc:ledd coverage of LCIG (Jost × 1.11) and apomorphine infusion (× 10).
+- A4: papaverine reduces levodopa effect (Vyalev/Duopa §7.3).
+- A7: Duopa BUN/CPK elevations and false-positive pheochromocytoma screens (§5.12).
+- A10: "trimethobenzamide" search term.
+
+### ACCEPT (not raised again)
+- C1 (pending Claude Code's read-only check): 0.75 matches Jost when applied to foslevodopa mg.
+- A1: nonselective MAOI contraindication not encoded (common knowledge).
+- A2: pump-label D2-antagonist, isoniazid, iron and protein interactions already covered by existing rows.
+- A3: maximum doses, titration, Duopa starting-dose formula, storage not encoded.
+- A5: Onapgo nitroglycerin, alcohol, renal first-extra-dose and sulfite items not encoded.
+- A6: no label addresses NPO status; rows state only what labels say.
+- A8: labels as uploaded (newer than the brief's dates); no further DailyMed check.
+- A9: Jost 2023 read via web-fetch extraction; no Jost number encoded.
+
+### Open items
+- `verify[]`: none.
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R5/README.md`.
+
+Encoded 2026-11-11 on `content-r5-2026-11-09` (base `8d903bc`). Render check: the pump section shows second with three Recommended / Not graded rows; key numbers wrap cleanly at phone width; search finds the card for "Vyalev", "Onapgo" and "Duopa".
