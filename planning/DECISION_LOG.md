@@ -859,3 +859,37 @@ Rules applied:
 Encoded 2026-11-11 on `content-r9-2026-11-10` (base `413176d`). The draft expected 0.14.0 → 0.15.0; the registry was at 1.1.1 after R2, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
 
 Update 2026-11-11: signed by Jason (`esus-antithrombotic`, `lastReviewed` 2026-11-11) and released: vascular-antithrombotics 1.2.1, content 2.2.1+a21ac651. The sign-off/release open item above is closed; PARK P1 and P2 stay open.
+
+## 2026-11-10 — Review item R10 (serotonin syndrome: triptan example)
+
+Approved by Jason in chat 2026-11-10. Draft: `planning/drafts/review-2026-11-08/R10/` (base: review-2026-11-08 export packet). Entry `lastReviewed: "UNREVIEWED"`.
+
+| Draft | Findings | Change |
+|---|---|---|
+| `acute-neuro.serotonin-syndrome.json` | F1, D3 | `presentation[0]`: "triptans + SSRI/SNRI" removed from example triggers; `pitfalls[3]` Orlova 2018 (30,928 person-years of co-prescription; 0.6 definite cases/10,000 person-years, 95% CI 0–1.5; 2.3 incl. possible; none life-threatening); searchTerms += triptan; sources += Orlova 2018 (JAMA Neurol) |
+
+Rules applied:
+- Trial and cohort results go in their own line with their numbers, not in descriptive lists (R2/R9 rule). Pitfalls carry no grade.
+
+### Version
+| registry | from | to | level |
+|---|---|---|---|
+| acute-neuro | 2.3.1 | 2.4.0 | MINOR (new source and evidence statement; example removed; no dose, threshold or evidence level changed) |
+
+### ACCEPT (not raised again)
+- D1a/b: delete-only and inline "rarely" qualifier not chosen.
+- D2iii: authors' "daily SSRI/SNRI is the likelier cause" left out (opinion).
+- A1: `definitions[0]` Hunter criteria follow Dunkley 2003; Orlova's adapted Box layout not adopted.
+- A2–A3: mechanism and study limitations not encoded.
+
+### PARK
+- P1: `pitfalls[2]` "ondansetron/metoclopramide add-ons": evidence not examined.
+- P2: current triptan label wording on serotonin syndrome: no label read.
+
+### Open items
+- `verify[]`: none.
+- PARK P1 and P2 (above).
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R10/README.md`.
+
+Encoded 2026-11-11 on `content-r10-2026-11-10` (base `caf1ffc`). The draft gave no numbers ("as found → next MINOR"); the registry was at 2.3.1 after R3, R4 and R6, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
