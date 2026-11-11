@@ -1,0 +1,317 @@
+{
+  "id": "lyme-neuroborreliosis",
+  "title": "Lyme neuroborreliosis (adult)",
+  "keyNumbers": [
+    "Ceftriaxone: 2000 mg IV once daily × 14–21 days",
+    "Doxycycline: 100 mg PO twice daily or 200 mg once daily × 14–21 days",
+    "Parenchymal brain or spinal cord involvement: IV over oral; typically 2–4-week courses (duration never studied)",
+    "Lyme vs enteroviral meningitis: Lyme more likely with facial nerve palsy, symptoms >7 days, and mononuclear-predominant CSF pleocytosis",
+    "CSF:serum antibody index: elevated = highly specific for CNS Lyme; sensitivity >85% in 2 small US meningitis studies, 56–79% in European early neuroborreliosis; a normal index does not exclude; may stay elevated for years after successful treatment"
+  ],
+  "category": "CNS_INFECTION",
+  "searchTerms": [
+    "Lyme",
+    "Lyme disease",
+    "neuroborreliosis",
+    "Borrelia burgdorferi",
+    "Lyme meningitis",
+    "facial palsy",
+    "Bell's palsy",
+    "cranial neuritis",
+    "radiculoneuritis",
+    "Bannwarth",
+    "antibody index",
+    "intrathecal antibody",
+    "two-tier serology",
+    "CXCL13",
+    "ceftriaxone",
+    "doxycycline",
+    "tick"
+  ],
+  "presentation": [
+    "Early (first few months of infection; onset over hours to days): meningitis, cranial neuritis, radiculoneuritis; rarely encephalomyelitis. Later: PNS or CNS involvement with a more indolent course",
+    "Cranial neuropathy: VII most common; also VIII, less commonly III, V, VI",
+    "PNS: painful radiculoneuritis, plexopathy, mononeuropathy, mononeuropathy multiplex (incl. confluent)",
+    "Raised ICP with papilledema (pseudotumor-like), even without other signs of meningitis — almost all reported cases are children; can compromise vision",
+    "Parenchymal brain or spinal cord disease (focal exam or MRI findings): exceedingly rare; cord involvement typically with painful radiculitis at related segments"
+  ],
+  "definitions": [
+    "Test for Lyme (strong, moderate): acute meningitis, painful radiculoneuritis, mononeuropathy multiplex, acute cranial neuropathy, or spinal cord (rarely brain) inflammation — with epidemiologically plausible tick exposure",
+    "Don't test routinely (strong, low): typical ALS, relapsing-remitting MS, Parkinson's disease, dementia or cognitive decline, new-onset seizures, psychiatric illness",
+    "Other neurologic syndromes without clinical or epidemiologic support for Lyme: don't screen (strong, low). Nonspecific brain MRI white matter abnormalities alone: suggest against testing (weak, low)",
+    "Serum antibody by 2-tier testing (EIA/IFA then IgM + IgG immunoblots, or modified 2-tier with two EIAs) is the test for PNS or CNS disease — not PCR or culture of CSF or serum (strong, moderate)",
+    "If CSF is tested: paired CSF + serum for the CSF:serum antibody index at a lab with a validated method; no CSF serology without the index; no routine CSF PCR or culture (strong, moderate)",
+    "CSF:serum antibody index: elevated = highly specific for CNS Lyme; sensitivity >85% in 2 small US meningitis studies, 56–79% in European early neuroborreliosis; a normal index does not exclude; may stay elevated for years after successful treatment",
+    "CSF PCR sensitivity: 17% (meta-analysis, acute neuroborreliosis), 5% (US Lyme meningitis); blood PCR or culture 1–28%",
+    "Active CNS (not necessarily PNS) disease usually has a CSF lymphocytic/monocytic pleocytosis; CSF may be normal when disease is limited to the PNS",
+    "Seronegative at presentation (occasional in early neuroborreliosis): typically strongly seropositive on repeat testing several weeks later; rarely the index is positive before serum",
+    "IgG seronegativity in an untreated patient with months to years of symptoms essentially rules out Lyme disease",
+    "IgM and IgG can persist for years or decades after cure — seropositivity does not separate past from active infection",
+    "Lyme vs enteroviral meningitis: Lyme more likely with facial nerve palsy, symptoms >7 days, and mononuclear-predominant CSF pleocytosis",
+    "CSF CXCL13: not standardized, raised in other infectious, inflammatory and neoplastic conditions; not recommended. Falls rapidly with treatment"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "Meningitis or encephalitis, diagnosis not confirmed",
+      "action": "Empiric IV regimen covering other bacterial and viral pathogens first; once those are excluded or Lyme is confirmed, oral doxycycline may be considered"
+    },
+    {
+      "order": 2,
+      "window": "Suspected neuroborreliosis",
+      "action": "Serum Lyme antibody (2-tier); if an LP is done, send paired CSF + serum for the antibody index"
+    },
+    {
+      "order": 3,
+      "window": "Acute facial palsy, Lyme not established (age ≥16)",
+      "action": "Corticosteroids within 72 h of onset per facial palsy guidelines — don't wait for Lyme serology"
+    },
+    {
+      "order": 4,
+      "window": "Lyme-associated facial palsy established",
+      "action": "Antibiotics. Steroids: no recommendation (knowledge gap) — stopping steroids already started, or starting them, is patient preference and clinical judgment"
+    },
+    {
+      "order": 5,
+      "window": "Papilledema / raised ICP",
+      "action": "Lower ICP to prevent visual loss, regardless of etiology"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Serum Lyme antibody, 2-tier (standard or modified)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Modified 2-tier often detects early cases that are EIA-reactive but miss immunoblot criteria"
+      ]
+    },
+    {
+      "test": "LP: opening pressure, cell count, paired CSF + serum Lyme antibody index",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Suspected meningitis — to exclude bacterial, viral or other causes",
+        "Baseline pleocytosis as a metric of treatment response",
+        "Suspected CNS involvement (intrathecal antibody production)",
+        "Suspected raised ICP"
+      ],
+      "notes": [
+        "Individualize — recommended treatment may be the same with or without meningitis",
+        "Herniation has never been reported in Lyme neuroborreliosis; LP risk relates to the other diagnoses under consideration"
+      ]
+    },
+    {
+      "test": "MRI brain and/or spine",
+      "priority": "IF_INDICATED",
+      "indication": [
+        "Focal CNS findings on exam (suspected parenchymal disease)"
+      ],
+      "notes": [
+        "Rare contrast-enhancing parenchymal lesions; can mimic a first demyelinating episode",
+        "Nonspecific white matter abnormalities are no more common than in controls"
+      ]
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Ceftriaxone",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "2000 mg IV once daily × 14–21 days",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 2000,
+          "amountMax": 2000,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Once daily"
+          ],
+          "duration": [
+            "14–21 days"
+          ]
+        }
+      ],
+      "notes": [
+        "Preferred IV agent",
+        "Parenchymal brain or spinal cord involvement: IV over oral; typically 2–4-week courses (duration never studied)",
+        "Inpatient or ED, more acutely ill, or tolerating oral medication poorly: initial IV preferable",
+        "Route may be changed from IV to oral during treatment"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA/AAN/ACR 2020 XIII.1: IV ceftriaxone, cefotaxime, penicillin G, or oral doxycycline over other antimicrobials — strong recommendation, moderate-quality evidence (e27); dose Table 3, duration Table 4 with footnote d (e11)",
+        "XIV.1: IV over oral antibiotics for parenchymal involvement — strong recommendation, moderate-quality evidence; \"Typically, 2- to 4-week courses have been used successfully\" (e28)"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Doxycycline",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "100 mg PO twice daily or 200 mg once daily × 14–21 days",
+      "dose": [
+        {
+          "label": "Twice-daily dosing",
+          "amountMin": 100,
+          "amountMax": 100,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Twice daily"
+          ],
+          "duration": [
+            "14–21 days"
+          ]
+        },
+        {
+          "label": "Once-daily dosing",
+          "amountMin": 200,
+          "amountMax": 200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Once daily"
+          ],
+          "duration": [
+            "14–21 days"
+          ]
+        }
+      ],
+      "notes": [
+        "For meningitis, cranial neuropathy, radiculoneuropathy and other PNS manifestations; not for parenchymal brain or spinal cord disease (IV)",
+        "Cranial nerve palsy: oral doxycycline is the only regimen listed",
+        "Oral vs IV equivalence comes from European trials (14-day courses, 200 mg/day); no high-quality US studies",
+        "The only well-studied oral option: azithromycin is not sufficiently studied beyond erythema migrans; amoxicillin and cefuroxime axetil have not been assessed directly",
+        "Pregnancy and breastfeeding: individualize against the alternatives"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA/AAN/ACR 2020 XIII.1 — strong recommendation, moderate-quality evidence (e27); dose Table 3, durations Table 4 (e11)",
+        "Evidence summary and rationale e27–e28; azithromycin Table 4 footnote c (e11); pregnancy e12"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Cefotaxime",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "2000 mg IV three times daily × 14–21 days",
+      "dose": [
+        {
+          "label": "Dose",
+          "amountMin": 2000,
+          "amountMax": 2000,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Three times daily"
+          ],
+          "duration": [
+            "14–21 days"
+          ]
+        }
+      ],
+      "notes": [
+        "May need dose adjustment in renal impairment"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA/AAN/ACR 2020 XIII.1 — strong recommendation, moderate-quality evidence (e27); Table 3 \"Alternative\" IV agent with footnote a; Table 4 footnote d (e11)"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Penicillin G",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "18–24 million units/day IV divided every 4 hours × 14–21 days",
+      "dose": [
+        {
+          "label": "Daily total",
+          "amountMin": 18000000,
+          "amountMax": 24000000,
+          "unit": "UNITS",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Divided every 4 hours"
+          ],
+          "duration": [
+            "14–21 days"
+          ]
+        }
+      ],
+      "notes": [
+        "May need dose adjustment in renal impairment"
+      ],
+      "evidenceLevel": "STRONG",
+      "evidenceNote": [
+        "IDSA/AAN/ACR 2020 XIII.1 — strong recommendation, moderate-quality evidence (e27); Table 3 \"Alternative\" IV agent with footnote a; Table 4 footnote d (e11)"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Steroids in Lyme-associated facial palsy: no recommendation — some studies suggest benefit, others possible harm; the evidence is small and methodologically limited",
+    "Persistent or recurring nonspecific symptoms (fatigue, pain, cognitive impairment) after recommended treatment, without objective reinfection or treatment failure (arthritis, meningitis, neuropathy): no additional antibiotics (strong, moderate)",
+    "Nonspecific T2 white matter hyperintensities are not useful for diagnosing neuroborreliosis — common with vascular risk factors, migraine and age",
+    "Lyme encephalopathy (concentration, memory, cognitive complaints) without focal CNS abnormalities on exam or imaging is generally not encephalitis",
+    "Courses longer than 21 days have not been shown more effective; 100 days of amoxicillin after 3 weeks of IV ceftriaxone did not improve response and raised adverse effects (RR 3.70)",
+    "Response may lag beyond the treatment course; CSF pleocytosis improves but takes an extended period to resolve completely",
+    "Symptom flare, with or without fever, in the first 24 h of antibiotics (Jarisch-Herxheimer-like): usually mild and self-limited; symptoms arising later in treatment are not this reaction",
+    "Immunoblots on paired serum and CSF, or on CSF alone, are not indicated outside research to assess intrathecal antibody production"
+  ],
+  "escalateWhen": [
+    "Focal CNS findings on exam or MRI evidence of brain or spinal cord involvement → IV therapy, not oral",
+    "Papilledema or raised ICP → lower ICP to prevent visual loss",
+    "Dyspnea, edema, palpitations, lightheadedness, chest pain or syncope → ECG; PR >300 ms, other arrhythmias or myopericarditis → admit with continuous ECG monitoring",
+    "Objective signs of relapse after treatment (e.g., meningitis, neuropathy) → a second course may be needed"
+  ],
+  "institutionVaries": [
+    "Lab's Lyme serology algorithm (standard vs modified 2-tier) and access to a validated CSF:serum antibody index",
+    "Cefotaxime and IV penicillin G availability",
+    "Outpatient IV antibiotic arrangements if an IV course continues after discharge",
+    "Health department reporting (Michigan)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:bacterial-meningitis",
+    "acute-neuro:viral-encephalitis",
+    "acute-neuro:elevated-icp-herniation",
+    "consult-workups:inpatient-neuropathy",
+    "consult-workups:myelopathy-workup",
+    "consult-workups:new-demyelinating-lesion"
+  ],
+  "sources": [
+    "Lantos PM, et al. Clinical Practice Guidelines by the Infectious Diseases Society of America (IDSA), American Academy of Neurology (AAN), and American College of Rheumatology (ACR): 2020 Guidelines for the Prevention, Diagnosis and Treatment of Lyme Disease. Clin Infect Dis 2021;72(1):e1-e48. doi:10.1093/cid/ciaa1215"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
