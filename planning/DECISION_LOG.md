@@ -624,3 +624,6 @@ Rules adopted:
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R4/README.md`.
 
 Encoded 2026-11-11 on `content-r4-2026-11-09` (base `0fa999d`). Render check: `treatment[5]` shows route `INTRATHECAL` and its dose text with no errors; the entry page shows `doseText` only, so the structured doses on `treatment[4]` are not displayed anywhere.
+
+### Verify item closed (Jason, 2026-11-11), no content change
+- `bacterial-meningitis` V2 (intraventricular gentamicin): Jason in chat: the entry should show 2 / 3 / 4–5 mg (IDSA 2017 Table 3 footnote e, by ventricle size), which is what `treatment[5].doseText` already says. The 4–8 mg figure (footnote d) is not shown.

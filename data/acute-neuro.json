@@ -2961,8 +2961,7 @@
         "CSF multiplex PCR availability"
       ],
       "verify": [
-        "IDSA 2017 vancomycin trough target 15–20 μg/mL (Rec 38) predates AUC-based dosing; reconcile with the local vancomycin protocol",
-        "Intraventricular gentamicin: IDSA 2017 Table 3 footnote d gives 4–8 mg for adults, but footnote e (by ventricle size) gives 2 / 3 / 4–5 mg; confirm which to show"
+        "IDSA 2017 vancomycin trough target 15–20 μg/mL (Rec 38) predates AUC-based dosing; reconcile with the local vancomycin protocol"
       ],
       "relatedIds": [
         "acute-neuro:viral-encephalitis",
