@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+2b86eaac",
+  "contentVersion": "2.2.1+a21ac651",
   "builtAt": "2026-11-11",
   "registries": [
     {
@@ -123,7 +123,7 @@
     {
       "id": "vascular-antithrombotics",
       "title": "Vascular antithrombotics",
-      "version": "1.1.1",
+      "version": "1.2.1",
       "schemaVersion": "1.2.0",
       "lastUpdated": "2026-11-11",
       "entries": 32,
@@ -1224,6 +1224,13 @@
       "citedBy": [
         "calc:ledd",
         "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
+      "citation": "Kamel H, et al. Apixaban to Prevent Recurrence After Cryptogenic Stroke in Patients With Atrial Cardiopathy: The ARCADIA Randomized Clinical Trial. JAMA 2024;331(7):573-581. doi:10.1001/jama.2023.27188",
+      "year": 2024,
+      "citedBy": [
+        "vascular-antithrombotics:esus-antithrombotic"
       ]
     },
     {

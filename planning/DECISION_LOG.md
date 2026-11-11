@@ -857,3 +857,5 @@ Rules applied:
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R9/README.md`.
 
 Encoded 2026-11-11 on `content-r9-2026-11-10` (base `413176d`). The draft expected 0.14.0 → 0.15.0; the registry was at 1.1.1 after R2, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11: signed by Jason (`esus-antithrombotic`, `lastReviewed` 2026-11-11) and released: vascular-antithrombotics 1.2.1, content 2.2.1+a21ac651. The sign-off/release open item above is closed; PARK P1 and P2 stay open.
