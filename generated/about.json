@@ -1,12 +1,12 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+a21ac651",
+  "contentVersion": "2.2.1+8087811d",
   "builtAt": "2026-11-11",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "2.3.1",
+      "version": "2.4.1",
       "schemaVersion": "1.3.0",
       "lastUpdated": "2026-11-11",
       "entries": 20,
@@ -1637,6 +1637,13 @@
       "year": 2026,
       "citedBy": [
         "antiseizure-medications:clobazam"
+      ]
+    },
+    {
+      "citation": "Orlova Y, Rizzoli P, Loder E. Association of Coprescription of Triptan Antimigraine Drugs and Selective Serotonin Reuptake Inhibitor or Selective Norepinephrine Reuptake Inhibitor Antidepressants With Serotonin Syndrome. JAMA Neurol 2018;75(5):566-572. doi:10.1001/jamaneurol.2017.5144",
+      "year": 2018,
+      "citedBy": [
+        "acute-neuro:serotonin-syndrome"
       ]
     },
     {

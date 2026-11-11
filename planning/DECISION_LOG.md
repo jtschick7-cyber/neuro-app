@@ -893,3 +893,5 @@ Rules applied:
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R10/README.md`.
 
 Encoded 2026-11-11 on `content-r10-2026-11-10` (base `caf1ffc`). The draft gave no numbers ("as found → next MINOR"); the registry was at 2.3.1 after R3, R4 and R6, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
+
+Update 2026-11-11: signed by Jason (`serotonin-syndrome`, `lastReviewed` 2026-11-11) and released: acute-neuro 2.4.1, content 2.2.1+8087811d. The sign-off/release open item above is closed; PARK P1 and P2 stay open.
