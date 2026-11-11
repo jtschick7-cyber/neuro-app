@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -4046,7 +4046,7 @@
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "Kamel H, et al. Apixaban to Prevent Recurrence After Cryptogenic Stroke in Patients With Atrial Cardiopathy: The ARCADIA Randomized Clinical Trial. JAMA 2024;331(7):573-581. doi:10.1001/jama.2023.27188"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "kind": "DECISION",
