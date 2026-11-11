@@ -1059,3 +1059,51 @@ Update 2026-11-11 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, con
 - Open: sign-off and release, when Jason asks.
 
 Update 2026-11-11 (2): signed by Jason (`aria-anti-amyloid`, `lastReviewed` 2026-11-11) and released: consult-workups 3.1.1, content 2.2.1+a806b227. The sign-off/release open item above is closed; PARK items C1, B8 and B9 stay open.
+
+## 2026-11-11 — Review item R15 (Lyme neuroborreliosis entry)
+
+Approved by Jason in chat 2026-11-11 ("Approve as recommended"). Draft: `planning/drafts/review-2026-11-08/R15/` (new entry; no base). Entry `lastReviewed: "UNREVIEWED"`.
+
+Finding: the app had no Lyme neuroborreliosis content. Source: IDSA/AAN/ACR 2020 Lyme disease guidelines (Lantos PM, et al. Clin Infect Dis 2021;72(1):e1–e48). No successor guideline found (web check 2026-11-11).
+
+| Draft | Findings | Change |
+|---|---|---|
+| `acute-neuro.lyme-neuroborreliosis.json` | N1–N10, K1–K5 | New entry `lyme-neuroborreliosis` (CNS_INFECTION): who to test (acute meningitis, painful radiculoneuritis, mononeuropathy multiplex, acute cranial neuropathy, cord or brain inflammation, with plausible exposure) and who not to (typical ALS, RRMS, PD, dementia, new-onset seizures, psychiatric illness, nonspecific white matter lesions); testing (serum 2-tier antibody; paired CSF + serum antibody index; no PCR or culture; no CXCL13); reading results (index sensitivity >85% US / 56–79% Europe, stays elevated for years, normal doesn't exclude; CSF PCR 5–17%; early seronegativity → repeat in several weeks); regimens × 14–21 d (ceftriaxone 2000 mg IV daily; doxycycline 100 mg PO BID or 200 mg daily; cefotaxime 2000 mg IV TID; penicillin G 18–24 MU/day divided q4h); parenchymal disease IV, typically 2–4 weeks; facial palsy steroids (within 72 h if Lyme not established, age ≥16; no recommendation once Lyme is established); no additional antibiotics for nonspecific persistent symptoms; 8 pitfalls; 5 keyNumbers; 6 relatedIds; 1 source |
+
+Rules adopted:
+- GRADE "strong recommendation" → `STRONG` and "weak" → `WEAK`, with the guideline's exact wording and quality of evidence in `evidenceNote`.
+- Agents graded together in one recommendation (XIII.1) all carry that grade; `role` follows the guideline's own Preferred/Alternative labels (Table 3).
+- A "no recommendation, knowledge gap" statement is not encoded as a treatment row; it is shown in immediateActions and pitfalls.
+
+Overlap check (C1): no duplicate and no contradiction. A search of all `data/*.json` for "Lyme", "Borrelia" and "neuroborreliosis" found two lines in one entry, `acute-neuro:guillain-barre-syndrome`: workup[6] "HIV, Lyme, CMV, West Nile serology/PCR" and pitfalls[1] "CSF cells >50/μL → think infection (HIV, Lyme, CMV, West Nile), malignancy, sarcoid". Both are test-ordering or differential mentions with no regimen, dose, duration or testing rule. One thing to know, not a contradiction: the GBS line reads "serology/PCR" across four infections, and the new entry says not to use PCR for Lyme. `bacterial-meningitis`, `viral-encephalitis`, `inpatient-neuropathy`, `myelopathy-workup`, `new-demyelinating-lesion` and `acute-vision-loss` have no hit (three other matches were the letters "lyme" inside "DailyMed" in source lines). No entry was changed. Rendering check (C2): in the dev app at 375 px, the four treatment rows render with First line ×2 and Alternative ×2 badges and four "Strong" evidence badges (the two Alternative rows show Strong, as encoded); ceftriaxone shows "Stocked", the other three "Institution varies". The `UNITS` structured dose (18000000–24000000) is not displayed anywhere: no component reads the structured `dose[]` amounts, so only `doseText` shows ("18–24 million units/day IV divided every 4 hours × 14–21 days"). `keyNumbers[4]` and `definitions[5]` wrap cleanly with no horizontal page scroll. Search finds the entry first for "Lyme", "neuroborreliosis", "facial palsy", "antibody index", "Borrelia" and "Bannwarth". All six related links point at existing entries. No relatedId to `neurosyphilis` was added (A3), although that entry now exists. Nothing was changed to affect rendering.
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| acute-neuro | 2.5.1 | 2.6.0 | MINOR (new entry) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- C1: Lyme content in other entries (back-links and any duplicates).
+- A3: relatedId to `acute-neuro:neurosyphilis` once R13 has merged.
+- A5: current US availability of cefotaxime.
+- A6: XXV.1 (no additional antibiotics) as a `NOT_RECOMMENDED` treatment row instead of a pitfall.
+- A7: tests to avoid (urine antigen, lymphocyte transformation, CD57).
+- A8: coinfection (Anaplasma, Babesia).
+- A12: back-links to this entry from related entries.
+
+### ACCEPT (not raised again)
+- A1: erythema migrans, tick-bite prophylaxis, prevention, arthritis, PNS/CNS anatomy not encoded.
+- A2: ICP-lowering doses and the facial palsy steroid dose are not in the source; not encoded.
+- A4: formulary statuses as approved (ceftriaxone AVAILABLE; others INSTITUTION_VARIES).
+- A9: carditis limited to one escalate line.
+- A10: adults only.
+- A11: antibody-index sensitivity figures shown with their origin (US vs Europe).
+- A13: 2020 guideline is current.
+- C2 (pending Claude Code's report): STRONG on ALTERNATIVE rows and UNITS integers as encoded.
+
+### Open items
+- `verify[]`: none.
+- Jason: review, then `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R15/README.md`.
+
+Encoded 2026-11-11 on `content-r15-2026-11-11` (base `07662c6`). The draft gave no numbers ("as found → next MINOR"); the registry was at 2.5.1 after R13, so the approved MINOR level was applied to that (docs/VERSIONING.md, "Encoding approved drafts").
