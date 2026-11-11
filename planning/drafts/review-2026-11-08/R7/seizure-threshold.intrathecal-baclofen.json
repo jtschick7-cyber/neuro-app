@@ -1,0 +1,51 @@
+{
+  "id": "intrathecal-baclofen",
+  "title": "Intrathecal baclofen — abrupt withdrawal or overdose",
+  "searchTerms": [
+    "Gablofen",
+    "Lioresal Intrathecal",
+    "baclofen pump",
+    "ITB withdrawal",
+    "pump failure",
+    "baclofen overdose"
+  ],
+  "drugClass": "GABA-B agonist (intrathecal)",
+  "generics": [
+    "baclofen (intrathecal)"
+  ],
+  "brands": [
+    "Gablofen",
+    "Lioresal Intrathecal"
+  ],
+  "tier": "AVOID",
+  "fdaBoxedWarning": false,
+  "usMarketed": true,
+  "effect": [
+    "Seizures with withdrawal, with overdose, and at therapeutic doses (Gablofen §5.5)",
+    "Convulsion on maintenance infusion: 4.7% (spinal origin), 10.0% (cerebral origin) in trials (Gablofen §6.1, Tables 1–2)"
+  ],
+  "mechanism": [],
+  "pearls": [
+    "AVOID = avoid abrupt interruption (boxed warning: \"Do not discontinue abruptly\")",
+    "Abrupt stop → high fever, altered mental status, rebound spasticity, rigidity; rarely rhabdomyolysis, multiorgan failure, death (boxed warning)",
+    "Early withdrawal: return of spasticity, pruritus, hypotension, paresthesias; onset hours to a few days (§5.5)",
+    "Advanced withdrawal can resemble autonomic dysreflexia, sepsis, malignant hyperthermia or NMS (§5.5)",
+    "Common causes: catheter malfunction (especially disconnection), low reservoir volume, pump battery end of life (§5.5)",
+    "Higher risk: spinal cord injury at T6 or above, communication difficulties, prior withdrawal (boxed warning)",
+    "Treat withdrawal: restore intrathecal baclofen at or near the prior dose; if delayed, oral/enteral baclofen or oral/enteral/IV benzodiazepines — oral baclofen alone isn't enough (§5.5)",
+    "Overdose: drowsiness, respiratory depression, seizures, rostral hypotonia, coma up to 72 h; no antidote — remove residual drug from the pump, intubate if needed (§10)",
+    "Overdose: physostigmine 2 mg IM/IV at ≤1 mg/min may reverse drowsiness and respiratory depression (anecdotal), but can induce seizures and bradycardia (§10)",
+    "Overdose: if LP not contraindicated, consider withdrawing 30–40 mL CSF (§10)"
+  ],
+  "saferAlternatives": [],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:nms-parkinsonism-hyperpyrexia",
+    "acute-neuro:convulsive-status-epilepticus"
+  ],
+  "sources": [
+    "Gablofen (baclofen injection) intrathecal US prescribing information. Piramal Critical Care; revised 5/2026 (user-supplied label)",
+    "Lioresal Intrathecal (baclofen injection) US prescribing information. Amneal; revised 12/2022 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

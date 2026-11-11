@@ -1,0 +1,36 @@
+{
+  "id": "inducing-asm-voriconazole",
+  "title": "Carbamazepine or long-acting barbiturates with voriconazole",
+  "searchTerms": [
+    "Vfend Tegretol",
+    "voriconazole phenobarbital",
+    "antifungal seizure medication"
+  ],
+  "objectDrugs": [
+    "voriconazole"
+  ],
+  "precipitantDrugs": [
+    "carbamazepine",
+    "long-acting barbiturates (e.g., phenobarbital)"
+  ],
+  "tier": "AVOID",
+  "effect": [
+    "↓ voriconazole levels (likely significant) → loss of antifungal efficacy"
+  ],
+  "mechanism": [
+    "CYP450 induction (voriconazole Table 10)"
+  ],
+  "management": [
+    "Contraindicated (voriconazole §4)"
+  ],
+  "population": [],
+  "pearls": [
+    "Phenytoin is not contraindicated — increase the voriconazole dose; see the fluconazole/voriconazole–phenytoin entry"
+  ],
+  "verify": [],
+  "relatedIds": [],
+  "sources": [
+    "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

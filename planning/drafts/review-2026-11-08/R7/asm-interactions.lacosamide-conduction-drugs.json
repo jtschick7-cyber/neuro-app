@@ -1,0 +1,42 @@
+{
+  "id": "lacosamide-conduction-drugs",
+  "title": "Lacosamide with drugs that affect cardiac conduction",
+  "searchTerms": [
+    "Vimpat beta-blocker",
+    "lacosamide PR interval",
+    "AV block",
+    "bradycardia"
+  ],
+  "objectDrugs": [
+    "lacosamide"
+  ],
+  "precipitantDrugs": [
+    "sodium channel blockers (including sodium channel-blocking ASMs)",
+    "beta-blockers",
+    "calcium channel blockers",
+    "potassium channel blockers",
+    "other PR-prolonging drugs"
+  ],
+  "tier": "CAUTION",
+  "effect": [
+    "Further PR prolongation; AV block, bradycardia, ventricular tachyarrhythmia — rarely asystole, cardiac arrest, death (§5.3)"
+  ],
+  "mechanism": [],
+  "management": [
+    "ECG before starting and after titration to steady state (§5.3, §7.2)",
+    "Monitor closely if given IV (§7.2)"
+  ],
+  "population": [],
+  "pearls": [
+    "Also caution with marked 1st-degree AV block, 2nd-degree or higher AV block, sick sinus without pacemaker, severe cardiac disease, Brugada (§5.3)",
+    "Profound bradycardia (26 bpm) during a 15-min 150 mg IV infusion in a patient on a beta-blocker (§6.1)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:lacosamide"
+  ],
+  "sources": [
+    "Vimpat (lacosamide) tablets, injection, oral solution US prescribing information. UCB; revised 5/2026 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

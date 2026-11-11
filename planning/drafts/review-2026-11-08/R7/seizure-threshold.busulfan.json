@@ -1,0 +1,39 @@
+{
+  "id": "busulfan",
+  "title": "Busulfan (high-dose IV conditioning)",
+  "searchTerms": [
+    "Busulfex",
+    "HSCT conditioning",
+    "busulfan seizure prophylaxis"
+  ],
+  "drugClass": "Alkylating agent (transplant conditioning)",
+  "generics": [
+    "busulfan"
+  ],
+  "brands": [
+    "Busulfex"
+  ],
+  "tier": "CAUTION",
+  "fdaBoxedWarning": false,
+  "usMarketed": true,
+  "effect": [
+    "Seizures with high-dose busulfan; 1/42 seized despite phenytoin prophylaxis, 36 h after the last dose (§5.2)"
+  ],
+  "mechanism": [],
+  "pearls": [
+    "Label requires ASM prophylaxis: start 12 h before the first dose and continue to 24 h after the last (§2.1)",
+    "Label options: benzodiazepines, phenytoin, valproic acid or levetiracetam (§2.1, §5.2)",
+    "Phenytoin ↑ busulfan clearance ≥15%; label PK was studied on phenytoin, so exposure may be higher without it (§7.2)",
+    "Use caution with prior seizures, head trauma or other epileptogenic drugs (§5.2)"
+  ],
+  "saferAlternatives": [],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:levetiracetam",
+    "antiseizure-medications:phenytoin-fosphenytoin"
+  ],
+  "sources": [
+    "Busulfex (busulfan) injection US prescribing information. Otsuka; revised 10/2026 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

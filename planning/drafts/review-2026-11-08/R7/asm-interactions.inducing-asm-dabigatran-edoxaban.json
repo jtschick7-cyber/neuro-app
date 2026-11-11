@@ -1,0 +1,46 @@
+{
+  "id": "inducing-asm-dabigatran-edoxaban",
+  "title": "Carbamazepine or phenytoin with dabigatran or edoxaban",
+  "searchTerms": [
+    "Pradaxa Tegretol",
+    "Savaysa Dilantin",
+    "DOAC seizure medication"
+  ],
+  "objectDrugs": [
+    "dabigatran",
+    "edoxaban"
+  ],
+  "precipitantDrugs": [
+    "carbamazepine",
+    "phenytoin",
+    "fosphenytoin"
+  ],
+  "tier": "AVOID",
+  "effect": [
+    "↓ dabigatran/edoxaban levels → reduced anticoagulant effect"
+  ],
+  "mechanism": [
+    "Dabigatran and edoxaban are P-gp substrates; P-gp inducers lower exposure (Pradaxa §5.5; Savaysa §12.3)"
+  ],
+  "management": [
+    "Carbamazepine: avoid with dabigatran or edoxaban (Tegretol names both)",
+    "Phenytoin: lowers dabigatran and edoxaban levels (Dilantin Table 3); Pradaxa: P-gp inducers should generally be avoided (§5.5); Savaysa: avoid rifampin (§7.2) — neither names phenytoin"
+  ],
+  "population": [],
+  "pearls": [
+    "Fosphenytoin is a phenytoin prodrug — same interaction"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "vascular-antithrombotics:dabigatran",
+    "vascular-antithrombotics:edoxaban",
+    "asm-interactions:inducing-asm-apixaban-rivaroxaban"
+  ],
+  "sources": [
+    "Tegretol (carbamazepine) tablets, suspension, XR tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+    "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (user-supplied label)",
+    "Pradaxa (dabigatran etexilate) capsules US prescribing information. Boehringer Ingelheim; revised 6/2025 (user-supplied label)",
+    "Savaysa (edoxaban) tablets US prescribing information. Daiichi Sankyo; revised 7/2025 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

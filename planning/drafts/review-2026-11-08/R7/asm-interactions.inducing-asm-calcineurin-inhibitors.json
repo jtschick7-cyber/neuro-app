@@ -1,0 +1,51 @@
+{
+  "id": "inducing-asm-calcineurin-inhibitors",
+  "title": "Enzyme-inducing antiseizure medications with tacrolimus or cyclosporine",
+  "searchTerms": [
+    "Prograf Tegretol",
+    "tacrolimus phenytoin",
+    "cyclosporine carbamazepine",
+    "transplant seizure medication",
+    "rejection"
+  ],
+  "objectDrugs": [
+    "tacrolimus",
+    "cyclosporine"
+  ],
+  "precipitantDrugs": [
+    "carbamazepine",
+    "phenytoin",
+    "fosphenytoin",
+    "phenobarbital",
+    "oxcarbazepine"
+  ],
+  "tier": "CAUTION",
+  "effect": [
+    "↓ tacrolimus/cyclosporine levels → rejection risk"
+  ],
+  "mechanism": [
+    "CYP3A induction"
+  ],
+  "management": [
+    "Tacrolimus: increase the dose and monitor whole-blood troughs (Prograf Table 15)",
+    "Cyclosporine: adjust the dose to target levels (Neoral Drug Interactions)",
+    "Carbamazepine label: monitor tacrolimus levels and adjust (Tegretol)"
+  ],
+  "population": [],
+  "pearls": [
+    "Oxcarbazepine is named in the cyclosporine label only",
+    "Fosphenytoin is a phenytoin prodrug — same interaction",
+    "Carbamazepine and phenytoin labels also list cyclosporine as lowered (Tegretol; Dilantin Table 3)"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:phenytoin-fosphenytoin"
+  ],
+  "sources": [
+    "Prograf (tacrolimus) capsules, injection, granules US prescribing information. Astellas; revised 8/2023 (user-supplied label)",
+    "Neoral (cyclosporine) capsules and oral solution (modified) US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+    "Tegretol (carbamazepine) tablets, suspension, XR tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+    "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
