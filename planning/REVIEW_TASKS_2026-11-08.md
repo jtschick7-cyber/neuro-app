@@ -264,7 +264,7 @@ a changed entry is. See `docs/VERSIONING.md`, "Encoding approved drafts".
 |---|---|---|---|
 | 3.1 | ~~TNK "1-kg dosing <50 kg": confirm the source or remove the option~~ | **MOOT (2026-11-08)**: 2.1 removes the `tenecteplase` entry and the TNK calculator UI. Don't do it. The retained `tnkDose` function keeps the unverified option; resolve it only if the UI is ever restored | ~~R1~~ not needed |
 | 3.2 | Restarting OAC after ICH: PRESTIGE-AF, ENRICH-AF, ESO-EANS 2025 | `vascular-antithrombotics:restart-antithrombotic-after-ich` | R2. **DRAFTED (2026-11-11)**: [PR #40](https://github.com/jtschick7-cyber/neuro-app/pull/40); signed and released 2026-11-11 (1.1.1) |
-| 3.3 | Hyponatremia "≤8 mmol/L if ODS risk" attribution | `acute-neuro:hyponatremia-ods` `definitions[1]`, `keyNumbers[2]`; `sodiumCorrectionCheck` docstring and META sources | R3 |
+| 3.3 | Hyponatremia "≤8 mmol/L if ODS risk" attribution | `acute-neuro:hyponatremia-ods` `definitions[1]`, `keyNumbers[2]`; `sodiumCorrectionCheck` docstring and META sources | R3. **DRAFTED (2026-11-11)**: [PR #42](https://github.com/jtschick7-cyber/neuro-app/pull/42) |
 | 3.4 | Post-neurosurgical meningitis: IDSA 2017 source + EVD-relevant recs | `acute-neuro:bacterial-meningitis` (post-neurosurgery item and related rows) | R4 |
 | 3.5 | PD: continuous infusion therapies now US-marketed; "admitted on a pump" row | `reference-cards:inpatient-parkinson-disease` `pitfalls[1]` (+ optional row) | R5 |
 | 3.6 | MG/NMOSD patients on FcRn or complement inhibitors | `acute-neuro:myasthenic-crisis`, `nmosd-mogad-attack` | R6 |
