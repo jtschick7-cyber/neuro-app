@@ -1,0 +1,165 @@
+{
+  "id": "hyponatremia-ods",
+  "title": "Severe hyponatremia & osmotic demyelination syndrome",
+  "keyNumbers": [
+    "150 mL 3% NaCl IV over 20 min; recheck Na; repeat up to twice more until Na rises 5 mmol/L (ESE 1D/2D)",
+    "ESE 2014 correction limits: ≤10 mmol/L in the first 24 h, then ≤8 mmol/L per 24 h until Na 130 (1D)",
+    "Verbalis 2013 (US expert panel, ungraded), high ODS risk: limit ≤8 mmol/L in any 24 h; goal 4–6 mmol/L/day. High risk: Na ≤105, hypokalemia, alcohol use disorder, malnutrition, advanced liver disease",
+    "Na at 6 h, 12 h, then daily (ESE 2D); if Na ≤120: q4–6h until ≥125 (Verbalis); watch urine output (aquaresis signals overcorrection risk)"
+  ],
+  "category": "TOXIC_METABOLIC",
+  "searchTerms": [
+    "hyponatremia",
+    "ODS",
+    "central pontine myelinolysis",
+    "3% saline",
+    "overcorrection",
+    "SIADH",
+    "DDAVP clamp"
+  ],
+  "presentation": [
+    "Severe symptoms: vomiting, cardiorespiratory distress, somnolence/coma (GCS ≤8), seizures",
+    "Moderately severe: headache, confusion, nausea",
+    "ODS (2–6 days after overly rapid correction): dysarthria, dysphagia, quadriparesis, pseudobulbar palsy, locked-in, movement disorders"
+  ],
+  "definitions": [
+    "ESE 2014 correction limits: ≤10 mmol/L in the first 24 h, then ≤8 mmol/L per 24 h until Na 130 (1D)",
+    "Verbalis 2013 (US expert panel, ungraded), high ODS risk: limit ≤8 mmol/L in any 24 h; goal 4–6 mmol/L/day. High risk: Na ≤105, hypokalemia, alcohol use disorder, malnutrition, advanced liver disease"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "Severe symptoms, first hour",
+      "action": "150 mL 3% NaCl IV over 20 min; recheck Na; repeat up to twice more until Na rises 5 mmol/L (ESE 1D/2D)"
+    },
+    {
+      "order": 2,
+      "window": "After +5 mmol/L",
+      "action": "Stop 3%; keep line open with minimal 0.9% saline; start cause-specific treatment"
+    },
+    {
+      "order": 3,
+      "window": "Monitoring",
+      "action": "Na at 6 h, 12 h, then daily (ESE 2D); if Na ≤120: q4–6h until ≥125 (Verbalis); watch urine output (aquaresis signals overcorrection risk)"
+    },
+    {
+      "order": 4,
+      "window": "Overcorrection",
+      "action": "Re-lower: D5W ± desmopressin if limit exceeded (ESE 1D)"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Serum osmolality, urine osmolality, urine Na",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Draw before treatment if possible"
+      ]
+    },
+    {
+      "test": "Glucose (pseudohyponatremia/translocation), TSH, cortisol",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Volume status and medication review (thiazides, SSRIs, carbamazepine/oxcarbazepine)",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "Serum K",
+      "priority": "STAT",
+      "indication": [],
+      "notes": [
+        "Repleting K raises Na — counts toward the correction limit"
+      ]
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "3% NaCl bolus",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "150 mL over 20 min; repeat up to 2 more times until +5 mmol/L (ESE). SALSA bolus arm: 2 mL/kg (moderate) or 4 mL/kg (severe)",
+      "dose": [
+        {
+          "label": "ESE bolus",
+          "amountMin": 150,
+          "amountMax": 150,
+          "unit": "ML",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Repeat up to ×2 until Na +5"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Peripheral line acceptable for boluses",
+        "SALSA: rapid intermittent boluses had no more overcorrection than slow infusion (17.2% vs 24.2%) and less need for re-lowering"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "ESE 2014: 1D/2D",
+        "SALSA 2021 RCT"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": [
+        "sodium-correction"
+      ]
+    },
+    {
+      "role": "ADJUNCT",
+      "agent": "Desmopressin ± D5W (re-lowering or 'clamp')",
+      "routes": [
+        "IV",
+        "SC"
+      ],
+      "doseText": "Per nephrology/pharmacy protocol",
+      "dose": [],
+      "notes": [
+        "Use when correction exceeds limits"
+      ],
+      "evidenceLevel": "WEAK",
+      "evidenceNote": [
+        "ESE 2014: re-lower if >10 in 24 h or >8 in any later 24 h (1D)",
+        "Verbalis 2013 (ungraded): high ODS risk, >8 mmol/L in any 24 h may justify re-lowering (S21)"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Overcorrection often comes from aquaresis once the cause stops (hypovolemia corrected, thiazide or desmopressin stopped)",
+    "Potassium repletion raises sodium",
+    "Brain-injured patients: avoid hyponatremia entirely (NCS 2020)"
+  ],
+  "escalateWhen": [
+    "Seizure, coma, or respiratory compromise → ICU",
+    "Na rising faster than limits → nephrology, re-lowering"
+  ],
+  "institutionVaries": [
+    "3% bolus protocol (150 mL vs 100 mL vs weight-based)",
+    "Desmopressin clamp use"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:elevated-icp-herniation",
+    "acute-neuro:convulsive-status-epilepticus"
+  ],
+  "sources": [
+    "Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170(3):G1-G47. doi:10.1530/EJE-13-1020",
+    "Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519",
+    "Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7",
+    "Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1-S42. doi:10.1016/j.amjmed.2013.07.006"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
