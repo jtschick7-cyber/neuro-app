@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+8661e2e8",
+  "contentVersion": "2.2.1+29d8aa57",
   "builtAt": "2026-11-11",
   "registries": [
     {
@@ -97,15 +97,15 @@
     {
       "id": "reference-cards",
       "title": "Reference Cards",
-      "version": "1.2.3",
+      "version": "1.3.1",
       "schemaVersion": "1.1.0",
-      "lastUpdated": "2026-11-08",
+      "lastUpdated": "2026-11-11",
       "entries": 4,
       "reviewed": 4,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-08"
+      "newestReview": "2026-11-11"
     },
     {
       "id": "seizure-threshold",
@@ -669,6 +669,13 @@
       "year": 2003,
       "citedBy": [
         "acute-neuro:serotonin-syndrome"
+      ]
+    },
+    {
+      "citation": "Duopa (carbidopa and levodopa) enteral suspension US prescribing information, Medication Guide and CADD-Legacy 1400 Operator's Manual. AbbVie; revised 3/2026 (operator's manual: Smiths Medical, revised 3/2019)",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
       ]
     },
     {
@@ -1528,6 +1535,13 @@
       ]
     },
     {
+      "citation": "Onapgo (apomorphine hydrochloride) injection US prescribing information and Patient Instructions for Use. MDD US Operations (Supernus); PI revised 5/2026, IFU revised 6/2026",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
       "citation": "Orr SL, et al. Management of adults with acute migraine in the emergency department: the American Headache Society evidence assessment of parenteral pharmacotherapies. Headache 2016;56(6):911-940. doi:10.1111/head.12835",
       "year": 2016,
       "citedBy": [
@@ -2223,6 +2237,13 @@
       "year": 2026,
       "citedBy": [
         "antiseizure-medications:lacosamide"
+      ]
+    },
+    {
+      "citation": "Vyalev (foscarbidopa and foslevodopa) injection US prescribing information. AbbVie; revised 3/2026",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
       ]
     },
     {

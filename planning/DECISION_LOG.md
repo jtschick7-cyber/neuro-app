@@ -676,3 +676,5 @@ LEDD check (C1): Jost 2023 Table 1 gives subcutaneous foslevodopa/foscarbidopa "
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R5/README.md`.
 
 Encoded 2026-11-11 on `content-r5-2026-11-09` (base `8d903bc`). Render check: the pump section shows second with three Recommended / Not graded rows; key numbers wrap cleanly at phone width; search finds the card for "Vyalev", "Onapgo" and "Duopa".
+
+Update 2026-11-11: signed by Jason (`inpatient-parkinson-disease`, `lastReviewed` 2026-11-11) and released: reference-cards 1.3.1, content 2.2.1+29d8aa57. The sign-off/release open item above is closed; PARK D8b, C2, A4, A7 and A10 stay available to revive.
