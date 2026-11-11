@@ -538,3 +538,5 @@ Rules adopted:
 - PARK F5b and B1 (above).
 - Jason: `npm run signoff`, then `npm run release`.
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R2/README.md`.
+
+Update 2026-11-11: signed by Jason (`restart-antithrombotic-after-ich`, `lastReviewed` 2026-11-11) and released: vascular-antithrombotics 1.1.1, content 2.2.0+4e5af9ee. The sign-off/release open item above is closed; PARK F5b and B1 stay open.

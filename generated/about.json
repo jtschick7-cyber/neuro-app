@@ -1,7 +1,7 @@
 {
   "appVersion": "2.2.0",
-  "contentVersion": "2.2.0+add10530",
-  "builtAt": "2026-11-08",
+  "contentVersion": "2.2.0+4e5af9ee",
+  "builtAt": "2026-11-11",
   "registries": [
     {
       "id": "acute-neuro",
@@ -123,15 +123,15 @@
     {
       "id": "vascular-antithrombotics",
       "title": "Vascular antithrombotics",
-      "version": "1.0.1",
+      "version": "1.1.1",
       "schemaVersion": "1.2.0",
-      "lastUpdated": "2026-11-08",
+      "lastUpdated": "2026-11-11",
       "entries": 32,
       "reviewed": 32,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-08"
+      "newestReview": "2026-11-11"
     }
   ],
   "calculators": [
@@ -699,6 +699,13 @@
       "year": 2024,
       "citedBy": [
         "vascular-antithrombotics:gp-iib-iiia-inhibitors"
+      ]
+    },
+    {
+      "citation": "European Society of Cardiology. Safer stroke prevention strategies are needed for patients with atrial fibrillation after intracranial haemorrhage (ENRICH-AF press release). escardio.org, 28 August 2026 (user-supplied)",
+      "year": 2026,
+      "citedBy": [
+        "vascular-antithrombotics:restart-antithrombotic-after-ich"
       ]
     },
     {
@@ -1909,6 +1916,13 @@
       ]
     },
     {
+      "citation": "Shoamanesh A, et al. Primary Results of the ENRICH-AF Trial (NCT03950076). ESC Congress 2026, Hot Line, Munich, 29 August 2026 (presentation slides, user-supplied; not yet published)",
+      "year": 2026,
+      "citedBy": [
+        "vascular-antithrombotics:restart-antithrombotic-after-ich"
+      ]
+    },
+    {
       "citation": "Shorvon S, Ferlisi M. The treatment of super-refractory status epilepticus: a critical review of available therapies and a clinical treatment protocol. Brain 2011;134(10):2802-2818. doi:10.1093/brain/awr215",
       "year": 2011,
       "citedBy": [
@@ -1956,6 +1970,13 @@
       "year": 2017,
       "citedBy": [
         "neural-antibodies:gabaa-r"
+      ]
+    },
+    {
+      "citation": "Steiner T, et al. European Stroke Organisation (ESO) and European Association of Neurosurgical Societies (EANS) guideline on stroke due to spontaneous intracerebral haemorrhage. Eur Stroke J 2025;10(4):1007-1086. doi:10.1177/23969873251340815",
+      "year": 2025,
+      "citedBy": [
+        "vascular-antithrombotics:restart-antithrombotic-after-ich"
       ]
     },
     {
@@ -2166,6 +2187,13 @@
       "year": 2023,
       "citedBy": [
         "acute-neuro:autoimmune-encephalitis"
+      ]
+    },
+    {
+      "citation": "Veltkamp R, et al. Direct oral anticoagulants versus no anticoagulation for the prevention of stroke in survivors of intracerebral haemorrhage with atrial fibrillation (PRESTIGE-AF): a multicentre, open-label, randomised, phase 3 trial. Lancet 2025;405:927-936. doi:10.1016/S0140-6736(25)00333-2",
+      "year": 2025,
+      "citedBy": [
+        "vascular-antithrombotics:restart-antithrombotic-after-ich"
       ]
     },
     {
