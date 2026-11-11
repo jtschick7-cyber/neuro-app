@@ -1,0 +1,203 @@
+{
+  "id": "serotonin-syndrome",
+  "title": "Serotonin syndrome (serotonin toxicity)",
+  "keyNumbers": [
+    "Cyproheptadine: 12 mg initially, then 2 mg q2h while symptoms continue; maintenance 8 mg q6h (12–32 mg/24 h); oral only — crush via NG",
+    "Temperature >41 °C, rigidity, or hemodynamic instability → ICU"
+  ],
+  "category": "TOXIC_METABOLIC",
+  "searchTerms": [
+    "serotonin toxicity",
+    "Hunter criteria",
+    "cyproheptadine",
+    "clonus",
+    "SSRI",
+    "linezolid",
+    "triptan"
+  ],
+  "presentation": [
+    "Onset usually within 24 h of a new serotonergic drug, dose increase, or interacting combination (e.g., linezolid, methylene blue, MAOIs, tramadol, fentanyl)",
+    "Neuromuscular: clonus (inducible, spontaneous, ocular), hyperreflexia, tremor — worse in legs; hypertonia in severe cases",
+    "Autonomic: hyperthermia, diaphoresis, tachycardia, mydriasis, diarrhea; agitation"
+  ],
+  "definitions": [
+    "Hunter criteria — serotonergic agent PLUS any of: spontaneous clonus; inducible clonus + agitation or diaphoresis; ocular clonus + agitation or diaphoresis; tremor + hyperreflexia; hypertonia + temperature >38 °C + ocular or inducible clonus (sens 84%, spec 97% vs toxicologist diagnosis)"
+  ],
+  "immediateActions": [
+    {
+      "order": 1,
+      "window": "Immediately",
+      "action": "Stop all serotonergic drugs; supportive care, IV fluids, continuous monitoring"
+    },
+    {
+      "order": 2,
+      "window": "Agitation",
+      "action": "Benzodiazepines; avoid physical restraints (isometric contraction worsens hyperthermia and lactic acidosis)"
+    },
+    {
+      "order": 3,
+      "window": "Persistent moderate symptoms",
+      "action": "Cyproheptadine (oral/NG)"
+    },
+    {
+      "order": 4,
+      "window": "Temp >41 °C or severe rigidity",
+      "action": "ICU: sedation, intubation, nondepolarizing paralysis; antipyretics don't work (heat is muscular); avoid succinylcholine"
+    }
+  ],
+  "workup": [
+    {
+      "test": "Medication reconciliation incl. OTC/supplements and recent stops (fluoxetine washout is long)",
+      "priority": "STAT",
+      "indication": [],
+      "notes": []
+    },
+    {
+      "test": "BMP, CK, LFTs, coagulation, lactate, ABG",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": [
+        "Rhabdomyolysis, DIC, acidosis in severe cases"
+      ]
+    },
+    {
+      "test": "Exclude mimics: infection (blood cultures; LP if indicated), NMS, anticholinergic toxicity, withdrawal, thyroid storm",
+      "priority": "URGENT",
+      "indication": [],
+      "notes": []
+    }
+  ],
+  "treatment": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Benzodiazepine (e.g., lorazepam, diazepam)",
+      "routes": [
+        "IV"
+      ],
+      "doseText": "Titrate to agitation and autonomic control",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Boyer & Shannon 2005"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "SECOND_LINE",
+      "agent": "Cyproheptadine",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "12 mg initially, then 2 mg q2h while symptoms continue; maintenance 8 mg q6h (12–32 mg/24 h); oral only — crush via NG",
+      "dose": [
+        {
+          "label": "Initial",
+          "amountMin": 12,
+          "amountMax": 12,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "SINGLE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [],
+          "duration": []
+        },
+        {
+          "label": "Repeat",
+          "amountMin": 2,
+          "amountMax": 2,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q2h while symptomatic"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 8,
+          "amountMax": 8,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "q6h"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Efficacy not rigorously established",
+        "Sedation; transient hypotension"
+      ],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Boyer & Shannon 2005"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Antipyretics for serotonin-syndrome hyperthermia",
+      "routes": [
+        "PO",
+        "IV"
+      ],
+      "doseText": "Not effective — hyperthermia is from muscle activity",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Boyer & Shannon 2005"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    },
+    {
+      "role": "NOT_RECOMMENDED",
+      "agent": "Physical restraints; succinylcholine",
+      "routes": [
+        "NON_PHARM"
+      ],
+      "doseText": "Avoid — restraints worsen hyperthermia/acidosis; succinylcholine risks hyperkalemia with rhabdomyolysis",
+      "dose": [],
+      "notes": [],
+      "evidenceLevel": "EXPERT_OPINION",
+      "evidenceNote": [
+        "Boyer & Shannon 2005"
+      ],
+      "formularyStatus": "AVAILABLE",
+      "calculatorIds": []
+    }
+  ],
+  "pitfalls": [
+    "Clonus/hyperreflexia (worse in legs) points to serotonin syndrome; lead-pipe rigidity + bradyreflexia + slow onset points to NMS",
+    "Severe rigidity can mask clonus and hyperreflexia",
+    "Inpatient triggers: linezolid, methylene blue, fentanyl, tramadol, ondansetron/metoclopramide add-ons",
+    "Triptan + SSRI/SNRI rarely causes it: 0.6 definite cases/10,000 person-years (95% CI 0–1.5; 2.3 incl. possible cases) over 30,928 person-years of co-prescription; none life-threatening"
+  ],
+  "escalateWhen": [
+    "Temperature >41 °C, rigidity, or hemodynamic instability → ICU",
+    "Seizures, rhabdomyolysis, DIC"
+  ],
+  "institutionVaries": [],
+  "verify": [],
+  "relatedIds": [
+    "acute-neuro:nms-parkinsonism-hyperpyrexia"
+  ],
+  "sources": [
+    "Boyer EW, Shannon M. The serotonin syndrome. N Engl J Med 2005;352(11):1112-1120. doi:10.1056/NEJMra041867",
+    "Dunkley EJC, et al. The Hunter Serotonin Toxicity Criteria: simple and accurate diagnostic decision rules for serotonin toxicity. QJM 2003;96(9):635-642. doi:10.1093/qjmed/hcg109",
+    "Orlova Y, Rizzoli P, Loder E. Association of Coprescription of Triptan Antimigraine Drugs and Selective Serotonin Reuptake Inhibitor or Selective Norepinephrine Reuptake Inhibitor Antidepressants With Serotonin Syndrome. JAMA Neurol 2018;75(5):566-572. doi:10.1001/jamaneurol.2017.5144"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}
