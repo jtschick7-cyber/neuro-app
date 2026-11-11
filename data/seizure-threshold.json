@@ -4,7 +4,7 @@
   "scopeNotes": [
     "Labels and an FDA safety communication; Beers 2023 items apply to adults ≥65"
   ],
-  "version": "0.3.0",
+  "version": "0.3.1",
   "schemaVersion": "3.0.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -386,7 +386,7 @@
       "sources": [
         "Isoniazid tablets USP US prescribing information. Marlex; revised 9/2025 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "imipenem-cilastatin",
@@ -426,7 +426,7 @@
       "sources": [
         "Primaxin (imipenem and cilastatin) for injection US prescribing information. Merck Sharp & Dohme; revised 7/2024 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "calcineurin-inhibitors",
@@ -473,7 +473,7 @@
         "Prograf (tacrolimus) capsules, injection, granules US prescribing information. Astellas; revised 8/2023 (user-supplied label)",
         "Neoral (cyclosporine) capsules and oral solution (modified) US prescribing information. Novartis; revised 8/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "ifosfamide",
@@ -512,7 +512,7 @@
       "sources": [
         "Ifex (ifosfamide) for injection US prescribing information. Baxter; revised 10/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "intrathecal-baclofen",
@@ -563,7 +563,7 @@
         "Gablofen (baclofen injection) intrathecal US prescribing information. Piramal Critical Care; revised 5/2026 (user-supplied label)",
         "Lioresal Intrathecal (baclofen injection) US prescribing information. Amneal; revised 12/2022 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "busulfan",
@@ -602,7 +602,7 @@
       "sources": [
         "Busulfex (busulfan) injection US prescribing information. Otsuka; revised 10/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     }
   ]
 }

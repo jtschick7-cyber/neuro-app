@@ -4,7 +4,7 @@
     "Selected interactions relevant to stroke and inpatient care — not a complete interaction checker",
     "Beers 2023 entries apply to adults ≥65"
   ],
-  "version": "0.2.0",
+  "version": "0.2.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -124,7 +124,7 @@
         "Valproic acid oral solution US prescribing information. Atlantic Biologicals; revised 5/2024 (user-supplied label)",
         "Primaxin (imipenem and cilastatin) for injection US prescribing information. Merck Sharp & Dohme; revised 7/2024 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "tmp-smx-phenytoin",
@@ -279,7 +279,7 @@
         "Tegretol (carbamazepine) tablets, suspension, XR tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
         "Dilantin (extended phenytoin sodium capsules) US prescribing information. Viatris; revised 8/2023 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "cyp3a4-inhibitors-carbamazepine",
@@ -327,7 +327,7 @@
         "Isoniazid tablets USP US prescribing information. Marlex; revised 9/2025 (user-supplied label)",
         "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "azoles-phenytoin",
@@ -374,7 +374,7 @@
         "Fluconazole tablets USP US prescribing information. ANI; revised 8/2025 (user-supplied label)",
         "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "inducing-asm-dabigatran-edoxaban",
@@ -420,7 +420,7 @@
         "Pradaxa (dabigatran etexilate) capsules US prescribing information. Boehringer Ingelheim; revised 6/2025 (user-supplied label)",
         "Savaysa (edoxaban) tablets US prescribing information. Daiichi Sankyo; revised 7/2025 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "lacosamide-conduction-drugs",
@@ -462,7 +462,7 @@
       "sources": [
         "Vimpat (lacosamide) tablets, injection, oral solution US prescribing information. UCB; revised 5/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "inducing-asm-voriconazole",
@@ -498,7 +498,7 @@
       "sources": [
         "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     }
   ]
 }
