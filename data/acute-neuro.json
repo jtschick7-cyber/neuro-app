@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -5384,7 +5384,7 @@
         "Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7",
         "Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1-S42. doi:10.1016/j.amjmed.2013.07.006"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     },
     {
       "id": "icans-car-t-neurotoxicity",
