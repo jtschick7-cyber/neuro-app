@@ -1,0 +1,147 @@
+{
+  "id": "perampanel",
+  "title": "Perampanel (Fycompa) — maintenance dosing and NPO options",
+  "searchTerms": [
+    "Fycompa",
+    "PER",
+    "perampanel suspension",
+    "perampanel inducers",
+    "perampanel aggression"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Perampanel — no moderate/strong CYP3A4 inducer",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Start 2 mg once daily at bedtime; ↑ by 2 mg/day no more often than weekly. Maintenance 8–12 mg once daily (focal; some respond to 4 mg); 8 mg once daily for PGTC, up to 12 mg if tolerated",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 2,
+          "amountMax": 2,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Once daily at bedtime"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 8,
+          "amountMax": 12,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 12,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "Once daily at bedtime"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "12 mg: somewhat greater seizure reduction than 8 mg, with substantially more adverse reactions (§2.1)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Fycompa label §2.1–2.2"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Perampanel — WITH moderate/strong CYP3A4 inducer (phenytoin, carbamazepine, oxcarbazepine)",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Start 4 mg once daily at bedtime; ↑ by 2 mg/day no more often than weekly. No established maintenance dose; highest studied 12 mg once daily",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 4,
+          "amountMax": 4,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Once daily at bedtime"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Fycompa label §2.3"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [
+    {
+      "kind": "INTERMITTENT_HD",
+      "crclMin": null,
+      "crclMax": null,
+      "crclBasis": null,
+      "label": "Hemodialysis",
+      "doseText": "Not recommended (§2.5)",
+      "dose": [],
+      "notes": []
+    }
+  ],
+  "renalNotes": [
+    "Mild: no adjustment; moderate: use with close monitoring, consider slower titration; severe: not recommended (§2.5, §8.7)"
+  ],
+  "hepatic": [
+    "Mild or moderate: start 2 mg; ↑ by 2 mg no more often than every 2 weeks; max 6 mg (mild) or 4 mg (moderate) (§2.4)",
+    "Severe: not recommended (§2.4)"
+  ],
+  "ivPo": [
+    "Oral only — no parenteral formulation (§3)"
+  ],
+  "enteral": [
+    "Oral suspension 0.5 mg/mL; comparable bioavailability to tablets — interchangeable (§3, §12.3)",
+    "Suspension: shake well; use the supplied adapter and syringe; discard 90 days after opening (§2.7)",
+    "Crushing tablets or tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "No established range — AES 2024 summary Table 1"
+  ],
+  "interactions": [
+    "Moderate/strong CYP3A4 inducers (carbamazepine, phenytoin, oxcarbazepine) ↓ perampanel ~50–67%; monitor and adjust when started or stopped (§7.2)",
+    "Alcohol and CNS depressants: additive CNS depression (§7.3)"
+  ],
+  "pearls": [
+    "Boxed warning: aggression, hostility, homicidal ideation — reduce dose if they occur; stop if severe or worsening (§5.1)",
+    "Half-life ~105 h: steady state 2–3 weeks; levels fall gradually even after abrupt stop (§5.6, §12.3)",
+    "Elderly: ↑ dose no more often than every 2 weeks (§2.6)",
+    "Falls: monitor (§5.4)"
+  ],
+  "calculatorIds": [],
+  "verify": [],
+  "relatedIds": [],
+  "sources": [
+    "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)",
+    "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

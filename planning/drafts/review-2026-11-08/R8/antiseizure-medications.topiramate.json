@@ -1,0 +1,176 @@
+{
+  "id": "topiramate",
+  "title": "Topiramate (Topamax) — maintenance dosing and NPO options",
+  "searchTerms": [
+    "Topamax",
+    "TPM",
+    "topiramate sprinkle",
+    "topiramate renal dose",
+    "topiramate dialysis",
+    "topiramate acidosis"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Topiramate — adjunctive (adults ≥17 y)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Start 25–50 mg/day; ↑ by 25–50 mg/day weekly. Recommended 200–400 mg/day in 2 divided doses (focal or LGS); 400 mg/day for PGTC. >400 mg/day no added benefit (focal)",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 25,
+          "amountMax": 50,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Daily"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 100,
+          "amountMax": 200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 400,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "25 mg/day weekly increments may delay reaching an effective dose (§2.2)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Topamax label §2.2"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": [
+        "cockcroft-gault"
+      ]
+    },
+    {
+      "role": "FIRST_LINE",
+      "agent": "Topiramate — monotherapy (adults and children ≥10 y)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Target 400 mg/day in 2 doses: 25 mg BID wk 1, 50 BID wk 2, 75 BID wk 3, 100 BID wk 4, 150 BID wk 5, 200 BID wk 6",
+      "dose": [
+        {
+          "label": "Target",
+          "amountMin": 200,
+          "amountMax": 200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 400,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Topamax label §2.1, Table 1"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": [
+        "cockcroft-gault"
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "kind": "CRCL_BAND",
+      "crclMin": null,
+      "crclMax": 70,
+      "crclBasis": "BSA_NORMALIZED_ML_MIN_1_73M2",
+      "label": "CrCl <70 mL/min/1.73 m²",
+      "doseText": "One-half the usual adult dose",
+      "dose": [],
+      "notes": []
+    },
+    {
+      "kind": "INTERMITTENT_HD",
+      "crclMin": null,
+      "crclMax": null,
+      "crclBasis": null,
+      "label": "Intermittent hemodialysis",
+      "doseText": "A supplemental dose may be required; label gives no amount — base it on dialysis duration, dialyzer clearance and the patient's renal clearance",
+      "dose": [],
+      "notes": [
+        "HD clears topiramate 4–6 times faster than normal (§8.7); 120 mL/min dialyzer clearance vs 20–30 mL/min total oral clearance (§12.3)"
+      ]
+    }
+  ],
+  "renalNotes": [
+    "Moderate (30–69) and severe (<30 mL/min/1.73 m²) impairment both reduce clearance (§8.6)",
+    "Elderly: adjust for age-related CrCl <70 mL/min/1.73 m² (§8.5)"
+  ],
+  "hepatic": [
+    "Moderate–severe: plasma clearance ↓ ~26%; no dose rule in label (§12.3)"
+  ],
+  "ivPo": [
+    "Oral only — no parenteral formulation (§3)"
+  ],
+  "enteral": [
+    "Tablets: don't break — bitter taste (§2.4)",
+    "Sprinkle capsules 15 mg and 25 mg: swallow whole, or open and sprinkle the entire contents on a teaspoon of soft food; swallow immediately without chewing; don't store (§2.4, §3)",
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "7–30 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)"
+  ],
+  "interactions": [
+    "Phenytoin ↓ topiramate 48%; carbamazepine ↓ 40% — dose adjustment may be needed (§7.1, Table 11)",
+    "Valproate: hyperammonemia with or without encephalopathy, and hypothermia — check ammonia (§5.14, §5.16, §7.1)",
+    "Other carbonic anhydrase inhibitors (zonisamide, acetazolamide): more severe acidosis, kidney stones — monitor (§7.2)",
+    "Lithium: exposure ↑ at high-dose topiramate — monitor levels (§7.7)",
+    "Hydrochlorothiazide ↑ topiramate; dose decrease may be needed (§7.5)"
+  ],
+  "pearls": [
+    "Hyperchloremic non-anion-gap metabolic acidosis at any time; baseline and periodic bicarbonate. Additive with renal disease, severe respiratory disorders, status epilepticus, diarrhea, ketogenic diet (§5.4)",
+    "Acute myopia and secondary angle-closure glaucoma: stop as soon as possible (§5.1)",
+    "Encephalopathic symptoms: measure ammonia (§5.14)",
+    "Withdraw gradually (§5.8)"
+  ],
+  "calculatorIds": [
+    "cockcroft-gault"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:valproate",
+    "consult-workups:valproate-hyperammonemic-encephalopathy"
+  ],
+  "sources": [
+    "Topamax (topiramate) tablets and sprinkle capsules US prescribing information. Janssen Pharmaceuticals; revised 3/2026 (user-supplied label)",
+    "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

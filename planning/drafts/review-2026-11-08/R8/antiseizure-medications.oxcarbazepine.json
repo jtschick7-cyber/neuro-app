@@ -1,0 +1,221 @@
+{
+  "id": "oxcarbazepine",
+  "title": "Oxcarbazepine (Trileptal / Oxtellar XR) — maintenance dosing and NPO options",
+  "searchTerms": [
+    "Trileptal",
+    "Oxtellar XR",
+    "OXC",
+    "oxcarbazepine suspension",
+    "oxcarbazepine NPO",
+    "oxcarbazepine hyponatremia",
+    "MHD level"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Oxcarbazepine IR (Trileptal tablets or suspension)",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Adults: start 600 mg/day BID; ↑ by ≤600 mg/day at ~weekly intervals. Adjunctive: recommended 1200 mg/day. Conversion to monotherapy: up to 2400 mg/day",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 300,
+          "amountMax": 300,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Adjunctive (recommended)",
+          "amountMin": 600,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 1200,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Monotherapy (maximum recommended)",
+          "amountMin": 1200,
+          "amountMax": 1200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 2400,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "BID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Adjunctive >1200 mg/day: somewhat more effective, but most patients couldn't tolerate 2400 mg/day (CNS effects) (§2.1)",
+        "Strong CYP3A4 or UGT inducers: dose adjustment recommended (§2.1, §7.2)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Trileptal label §2.1–2.3"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    },
+    {
+      "role": "ALTERNATIVE",
+      "agent": "Oxcarbazepine XR (Oxtellar XR)",
+      "routes": [
+        "PO"
+      ],
+      "doseText": "Adults: 600 mg once daily for 1 week; ↑ by 600 mg/day weekly to 1200–2400 mg once daily. With strong CYP3A4 inducers (carbamazepine, phenobarbital, phenytoin) or UGT inducers (rifampin): consider starting 900 mg once daily",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 600,
+          "amountMax": 600,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Once daily"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 1200,
+          "amountMax": 2400,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 2400,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "Once daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Take on an empty stomach (≥1 h before or ≥2 h after meals) — food raises peak levels and adverse reactions (§2.1)",
+        "Geriatric: consider starting 300 or 450 mg/day; ↑ by 300–450 mg/day weekly (§2.4)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Oxtellar XR label §2.1–2.2, §2.4–2.5"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [
+    {
+      "kind": "CRCL_BAND",
+      "crclMin": null,
+      "crclMax": 30,
+      "crclBasis": "CG_ML_MIN",
+      "label": "CrCl <30 mL/min",
+      "doseText": "Start at half the usual starting dose (300 mg/day; IR given BID) and increase slowly. XR: ↑ by 300–450 mg/day weekly",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 300,
+          "amountMax": 300,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "IR: BID; XR: once daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "renalNotes": [
+    "CrCl <30 mL/min: MHD half-life prolonged to 19 h, AUC 2-fold (Trileptal §12.3)",
+    "Label units are mL/min, not BSA-normalized",
+    "Labels give no hemodialysis dosing"
+  ],
+  "hepatic": [
+    "Mild–moderate: no effect on oxcarbazepine or MHD PK (Trileptal §12.3)",
+    "Severe: not evaluated; Oxtellar XR not recommended (Oxtellar §8.7)"
+  ],
+  "ivPo": [
+    "Oral only — no parenteral formulation (Trileptal §3; Oxtellar §3)"
+  ],
+  "enteral": [
+    "Trileptal oral suspension 300 mg/5 mL (60 mg/mL); tablets and suspension substitute at equal doses (Trileptal §2.8, §3)",
+    "Suspension: shake well; may be mixed in a small glass of water or given straight from the syringe (Trileptal §2.8)",
+    "Oxtellar XR: swallow whole — do not cut, crush or chew; for difficulty swallowing use multiples of lower-strength tablets (Oxtellar §2.1)",
+    "XR once daily is not bioequivalent to IR BID: at 1200 mg/day, XR MHD AUC and Cmax ~19% lower, Cmin ~16% lower (Oxtellar §12.3). IR → XR may need higher doses (§2.7); no label XR → IR conversion",
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "MHD 10–35 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)",
+    "With strong CYP3A4/UGT inducers, monitor MHD levels during titration (Trileptal §7.2)"
+  ],
+  "interactions": [
+    "Phenytoin: levels rise with oxcarbazepine >1200 mg/day — monitor phenytoin levels; phenytoin dose may need to be reduced (Trileptal §7.1)",
+    "Strong CYP450/UGT inducers (rifampin, carbamazepine, phenytoin, phenobarbital) ↓ MHD 25–49%; adjust when inducers are started, changed or stopped (Trileptal §7.2)",
+    "Perampanel: oxcarbazepine ↓ perampanel levels (Fycompa §7.2)"
+  ],
+  "pearls": [
+    "Hyponatremia: Na <125 mmol/L in 2.5% in trials; usually in the first 3 months, sometimes after >1 year; SIADH reported. Check Na with other Na-lowering drugs or symptoms (nausea, lethargy, confusion, more seizures) (Trileptal §5.1)",
+    "Elderly: MHD AUC 30–60% higher (age-related CrCl); close Na monitoring if at risk (Trileptal §8.5)",
+    "~25–30% of patients with carbamazepine hypersensitivity react to oxcarbazepine (Trileptal §5.3)",
+    "Contraindicated with hypersensitivity to oxcarbazepine or eslicarbazepine (Trileptal §4)",
+    "Withdraw gradually; rapid stop can be considered for a serious adverse event (Trileptal §5.6)"
+  ],
+  "calculatorIds": [
+    "cockcroft-gault"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:phenytoin-fosphenytoin",
+    "acute-neuro:hyponatremia-ods"
+  ],
+  "sources": [
+    "Trileptal (oxcarbazepine) film-coated tablets and oral suspension US prescribing information. Novartis; revised 10/2026 (user-supplied label)",
+    "Oxtellar XR (oxcarbazepine) extended-release tablets US prescribing information. Supernus Pharmaceuticals; revised 10/2026 (user-supplied label)",
+    "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)",
+    "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

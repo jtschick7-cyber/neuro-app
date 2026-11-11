@@ -1,0 +1,128 @@
+{
+  "id": "cenobamate",
+  "title": "Cenobamate (Xcopri) — titration and NPO options",
+  "searchTerms": [
+    "Xcopri",
+    "CNB",
+    "cenobamate titration",
+    "cenobamate crush",
+    "cenobamate NG tube",
+    "cenobamate phenytoin"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Cenobamate",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Adults: 12.5 mg once daily wk 1–2; 25 mg wk 3–4; 50 mg wk 5–6; 100 mg wk 7–8; 150 mg wk 9–10; 200 mg once daily from wk 11. If needed ↑ by 50 mg every 2 weeks to max 400 mg once daily. Don't exceed this schedule",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 12.5,
+          "amountMax": 12.5,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Once daily"
+          ],
+          "duration": [
+            "Weeks 1–2"
+          ]
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 200,
+          "amountMax": 200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DOSE",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 400,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "Once daily"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Faster titration risks serious adverse reactions incl. DRESS (§2.2, §5.1)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Xcopri label §2.2, Table 1"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": [
+        "cockcroft-gault"
+      ]
+    }
+  ],
+  "renal": [
+    {
+      "kind": "INTERMITTENT_HD",
+      "crclMin": null,
+      "crclMax": null,
+      "crclBasis": null,
+      "label": "ESRD on dialysis",
+      "doseText": "Not recommended (§8.6)",
+      "dose": [],
+      "notes": []
+    }
+  ],
+  "renalNotes": [
+    "Mild–moderate (CLcr 30 to <90 mL/min) and severe (<30 mL/min): use with caution; dose reduction may be considered (§8.6)"
+  ],
+  "hepatic": [
+    "Baseline ALT, AST and total bilirubin before starting if none within 3 months (§2.1)",
+    "Mild–moderate (Child-Pugh A–B): max 200 mg once daily; further reduction may be considered (§2.3, §8.7)",
+    "Severe (Child-Pugh C): not recommended (§2.3)"
+  ],
+  "ivPo": [
+    "Oral only — no parenteral formulation (§3)"
+  ],
+  "enteral": [
+    "Tablets may be crushed, mixed with 25 mL water and given by mouth or NG tube; flush with 10 mL water; confirm no particles remain (§2.4)",
+    "Crushed tablets by mouth or NG tube: Cmax and AUC similar to whole tablets; median Tmax 0.5 h (§12.3)"
+  ],
+  "levels": [
+    "10–35 mcg/mL — AES 2024 summary Table 1 (range from AES Treatments Committee clinical experience, not the label)"
+  ],
+  "interactions": [
+    "Phenytoin: up to 2-fold ↑ — gradually ↓ phenytoin dose by up to 50% during titration (§7.1, Table 5)",
+    "Phenobarbital and N-desmethylclobazam ↑ — consider reducing phenobarbital or clobazam (Table 5)",
+    "Lamotrigine and carbamazepine ↓ — increase as needed (Table 5)",
+    "CYP2C19 substrates ↑ (consider reducing); CYP2B6 and CYP3A substrates ↓ (increase as needed) (Table 5)",
+    "Drugs that shorten QT: use caution (§7.2)"
+  ],
+  "pearls": [
+    "Contraindicated in familial short QT syndrome (§4)",
+    "DRESS, incl. one death, with weekly or faster titration; none in 1339 patients started at 12.5 mg and titrated every 2 weeks (§5.1)",
+    "Taper over ≥2 weeks unless safety requires abrupt stop (§2.5)",
+    "Half-life 50–60 h (§12.3)"
+  ],
+  "calculatorIds": [
+    "cockcroft-gault"
+  ],
+  "verify": [],
+  "relatedIds": [
+    "antiseizure-medications:phenytoin-fosphenytoin",
+    "antiseizure-medications:lamotrigine"
+  ],
+  "sources": [
+    "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+    "Vossler DG, Gidal BE; American Epilepsy Society Treatments Committee. A Summary of Antiseizure Medications Available in the United States, 4th edition. American Epilepsy Society; revised April 1, 2024 (user-supplied)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

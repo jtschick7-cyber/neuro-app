@@ -1,0 +1,127 @@
+{
+  "id": "carbamazepine",
+  "title": "Carbamazepine (Tegretol / Tegretol-XR) — maintenance dosing and NPO options",
+  "searchTerms": [
+    "Tegretol",
+    "Tegretol XR",
+    "CBZ",
+    "carbamazepine suspension",
+    "carbamazepine NPO",
+    "Carnexiv",
+    "IV carbamazepine",
+    "carbamazepine level"
+  ],
+  "maintenance": [
+    {
+      "role": "FIRST_LINE",
+      "agent": "Carbamazepine (tablets, XR tablets or suspension)",
+      "routes": [
+        "PO",
+        "NG"
+      ],
+      "doseText": "Adults and children >12 y: start 200 mg BID (tablets or XR) or 100 mg (1 tsp) QID (suspension) = 400 mg/day; ↑ by up to 200 mg/day weekly — XR BID, other forms TID–QID. Usual maintenance 800–1200 mg/day. Generally ≤1200 mg/day above age 15; up to 1600 mg/day in adults in rare instances",
+      "dose": [
+        {
+          "label": "Start",
+          "amountMin": 400,
+          "amountMax": 400,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [],
+          "frequency": [
+            "Tablets/XR: BID; suspension: QID"
+          ],
+          "duration": []
+        },
+        {
+          "label": "Maintenance",
+          "amountMin": 800,
+          "amountMax": 1200,
+          "unit": "MG",
+          "basis": "FIXED",
+          "timing": "PER_DAY",
+          "weightBasis": "NOT_APPLICABLE",
+          "caps": [
+            {
+              "amount": 1200,
+              "unit": "MG",
+              "scope": "PER_DAY"
+            }
+          ],
+          "frequency": [
+            "XR: BID; tablets or suspension: TID–QID"
+          ],
+          "duration": []
+        }
+      ],
+      "notes": [
+        "Take with meals (D&A)",
+        "When added to other ASMs, add gradually; phenytoin may have to be increased (D&A)"
+      ],
+      "evidenceLevel": "NOT_GRADED",
+      "evidenceNote": [
+        "Tegretol label, Dosage and Administration (epilepsy, >12 y) and Dosage Information table"
+      ],
+      "formularyStatus": "INSTITUTION_VARIES",
+      "calculatorIds": []
+    }
+  ],
+  "renal": [],
+  "renalNotes": [
+    "No renal dose adjustment in label"
+  ],
+  "hepatic": [
+    "Baseline and periodic LFTs, especially with a history of liver disease; stop for new or worsening liver dysfunction or active liver disease (Precautions, Laboratory Tests)"
+  ],
+  "ivPo": [
+    "Oral only — no parenteral formulation in label (Description)"
+  ],
+  "enteral": [
+    "Suspension 100 mg/5 mL. Tablets → suspension: same mg/day in smaller, more frequent doses (BID tablets → TID suspension) (D&A)",
+    "Suspension gives higher peaks than tablets at the same dose — start low (D&A; Clinical Pharmacology)",
+    "Don't give the suspension at the same time as other liquid medicines or diluents — precipitate with chlorpromazine and thioridazine solutions (D&A; Precautions)",
+    "XR: swallow whole, never crush or chew; discard damaged tablets or those without a release portal. Tablets → XR: same total daily dose (D&A)",
+    "Suspension contains propylene glycol 25 mg/mL — count total propylene glycol from all sources (Description; Warnings)",
+    "Tube administration not addressed in label — confirm with pharmacy"
+  ],
+  "levels": [
+    "Usual adult therapeutic level 4–12 mcg/mL (Clinical Pharmacology)",
+    "Autoinduction completes after 3–5 weeks; half-life 25–65 h initially, 12–17 h on repeated dosing (Clinical Pharmacology)"
+  ],
+  "interactions": [
+    "CYP3A4 inhibitors ↑ carbamazepine: macrolides, azoles, isoniazid, diltiazem, verapamil, cimetidine, omeprazole, fluoxetine, protease inhibitors, grapefruit juice — monitor levels (Precautions, Drug Interactions)",
+    "Valproate, brivaracetam, quetiapine, loxapine ↑ carbamazepine-epoxide — adjust dose or monitor (Precautions)",
+    "Inducers ↓ carbamazepine: phenytoin/fosphenytoin, phenobarbital, primidone, rifampin, felbamate, theophylline, cisplatin, doxorubicin (Precautions)",
+    "Avoid with apixaban, rivaroxaban, dabigatran and edoxaban — anticoagulant levels may be inadequate (Precautions)",
+    "Lowers levels of many drugs, incl. warfarin, tacrolimus, cyclosporine, corticosteroids (dexamethasone, prednisolone), lamotrigine, valproate, phenytoin, topiramate, zonisamide, oxcarbazepine, methadone, haloperidol, clozapine, aripiprazole (double its dose) (Precautions)",
+    "Resistance to nondepolarizing neuromuscular blockers (pancuronium, vecuronium, rocuronium, cisatracurium) — faster recovery, higher infusion rates (Precautions)",
+    "Lithium: ↑ neurotoxicity risk (Precautions)",
+    "Nefazodone: contraindicated. MAOIs: stop ≥14 days before (Contraindications)",
+    "Cenobamate ↓ carbamazepine (Xcopri Table 5); perampanel ↓ by carbamazepine (Fycompa §7.2)"
+  ],
+  "pearls": [
+    "Hyponatremia, often SIADH; risk dose-related, higher in elderly and with diuretics; consider stopping if symptomatic (Warnings, General)",
+    "Boxed warnings: SJS/TEN with HLA-B*1502; aplastic anemia and agranulocytosis",
+    "Avoid in hepatic porphyria (Warnings, General)",
+    "Withdraw gradually (Warnings, General)",
+    "IV carbamazepine (Carnexiv) is not in this label — confirm availability with pharmacy"
+  ],
+  "calculatorIds": [],
+  "verify": [],
+  "relatedIds": [
+    "asm-interactions:inducing-asm-apixaban-rivaroxaban",
+    "asm-interactions:inducing-asm-warfarin",
+    "antiseizure-medications:lamotrigine",
+    "antiseizure-medications:valproate",
+    "antiseizure-medications:brivaracetam",
+    "acute-neuro:hyponatremia-ods"
+  ],
+  "sources": [
+    "Tegretol (carbamazepine) tablets and suspension; Tegretol-XR extended-release tablets US prescribing information. Novartis; revised 8/2026 (user-supplied label)",
+    "Xcopri (cenobamate) tablets US prescribing information. SK Life Science; revised 8/2025 (user-supplied label)",
+    "Fycompa (perampanel) tablets and oral suspension US prescribing information. Catalyst Pharmaceuticals; revised 1/2024 (user-supplied label)"
+  ],
+  "lastReviewed": "UNREVIEWED"
+}

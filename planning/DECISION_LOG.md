@@ -775,3 +775,51 @@ Rules adopted:
 Encoded 2026-11-11 on `content-r7-2026-11-09` (base `d79f02f`). Render check: tier badges as specified; no boxed-warning badge on any new threshold entry; all 13 pages wrap at phone width; all 12 related links open; every listed search finds its entry. Searching "INH" matches as a substring ("inhibitors"), so isoniazid is result 15 of 39.
 
 Update 2026-11-11: signed by Jason (all 13 R7 entries by name, `lastReviewed` 2026-11-11) and released: seizure-threshold 0.3.1, asm-interactions 0.2.1, content 2.2.1+e683ebcc. The sign-off/release open item above is closed; PARK D8 and D9e stay available to revive.
+
+## 2026-11-09 — Review item R8 (home ASMs when NPO; phenobarbital)
+
+Approved by Jason in chat 2026-11-09 ("Approve"; all recommendations as offered). Draft: `planning/drafts/review-2026-11-08/R8/` (base: review-2026-11-08 export packet). All 8 entries `lastReviewed: "UNREVIEWED"`.
+
+Finding: the antiseizure-medications registry covered 6 ASMs; patients on oxcarbazepine, carbamazepine, topiramate, clobazam, zonisamide, cenobamate or perampanel who go NPO or get a tube had no card, and phenobarbital had no source. Sources: Trileptal PI 10/2026, Oxtellar XR PI 10/2026, Tegretol/Tegretol-XR PI 8/2026, Topamax PI 3/2026, Onfi PI 10/2026, Sympazan PI 12/2025, Zonegran PI 9/2026, Zonisade PI 9/2025, Xcopri PI 8/2025, Fycompa PI 1/2024; phenobarbital from the AES Treatments Committee ASM summary, 4th ed., rev. 4/1/2024 (Table 1), accepted by Jason because there is no current FDA adult phenobarbital label (Sezaby is neonatal only). Carnexiv (IV carbamazepine) is listed as discontinued by secondary sources; not encoded.
+
+| Registry | New / edited | Change |
+|---|---|---|
+| antiseizure-medications | oxcarbazepine, carbamazepine, topiramate, clobazam, zonisamide, cenobamate, perampanel, phenobarbital (new); `scopeNotes[2]` (edited) | Oxcarbazepine: suspension 60 mg/mL equal-dose swap; Oxtellar XR not crushable, AUC ~19% lower than IR BID; CrCl <30 start 300 mg/day; Na <125 in 2.5%. Carbamazepine: suspension same mg/day more often, no co-administered liquids; XR never crushed; 4–12 mcg/mL; avoid DOACs; NMB resistance; SIADH. Topiramate: CrCl <70/1.73 m² half dose; HD supplement (no amount); sprinkle on soft food; valproate hyperammonemia. Clobazam: crush in applesauce, suspension, film; CYP2C19 inhibitors up to 5× metabolite. Zonisamide: avoid eGFR <50; Zonisade suspension; inducers shorten t½ to 27–38 h. Cenobamate: crush, 25 mL water, NG tube; phenytoin ↓ up to 50%; DRESS with fast titration. Perampanel: start 4 mg with inducers; suspension interchangeable; t½ ~105 h. Phenobarbital: 60 mg/day or 1–4 mg/kg/day, max 240; 15–45 mcg/mL; slow taper. scopeNotes: phenobarbital now covered from AES |
+
+Rules adopted:
+- One card per drug; XR, suspension and film products sit inside the generic card.
+- New ASM items get `formularyStatus: INSTITUTION_VARIES` until a local status is supplied.
+- AES serum ranges may be added to `levels[]` only with the attribution "range from AES Treatments Committee clinical experience, not the label"; a label range, where one exists, is used instead.
+- Per-kg doses whose source doesn't name the weight stay in `doseText` and aren't structured.
+- Where no label addresses tube administration, the card says "Tube administration not addressed in label — confirm with pharmacy".
+
+### Version
+| what | from | to | level |
+|---|---|---|---|
+| antiseizure-medications | 1.0.1 | 1.1.0 | MINOR (8 new entries; scopeNotes[2] edited) |
+
+### PARK (offered or noticed, not encoded; can be revived)
+- D7: matching lines in existing cards (phenytoin-fosphenytoin: oxcarbazepine >1200 mg/day and cenobamate ↑ phenytoin, topiramate; lamotrigine: cenobamate ↓ lamotrigine) — candidate follow-up item.
+- P2: `relatedIds` between the 8 new cards and to R7 entries — later PATCH once the ids are valid.
+
+### ACCEPT (not raised again)
+- D3: Carnexiv market status not encoded (secondary sources only).
+- A1: Sezaby neonatal label not encoded.
+- A2: no label re-titration rule for cenobamate after interruption.
+- A3: no label Oxtellar XR → IR conversion (card states the exposure data).
+- A4: no label topiramate HD supplement amount (card says so).
+- A5: phenobarbital gaps in the AES source stated on the card (weight basis, route, IV↔PO, renal, enteral).
+- A6: clobazam structured doses for the >30 kg band only.
+- A7: carbamazepine interaction list abridged.
+- A8: common-knowledge and out-of-scope items left out.
+- A9: no topiramate IV or other non-US forms.
+- A10: labels as uploaded; only Carnexiv and Sezaby status checked on the web.
+
+### Open items
+- `verify[]`: none.
+- Jason: `npm run signoff`, then `npm run release`.
+- Disposition Ledger: see `planning/drafts/review-2026-11-08/R8/README.md`.
+
+Encoded 2026-11-11 on `content-r8-2026-11-09` (base `72766b5`). Render check: Institution varies and Not graded badges on every maintenance item; renal rows as specified (oxcarbazepine CrCl <30 Cockcroft-Gault; topiramate CrCl <70 BSA-normalized plus HD; HD rows on cenobamate and perampanel; notes only on the other four); all 8 cards wrap at phone width; all 9 distinct links open; every listed search returns its card first.
+
+Update 2026-11-11: signed by Jason (all 8 R8 cards by name, `lastReviewed` 2026-11-11) and released: antiseizure-medications 1.1.1, content 2.2.1+2b86eaac. The sign-off/release open item above is closed; PARK D7 and P2 stay available to revive.
