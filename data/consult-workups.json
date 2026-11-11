@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-11",
   "entries": [
@@ -4479,7 +4479,7 @@
         "Rabinovici GD, et al. Donanemab: appropriate use recommendations. J Prev Alzheimers Dis 2025;12:100150. doi:10.1016/j.tjpad.2025.100150",
         "Cogswell PM, et al. Alzheimer disease anti-amyloid immunotherapies: imaging recommendations and practice considerations for monitoring of amyloid-related imaging abnormalities. AJNR Am J Neuroradiol 2025;46:24-32. doi:10.3174/ajnr.A8469"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-11"
     }
   ]
 }
