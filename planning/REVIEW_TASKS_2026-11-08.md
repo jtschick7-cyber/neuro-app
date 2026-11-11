@@ -259,7 +259,7 @@ tests and review-sheets, show diffs against the CHANGES tables, and open a PR. D
 | # | Task | Target | Package |
 |---|---|---|---|
 | 3.1 | ~~TNK "1-kg dosing <50 kg": confirm the source or remove the option~~ | **MOOT (2026-11-08)**: 2.1 removes the `tenecteplase` entry and the TNK calculator UI. Don't do it. The retained `tnkDose` function keeps the unverified option; resolve it only if the UI is ever restored | ~~R1~~ not needed |
-| 3.2 | Restarting OAC after ICH: PRESTIGE-AF, ENRICH-AF, ESO-EANS 2025 | `vascular-antithrombotics:restart-antithrombotic-after-ich` | R2 |
+| 3.2 | Restarting OAC after ICH: PRESTIGE-AF, ENRICH-AF, ESO-EANS 2025 | `vascular-antithrombotics:restart-antithrombotic-after-ich` | R2. **DRAFTED (2026-11-11)**: [PR #40](https://github.com/jtschick7-cyber/neuro-app/pull/40); entry UNREVIEWED, awaiting sign-off |
 | 3.3 | Hyponatremia "≤8 mmol/L if ODS risk" attribution | `acute-neuro:hyponatremia-ods` `definitions[1]`, `keyNumbers[2]`; `sodiumCorrectionCheck` docstring and META sources | R3 |
 | 3.4 | Post-neurosurgical meningitis: IDSA 2017 source + EVD-relevant recs | `acute-neuro:bacterial-meningitis` (post-neurosurgery item and related rows) | R4 |
 | 3.5 | PD: continuous infusion therapies now US-marketed; "admitted on a pump" row | `reference-cards:inpatient-parkinson-disease` `pitfalls[1]` (+ optional row) | R5 |
@@ -269,6 +269,9 @@ tests and review-sheets, show diffs against the CHANGES tables, and open a PR. D
 | 3.9 | ESUS: ARCADIA line | `vascular-antithrombotics:esus-antithrombotic` | R9 |
 | 3.10 | Serotonin syndrome: "triptans + SSRI/SNRI" example wording | `acute-neuro:serotonin-syndrome` `presentation[0]` | R10 |
 | 3.11 | ~~Old 7.4 specimen-handling items~~ | **DROPPED (2026-11-08, decision 2.2)**. Don't do it | ~~R11~~ not needed |
+
+Open under 3.2:
+- [ ] Recheck restart-antithrombotic-after-ich pearls[3]–[4] against the ENRICH-AF peer-reviewed publication; revisit the dose-eligibility subgroup (R2 B1) then.
 
 ---
 
