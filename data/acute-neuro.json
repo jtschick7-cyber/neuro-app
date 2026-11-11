@@ -2960,9 +2960,7 @@
         "Local pneumococcal resistance (antibiogram)",
         "CSF multiplex PCR availability"
       ],
-      "verify": [
-        "IDSA 2017 vancomycin trough target 15–20 μg/mL (Rec 38) predates AUC-based dosing; reconcile with the local vancomycin protocol"
-      ],
+      "verify": [],
       "relatedIds": [
         "acute-neuro:viral-encephalitis",
         "acute-neuro:cns-infection-immunocompromised"
