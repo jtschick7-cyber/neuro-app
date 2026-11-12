@@ -1208,3 +1208,8 @@ Overlap check (C1): searched all `data/*.json` for CADASIL, NOTCH3, Fabry, GLA (
 - Disposition Ledger: see `planning/drafts/review-2026-11-08/R17/README.md`.
 
 Encoded 2026-11-12 on `content-r17-2026-11-11` (base `1726f00`); consult-workups was at 3.1.1 as the draft expected. Registry `lastUpdated` 2026-11-12.
+
+Update 2026-11-12 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, consult-workups stays 3.2.0). Two of four verify items closed:
+- V1 (local panel coverage of the COL4A1 3′UTR miR-29 binding site): closed. Local fact; covered by `institutionVaries[0]`.
+- V2 (homocystinuria: no small vessel MRI pattern in the CBS sources): closed. Limitation already stated in `differential[14].clues[0]`; kept for treatability.
+- No entry text pointed at these items, so no other wording changed. The data entry therefore differs from the draft JSON in `verify` only. V3 (pulvinar sign in later cohorts) and V4 (DADA2 testing and treatment) stay open; Jason supplied Burlina 2008 (J Neurol 2008;255:738-744) and Lee 2023 DADA2 consensus (JAMA Netw Open 2023;6(5):e2315894) for review.
