@@ -34,9 +34,9 @@ export function SodiumCard({ weightKg }: { weightKg: number | null }) {
       <div className="mt-3 border-t border-slate-800 pt-2">
         <div className="text-xs font-semibold text-slate-400">Correction limit check</div>
         <div className="mt-1 grid grid-cols-3 gap-2">
-          <NumberField label="Starting Na" value={startNa} onChange={setStartNa} step="1" placeholder="118" />
-          <NumberField label="Current Na" value={currentNa} onChange={setCurrentNa} step="1" placeholder="126" />
-          <NumberField label="24-h period #" value={period} onChange={setPeriod} step="1" placeholder="1" />
+          <NumberField label="Starting Na" value={startNa} onChange={setStartNa} step="1" placeholder="—" />
+          <NumberField label="Current Na" value={currentNa} onChange={setCurrentNa} step="1" placeholder="—" />
+          <NumberField label="24-h period #" value={period} onChange={setPeriod} step="1" placeholder="—" />
         </div>
         <CheckField label="High ODS risk (Na ≤105, hypokalemia, alcohol use disorder, malnutrition, advanced liver disease)" checked={ods} onChange={setOds} />
         {s !== null && c !== null && p !== null && (

@@ -52,3 +52,17 @@ describe('update path (audit P1-2)', () => {
     expect(readFileSync('src/components/GlobalSearch.tsx', 'utf8')).toContain('<LoadError');
   });
 });
+
+describe('update-check time (About, audit P2-1)', () => {
+  it('notifies subscribers and stops after unsubscribe', async () => {
+    const { markUpdateChecked, onUpdateChecked, lastUpdateCheck } = await import('../src/lib/updateCheck');
+    const seen: Date[] = [];
+    const off = onUpdateChecked((d) => seen.push(d));
+    const t = new Date(2026, 10, 12, 9, 30);
+    markUpdateChecked(t);
+    off();
+    markUpdateChecked(new Date());
+    expect(seen).toEqual([t]);
+    expect(lastUpdateCheck()).not.toBe(t);
+  });
+});

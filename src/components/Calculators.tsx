@@ -77,10 +77,10 @@ function IcpCard({ weightKg }: { weightKg: number | null }) {
         {weightKg === null ? <NeedWeight /> : <Result label="Mannitol 20%" r={safe(() => mannitolDose(weightKg))} />}
         <div className="mt-2 text-xs font-semibold text-slate-400">Osmolar gap</div>
         <div className="grid grid-cols-2 gap-2">
-          <NumberField label="Measured osm (mOsm/kg)" value={osm} onChange={setOsm} placeholder="300" />
-          <NumberField label="Na (mmol/L)" value={na} onChange={setNa} placeholder="140" />
-          <NumberField label="Glucose (mg/dL)" value={glu} onChange={setGlu} placeholder="100" />
-          <NumberField label="BUN (mg/dL)" value={bun} onChange={setBun} placeholder="14" />
+          <NumberField label="Measured osm (mOsm/kg)" value={osm} onChange={setOsm} placeholder="—" />
+          <NumberField label="Na (mmol/L)" value={na} onChange={setNa} placeholder="—" />
+          <NumberField label="Glucose (mg/dL)" value={glu} onChange={setGlu} placeholder="—" />
+          <NumberField label="BUN (mg/dL)" value={bun} onChange={setBun} placeholder="—" />
         </div>
         {gap !== null && <Result label="Osmolar gap" r={gap} />}
       </div>

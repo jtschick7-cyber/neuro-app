@@ -6,9 +6,9 @@ import { search } from '../lib/search';
 
 type Index = typeof import('../lib/searchIndex').searchIndex;
 
-// One shared promise: the index pulls in every registry (~770 KB), so it loads once, on first use.
+// One shared promise: the index pulls in every registry (~770 KB), so it loads once, on first use (search and pin titles).
 let indexPromise: Promise<Index> | null = null;
-function loadIndex(): Promise<Index> {
+export function loadIndex(): Promise<Index> {
   indexPromise ??= import('../lib/searchIndex').then((m) => m.searchIndex);
   indexPromise.catch(() => {
     indexPromise = null;
@@ -90,6 +90,7 @@ export function GlobalSearch({ autoFocus = false, children }: { autoFocus?: bool
 export function SearchLauncher() {
   const [open, setOpen] = useState(false);
   const button = useRef<HTMLButtonElement>(null);
+  const hidden = useHideOnScrollDown();
 
   // Following a result (or any link / back) changes the hash: close the sheet.
   useEffect(() => {
@@ -111,7 +112,8 @@ export function SearchLauncher() {
         type="button"
         onClick={() => setOpen(true)}
         aria-label={SEARCH_COPY.open}
-        className="fixed right-3 z-30 flex h-12 w-12 items-center justify-center rounded-full border border-sky-500/60 bg-slate-900/95 text-sky-300 shadow-lg shadow-black/40 backdrop-blur active:bg-slate-800"
+        tabIndex={hidden ? -1 : 0}
+        className={`fixed right-3 z-30 flex h-12 w-12 items-center justify-center rounded-full border border-sky-500/60 bg-slate-900/95 text-sky-300 shadow-lg shadow-black/40 backdrop-blur transition duration-200 active:bg-slate-800 ${hidden ? 'pointer-events-none translate-y-4 opacity-0' : ''}`}
         style={{ bottom: 'calc(4.25rem + env(safe-area-inset-bottom))', marginRight: 'env(safe-area-inset-right)' }}
       >
         <Search size={22} aria-hidden="true" />
@@ -145,4 +147,24 @@ export function SearchLauncher() {
       </div>
     </div>
   );
+}
+
+/**
+ * The floating button covers the end of a line while reading (audit P2-15): hide it while scrolling down,
+ * show it again on any scroll up or at the top. The page's bottom padding keeps the last line clear of it.
+ */
+function useHideOnScrollDown(): boolean {
+  const [hidden, setHidden] = useState(false);
+  useEffect(() => {
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      if (Math.abs(y - lastY) < 8) return;
+      setHidden(y > lastY && y > 80);
+      lastY = y;
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+  return hidden;
 }

@@ -265,7 +265,8 @@ function AntibodyEntryView({ e }: { e: AntibodyEntry }) {
       </Section>
       <Section title="Testing" open>
         <Bullets items={e.testing.rationale} />
-        <Bullets items={e.testing.methodNotes} tone="text-slate-400" />
+        {/* Method notes carry cautions ("confirm with tissue IHC…"): same weight as the facts above (audit P2-17). */}
+        <Bullets items={e.testing.methodNotes} />
       </Section>
       {e.tumors.length > 0 && (
         <Section title="Tumor associations" open>

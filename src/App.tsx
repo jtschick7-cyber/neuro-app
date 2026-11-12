@@ -11,6 +11,7 @@ import Home from './components/Home';
 import { SearchLauncher } from './components/GlobalSearch';
 import DisclaimerGate from './components/DisclaimerGate';
 import UpdateBar from './components/UpdateBar';
+import ErrorBoundary from './components/ErrorBoundary';
 import { usePatientContext, type PatientContext } from './lib/patientContext';
 import { useRoute } from './lib/useRoute';
 import { sectionOf, toHash, type Route } from './lib/route';
@@ -42,10 +43,12 @@ export default function App() {
       <DisclaimerGate>
         <div className="min-h-screen bg-slate-950 text-slate-200">
           <ContextBar context={context} onChange={update} onClear={clear} forceExpanded={route.kind === 'calc'} />
-          <main className="mx-auto max-w-3xl px-3 py-4" style={{ paddingBottom: 'calc(5.5rem + env(safe-area-inset-bottom))' }}>
-            <Screen route={route} context={context} />
+          <main className="mx-auto max-w-3xl px-3 py-4" style={{ paddingBottom: 'calc(8rem + env(safe-area-inset-bottom))' }}>
+            <ErrorBoundary key={hash} where={hash}>
+              <Screen route={route} context={context} />
+            </ErrorBoundary>
             <p className="mt-6 text-center text-xs text-slate-400">
-              Decision support only — verify doses before ordering. Content {about.contentVersion} · Build {__BUILD_ID__} ·{' '}
+              Decision support only — verify doses before ordering. Content {about.contentVersion} ({about.builtAt}) · Build {__BUILD_ID__} ·{' '}
               <a href="#/about" className="text-slate-400 underline">
                 About
               </a>

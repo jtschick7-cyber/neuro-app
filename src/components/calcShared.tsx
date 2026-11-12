@@ -62,7 +62,7 @@ export function Result({ r, label, badge }: { r: CalcResult | string; label: str
 function MetaFooter({ ids }: { ids: string[] }) {
   return (
     <details className="mt-2 text-xs text-slate-400">
-      <summary className="cursor-pointer">Formula and sources</summary>
+      <summary className="flex min-h-11 cursor-pointer items-center">Formula and sources</summary>
       {ids.map((id) => {
         const m = CALCULATOR_META[id];
         return (
