@@ -195,7 +195,7 @@ export const SEARCH_COPY = {
   close: "Close search",
   loading: "Loading…",
   none: "No matches.",
-  failed: "Couldn’t load search. Reload the app.",
+  failed: "Couldn’t load search.",
 };
 
 /** Patient context bar (collapsed chip). */
@@ -204,4 +204,11 @@ export const CONTEXT_BAR_COPY = {
   prefix: "Patient:",
   expand: "Edit patient context",
   collapse: "Collapse patient context",
+};
+
+/** Service-worker update bar and load-failure states. */
+export const UPDATE_COPY = {
+  available: "New content available.",
+  reload: "Reload",
+  sectionFailed: "Couldn’t load this section.",
 };

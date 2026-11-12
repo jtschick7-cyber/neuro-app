@@ -35,7 +35,7 @@ Review from the sheets: `npm run review-sheets` → `generated/review/<registry>
 - [ ] Footer content version matches `about.json`
 - [ ] No patient data saved: after use, localStorage holds only bedside notes and the disclaimer acknowledgment; IndexedDB and the URL hold no inputs; reopening the app shows an empty patient bar
 - [ ] Airplane mode: app opens and every registry and calculator loads
-- [ ] Cache name = content version; old caches deleted on update
+- [ ] Cache name = content version; with the app open on the phone, the deploy shows the "New content available" bar (on launch or on return from the switcher); unopened sections still load before Reload; after Reload the footer shows the new version and old caches are gone
 - [ ] Search finds: "mag", "TNK", "ICH", "Botox", "Keppra", "status"
 - [ ] Spot-checks above repeated on the phone
 

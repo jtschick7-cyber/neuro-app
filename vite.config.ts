@@ -26,7 +26,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      registerType: 'autoUpdate',
+      // 'prompt': a new version waits until the user taps Reload in UpdateBar. Activating mid-session would delete
+      // the old precache while this page still needs its lazy registry chunks.
+      registerType: 'prompt',
       includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       workbox: {
         cacheId: `neurohosp-${contentVersion}`,

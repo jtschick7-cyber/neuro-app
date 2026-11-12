@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { Search, X } from 'lucide-react';
 import { SEARCH_COPY } from '../content/copy';
+import LoadError from './LoadError';
 import { search } from '../lib/search';
 
 type Index = typeof import('../lib/searchIndex').searchIndex;
@@ -57,7 +58,7 @@ export function GlobalSearch({ autoFocus = false, children }: { autoFocus?: bool
       </div>
       {searching ? (
         <div>
-          {failed && <p className="text-sm text-red-300">{SEARCH_COPY.failed}</p>}
+          {failed && <LoadError message={SEARCH_COPY.failed} />}
           {!failed && !index && <p className="text-sm text-slate-400">{SEARCH_COPY.loading}</p>}
           {index && hits.length === 0 && <p className="text-sm text-slate-400">{SEARCH_COPY.none}</p>}
           {hits.length > 0 && !hits[0].complete && <p className="mb-1.5 text-sm text-slate-400">{SEARCH_COPY.partial}</p>}
