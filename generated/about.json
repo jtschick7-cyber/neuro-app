@@ -1,7 +1,7 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+33071d2e",
-  "builtAt": "2026-11-11",
+  "contentVersion": "2.2.1+cbb25833",
+  "builtAt": "2026-11-12",
   "registries": [
     {
       "id": "acute-neuro",
@@ -45,15 +45,15 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "3.1.1",
+      "version": "3.2.1",
       "schemaVersion": "2.1.0",
-      "lastUpdated": "2026-11-11",
-      "entries": 19,
-      "reviewed": 19,
+      "lastUpdated": "2026-11-12",
+      "entries": 20,
+      "reviewed": 20,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-11"
+      "newestReview": "2026-11-12"
     },
     {
       "id": "mg-contraindications",
@@ -1360,6 +1360,13 @@
       ]
     },
     {
+      "citation": "Konno T, et al. CSF1R-related leukoencephalopathy: a major player in primary microgliopathies. Neurology 2018;91:1092-1104. doi:10.1212/WNL.0000000000006642",
+      "year": 2018,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
+      ]
+    },
+    {
       "citation": "Kopp SL, et al. Regional anesthesia in the patient receiving antithrombotic or thrombolytic therapy: American Society of Regional Anesthesia and Pain Medicine Evidence-Based Guidelines (fifth edition). Reg Anesth Pain Med 2025;0:1-29. doi:10.1136/rapm-2024-105766",
       "year": 2025,
       "citedBy": [
@@ -1417,6 +1424,13 @@
       "year": 2019,
       "citedBy": [
         "acute-neuro:icans-car-t-neurotoxicity"
+      ]
+    },
+    {
+      "citation": "Lee PY, et al. Evaluation and Management of Deficiency of Adenosine Deaminase 2: An International Consensus Statement. JAMA Netw Open 2023;6(5):e2315894. doi:10.1001/jamanetworkopen.2023.15894",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
       ]
     },
     {
@@ -1494,6 +1508,20 @@
       ]
     },
     {
+      "citation": "Mancuso M, et al. Monogenic cerebral small-vessel diseases: diagnosis and therapy. Consensus recommendations of the European Academy of Neurology. Eur J Neurol 2020;27:909-927. doi:10.1111/ene.14183",
+      "year": 2020,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
+      ]
+    },
+    {
+      "citation": "Manini A, Pantoni L. Genetic Causes of Cerebral Small Vessel Diseases: A Practical Guide for Neurologists. Neurology 2023;100:766-783. doi:10.1212/WNL.0000000000201720",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
+      ]
+    },
+    {
       "citation": "McKay JH, Dimberg EL, Lopez Chiriboga AS. A systematic review of gamma-aminobutyric acid receptor type B autoimmunity. Neurol Neurochir Pol 2019;53(1):1-7. doi:10.5603/PJNNS.a2018.0005",
       "year": 2019,
       "citedBy": [
@@ -1520,6 +1548,13 @@
       "citedBy": [
         "consult-workups:inpatient-neuropathy",
         "consult-workups:myelopathy-workup"
+      ]
+    },
+    {
+      "citation": "Meschia JF, et al. Management of Inherited CNS Small Vessel Diseases: The CADASIL Example: A Scientific Statement From the American Heart Association. Stroke 2023;54:e452-e464. doi:10.1161/STR.0000000000000444",
+      "year": 2023,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
       ]
     },
     {
@@ -1566,6 +1601,13 @@
       "year": 2025,
       "citedBy": [
         "consult-workups:new-demyelinating-lesion"
+      ]
+    },
+    {
+      "citation": "Moore DF, et al. Increased signal intensity in the pulvinar on T1-weighted images: a pathognomonic MR imaging sign of Fabry disease. AJNR Am J Neuroradiol 2003;24:1096-1101.",
+      "year": 2003,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
       ]
     },
     {
@@ -1686,6 +1728,13 @@
       "year": 2025,
       "citedBy": [
         "consult-workups:post-cardiac-arrest-prognostication"
+      ]
+    },
+    {
+      "citation": "Nozaki H, et al. Characteristic features and progression of abnormalities on MRI for CARASIL. Neurology 2015;85:459-463.",
+      "year": 2015,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
       ]
     },
     {
@@ -1834,6 +1883,13 @@
       "year": 2003,
       "citedBy": [
         "neural-antibodies:anti-ri"
+      ]
+    },
+    {
+      "citation": "Plaisier E, et al. COL4A1 mutations and hereditary angiopathy, nephropathy, aneurysms, and muscle cramps. N Engl J Med 2007;357:2687-2695.",
+      "year": 2007,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
       ]
     },
     {
@@ -1990,6 +2046,13 @@
       "year": 2008,
       "citedBy": [
         "neural-antibodies:sox1"
+      ]
+    },
+    {
+      "citation": "Sacharow SJ, Levy HL. Homocystinuria due to Cystathionine Beta-Synthase Deficiency. GeneReviews, updated 2025 Sep 25. University of Washington, Seattle. Cited by section; page numbers are PDF pages.",
+      "year": 2025,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
       ]
     },
     {
@@ -2294,6 +2357,13 @@
       ]
     },
     {
+      "citation": "Testai FD, Gorelick PB. Inherited metabolic disorders and stroke part 2: homocystinuria, organic acidurias, and urea cycle disorders. Arch Neurol 2010;67(2):148-153.",
+      "year": 2010,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
+      ]
+    },
+    {
       "citation": "Theophylline anhydrous extended-release tablets US prescribing information. Westminster; revised 12/2025 (user-supplied label)",
       "year": 2025,
       "citedBy": [
@@ -2526,6 +2596,13 @@
       "citedBy": [
         "acute-neuro:hyponatremia-ods",
         "calc:sodium-correction"
+      ]
+    },
+    {
+      "citation": "Verdura E, et al. Disruption of a miR-29 binding site leading to COL4A1 upregulation causes pontine autosomal dominant microangiopathy with leukoencephalopathy. Ann Neurol 2016;80:741-753. doi:10.1002/ana.24782",
+      "year": 2016,
+      "citedBy": [
+        "consult-workups:monogenic-csvd-workup"
       ]
     },
     {

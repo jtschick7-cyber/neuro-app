@@ -1224,3 +1224,5 @@ Update 2026-11-12 (3) (Jason, in chat: "Core + A, close V4"; entry still `lastRe
 - The data entry therefore differs from the R17 draft JSON in `verify` (empty), `decisionRules[13]`, `workup[12]`, `differential[12]` and `sources[10]`.
 
 Update 2026-11-12 (4): signed by Jason (`monogenic-csvd-workup`, `lastReviewed` 2026-11-12): consult-workups 3.2.1. Not yet released. PARK items B1–B4 and C1, and option B of the V4 draft, stay open.
+
+Update 2026-11-12 (5): released: consult-workups 3.2.1, content 2.2.1+cbb25833. The sign-off/release open item above is closed; PARK items B1–B4, C1 and V4 option B stay open.
