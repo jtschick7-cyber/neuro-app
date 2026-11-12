@@ -135,8 +135,15 @@ describe("ivig-dose", () => {
 
 describe("sodium-correction", () => {
   it.each([
-    ["ese", undefined, 150], ["salsa-moderate", 70, 140], ["salsa-severe", 70, 280], ["salsa-moderate", 54, 110], ["salsa-severe", 82, 330],
-  ] as const)("%s %s kg → %d mL", (mode, kg, ml) => expect(C.hyponatremiaBolus(mode, kg as number | undefined).value).toBe(ml));
+    ["ese", undefined, 150], ["salsa-moderate", 70, 140], ["salsa-severe", 70, 140], ["salsa-moderate", 54, 110], ["salsa-severe", 82, 160],
+  ] as const)("%s %s kg → %d mL per bolus", (mode, kg, ml) => expect(C.hyponatremiaBolus(mode, kg as number | undefined).value).toBe(ml));
+  it("SALSA severe reads as two 2 mL/kg boluses, not one 4 mL/kg volume (audit P1-6)", () => {
+    const r = C.hyponatremiaBolus("salsa-severe", 70);
+    expect(r.display).toBe("140 mL 3% NaCl × 2 (2 mL/kg × 2, 280 mL total; SALSA bolus arm)");
+    expect(r.parts).toEqual({ mlPerKg: 2, boluses: 2 });
+    expect(C.hyponatremiaBolus("salsa-moderate", 70).display).toBe("140 mL 3% NaCl (2 mL/kg, SALSA bolus arm)");
+    expect(C.hyponatremiaBolus("salsa-severe", 150).warnings).toEqual([]); // no volume cap
+  });
   it.each([
     [{ startNa: 115, currentNa: 125, periodNumber: 1, odsRisk: false }, false],
     [{ startNa: 115, currentNa: 126, periodNumber: 1, odsRisk: false }, true],
@@ -147,7 +154,18 @@ describe("sodium-correction", () => {
 });
 
 describe("input guards", () => {
-  it.each([[0], [-5], [Number.NaN], [400], [Infinity]])("weight %d throws", (w) => expect(() => C.levetiracetamLoad(w)).toThrow(RangeError));
+  it.each([[0], [-5], [Number.NaN], [400], [Infinity], [1], [29.9]])("weight %d throws", (w) => expect(() => C.levetiracetamLoad(w)).toThrow(RangeError));
+  it("adult floor is 30 kg (audit P1-6)", () => expect(C.levetiracetamLoad(30).value).toBe(1800));
+  it("every shipped weight-based result cautions above 150 kg, and only above (audit P1-6)", () => {
+    const results = (kg: number) => [
+      C.levetiracetamLoad(kg), C.valproateLoad(kg), C.fosphenytoinLoad(kg),
+      C.phenytoinCorrection({ measuredTotal: 5, albuminGdl: 3, weightKg: kg }),
+      C.hypertonicSalineIcp("3%", { weightKg: kg, protocol: { concentration: "3%", mlPerKg: 2, maxMl: 500 } }),
+      C.mannitolDose(kg), C.cockcroftGault(60, kg, 1, false), C.hyponatremiaBolus("salsa-moderate", kg), C.hyponatremiaBolus("salsa-severe", kg),
+    ];
+    for (const r of results(150.5)) expect(r.warnings).toContain(C.WEIGHT_CAUTION);
+    for (const r of results(150)) expect(r.warnings).not.toContain(C.WEIGHT_CAUTION);
+  });
 });
 
 describe("metadata", () => {
@@ -184,6 +202,13 @@ describe("phenytoin-correction (worked cases, planning/drafts/calc-phenytoin-cor
     expect(r.warnings[0]).toBe(W.estimateOnly);
   });
 
+  it("low measured free level with an at-target estimate: no 'no reload' (audit P1-5)", () => {
+    const r = C.phenytoinCorrection({ measuredTotal: 16, albuminGdl: 4.5, measuredFree: 0.5, weightKg: 70 });
+    expect(r.display).not.toMatch(/no reload/);
+    expect(r.display).toContain("Estimate can't guide a reload — measured free level is below range; dose from the measured free level.");
+    expect(r.parts?.reloadMgPe).toBe(0);
+    expect(r.warnings).toContain(C.PHENYTOIN_WARNINGS.discordant("BELOW", "WITHIN"));
+  });
   it("case 1: no warnings beyond the standard one; at/above target → no reload", () => {
     const r = C.phenytoinCorrection({ measuredTotal: 8, albuminGdl: 2.0, weightKg: 70 });
     expect(r.warnings).toEqual([W.estimateOnly]);

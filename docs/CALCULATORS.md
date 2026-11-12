@@ -67,9 +67,9 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - VERIFY: none
 
 ## Hyponatremia: 3% bolus and correction limits (`sodium-correction`)
-- Formula: ESE 150 mL; SALSA 2 or 4 mL/kg; limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)
+- Formula: ESE 150 mL; SALSA 2 mL/kg (moderate) or 2 mL/kg × 2 (severe); limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)
 - Caps: none
-- Rounding: nearest 10 mL
+- Rounding: nearest 10 mL per bolus
 - Weight: ACTUAL
 - Sources: Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170(3):G1-G47. doi:10.1530/EJE-13-1020 | Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519 | Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1-S42. doi:10.1016/j.amjmed.2013.07.006
 - VERIFY: none
