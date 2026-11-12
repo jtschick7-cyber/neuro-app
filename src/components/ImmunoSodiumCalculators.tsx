@@ -7,7 +7,7 @@ import { hyponatremiaBolus, sodiumCorrectionCheck } from '../lib/calculators';
 const BOLUS_OPTIONS = [
   { value: 'ese', label: 'ESE 2014: 150 mL fixed' },
   { value: 'salsa-moderate', label: 'SALSA: 2 mL/kg (moderate)' },
-  { value: 'salsa-severe', label: 'SALSA: 4 mL/kg (severe)' },
+  { value: 'salsa-severe', label: 'SALSA: 2 mL/kg × 2 (severe)' },
 ];
 type BolusMode = 'ese' | 'salsa-moderate' | 'salsa-severe';
 

@@ -34,7 +34,11 @@ function req(name: string, x: number, min: number, max: number) {
   if (typeof x !== "number" || !Number.isFinite(x) || x < min || x > max)
     throw new RangeError(`${name} must be a number between ${min} and ${max}`);
 }
-const reqWeight = (kg: number) => req("weightKg", kg, 1, 350);
+// Adults only: 30 kg floor (audit P1-6, decided 2026-11-12). Above 150 kg every weight-based result carries WEIGHT_CAUTION; no cap.
+const reqWeight = (kg: number) => req("weightKg", kg, 30, 350);
+export const WEIGHT_CAUTION_ABOVE_KG = 150;
+export const WEIGHT_CAUTION = "Weight above 150 kg — check the unit (kg, not lb) and the entered weight";
+const weightCaution = (kg: number): string[] => (kg > WEIGHT_CAUTION_ABOVE_KG ? [WEIGHT_CAUTION] : []);
 
 function capped(raw: number, cap: number) {
   return raw > cap ? { v: cap, capped: true } : { v: raw, capped: false };
@@ -50,7 +54,7 @@ function perKgLoad(weightKg: number, mgPerKg: number, cap: number, unit: string,
     unit,
     display: `${fmt(c.v)} ${unit}${c.capped ? ` (capped at ${cap})` : ""}`,
     capped: c.capped,
-    warnings: c.capped ? [`Weight-based dose exceeds the ${cap} ${unit} maximum — capped`] : [],
+    warnings: [...(c.capped ? [`Weight-based dose exceeds the ${cap} ${unit} maximum — capped`] : []), ...weightCaution(weightKg)],
     parts: { mgPerKg, uncapped: r },
   };
 }
@@ -160,9 +164,13 @@ export function phenytoinCorrection(i: PhenytoinCorrectionInput): CalcResult {
   let isCapped = false;
   if (i.weightKg !== undefined) {
     const w = i.weightKg;
+    warnings.push(...weightCaution(w));
     let reload = 0;
     if (measuredFreeBand === "WITHIN" || measuredFreeBand === "ABOVE") {
       reloadText = "no reload — measured free level within or above 1–2 mcg/mL";
+    } else if (measuredFreeBand === "BELOW" && corrected >= target) {
+      // Audit P1-5 (decided 2026-11-12): a low measured free level overrides an at-target estimate; never say "no reload" here.
+      reloadText = "Estimate can't guide a reload — measured free level is below range; dose from the measured free level.";
     } else if (corrected >= target) {
       reloadText = `no reload — at or above target ${fmt(target)} mcg/mL`;
     } else {
@@ -217,6 +225,7 @@ export function hypertonicSalineIcp(
   else {
     if (opts.weightKg === undefined) throw new RangeError("weightKg required for a weight-based protocol");
     reqWeight(opts.weightKg);
+    warnings.push(...weightCaution(opts.weightKg));
     ml = roundTo(opts.weightKg * (protocol.mlPerKg as number), 10);
     if (protocol.maxMl === undefined) warnings.push("No institutional maximum volume configured");
   }
@@ -253,6 +262,7 @@ export function mannitolDose(weightKg: number): CalcResult {
       `Label ICP dose is lower: 0.25 g/kg (${label} g = ${label * 5} mL of 20%) over 30 min, repeat q6–8h`,
       "Label: preferably a large central vein; use a set with a final in-line filter (crystals); not through the same set as blood products",
       "Label: stop if renal, cardiac or pulmonary status worsens or CNS toxicity develops; watch for rebound ICP rise hours after a dose",
+      ...weightCaution(weightKg),
     ],
     parts: { ml20Low: lo * 5, ml20High: hi * 5, labelDoseG: label },
   };
@@ -328,7 +338,7 @@ export function cockcroftGault(ageY: number, weightKg: number, scrMgDl: number, 
   req("ageY", ageY, 18, 120); reqWeight(weightKg); req("scrMgDl", scrMgDl, 0.1, 20);
   const raw = ((140 - ageY) * weightKg) / (72 * scrMgDl) * (female ? 0.85 : 1);
   const v = Math.round(raw);
-  return { value: v, unit: "mL/min", display: `${v} mL/min (actual body weight)`, capped: false, warnings: [] };
+  return { value: v, unit: "mL/min", display: `${v} mL/min (actual body weight)`, capped: false, warnings: weightCaution(weightKg) };
 }
 
 // ---------- 6. Scores ----------
@@ -420,9 +430,13 @@ export function hyponatremiaBolus(mode: "ese" | "salsa-moderate" | "salsa-severe
   if (mode === "ese") return { value: 150, unit: "mL", display: "150 mL 3% NaCl over 20 min; recheck Na; repeat up to 2 more times until +5 mmol/L", capped: false, warnings: [] };
   if (weightKg === undefined) throw new RangeError("weightKg required for SALSA dosing");
   reqWeight(weightKg);
-  const perKg = mode === "salsa-moderate" ? 2 : 4;
-  const ml = roundTo(weightKg * perKg, 10);
-  return { value: ml, unit: "mL", display: `${ml} mL 3% NaCl (${perKg} mL/kg, SALSA bolus arm)`, capped: false, warnings: [], parts: { mlPerKg: perKg } };
+  // Severe: two 2 mL/kg boluses, shown per bolus (audit P1-6, decided 2026-11-12: "2 mL/kg × 2", no volume cap).
+  const boluses = mode === "salsa-moderate" ? 1 : 2;
+  const ml = roundTo(weightKg * 2, 10);
+  const display = boluses === 1
+    ? `${ml} mL 3% NaCl (2 mL/kg, SALSA bolus arm)`
+    : `${ml} mL 3% NaCl × 2 (2 mL/kg × 2, ${ml * 2} mL total; SALSA bolus arm)`;
+  return { value: ml, unit: "mL", display, capped: false, warnings: weightCaution(weightKg), parts: { mlPerKg: 2, boluses } };
 }
 
 /** ESE 2014: ≤10 mmol/L in the first 24 h, then ≤8 per 24 h. High ODS risk: ≤8 in any 24 h (Verbalis 2013). */
@@ -485,5 +499,5 @@ export const CALCULATOR_META: Record<string, CalcMeta> = {
   "tnk-dose": { id: "tnk-dose", title: "Tenecteplase (stroke)", formula: "0.25 mg/kg via 10-kg bands; optional 1-kg dosing <50 kg", caps: ["25 mg"], rounding: "label band chart", weightBasis: "ACTUAL", sources: [S.aha2026, S.tnkLabel], verify: [] },
   "alteplase-dose": { id: "alteplase-dose", title: "Alteplase (stroke)", formula: "0.9 mg/kg; 10% bolus, 90% over 60 min", caps: ["90 mg"], rounding: "0.1 mg", weightBasis: "ACTUAL", sources: [S.aha2026, S.activase], verify: [] },
   "ivig-dose": { id: "ivig-dose", title: "IVIG", formula: "2 g/kg total over 2–5 days", caps: [], rounding: "daily dose to nearest 5 g (app convention)", weightBasis: "SELECTABLE", sources: [S.gbs2023], verify: [] },
-  "sodium-correction": { id: "sodium-correction", title: "Hyponatremia: 3% bolus and correction limits", formula: "ESE 150 mL; SALSA 2 or 4 mL/kg; limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)", caps: [], rounding: "nearest 10 mL", weightBasis: "ACTUAL", sources: [S.ese2014, S.salsa2021, S.verbalis2013], verify: [] },
+  "sodium-correction": { id: "sodium-correction", title: "Hyponatremia: 3% bolus and correction limits", formula: "ESE 150 mL; SALSA 2 mL/kg (moderate) or 2 mL/kg × 2 (severe); limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)", caps: [], rounding: "nearest 10 mL per bolus", weightBasis: "ACTUAL", sources: [S.ese2014, S.salsa2021, S.verbalis2013], verify: [] },
 };
