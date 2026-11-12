@@ -22,7 +22,7 @@ export function contextSummary(c: PatientContext): string {
   return parts.filter((p) => p !== '').join(' · ');
 }
 
-const baseCls = 'block h-10 w-full rounded-md border px-2 text-base placeholder:italic placeholder:text-slate-600 focus:border-sky-400 focus:outline-none';
+const baseCls = 'block h-11 w-full rounded-md border px-2 text-base placeholder:italic placeholder:text-slate-600 focus:border-sky-400 focus:outline-none';
 /** Entered values are visibly confirmed; untouched fields stay muted so nothing looks like patient data by default. */
 const fieldCls = (filled: boolean) =>
   `${baseCls} ${filled ? 'border-sky-500/60 bg-sky-950/25 font-semibold text-sky-100' : 'border-slate-800 bg-slate-900/60 text-slate-400'}`;

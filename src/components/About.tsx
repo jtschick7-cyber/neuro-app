@@ -12,6 +12,7 @@ import {
   TARGET_ROLE_LEGEND,
 } from '../content/copy';
 import { Bullets } from './ProtocolParts';
+import UpdateStatus from './UpdateStatus';
 import about from '../../generated/about.json';
 
 const LEGENDS: [string, readonly (readonly [string, string])[]][] = [
@@ -53,10 +54,11 @@ export default function About() {
           <dd>{about.appVersion}</dd>
           <dt className="text-slate-400">Content</dt>
           <dd>{about.contentVersion}</dd>
-          <dt className="text-slate-400">Content built</dt>
+          <dt className="text-slate-400">Content updated</dt>
           <dd>{about.builtAt}</dd>
           <dt className="text-slate-400">Build</dt>
           <dd>{__BUILD_ID__}</dd>
+          <UpdateStatus />
         </dl>
       </Block>
       <Block title={ABOUT.sections.review}>

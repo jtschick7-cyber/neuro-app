@@ -19,7 +19,7 @@ export default function BedsideNotes({ noteId }: { noteId: string }) {
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
-        className="flex items-center gap-1 text-xs text-slate-400 hover:text-slate-200"
+        className="flex min-h-11 items-center gap-1 text-xs text-slate-400 hover:text-slate-200"
       >
         {open ? <ChevronDown size={14} /> : <ChevronRight size={14} />}
         <StickyNote size={14} className={hasNote ? 'text-amber-300' : ''} />

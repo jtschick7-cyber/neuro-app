@@ -46,7 +46,7 @@ export function PhenytoinCard({ weightKg }: { weightKg: number | null }) {
       metaIds={['phenytoin-correction']}
     >
       <div className="grid grid-cols-2 gap-2">
-        <NumberField label="Total phenytoin (mcg/mL)" value={total} onChange={setTotal} placeholder="8" />
+        <NumberField label="Total phenytoin (mcg/mL)" value={total} onChange={setTotal} placeholder="—" />
         <NumberField label="Albumin (g/dL)" value={albumin} onChange={setAlbumin} placeholder="optional" />
         <NumberField label="Measured free (mcg/mL)" value={free} onChange={setFree} placeholder="optional" />
         <NumberField label="Target total (10–20)" value={target} onChange={setTarget} />

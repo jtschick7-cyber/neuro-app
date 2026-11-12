@@ -55,7 +55,7 @@ export function NumberField({
         value={value}
         placeholder={placeholder}
         onChange={(e) => onChange(e.target.value)}
-        className="mt-auto w-full rounded-md border border-slate-600 bg-slate-800 px-2 py-1.5 text-base text-slate-100 placeholder-slate-500 focus:border-sky-400 focus:outline-none"
+        className="mt-auto h-11 w-full rounded-md border border-slate-600 bg-slate-800 px-2 text-base text-slate-100 placeholder-slate-500 focus:border-sky-400 focus:outline-none"
       />
     </label>
   );
@@ -92,7 +92,7 @@ export function SelectField({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="mt-auto w-full rounded-md border border-slate-600 bg-slate-800 px-2 py-1.5 text-base text-slate-100"
+        className="mt-auto h-11 w-full rounded-md border border-slate-600 bg-slate-800 px-2 text-base text-slate-100"
       >
         {options.map((o) => (
           <option key={o.value} value={o.value}>

@@ -211,4 +211,30 @@ export const UPDATE_COPY = {
   available: "New content available.",
   reload: "Reload",
   sectionFailed: "Couldn’t load this section.",
+  offlineToast: "Saved for offline use.",
+  dismiss: "Dismiss",
+  offlineLabel: "Offline",
+  offlineReady: "Saved on this device",
+  offlineNotReady: "Not yet saved — open once online, then relaunch",
+  storageLabel: "Storage",
+  storagePersisted: "Protected from eviction",
+  storageBestEffort: "Best effort (the browser may clear it)",
+  lastCheckedLabel: "Last update check",
+  notYet: "Not this session",
+  checkNow: "Check for update",
+  result: {
+    CHECKING: "Checking…",
+    UP_TO_DATE: "Up to date.",
+    UPDATE_WAITING: "New content found — tap Reload in the bar below.",
+    OFFLINE: "Couldn’t check — offline.",
+    UNSUPPORTED: "Updates are unavailable in this browser view.",
+  },
+};
+
+/** Screen crash fallback (ErrorBoundary). */
+export const ERROR_BOUNDARY_COPY = {
+  title: "Something went wrong showing this screen.",
+  where: "Screen:",
+  reload: "Reload",
+  home: "Back to home",
 };
