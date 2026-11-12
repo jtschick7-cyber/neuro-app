@@ -1217,3 +1217,8 @@ Update 2026-11-12 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, con
 Update 2026-11-12 (2) (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, consult-workups stays 3.2.0):
 - V3 (pulvinar sign frequency in later cohorts): closed. Burlina 2008 (J Neurol 2008;255:738-744, Table 2, p.741): pooled 35 of 140 males (25%), consistent with the Moore count; 0 of 43 females. No entry text changed; Burlina is not added as a source.
 - V4 (DADA2 testing and treatment): stays open. Jason asked for a draft from Lee 2023 (JAMA Netw Open 2023;6(5):e2315894): `planning/drafts/review-2026-11-08/R17/V4/`, pending his approval.
+
+Update 2026-11-12 (3) (Jason, in chat: "Core + A, close V4"; entry still `lastReviewed: "UNREVIEWED"`, consult-workups stays 3.2.0):
+- V4 (DADA2 testing and treatment): closed. Covered by Lee 2023 DADA2 consensus (JAMA Netw Open 2023;6(5):e2315894); encoded as rule 14 and workup[12]. `verify[]` is now empty.
+- Encoded from `planning/drafts/review-2026-11-08/R17/V4/V4.changes.json`, core plus option A: rule 14 (DADA2: avoid antithrombotic therapy, `CONSENSUS`, statement 5.5); workup[12] (ADA2 enzyme activity and sequencing, 2 indications, 4 notes); Lee 2023 appended to `sources`; `differential[12].mustNotMiss` true with a 4th clue on TNF-inhibitor treatability. This reverses D6 (DADA2 not flagged). Option B (acute-stroke glucocorticoid/TNF inhibitor rule, statement 5.4) not encoded; stays parked under B2.
+- The data entry therefore differs from the R17 draft JSON in `verify` (empty), `decisionRules[13]`, `workup[12]`, `differential[12]` and `sources[10]`.

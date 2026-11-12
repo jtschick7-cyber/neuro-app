@@ -4657,9 +4657,10 @@
           "clues": [
             "Loose fit: vasculitis (polyarteritis nodosa, Sneddon syndrome) (Manini 2023 pp.770, 775)",
             "Lacunes in deep nuclei, brainstem and thalamus without WMH (Manini 2023 p.781)",
-            "Livedo racemosa, periodic fever, pure red cell aplasia or other cytopenia, hypogammaglobulinemia (Manini 2023 p.775)"
+            "Livedo racemosa, periodic fever, pure red cell aplasia or other cytopenia, hypogammaglobulinemia (Manini 2023 p.775)",
+            "Treatable: TNF inhibitors lower the risk of ischemic and hemorrhagic stroke (Lee 2023 p.6)"
           ],
-          "mustNotMiss": false
+          "mustNotMiss": true
         },
         {
           "dx": "Pseudoxanthoma elasticum (ABCC6, AR)",
@@ -4804,6 +4805,20 @@
           "notes": [
             "No predictive testing in children (AHA 2023 p.e455)"
           ]
+        },
+        {
+          "test": "DADA2: plasma or serum ADA2 enzyme activity; ADA2 sequencing",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected DADA2",
+            "Cryptogenic ischemic stroke, unexplained brain hemorrhage (including aneurysm) or spinal cord stroke in childhood or early adulthood (Lee 2023 Table 3, statement 3.5)"
+          ],
+          "notes": [
+            "Near-absent ADA2 activity is diagnostic; normal activity excludes DADA2 (Lee 2023 Table 2, statement 2.3)",
+            "Biallelic pathogenic or likely pathogenic ADA2 variants are diagnostic; one variant means a carrier (Lee 2023 Table 2, statements 2.4–2.5)",
+            "Standard sequencing can miss intronic, regulatory and copy-number variants; if suspicion remains, send enzyme activity or further genetic tests (Lee 2023 Table 2, statement 2.7)",
+            "ADA2 activity is measured by few laboratories; ADA2 is on most inborn-errors-of-immunity and autoinflammatory panels (Lee 2023 p.4)"
+          ]
         }
       ],
       "decisionRules": [
@@ -4927,6 +4942,16 @@
           "evidenceNote": [
             "EAN 2020 Delphi: mean 4.85, 100%"
           ]
+        },
+        {
+          "order": 14,
+          "condition": "DADA2",
+          "recommendation": "Avoid antiplatelet, anticoagulant and other antithrombotic therapy, to prevent hemorrhagic stroke",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "DADA2 consensus 2023 Delphi, statement 5.5: LOE 5 (D), agreement 8.3 of 9 (Lee 2023 Table 5)",
+            "Secondary hemorrhagic conversion of stroke has been documented (Lee 2023 p.7)"
+          ]
         }
       ],
       "initialSteps": [
@@ -4952,9 +4977,7 @@
         "Monogenic small vessel diseases cause 1%–5% of all strokes (Manini 2023 p.766)",
         "Sources disagree on migraine frequency in CADASIL: about 30% (AHA 2023 p.e452) and up to 45% (Manini 2023 p.771)"
       ],
-      "verify": [
-        "DADA2: ADA2 enzyme testing and treatment are not covered by the sources read"
-      ],
+      "verify": [],
       "relatedIds": [
         "consult-workups:young-stroke-workup",
         "consult-workups:ich-etiology-workup",
@@ -4970,7 +4993,8 @@
         "Moore DF, et al. Increased signal intensity in the pulvinar on T1-weighted images: a pathognomonic MR imaging sign of Fabry disease. AJNR Am J Neuroradiol 2003;24:1096-1101.",
         "Konno T, et al. CSF1R-related leukoencephalopathy: a major player in primary microgliopathies. Neurology 2018;91:1092-1104. doi:10.1212/WNL.0000000000006642",
         "Sacharow SJ, Levy HL. Homocystinuria due to Cystathionine Beta-Synthase Deficiency. GeneReviews, updated 2025 Sep 25. University of Washington, Seattle. Cited by section; page numbers are PDF pages.",
-        "Testai FD, Gorelick PB. Inherited metabolic disorders and stroke part 2: homocystinuria, organic acidurias, and urea cycle disorders. Arch Neurol 2010;67(2):148-153."
+        "Testai FD, Gorelick PB. Inherited metabolic disorders and stroke part 2: homocystinuria, organic acidurias, and urea cycle disorders. Arch Neurol 2010;67(2):148-153.",
+        "Lee PY, et al. Evaluation and Management of Deficiency of Adenosine Deaminase 2: An International Consensus Statement. JAMA Netw Open 2023;6(5):e2315894. doi:10.1001/jamanetworkopen.2023.15894"
       ],
       "lastReviewed": "UNREVIEWED"
     }
