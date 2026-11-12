@@ -57,7 +57,8 @@ const contentHash = hash.digest("hex").slice(0, 8);
 const about = {
   appVersion: pkg.version,
   contentVersion: `${pkg.version}+${contentHash}`,
-  builtAt: new Date().toISOString().slice(0, 10),
+  // Newest registry lastUpdated, not today's date: the file must regenerate identically (CI drift check, scripts/check-generated.ts).
+  builtAt: (registries as { lastUpdated: string }[]).map((r) => r.lastUpdated).sort().at(-1) ?? null,
   registries,
   calculators,
   sources,

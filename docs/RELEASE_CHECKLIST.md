@@ -1,7 +1,7 @@
 # Release checklist
 
 ## A. Per-entry sign-off (every entry, every edit)
-Review from the sheets: `npm run review-sheets` → `generated/review/<registry>.html`. Sign off with `npm run signoff -- <registry> <id> [<id>…]`.
+Review from the sheets: `npm run review-sheets` → `generated/review/<registry>.html`. Sign off with `npm run signoff -- <registry> <id> [<id>…]`. Sign-off records each entry's date and content hash in `generated/signoff.json` (commit it with the data); `validate` fails on a signed entry whose content or date no longer matches.
 
 **All registries**
 - [ ] Every dose, threshold, cap and unit matches the cited source or FDA label (per-kg vs fixed, max dose, route, rate)
@@ -24,7 +24,8 @@ Review from the sheets: `npm run review-sheets` → `generated/review/<registry>
 
 ## B. Release (once per release)
 **Data**
-- [ ] `npm run release` passes: 0 errors, no open VERIFY, no UNREVIEWED, tests green
+- [ ] `npm run release` passes: 0 errors, no open VERIFY, no UNREVIEWED, no signed entry changed since sign-off, tests green
+- [ ] Regenerated files committed: `npm run check:generated` passes (CI and deploy run it too)
 - [ ] Registry `version` and `lastUpdated` bumped per `docs/VERSIONING.md`; app version bumped if code changed
 - [ ] In `generated/about.json`, sources ≥5 years old checked for a newer edition
 - [ ] Calculator spot-checks match: levetiracetam 80 kg → 4500 mg; fosphenytoin 62 kg → 1250 mg PE; 3% saline → 250 mL over 30 min

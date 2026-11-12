@@ -15,6 +15,7 @@
     "build:calc-doc": "tsx scripts/build-calc-doc.ts",
     "build:about": "tsx scripts/build-about.ts",
     "release": "npm run validate:release && npm test && npm run build:schema && npm run build:calc-doc && npm run build:about",
+    "check:generated": "tsx scripts/check-generated.ts",
     "signoff": "tsx scripts/signoff.ts",
     "review-sheets": "tsx scripts/build-review-sheets.ts",
     "rereview": "tsx scripts/build-rereview.ts"

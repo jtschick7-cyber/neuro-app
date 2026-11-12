@@ -7,8 +7,11 @@
  *   --date YYYY-MM-DD                                  override the date
  * Refuses entries with open verify[] items and unknown ids. Bumps the registry PATCH version and lastUpdated.
  * Sign-off records review only — it never changes content, so PATCH is the right bump (docs/VERSIONING.md).
+ * Each signed entry's date and content hash go to generated/signoff.json; validate fails if a signed entry later
+ * changes without being re-signed (scripts/integrity.ts). Re-signing an already-signed id refreshes its hash.
  */
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { SIGNOFF_FILE, entryHash, readSignoffs, serializeSignoffs, type RawEntry } from "./integrity";
 
 const args = process.argv.slice(2);
 const dateIdx = args.indexOf("--date");
@@ -22,7 +25,7 @@ if (!registry) fail("usage: signoff <registry> <id…> | --list | --all | --unsi
 const file = `data/${registry}.json`;
 if (!existsSync(file)) fail(`no such registry: ${file}`);
 
-type Entry = { id: string; lastReviewed: string; verify?: string[] };
+type Entry = RawEntry & { lastReviewed: string; verify?: string[] };
 const reg = JSON.parse(readFileSync(file, "utf8")) as { version: string; lastUpdated: string; entries: Entry[] };
 const byId = new Map(reg.entries.map((e) => [e.id, e]));
 const unreviewed = reg.entries.filter((e) => e.lastReviewed === "UNREVIEWED");
@@ -45,12 +48,24 @@ if (!unsign) {
 }
 
 let changed = 0;
+const records = readSignoffs();
+const before = serializeSignoffs(records);
 for (const id of ids) {
   const e = byId.get(id)!;
   const next = unsign ? "UNREVIEWED" : date;
   if (e.lastReviewed !== next) { e.lastReviewed = next; changed++; }
+  if (unsign) delete records[`${registry}:${id}`];
+  else records[`${registry}:${id}`] = { date, sha256: entryHash(e) };
 }
-if (!changed) { console.log("nothing to change"); process.exit(0); }
+// Drop records for entries this registry no longer has.
+for (const key of Object.keys(records)) if (key.startsWith(`${registry}:`) && !byId.has(key.slice(registry.length + 1))) delete records[key];
+const after = serializeSignoffs(records);
+if (after !== before) {
+  mkdirSync("generated", { recursive: true });
+  writeFileSync(SIGNOFF_FILE, after);
+  if (!changed) console.log(`${SIGNOFF_FILE}: sign-off hash refreshed for ${ids.join(", ")}`);
+}
+if (!changed) { if (after === before) console.log("nothing to change"); process.exit(0); }
 
 const [maj, min, pat] = reg.version.split(".").map(Number);
 reg.version = `${maj}.${min}.${pat + 1}`;
