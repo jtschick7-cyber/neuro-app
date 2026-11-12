@@ -1,8 +1,8 @@
 {
   "title": "Consult workups",
-  "version": "3.1.1",
+  "version": "3.2.1",
   "schemaVersion": "2.1.0",
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-12",
   "entries": [
     {
       "id": "young-stroke-workup",
@@ -4480,6 +4480,523 @@
         "Cogswell PM, et al. Alzheimer disease anti-amyloid immunotherapies: imaging recommendations and practice considerations for monitoring of amyloid-related imaging abnormalities. AJNR Am J Neuroradiol 2025;46:24-32. doi:10.3174/ajnr.A8469"
       ],
       "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "monogenic-csvd-workup",
+      "title": "Suspected monogenic small vessel disease (CADASIL and others)",
+      "keyNumbers": [
+        "CADASIL (Pescini) scale 0–25: ≥15 suggests CADASIL; use it to select patients for NOTCH3 testing (Manini 2023 p.771)",
+        "AHA 2023: consider NOTCH3 testing for small vessel stroke before 55 y with few vascular risk factors (normotensive, nondiabetic, nonsmoker) or a family history of CADASIL (Table 3)",
+        "CBS deficiency: total homocysteine often >100 µmol/L (normal <15); adult-onset thromboembolic form 50 to >100 µmol/L (GeneReviews 2025, Suggestive Findings, Table 1)",
+        "Pulvinar T1 hyperintensity: 22 of 94 hemizygous males (about 23%); not seen before the third decade (Moore 2003 pp.1097–1098)"
+      ],
+      "searchTerms": [
+        "monogenic small vessel disease",
+        "genetic small vessel disease",
+        "hereditary small vessel disease",
+        "cSVD",
+        "CADASIL",
+        "NOTCH3",
+        "CARASIL",
+        "HTRA1",
+        "COL4A1",
+        "COL4A2",
+        "PADMAL",
+        "HANAC",
+        "RVCL-S",
+        "TREX1",
+        "Fabry",
+        "GLA",
+        "CARASAL",
+        "hereditary CAA",
+        "MELAS",
+        "CSF1R",
+        "DADA2",
+        "pseudoxanthoma elasticum",
+        "homocystinuria",
+        "leukoencephalopathy young",
+        "Axenfeld-Rieger"
+      ],
+      "category": "VASCULAR",
+      "consultQuestion": "Unexplained small vessel disease on MRI in a young patient: is it monogenic, which gene, what to send?",
+      "keyHistory": [
+        "Family history across generations: stroke, dementia, migraine with aura, mood disorder; consanguinity",
+        "A negative family history does not exclude: de novo variants, mild or misdiagnosed relatives (Manini 2023 p.782; EAN 2020 p.918)",
+        "Stroke or hemorrhage before 50 y, recurrent, no common cause (Manini 2023 Table 5)",
+        "Hemorrhage after trauma, exertion or an anticoagulant (COL4A1/2)",
+        "Hair loss in adolescence, back pain or disc disease, muscle cramps, acroparesthesias, visual or hearing loss",
+        "Kidney disease, hematuria, early cataract, infantile hemiparesis in the patient or relatives"
+      ],
+      "keyExam": [
+        "Skin: angiokeratomas (genital, umbilical), livedo racemosa, yellowish papules on the lateral neck and flexures, early alopecia",
+        "Eyes: refer for slit lamp and fundus (see workup)",
+        "Build: tall, long limbs, without joint hypermobility (homocystinuria)"
+      ],
+      "redFlags": [
+        "Family history (EAN 2020 Table 1: mean 5, 100%)",
+        "Young age at onset (EAN: mean 4.92, 100%)",
+        "Consanguinity (EAN: mean 4.92, 100%)",
+        "Extracerebral or systemic features (EAN: mean 4.54, 100%)",
+        "Imaging or clinical phenotype characteristic of a specific monogenic disease (EAN: mean 4.54, 84.6%; mean 4.61, 92.8%)"
+      ],
+      "differential": [
+        {
+          "dx": "CADASIL (NOTCH3, AD)",
+          "clues": [
+            "WMH in anterior temporal poles, external capsules and superior frontal gyrus (Manini 2023 Table 4, p.778)",
+            "Migraine with aura (mean onset 30 y), subcortical infarcts, mood disorder, dementia; ischemic stroke mean 49 y, range 20–70 (AHA 2023 p.e452)",
+            "Little or no systemic involvement (AHA 2023 Table 1)",
+            "ICH rare, especially on anticoagulants (EAN 2020 Table 1)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "CARASIL (HTRA1 biallelic, AR)",
+          "clues": [
+            "Lacunar strokes from 20–44 y; scalp alopecia in adolescence in 90%; severe back pain with lumbar disc herniation, spondylosis (EAN 2020 p.919)",
+            "Arc sign: T2 hyperintensity from pons to middle cerebellar peduncles, late stage, 5 of 7 patients (Nozaki 2015 pp.460, 462)",
+            "Early: frontal white matter and external capsule (Nozaki 2015 p.462)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "HTRA1 heterozygous (AD)",
+          "clues": [
+            "Like CARASIL but later: stroke onset around 60 y; alopecia and spondylosis less frequent (EAN 2020 p.920)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "COL4A1/COL4A2 (AD)",
+          "clues": [
+            "Deep ICH, spontaneous or after trauma, exertion or an anticoagulant; mean stroke onset 30–40 y; hemorrhagic twice as often as ischemic (EAN 2020 p.921)",
+            "Porencephaly, infantile hemiparesis (Manini 2023 pp.774, 781)",
+            "Eye: retinal arteriolar tortuosity, cataract (often bilateral and congenital), anterior segment dysgenesis (Axenfeld-Rieger) (Manini 2023 p.775)",
+            "Hematuria, renal cysts, muscle cramps with raised CK, intracranial aneurysms (Manini 2023 pp.775, 781)",
+            "Microbleeds in more than 50% (Manini 2023 p.781)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "PADMAL (COL4A1 3′UTR, AD)",
+          "clues": [
+            "Recurrent ischemic strokes from 35–45 y with multiple pontine lacunes (Verdura 2016 p.748)",
+            "No cerebral hemorrhage, no extraneurological features; microbleeds in 3 of 12 (Verdura 2016 pp.748–749)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "HANAC (COL4A1 exons 24–25, AD)",
+          "clues": [
+            "Hematuria or large bilateral renal cysts; muscle cramps with raised CK; retinal arteriolar tortuosity with retinal hemorrhages (Plaisier 2007 pp.2689–2691)",
+            "Aneurysms of the intracranial internal carotid; Raynaud phenomenon; supraventricular arrhythmia (Plaisier 2007 pp.2689–2691)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "RVCL-S (TREX1, AD)",
+          "clues": [
+            "Progressive retinal vasculopathy in almost all symptomatic patients; brain disease from the fourth to fifth decade (EAN 2020 p.923)",
+            "Rim-enhancing mass lesion with edema (pseudotumor); white matter calcification on CT in 52% (EAN 2020 p.923)",
+            "Kidney, liver and thyroid disease; Raynaud; GI bleeding (EAN 2020 p.923; AHA 2023 Table 1)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "Fabry disease (GLA, X-linked; women can be affected)",
+          "clues": [
+            "Acroparesthesias and pain crises, hypohidrosis, angiokeratomas, cornea verticillata, proteinuria, left ventricular hypertrophy (Manini 2023 pp.771, 774–775)",
+            "Small vessel, large vessel and cardioembolic infarcts (AHA 2023 Table 1); stroke onset 20–50 y, posterior circulation, basilar dolichoectasia (EAN 2020 p.924)",
+            "Pulvinar T1 hyperintensity: 22 of 94 hemizygous males (about 23%); not seen before the third decade (Moore 2003 pp.1097–1098)",
+            "Pulvinar sign usually comes with hypertrophic cardiomyopathy and severe renal dysfunction (Manini 2023 p.781)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "CARASAL (CTSA, AD)",
+          "clues": [
+            "Therapy-resistant hypertension, sicca syndrome (Manini 2023 p.774)",
+            "Brainstem symptoms: tinnitus, hearing loss, dysphagia (AHA 2023 Table 1)",
+            "WMH in brainstem and frontoparietal white matter with temporal lobes spared (Manini 2023 Table 4, p.781)",
+            "Ischemic stroke onset in the seventh decade (Manini 2023 p.769); fewer than 20 cases reported (AHA 2023 Table 1)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "Hereditary CAA (APP, CST3, ITM2B, TTR; AD)",
+          "clues": [
+            "Recurrent lobar ICH from middle age, usually before 55 y, often with subarachnoid bleeding; progressive dementia (Manini 2023 pp.771, 774)",
+            "CST3 (Icelandic): hemorrhages at 20–30 y (Manini 2023 p.771)",
+            "TTR: meningeal enhancement of brain and cord, neuropathy, vitreous opacities (Manini 2023 pp.774–775, 781)",
+            "ITM2B (familial British dementia): dementia, cerebellar ataxia and spastic tetraparesis from the fifth decade (Manini 2023 p.774)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "MELAS (m.3243A>G in 80%; POLG)",
+          "clues": [
+            "Mimic: stroke-like episodes, not small vessel disease (EAN 2020 p.925)",
+            "Cortical and juxtacortical lesions that do not match a vascular territory and may spread over days to weeks (EAN 2020 p.925)",
+            "Headache, vomiting, focal seizures, encephalopathy; ptosis, diabetes, cardiomyopathy, muscle weakness, lactic acidosis (EAN 2020 p.925)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "CSF1R-related leukoencephalopathy (AD)",
+          "clues": [
+            "Mimic: primary microgliopathy, not a vasculopathy (Konno 2018 p.1093)",
+            "Frontotemporal dementia-like picture with parkinsonism or pyramidal signs; mean onset 43 y (women 40, men 47) (Konno 2018 p.1094)",
+            "Frontoparietal white matter lesions, thin corpus callosum, diffusion-restricted white matter lesions that persist for months, no enhancement (Konno 2018 pp.1095–1096)",
+            "CT: very small calcifications beside the frontal horns; pericallosal stepping stone pattern on sagittal views (Konno 2018 p.1096)",
+            "Young women with motor onset are misdiagnosed as MS (Konno 2018 p.1094)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "DADA2 (ADA2/CECR1, AR)",
+          "clues": [
+            "Loose fit: vasculitis (polyarteritis nodosa, Sneddon syndrome) (Manini 2023 pp.770, 775)",
+            "Lacunes in deep nuclei, brainstem and thalamus without WMH (Manini 2023 p.781)",
+            "Livedo racemosa, periodic fever, pure red cell aplasia or other cytopenia, hypogammaglobulinemia (Manini 2023 p.775)",
+            "Treatable: TNF inhibitors lower the risk of ischemic and hemorrhagic stroke (Lee 2023 p.6)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Pseudoxanthoma elasticum (ABCC6, AR)",
+          "clues": [
+            "Loose fit: small and large vessel disease (Manini 2023 p.769)",
+            "Yellowish papules on the lateral neck and flexures; retinal peau d'orange and angioid streaks (Manini 2023 p.775)",
+            "GI bleeding, angina, claudication; carotid rete mirabile (Manini 2023 pp.770, 775, Table 4)"
+          ],
+          "mustNotMiss": false
+        },
+        {
+          "dx": "Homocystinuria (CBS deficiency, AR)",
+          "clues": [
+            "Loose fit: arterial and venous thromboembolism; the sources describe no small vessel MRI pattern (GeneReviews 2025; Testai 2010)",
+            "Ectopia lentis or severe myopia; tall with long limbs, without joint hypermobility (GeneReviews 2025, Suggestive Findings)",
+            "Adults can present with a thromboembolic event alone, often cerebrovascular (GeneReviews 2025, Clinical Description)",
+            "Treatable: vitamin B6 (about 40% respond), methionine-restricted diet, betaine (GeneReviews 2025, Table 5)"
+          ],
+          "mustNotMiss": true
+        }
+      ],
+      "workup": [
+        {
+          "test": "Re-read the MRI for a disease pattern",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "Look at: anterior temporal poles, external capsules, pons and middle cerebellar peduncles, pulvinar on T1, microbleeds, enhancement, mass-like lesions (Manini 2023 Table 4)",
+            "Lacunes and microbleeds point to a vascular cause rather than a leukodystrophy (Manini 2023 p.778)"
+          ]
+        },
+        {
+          "test": "Multigene small vessel disease panel",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "Use a panel when several diseases are possible; test the single variant when the familial variant is known (AHA 2023 p.e456)"
+          ]
+        },
+        {
+          "test": "NOTCH3 sequencing (exons 2–24)",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected CADASIL"
+          ],
+          "notes": [
+            "CADASIL (Pescini) scale 0–25: ≥15 suggests CADASIL; use it to select patients for NOTCH3 testing (Manini 2023 p.771)",
+            "AHA 2023: consider NOTCH3 testing for small vessel stroke before 55 y with few vascular risk factors (normotensive, nondiabetic, nonsmoker) or a family history of CADASIL (Table 3)",
+            "Variant of unknown significance: skin biopsy for electron microscopy (GOM) and/or NOTCH3 immunostaining (EAN 2020 p.918)",
+            "Anterior temporal WMH are often present but can be absent (EAN 2020 p.918)"
+          ]
+        },
+        {
+          "test": "Fabry: α-galactosidase A activity in leukocytes (men); GLA sequencing (women)",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected Fabry disease",
+            "Cryptogenic stroke with acroparesthesias, angiokeratomas, proteinuria or left ventricular hypertrophy"
+          ],
+          "notes": [
+            "Enzyme activity can be normal in women (Manini 2023 Table 1)"
+          ]
+        },
+        {
+          "test": "Plasma total homocysteine and plasma amino acids (methionine)",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "CBS deficiency: total homocysteine often >100 µmol/L (normal <15); adult-onset thromboembolic form 50 to >100 µmol/L (GeneReviews 2025, Suggestive Findings, Table 1)",
+            "No vitamin B6, including multivitamins, for 2 weeks before the sample (GeneReviews 2025, Suggestive Findings)",
+            "High homocysteine with low or normal methionine points to a remethylation defect (MTHFR, cobalamin), not CBS deficiency (GeneReviews 2025, Differential Diagnosis)"
+          ]
+        },
+        {
+          "test": "m.3243A>G (urine where possible), then POLG sequencing",
+          "priority": "URGENT",
+          "indication": [
+            "Suspected stroke-like episode"
+          ],
+          "notes": [
+            "Muscle biopsy if both are negative (EAN 2020 p.925)",
+            "Lactate in blood, CSF or MR spectroscopy supports the diagnosis but is neither specific nor highly sensitive (EAN 2020 Table 1)",
+            "Diagnosis of a stroke-like episode needs clinical assessment, MRI and EEG (EAN 2020 p.925)"
+          ]
+        },
+        {
+          "test": "Ophthalmology: slit lamp and fundus",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Visual symptoms",
+            "Suspected Fabry, COL4A1/2, HANAC, RVCL-S, pseudoxanthoma elasticum or homocystinuria"
+          ],
+          "notes": [
+            "Cornea verticillata (Fabry); retinal arteriolar tortuosity (COL4A1/2, HANAC); retinal vasculopathy (RVCL-S); angioid streaks (pseudoxanthoma elasticum); ectopia lentis (homocystinuria) (Manini 2023 p.775; EAN 2020 p.923; GeneReviews 2025)"
+          ]
+        },
+        {
+          "test": "Urinalysis, creatinine, CK, renal ultrasound",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected COL4A1/2, HANAC, Fabry or RVCL-S"
+          ],
+          "notes": [
+            "Hematuria, proteinuria, renal cysts, raised CK (EAN 2020 p.921; Plaisier 2007 pp.2689–2691)"
+          ]
+        },
+        {
+          "test": "CT head, 1 mm sections with sagittal reconstruction",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected CSF1R-related leukoencephalopathy or RVCL-S"
+          ],
+          "notes": [
+            "CSF1R calcifications are very small and easily overlooked (Konno 2018 p.1096)"
+          ]
+        },
+        {
+          "test": "MRA or CTA head",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected COL4A1/2, HANAC or Fabry"
+          ],
+          "notes": [
+            "Aneurysms of the intracranial carotid, middle cerebral and basilar arteries (COL4A1, HANAC); vertebrobasilar dolichoectasia (Fabry) (Manini 2023 p.781)"
+          ]
+        },
+        {
+          "test": "COL4A1 3′UTR (miR-29 binding site) sequencing",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Early-onset ischemic strokes with pontine lacunes"
+          ],
+          "notes": [
+            "Coding-region sequencing of COL4A1 and COL4A2 was negative in the index family (Verdura 2016 p.746)",
+            "Also consider in sporadic cases with pontine lacunes and few vascular risk factors (Verdura 2016 p.750)"
+          ]
+        },
+        {
+          "test": "Genetic counseling before testing",
+          "priority": "ROUTINE",
+          "indication": [],
+          "notes": [
+            "No predictive testing in children (AHA 2023 p.e455)"
+          ]
+        },
+        {
+          "test": "DADA2: plasma or serum ADA2 enzyme activity; ADA2 sequencing",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Suspected DADA2",
+            "Cryptogenic ischemic stroke, unexplained brain hemorrhage (including aneurysm) or spinal cord stroke in childhood or early adulthood (Lee 2023 Table 3, statement 3.5)"
+          ],
+          "notes": [
+            "Near-absent ADA2 activity is diagnostic; normal activity excludes DADA2 (Lee 2023 Table 2, statement 2.3)",
+            "Biallelic pathogenic or likely pathogenic ADA2 variants are diagnostic; one variant means a carrier (Lee 2023 Table 2, statements 2.4–2.5)",
+            "Standard sequencing can miss intronic, regulatory and copy-number variants; if suspicion remains, send enzyme activity or further genetic tests (Lee 2023 Table 2, statement 2.7)",
+            "ADA2 activity is measured by few laboratories; ADA2 is on most inborn-errors-of-immunity and autoinflammatory panels (Lee 2023 p.4)"
+          ]
+        }
+      ],
+      "decisionRules": [
+        {
+          "order": 1,
+          "condition": "Small vessel disease in a patient with conventional vascular risk factors",
+          "recommendation": "Do not exclude a monogenic cause",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi (Table 1): mean 4.54, 84.6% voting 4 or 5"
+          ]
+        },
+        {
+          "order": 2,
+          "condition": "Unexplained symmetrical periventricular WMH plus a family history of migraine with aura, stroke, mood disorder or dementia",
+          "recommendation": "Consider CADASIL",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.92, 100%"
+          ]
+        },
+        {
+          "order": 3,
+          "condition": "Small vessel stroke before 55 y with few vascular risk factors, or a family history of CADASIL",
+          "recommendation": "Consider NOTCH3 testing",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "AHA 2023 scientific statement, Table 3: ungraded consideration"
+          ]
+        },
+        {
+          "order": 4,
+          "condition": "NOTCH3 variant of unknown significance",
+          "recommendation": "Skin biopsy for electron microscopy and/or NOTCH3 immunostaining",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.54, 92.8%"
+          ]
+        },
+        {
+          "order": 5,
+          "condition": "Early scalp alopecia, severe spondylosis, and unexplained early lacunar strokes or symmetrical WMH",
+          "recommendation": "Consider CARASIL",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.92, 100%"
+          ]
+        },
+        {
+          "order": 6,
+          "condition": "Deep ICH or WMH of undetermined origin with a first- or second-degree relative who has cerebral hemorrhage, porencephaly, retinal vessel tortuosity, hematuria, renal cysts or insufficiency, infantile hemiparesis, early cataract, anterior segment abnormality, multiple intracranial aneurysms, muscle cramps or a hepatic cyst; or early-onset pontine infarcts",
+          "recommendation": "Seek a COL4A1 or COL4A2 variant",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.78, 100%",
+            "Early-onset pontine infarcts are in the text version of the statement (p.921), not in Table 1"
+          ]
+        },
+        {
+          "order": 7,
+          "condition": "Clinical or genetic diagnosis of CADASIL",
+          "recommendation": "Avoid diagnostic cerebral catheter angiography (relative contraindication); exception: known symptomatic acute large vessel occlusion. 11 of 16 had neurologic symptoms lasting hours to weeks after angiography",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "AHA 2023 scientific statement, p.e458 and Table 3: ungraded consideration"
+          ]
+        },
+        {
+          "order": 8,
+          "condition": "COL4A1/2 disease",
+          "recommendation": "Antiplatelet and anticoagulant treatment not recommended",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.71, 100%"
+          ]
+        },
+        {
+          "order": 9,
+          "condition": "COL4A1/2 disease, acute ischemic stroke",
+          "recommendation": "IV thrombolysis not recommended",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.71, 100%"
+          ]
+        },
+        {
+          "order": 10,
+          "condition": "CADASIL, acute ischemic stroke",
+          "recommendation": "EAN: no thrombolysis unless the stroke is from a large-artery occlusion with a concurrent cause. AHA: safety and efficacy unknown for small vessel stroke, decide case by case; for an unrelated large vessel stroke, thrombectomy without thrombolysis may be preferred",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.69, 100%",
+            "AHA 2023 scientific statement, p.e456 and Table 3: ungraded consideration",
+            "The two documents differ; both are shown"
+          ]
+        },
+        {
+          "order": 11,
+          "condition": "CADASIL, anticoagulation",
+          "recommendation": "Not recommended for stroke prophylaxis; not contraindicated when there is another indication (e.g., atrial fibrillation, pulmonary embolus)",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.77, 100%",
+            "AHA 2023 Table 3 (ungraded): with high-risk atrial fibrillation, appendage occlusion may be preferred to long-term anticoagulation, particularly with a high microbleed burden"
+          ]
+        },
+        {
+          "order": 12,
+          "condition": "Fabry disease, acute ischemic stroke",
+          "recommendation": "Systemic thrombolysis is not contraindicated",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.69, 100%"
+          ]
+        },
+        {
+          "order": 13,
+          "condition": "MELAS stroke-like episode",
+          "recommendation": "Fibrinolysis is not indicated",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "EAN 2020 Delphi: mean 4.85, 100%"
+          ]
+        },
+        {
+          "order": 14,
+          "condition": "DADA2",
+          "recommendation": "Avoid antiplatelet, anticoagulant and other antithrombotic therapy, to prevent hemorrhagic stroke",
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "DADA2 consensus 2023 Delphi, statement 5.5: LOE 5 (D), agreement 8.3 of 9 (Lee 2023 Table 5)",
+            "Secondary hemorrhagic conversion of stroke has been documented (Lee 2023 p.7)"
+          ]
+        }
+      ],
+      "initialSteps": [
+        "Complete the standard stroke or ICH etiology workup first: see young-stroke-workup and ich-etiology-workup",
+        "Lobar hemorrhage pattern: see boston-criteria-caa"
+      ],
+      "disposition": [
+        "Genetics referral; offer relatives genetic counseling (EAN 2020 Table 1: mean 4.84, 100%)",
+        "Follow-up at a specialized center or with an expert neurologist (EAN 2020 Table 1: mean 4.77, 100%)",
+        "Confirmed COL4A1/2 variant: brain MRI, intracranial and cervical MRA, echocardiogram, eye exam with ocular pressure, renal and liver ultrasound, CK (EAN 2020 p.921 and Table 1: mean 4.93, 100%)"
+      ],
+      "calculatorIds": [],
+      "institutionVaries": [
+        "Which panel and laboratory; whether the gene list covers HTRA1, COL4A1/2 including the 3′UTR, TREX1, CTSA, CSF1R and ADA2",
+        "Mitochondrial DNA testing route and sample type",
+        "α-galactosidase A assay availability and turnaround",
+        "Genetics referral route and inpatient versus outpatient testing"
+      ],
+      "pearls": [
+        "CADASIL has been diagnosed as MS; the corpus callosum can be involved (EAN 2020 p.918)",
+        "Fewer than 2% of younger-onset lacunar strokes are genetically confirmed CADASIL (AHA 2023 p.e452)",
+        "Fabry disease explains less than 1% of cryptogenic ischemic strokes in young adults (EAN 2020 p.925)",
+        "Monogenic small vessel diseases cause 1%–5% of all strokes (Manini 2023 p.766)",
+        "Sources disagree on migraine frequency in CADASIL: about 30% (AHA 2023 p.e452) and up to 45% (Manini 2023 p.771)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "consult-workups:young-stroke-workup",
+        "consult-workups:ich-etiology-workup",
+        "reference-cards:boston-criteria-caa"
+      ],
+      "sources": [
+        "Manini A, Pantoni L. Genetic Causes of Cerebral Small Vessel Diseases: A Practical Guide for Neurologists. Neurology 2023;100:766-783. doi:10.1212/WNL.0000000000201720",
+        "Mancuso M, et al. Monogenic cerebral small-vessel diseases: diagnosis and therapy. Consensus recommendations of the European Academy of Neurology. Eur J Neurol 2020;27:909-927. doi:10.1111/ene.14183",
+        "Meschia JF, et al. Management of Inherited CNS Small Vessel Diseases: The CADASIL Example: A Scientific Statement From the American Heart Association. Stroke 2023;54:e452-e464. doi:10.1161/STR.0000000000000444",
+        "Verdura E, et al. Disruption of a miR-29 binding site leading to COL4A1 upregulation causes pontine autosomal dominant microangiopathy with leukoencephalopathy. Ann Neurol 2016;80:741-753. doi:10.1002/ana.24782",
+        "Plaisier E, et al. COL4A1 mutations and hereditary angiopathy, nephropathy, aneurysms, and muscle cramps. N Engl J Med 2007;357:2687-2695.",
+        "Nozaki H, et al. Characteristic features and progression of abnormalities on MRI for CARASIL. Neurology 2015;85:459-463.",
+        "Moore DF, et al. Increased signal intensity in the pulvinar on T1-weighted images: a pathognomonic MR imaging sign of Fabry disease. AJNR Am J Neuroradiol 2003;24:1096-1101.",
+        "Konno T, et al. CSF1R-related leukoencephalopathy: a major player in primary microgliopathies. Neurology 2018;91:1092-1104. doi:10.1212/WNL.0000000000006642",
+        "Sacharow SJ, Levy HL. Homocystinuria due to Cystathionine Beta-Synthase Deficiency. GeneReviews, updated 2025 Sep 25. University of Washington, Seattle. Cited by section; page numbers are PDF pages.",
+        "Testai FD, Gorelick PB. Inherited metabolic disorders and stroke part 2: homocystinuria, organic acidurias, and urea cycle disorders. Arch Neurol 2010;67(2):148-153.",
+        "Lee PY, et al. Evaluation and Management of Deficiency of Adenosine Deaminase 2: An International Consensus Statement. JAMA Netw Open 2023;6(5):e2315894. doi:10.1001/jamanetworkopen.2023.15894"
+      ],
+      "lastReviewed": "2026-11-12"
     }
   ]
 }
