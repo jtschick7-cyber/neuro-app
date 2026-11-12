@@ -10,6 +10,7 @@ import About from './components/About';
 import Home from './components/Home';
 import { SearchLauncher } from './components/GlobalSearch';
 import DisclaimerGate from './components/DisclaimerGate';
+import UpdateBar from './components/UpdateBar';
 import { usePatientContext, type PatientContext } from './lib/patientContext';
 import { useRoute } from './lib/useRoute';
 import { sectionOf, toHash, type Route } from './lib/route';
@@ -34,23 +35,27 @@ export default function App() {
     if (!(route.kind === 'calc' && route.calcId)) window.scrollTo(0, 0);
   }, [hash]);
 
+  // UpdateBar sits outside the gate so the service worker registers (and precaches) on first load.
   return (
-    <DisclaimerGate>
-      <div className="min-h-screen bg-slate-950 text-slate-200">
-        <ContextBar context={context} onChange={update} onClear={clear} forceExpanded={route.kind === 'calc'} />
-        <main className="mx-auto max-w-3xl px-3 py-4" style={{ paddingBottom: 'calc(5.5rem + env(safe-area-inset-bottom))' }}>
-          <Screen route={route} context={context} />
-          <p className="mt-6 text-center text-xs text-slate-400">
-            Decision support only — verify doses before ordering. Content {about.contentVersion} · Build {__BUILD_ID__} ·{' '}
-            <a href="#/about" className="text-slate-400 underline">
-              About
-            </a>
-          </p>
-        </main>
-        {route.kind !== 'home' && <SearchLauncher key={hash} />}
-        <NavBar active={sectionOf(route)} />
-      </div>
-    </DisclaimerGate>
+    <>
+      <UpdateBar />
+      <DisclaimerGate>
+        <div className="min-h-screen bg-slate-950 text-slate-200">
+          <ContextBar context={context} onChange={update} onClear={clear} forceExpanded={route.kind === 'calc'} />
+          <main className="mx-auto max-w-3xl px-3 py-4" style={{ paddingBottom: 'calc(5.5rem + env(safe-area-inset-bottom))' }}>
+            <Screen route={route} context={context} />
+            <p className="mt-6 text-center text-xs text-slate-400">
+              Decision support only — verify doses before ordering. Content {about.contentVersion} · Build {__BUILD_ID__} ·{' '}
+              <a href="#/about" className="text-slate-400 underline">
+                About
+              </a>
+            </p>
+          </main>
+          {route.kind !== 'home' && <SearchLauncher key={hash} />}
+          <NavBar active={sectionOf(route)} />
+        </div>
+      </DisclaimerGate>
+    </>
   );
 }
 

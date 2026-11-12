@@ -6,7 +6,8 @@ import EntryFooter from './EntryFooter';
 import RelatedLinks from './RelatedLinks';
 import DrugTabs from './DrugTabs';
 import { Bullets, EvidenceBadge, EvidenceNote, JumpChips, KeyNumbers, Section, Sources, TreatmentList, WorkupList, type JumpTarget } from './ProtocolParts';
-import { ENTRY_LAYOUT_COPY } from '../content/copy';
+import LoadError from './LoadError';
+import { ENTRY_LAYOUT_COPY, UPDATE_COPY } from '../content/copy';
 import { PinButton } from './Pins';
 import {
   CATEGORY_LABEL,
@@ -58,7 +59,7 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
   const groups = useMemo(() => groupByCategory(searchEntries(entries, query)), [entries, query]);
 
   if (state.status === 'loading') return <p className="text-sm text-slate-400">Loading…</p>;
-  if (state.status === 'error') return <p className="text-sm text-red-300">Couldn’t load this section. Reload the app.</p>;
+  if (state.status === 'error') return <LoadError message={UPDATE_COPY.sectionFailed} />;
 
   if (entryId !== undefined) {
     const entry = entries.find((e) => e.id === entryId);
