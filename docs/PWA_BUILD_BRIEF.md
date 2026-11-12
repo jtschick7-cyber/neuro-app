@@ -15,11 +15,13 @@
 
 ## Registries → screen types
 - `acute-neuro` — emergency protocol (immediate actions, workup, treatment, pitfalls) — **built**
-- `consult-workups` — consult workup (differential, workup priorities, decision rules, recs template) — **built**
+- `consult-workups` — consult workup (differential, workup priorities, decision rules) — **built**
 - `vascular-antithrombotics` — union on `kind`: `AGENT` (drug card) | `DECISION` (ordered rules) — **built**
 - `neural-antibodies` — antibody card — **built**
 - Caution lists (`schema/caution-list.ts`): `mg-contraindications`, `seizure-threshold`, `rcvs-triggers` — **built** (`MgRegistryView`, `ReferenceCard`)
 - Interaction list (`schema/drug-interactions.ts`): `asm-interactions` — **built**
+- `antiseizure-medications` — ASM dosing card (`schema/antiseizure-medications.ts`) — **built** (`ReferenceViews`)
+- `reference-cards` — lookup cards (`schema/reference-cards.ts`) — **built** (`ReferenceViews`)
 - Cross-links: `relatedIds` are `"registry:id"`; `"calc:<id>"` and `calculatorIds` open calculators — **built** (`RelatedLinks`, `src/lib/links.ts`)
 
 ## Calculators

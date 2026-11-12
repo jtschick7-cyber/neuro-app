@@ -35,3 +35,19 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+  # Tag each new content version once (docs/RELEASE_CHECKLIST.md); code-only deploys keep the same content version and skip.
+  tag:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tag content-<contentVersion> if new
+        run: |
+          t="content-$(node -p "require('./generated/about.json').contentVersion")"
+          if git ls-remote --exit-code --tags origin "refs/tags/$t" >/dev/null; then
+            echo "$t already exists"
+          else
+            git tag "$t" && git push origin "$t"
+          fi

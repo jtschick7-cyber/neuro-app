@@ -69,3 +69,38 @@ export function collectCalculatorIds(value: unknown, path = ""): { path: string;
     return collectCalculatorIds(v, p);
   });
 }
+
+/** Every string inside a value, with its JSON path (relatedIds and sources are skipped: checked elsewhere / free citation text). */
+export function collectStrings(value: unknown, path = ""): { path: string; text: string }[] {
+  if (typeof value === "string") return [{ path, text: value }];
+  if (Array.isArray(value)) return value.flatMap((v, i) => collectStrings(v, `${path}[${i}]`));
+  if (!value || typeof value !== "object") return [];
+  return Object.entries(value).flatMap(([k, v]) => (k === "relatedIds" || k === "sources" ? [] : collectStrings(v, path ? `${path}.${k}` : k)));
+}
+
+/**
+ * Id-shaped cross-references written in prose:
+ * - "registry:id" where registry is a known registry name (or "calc") must resolve
+ * - "see <kebab-id>" (at least one hyphen) must name an entry id, a registry or a calculator id
+ */
+export function findProseRefProblems(
+  entry: unknown,
+  ids: Map<string, Set<string>>,
+  calcIds: Set<string> | null,
+): { path: string; ref: string }[] {
+  const all = new Set([...ids.values()].flatMap((s) => [...s]));
+  const out: { path: string; ref: string }[] = [];
+  for (const { path, text } of collectStrings(entry)) {
+    for (const m of text.matchAll(/\b([a-z][a-z0-9]*(?:-[a-z0-9]+)*):([a-z0-9]+(?:-[a-z0-9]+)*)\b/g)) {
+      const [ref, reg, id] = m;
+      if (reg === "calc") { if (calcIds && !calcIds.has(id)) out.push({ path, ref }); }
+      else if (ids.has(reg) && !ids.get(reg)!.has(id)) out.push({ path, ref });
+    }
+    for (const m of text.matchAll(/\bsee ([a-z0-9]+(?:-[a-z0-9]+)+)\b(?![:\w-])/gi)) {
+      const id = m[1];
+      if (id !== id.toLowerCase()) continue; // capitalised words are prose, not ids
+      if (!all.has(id) && !ids.has(id) && !(calcIds?.has(id))) out.push({ path, ref: m[0] }); // an entry, a registry or a calculator
+    }
+  }
+  return out;
+}

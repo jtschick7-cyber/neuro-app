@@ -1,6 +1,7 @@
 /**
  * Validate registry JSON files.
  *
+ *   npx tsx scripts/validate.ts                        # no file arguments → every data/*.json (globbed here, not by the shell)
  *   npx tsx scripts/validate.ts data/*.json            # dev: schema + integrity errors, verify[] reported as warnings
  *   npx tsx scripts/validate.ts --release data/*.json  # release: also fails on open verify[] or UNREVIEWED entries
  *
@@ -11,21 +12,21 @@
  * Signed entries are compared with their sign-off hash in generated/signoff.json (override: --signoff=<path>);
  * see scripts/integrity.ts.
  */
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
-import type { ZodTypeAny } from "zod";
-import { AcuteNeuroRegistry } from "../schema/acute-neuro";
-import { NeuralAntibodiesRegistry } from "../schema/neural-antibodies";
+import type { z, ZodTypeAny } from "zod";
+import { AcuteNeuroRegistry, ACUTE_NEURO_SCHEMA_VERSION } from "../schema/acute-neuro";
+import { NeuralAntibodiesRegistry, NEURAL_ANTIBODIES_SCHEMA_VERSION } from "../schema/neural-antibodies";
 import { SyndromeVocabulary, checkSyndromeIntegrity, type SyndromeVocabularyData } from "../schema/syndrome-vocabulary";
-import { VascularAntithromboticsRegistry } from "../schema/vascular-antithrombotics";
-import { ConsultWorkupsRegistry } from "../schema/consult-workups";
-import { CautionListRegistry } from "../schema/caution-list";
-import { DrugInteractionsRegistry } from "../schema/drug-interactions";
-import { AntiseizureMedicationsRegistry } from "../schema/antiseizure-medications";
-import { ReferenceCardsRegistry } from "../schema/reference-cards";
+import { VascularAntithromboticsRegistry, VASCULAR_ANTITHROMBOTICS_SCHEMA_VERSION } from "../schema/vascular-antithrombotics";
+import { ConsultWorkupsRegistry, CONSULT_WORKUPS_SCHEMA_VERSION } from "../schema/consult-workups";
+import { CautionListRegistry, CAUTION_LIST_SCHEMA_VERSION, type CautionEntry } from "../schema/caution-list";
+import { DrugInteractionsRegistry, DRUG_INTERACTIONS_SCHEMA_VERSION } from "../schema/drug-interactions";
+import { AntiseizureMedicationsRegistry, ANTISEIZURE_MEDICATIONS_SCHEMA_VERSION } from "../schema/antiseizure-medications";
+import { ReferenceCardsRegistry, REFERENCE_CARDS_SCHEMA_VERSION } from "../schema/reference-cards";
 import { CALCULATOR_META } from "../src/lib/calculators";
 import { findPlaceholderText } from "./placeholder-text";
-import { SIGNOFF_FILE, checkSignoffs, collectCalculatorIds, readSignoffs, type RawEntry } from "./integrity";
+import { SIGNOFF_FILE, checkSignoffs, collectCalculatorIds, findProseRefProblems, readSignoffs, type RawEntry } from "./integrity";
 
 const SCHEMAS: Record<string, ZodTypeAny> = {
   "acute-neuro": AcuteNeuroRegistry,
@@ -43,9 +44,26 @@ const SCHEMAS: Record<string, ZodTypeAny> = {
   "reference-cards": ReferenceCardsRegistry,
 };
 
+// data/*.json schemaVersion must equal the constant in its schema file (syndrome-vocabulary has none).
+const SCHEMA_VERSIONS: Record<string, string> = {
+  "acute-neuro": ACUTE_NEURO_SCHEMA_VERSION,
+  "neural-antibodies": NEURAL_ANTIBODIES_SCHEMA_VERSION,
+  "vascular-antithrombotics": VASCULAR_ANTITHROMBOTICS_SCHEMA_VERSION,
+  "consult-workups": CONSULT_WORKUPS_SCHEMA_VERSION,
+  "mg-contraindications": CAUTION_LIST_SCHEMA_VERSION,
+  "seizure-threshold": CAUTION_LIST_SCHEMA_VERSION,
+  "rcvs-triggers": CAUTION_LIST_SCHEMA_VERSION,
+  "asm-interactions": DRUG_INTERACTIONS_SCHEMA_VERSION,
+  "antiseizure-medications": ANTISEIZURE_MEDICATIONS_SCHEMA_VERSION,
+  "reference-cards": REFERENCE_CARDS_SCHEMA_VERSION,
+};
+
 const args = process.argv.slice(2);
 const release = args.includes("--release");
-const files = args.filter((a) => !a.startsWith("--") && !a.endsWith(".manifest.json"));
+const fileArgs = args.filter((a) => !a.startsWith("--"));
+const files = (fileArgs.length ? fileArgs : readdirSync("data").filter((f) => f.endsWith(".json")).sort().map((f) => join("data", f))).filter(
+  (f) => !f.endsWith(".manifest.json"),
+);
 const signoffPath = args.find((a) => a.startsWith("--signoff="))?.slice("--signoff=".length) ?? SIGNOFF_FILE;
 const signoffs = readSignoffs(signoffPath);
 if (files.length === 0) {
@@ -81,6 +99,9 @@ for (const file of files) {
     for (const i of res.error.issues) err(`${file}: ${i.path.join(".") || "(root)"}: ${i.message}`);
     continue;
   }
+  const wantSchema = SCHEMA_VERSIONS[reg];
+  const gotSchema = (raw as { schemaVersion?: string }).schemaVersion;
+  if (wantSchema && gotSchema !== wantSchema) err(`${file}: schemaVersion ${gotSchema} does not match schema/${reg} constant ${wantSchema}`);
   if (reg === "syndrome-vocabulary") {
     syndromes = res.data as SyndromeVocabularyData;
     continue;
@@ -122,6 +143,12 @@ for (const [reg, entries] of loaded) {
   }
 }
 
+// Prose cross-references ("registry:id", "see <id>") must resolve too.
+const idSets = new Map([...loaded].map(([reg, entries]) => [reg, new Set(entries.map((e) => e.id))]));
+for (const [reg, entries] of loaded)
+  for (const e of entries)
+    for (const p of findProseRefProblems(e, idSets, calcIds)) err(`${reg}:${e.id}: ${p.path}: "${p.ref}" in text does not resolve`);
+
 // Syndrome vocabulary: mapping must be consistent with the neural-antibodies registry.
 if (syndromes) {
   const antibodies = loaded.get("neural-antibodies");
@@ -131,7 +158,7 @@ if (syndromes) {
 
 // Caution lists: a safer alternative must not name a drug or class listed in another entry of the same list.
 for (const listName of ["mg-contraindications", "seizure-threshold", "rcvs-triggers"]) {
-  const list = loaded.get(listName);
+  const list = loaded.get(listName) as unknown as z.infer<typeof CautionEntry>[] | undefined;
   if (!list) continue;
   for (const e of list) {
     for (const alt of e.saferAlternatives ?? []) {
