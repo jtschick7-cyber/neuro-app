@@ -21,14 +21,6 @@ describe("fosphenytoin-load", () => {
     "%d kg → %d mg PE, ≥%d min", (kg, mg, min) => { const r = C.fosphenytoinLoad(kg); expect(r.value).toBe(mg); expect(r.parts?.minInfusionMinutes).toBe(min); });
 });
 
-describe("lacosamide-load", () => {
-  it.each([[undefined, 0], [80, 0], [50, 0], [49.9, 1], [40, 1]])(
-    "weight %s → fixed 200–400 mg, %d warnings", (kg, nWarn) => {
-      const r = C.lacosamideLoad(kg as number | undefined);
-      expect(r.range).toEqual([200, 400]); expect(r.value).toBeNull(); expect(r.warnings.length).toBe(nWarn);
-    });
-});
-
 describe("hypertonic-saline-bolus (ICP, institutional protocol)", () => {
   it.each([
     ["3%", {}, 250, 128.3, false],
@@ -51,10 +43,13 @@ describe("mannitol-dose", () => {
 
 describe("osmolar gap", () => {
   it.each([
-    [310, 140, 90, 14, 20, false], [330, 145, 108, 28, 24, false], [360, 140, 180, 28, 60, true], [290, 140, 90, 14, 0, false], [340, 150, 126, 14, 28, false],
+    [310, 140, 90, 14, 20, false], [330, 145, 108, 28, 24, true], [360, 140, 180, 28, 60, true], [290, 140, 90, 14, 0, false], [340, 150, 126, 14, 28, true],
   ])("osm %d Na %d glu %d BUN %d → gap %d", (osm, na, glu, bun, gap, warn) => {
     const r = C.osmolarGap(osm, na, glu, bun);
     expect(r.value).toBe(gap); expect(r.warnings.length > 0).toBe(warn);
+  });
+  it("warns above 20, not 55 (decided 2026-11-12)", () => {
+    expect(C.osmolarGap(311, 140, 90, 14).warnings).toEqual([C.OSMOLAR_GAP_WARNING]); // gap 21
   });
 });
 
@@ -74,63 +69,6 @@ describe("ledd", () => {
 describe("cockcroft-gault", () => {
   it.each([[60, 70, 1.0, false, 78], [60, 70, 1.0, true, 66], [80, 50, 2.0, false, 21], [40, 100, 0.8, false, 174], [90, 45, 1.5, true, 18]])(
     "age %d wt %d SCr %d female %s → %d", (age, wt, scr, f, out) => expect(C.cockcroftGault(age, wt, scr, f).value).toBe(out));
-});
-
-describe("ich-score", () => {
-  it.each([
-    [{ gcs: 15, volumeMl: 10, ivh: false, infratentorial: false, ageY: 60 }, 0, "0%"],
-    [{ gcs: 12, volumeMl: 30, ivh: false, infratentorial: false, ageY: 60 }, 2, "26%"],
-    [{ gcs: 4, volumeMl: 50, ivh: true, infratentorial: true, ageY: 85 }, 6, "no patients in derivation cohort"],
-    [{ gcs: 13, volumeMl: 29.9, ivh: true, infratentorial: false, ageY: 80 }, 2, "26%"],
-    [{ gcs: 4, volumeMl: 35, ivh: false, infratentorial: false, ageY: 79 }, 3, "72%"],
-  ])("%j → %d (%s)", (i, s, m) => { const r = C.ichScore(i); expect(r.value).toBe(s); expect(r.parts?.mortality30d).toBe(m); });
-});
-
-describe("abcd2", () => {
-  it.each([
-    [{ ageY: 65, bpHigh: true, weakness: true, speechOnly: false, durationMin: 90, diabetes: true }, 7],
-    [{ ageY: 50, bpHigh: false, weakness: false, speechOnly: false, durationMin: 5, diabetes: false }, 0],
-    [{ ageY: 60, bpHigh: false, weakness: false, speechOnly: true, durationMin: 10, diabetes: false }, 3],
-    [{ ageY: 59, bpHigh: true, weakness: true, speechOnly: true, durationMin: 59, diabetes: false }, 4],
-    [{ ageY: 70, bpHigh: true, weakness: false, speechOnly: false, durationMin: 60, diabetes: true }, 5],
-  ])("%j → %d", (i, s) => expect(C.abcd2(i).value).toBe(s));
-});
-
-describe("cha2ds2-vasc", () => {
-  it.each([
-    [{ chf: false, htn: false, ageY: 50, diabetes: false, strokeTiaTe: false, vascular: false, female: false }, 0],
-    [{ chf: false, htn: false, ageY: 50, diabetes: false, strokeTiaTe: false, vascular: false, female: true }, 1],
-    [{ chf: false, htn: true, ageY: 70, diabetes: false, strokeTiaTe: true, vascular: false, female: false }, 4],
-    [{ chf: true, htn: true, ageY: 80, diabetes: true, strokeTiaTe: true, vascular: true, female: true }, 9],
-    [{ chf: false, htn: false, ageY: 75, diabetes: true, strokeTiaTe: false, vascular: false, female: false }, 3],
-  ])("%j → %d", (i, s) => expect(C.cha2ds2Vasc(i).value).toBe(s));
-});
-
-describe("has-bled", () => {
-  const base = { htn: false, renal: false, liver: false, stroke: false, bleeding: false, labileInr: false, ageY: 50, drugs: false, alcohol: false };
-  it.each([
-    [base, 0], [{ ...base, ageY: 66 }, 1], [{ ...base, ageY: 65 }, 0], [{ ...base, stroke: true, drugs: true, htn: true }, 3],
-    [{ htn: true, renal: true, liver: true, stroke: true, bleeding: true, labileInr: true, ageY: 70, drugs: true, alcohol: true }, 9],
-  ])("%j → %d", (i, s) => expect(C.hasBled(i).value).toBe(s));
-});
-
-describe("tnk-dose", () => {
-  it.each([[55, false, 15], [60, false, 17.5], [79.9, false, 20], [90, false, 25], [45.6, true, 11.25]])(
-    "%d kg (exact <50: %s) → %d mg", (kg, exact, mg) => expect(C.tnkDose(kg, { exactWeightUnder50: exact }).value).toBe(mg));
-});
-
-describe("alteplase-dose", () => {
-  it.each([[70, 63, 6.3, 56.7], [100, 90, 9, 81], [120, 90, 9, 81], [55, 49.5, 5, 44.5], [83, 74.7, 7.5, 67.2]])(
-    "%d kg → %d mg (bolus %d, infusion %d)", (kg, tot, b, inf) => {
-      const r = C.alteplaseDose(kg); expect(r.value).toBe(tot); expect(r.parts?.bolus).toBe(b); expect(r.parts?.infusion).toBe(inf);
-    });
-});
-
-describe("ivig-dose", () => {
-  it.each([[70, 5, 30, 150], [80, 5, 30, 150], [100, 2, 100, 200], [62, 5, 25, 125], [50, 4, 25, 100]] as const)(
-    "%d kg over %d days → %d g/day", (kg, days, daily, total) => {
-      const r = C.ivigDose(kg, { days }); expect(r.parts?.dailyG).toBe(daily); expect(r.value).toBe(total);
-    });
 });
 
 describe("sodium-correction", () => {

@@ -58,50 +58,6 @@ export function Result({ r, label, badge }: { r: CalcResult | string; label: str
   );
 }
 
-/** Primary dose in large type, with volume/rate/administration detail beneath it. Falls back to the full display string. */
-export function DoseResult({ r, label }: { r: CalcResult | string; label: string }) {
-  if (typeof r === 'string') return <p className="py-2 text-sm text-red-300">{label}: {r}</p>;
-  const primary = `${r.value} ${r.unit}`;
-  const split = r.display.startsWith(primary);
-  return (
-    <div className="py-2">
-      <div className="text-sm text-slate-200">{label}</div>
-      <div className="text-2xl font-bold text-sky-400">{split ? primary : r.display}</div>
-      {split && <div className="text-sm font-normal text-slate-300">{r.display.slice(primary.length).trim()}</div>}
-      <Warnings items={r.warnings} />
-    </div>
-  );
-}
-
-/** Alteplase as bolus / infusion tiles (numbers from the calculator's `parts`), to avoid read-back errors in a code. */
-export function AlteplaseResult({ r }: { r: CalcResult | string }) {
-  if (typeof r === 'string') return <p className="py-2 text-sm text-red-300">Alteplase: {r}</p>;
-  const bolus = r.parts?.bolus;
-  const infusion = r.parts?.infusion;
-  if (bolus === undefined || infusion === undefined) return <Result r={r} label="Alteplase" />;
-  return (
-    <div className="py-2">
-      <div className="flex items-baseline justify-between gap-2">
-        <span className="text-sm font-medium text-slate-200">Alteplase (0.9 mg/kg)</span>
-        <span className="text-xs font-medium text-slate-400">Total: {r.value} {r.unit} (max 90 mg)</span>
-      </div>
-      <div className="mt-2 grid grid-cols-2 gap-2">
-        <div className="rounded-lg border border-slate-800 bg-slate-900/90 p-2.5">
-          <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">10% Bolus</div>
-          <div className="mt-0.5 text-xl font-bold text-sky-400">{bolus} mg</div>
-          <div className="text-xs text-slate-300">IV push over 1 min</div>
-        </div>
-        <div className="rounded-lg border border-slate-800 bg-slate-900/90 p-2.5">
-          <div className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">90% Infusion</div>
-          <div className="mt-0.5 text-xl font-bold text-sky-400">{infusion} mg</div>
-          <div className="text-xs text-slate-300">Over 60 min (1 mg/mL)</div>
-        </div>
-      </div>
-      <Warnings items={r.warnings} />
-    </div>
-  );
-}
-
 /** Formula, caps, rounding and sources straight from CALCULATOR_META; version and ids are tucked inside. */
 function MetaFooter({ ids }: { ids: string[] }) {
   return (

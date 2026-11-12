@@ -67,16 +67,6 @@ export function fosphenytoinLoad(weightKg: number): CalcResult {
   return { ...r, parts: { ...r.parts, minInfusionMinutes: minMinutes }, display: `${r.display}; infuse over ≥${fmt(minMinutes)} min (≤150 mg PE/min)` };
 }
 
-export function lacosamideLoad(weightKg?: number): CalcResult {
-  const warnings: string[] = [];
-  if (weightKg !== undefined) {
-    reqWeight(weightKg);
-    if (weightKg < 50)
-      warnings.push("Weight <50 kg: no adult status-epilepticus source supports weight-based lacosamide; confirm dose with pharmacy");
-  }
-  return { value: null, unit: "mg", range: [200, 400], display: "200–400 mg IV (fixed, NCS 2012)", capped: false, warnings };
-}
-
 // ---------- 1b. Phenytoin level correction and reload (item 7.1; spec planning/drafts/calc-phenytoin-correction.md) ----------
 export type LevelBand = "BELOW" | "WITHIN" | "ABOVE";
 const band = (x: number, lo: number, hi: number): LevelBand => (x < lo ? "BELOW" : x > hi ? "ABOVE" : "WITHIN");
@@ -268,12 +258,17 @@ export function mannitolDose(weightKg: number): CalcResult {
   };
 }
 
+export const OSMOLAR_GAP_WARN_ABOVE = 20;
+export const OSMOLAR_GAP_WARNING =
+  "Gap above 20 mOsm/kg — mannitol may be accumulating; AKI risk (ENLS v6 cites 20–55; NCS 2020 found no evidence for a specific cutoff)";
+
 /** Osmolar gap = measured − calculated (2·Na + glucose/18 + BUN/2.8), US units. */
 export function osmolarGap(measuredOsm: number, naMmol: number, glucoseMgDl: number, bunMgDl: number): CalcResult {
   req("measuredOsm", measuredOsm, 200, 450); req("naMmol", naMmol, 100, 200); req("glucoseMgDl", glucoseMgDl, 10, 2000); req("bunMgDl", bunMgDl, 1, 300);
   const calc = 2 * naMmol + glucoseMgDl / 18 + bunMgDl / 2.8;
   const gap = roundTo(measuredOsm - calc, 1);
-  const warnings = gap > 55 ? ["Gap above the 20–55 mOsm/kg range cited by ENLS v6 — little added benefit, AKI risk"] : [];
+  // Threshold 20 (decided 2026-11-12, audit P2-14; was 55, the top of the ENLS v6 range).
+  const warnings = gap > OSMOLAR_GAP_WARN_ABOVE ? [OSMOLAR_GAP_WARNING] : [];
   return { value: gap, unit: "mOsm/kg", display: `${gap} mOsm/kg (calculated osm ${roundTo(calc, 1)})`, capped: false, warnings, parts: { calculatedOsm: roundTo(calc, 1) } };
 }
 
@@ -341,90 +336,6 @@ export function cockcroftGault(ageY: number, weightKg: number, scrMgDl: number, 
   return { value: v, unit: "mL/min", display: `${v} mL/min (actual body weight)`, capped: false, warnings: weightCaution(weightKg) };
 }
 
-// ---------- 6. Scores ----------
-/** Hemphill 2001 UCSF derivation cohort (n=152). No patient scored 6. */
-export const ICH_SCORE_MORTALITY = ["0%", "13%", "26%", "72%", "97%", "100%", "no patients in derivation cohort"];
-export function ichScore(i: { gcs: number; volumeMl: number; ivh: boolean; infratentorial: boolean; ageY: number }): CalcResult {
-  req("gcs", i.gcs, 3, 15); req("volumeMl", i.volumeMl, 0, 500); req("ageY", i.ageY, 18, 120);
-  const parts = { gcs: i.gcs <= 4 ? 2 : i.gcs <= 12 ? 1 : 0, volume: i.volumeMl >= 30 ? 1 : 0, ivh: i.ivh ? 1 : 0, infratentorial: i.infratentorial ? 1 : 0, age: i.ageY >= 80 ? 1 : 0 };
-  const v = Object.values(parts).reduce((a, b) => a + b, 0);
-  const mort = ICH_SCORE_MORTALITY[v];
-  return { value: v, unit: "points", display: `ICH score ${v}/6 — derivation-cohort 30-day mortality ${mort}`, capped: false, warnings: [], parts: { ...parts, mortality30d: mort } };
-}
-
-export function abcd2(i: { ageY: number; bpHigh: boolean; weakness: boolean; speechOnly: boolean; durationMin: number; diabetes: boolean }): CalcResult {
-  req("ageY", i.ageY, 18, 120); req("durationMin", i.durationMin, 0, 1440);
-  const clinical = i.weakness ? 2 : i.speechOnly ? 1 : 0;
-  const duration = i.durationMin >= 60 ? 2 : i.durationMin >= 10 ? 1 : 0;
-  const parts = { age: i.ageY >= 60 ? 1 : 0, bp: i.bpHigh ? 1 : 0, clinical, duration, diabetes: i.diabetes ? 1 : 0 };
-  const v = Object.values(parts).reduce((a, b) => a + b, 0);
-  return { value: v, unit: "points", display: `ABCD2 ${v}/7`, capped: false, warnings: v >= 4 ? [] : ["ABCD2 misses posterior-circulation signs, mechanism and stenosis — image vessels regardless (Amin 2023)"], parts };
-}
-
-export function cha2ds2Vasc(i: { chf: boolean; htn: boolean; ageY: number; diabetes: boolean; strokeTiaTe: boolean; vascular: boolean; female: boolean }): CalcResult {
-  req("ageY", i.ageY, 18, 120);
-  const parts = { chf: +i.chf, htn: +i.htn, age: i.ageY >= 75 ? 2 : i.ageY >= 65 ? 1 : 0, diabetes: +i.diabetes, stroke: i.strokeTiaTe ? 2 : 0, vascular: +i.vascular, sex: +i.female };
-  const v = Object.values(parts).reduce((a, b) => a + b, 0);
-  return { value: v, unit: "points", display: `CHA₂DS₂-VASc ${v}/9`, capped: false, warnings: [], parts };
-}
-
-export function hasBled(i: { htn: boolean; renal: boolean; liver: boolean; stroke: boolean; bleeding: boolean; labileInr: boolean; ageY: number; drugs: boolean; alcohol: boolean }): CalcResult {
-  req("ageY", i.ageY, 18, 120);
-  const parts = { htn: +i.htn, renal: +i.renal, liver: +i.liver, stroke: +i.stroke, bleeding: +i.bleeding, labileInr: +i.labileInr, elderly: i.ageY > 65 ? 1 : 0, drugs: +i.drugs, alcohol: +i.alcohol };
-  const v = Object.values(parts).reduce((a, b) => a + b, 0);
-  return { value: v, unit: "points", display: `HAS-BLED ${v}/9`, capped: false, warnings: [], parts };
-}
-
-// ---------- 7. Thrombolytics ----------
-export function tnkDose(weightKg: number, opts: { exactWeightUnder50?: boolean } = {}): CalcResult {
-  reqWeight(weightKg);
-  let mg: number;
-  const warnings: string[] = [];
-  if (weightKg < 50 && opts.exactWeightUnder50) {
-    mg = roundTo(Math.floor(weightKg) * 0.25, 0.25);
-    warnings.push("1-kg band dosing — requires an accurate measured weight");
-  } else {
-    mg = weightKg < 60 ? 15 : weightKg < 70 ? 17.5 : weightKg < 80 ? 20 : weightKg < 90 ? 22.5 : 25;
-  }
-  const ml = roundTo(mg / 5, 0.05);
-  return { value: mg, unit: "mg", display: `${fmt(mg)} mg (${fmt(ml)} mL at 5 mg/mL) IV push over 5–10 s`, capped: weightKg >= 100, warnings: [...warnings, "Stroke dose — the STEMI chart is double; don't use it"], parts: { ml } };
-}
-
-export function alteplaseDose(weightKg: number): CalcResult {
-  reqWeight(weightKg);
-  const c = capped(roundTo(weightKg * 0.9, 0.1), 90);
-  const bolus = roundTo(c.v * 0.1, 0.1);
-  const infusion = roundTo(c.v - bolus, 0.1);
-  return {
-    value: c.v, unit: "mg",
-    display: `${fmt(c.v)} mg total: ${fmt(bolus)} mg bolus over 1 min, ${fmt(infusion)} mg over 60 min (1 mg/mL)`,
-    capped: c.capped, warnings: c.capped ? ["Capped at 90 mg"] : [], parts: { bolus, infusion },
-  };
-}
-
-// ---------- 8. Immunotherapy ----------
-export function idealBodyWeight(heightCm: number, female: boolean) {
-  req("heightCm", heightCm, 120, 230);
-  const inchesOver60 = Math.max(0, heightCm / 2.54 - 60);
-  return fix((female ? 45.5 : 50) + 2.3 * inchesOver60);
-}
-export function adjustedBodyWeight(weightKg: number, heightCm: number, female: boolean) {
-  const ibw = idealBodyWeight(heightCm, female);
-  return weightKg <= ibw ? weightKg : fix(ibw + 0.4 * (weightKg - ibw));
-}
-
-export function ivigDose(dosingWeightKg: number, opts: { days?: 2 | 3 | 4 | 5; totalGPerKg?: number } = {}): CalcResult {
-  reqWeight(dosingWeightKg);
-  const days = opts.days ?? 5;
-  const total = opts.totalGPerKg ?? 2;
-  const daily = roundTo((dosingWeightKg * total) / days, 5);
-  return {
-    value: daily * days, unit: "g",
-    display: `${daily} g/day × ${days} days (${daily * days} g total; ${total} g/kg)`,
-    capped: false, warnings: [], parts: { dailyG: daily, days },
-  };
-}
-
 // ---------- 9. Hyponatremia ----------
 export function hyponatremiaBolus(mode: "ese" | "salsa-moderate" | "salsa-severe", weightKg?: number): CalcResult {
   if (mode === "ese") return { value: 150, unit: "mL", display: "150 mL 3% NaCl over 20 min; recheck Na; repeat up to 2 more times until +5 mmol/L", capped: false, warnings: [] };
@@ -454,18 +365,12 @@ export function sodiumCorrectionCheck(i: { startNa: number; currentNa: number; p
 // ---------- metadata ----------
 const S = {
   aes2016: "Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48",
-  ncs2012: "Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z",
   esett2019: "Kapur J, et al. Randomized trial of three anticonvulsant medications for status epilepticus (ESETT). N Engl J Med 2019;381(22):2103-2113. doi:10.1056/NEJMoa1905795",
   ncs2020: "Cook AM, et al. Guidelines for the acute treatment of cerebral edema in neurocritical care patients (NCS). Neurocrit Care 2020;32(3):647-666. doi:10.1007/s12028-020-00959-7",
   enls6: "Bhalla P, Dingman JS, Aysenne A. Emergency Neurological Life Support: Intracranial Hypertension and Herniation Protocol, version 6.0. Neurocritical Care Society; 2024",
-  aha2026: "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
-  tnkLabel: "TNKase (tenecteplase) US prescribing information. Genentech; revised 2/2025 (label text via Drugs.com, accessed 2026-11-04)",
-  activase: "Activase (alteplase) US prescribing information. Genentech; revised 9/2022 (user-supplied label)",
-  amin2023: "Amin HP, et al. Diagnosis, Workup, Risk Reduction of Transient Ischemic Attack in the Emergency Department Setting: A Scientific Statement From the AHA. Stroke 2023;54:e109-e121. doi:10.1161/STR.0000000000000418",
   ese2014: "Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170(3):G1-G47. doi:10.1530/EJE-13-1020",
   salsa2021: "Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519",
   verbalis2013: "Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1-S42. doi:10.1016/j.amjmed.2013.07.006",
-  gbs2023: "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
   xarelto: "Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label)",
   kiang2016: "Kiang TK, Ensom MH. A comprehensive review on the predictive performance of the Sheiner-Tozer and derivative equations for the correction of phenytoin concentrations. Ann Pharmacother 2016;50(4):311-325. doi:10.1177/1060028016628166",
   cerebyx: "Cerebyx (fosphenytoin sodium) injection US prescribing information. Pfizer; revised 5/2025 (user-supplied label)",
@@ -477,7 +382,6 @@ export const CALCULATOR_META: Record<string, CalcMeta> = {
   "levetiracetam-load": { id: "levetiracetam-load", title: "Levetiracetam load", formula: "60 mg/kg", caps: ["4500 mg"], rounding: "nearest 50 mg, cap after rounding (app convention)", weightBasis: "ACTUAL", sources: [S.aes2016, S.esett2019], verify: [] },
   "valproate-load": { id: "valproate-load", title: "Valproate load", formula: "40 mg/kg", caps: ["3000 mg"], rounding: "nearest 50 mg, cap after rounding (app convention)", weightBasis: "ACTUAL", sources: [S.aes2016, S.esett2019], verify: [] },
   "fosphenytoin-load": { id: "fosphenytoin-load", title: "Fosphenytoin load", formula: "20 mg PE/kg; min infusion time = dose / 150 mg PE/min", caps: ["1500 mg PE", "150 mg PE/min"], rounding: "nearest 50 mg PE (= whole mL at 50 mg PE/mL; app convention)", weightBasis: "ACTUAL", sources: [S.aes2016, S.esett2019], verify: [] },
-  "lacosamide-load": { id: "lacosamide-load", title: "Lacosamide load", formula: "fixed 200–400 mg IV", caps: [], rounding: "none", weightBasis: "NOT_APPLICABLE", sources: [S.ncs2012], verify: [] },
   "phenytoin-correction": {
     id: "phenytoin-correction",
     title: "Phenytoin level: albumin correction and reload estimate",
@@ -489,15 +393,8 @@ export const CALCULATOR_META: Record<string, CalcMeta> = {
     verify: [],
   },
   "hypertonic-saline-bolus": { id: "hypertonic-saline-bolus", title: "Hypertonic saline (ICP)", formula: "institutional protocol: 3% 250 mL over 30 min; 23.4% 30 mL over 5 min (central line). Na mEq = mL × 0.513 (3%) or 4.004 (23.4%)", caps: ["fixed volume per protocol"], rounding: "none (fixed volume)", weightBasis: "NOT_APPLICABLE", sources: ["Trinity Health Michigan neuro ICU protocol (provided by J. Schick, 11/2026)", S.ncs2020, S.enls6], verify: [] },
-  "mannitol-dose": { id: "mannitol-dose", title: "Mannitol 20%", formula: "0.5–1 g/kg; mL = g × 5; osmolar gap = measured − (2Na + glucose/18 + BUN/2.8)", caps: [], rounding: "nearest 5 g", weightBasis: "ACTUAL", sources: [S.enls6, S.ncs2020, "Osmitrol (mannitol injection) US prescribing information. Baxter; revised 8/2025"], verify: [] },
+  "mannitol-dose": { id: "mannitol-dose", title: "Mannitol 20%", formula: "0.5–1 g/kg; mL = g × 5; osmolar gap = measured − (2Na + glucose/18 + BUN/2.8), warns above 20", caps: [], rounding: "nearest 5 g", weightBasis: "ACTUAL", sources: [S.enls6, S.ncs2020, "Osmitrol (mannitol injection) US prescribing information. Baxter; revised 8/2025"], verify: [] },
   ledd: { id: "ledd", title: "Levodopa equivalent daily dose", formula: "Σ (daily dose × factor) for levodopa, agonists, MAO-B, amantadine; + COMT LED = covered levodopa LED × 0.33 (entacapone) or 0.5 (tolcapone, opicapone); + istradefylline = (levodopa + COMT LED) × 0.2; safinamide 50/100 mg = 150", caps: [], rounding: "0.1 mg", weightBasis: "NOT_APPLICABLE", sources: ["Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252"], verify: [] },
   "cockcroft-gault": { id: "cockcroft-gault", title: "Creatinine clearance (Cockcroft-Gault)", formula: "(140 − age) × weight / (72 × SCr) × 0.85 if female", caps: [], rounding: "nearest 1 mL/min", weightBasis: "ACTUAL", sources: [S.xarelto, "Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron 1976;16:31-41"], verify: [] },
-  "ich-score": { id: "ich-score", title: "ICH score", formula: "GCS 3–4 = 2, 5–12 = 1, 13–15 = 0; volume ≥30 cm³ (ABC/2) 1; IVH 1; infratentorial 1; age ≥80 1. GCS as at ED transfer in the derivation study", caps: ["0–6"], rounding: "integer", weightBasis: "NOT_APPLICABLE", sources: ["Hemphill JC 3rd, et al. The ICH score: a simple, reliable grading scale for intracerebral hemorrhage. Stroke 2001;32:891-897"], verify: [] },
-  abcd2: { id: "abcd2", title: "ABCD2", formula: "age ≥60 1; BP ≥140/90 1; unilateral weakness 2 or speech only 1; duration ≥60 min 2, 10–59 1; diabetes 1", caps: ["0–7"], rounding: "integer", weightBasis: "NOT_APPLICABLE", sources: [S.amin2023], verify: [] },
-  "cha2ds2-vasc": { id: "cha2ds2-vasc", title: "CHA₂DS₂-VASc", formula: "CHF/LV dysfunction 1, HTN 1, age ≥75 2, DM 1, stroke/TIA/TE 2, vascular disease 1, age 65–74 1, female 1", caps: ["0–9"], rounding: "integer", weightBasis: "NOT_APPLICABLE", sources: ["Lip GYH, et al. Refining clinical risk stratification for predicting stroke and thromboembolism in AF. Chest 2010;137(2):263-272", "Lip GYH, et al. CHA2DS2-VASc risk scheme: response. Chest 2010;138(4):1020-1021"], verify: [] },
-  "has-bled": { id: "has-bled", title: "HAS-BLED", formula: "1 point each: HTN (uncontrolled, SBP >160); renal (dialysis, transplant, Cr >2.26 mg/dL); liver (cirrhosis, or bilirubin >2× normal with AST/ALT/AP >3× normal); stroke history; prior major bleeding or predisposition; labile INR (TTR <60%); age >65; drugs (antiplatelets, NSAIDs); alcohol ≥8 drinks/week", caps: ["0–9"], rounding: "integer", weightBasis: "NOT_APPLICABLE", sources: ["Pisters R, et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest 2010;138:1093-1100 (as summarized by MDCalc; primary article not reviewed)"], verify: [] },
-  "tnk-dose": { id: "tnk-dose", title: "Tenecteplase (stroke)", formula: "0.25 mg/kg via 10-kg bands; optional 1-kg dosing <50 kg", caps: ["25 mg"], rounding: "label band chart", weightBasis: "ACTUAL", sources: [S.aha2026, S.tnkLabel], verify: [] },
-  "alteplase-dose": { id: "alteplase-dose", title: "Alteplase (stroke)", formula: "0.9 mg/kg; 10% bolus, 90% over 60 min", caps: ["90 mg"], rounding: "0.1 mg", weightBasis: "ACTUAL", sources: [S.aha2026, S.activase], verify: [] },
-  "ivig-dose": { id: "ivig-dose", title: "IVIG", formula: "2 g/kg total over 2–5 days", caps: [], rounding: "daily dose to nearest 5 g (app convention)", weightBasis: "SELECTABLE", sources: [S.gbs2023], verify: [] },
   "sodium-correction": { id: "sodium-correction", title: "Hyponatremia: 3% bolus and correction limits", formula: "ESE 150 mL; SALSA 2 mL/kg (moderate) or 2 mL/kg × 2 (severe); limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)", caps: [], rounding: "nearest 10 mL per bolus", weightBasis: "ACTUAL", sources: [S.ese2014, S.salsa2021, S.verbalis2013], verify: [] },
 };

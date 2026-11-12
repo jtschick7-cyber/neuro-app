@@ -25,7 +25,7 @@
 ## Calculators
 All 9 ids in `data/calculators.manifest.json` are built: `levetiracetam-load`, `valproate-load`, `fosphenytoin-load`, `phenytoin-correction`, `hypertonic-saline-bolus`, `mannitol-dose`, `ledd`, `cockcroft-gault`, `sodium-correction`. Every manifest id needs a UI.
 
-`lacosamide-load`, `cha2ds2-vasc`, `has-bled` and `ivig-dose` are in `CALCULATOR_META` but not in the manifest and have no card.
+`CALCULATOR_META` holds only these 9. The eight unshipped calculators (lacosamide, ICH score, ABCD2, CHA₂DS₂-VASc, HAS-BLED, TNK, alteplase, IVIG) were deleted on 2026-11-12 (audit P2-8); a new calculator needs a spec, metadata, tests and a card before it joins the manifest.
 
 ## Hard requirements
 1. Disclaimer gate (`DisclaimerGate`, built) on first launch and whenever `DISCLAIMER_REVISION` changes.
