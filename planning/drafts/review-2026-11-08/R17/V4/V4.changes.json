@@ -1,0 +1,60 @@
+{
+  "target": "consult-workups:monogenic-csvd-workup",
+  "base": "data/consult-workups.json on content-r17-2026-11-11 after commit closing V3 (verify[] = [V4 only])",
+  "core": {
+    "decisionRules.append": [
+      {
+        "order": 14,
+        "condition": "DADA2",
+        "recommendation": "Avoid antiplatelet, anticoagulant and other antithrombotic therapy, to prevent hemorrhagic stroke",
+        "evidenceLevel": "CONSENSUS",
+        "evidenceNote": [
+          "DADA2 consensus 2023 Delphi, statement 5.5: LOE 5 (D), agreement 8.3 of 9 (Lee 2023 Table 5)",
+          "Secondary hemorrhagic conversion of stroke has been documented (Lee 2023 p.7)"
+        ]
+      }
+    ],
+    "workup.append": [
+      {
+        "test": "DADA2: plasma or serum ADA2 enzyme activity; ADA2 sequencing",
+        "priority": "IF_INDICATED",
+        "indication": [
+          "Suspected DADA2",
+          "Cryptogenic ischemic stroke, unexplained brain hemorrhage (including aneurysm) or spinal cord stroke in childhood or early adulthood (Lee 2023 Table 3, statement 3.5)"
+        ],
+        "notes": [
+          "Near-absent ADA2 activity is diagnostic; normal activity excludes DADA2 (Lee 2023 Table 2, statement 2.3)",
+          "Biallelic pathogenic or likely pathogenic ADA2 variants are diagnostic; one variant means a carrier (Lee 2023 Table 2, statements 2.4–2.5)",
+          "Standard sequencing can miss intronic, regulatory and copy-number variants; if suspicion remains, send enzyme activity or further genetic tests (Lee 2023 Table 2, statement 2.7)",
+          "ADA2 activity is measured by few laboratories; ADA2 is on most inborn-errors-of-immunity and autoinflammatory panels (Lee 2023 p.4)"
+        ]
+      }
+    ],
+    "sources.append": [
+      "Lee PY, et al. Evaluation and Management of Deficiency of Adenosine Deaminase 2: An International Consensus Statement. JAMA Netw Open 2023;6(5):e2315894. doi:10.1001/jamanetworkopen.2023.15894"
+    ],
+    "verify.remove": [
+      "DADA2: ADA2 enzyme testing and treatment are not covered by the sources read"
+    ]
+  },
+  "option_A_mustNotMiss": {
+    "differential[12].mustNotMiss": true,
+    "differential[12].clues.append": [
+      "Treatable: TNF inhibitors lower the risk of ischemic and hemorrhagic stroke (Lee 2023 p.6)"
+    ]
+  },
+  "option_B_acuteStrokeTreatment": {
+    "decisionRules.append": [
+      {
+        "order": 15,
+        "condition": "DADA2 (confirmed or suspected), acute stroke",
+        "recommendation": "Treat inflammation with glucocorticoids and/or a TNF inhibitor; consider a TNF inhibitor to prevent further strokes",
+        "evidenceLevel": "CONSENSUS",
+        "evidenceNote": [
+          "DADA2 consensus 2023 Delphi, statement 5.4: LOE 5 (D), agreement 7.7 of 9 (Lee 2023 Table 5)",
+          "Only TNF inhibitors have been shown to prevent further strokes (Lee 2023 p.7)"
+        ]
+      }
+    ]
+  }
+}

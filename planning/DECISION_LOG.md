@@ -1213,3 +1213,7 @@ Update 2026-11-12 (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, con
 - V1 (local panel coverage of the COL4A1 3′UTR miR-29 binding site): closed. Local fact; covered by `institutionVaries[0]`.
 - V2 (homocystinuria: no small vessel MRI pattern in the CBS sources): closed. Limitation already stated in `differential[14].clues[0]`; kept for treatability.
 - No entry text pointed at these items, so no other wording changed. The data entry therefore differs from the draft JSON in `verify` only. V3 (pulvinar sign in later cohorts) and V4 (DADA2 testing and treatment) stay open; Jason supplied Burlina 2008 (J Neurol 2008;255:738-744) and Lee 2023 DADA2 consensus (JAMA Netw Open 2023;6(5):e2315894) for review.
+
+Update 2026-11-12 (2) (Jason, in chat; entry still `lastReviewed: "UNREVIEWED"`, consult-workups stays 3.2.0):
+- V3 (pulvinar sign frequency in later cohorts): closed. Burlina 2008 (J Neurol 2008;255:738-744, Table 2, p.741): pooled 35 of 140 males (25%), consistent with the Moore count; 0 of 43 females. No entry text changed; Burlina is not added as a source.
+- V4 (DADA2 testing and treatment): stays open. Jason asked for a draft from Lee 2023 (JAMA Netw Open 2023;6(5):e2315894): `planning/drafts/review-2026-11-08/R17/V4/`, pending his approval.
