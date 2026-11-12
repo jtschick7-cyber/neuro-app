@@ -6,7 +6,10 @@
  *
  * Registry name = file basename without .json (e.g. data/acute-neuro.json -> "acute-neuro").
  * relatedIds "registry:id" must resolve to a loaded file; "calc:*" ids are checked against
- * data/calculators.manifest.json if present (a JSON array of calculator ids), else warned.
+ * data/calculators.manifest.json if present (a JSON array of calculator ids), else warned. Every calculatorIds
+ * array is checked, however deeply it is nested in an entry.
+ * Signed entries are compared with their sign-off hash in generated/signoff.json (override: --signoff=<path>);
+ * see scripts/integrity.ts.
  */
 import { readFileSync, existsSync } from "node:fs";
 import { basename, dirname, join } from "node:path";
@@ -22,6 +25,7 @@ import { AntiseizureMedicationsRegistry } from "../schema/antiseizure-medication
 import { ReferenceCardsRegistry } from "../schema/reference-cards";
 import { CALCULATOR_META } from "../src/lib/calculators";
 import { findPlaceholderText } from "./placeholder-text";
+import { SIGNOFF_FILE, checkSignoffs, collectCalculatorIds, readSignoffs, type RawEntry } from "./integrity";
 
 const SCHEMAS: Record<string, ZodTypeAny> = {
   "acute-neuro": AcuteNeuroRegistry,
@@ -42,6 +46,8 @@ const SCHEMAS: Record<string, ZodTypeAny> = {
 const args = process.argv.slice(2);
 const release = args.includes("--release");
 const files = args.filter((a) => !a.startsWith("--") && !a.endsWith(".manifest.json"));
+const signoffPath = args.find((a) => a.startsWith("--signoff="))?.slice("--signoff=".length) ?? SIGNOFF_FILE;
+const signoffs = readSignoffs(signoffPath);
 if (files.length === 0) {
   console.error("usage: validate.ts [--release] <file.json>...");
   process.exit(2);
@@ -52,7 +58,7 @@ let warnings = 0;
 const err = (m: string) => (errors++, console.error(`ERROR  ${m}`));
 const warn = (m: string) => (warnings++, console.warn(`WARN   ${m}`));
 
-type Entry = { id: string; relatedIds?: string[]; verify?: string[]; lastReviewed?: string; treatment?: { calculatorIds: string[] }[] };
+type Entry = { id: string; relatedIds?: string[]; verify?: string[]; lastReviewed?: string };
 const loaded = new Map<string, Entry[]>();
 let syndromes: SyndromeVocabularyData | null = null;
 
@@ -89,6 +95,8 @@ for (const file of files) {
     if (open.length) (release ? err : warn)(`${reg}:${e.id}: ${open.length} open VERIFY item(s)`);
     if (e.lastReviewed === "UNREVIEWED") (release ? err : warn)(`${reg}:${e.id}: not yet signed off (UNREVIEWED)`);
   }
+  // Hash the entries as written in the file (zod may strip or default fields).
+  for (const p of checkSignoffs(reg, (raw as { entries: RawEntry[] }).entries, signoffs, release)) (p.level === "error" ? err : warn)(p.message);
   loaded.set(reg, entries);
 }
 
@@ -110,8 +118,7 @@ for (const [reg, entries] of loaded) {
       else if (!loaded.has(target)) warn(`${reg}:${e.id}: relatedId "${ref}" points to a registry not loaded in this run`);
       else if (!loaded.get(target)!.some((x) => x.id === id)) err(`${reg}:${e.id}: relatedId "${ref}" does not resolve`);
     }
-    for (const t of e.treatment ?? []) for (const c of t.calculatorIds) checkCalc(`${reg}:${e.id}`, c);
-    for (const c of e.calculatorIds ?? []) checkCalc(`${reg}:${e.id}`, c);
+    for (const c of collectCalculatorIds(e)) checkCalc(`${reg}:${e.id}: ${c.path}`, c.id);
   }
 }
 

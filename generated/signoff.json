@@ -1,0 +1,730 @@
+{
+  "acute-neuro:autoimmune-encephalitis": {
+    "date": "2026-11-07",
+    "sha256": "b9b1583bf0f2240c0af2ba34e730418b5145953020728ac94647a3075f1b1c18"
+  },
+  "acute-neuro:bacterial-meningitis": {
+    "date": "2026-11-11",
+    "sha256": "8e378a0d658b604d0d330442f448d2548401cc4ff751cbd619f9aed6d58ec575"
+  },
+  "acute-neuro:cns-infection-immunocompromised": {
+    "date": "2026-11-07",
+    "sha256": "3b5edc10bc7c2854f458f7d5eb551644b5b03d41bf92f27da0e11eb66341b5be"
+  },
+  "acute-neuro:convulsive-status-epilepticus": {
+    "date": "2026-11-07",
+    "sha256": "669bad6be04d9ee6eb71f61efa636c259864c9066a1cf4db8379e377f1a84a01"
+  },
+  "acute-neuro:elevated-icp-herniation": {
+    "date": "2026-11-07",
+    "sha256": "30944efcafcb97b7e9a23461faa88ee9aac89c2945ac0c109ab09b43093d9227"
+  },
+  "acute-neuro:guillain-barre-syndrome": {
+    "date": "2026-11-08",
+    "sha256": "a448ac784387824d7ed2830e1f92f605d1a65db3158575bb08ff9ae8357b50fd"
+  },
+  "acute-neuro:hyponatremia-ods": {
+    "date": "2026-11-11",
+    "sha256": "141fcf1c6725e6dab04bc0d63359af6f3bbc3311e8dcb70957c652f70d7c47b4"
+  },
+  "acute-neuro:icans-car-t-neurotoxicity": {
+    "date": "2026-11-07",
+    "sha256": "2b5ec541c6b0e1e0168c040e7806d519193f8f63cdf45a83eb32da8fd63ca965"
+  },
+  "acute-neuro:lyme-neuroborreliosis": {
+    "date": "2026-11-11",
+    "sha256": "ed008dd3e3223c6863e6c6fd21bd2b2b1c8cc6880c8081b6407373c8f96ac0d4"
+  },
+  "acute-neuro:myasthenic-crisis": {
+    "date": "2026-11-11",
+    "sha256": "7586eccd38a2c493ae85be2479e2b49a5094507166eb9444ad709aaa62286c30"
+  },
+  "acute-neuro:neuromuscular-respiratory-failure": {
+    "date": "2026-11-08",
+    "sha256": "6a13ef1c90a9f0475c7ab40fdbe7eb55b0550092996c033eb7042d7cdb1e1597"
+  },
+  "acute-neuro:neurosyphilis": {
+    "date": "2026-11-11",
+    "sha256": "1db8af4def1292470ea2abd6aad72b519cf471a59da47fccf40307f47a312429"
+  },
+  "acute-neuro:nmosd-mogad-attack": {
+    "date": "2026-11-11",
+    "sha256": "0efa8b5a97a953c802c4d027c0cefed94a0d969101326e5525c54c3a81f8d47a"
+  },
+  "acute-neuro:nms-parkinsonism-hyperpyrexia": {
+    "date": "2026-11-07",
+    "sha256": "4d9ea9d12d8a3ceb66f0157fd06bdcc020ae26426f17e48761f1f3f06b90dc0a"
+  },
+  "acute-neuro:nonconvulsive-status-epilepticus": {
+    "date": "2026-11-07",
+    "sha256": "cb0cba6d9251de45a64df01b03e584cd7395a83587aa93988edd70b3fef9d2af"
+  },
+  "acute-neuro:pres": {
+    "date": "2026-11-07",
+    "sha256": "ecdba63d0bfb1dd113296476c2102f4c70fa17c1c7e00f05e6ef6a319ba7cd61"
+  },
+  "acute-neuro:refractory-super-refractory-se": {
+    "date": "2026-11-07",
+    "sha256": "148312097549cb48c00cd90ac701235482832159560f6dfc3ab95b0bc2809a3d"
+  },
+  "acute-neuro:serotonin-syndrome": {
+    "date": "2026-11-11",
+    "sha256": "6eec9cf0a86b4db73b8b640c49d34b90d0b6913ba7f0ba25986784279b63b505"
+  },
+  "acute-neuro:spinal-cord-compression": {
+    "date": "2026-11-07",
+    "sha256": "0a063e24c5860b84e3252edd0ea0eee55d7ea6218fe6057454b4f6c06edc8d5c"
+  },
+  "acute-neuro:status-migrainosus": {
+    "date": "2026-11-08",
+    "sha256": "9f634f078b462965a0c4c484bd6858dc92bf3492315a1502a8cc13eeaac7fdff"
+  },
+  "acute-neuro:viral-encephalitis": {
+    "date": "2026-11-07",
+    "sha256": "0ce9d5660a452b45246ebab62c0ef1fe87a600b876138d7db173203546641631"
+  },
+  "acute-neuro:wernicke-encephalopathy": {
+    "date": "2026-11-07",
+    "sha256": "97a622c17333a22d09c99f67bd3d92aa35c344b06a34b5d76a5e5083498421d2"
+  },
+  "antiseizure-medications:brivaracetam": {
+    "date": "2026-11-07",
+    "sha256": "6c7e576d43b9b2a63cdc433f3556759dc306f963c36dc394ecc02d937f651e85"
+  },
+  "antiseizure-medications:carbamazepine": {
+    "date": "2026-11-11",
+    "sha256": "97673ba0e7bb0fbb85e984afd449003e4c08ee22f54531ff968d0e7cdf8d056a"
+  },
+  "antiseizure-medications:cenobamate": {
+    "date": "2026-11-11",
+    "sha256": "8f6c2b0837ca75f84f917da769e19a134c16e3a679ec58b66f4d0e5c3ff9eb18"
+  },
+  "antiseizure-medications:clobazam": {
+    "date": "2026-11-11",
+    "sha256": "c8fb0f08bf9b3f44b9e028db5ef143b41fb443460bc25183ee4da527f7b33c05"
+  },
+  "antiseizure-medications:lacosamide": {
+    "date": "2026-11-07",
+    "sha256": "de57a53620d0272e83365fa5b353b5571c8fd9d21f9f85c2799757a2f49de0a9"
+  },
+  "antiseizure-medications:lamotrigine": {
+    "date": "2026-11-07",
+    "sha256": "a1abdc8364262f49f38ea01445687272c74765506b9d62ab13eb3ebb65aad604"
+  },
+  "antiseizure-medications:levetiracetam": {
+    "date": "2026-11-07",
+    "sha256": "fa6de11ceecd7d8c71ac269a6d4ff1ef97a7f8c97eaa94068ba014426991f823"
+  },
+  "antiseizure-medications:oxcarbazepine": {
+    "date": "2026-11-11",
+    "sha256": "f98d1a25b82c224e31d4eb9a5b0fa74a9ff1d3669a9e996f4078b6f8f3e6fe1b"
+  },
+  "antiseizure-medications:perampanel": {
+    "date": "2026-11-11",
+    "sha256": "007d97b9ff7e51413af6b6f0f9b68d21a38b315b078e50e8839bc9dea772295b"
+  },
+  "antiseizure-medications:phenobarbital": {
+    "date": "2026-11-11",
+    "sha256": "ea5b7f1a1467793168e870625b20d27b0e7706b46da19ad57680111f07cd1c27"
+  },
+  "antiseizure-medications:phenytoin-fosphenytoin": {
+    "date": "2026-11-07",
+    "sha256": "08e546410b477be3a8d842a5ff55e509e118708d88b3920e56073965c3204a1d"
+  },
+  "antiseizure-medications:topiramate": {
+    "date": "2026-11-11",
+    "sha256": "0a26b87b56528a6aa2242ec0746fb308256f2a12884b14194fcef862a5adca91"
+  },
+  "antiseizure-medications:valproate": {
+    "date": "2026-11-07",
+    "sha256": "f4a9f3db8fe16dc8874a024c75767d15d519660f32a2418e449cc097592d5371"
+  },
+  "antiseizure-medications:zonisamide": {
+    "date": "2026-11-11",
+    "sha256": "b975c8b766e3bc6eed910134aa2d60e1a081e5779e078feb9c009e91b28ace5f"
+  },
+  "asm-interactions:azoles-phenytoin": {
+    "date": "2026-11-11",
+    "sha256": "0c5b45f03ceff43d40968ad8766569bbf47ad31074683fa954a81f4cfdb97baa"
+  },
+  "asm-interactions:carbapenems-valproate": {
+    "date": "2026-11-11",
+    "sha256": "f4b6c892cf31fb9864f51672fd2978ef08cfd10fcada45f29031478b5cbe7c0b"
+  },
+  "asm-interactions:cns-polypharmacy-falls": {
+    "date": "2026-11-05",
+    "sha256": "16122da6cbaedc47ecbfed634fcc64e05835b3865e0728d50712a78889a66c52"
+  },
+  "asm-interactions:cyp3a4-inhibitors-carbamazepine": {
+    "date": "2026-11-11",
+    "sha256": "b294d95142c529bd4897f825ed77f7a5927d5b04e43b1d218166afdfdd9c515f"
+  },
+  "asm-interactions:gabapentinoids-opioids": {
+    "date": "2026-11-05",
+    "sha256": "e14736e6ed3e0aa0abb72fd901775ad626f5282078540ae8fcf7a690da6d375b"
+  },
+  "asm-interactions:inducing-asm-apixaban-rivaroxaban": {
+    "date": "2026-11-05",
+    "sha256": "a75ad0740b6cea730d0cdb3f60a7e5e5f37f8e72690930d9a692bcf846643bcc"
+  },
+  "asm-interactions:inducing-asm-calcineurin-inhibitors": {
+    "date": "2026-11-11",
+    "sha256": "d141c2f86d7047f3e3f94e4ffaf64cdede84e00f64ce16a82c087936f69bf0fa"
+  },
+  "asm-interactions:inducing-asm-dabigatran-edoxaban": {
+    "date": "2026-11-11",
+    "sha256": "db3ec9e29551cf66a610db21db8cacd3b8eaeec273f842f67bf128f8c17056a8"
+  },
+  "asm-interactions:inducing-asm-voriconazole": {
+    "date": "2026-11-11",
+    "sha256": "61a6f41d3c5b68f43c65123009b659d32ec8583541ce8eadcb5b9bee2201a14e"
+  },
+  "asm-interactions:inducing-asm-warfarin": {
+    "date": "2026-11-05",
+    "sha256": "390896201c2f4cefa6254961a8deac487889f55dfcd9da0484d69a25bb3edd72"
+  },
+  "asm-interactions:lacosamide-conduction-drugs": {
+    "date": "2026-11-11",
+    "sha256": "f81e66791c946b28d8dd1e6f5a9548e6ae341df5de456a0046d62d61240ae446"
+  },
+  "asm-interactions:tmp-smx-phenytoin": {
+    "date": "2026-11-05",
+    "sha256": "4cc96835e1d485073cd0ef700acde73c18cbee5eb3de89f9301b66fe152f0000"
+  },
+  "consult-workups:acute-hepatic-porphyria": {
+    "date": "2026-11-07",
+    "sha256": "43098ae2255e83a5209e7aac89e44341af6c9f849e4953fb4d6b310592162626"
+  },
+  "consult-workups:acute-vision-loss": {
+    "date": "2026-11-08",
+    "sha256": "3f7511dc07c0f0d592b93f014f77462e1a82d0fde7b1e895a8002f2654413bb2"
+  },
+  "consult-workups:aria-anti-amyloid": {
+    "date": "2026-11-11",
+    "sha256": "a608e76671008b34f6246b6e08b7a787865334daa93761558987b8b1f6e328fd"
+  },
+  "consult-workups:brain-death-determination": {
+    "date": "2026-11-07",
+    "sha256": "4a11102d4636fc69508a1506a71a5afb93f4a3ad7b564e26f3da17355dfe8f41"
+  },
+  "consult-workups:caa-related-inflammation": {
+    "date": "2026-11-07",
+    "sha256": "d29b40a004f4adc7ed5fc0207f0fa3c3af9d6ccf7ffdb33d11c38b92bc4925e0"
+  },
+  "consult-workups:cns-vasculitis-workup": {
+    "date": "2026-11-08",
+    "sha256": "ad338e493c08622feae5aec67b9a5339c2ff96deb384248cbc74f2cdd34c6466"
+  },
+  "consult-workups:elevated-ck-myopathy": {
+    "date": "2026-11-08",
+    "sha256": "78d1e7010b124c374878a73926865feea277540f80de8920a99a474a8691f614"
+  },
+  "consult-workups:ich-etiology-workup": {
+    "date": "2026-11-08",
+    "sha256": "4e14ae4de4b86853c6951fbfeb1abee29c936014a2db3c7d688e9d30023b2a10"
+  },
+  "consult-workups:inpatient-neuropathy": {
+    "date": "2026-11-08",
+    "sha256": "304b79cdd9ba4069d24f450b1f4eea35ccb0de9293f02572945ac09806f53801"
+  },
+  "consult-workups:intravascular-lymphoma": {
+    "date": "2026-11-07",
+    "sha256": "56061554b15d4b9a24cc455870c11789553faf2042a0b86cc4778e623a92325b"
+  },
+  "consult-workups:monogenic-csvd-workup": {
+    "date": "2026-11-12",
+    "sha256": "7142cc8d585c09a5c3970c1b16bbfb47e5e064790c794d5e8dad3e419dd121dd"
+  },
+  "consult-workups:myelopathy-workup": {
+    "date": "2026-11-08",
+    "sha256": "287fe4892c715552f7f7375a32e3efb809af5c7278d5428665270e6ccfca6070"
+  },
+  "consult-workups:new-demyelinating-lesion": {
+    "date": "2026-11-08",
+    "sha256": "5a9bcb08e53ab9a79b037d628a60f831a794320ce8fde9c16dc274cce56f226c"
+  },
+  "consult-workups:paraneoplastic-workup": {
+    "date": "2026-11-07",
+    "sha256": "5b4e19afc29c1f9d98498f5748e33f28f2143451cdbcc94e387b4061ab4a1512"
+  },
+  "consult-workups:post-cardiac-arrest-prognostication": {
+    "date": "2026-11-07",
+    "sha256": "153eb4393af1a72710f349fe030c5c9bcb8165ba1d2babdcdea2ad929a23e990"
+  },
+  "consult-workups:rapidly-progressive-dementia": {
+    "date": "2026-11-07",
+    "sha256": "a87f68ae33ba3003ee84f2d5693fe726d33739a1a9f13070f1b04d9349597378"
+  },
+  "consult-workups:susac-syndrome": {
+    "date": "2026-11-08",
+    "sha256": "f04fc7d78c401c1ebeaab22ca76327f3410b5b4c555d9fd7c939d4cc037d738c"
+  },
+  "consult-workups:thunderclap-headache": {
+    "date": "2026-11-08",
+    "sha256": "3e86491b98e3f7bbb2f1c336f88d84c1aca7d07a9bcdc4d8714a6305dc8cab8c"
+  },
+  "consult-workups:valproate-hyperammonemic-encephalopathy": {
+    "date": "2026-11-07",
+    "sha256": "bd43ab550b9ff31dfb962efb3c37805b3acdc6d708a73d742414df1882c2f51c"
+  },
+  "consult-workups:young-stroke-workup": {
+    "date": "2026-11-08",
+    "sha256": "34178e149875e635e5cad92caa54b7bb6efedeb2d231945086c5b871f63856b0"
+  },
+  "mg-contraindications:aminoglycosides": {
+    "date": "2026-11-05",
+    "sha256": "e1962365be765c58625030a079a3a3b1b020e2eb8dd9d7c5059e062600a83b9f"
+  },
+  "mg-contraindications:beta-blockers": {
+    "date": "2026-11-05",
+    "sha256": "dde67a9123748bd7c3dcd59bf10c6f18dc753f22e7580a1cc69578a1cbb6f3c9"
+  },
+  "mg-contraindications:botulinum-toxin": {
+    "date": "2026-11-05",
+    "sha256": "a98b7087a9f426e116769b11876005266d9c644b6e8b50b7f206d69b110373c6"
+  },
+  "mg-contraindications:calcium-channel-blockers": {
+    "date": "2026-11-05",
+    "sha256": "d0a6cb2f87229a940340428b285eaceb7bb2ade1b803e5c05fa01a14a4da0325"
+  },
+  "mg-contraindications:class-ia-antiarrhythmics": {
+    "date": "2026-11-05",
+    "sha256": "02f069eeaa039b43679317f4100b1d792b4f9c2dd4f9119f82069b7aa98937fb"
+  },
+  "mg-contraindications:corticosteroids": {
+    "date": "2026-11-05",
+    "sha256": "96569bff4f926f6dd7b8dc2462944a69f3b352fc2c357a053269bc6446bf805a"
+  },
+  "mg-contraindications:d-penicillamine": {
+    "date": "2026-11-05",
+    "sha256": "c1acbdae45e37516e71e6f47dec676c388ae9a36e96e7a16d4022c5b86730e70"
+  },
+  "mg-contraindications:desferrioxamine": {
+    "date": "2026-11-05",
+    "sha256": "cabb8b768e32bfb01842589a71dc7fd532b92707d16c24cc4735d4328f401bf9"
+  },
+  "mg-contraindications:fluoroquinolones": {
+    "date": "2026-11-05",
+    "sha256": "24ec16fb712945e039c86c329ffaca8276ac450ac004f7977f80cb71a10c09c0"
+  },
+  "mg-contraindications:immune-checkpoint-inhibitors": {
+    "date": "2026-11-05",
+    "sha256": "a2846a7df06c6368caf76bcee7fefa626a25fb0a973452fbf6565fe68d8b4f27"
+  },
+  "mg-contraindications:iodinated-contrast": {
+    "date": "2026-11-05",
+    "sha256": "bada9a091bdfe5f703312bf6c0f5410a5bb8be41eefca5ae1540858115c27729"
+  },
+  "mg-contraindications:lithium": {
+    "date": "2026-11-05",
+    "sha256": "498379dd4ebeed0d80432aae0a81513927ede9843eee9f8e3424e7f60726309b"
+  },
+  "mg-contraindications:macrolides": {
+    "date": "2026-11-05",
+    "sha256": "f7b3908f5ecab632bb26a680457c17be02b0411ca1a399f9e982724dcfcabd40"
+  },
+  "mg-contraindications:magnesium": {
+    "date": "2026-11-05",
+    "sha256": "e926c2e03c40c4a8e0e887ecd49a01c4640a25e624842822b25fb3e6a6d9175f"
+  },
+  "mg-contraindications:quinine-antimalarials": {
+    "date": "2026-11-05",
+    "sha256": "8a7fdcb17398747d828b3eb0c7508c1382b6198c994e559fac02a6ae27695506"
+  },
+  "mg-contraindications:statins": {
+    "date": "2026-11-05",
+    "sha256": "fdb3b31f6ed8cfb57357a0c772e54f00bf641ed99b5fe8a73a3da7090790ab8e"
+  },
+  "mg-contraindications:telithromycin": {
+    "date": "2026-11-05",
+    "sha256": "46fdce3e26399d05de402057d05620708be4bc6d27f3c13a2726e25e46e768e2"
+  },
+  "neural-antibodies:ak5": {
+    "date": "2026-11-05",
+    "sha256": "224b846a637dedcfb09d57e18bfb77579d65a9e0f4e129b44b1b61484ede4b22"
+  },
+  "neural-antibodies:ampar": {
+    "date": "2026-11-05",
+    "sha256": "6e9c665c93fccc727a9f106744d3e94171080a8debaadfe1b577327c655cabd9"
+  },
+  "neural-antibodies:amphiphysin": {
+    "date": "2026-11-05",
+    "sha256": "acf6025cec3641e04eb77d9f624b637a67d5020e05c977c44becac2714fdfb2b"
+  },
+  "neural-antibodies:anna3-dach1": {
+    "date": "2026-11-05",
+    "sha256": "5d6ca6965a896f14f1a8882bf080ab63d02b012a116ee104b801c6a192857aae"
+  },
+  "neural-antibodies:anti-hu": {
+    "date": "2026-11-05",
+    "sha256": "95e95ce92b9632e832d98520bca4cfeab0c7606247f0c849e059d911a12cbca4"
+  },
+  "neural-antibodies:anti-ri": {
+    "date": "2026-11-05",
+    "sha256": "c19a7e6ae166d72bee345e26c3bcfa8ac04e577eb0823a237216702509b2d07f"
+  },
+  "neural-antibodies:anti-yo": {
+    "date": "2026-11-05",
+    "sha256": "22efd92cef44e7710daacc82e2974142f74a3a8b83868ac7305338edfaf803ce"
+  },
+  "neural-antibodies:ap3b2": {
+    "date": "2026-11-05",
+    "sha256": "601cf374fea310723b6cde06a1cd34ae919bbf1f7da3570cca831741c091cd0e"
+  },
+  "neural-antibodies:aqp4": {
+    "date": "2026-11-05",
+    "sha256": "cac16f0552d83c7710e894fc2bda94befc112df68dbb9b85d4aae8ab68ce5d45"
+  },
+  "neural-antibodies:arhgap26": {
+    "date": "2026-11-05",
+    "sha256": "a6d8ae235f5b2523013f8401e5928b2d72be4724f29222689640bfc29292c2e3"
+  },
+  "neural-antibodies:caspr2": {
+    "date": "2026-11-05",
+    "sha256": "a0ab166b38f415855a16c6d0350b78dad02a49a8eb5e7832be33d8c61048c483"
+  },
+  "neural-antibodies:cv2-crmp5": {
+    "date": "2026-11-05",
+    "sha256": "c8f7b3ffb47bdb2c1fdf273bf931f221e9be0b0de944ef69fadf59a96d3248d5"
+  },
+  "neural-antibodies:dppx": {
+    "date": "2026-11-05",
+    "sha256": "001dbbf5aaeeeb2e569ed61a4632027cef9270c02f2ed9ace8d8b22c59aa3e3f"
+  },
+  "neural-antibodies:gabaa-r": {
+    "date": "2026-11-05",
+    "sha256": "584ca18ba2a9cc4fd4b22c8c1f5a4f0f67ef6937d5f5e5984ef297a543efb24c"
+  },
+  "neural-antibodies:gabab-r": {
+    "date": "2026-11-05",
+    "sha256": "7a2ec16d4b057af7f297304d23fd23ed253c882bf7773854ad5ba2dced93bc56"
+  },
+  "neural-antibodies:gad65": {
+    "date": "2026-11-05",
+    "sha256": "cb3f305d6fd7316b67e315e80bb80d10cf6a39cd0e830088299b0242c812827a"
+  },
+  "neural-antibodies:gfap": {
+    "date": "2026-11-05",
+    "sha256": "4f482c7edfd823340e803aaf36c8f0ffbc6ced2d5becc933b2319494004a1153"
+  },
+  "neural-antibodies:glyr": {
+    "date": "2026-11-05",
+    "sha256": "361968532e769ce65c3692b6d54a16db6d90eaeee390ac42a3853b018650c812"
+  },
+  "neural-antibodies:iglon5": {
+    "date": "2026-11-05",
+    "sha256": "bc9fb2b20bc4fee507e19a1ce5d235ad5171796e9a9322b50a6c9ad21c01c7ce"
+  },
+  "neural-antibodies:itpr1": {
+    "date": "2026-11-05",
+    "sha256": "7eaae95017996f5aaa4738385569050ef427a7b89014c51d8043cbb85f07fa7a"
+  },
+  "neural-antibodies:klhl11": {
+    "date": "2026-11-05",
+    "sha256": "27deb9ea408bb463333c396b0de8eab3d5e8e9d938b82994f3b082f67cc5d1a7"
+  },
+  "neural-antibodies:lgi1": {
+    "date": "2026-11-05",
+    "sha256": "b051a42e1974bfa0f8819460edcab6561aa0c2380ff517d09a95a332db151ac7"
+  },
+  "neural-antibodies:ma2": {
+    "date": "2026-11-05",
+    "sha256": "d7450a5b47af6d5435b26a4cd24f1b1b9d0da642c28a2c72de9942400311c244"
+  },
+  "neural-antibodies:mglur1": {
+    "date": "2026-11-05",
+    "sha256": "5381793797ea677adc3f6941533cacfdb3d8b4d59fdd1fa65e7442581158323d"
+  },
+  "neural-antibodies:mglur5": {
+    "date": "2026-11-05",
+    "sha256": "decc5d4af184beb4cb640df01af0abbdf5f23007b5e4d264b7717097adbe46c5"
+  },
+  "neural-antibodies:mog": {
+    "date": "2026-11-05",
+    "sha256": "b4cd23fda90552933fc9d9df9b009290bf83d62dd0bf38e7db024d774f48e95c"
+  },
+  "neural-antibodies:neurochondrin": {
+    "date": "2026-11-05",
+    "sha256": "1ebbc9e86384350df231fc9b890dc2adbfe955b1013f0b2bb57d3b526f9a1a89"
+  },
+  "neural-antibodies:nmdar": {
+    "date": "2026-11-05",
+    "sha256": "3d57d8ad64ced9f5828b0a6a446dd4d28bbd4303b166714d34bdfe086442ef84"
+  },
+  "neural-antibodies:p-q-vgcc": {
+    "date": "2026-11-05",
+    "sha256": "927f2bf7982cb38af84dd98aec5ebf3c6b013a17db0926d05d11cbe0210c4dfc"
+  },
+  "neural-antibodies:pca2-map1b": {
+    "date": "2026-11-05",
+    "sha256": "29c795df1bcb580b63d9373e9bcb751150e3b1ccd89fe20f7aef4b7d0dbaf67c"
+  },
+  "neural-antibodies:pde10a": {
+    "date": "2026-11-05",
+    "sha256": "418c78075c719301873dd3d4b52ed564dab55a24b936e8e603b0625d9b7bf769"
+  },
+  "neural-antibodies:septin-5": {
+    "date": "2026-11-05",
+    "sha256": "69ccabefd47faf7e5032b610b8c747fb58159a0e1fe43c9778e21f76db646361"
+  },
+  "neural-antibodies:septin-7": {
+    "date": "2026-11-05",
+    "sha256": "b18124d4b88681c0ec77781ffdcb90c8d6aedcd5cf6165f73560d72fd4d920c3"
+  },
+  "neural-antibodies:sox1": {
+    "date": "2026-11-05",
+    "sha256": "b1b0586042e73580377f17fc42947a0a02502b64bff1358c9315bd3b576d3fbb"
+  },
+  "neural-antibodies:tr-dner": {
+    "date": "2026-11-05",
+    "sha256": "9742d23fe9c3234e81330e63b488e5e3ffb784f0b1d9b9435959318a21d5767d"
+  },
+  "neural-antibodies:trim46": {
+    "date": "2026-11-05",
+    "sha256": "e0f6a1e6a534964b0c5dff226f8f422f4c487e7ef033a16de414b984162fef15"
+  },
+  "rcvs-triggers:ergots-dopamine-agonists": {
+    "date": "2026-11-05",
+    "sha256": "2b6f10fc702235a56a5b05d4e35c2a27a29e823b5de9aa9866d1624c238d356f"
+  },
+  "rcvs-triggers:hormonal-agents": {
+    "date": "2026-11-05",
+    "sha256": "94b32ecfbebbe27aac3e97d2fa3a7e6f81915f28b76fa69b675c546f0fad862e"
+  },
+  "rcvs-triggers:illicit-recreational": {
+    "date": "2026-11-05",
+    "sha256": "fd811e6b6c0f86134bbf029023c5e1a6898fbc307a00044fa2331e16ea7f4b9f"
+  },
+  "rcvs-triggers:immunomodulators": {
+    "date": "2026-11-05",
+    "sha256": "b7be3365b51f87e027dd4503ac11ceaa4a49754211a3661ca21cb20e7b73f774"
+  },
+  "rcvs-triggers:other-reported-triggers": {
+    "date": "2026-11-05",
+    "sha256": "081869b0ded4d77085161a10c734f0635120feee1ea21a44761349c27f8671bf"
+  },
+  "rcvs-triggers:serotonergic-antidepressants": {
+    "date": "2026-11-05",
+    "sha256": "f0481a64c2799ef6bbf16b1d165fd1f74da2777650b77658f1accc9ac4d3bf07"
+  },
+  "rcvs-triggers:sympathomimetics": {
+    "date": "2026-11-05",
+    "sha256": "6887b13fb43b1ca6403037fc12fe474e97253f2f1254ccf9efeb1fac43e258b6"
+  },
+  "rcvs-triggers:triptans": {
+    "date": "2026-11-05",
+    "sha256": "6e821109521dd496f8afb58197ea0ec1c41ea00530dbd2055c195f52c4c65d19"
+  },
+  "reference-cards:asah-numbers": {
+    "date": "2026-11-08",
+    "sha256": "53135a2d4e6e9f75b7d4f7b9f5c94550e12ce66ee7309c33775bc15e91d3df00"
+  },
+  "reference-cards:boston-criteria-caa": {
+    "date": "2026-11-11",
+    "sha256": "9e5785411949fc56a23b229191168847e0cb7ac2b85cd85cf901fc5ea997d914"
+  },
+  "reference-cards:inpatient-parkinson-disease": {
+    "date": "2026-11-11",
+    "sha256": "3280dca3b8e09abfd2814604e14608ea88f9f2a49c3c519f92d5113bd592d605"
+  },
+  "reference-cards:neuro-icu-targets": {
+    "date": "2026-11-07",
+    "sha256": "9d860342bf7caa3f1abac46fbd2dd11f26db17510682c41d416da475415c83e4"
+  },
+  "reference-cards:neuroprognostication": {
+    "date": "2026-11-11",
+    "sha256": "a0c33b9d30bd8b43e04fd5c53ff7ebe43994e468e755f877dc00537bdc71f241"
+  },
+  "reference-cards:thrombophilia-test-validity": {
+    "date": "2026-11-07",
+    "sha256": "db5233edb8043a21f1277d7a0a44d8e007dd7543b387c933f9f6b2e5173a0b3a"
+  },
+  "seizure-threshold:beta-lactams-carbapenems": {
+    "date": "2026-11-05",
+    "sha256": "09243080acfee374eca2f5dba8e1631d990d3fa26df5b5b1dabbba4301cb1084"
+  },
+  "seizure-threshold:bupropion": {
+    "date": "2026-11-07",
+    "sha256": "0c521d8c2585fb2c4df9030c3fe5dfe14790986bb6920167e0c718c4198fdd78"
+  },
+  "seizure-threshold:busulfan": {
+    "date": "2026-11-11",
+    "sha256": "9f93786e115498e412af778c583f4095c32cfa1a7f5706aff0a07259ab6a9239"
+  },
+  "seizure-threshold:calcineurin-inhibitors": {
+    "date": "2026-11-11",
+    "sha256": "435bb9ab795177729685047476800030e480a9090f3d697766cf38bff91b804a"
+  },
+  "seizure-threshold:cefepime": {
+    "date": "2026-11-07",
+    "sha256": "9e0863650ce752b5bbc52396d2851dea17edeea51a344c4eee002766703a3cf4"
+  },
+  "seizure-threshold:clozapine": {
+    "date": "2026-11-05",
+    "sha256": "d29a84f87a7fafb6c09e5fb41b85f9f0b8b8f73e2ff3ee1c1abb142c036eddc0"
+  },
+  "seizure-threshold:flumazenil": {
+    "date": "2026-11-05",
+    "sha256": "60595542b4341f6a7f23e7a37c2236821a59a6dbbd51f12cc98712d8808ef982"
+  },
+  "seizure-threshold:fluoroquinolones": {
+    "date": "2026-11-05",
+    "sha256": "dcfee7122312b0776be2c0e4f1724d43c819874885949831a9e61932d819bffe"
+  },
+  "seizure-threshold:ifosfamide": {
+    "date": "2026-11-11",
+    "sha256": "528fb615ef5e0bf9ce23df33d220518eacc902f6be03d586379b4adae48b552e"
+  },
+  "seizure-threshold:imipenem-cilastatin": {
+    "date": "2026-11-11",
+    "sha256": "3e44f7961b592ef0c250bf965b0f0c089c638105ffaa696de538411a759d2e8a"
+  },
+  "seizure-threshold:intrathecal-baclofen": {
+    "date": "2026-11-11",
+    "sha256": "ba37ddd8fe9b0cfc8dfedf3866c1c4ec6e37411b0e2ae427e753cb022df91dde"
+  },
+  "seizure-threshold:isoniazid": {
+    "date": "2026-11-11",
+    "sha256": "85bfbd0baeee6e11aa742935c39f5e074f7ae7f5e8fe6469b523952540cc20c1"
+  },
+  "seizure-threshold:meperidine": {
+    "date": "2026-11-05",
+    "sha256": "45f3c40f5f8e52eab0c143ff80ac7b5c54e3eb52b7b43e84728221d5805164ee"
+  },
+  "seizure-threshold:theophylline": {
+    "date": "2026-11-05",
+    "sha256": "75036ee53a6bb12aa898d816baa6acc43f01953046eb1e91085d8e991c29c44f"
+  },
+  "seizure-threshold:tramadol": {
+    "date": "2026-11-05",
+    "sha256": "3a8d807b9db9b75ba7b036f039f908ce67fcaddf2578deb0bdf53ff6f2cc33ef"
+  },
+  "vascular-antithrombotics:af-stroke-anticoag-timing": {
+    "date": "2026-11-07",
+    "sha256": "9e0c3eec3569824ca0c606fbfd132a39f378e24faf4885b05adc470895378453"
+  },
+  "vascular-antithrombotics:anticoag-reversal-ich": {
+    "date": "2026-11-08",
+    "sha256": "bf80418491a28fc1e57037876f4284de4d773360c99fbff986c68cf5d82afe72"
+  },
+  "vascular-antithrombotics:antiplatelet-ich": {
+    "date": "2026-11-07",
+    "sha256": "dc5af58b16f9a7d20edea9ff76d08e6dc44371085609887d3cd9cdfbd135deac"
+  },
+  "vascular-antithrombotics:antithrombotic-after-reperfusion": {
+    "date": "2026-11-07",
+    "sha256": "ad2720c762890642ef7c2a8fe95b4277d4dbf81156d5b79192d22bb0a54e5e2a"
+  },
+  "vascular-antithrombotics:apixaban": {
+    "date": "2026-11-08",
+    "sha256": "3ff9445f3ce54f3fbeef2e8d7cacd1ba79594a7764b9c648226f28eb4d82fc73"
+  },
+  "vascular-antithrombotics:aspirin": {
+    "date": "2026-11-07",
+    "sha256": "9846da09f2db24c1c375e14bbf9a3c436206be3791d37875d9436624d7ba7fd8"
+  },
+  "vascular-antithrombotics:aspirin-dipyridamole": {
+    "date": "2026-11-07",
+    "sha256": "029261fe99576401e7b65336c28a9ad60bc5edbe66955f093b1a5efe17c0291b"
+  },
+  "vascular-antithrombotics:cancer-associated-stroke": {
+    "date": "2026-11-07",
+    "sha256": "d42a810a75cace7737d0b2550837121a8b05177f8e400a9a7543ebc68499838c"
+  },
+  "vascular-antithrombotics:cervical-artery-dissection": {
+    "date": "2026-11-07",
+    "sha256": "ab258a07ed26feecc86c1aa79995eaf33d9ecd77289157337adb4e54b9bae7ef"
+  },
+  "vascular-antithrombotics:cilostazol": {
+    "date": "2026-11-07",
+    "sha256": "4e2d6b4c040652b2e81b68b473bc2ffbd8b442346454a7f466b208d19fd01fa7"
+  },
+  "vascular-antithrombotics:clopidogrel": {
+    "date": "2026-11-07",
+    "sha256": "47f897be4e70280135772138004accf25df5b5644ec400b1992b3713feffdd68"
+  },
+  "vascular-antithrombotics:cvt-anticoagulation": {
+    "date": "2026-11-08",
+    "sha256": "d6f63106ae2d7dc477c29e88410505dd7083439da83ae67b29c2f351c688c67d"
+  },
+  "vascular-antithrombotics:dabigatran": {
+    "date": "2026-11-07",
+    "sha256": "e730f1e36e48501e2d775a22e9b07ea0f0cf1eb7826115f7e93ab413c538041a"
+  },
+  "vascular-antithrombotics:dapt-minor-stroke-tia": {
+    "date": "2026-11-08",
+    "sha256": "61026fc3600e7cbaa6ab922006a527c83160114f7516281b0905f62b649fb45d"
+  },
+  "vascular-antithrombotics:edoxaban": {
+    "date": "2026-11-08",
+    "sha256": "1f36f83fe6f13a55c014f7b481c51f4ab69e2b9fdca0df4c1054c1880a03a56f"
+  },
+  "vascular-antithrombotics:enoxaparin": {
+    "date": "2026-11-08",
+    "sha256": "3194d574405dce81f18876dab30ebb99da72d795262d8cce32508570bff5b681"
+  },
+  "vascular-antithrombotics:esus-antithrombotic": {
+    "date": "2026-11-11",
+    "sha256": "c7f2a1d080a9dc55718f9904fad75c3c8eacc6ca61f19c6502c13ac0ff9bac14"
+  },
+  "vascular-antithrombotics:four-factor-pcc": {
+    "date": "2026-11-08",
+    "sha256": "f16528ed2f73a1d8322f98b1b77871b7b2631723c02c66501dda86ea42fa3ae8"
+  },
+  "vascular-antithrombotics:gp-iib-iiia-inhibitors": {
+    "date": "2026-11-07",
+    "sha256": "ef5b8d93c9a7460f04f59d1d89ec992b2ad2ec868f4378efac19d4b398a07735"
+  },
+  "vascular-antithrombotics:heparin-ufh": {
+    "date": "2026-11-07",
+    "sha256": "dd2efe089f678b47b08c213c5ce57e302432d7268e9ac80c5c46c7fba0b74287"
+  },
+  "vascular-antithrombotics:icad-symptomatic": {
+    "date": "2026-11-07",
+    "sha256": "364b8499cc943a23942a913f20600c88e554d556d467f3d6043eeb32f6968989"
+  },
+  "vascular-antithrombotics:mechanical-valve-stroke": {
+    "date": "2026-11-07",
+    "sha256": "31b966ed09cc084a9b218a6dd2bbae13ec8a4f2446de429094c4c66a10ac145a"
+  },
+  "vascular-antithrombotics:periprocedural-holds-lp-evd": {
+    "date": "2026-11-08",
+    "sha256": "0be9a8b4501ef8c80d4835ac46675e58cf03f4342d93fbc6dd53953a87aebc2c"
+  },
+  "vascular-antithrombotics:pregnancy-antithrombotics": {
+    "date": "2026-11-08",
+    "sha256": "072468f93aa8575dfcb9ef9626d5e0beb0d557d458a06dd14485c0c64b6445b7"
+  },
+  "vascular-antithrombotics:protamine": {
+    "date": "2026-11-07",
+    "sha256": "53f4ec3f82b060b69a6eec7456ce322d2ac61105e42317dab52b7bc15d4df737"
+  },
+  "vascular-antithrombotics:restart-antithrombotic-after-ich": {
+    "date": "2026-11-11",
+    "sha256": "c387252d9e0c31b7e4acc27b33765edaa6b1900cc7b8998884e78ef331c58fae"
+  },
+  "vascular-antithrombotics:rivaroxaban": {
+    "date": "2026-11-08",
+    "sha256": "9b0540490c81d631d4401a9996d287671c7011b3add457bb02507244e496f09f"
+  },
+  "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics": {
+    "date": "2026-11-08",
+    "sha256": "628e892e1e2267c92b358b0557c0573f47b20735bee3b02c816e5eafe2686ea0"
+  },
+  "vascular-antithrombotics:ticagrelor": {
+    "date": "2026-11-08",
+    "sha256": "e8d5c0b6663a3e56762822666ea684394d75ffefcbbaecd794ae41e92b77642c"
+  },
+  "vascular-antithrombotics:vitamin-k": {
+    "date": "2026-11-07",
+    "sha256": "114e6c787f6eb3185edeac8007e937d92effb2d61228ebb1ab8a47da8ddbaccf"
+  },
+  "vascular-antithrombotics:vte-prophylaxis-stroke-ich": {
+    "date": "2026-11-07",
+    "sha256": "74c43df0176d20246c27a0d5a0224712d7bb61fc6bb763282652cc33c6a3cb59"
+  },
+  "vascular-antithrombotics:warfarin": {
+    "date": "2026-11-07",
+    "sha256": "d8ed37a194be08c08e36278a6f5c298dc86ec54827fe0bbc665f9875321a0d04"
+  }
+}
