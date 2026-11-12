@@ -43,7 +43,7 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - VERIFY: none
 
 ## Mannitol 20% (`mannitol-dose`)
-- Formula: 0.5–1 g/kg; mL = g × 5; osmolar gap = measured − (2Na + glucose/18 + BUN/2.8)
+- Formula: 0.5–1 g/kg; mL = g × 5; osmolar gap = measured − (2Na + glucose/18 + BUN/2.8), warns above 20
 - Caps: none
 - Rounding: nearest 5 g
 - Weight: ACTUAL
