@@ -2,6 +2,7 @@
 
 All entries were batch-signed on 2026-11-05. This queue lets Jason re-review them by risk without resetting `lastReviewed`.
 
+- A tick means the item was checked against its source document, not skimmed (Jason, 2026-11-12).
 - Tick a box when the item is reviewed. `npm run rereview` regenerates this file from the data and keeps ticked boxes.
 - Printable sheets in the same order: `npm run review-sheets -- --order risk` → `generated/review/risk-*.html`.
 - Anything that needs a content change goes through `docs/VERSIONING.md` (edit → validate → review-sheets → signoff → release).

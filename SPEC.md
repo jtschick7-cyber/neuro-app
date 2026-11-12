@@ -15,3 +15,7 @@ The full spec is `docs/PWA_BUILD_BRIEF.md`. This file records the product decisi
 4. **Disclaimer gate** on first launch and whenever `DISCLAIMER_REVISION` in `src/content/copy.ts` changes.
 5. **Content is clinician-signed.** The build fails on unsigned entries or open VERIFY items (`npm run validate:release`).
 6. **Public repo and site** for now; the disclaimer states it is a personal reference not endorsed by any institution.
+7. **Scope: what a neurohospitalist looks up, not what they know cold.** An entry earns its place when it holds numbers, criteria, panels, interactions or steps that are checked at the bedside and easy to misremember. Material a neurologist knows cold is cut or trimmed to the part that is looked up. Agreed 2026-11-12 (`planning/AUDIT_2026-11-12.md`, scope report).
+   - *In:* intrathecal baclofen withdrawal (rare, time-critical, easy to miss); gabapentin and pregabalin renal dosing bands; CSF traumatic-tap correction.
+   - *Out or trimmed:* the HSV acyclovir dose alone (10 mg/kg q8h); an aspirin agent card beyond reversal, holds and renal thresholds; core vascular workups beyond their extended panels.
+   - Test before adding an entry or a section: would I open the app for this on a consult? If not, leave it out.

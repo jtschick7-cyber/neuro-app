@@ -13,10 +13,11 @@ Review from the sheets: `npm run review-sheets` → `generated/review/<registry>
 - [ ] Formulary: 4F-PCC for factor Xa reversal; idarucizumab NOT_STOCKED_LOCAL; andexanet NOT_US_MARKETED
 - [ ] Linked calculators and `relatedIds` point to the right content
 - [ ] Adult US practice; terse; nothing reads as patient advice
+- [ ] In scope: something looked up at the bedside, not known cold (`SPEC.md` decision 7)
 
 **Registry-specific**
 - [ ] *acute-neuro* — immediate actions in the right order and time windows; escalation triggers; treatment roles (first-line vs adjunct)
-- [ ] *consult-workups* — must-not-miss diagnoses flagged; test priorities (STAT/URGENT/ROUTINE) sensible; recs template usable in a note
+- [ ] *consult-workups* — must-not-miss diagnoses flagged; test priorities (STAT/URGENT/ROUTINE) sensible; decision rules in the right order
 - [ ] *vascular-antithrombotics* — renal/hepatic adjustments and hold times match label/ASRA; reversal matches formulary; decision rules in the right order
 - [ ] *neural-antibodies* — antigen class (surface vs intracellular); PNS risk and tumor associations; specimen (serum/CSF) and method
 - [ ] *Caution lists* (mg-contraindications, seizure-threshold, rcvs-triggers) — tier matches source wording; alternatives name no listed drug (validator checks); renal/dose conditions stated
@@ -33,11 +34,11 @@ Review from the sheets: `npm run review-sheets` → `generated/review/<registry>
 **App**
 - [ ] Disclaimer gate shows on first launch and after `DISCLAIMER_REVISION` changes
 - [ ] Footer content version matches `about.json`
-- [ ] No patient data saved: after use, localStorage holds only bedside notes and the disclaimer acknowledgment; IndexedDB and the URL hold no inputs; reopening the app shows an empty patient bar
+- [ ] No patient data saved: after use, localStorage holds only bedside notes, pinned entry ids and the disclaimer acknowledgment; IndexedDB and the URL hold no inputs; reopening the app shows an empty patient bar
 - [ ] Airplane mode: app opens and every registry and calculator loads
 - [ ] Cache name = content version; with the app open on the phone, the deploy shows the "New content available" bar (on launch or on return from the switcher); unopened sections still load before Reload; after Reload the footer shows the new version and old caches are gone
 - [ ] Search finds: "mag", "TNK", "ICH", "Botox", "Keppra", "status"
 - [ ] Spot-checks above repeated on the phone
 
 **Archive**
-- [ ] Release commit tagged `content-<contentVersion>`
+- [ ] Release commit tagged `content-<contentVersion>` (the deploy workflow does this; check the tag exists)

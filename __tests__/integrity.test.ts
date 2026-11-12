@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
-import { checkSignoffs, collectCalculatorIds, entryHash, readSignoffs, type RawEntry } from '../scripts/integrity';
+import { checkSignoffs, collectCalculatorIds, entryHash, findProseRefProblems, readSignoffs, type RawEntry } from '../scripts/integrity';
 
 const signed: RawEntry = { id: 'x', title: 'X', dose: '0.1 mg/kg', lastReviewed: '2026-11-07' };
 const records = { 'reg:x': { date: '2026-11-07', sha256: entryHash(signed) } };
@@ -65,5 +65,29 @@ describe('calculatorIds walk (audit P1-3)', () => {
       }
     }
     expect(n).toBeGreaterThan(15);
+  });
+});
+
+describe('prose cross-references (audit P2-11)', () => {
+  const ids = new Map([['acute-neuro', new Set(['convulsive-status-epilepticus'])], ['mg-contraindications', new Set(['aminoglycosides'])]]);
+  const calc = new Set(['mannitol-dose']);
+  it('accepts refs to entries, registries and calculators', () => {
+    const e = { notes: ['See acute-neuro:convulsive-status-epilepticus', 'see mg-contraindications', 'calc:mannitol-dose', 'see convulsive-status-epilepticus'] };
+    expect(findProseRefProblems(e, ids, calc)).toEqual([]);
+  });
+  it('flags refs that do not resolve, but ignores sources and unknown prefixes', () => {
+    const e = { notes: ['See acute-neuro:no-such-entry', 'see refractory-super-refractory-se', 'calc:no-such-calc', 'ratio 1:2', 'HLA-B:1502'], sources: ['see not-checked-here 2020'] };
+    expect(findProseRefProblems(e, ids, calc).map((p) => p.ref)).toEqual(['acute-neuro:no-such-entry', 'see refractory-super-refractory-se', 'calc:no-such-calc']);
+  });
+});
+
+describe('schemaVersion matches the schema constant (audit P2-11)', () => {
+  it('holds for every shipped registry', async () => {
+    const consts: Record<string, string> = {
+      'acute-neuro': (await import('../schema/acute-neuro')).ACUTE_NEURO_SCHEMA_VERSION,
+      'consult-workups': (await import('../schema/consult-workups')).CONSULT_WORKUPS_SCHEMA_VERSION,
+      'rcvs-triggers': (await import('../schema/caution-list')).CAUTION_LIST_SCHEMA_VERSION,
+    };
+    for (const [reg, v] of Object.entries(consts)) expect(JSON.parse(readFileSync(`data/${reg}.json`, 'utf8')).schemaVersion, reg).toBe(v);
   });
 });
