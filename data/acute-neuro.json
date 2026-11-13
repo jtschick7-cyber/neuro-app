@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "3.0.1",
+  "version": "3.1.1",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -5300,6 +5300,239 @@
       "lastReviewed": "2026-11-07"
     },
     {
+      "id": "intrathecal-baclofen-withdrawal",
+      "title": "Intrathecal baclofen withdrawal (and overdose)",
+      "keyNumbers": [
+        "Withdrawal onset: hours to a few days",
+        "Restore ITB at or near the pre-interruption dose",
+        "Overdose: physostigmine 2 mg IM/IV, ≤1 mg/min",
+        "Overdose: consider removing 30–40 mL CSF by LP",
+        "Seizures: occur with withdrawal and overdose"
+      ],
+      "category": "TOXIC_METABOLIC",
+      "searchTerms": [
+        "ITB",
+        "baclofen pump",
+        "baclofen withdrawal",
+        "baclofen overdose",
+        "Gablofen",
+        "Lioresal"
+      ],
+      "presentation": [
+        "Early: return of baseline spasticity, pruritus, hypotension, paresthesias (Gablofen §5.5)",
+        "Late: high fever, altered mental status, exaggerated rebound spasticity and rigidity, progressing in rare cases to rhabdomyolysis, multiple organ-system failure and death (boxed warning)",
+        "Usually within hours to a few days of interruption (§5.5)",
+        "Seizures occur with both withdrawal and overdose (§5.5)",
+        "Overdose: drowsiness, dizziness, somnolence, respiratory depression, seizures, rostral progression of hypotonia, coma (§5.4, §10)"
+      ],
+      "definitions": [
+        "Causes: catheter malfunction (especially disconnection), low reservoir volume, end of pump battery life, human error; intrathecal mass at the catheter tip (§5.5)",
+        "Higher risk: spinal cord injury at T6 or above, communication difficulties, prior oral or intrathecal baclofen withdrawal (boxed warning)"
+      ],
+      "immediateActions": [
+        {
+          "order": 1,
+          "window": "On suspicion",
+          "action": "Call the pump team or neurosurgery; interrogate the pump (reservoir volume, programming, alarms)"
+        },
+        {
+          "order": 2,
+          "window": "Withdrawal",
+          "action": "Restore intrathecal baclofen at or near the dose before the interruption (§5.5)"
+        },
+        {
+          "order": 3,
+          "window": "If restoration is delayed",
+          "action": "Oral or enteral baclofen, or oral, enteral or IV benzodiazepines — oral or enteral baclofen alone should not be relied on (§5.5)"
+        },
+        {
+          "order": 4,
+          "window": "Severe withdrawal",
+          "action": "ICU supportive care; an external lumbar catheter can deliver intrathecal baclofen (Gburek-Augustat 2021)"
+        },
+        {
+          "order": 5,
+          "window": "Overdose",
+          "action": "Remove residual drug from the pump; intubate for respiratory depression; consider removing 30–40 mL CSF by LP if not contraindicated (§10)"
+        }
+      ],
+      "workup": [
+        {
+          "test": "Pump interrogation and reservoir check",
+          "priority": "STAT",
+          "indication": [],
+          "notes": [
+            "A sudden large dose requirement suggests a catheter kink or dislodgement (Gablofen §2)"
+          ]
+        },
+        {
+          "test": "CK, BMP, LFTs, coagulation",
+          "priority": "URGENT",
+          "indication": [
+            "Fever, rigidity or altered mental status"
+          ],
+          "notes": [
+            "Rhabdomyolysis, DIC and organ failure occur in severe withdrawal (Gburek-Augustat 2021)"
+          ]
+        },
+        {
+          "test": "Imaging of pump and catheter (X-ray; further studies per the pump team)",
+          "priority": "URGENT",
+          "indication": [],
+          "notes": []
+        },
+        {
+          "test": "Infection workup",
+          "priority": "URGENT",
+          "indication": [
+            "Fever"
+          ],
+          "notes": [
+            "Withdrawal can mimic sepsis (§5.5)"
+          ]
+        }
+      ],
+      "treatment": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Intrathecal baclofen (restore)",
+          "routes": [
+            "INTRATHECAL"
+          ],
+          "doseText": "At or near the dose before therapy was interrupted",
+          "dose": [],
+          "notes": [
+            "Continuous infusion: antispastic effect starts at 6–8 h, maximal at 24–48 h; bolus onset ½–1 h, peak about 4 h (§12.2)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Gablofen label §5.5"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Benzodiazepine (bridge)",
+          "routes": [
+            "IV",
+            "PO",
+            "NG"
+          ],
+          "doseText": "Oral, enteral or IV; case series used IV infusion 1–2 mg/h",
+          "dose": [],
+          "notes": [
+            "Label gives no dose; 1–2 mg/h is from a six-patient pediatric case series (Gburek-Augustat 2021, Table 1)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Gablofen label §5.5 (\"may prevent potentially fatal sequelae\")"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Oral or enteral baclofen (bridge)",
+          "routes": [
+            "PO",
+            "NG"
+          ],
+          "doseText": "Up to 150 mg/day in the case series; not enough on its own",
+          "dose": [],
+          "notes": [
+            "\"Oral or enteral baclofen alone should not be relied upon\" (§5.5)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Gablofen label §5.5; dose from Gburek-Augustat 2021, Table 1"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Dantrolene (rhabdomyolysis)",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "IV, for rhabdomyolysis; no dose given in the sources",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Gburek-Augustat 2021, Table 1 (case series)"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "ADJUNCT",
+          "agent": "Physostigmine (overdose)",
+          "routes": [
+            "IV",
+            "IM"
+          ],
+          "doseText": "Adult 2 mg IM or IV at no more than 1 mg/min; may reverse drowsiness and respiratory depression",
+          "dose": [
+            {
+              "label": "Adult",
+              "amountMin": 2,
+              "amountMax": 2,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 1,
+                  "unit": "MG",
+                  "scope": "MAX_RATE_PER_MIN"
+                }
+              ],
+              "frequency": [],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Can induce seizures and bradycardia (§10)",
+            "No specific antidote exists (§10)"
+          ],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Gablofen label §10"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        }
+      ],
+      "pitfalls": [
+        "Withdrawal can resemble autonomic dysreflexia, sepsis, malignant hyperthermia or NMS (§5.5)",
+        "Abrupt withdrawal can trigger an autonomic dysreflexic episode (§5.8)",
+        "Injecting into the catheter access port can cause a life-threatening overdose (§5.4)",
+        "A missed or late refill brings back severe spasticity and possibly withdrawal (§5.1)"
+      ],
+      "escalateWhen": [
+        "Fever, rigidity, altered mental status or rising CK → ICU",
+        "Respiratory depression or coma (overdose) → ICU, airway"
+      ],
+      "institutionVaries": [
+        "Who manages the pump after hours (neurosurgery, PM&R, pain service)",
+        "External lumbar catheter availability"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "seizure-threshold:intrathecal-baclofen",
+        "acute-neuro:nms-parkinsonism-hyperpyrexia",
+        "acute-neuro:serotonin-syndrome"
+      ],
+      "sources": [
+        "Gablofen (baclofen injection) intrathecal US prescribing information. Piramal Critical Care; revised 5/2026 (user-supplied label)",
+        "Gburek-Augustat J, et al. Unusual mechanical failures of intrathecal baclofen pump systems: symptoms, signs, and trouble shooting. Childs Nerv Syst 2021;37(8):2597-2604. doi:10.1007/s00381-021-05154-3"
+      ],
+      "lastReviewed": "2026-11-13"
+    },
+    {
       "id": "hyponatremia-ods",
       "title": "Severe hyponatremia & osmotic demyelination syndrome",
       "keyNumbers": [
@@ -5793,6 +6026,309 @@
         "Santomasso BD, et al. Management of immune-related adverse events in patients treated with CAR T-cell therapy: ASCO guideline. J Clin Oncol 2021;39(35):3978-3992"
       ],
       "lastReviewed": "2026-11-07"
+    },
+    {
+      "id": "ici-neurotoxicity",
+      "title": "Immune checkpoint inhibitor neurotoxicity (MG, GBS, encephalitis, meningitis)",
+      "keyNumbers": [
+        "Encephalitis, GBS: methylpred 1 g IV daily ×3–5 d",
+        "MG grade 2: prednisone 1–1.5 mg/kg/day; stop ICI",
+        "IVIG 2 g/kg over 5 days (0.4 g/kg/day)",
+        "Refractory encephalitis: rituximab 375 mg/m² ×4",
+        "Onset usually within 3 months of starting the ICI"
+      ],
+      "category": "NEUROIMMUNOLOGY",
+      "searchTerms": [
+        "irAE",
+        "immune-related adverse event",
+        "checkpoint inhibitor",
+        "pembrolizumab",
+        "nivolumab",
+        "ipilimumab",
+        "anti-PD-1",
+        "anti-CTLA-4",
+        "ICI myasthenia",
+        "ICI encephalitis"
+      ],
+      "presentation": [
+        "Neurologic irAEs typically start within the first 3 months of an ICI; most are grade 1–2 (SITC 2021)",
+        "MG: fatigable or fluctuating weakness, proximal > distal, bulbar, ocular or diaphragmatic involvement; can occur with negative AChR/MuSK serology",
+        "GBS: usually within the first 3 cycles; early low back or thigh pain, ascending weakness, areflexia; facial or extraocular weakness and dysautonomia possible; more common with anti-CTLA-4 or combination therapy",
+        "Encephalitis: confusion, behaviour change, short-term memory loss, agitation, speech abnormality, seizures",
+        "Aseptic meningitis: headache, neck stiffness, photophobia, low-grade fever, nausea, with normal mental status"
+      ],
+      "definitions": [
+        "Grades follow CTCAE v5.0 (SITC 2021)"
+      ],
+      "immediateActions": [
+        {
+          "order": 1,
+          "window": "On suspicion",
+          "action": "Neurology consult for any grade; hold the ICI and tell oncology"
+        },
+        {
+          "order": 2,
+          "window": "MG suspected",
+          "action": "Evaluate for myositis and myocarditis too — suspicion of one of MG, myositis or myocarditis should prompt evaluation for all three (SITC 2021)"
+        },
+        {
+          "order": 3,
+          "window": "Encephalitis or meningitis",
+          "action": "Empirical antiviral until viral encephalitis is excluded (SITC 2021) — acyclovir 10 mg/kg IV q8h, see viral-encephalitis; antibiotics until bacterial meningitis is excluded (SITC 2021)"
+        },
+        {
+          "order": 4,
+          "window": "MG or GBS",
+          "action": "Frequent pulmonary assessment (NIF and VC); grade 3–4 MG → admit, possibly ICU"
+        }
+      ],
+      "workup": [
+        {
+          "test": "MG: AChR and MuSK antibodies; electrodiagnostics to separate MG from myositis; NIF and VC",
+          "priority": "URGENT",
+          "indication": [
+            "Suspected MG"
+          ],
+          "notes": [
+            "In one 47-patient series, AChR positive in 30 of 45 and MuSK in 1 of 19 (SITC 2021)",
+            "MRI brain for ocular or bulbar symptoms"
+          ]
+        },
+        {
+          "test": "Myositis/myocarditis screen: troponin, ECG, cardiac MRI",
+          "priority": "URGENT",
+          "indication": [
+            "Suspected MG or myositis"
+          ],
+          "notes": [
+            "Overlap is common; MG case fatality about 20%, myocarditis about 17% (SITC 2021)"
+          ]
+        },
+        {
+          "test": "GBS: MRI spine, LP, EMG/NCS, ganglioside antibodies (blood and CSF)",
+          "priority": "URGENT",
+          "indication": [
+            "Suspected GBS"
+          ],
+          "notes": [
+            "Nerve root enhancement or thickening may be seen"
+          ]
+        },
+        {
+          "test": "Encephalitis: MRI brain, LP with infectious PCR, autoimmune and paraneoplastic panels (blood and CSF), EEG, CBC, CMP, thyroid panel",
+          "priority": "URGENT",
+          "indication": [
+            "Suspected encephalitis"
+          ],
+          "notes": []
+        },
+        {
+          "test": "Meningitis: MRI brain and pituitary with and without contrast, LP, cortisol, ACTH",
+          "priority": "URGENT",
+          "indication": [
+            "Suspected aseptic meningitis"
+          ],
+          "notes": [
+            "Exclude infection, leptomeningeal metastasis and hypophysitis"
+          ]
+        }
+      ],
+      "treatment": [
+        {
+          "role": "FIRST_LINE",
+          "agent": "Methylprednisolone (GBS, encephalitis)",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "1,000 mg IV daily for 3–5 days, plus IVIG or PLEX",
+          "dose": [
+            {
+              "label": "Pulse",
+              "amountMin": 1000,
+              "amountMax": 1000,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "daily"
+              ],
+              "duration": [
+                "3–5 days"
+              ]
+            }
+          ],
+          "notes": [
+            "GBS: permanently discontinue the ICI (SITC 2021)"
+          ],
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "SITC 2021 panel recommendation; GBS LE 1"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Prednisone + pyridostigmine (MG grade 2)",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Stop the ICI. Prednisone 1–1.5 mg/kg PO daily, taper by symptoms; pyridostigmine 30 mg PO TID, up to 120 mg PO QID as tolerated",
+          "dose": [
+            {
+              "label": "Prednisone",
+              "amountMin": 1,
+              "amountMax": 1.5,
+              "unit": "MG",
+              "basis": "PER_KG",
+              "timing": "PER_DAY",
+              "weightBasis": "ACTUAL",
+              "caps": [],
+              "frequency": [
+                "daily"
+              ],
+              "duration": [
+                "Taper by symptom improvement"
+              ]
+            },
+            {
+              "label": "Pyridostigmine",
+              "amountMin": 30,
+              "amountMax": 120,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "TID, up to QID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Ocular MG grade ≤2: prednisone 0.5–1 mg/kg/day (SITC 2021)",
+            "Diagnosed MG of any grade: discontinue the ICI, give IVIG or PLEX with steroids and pyridostigmine (SITC 2021, LE 1)"
+          ],
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "SITC 2021 panel recommendation; LE 1"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "IVIG or plasma exchange",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "IVIG 2 g/kg over 5 days (0.4 g/kg/day), or PLEX: 5 days for MG; every other day for 5–7 cycles for encephalitis",
+          "dose": [
+            {
+              "label": "IVIG",
+              "amountMin": 0.4,
+              "amountMax": 0.4,
+              "unit": "G",
+              "basis": "PER_KG",
+              "timing": "PER_DAY",
+              "weightBasis": "ACTUAL",
+              "caps": [],
+              "frequency": [
+                "daily"
+              ],
+              "duration": [
+                "5 days (2 g/kg total)"
+              ]
+            }
+          ],
+          "notes": [
+            "With steroids in MG of any grade and in GBS; in encephalitis if no response to pulse steroids"
+          ],
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "SITC 2021 panel recommendation; grade 3–4 MG: \"may be considered\""
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        },
+        {
+          "role": "SECOND_LINE",
+          "agent": "Rituximab (encephalitis refractory to pulse steroids)",
+          "routes": [
+            "IV"
+          ],
+          "doseText": "375 mg/m² weekly for 4 weeks (alternative to IVIG or PLEX)",
+          "dose": [],
+          "notes": [],
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "SITC 2021 panel recommendation; LE 1"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": []
+        },
+        {
+          "role": "FIRST_LINE",
+          "agent": "Prednisone (aseptic meningitis; non-GBS neuropathy grade ≤2)",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "0.5–1 mg/kg/day, depending on severity",
+          "dose": [
+            {
+              "label": "Prednisone",
+              "amountMin": 0.5,
+              "amountMax": 1,
+              "unit": "MG",
+              "basis": "PER_KG",
+              "timing": "PER_DAY",
+              "weightBasis": "ACTUAL",
+              "caps": [],
+              "frequency": [
+                "daily"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [
+            "Painful neuropathy: gabapentin, pregabalin or duloxetine until it resolves (SITC 2021, LE 1)"
+          ],
+          "evidenceLevel": "CONSENSUS",
+          "evidenceNote": [
+            "SITC 2021 panel recommendation; meningitis LE 4, neuropathy LE 2"
+          ],
+          "formularyStatus": "AVAILABLE",
+          "calculatorIds": []
+        }
+      ],
+      "pitfalls": [
+        "MG, myositis and myocarditis overlap — check troponin and ECG in every ICI MG",
+        "ICI MG can be seronegative; don't wait for antibodies",
+        "Unlike classic GBS, SITC recommends pulse steroids plus IVIG or PLEX for ICI GBS"
+      ],
+      "escalateWhen": [
+        "Grade 3–4 MG, falling NIF/VC, bulbar weakness → ICU",
+        "Troponin rise or arrhythmia → cardiology (myocarditis)"
+      ],
+      "institutionVaries": [
+        "Who restarts the ICI: re-challenge is generally considered only once symptoms are grade ≤1 on ≤10 mg/day prednisone (SITC 2021); MG and GBS mean permanent discontinuation"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:myasthenic-crisis",
+        "acute-neuro:guillain-barre-syndrome",
+        "acute-neuro:autoimmune-encephalitis",
+        "acute-neuro:icans-car-t-neurotoxicity",
+        "acute-neuro:viral-encephalitis",
+        "mg-contraindications:immune-checkpoint-inhibitors"
+      ],
+      "sources": [
+        "Brahmer JR, et al. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immune checkpoint inhibitor-related adverse events. J Immunother Cancer 2021;9(6):e002435. doi:10.1136/jitc-2021-002435"
+      ],
+      "lastReviewed": "2026-11-13"
     },
     {
       "id": "status-migrainosus",

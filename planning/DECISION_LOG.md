@@ -1249,3 +1249,9 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03a-scope-acute-neuro
 - `viral-encephalitis`: removed 2 HSV key numbers, the HSV presentation line and the false-negative PCR pitfall (all duplicated or common knowledge); acyclovir row kept for `bacterial-meningitis`.
 - `nonconvulsive-status-epilepticus`: lorazepam, levetiracetam and valproate rows replaced by one pointer row to convulsive SE (airway note and both calculators moved over); 2 key numbers removed.
 - acute-neuro 2.6.1 → 3.0.0 (MAJOR), consult-workups 3.2.3 → 3.2.4 (PATCH). Signed by Jason (standing instruction): 3.0.1 and 3.2.5. Released: content 2.2.1+3534dd69.
+
+## Audit 2026-11-12 content draft 3b: acute-neuro adds (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/03b-scope-acute-neuro-adds.md` as revised (name acyclovir via viral-encephalitis; seizure key number instead of the case-series bridge; keep workflow lines; reuse the existing Gablofen source string).
+- New `acute-neuro:ici-neurotoxicity` (SITC 2021) and `acute-neuro:intrathecal-baclofen-withdrawal` (Gablofen label; Gburek-Augustat 2021 case series for bridging only). Sources fetched 13 Nov; ASCO 2021 and the Lioresal label could not be opened and are not cited.
+- acute-neuro 3.0.1 → 3.1.0 (MINOR). Signed by Jason (standing instruction): 3.1.1. Released: content 2.2.1+96c134ff (331 unique sources).
