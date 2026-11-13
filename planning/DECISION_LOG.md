@@ -1279,3 +1279,10 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03e-scope-antithrombo
 - `aspirin`, `clopidogrel`, `heparin-ufh`: stroke-prevention/prophylaxis rows known cold, and pearls duplicating DAPT rules, removed. `warfarin`: one duplicate monitoring line and the dietary vitamin K line removed. `dapt-minor-stroke-tia`: rule 1 removed, rules renumbered, THALES key number added. Key numbers on all five cards shortened to ≤50 characters.
 - Draft item "add `vascular-antithrombotics:clopidogrel` to DAPT relatedIds" was already true in data/ (no-op; nothing changed for it).
 - vascular-antithrombotics 1.3.3 → 1.4.0 (MINOR). Signed by Jason (standing instruction): 1.4.1. Released: content 2.2.1+44e81fcc.
+
+## Audit 2026-11-12 content draft 3f: asm-interactions scope (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/03f-scope-asm-interactions.md` (keep fosphenytoin; keep the clonazepam and midazolam/triazolam pearls; MAJOR fine).
+- Cut `cns-polypharmacy-falls` and `gabapentinoids-opioids`; removed the dead link from `seizure-threshold:tramadol`. Sign-off pruned both records.
+- New `inducing-asm-nirmatrelvir-ritonavir` from the Paxlovid label (Pfizer, revised 2/2026, DailyMed, read 13 Nov). Lamotrigine/valproate/levetiracetam rows not confirmed either way (table only partly read); nothing said about them.
+- asm-interactions 0.2.1 → 1.0.0 (MAJOR), seizure-threshold 0.3.1 → 0.3.2 (PATCH). Signed (standing instruction): 1.0.1 and 0.3.3. Released: content 2.2.1+92a40abe (335 unique sources).

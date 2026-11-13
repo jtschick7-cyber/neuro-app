@@ -155,17 +155,9 @@
     "date": "2026-11-11",
     "sha256": "f4b6c892cf31fb9864f51672fd2978ef08cfd10fcada45f29031478b5cbe7c0b"
   },
-  "asm-interactions:cns-polypharmacy-falls": {
-    "date": "2026-11-05",
-    "sha256": "16122da6cbaedc47ecbfed634fcc64e05835b3865e0728d50712a78889a66c52"
-  },
   "asm-interactions:cyp3a4-inhibitors-carbamazepine": {
     "date": "2026-11-11",
     "sha256": "b294d95142c529bd4897f825ed77f7a5927d5b04e43b1d218166afdfdd9c515f"
-  },
-  "asm-interactions:gabapentinoids-opioids": {
-    "date": "2026-11-05",
-    "sha256": "e14736e6ed3e0aa0abb72fd901775ad626f5282078540ae8fcf7a690da6d375b"
   },
   "asm-interactions:inducing-asm-apixaban-rivaroxaban": {
     "date": "2026-11-05",
@@ -178,6 +170,10 @@
   "asm-interactions:inducing-asm-dabigatran-edoxaban": {
     "date": "2026-11-11",
     "sha256": "db3ec9e29551cf66a610db21db8cacd3b8eaeec273f842f67bf128f8c17056a8"
+  },
+  "asm-interactions:inducing-asm-nirmatrelvir-ritonavir": {
+    "date": "2026-11-13",
+    "sha256": "d4a28ce9ad736906d246334d86c0eedd6e7cff604c00271f67504b260519c7a8"
   },
   "asm-interactions:inducing-asm-voriconazole": {
     "date": "2026-11-11",
@@ -608,8 +604,8 @@
     "sha256": "75036ee53a6bb12aa898d816baa6acc43f01953046eb1e91085d8e991c29c44f"
   },
   "seizure-threshold:tramadol": {
-    "date": "2026-11-05",
-    "sha256": "3a8d807b9db9b75ba7b036f039f908ce67fcaddf2578deb0bdf53ff6f2cc33ef"
+    "date": "2026-11-13",
+    "sha256": "8c9e5c95de4e56156c58a8e855c62ee9ae7298ef269d926e371222a9d1671696"
   },
   "vascular-antithrombotics:af-stroke-anticoag-timing": {
     "date": "2026-11-07",
