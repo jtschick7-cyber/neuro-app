@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+bcfe2e88",
+  "contentVersion": "2.2.1+eea8331e",
   "builtAt": "2026-11-13",
   "registries": [
     {
@@ -97,11 +97,11 @@
     {
       "id": "reference-cards",
       "title": "Reference Cards",
-      "version": "1.7.1",
+      "version": "1.8.1",
       "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-13",
-      "entries": 8,
-      "reviewed": 8,
+      "entries": 9,
+      "reviewed": 9,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
@@ -2039,6 +2039,13 @@
       "year": 2026,
       "citedBy": [
         "acute-neuro:status-migrainosus"
+      ]
+    },
+    {
+      "citation": "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111",
+      "year": 2016,
+      "citedBy": [
+        "reference-cards:root-vs-nerve-localization"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.7.1",
+  "version": "1.8.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -3464,6 +3464,345 @@
         "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109",
         "Shahan B, Choi EY, Nieves G. Cerebrospinal fluid analysis. Am Fam Physician 2021;103(7):422-428",
         "Zhou RW, Sangam K, Budhram A. Clinical utility of CSF correction factors for traumatic lumbar puncture in adults. Neurol Clin Pract 2024;14(6):e200350. doi:10.1212/CPJ.0000000000200350"
+      ],
+      "lastReviewed": "2026-11-13"
+    },
+    {
+      "id": "root-vs-nerve-localization",
+      "title": "Root vs peripheral nerve: bedside localization",
+      "searchTerms": [
+        "radiculopathy",
+        "mononeuropathy",
+        "localization",
+        "myotome",
+        "dermatome",
+        "foot drop",
+        "wrist drop",
+        "C7",
+        "L5",
+        "S1",
+        "femoral",
+        "fibular",
+        "peroneal",
+        "radial",
+        "tibial"
+      ],
+      "scopeNote": "Exam findings that separate a single root from a single nerve (Robblee 2016). No EMG/NCS criteria.",
+      "sections": [
+        {
+          "heading": "Method (Table 1)",
+          "rows": [
+            {
+              "parameter": "Four questions",
+              "condition": "Any root vs nerve pair",
+              "role": "TARGET",
+              "target": "Distal muscle, proximal muscle, unique reflex, sensory pattern",
+              "notes": [
+                "Look for a finding supplied by the root but not the nerve, or the reverse"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Method",
+          "rows": [
+            {
+              "parameter": "Reflex loss",
+              "condition": "Any pair",
+              "role": "TARGET",
+              "target": "Ipsilateral loss counts; bilateral loss helps less",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Reflex roots",
+          "rows": [
+            {
+              "parameter": "Biceps; brachioradialis",
+              "condition": "Upper limb",
+              "role": "TARGET",
+              "target": "C5/C6 (musculocutaneous; radial)",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Triceps",
+              "condition": "Upper limb",
+              "role": "TARGET",
+              "target": "C6/7, radial",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Knee; ankle",
+              "condition": "Lower limb",
+              "role": "TARGET",
+              "target": "L2/L3/L4 femoral; S1 tibial",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Added reflexes",
+              "condition": "When the pair needs it",
+              "role": "TARGET",
+              "target": "Finger jerk C8; pectoral C5; medial hamstring L5",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "C7 vs radial",
+          "rows": [
+            {
+              "parameter": "Weak wrist pronators and flexors",
+              "condition": "Wrist drop",
+              "role": "TARGET",
+              "target": "Favours C7",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Weak brachioradialis or lost brachioradialis reflex",
+              "condition": "Wrist drop",
+              "role": "TARGET",
+              "target": "Favours radial",
+              "notes": [
+                "Triceps reflex can fall in both, so it doesn't help"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Sensory loss",
+              "condition": "Wrist drop",
+              "role": "TARGET",
+              "target": "C7: third digit; radial: first dorsal web space",
+              "notes": [
+                "Spurling's supports C7; Tinel's over the upper arm or mid-forearm supports radial"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "L5 vs fibular",
+          "rows": [
+            {
+              "parameter": "Weak ankle inversion or hip abduction",
+              "condition": "Foot drop",
+              "role": "TARGET",
+              "target": "Favours L5",
+              "notes": [
+                "Dorsiflexion is weak in both"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Lost medial hamstring reflex",
+              "condition": "Foot drop",
+              "role": "TARGET",
+              "target": "Favours L5",
+              "notes": [
+                "Fibular neuropathy has no reflex change"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Lateral leg and dorsal foot sensory loss",
+              "condition": "Foot drop",
+              "role": "TARGET",
+              "target": "Doesn't separate them",
+              "notes": [
+                "Plantar strip and lateral thigh loss, or straight leg raise, favour L5"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "L2–4 vs femoral",
+          "rows": [
+            {
+              "parameter": "Weak hip adduction (± ankle dorsiflexion)",
+              "condition": "Weak knee extension",
+              "role": "TARGET",
+              "target": "Favours root",
+              "notes": [
+                "Knee extension and knee reflex are involved in both"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Weak hip flexion",
+              "condition": "Weak knee extension",
+              "role": "TARGET",
+              "target": "Favours femoral",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            },
+            {
+              "parameter": "Medial lower leg sensory loss",
+              "condition": "Weak knee extension",
+              "role": "TARGET",
+              "target": "Favours femoral (saphenous) over L3",
+              "notes": [
+                "Medial upper thigh loss favours root"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "S1/S2 vs tibial",
+          "rows": [
+            {
+              "parameter": "Weak hip extension and knee flexion",
+              "condition": "Weak plantarflexion",
+              "role": "TARGET",
+              "target": "Favours root",
+              "notes": [
+                "Calf weakness, ankle reflex and sensory loss are shared; this is Table 5's only distinguishing finding"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "C8 vs median/ulnar",
+          "rows": [
+            {
+              "parameter": "Digit 4 sensory splitting",
+              "condition": "Hand numbness",
+              "role": "TARGET",
+              "target": "Favours median or ulnar nerve",
+              "notes": [
+                "C8 roots don't split digit 4"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Educational review, not graded"
+              ],
+              "sources": [
+                "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "Sensory loss on the lateral leg and dorsal foot cannot separate L5 from fibular neuropathy (Robblee 2016)",
+        "Triceps reflex is lost in both C7 and proximal radial lesions (Robblee 2016)"
+      ],
+      "keyNumbers": [
+        "Foot drop + weak inversion → favours L5",
+        "Wrist drop + weak brachioradialis → radial",
+        "Hip adduction weak → L2–4 root, not femoral",
+        "Split digit 4 → median or ulnar, not C8",
+        "S1 vs tibial: only hip ext/knee flexion differ"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
       ],
       "lastReviewed": "2026-11-13"
     }
