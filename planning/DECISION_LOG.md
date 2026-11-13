@@ -1272,3 +1272,10 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03d-scope-consult-wor
 ## Audit 2026-11-12 content draft 4: NCSE IIC bounds (2026-11-13)
 
 Jason, in chat: approved `planning/drafts/audit-2026-11-12/04-ncse-iic-bounds.md`. `nonconvulsive-status-epilepticus` definitions[5] now reads ">1.0 to ≤2.5 Hz" and "≥0.5 to ≤1.0 Hz", matching ACNS 2021 §F. acute-neuro 3.1.1 → 3.2.0 (MINOR); signed (standing instruction): 3.2.1. Released: content 2.2.1+a7dbecd1.
+
+## Audit 2026-11-12 content draft 3e: antithrombotics scope trims (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/03e-scope-antithrombotics.md` as written (light warfarin trim; cangrelor left out).
+- `aspirin`, `clopidogrel`, `heparin-ufh`: stroke-prevention/prophylaxis rows known cold, and pearls duplicating DAPT rules, removed. `warfarin`: one duplicate monitoring line and the dietary vitamin K line removed. `dapt-minor-stroke-tia`: rule 1 removed, rules renumbered, THALES key number added. Key numbers on all five cards shortened to ≤50 characters.
+- Draft item "add `vascular-antithrombotics:clopidogrel` to DAPT relatedIds" was already true in data/ (no-op; nothing changed for it).
+- vascular-antithrombotics 1.3.3 → 1.4.0 (MINOR). Signed by Jason (standing instruction): 1.4.1. Released: content 2.2.1+44e81fcc.
