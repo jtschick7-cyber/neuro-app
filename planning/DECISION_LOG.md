@@ -1313,3 +1313,10 @@ Jason, in chat: confirmed the rebuilt Neurontin Table 1 "15" row (100/125/150/20
 - New `antiseizure-medications:gabapentin` (Neurontin label, Viatris 4/2025) and `pregabalin` (LYRICA label). Renal bands use crclBasis CG_ML_MIN; the dose levels are in doseText, with no structured dose per band. The repackaged generic pregabalin label matched LYRICA in every cell and is not cited.
 - Not specified in the draft, set on encoding: formularyStatus INSTITUTION_VARIES; structured start/maintenance doses taken from the doseText; hepatic/ivPo/enteral/levels/interactions left empty; no relatedIds (no gabapentinoid entries remain elsewhere).
 - antiseizure-medications 1.1.1 → 1.2.0 (MINOR). Signed (standing instruction): 1.2.1. Released: content 2.2.1+728203b1 (345 unique sources).
+
+## Audit 2026-11-12 content draft 3k: MAO-B interactions on the PD card (2026-11-13)
+
+Jason, in chat: supplied the ProvayBlue label, then approved `planning/drafts/audit-2026-11-12/03k-pd-card-maob-interactions.md` as written (a new section on the PD card; "trazodone-class" kept).
+- `reference-cards:inpatient-parkinson-disease`: new section "MAO-B inhibitors: drugs to avoid in hospital" (7 rows: opioids, linezolid, methylene blue, other MAOIs, dextromethorphan/cyclobenzaprine/St John's wort, antidepressants, sympathomimetics) and a rasagiline + CYP1A2 inhibitor pitfall. Sources: the Azilect, Xadago and Zelapar labels (openFDA records, read verbatim) and the ProvayBlue label. Nothing existing was changed.
+- On encoding, each row's label-section references went into its evidenceNote, after "FDA labels".
+- reference-cards 1.9.1 → 1.10.0 (MINOR). Re-signed (standing instruction): 1.10.1. Released: content 2.2.1+20ed0c73 (349 unique sources).

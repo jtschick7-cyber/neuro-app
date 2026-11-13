@@ -548,8 +548,8 @@
     "sha256": "648c29e81343df24e442f9849a35894d8ff32eabc4ea8bfbdd025a3d6404c4e6"
   },
   "reference-cards:inpatient-parkinson-disease": {
-    "date": "2026-11-11",
-    "sha256": "3280dca3b8e09abfd2814604e14608ea88f9f2a49c3c519f92d5113bd592d605"
+    "date": "2026-11-13",
+    "sha256": "32330192b0fc5dab9603894996432de705f6079e6c6d5e61cf3643b63c624f69"
   },
   "reference-cards:neuro-icu-targets": {
     "date": "2026-11-07",

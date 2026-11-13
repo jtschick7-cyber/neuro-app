@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.9.1",
+  "version": "1.10.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -2035,13 +2035,150 @@
               ]
             }
           ]
+        },
+        {
+          "heading": "MAO-B inhibitors: drugs to avoid in hospital",
+          "rows": [
+            {
+              "parameter": "Opioids: meperidine, tramadol, methadone",
+              "condition": "On rasagiline, safinamide or selegiline",
+              "role": "NOT_RECOMMENDED",
+              "target": "Contraindicated: serotonin syndrome, sometimes fatal",
+              "notes": [
+                "Wait ≥14 days after stopping the MAO-B inhibitor. Propoxyphene is also listed for rasagiline and safinamide"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA labels",
+                "Azilect §4, §7.1; Xadago §4, §7.2; Zelapar §4, §7.1"
+              ],
+              "sources": [
+                "AZILECT (rasagiline tablets) US prescribing information. Teva Neuroscience; effective 2020-06-30 (FDA SPL set ID a40d0e73-3f9f-4b01-979d-402c9cdaeb60)",
+                "XADAGO (safinamide tablets) US prescribing information. MDD US Operations (Supernus); effective 2026-10-05 (FDA SPL set ID c4d65f28-983f-42b4-bb23-023ae0fe81b2)",
+                "ZELAPAR (selegiline orally disintegrating tablets) US prescribing information. Bausch Health; effective 2021-06-01 (FDA SPL set ID 380d7717-2a79-42f3-a712-efe5e7696ba0)"
+              ]
+            },
+            {
+              "parameter": "Linezolid",
+              "condition": "On safinamide or selegiline",
+              "role": "NOT_RECOMMENDED",
+              "target": "Contraindicated: potent MAO inhibitor, hypertensive crisis",
+              "notes": [
+                "Rasagiline label contraindicates all MAO inhibitors without naming linezolid"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA labels",
+                "Xadago §4, §7.1; Zelapar §4, §7.3; Azilect §4, §7.3"
+              ],
+              "sources": [
+                "AZILECT (rasagiline tablets) US prescribing information. Teva Neuroscience; effective 2020-06-30 (FDA SPL set ID a40d0e73-3f9f-4b01-979d-402c9cdaeb60)",
+                "XADAGO (safinamide tablets) US prescribing information. MDD US Operations (Supernus); effective 2026-10-05 (FDA SPL set ID c4d65f28-983f-42b4-bb23-023ae0fe81b2)",
+                "ZELAPAR (selegiline orally disintegrating tablets) US prescribing information. Bausch Health; effective 2021-06-01 (FDA SPL set ID 380d7717-2a79-42f3-a712-efe5e7696ba0)"
+              ]
+            },
+            {
+              "parameter": "Methylene blue (IV)",
+              "condition": "On an MAO-B inhibitor (an MAOI)",
+              "role": "NOT_RECOMMENDED",
+              "target": "Avoid: serotonin syndrome, sometimes fatal (boxed warning)",
+              "notes": [
+                "If unavoidable: lowest dose, observe for CNS effects up to 4 h. No serotonergic drugs for 72 h after the last dose. The label says MAOIs and doesn't name MAO-B inhibitors"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA labels",
+                "ProvayBlue boxed warning, §5.1, §7"
+              ],
+              "sources": [
+                "PROVAYBLUE (methylene blue) injection US prescribing information. American Regent; revised 2/2024 (user-supplied label)"
+              ]
+            },
+            {
+              "parameter": "Other MAO inhibitors",
+              "condition": "Any MAO-B inhibitor",
+              "role": "NOT_RECOMMENDED",
+              "target": "Contraindicated",
+              "notes": [
+                "Wait ≥14 days after stopping"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA labels",
+                "All three labels §4"
+              ],
+              "sources": [
+                "AZILECT (rasagiline tablets) US prescribing information. Teva Neuroscience; effective 2020-06-30 (FDA SPL set ID a40d0e73-3f9f-4b01-979d-402c9cdaeb60)",
+                "XADAGO (safinamide tablets) US prescribing information. MDD US Operations (Supernus); effective 2026-10-05 (FDA SPL set ID c4d65f28-983f-42b4-bb23-023ae0fe81b2)",
+                "ZELAPAR (selegiline orally disintegrating tablets) US prescribing information. Bausch Health; effective 2021-06-01 (FDA SPL set ID 380d7717-2a79-42f3-a712-efe5e7696ba0)"
+              ]
+            },
+            {
+              "parameter": "Dextromethorphan, cyclobenzaprine, St John's wort",
+              "condition": "Any MAO-B inhibitor",
+              "role": "NOT_RECOMMENDED",
+              "target": "Contraindicated",
+              "notes": [
+                "Dextromethorphan: brief psychosis or bizarre behavior"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA labels",
+                "All three labels §4"
+              ],
+              "sources": [
+                "AZILECT (rasagiline tablets) US prescribing information. Teva Neuroscience; effective 2020-06-30 (FDA SPL set ID a40d0e73-3f9f-4b01-979d-402c9cdaeb60)",
+                "XADAGO (safinamide tablets) US prescribing information. MDD US Operations (Supernus); effective 2026-10-05 (FDA SPL set ID c4d65f28-983f-42b4-bb23-023ae0fe81b2)",
+                "ZELAPAR (selegiline orally disintegrating tablets) US prescribing information. Bausch Health; effective 2021-06-01 (FDA SPL set ID 380d7717-2a79-42f3-a712-efe5e7696ba0)"
+              ]
+            },
+            {
+              "parameter": "Antidepressants (SNRI, TCA, tetracyclic, trazodone-class)",
+              "condition": "Any MAO-B inhibitor",
+              "role": "NOT_RECOMMENDED",
+              "target": "Safinamide: contraindicated. Rasagiline: not recommended. Selegiline: avoid any antidepressant",
+              "notes": [
+                "SSRIs with safinamide: lowest effective dose and watch for serotonin syndrome. Fluoxetine: ≥5 weeks off before starting rasagiline or selegiline"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA labels",
+                "Xadago §4, §5.2, §7.3; Azilect §5.2; Zelapar §5.2"
+              ],
+              "sources": [
+                "AZILECT (rasagiline tablets) US prescribing information. Teva Neuroscience; effective 2020-06-30 (FDA SPL set ID a40d0e73-3f9f-4b01-979d-402c9cdaeb60)",
+                "XADAGO (safinamide tablets) US prescribing information. MDD US Operations (Supernus); effective 2026-10-05 (FDA SPL set ID c4d65f28-983f-42b4-bb23-023ae0fe81b2)",
+                "ZELAPAR (selegiline orally disintegrating tablets) US prescribing information. Bausch Health; effective 2021-06-01 (FDA SPL set ID 380d7717-2a79-42f3-a712-efe5e7696ba0)"
+              ]
+            },
+            {
+              "parameter": "Sympathomimetics and decongestants",
+              "condition": "Any MAO-B inhibitor",
+              "role": "RECOMMENDED",
+              "target": "Monitor BP; methylphenidate and amphetamines contraindicated with safinamide",
+              "notes": [
+                "Hypertensive crisis reported with selegiline + ephedrine"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA labels",
+                "Xadago §5.1, §7.5; Zelapar §7.4; Azilect §7.4"
+              ],
+              "sources": [
+                "AZILECT (rasagiline tablets) US prescribing information. Teva Neuroscience; effective 2020-06-30 (FDA SPL set ID a40d0e73-3f9f-4b01-979d-402c9cdaeb60)",
+                "XADAGO (safinamide tablets) US prescribing information. MDD US Operations (Supernus); effective 2026-10-05 (FDA SPL set ID c4d65f28-983f-42b4-bb23-023ae0fe81b2)",
+                "ZELAPAR (selegiline orally disintegrating tablets) US prescribing information. Bausch Health; effective 2021-06-01 (FDA SPL set ID 380d7717-2a79-42f3-a712-efe5e7696ba0)"
+              ]
+            }
+          ]
         }
       ],
       "pitfalls": [
         "calc:ledd (Jost 2023) and the BMJ algorithm use different factors — don't mix them",
         "BMJ's adjusted LEDD >350 mg branch (continuous SC apomorphine with domperidone pre-load) is not on this card. Apokyn covers intermittent pen doses only (≤6 mg per dose); Onapgo (continuous SC apomorphine) is labeled for motor fluctuations in advanced PD — its label doesn't address use as a bridge when the oral route fails",
         "Hallucinations, orthostasis and sudden sleep onset are dopaminergic adverse effects — consider them before adding drugs",
-        "Deep brain stimulator in situ: manufacturers advise avoiding electrocautery; bipolar diathermy if needed (BMJ)"
+        "Deep brain stimulator in situ: manufacturers advise avoiding electrocautery; bipolar diathermy if needed (BMJ)",
+        "Rasagiline with ciprofloxacin or another CYP1A2 inhibitor: max 0.5 mg daily (Azilect §2.2)"
       ],
       "keyNumbers": [
         "Rotigotine dose: Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily",
@@ -2068,9 +2205,13 @@
         "Clozapine tablets US prescribing information. Accord Healthcare; revised 10/2025",
         "Vyalev (foscarbidopa and foslevodopa) injection US prescribing information. AbbVie; revised 3/2026",
         "Onapgo (apomorphine hydrochloride) injection US prescribing information and Patient Instructions for Use. MDD US Operations (Supernus); PI revised 5/2026, IFU revised 6/2026",
-        "Duopa (carbidopa and levodopa) enteral suspension US prescribing information, Medication Guide and CADD-Legacy 1400 Operator's Manual. AbbVie; revised 3/2026 (operator's manual: Smiths Medical, revised 3/2019)"
+        "Duopa (carbidopa and levodopa) enteral suspension US prescribing information, Medication Guide and CADD-Legacy 1400 Operator's Manual. AbbVie; revised 3/2026 (operator's manual: Smiths Medical, revised 3/2019)",
+        "AZILECT (rasagiline tablets) US prescribing information. Teva Neuroscience; effective 2020-06-30 (FDA SPL set ID a40d0e73-3f9f-4b01-979d-402c9cdaeb60)",
+        "XADAGO (safinamide tablets) US prescribing information. MDD US Operations (Supernus); effective 2026-10-05 (FDA SPL set ID c4d65f28-983f-42b4-bb23-023ae0fe81b2)",
+        "ZELAPAR (selegiline orally disintegrating tablets) US prescribing information. Bausch Health; effective 2021-06-01 (FDA SPL set ID 380d7717-2a79-42f3-a712-efe5e7696ba0)",
+        "PROVAYBLUE (methylene blue) injection US prescribing information. American Regent; revised 2/2024 (user-supplied label)"
       ],
-      "lastReviewed": "2026-11-11"
+      "lastReviewed": "2026-11-13"
     },
     {
       "id": "neuroprognostication",

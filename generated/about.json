@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+728203b1",
+  "contentVersion": "2.2.1+20ed0c73",
   "builtAt": "2026-11-13",
   "registries": [
     {
@@ -97,7 +97,7 @@
     {
       "id": "reference-cards",
       "title": "Reference Cards",
-      "version": "1.9.1",
+      "version": "1.10.1",
       "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-13",
       "entries": 10,
@@ -291,6 +291,13 @@
       "year": 2016,
       "citedBy": [
         "consult-workups:caa-related-inflammation"
+      ]
+    },
+    {
+      "citation": "AZILECT (rasagiline tablets) US prescribing information. Teva Neuroscience; effective 2020-06-30 (FDA SPL set ID a40d0e73-3f9f-4b01-979d-402c9cdaeb60)",
+      "year": 2020,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
       ]
     },
     {
@@ -2030,6 +2037,13 @@
       ]
     },
     {
+      "citation": "PROVAYBLUE (methylene blue) injection US prescribing information. American Regent; revised 2/2024 (user-supplied label)",
+      "year": 2024,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
       "citation": "Psimaras D, Carpentier AF, Rossi C; PNS Euronetwork. Cerebrospinal fluid study in paraneoplastic syndromes. J Neurol Neurosurg Psychiatry 2010;81(1):42-45. doi:10.1136/jnnp.2008.159483",
       "year": 2010,
       "citedBy": [
@@ -2814,6 +2828,13 @@
       ]
     },
     {
+      "citation": "XADAGO (safinamide tablets) US prescribing information. MDD US Operations (Supernus); effective 2026-10-05 (FDA SPL set ID c4d65f28-983f-42b4-bb23-023ae0fe81b2)",
+      "year": 2026,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
       "citation": "Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label)",
       "year": 2026,
       "citedBy": [
@@ -2858,6 +2879,13 @@
       "year": 2022,
       "citedBy": [
         "neural-antibodies:anna3-dach1"
+      ]
+    },
+    {
+      "citation": "ZELAPAR (selegiline orally disintegrating tablets) US prescribing information. Bausch Health; effective 2021-06-01 (FDA SPL set ID 380d7717-2a79-42f3-a712-efe5e7696ba0)",
+      "year": 2021,
+      "citedBy": [
+        "reference-cards:inpatient-parkinson-disease"
       ]
     },
     {
