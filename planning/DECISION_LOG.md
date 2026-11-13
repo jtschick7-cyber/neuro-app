@@ -1233,3 +1233,4 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/01-4f-pcc-local-cap.m
 - Provenance: 4F-PCC for factor Xa reversal is capped at 2,000 U, with one 500 U repeat for ongoing bleeding. This is local pharmacy practice per Jason (12–13 Nov 2026). No published source; no `sources` string added (Claude's recommendation, Jason deferred to it).
 - Encoded on `four-factor-pcc`, `apixaban`, `rivaroxaban`, `edoxaban`, `anticoag-reversal-ich`; all five reset to UNREVIEWED. Dabigatran and warfarin rows unchanged.
 - vascular-antithrombotics 1.2.1 → 1.3.0 (MINOR). Sign-off adds its own PATCH later.
+- Update 2026-11-13: signed by Jason in chat (all five entries, `lastReviewed` 2026-11-13): vascular-antithrombotics 1.3.1. Released: content 2.2.1+bf8877ba.

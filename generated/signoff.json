@@ -604,8 +604,8 @@
     "sha256": "9e0c3eec3569824ca0c606fbfd132a39f378e24faf4885b05adc470895378453"
   },
   "vascular-antithrombotics:anticoag-reversal-ich": {
-    "date": "2026-11-08",
-    "sha256": "bf80418491a28fc1e57037876f4284de4d773360c99fbff986c68cf5d82afe72"
+    "date": "2026-11-13",
+    "sha256": "48e8985d3203546e95538588636f532566b7171f80b6871dd4b39ff89769465a"
   },
   "vascular-antithrombotics:antiplatelet-ich": {
     "date": "2026-11-07",
@@ -616,8 +616,8 @@
     "sha256": "ad2720c762890642ef7c2a8fe95b4277d4dbf81156d5b79192d22bb0a54e5e2a"
   },
   "vascular-antithrombotics:apixaban": {
-    "date": "2026-11-08",
-    "sha256": "3ff9445f3ce54f3fbeef2e8d7cacd1ba79594a7764b9c648226f28eb4d82fc73"
+    "date": "2026-11-13",
+    "sha256": "8e4d78b16558b979cefc1530ce1bea0da919c47b2fd5c94ebf33efdbc1cc8b97"
   },
   "vascular-antithrombotics:aspirin": {
     "date": "2026-11-07",
@@ -656,8 +656,8 @@
     "sha256": "61026fc3600e7cbaa6ab922006a527c83160114f7516281b0905f62b649fb45d"
   },
   "vascular-antithrombotics:edoxaban": {
-    "date": "2026-11-08",
-    "sha256": "1f36f83fe6f13a55c014f7b481c51f4ab69e2b9fdca0df4c1054c1880a03a56f"
+    "date": "2026-11-13",
+    "sha256": "ac96ebca5278748c0f1450f556e059acc9efe007ef4dedc99afa2920ae8e7aea"
   },
   "vascular-antithrombotics:enoxaparin": {
     "date": "2026-11-08",
@@ -668,8 +668,8 @@
     "sha256": "c7f2a1d080a9dc55718f9904fad75c3c8eacc6ca61f19c6502c13ac0ff9bac14"
   },
   "vascular-antithrombotics:four-factor-pcc": {
-    "date": "2026-11-08",
-    "sha256": "f16528ed2f73a1d8322f98b1b77871b7b2631723c02c66501dda86ea42fa3ae8"
+    "date": "2026-11-13",
+    "sha256": "2b14c91b0834f80191e76ee3fb1f923ea6983662ed681ed455c1c340a0e574bb"
   },
   "vascular-antithrombotics:gp-iib-iiia-inhibitors": {
     "date": "2026-11-07",
@@ -704,8 +704,8 @@
     "sha256": "c387252d9e0c31b7e4acc27b33765edaa6b1900cc7b8998884e78ef331c58fae"
   },
   "vascular-antithrombotics:rivaroxaban": {
-    "date": "2026-11-08",
-    "sha256": "9b0540490c81d631d4401a9996d287671c7011b3add457bb02507244e496f09f"
+    "date": "2026-11-13",
+    "sha256": "3f4fc2064692a0cf2436f275ce1361e543c506fc9d11f0678b139e44a2605455"
   },
   "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics": {
     "date": "2026-11-08",
