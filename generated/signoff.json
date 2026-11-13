@@ -632,8 +632,8 @@
     "sha256": "8e4d78b16558b979cefc1530ce1bea0da919c47b2fd5c94ebf33efdbc1cc8b97"
   },
   "vascular-antithrombotics:aspirin": {
-    "date": "2026-11-07",
-    "sha256": "9846da09f2db24c1c375e14bbf9a3c436206be3791d37875d9436624d7ba7fd8"
+    "date": "2026-11-13",
+    "sha256": "8453477db510503ce4e055b1f6a2807729326fd4a1b951226d7019e58b204214"
   },
   "vascular-antithrombotics:aspirin-dipyridamole": {
     "date": "2026-11-07",
@@ -652,8 +652,8 @@
     "sha256": "4e2d6b4c040652b2e81b68b473bc2ffbd8b442346454a7f466b208d19fd01fa7"
   },
   "vascular-antithrombotics:clopidogrel": {
-    "date": "2026-11-07",
-    "sha256": "47f897be4e70280135772138004accf25df5b5644ec400b1992b3713feffdd68"
+    "date": "2026-11-13",
+    "sha256": "86b7ac7151dcbf3e927d559de3861f224db2a2463952a79b35269a711eb8cd85"
   },
   "vascular-antithrombotics:cvt-anticoagulation": {
     "date": "2026-11-08",
@@ -664,8 +664,8 @@
     "sha256": "e730f1e36e48501e2d775a22e9b07ea0f0cf1eb7826115f7e93ab413c538041a"
   },
   "vascular-antithrombotics:dapt-minor-stroke-tia": {
-    "date": "2026-11-08",
-    "sha256": "61026fc3600e7cbaa6ab922006a527c83160114f7516281b0905f62b649fb45d"
+    "date": "2026-11-13",
+    "sha256": "750bc7175200e740f2b4c95f8c09963f69e2ebae789652325a7591de059a3565"
   },
   "vascular-antithrombotics:edoxaban": {
     "date": "2026-11-13",
@@ -688,8 +688,8 @@
     "sha256": "ef5b8d93c9a7460f04f59d1d89ec992b2ad2ec868f4378efac19d4b398a07735"
   },
   "vascular-antithrombotics:heparin-ufh": {
-    "date": "2026-11-07",
-    "sha256": "dd2efe089f678b47b08c213c5ce57e302432d7268e9ac80c5c46c7fba0b74287"
+    "date": "2026-11-13",
+    "sha256": "42de6b5ab31a989b83b408ddb869ab7bacc1763958f0bd09d60cdcd3fabda392"
   },
   "vascular-antithrombotics:icad-symptomatic": {
     "date": "2026-11-07",
@@ -736,7 +736,7 @@
     "sha256": "74c43df0176d20246c27a0d5a0224712d7bb61fc6bb763282652cc33c6a3cb59"
   },
   "vascular-antithrombotics:warfarin": {
-    "date": "2026-11-07",
-    "sha256": "d8ed37a194be08c08e36278a6f5c298dc86ec54827fe0bbc665f9875321a0d04"
+    "date": "2026-11-13",
+    "sha256": "f51b578f190b68fe5cc9243987a463f0dfe9fb189f96bea1949d18dfd8623b59"
   }
 }
