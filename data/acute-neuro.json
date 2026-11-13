@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -5530,7 +5530,7 @@
         "Gablofen (baclofen injection) intrathecal US prescribing information. Piramal Critical Care; revised 5/2026 (user-supplied label)",
         "Gburek-Augustat J, et al. Unusual mechanical failures of intrathecal baclofen pump systems: symptoms, signs, and trouble shooting. Childs Nerv Syst 2021;37(8):2597-2604. doi:10.1007/s00381-021-05154-3"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     },
     {
       "id": "hyponatremia-ods",
@@ -6328,7 +6328,7 @@
       "sources": [
         "Brahmer JR, et al. Society for Immunotherapy of Cancer (SITC) clinical practice guideline on immune checkpoint inhibitor-related adverse events. J Immunother Cancer 2021;9(6):e002435. doi:10.1136/jitc-2021-002435"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     },
     {
       "id": "status-migrainosus",

@@ -31,6 +31,14 @@
     "date": "2026-11-07",
     "sha256": "2b5ec541c6b0e1e0168c040e7806d519193f8f63cdf45a83eb32da8fd63ca965"
   },
+  "acute-neuro:ici-neurotoxicity": {
+    "date": "2026-11-13",
+    "sha256": "1fd36caecf39c133c715b743604ac57d050d5031ff86770cba4f2bb695d4b5fd"
+  },
+  "acute-neuro:intrathecal-baclofen-withdrawal": {
+    "date": "2026-11-13",
+    "sha256": "7db31a74fb0d71f3b58da5b17b67b1d40c7ac368b9d7153739d20304f63052da"
+  },
   "acute-neuro:lyme-neuroborreliosis": {
     "date": "2026-11-11",
     "sha256": "ed008dd3e3223c6863e6c6fd21bd2b2b1c8cc6880c8081b6407373c8f96ac0d4"
