@@ -1268,3 +1268,7 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03d-scope-consult-wor
 - New `consult-workups:functional-neurological-disorder` (Bennett 2021 Clin Med; Dworetzky 2025 Neurotherapeutics, whose Table 2 adapts Aybek & Perez BMJ 2022, which could not be opened). Misdiagnosis figure is Bennett's 4 of 1,030 at 18 months, not the often-quoted 4%.
 - New `reference-cards:eeg-report-terms` (ACNS 2021; Struck 2017 2HELPS2B). No 1-hour stop rule: the 2017 paper does not state one and the 2020 validation was not opened.
 - consult-workups 3.3.1 → 3.4.0, reference-cards 1.5.1 → 1.6.0 (MINOR). Signed by Jason (standing instruction): 3.4.1 and 1.6.1. Released: content 2.2.1+9dfda3da (334 unique sources).
+
+## Audit 2026-11-12 content draft 4: NCSE IIC bounds (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/04-ncse-iic-bounds.md`. `nonconvulsive-status-epilepticus` definitions[5] now reads ">1.0 to ≤2.5 Hz" and "≥0.5 to ≤1.0 Hz", matching ACNS 2021 §F. acute-neuro 3.1.1 → 3.2.0 (MINOR); signed (standing instruction): 3.2.1. Released: content 2.2.1+a7dbecd1.
