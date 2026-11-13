@@ -1,6 +1,6 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "schemaVersion": "1.2.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -1613,11 +1613,11 @@
       "id": "warfarin",
       "title": "Warfarin (Coumadin, Jantoven)",
       "keyNumbers": [
-        "4F-PCC + IV vitamin K — VKA-associated ICH: INR-banded 4F-PCC (25/35/50 U/kg) plus vitamin K 10 mg IV",
+        "VKA ICH: 4F-PCC 25/35/50 U/kg + vit K 10 mg IV",
         "INR >1.7 or PT >15 s: do not give IVT",
-        "Warfarin — valvular AF (moderate–severe mitral stenosis or any mechanical valve): Target INR 2.5 (2.0–3.0); mechanical mitral valve INR 3.0 (2.5–3.5)",
-        "Warfarin — nonvalvular AF: Target INR 2.5 (2.0–3.0)",
-        "INR >4.0 adds no benefit and raises bleeding risk (label)"
+        "Mechanical valve/MS: INR 2.5; mech mitral 3.0",
+        "Nonvalvular AF: target INR 2.5 (2.0–3.0)",
+        "INR >4.0: no added benefit, more bleeding"
       ],
       "searchTerms": [
         "Coumadin",
@@ -1703,14 +1703,12 @@
         }
       ],
       "monitoring": [
-        "INR daily during initiation; then per stability (label)",
-        "INR >4.0 adds no benefit and raises bleeding risk (label)"
+        "INR daily during initiation; then per stability (label)"
       ],
       "interactions": [
         "More frequent INR checks when starting, stopping or changing any drug, including short courses of antibiotics, antifungals or steroids (label)",
         "CYP2C9/1A2/3A4 inhibitors raise INR — label examples: amiodarone, TMP-SMX (cotrimoxazole), fluconazole, metronidazole",
-        "Inducers lower INR — label examples: carbamazepine, phenobarbital, phenytoin, rifampin",
-        "Dietary vitamin K changes INR"
+        "Inducers lower INR — label examples: carbamazepine, phenobarbital, phenytoin, rifampin"
       ],
       "pregnancy": [
         "Contraindicated in pregnancy except mechanical heart valves at high thrombotic risk (label); see pregnancy-antithrombotics",
@@ -1740,18 +1738,17 @@
         "Saposnik G, et al. Diagnosis and Management of Cerebral Venous Thrombosis: A Scientific Statement From the AHA. Stroke 2024;55:e77-e90. doi:10.1161/STR.0000000000000456",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "heparin-ufh",
       "title": "Unfractionated heparin (UFH)",
       "keyNumbers": [
-        "Protamine: 1 mg per 100 U UFH given in the prior 2–3 h, max 50 mg",
-        "Received heparin with aPTT >40 s: do not give IVT (AHA 2026 §4.6.5 Table 8: absolute contraindication; expert opinion, not graded)",
-        "UFH — therapeutic IV infusion: Label: 5,000 U IV bolus, then 20,000–40,000 U/24 h (68-kg basis); weight-based nomogram per local protocol",
-        "UFH — VTE prophylaxis: 5,000 U SC every 8–12 h",
-        "Label target: aPTT 1.5–2× control; check ~every 4 h early in infusion (label)"
+        "Protamine 1 mg/100 U (prior 2–3 h), max 50 mg",
+        "Heparin + aPTT >40 s: no IVT",
+        "IV UFH: 5,000 U bolus, then 20,000–40,000 U/24 h",
+        "Target aPTT 1.5–2× control; check ~q4h early"
       ],
       "searchTerms": [
         "heparin",
@@ -1809,39 +1806,6 @@
           ],
           "formularyStatus": "AVAILABLE",
           "calculatorIds": []
-        },
-        {
-          "role": "FIRST_LINE",
-          "agent": "UFH — VTE prophylaxis",
-          "routes": [
-            "SC"
-          ],
-          "doseText": "5,000 U SC every 8–12 h",
-          "dose": [
-            {
-              "label": "Prophylaxis",
-              "amountMin": 5000,
-              "amountMax": 5000,
-              "unit": "UNITS",
-              "basis": "FIXED",
-              "timing": "PER_DOSE",
-              "weightBasis": "NOT_APPLICABLE",
-              "caps": [],
-              "frequency": [
-                "q8–12h"
-              ],
-              "duration": []
-            }
-          ],
-          "notes": [
-            "Label regimen is postoperative (5,000 U 2 h before surgery then q8–12h); same dose used for medical/stroke prophylaxis"
-          ],
-          "evidenceLevel": "NOT_GRADED",
-          "evidenceNote": [
-            "FDA-labeled regimen (heparin vial PI §2.6)"
-          ],
-          "formularyStatus": "AVAILABLE",
-          "calculatorIds": []
         }
       ],
       "renalHepatic": [
@@ -1884,7 +1848,6 @@
         "Platelets periodically for HIT; platelets usually fall 5–10 days after starting; rapid-onset HIT within 24 h if heparin in the prior 3 months (label)"
       ],
       "interactions": [
-        "Antiplatelets and NSAIDs increase bleeding (label)",
         "Hyperkalemia: check K+ before and during therapy in at-risk patients (label)"
       ],
       "pregnancy": [
@@ -1915,7 +1878,7 @@
         "Prabhakaran S, et al. 2026 Guideline for the Early Management of Patients With Acute Ischemic Stroke (AHA/ASA). Stroke 2026;57:e316-e436. doi:10.1161/STR.0000000000000513",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
@@ -2128,11 +2091,9 @@
       "id": "aspirin",
       "title": "Aspirin",
       "keyNumbers": [
-        "Platelet transfusion — before emergency neurosurgery: 1 single-donor apheresis unit; platelet-function testing first if available",
+        "Pre-neurosurgery: 1 apheresis platelet unit",
         "Desmopressin: 0.4 mcg/kg IV once",
-        "No IV aspirin with IVT or within 90 min after start (AHA 2026 §4.8 Rec 17: COR 3: Harm, B-R)",
-        "Aspirin — acute ischemic stroke (no IVT): Start within 48 h of onset; trials used 160–300 mg daily early (IST 300 mg, CAST 160 mg)",
-        "Aspirin — noncardioembolic stroke/TIA (long-term SAPT): 50–325 mg daily"
+        "No IV aspirin with IVT or within 90 min of start"
       ],
       "searchTerms": [
         "ASA",
@@ -2145,40 +2106,6 @@
       "subclass": "Irreversible COX-1 inhibitor",
       "mechanism": "Irreversibly acetylates platelet COX-1 → less thromboxane A2 for the platelet's lifespan",
       "uses": [
-        {
-          "role": "FIRST_LINE",
-          "agent": "Aspirin — acute ischemic stroke (no IVT)",
-          "routes": [
-            "PO",
-            "PR"
-          ],
-          "doseText": "Start within 48 h of onset; trials used 160–300 mg daily early (IST 300 mg, CAST 160 mg)",
-          "dose": [
-            {
-              "label": "Early dose",
-              "amountMin": 160,
-              "amountMax": 300,
-              "unit": "MG",
-              "basis": "FIXED",
-              "timing": "PER_DAY",
-              "weightBasis": "NOT_APPLICABLE",
-              "caps": [],
-              "frequency": [
-                "Daily"
-              ],
-              "duration": []
-            }
-          ],
-          "notes": [
-            "Not a substitute for IVT or EVT in eligible patients (COR 3: Harm, B-R)"
-          ],
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "AHA 2026: COR 1, LOE A (within 48 h)"
-          ],
-          "formularyStatus": "AVAILABLE",
-          "calculatorIds": []
-        },
         {
           "role": "NOT_RECOMMENDED",
           "agent": "IV aspirin with or within 90 min of starting IVT",
@@ -2195,40 +2122,6 @@
             "AHA 2026: COR 3: Harm, LOE B-R"
           ],
           "formularyStatus": "NOT_STOCKED_LOCAL",
-          "calculatorIds": []
-        },
-        {
-          "role": "FIRST_LINE",
-          "agent": "Aspirin — noncardioembolic stroke/TIA (long-term SAPT)",
-          "routes": [
-            "PO"
-          ],
-          "doseText": "50–325 mg daily",
-          "dose": [
-            {
-              "label": "Maintenance",
-              "amountMin": 50,
-              "amountMax": 325,
-              "unit": "MG",
-              "basis": "FIXED",
-              "timing": "PER_DAY",
-              "weightBasis": "NOT_APPLICABLE",
-              "caps": [],
-              "frequency": [
-                "Daily"
-              ],
-              "duration": []
-            }
-          ],
-          "notes": [
-            "Antiplatelet preferred over anticoagulation (AHA 2026 and Kleindorfer 2021: COR 1, A)",
-            "Choose agent on risk profile, cost, tolerance (AHA 2026: COR 1, C-EO)"
-          ],
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "Kleindorfer 2021: COR 1, LOE A (aspirin 50–325 mg, clopidogrel 75 mg, or aspirin 25 mg/ER-dipyridamole 200 mg BID)"
-          ],
-          "formularyStatus": "AVAILABLE",
           "calculatorIds": []
         },
         {
@@ -2395,8 +2288,6 @@
         "Rectal aspirin dose in dysphagia orders"
       ],
       "pearls": [
-        "After IVT: antiplatelets in the first 24 h might be considered only with a compelling indication (AHA 2026: COR 2b, B-NR); usual practice is 24-h imaging first",
-        "Already on aspirin at the time of stroke: raising the dose or switching agents is of unclear benefit (AHA 2026: COR 2b, B-NR)",
         "Contraindicated with NSAID allergy or the asthma/rhinitis/nasal polyp syndrome (aspirin/ER-dipyridamole label)"
       ],
       "verify": [],
@@ -2416,18 +2307,17 @@
         "US Food and Drug Administration. Science paper: Concomitant use of ibuprofen and aspirin — potential for attenuation of the anti-platelet effect of aspirin. 9/8/2006 (user-supplied)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
       "id": "clopidogrel",
       "title": "Clopidogrel (Plavix)",
       "keyNumbers": [
-        "Platelet transfusion — before emergency neurosurgery: 1 single-donor apheresis unit; platelet-function testing first if available",
-        "Stop 5 days before elective surgery if an antiplatelet effect isn't wanted (label)",
-        "Clopidogrel + aspirin — minor stroke (NIHSS ≤3) or high-risk TIA (ABCD2 ≥4), no IVT: Load 300–600 mg, then 75 mg daily with aspirin × 21 days (up to 90), then SAPT",
-        "Start within 24 h (Kleindorfer: ideally 12–24 h, at least within 7 days)",
-        "Clopidogrel — noncardioembolic stroke/TIA (long-term SAPT): 75 mg daily"
+        "Pre-neurosurgery: 1 apheresis platelet unit",
+        "Stop 5 days before elective surgery (label)",
+        "DAPT: load 300–600 mg, 75 mg daily × 21 days",
+        "Start DAPT within 24 h (≤7 days at the latest)"
       ],
       "searchTerms": [
         "Plavix",
@@ -2484,40 +2374,6 @@
           "evidenceNote": [
             "AHA 2026: COR 1, LOE A",
             "Kleindorfer 2021: COR 1, LOE A"
-          ],
-          "formularyStatus": "AVAILABLE",
-          "calculatorIds": []
-        },
-        {
-          "role": "FIRST_LINE",
-          "agent": "Clopidogrel — noncardioembolic stroke/TIA (long-term SAPT)",
-          "routes": [
-            "PO"
-          ],
-          "doseText": "75 mg daily",
-          "dose": [
-            {
-              "label": "Maintenance",
-              "amountMin": 75,
-              "amountMax": 75,
-              "unit": "MG",
-              "basis": "FIXED",
-              "timing": "PER_DAY",
-              "weightBasis": "NOT_APPLICABLE",
-              "caps": [],
-              "frequency": [
-                "Daily"
-              ],
-              "duration": []
-            }
-          ],
-          "notes": [
-            "Antiplatelet preferred over anticoagulation (AHA 2026 and Kleindorfer 2021: COR 1, A)",
-            "Choose agent on risk profile, cost, tolerance (AHA 2026: COR 1, C-EO)"
-          ],
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "Kleindorfer 2021: COR 1, LOE A (aspirin 50–325 mg, clopidogrel 75 mg, or aspirin 25 mg/ER-dipyridamole 200 mg BID)"
           ],
           "formularyStatus": "AVAILABLE",
           "calculatorIds": []
@@ -2640,8 +2496,7 @@
         "Boxed warning: reduced effect in CYP2C19 poor metabolizers — consider another P2Y12 inhibitor (label)",
         "CYP2C19 loss-of-function carriers with minor stroke/TIA: ticagrelor + aspirin × 21 days may be reasonable instead (AHA 2026: COR 2b, B-R)",
         "Without a load, the antiplatelet effect takes several days (label)",
-        "Platelet transfusion within 4 h of a load or 2 h of a maintenance dose may be less effective (label)",
-        "After IVT: antiplatelets in the first 24 h might be considered only with a compelling indication (AHA 2026: COR 2b, B-NR); usual practice is 24-h imaging first"
+        "Platelet transfusion within 4 h of a load or 2 h of a maintenance dose may be less effective (label)"
       ],
       "verify": [],
       "relatedIds": [
@@ -2657,7 +2512,7 @@
         "Clopidogrel bisulfate tablets US prescribing information. ACI Healthcare USA; revised 6/2020 (user-supplied label)",
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "AGENT",
@@ -3398,11 +3253,11 @@
       "id": "dapt-minor-stroke-tia",
       "title": "DAPT for minor stroke and high-risk TIA",
       "keyNumbers": [
-        "NIHSS ≤3 or ABCD2 ≥4, within 24 h of onset: Clopidogrel (with load) + aspirin, start within 24 h, 21 days, then SAPT",
-        "NIHSS ≤5 or ABCD2 ≥4 at 24–72 h, or NIHSS 4–5 within 24 h, with presumed atherosclerotic cause (≥50% stenosis likely causative, or new infarcts of presumed large-artery origin): Clopidogrel + aspirin × 21 days, then SAPT (INSPIRES)",
-        "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier: Ticagrelor + aspirin × 21 days, then ticagrelor alone, may be reasonable instead of clopidogrel-based DAPT (CHANCE-2)",
-        "Any regimen beyond 90 days, or adding a third antiplatelet: Don't — excess hemorrhage without added benefit",
-        "Clopidogrel 300–600 mg load, then 75 mg daily; aspirin 160–325 mg load, then 75–100 mg daily"
+        "INSPIRES: NIHSS ≤5 at 24–72 h, atherosclerotic",
+        "CYP2C19 LOF: ticagrelor + aspirin × 21 days",
+        "No DAPT >90 days, no triple antiplatelet",
+        "Loads: clopidogrel 300–600 mg, aspirin 160–325 mg",
+        "THALES: ticagrelor + aspirin × 30 days (2b)"
       ],
       "searchTerms": [
         "DAPT",
@@ -3423,16 +3278,6 @@
       "rules": [
         {
           "order": 1,
-          "condition": "NIHSS ≤3 or ABCD2 ≥4, within 24 h of onset",
-          "recommendation": "Clopidogrel (with load) + aspirin, start within 24 h, 21 days, then SAPT",
-          "evidenceLevel": "STRONG",
-          "evidenceNote": [
-            "AHA 2026: COR 1, LOE A",
-            "Kleindorfer 2021: COR 1, LOE A — ideally within 12–24 h, at least within 7 days; 21–90 days"
-          ]
-        },
-        {
-          "order": 2,
           "condition": "NIHSS ≤5 or ABCD2 ≥4 at 24–72 h, or NIHSS 4–5 within 24 h, with presumed atherosclerotic cause (≥50% stenosis likely causative, or new infarcts of presumed large-artery origin)",
           "recommendation": "Clopidogrel + aspirin × 21 days, then SAPT (INSPIRES)",
           "evidenceLevel": "MODERATE",
@@ -3441,7 +3286,7 @@
           ]
         },
         {
-          "order": 3,
+          "order": 2,
           "condition": "NIHSS ≤3 or ABCD2 ≥4, within 24 h, known CYP2C19 loss-of-function carrier",
           "recommendation": "Ticagrelor + aspirin × 21 days, then ticagrelor alone, may be reasonable instead of clopidogrel-based DAPT (CHANCE-2)",
           "evidenceLevel": "WEAK",
@@ -3450,7 +3295,7 @@
           ]
         },
         {
-          "order": 4,
+          "order": 3,
           "condition": "Noncardioembolic minor stroke (NIHSS ≤5) or high-risk TIA (ABCD2 ≥6, or symptomatic ≥50% intracranial/extracranial stenosis that could account for the TIA), <24 h, no IVT (THALES)",
           "recommendation": "Ticagrelor + aspirin × 30 days may be considered (THALES) — more severe bleeding including ICH",
           "evidenceLevel": "WEAK",
@@ -3460,7 +3305,7 @@
           ]
         },
         {
-          "order": 5,
+          "order": 4,
           "condition": "Any regimen beyond 90 days, or adding a third antiplatelet",
           "recommendation": "Don't — excess hemorrhage without added benefit",
           "evidenceLevel": "STRONG",
@@ -3470,7 +3315,7 @@
           ]
         },
         {
-          "order": 6,
+          "order": 5,
           "condition": "Received IVT in the past 24 h",
           "recommendation": "DAPT not studied after IVT; any antiplatelet in the first 24 h only with a compelling indication — usually after 24-h imaging",
           "evidenceLevel": "WEAK",
@@ -3479,7 +3324,7 @@
           ]
         },
         {
-          "order": 7,
+          "order": 6,
           "condition": "Already on aspirin at the time of the event",
           "recommendation": "Raising the dose or switching agents is of unclear benefit; DAPT criteria above still apply",
           "evidenceLevel": "WEAK",
@@ -3663,7 +3508,7 @@
         "Kleindorfer DO, et al. 2021 Guideline for the Prevention of Stroke in Patients With Stroke and Transient Ischemic Attack (AHA/ASA). Stroke 2021;52:e364-e467. doi:10.1161/STR.0000000000000375",
         "Johnston SC, et al. Ticagrelor and Aspirin or Aspirin Alone in Acute Ischemic Stroke or TIA (THALES). N Engl J Med 2020;383:207-217. doi:10.1056/NEJMoa1916870"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "kind": "DECISION",
