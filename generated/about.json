@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+eea8331e",
+  "contentVersion": "2.2.1+9b9627ae",
   "builtAt": "2026-11-13",
   "registries": [
     {
@@ -97,11 +97,11 @@
     {
       "id": "reference-cards",
       "title": "Reference Cards",
-      "version": "1.8.1",
+      "version": "1.9.1",
       "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-13",
-      "entries": 9,
-      "reviewed": 9,
+      "entries": 10,
+      "reviewed": 10,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
@@ -852,6 +852,13 @@
       ]
     },
     {
+      "citation": "Fragoulis GE, et al. 2022 EULAR recommendations for screening and prophylaxis of chronic and opportunistic infections in adults with autoimmune inflammatory rheumatic diseases. Ann Rheum Dis 2023;82(6):742-753. doi:10.1136/ard-2022-223335",
+      "year": 2023,
+      "citedBy": [
+        "reference-cards:immunotherapy-screening"
+      ]
+    },
+    {
       "citation": "Frohman EM, Wingerchuk DM. Transverse Myelitis. N Engl J Med 2010;363:564-572",
       "year": 2010,
       "citedBy": [
@@ -931,6 +938,13 @@
       "year": 2021,
       "citedBy": [
         "acute-neuro:intrathecal-baclofen-withdrawal"
+      ]
+    },
+    {
+      "citation": "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025",
+      "year": 2025,
+      "citedBy": [
+        "reference-cards:immunotherapy-screening"
       ]
     },
     {
@@ -1185,6 +1199,13 @@
       "year": 2018,
       "citedBy": [
         "neural-antibodies:septin-5"
+      ]
+    },
+    {
+      "citation": "Humphrey MB, et al. 2022 American College of Rheumatology guideline for the prevention and treatment of glucocorticoid-induced osteoporosis. Arthritis Care Res 2023;75(12):2405-2419. doi:10.1002/acr.25240",
+      "year": 2023,
+      "citedBy": [
+        "reference-cards:immunotherapy-screening"
       ]
     },
     {
@@ -1476,6 +1497,13 @@
       "citedBy": [
         "vascular-antithrombotics:anticoag-reversal-ich",
         "vascular-antithrombotics:antiplatelet-ich"
+      ]
+    },
+    {
+      "citation": "Limper AH, et al. An official American Thoracic Society statement: treatment of fungal infections in adult pulmonary and critical care patients. Am J Respir Crit Care Med 2011;183(1):96-128. doi:10.1164/rccm.2008-740ST",
+      "year": 2011,
+      "citedBy": [
+        "reference-cards:immunotherapy-screening"
       ]
     },
     {

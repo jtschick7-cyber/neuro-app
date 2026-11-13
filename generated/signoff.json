@@ -535,6 +535,10 @@
     "date": "2026-11-13",
     "sha256": "03dd935452f7b502205630b084258dd4b3259114fb91593f95098b18322b1fe7"
   },
+  "reference-cards:immunotherapy-screening": {
+    "date": "2026-11-13",
+    "sha256": "648c29e81343df24e442f9849a35894d8ff32eabc4ea8bfbdd025a3d6404c4e6"
+  },
   "reference-cards:inpatient-parkinson-disease": {
     "date": "2026-11-11",
     "sha256": "3280dca3b8e09abfd2814604e14608ea88f9f2a49c3c519f92d5113bd592d605"
