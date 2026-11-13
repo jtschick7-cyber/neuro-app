@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+9b9627ae",
+  "contentVersion": "2.2.1+728203b1",
   "builtAt": "2026-11-13",
   "registries": [
     {
@@ -19,15 +19,15 @@
     {
       "id": "antiseizure-medications",
       "title": "Antiseizure medication dosing",
-      "version": "1.1.1",
+      "version": "1.2.1",
       "schemaVersion": "1.0.0",
-      "lastUpdated": "2026-11-11",
-      "entries": 14,
-      "reviewed": 14,
+      "lastUpdated": "2026-11-13",
+      "entries": 16,
+      "reviewed": 16,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-11"
+      "newestReview": "2026-11-13"
     },
     {
       "id": "asm-interactions",
@@ -1536,6 +1536,13 @@
       ]
     },
     {
+      "citation": "LYRICA (pregabalin) capsules and oral solution US prescribing information. Pfizer (Parke-Davis); revised 6/2020 (user-supplied label)",
+      "year": 2020,
+      "citedBy": [
+        "antiseizure-medications:pregabalin"
+      ]
+    },
+    {
       "citation": "Mac Grory B, et al. Management of Central Retinal Artery Occlusion: A Scientific Statement From the AHA. Stroke 2021;52:e282-e294. doi:10.1161/STR.0000000000000366",
       "year": 2021,
       "citedBy": [
@@ -1756,6 +1763,13 @@
       "year": 2026,
       "citedBy": [
         "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
+      "citation": "NEURONTIN (gabapentin) capsules, tablets and oral solution US prescribing information. Viatris; revised 4/2025 (FDA label, Reference ID 5578563)",
+      "year": 2025,
+      "citedBy": [
+        "antiseizure-medications:gabapentin"
       ]
     },
     {

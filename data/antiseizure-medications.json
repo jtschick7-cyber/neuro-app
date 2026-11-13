@@ -5,7 +5,7 @@
     "CRRT dosing not covered — no institutional or published source supplied; ask pharmacy",
     "Phenobarbital: no current FDA-approved adult label; card sourced from the AES 2024 ASM summary"
   ],
-  "version": "1.2.0",
+  "version": "1.2.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -2308,7 +2308,7 @@
       "sources": [
         "NEURONTIN (gabapentin) capsules, tablets and oral solution US prescribing information. Viatris; revised 4/2025 (FDA label, Reference ID 5578563)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     },
     {
       "id": "pregabalin",
@@ -2435,7 +2435,7 @@
       "sources": [
         "LYRICA (pregabalin) capsules and oral solution US prescribing information. Pfizer (Parke-Davis); revised 6/2020 (user-supplied label)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     }
   ]
 }

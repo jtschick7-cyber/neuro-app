@@ -107,6 +107,10 @@
     "date": "2026-11-11",
     "sha256": "c8fb0f08bf9b3f44b9e028db5ef143b41fb443460bc25183ee4da527f7b33c05"
   },
+  "antiseizure-medications:gabapentin": {
+    "date": "2026-11-13",
+    "sha256": "0708e5cd92b5020c6125dfbdf737ab01123ae02a67a4cbdd828240f2a3be1586"
+  },
   "antiseizure-medications:lacosamide": {
     "date": "2026-11-07",
     "sha256": "de57a53620d0272e83365fa5b353b5571c8fd9d21f9f85c2799757a2f49de0a9"
@@ -134,6 +138,10 @@
   "antiseizure-medications:phenytoin-fosphenytoin": {
     "date": "2026-11-07",
     "sha256": "08e546410b477be3a8d842a5ff55e509e118708d88b3920e56073965c3204a1d"
+  },
+  "antiseizure-medications:pregabalin": {
+    "date": "2026-11-13",
+    "sha256": "312d82d796bd1b058b8d1424bc4463fd2dbbb101812adf158b43342779156789"
   },
   "antiseizure-medications:topiramate": {
     "date": "2026-11-11",
