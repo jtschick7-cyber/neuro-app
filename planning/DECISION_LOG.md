@@ -1226,3 +1226,10 @@ Update 2026-11-12 (3) (Jason, in chat: "Core + A, close V4"; entry still `lastRe
 Update 2026-11-12 (4): signed by Jason (`monogenic-csvd-workup`, `lastReviewed` 2026-11-12): consult-workups 3.2.1. Not yet released. PARK items B1–B4 and C1, and option B of the V4 draft, stay open.
 
 Update 2026-11-12 (5): released: consult-workups 3.2.1, content 2.2.1+cbb25833. The sign-off/release open item above is closed; PARK items B1–B4, C1 and V4 option B stay open.
+
+## Audit 2026-11-12 content draft 1: 4F-PCC local cap (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/01-4f-pcc-local-cap.md` as revised.
+- Provenance: 4F-PCC for factor Xa reversal is capped at 2,000 U, with one 500 U repeat for ongoing bleeding. This is local pharmacy practice per Jason (12–13 Nov 2026). No published source; no `sources` string added (Claude's recommendation, Jason deferred to it).
+- Encoded on `four-factor-pcc`, `apixaban`, `rivaroxaban`, `edoxaban`, `anticoag-reversal-ich`; all five reset to UNREVIEWED. Dabigatran and warfarin rows unchanged.
+- vascular-antithrombotics 1.2.1 → 1.3.0 (MINOR). Sign-off adds its own PATCH later.
