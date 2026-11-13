@@ -4,7 +4,7 @@
     "Selected interactions relevant to stroke and inpatient care — not a complete interaction checker",
     "Beers 2023 entries apply to adults ≥65"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -471,7 +471,7 @@
       "sources": [
         "Paxlovid (nirmatrelvir tablets; ritonavir tablets) US prescribing information. Pfizer; revised 2/2026 (DailyMed, accessed 2026-11-13)"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     }
   ]
 }

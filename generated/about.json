@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+44e81fcc",
+  "contentVersion": "2.2.1+92a40abe",
   "builtAt": "2026-11-13",
   "registries": [
     {
@@ -32,15 +32,15 @@
     {
       "id": "asm-interactions",
       "title": "Antiseizure medication interactions",
-      "version": "0.2.1",
+      "version": "1.0.1",
       "schemaVersion": "1.0.0",
-      "lastUpdated": "2026-11-11",
-      "entries": 12,
-      "reviewed": 12,
+      "lastUpdated": "2026-11-13",
+      "entries": 11,
+      "reviewed": 11,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
-      "newestReview": "2026-11-11"
+      "newestReview": "2026-11-13"
     },
     {
       "id": "consult-workups",
@@ -110,15 +110,15 @@
     {
       "id": "seizure-threshold",
       "title": "Drugs that lower the seizure threshold",
-      "version": "0.3.1",
+      "version": "0.3.3",
       "schemaVersion": "3.0.0",
-      "lastUpdated": "2026-11-11",
+      "lastUpdated": "2026-11-13",
       "entries": 15,
       "reviewed": 15,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
-      "newestReview": "2026-11-11"
+      "newestReview": "2026-11-13"
     },
     {
       "id": "vascular-antithrombotics",
@@ -186,8 +186,6 @@
       "citation": "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372",
       "year": 2023,
       "citedBy": [
-        "asm-interactions:cns-polypharmacy-falls",
-        "asm-interactions:gabapentinoids-opioids",
         "asm-interactions:tmp-smx-phenytoin",
         "seizure-threshold:fluoroquinolones",
         "seizure-threshold:meperidine",
@@ -1850,6 +1848,13 @@
       "year": 2012,
       "citedBy": [
         "acute-neuro:myasthenic-crisis"
+      ]
+    },
+    {
+      "citation": "Paxlovid (nirmatrelvir tablets; ritonavir tablets) US prescribing information. Pfizer; revised 2/2026 (DailyMed, accessed 2026-11-13)",
+      "year": 2026,
+      "citedBy": [
+        "asm-interactions:inducing-asm-nirmatrelvir-ritonavir"
       ]
     },
     {
