@@ -4,9 +4,9 @@
   "scopeNotes": [
     "Labels and an FDA safety communication; Beers 2023 items apply to adults ≥65"
   ],
-  "version": "0.3.1",
+  "version": "0.3.2",
   "schemaVersion": "3.0.0",
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-13",
   "entries": [
     {
       "id": "bupropion",
@@ -303,14 +303,12 @@
       ],
       "saferAlternatives": [],
       "verify": [],
-      "relatedIds": [
-        "asm-interactions:cns-polypharmacy-falls"
-      ],
+      "relatedIds": [],
       "sources": [
         "Ultram ER (tramadol HCl) extended-release tablets US prescribing information (Rebel Distributors); revised 12/2010 (user-supplied label)",
         "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
       ],
-      "lastReviewed": "2026-11-05"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "meperidine",

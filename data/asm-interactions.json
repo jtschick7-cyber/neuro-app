@@ -4,9 +4,9 @@
     "Selected interactions relevant to stroke and inpatient care — not a complete interaction checker",
     "Beers 2023 entries apply to adults ≥65"
   ],
-  "version": "0.2.1",
+  "version": "1.0.0",
   "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-13",
   "entries": [
     {
       "id": "inducing-asm-apixaban-rivaroxaban",
@@ -146,78 +146,6 @@
       "mechanism": [],
       "management": [
         "Avoid (Beers 2023, adults ≥65)"
-      ],
-      "population": [
-        "Beers 2023: adults ≥65"
-      ],
-      "pearls": [],
-      "verify": [],
-      "relatedIds": [],
-      "sources": [
-        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
-      ],
-      "lastReviewed": "2026-11-05"
-    },
-    {
-      "id": "gabapentinoids-opioids",
-      "title": "Gabapentin or pregabalin with opioids",
-      "searchTerms": [
-        "Neurontin opioid",
-        "Lyrica opioid",
-        "respiratory depression"
-      ],
-      "objectDrugs": [
-        "opioids"
-      ],
-      "precipitantDrugs": [
-        "gabapentin",
-        "pregabalin"
-      ],
-      "tier": "AVOID",
-      "effect": [
-        "↑ severe sedation-related adverse events, including respiratory depression and death"
-      ],
-      "mechanism": [],
-      "management": [
-        "Avoid, except when transitioning from opioids to a gabapentinoid or using a gabapentinoid to reduce opioid dose — then use caution"
-      ],
-      "population": [
-        "Beers 2023: adults ≥65"
-      ],
-      "pearls": [],
-      "verify": [],
-      "relatedIds": [],
-      "sources": [
-        "2023 American Geriatrics Society Beers Criteria Update Expert Panel. American Geriatrics Society 2023 updated AGS Beers Criteria for potentially inappropriate medication use in older adults. J Am Geriatr Soc 2023;71:2052-2081. doi:10.1111/jgs.18372"
-      ],
-      "lastReviewed": "2026-11-05"
-    },
-    {
-      "id": "cns-polypharmacy-falls",
-      "title": "Three or more CNS-active drugs including antiseizure medications",
-      "searchTerms": [
-        "falls",
-        "polypharmacy",
-        "fracture"
-      ],
-      "objectDrugs": [
-        "antiseizure medications (including gabapentinoids)"
-      ],
-      "precipitantDrugs": [
-        "antidepressants",
-        "antipsychotics",
-        "benzodiazepines",
-        "Z-drugs",
-        "opioids",
-        "skeletal muscle relaxants"
-      ],
-      "tier": "AVOID",
-      "effect": [
-        "↑ falls and fractures with ≥3 CNS-active drugs"
-      ],
-      "mechanism": [],
-      "management": [
-        "Avoid ≥3 together; minimize the number of CNS-active drugs"
       ],
       "population": [
         "Beers 2023: adults ≥65"
@@ -499,6 +427,51 @@
         "Voriconazole tablets US prescribing information. Aurobindo; revised 4/2026 (user-supplied label)"
       ],
       "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "inducing-asm-nirmatrelvir-ritonavir",
+      "title": "Carbamazepine, phenytoin, phenobarbital or primidone with nirmatrelvir-ritonavir (Paxlovid)",
+      "searchTerms": [
+        "Paxlovid",
+        "COVID antiviral",
+        "nirmatrelvir",
+        "ritonavir",
+        "Tegretol Paxlovid",
+        "Dilantin Paxlovid"
+      ],
+      "objectDrugs": [
+        "nirmatrelvir-ritonavir"
+      ],
+      "precipitantDrugs": [
+        "carbamazepine",
+        "phenytoin",
+        "fosphenytoin",
+        "phenobarbital",
+        "primidone"
+      ],
+      "tier": "AVOID",
+      "effect": [
+        "↓ nirmatrelvir and ritonavir exposure → possible loss of virologic response and resistance"
+      ],
+      "mechanism": [
+        "Strong CYP3A induction"
+      ],
+      "management": [
+        "Contraindicated (Paxlovid label §4) — use another COVID-19 treatment",
+        "Paxlovid can't be started immediately after stopping one of these, because the induction wears off slowly (§4)"
+      ],
+      "population": [],
+      "pearls": [
+        "Fosphenytoin is a phenytoin prodrug — same interaction",
+        "Other direction: ritonavir raises clonazepam — a clonazepam dose decrease may be needed, with clinical monitoring (§7)",
+        "Oral midazolam and triazolam are contraindicated with Paxlovid (§4)"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "Paxlovid (nirmatrelvir tablets; ritonavir tablets) US prescribing information. Pfizer; revised 2/2026 (DailyMed, accessed 2026-11-13)"
+      ],
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }
