@@ -1286,3 +1286,10 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03f-scope-asm-interac
 - Cut `cns-polypharmacy-falls` and `gabapentinoids-opioids`; removed the dead link from `seizure-threshold:tramadol`. Sign-off pruned both records.
 - New `inducing-asm-nirmatrelvir-ritonavir` from the Paxlovid label (Pfizer, revised 2/2026, DailyMed, read 13 Nov). Lamotrigine/valproate/levetiracetam rows not confirmed either way (table only partly read); nothing said about them.
 - asm-interactions 0.2.1 → 1.0.0 (MAJOR), seizure-threshold 0.3.1 → 0.3.2 (PATCH). Signed (standing instruction): 1.0.1 and 0.3.3. Released: content 2.2.1+92a40abe (335 unique sources).
+
+## Audit 2026-11-12 content draft 3g: CSF interpretation card (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/03g-reference-card-csf.md` (AFP correction rule first, Zhou trade-off second; glucose cutoff from an opened source; pattern rows qualitative; 500–1,500 range from Shahan 2021 over Seehusen's 500–1,000; no lactate row).
+- New `reference-cards:csf-interpretation` (Seehusen AFP 2003; Shahan AFP 2021; Zhou Neurol Clin Pract 2024, n=195). The ">99% certainty" glucose <34 mg/dL line rests on a primary study Shahan cites, which was not opened; the row says so.
+- Key numbers and relatedIds (bacterial-meningitis, asah-numbers) taken from the draft's rows; no pitfalls.
+- reference-cards 1.6.1 → 1.7.0 (MINOR). Signed (standing instruction): 1.7.1. Released: content 2.2.1+bcfe2e88 (338 unique sources).

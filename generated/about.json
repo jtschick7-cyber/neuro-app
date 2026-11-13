@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+92a40abe",
+  "contentVersion": "2.2.1+bcfe2e88",
   "builtAt": "2026-11-13",
   "registries": [
     {
@@ -97,11 +97,11 @@
     {
       "id": "reference-cards",
       "title": "Reference Cards",
-      "version": "1.6.1",
+      "version": "1.7.1",
       "schemaVersion": "1.1.0",
       "lastUpdated": "2026-11-13",
-      "entries": 7,
-      "reviewed": 7,
+      "entries": 8,
+      "reviewed": 8,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
@@ -2190,6 +2190,13 @@
       ]
     },
     {
+      "citation": "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109",
+      "year": 2003,
+      "citedBy": [
+        "reference-cards:csf-interpretation"
+      ]
+    },
+    {
       "citation": "Segal Y, Soltys J, Clarkson BDS, et al. Toward curing neurological autoimmune disorders: biomarkers, immunological mechanisms, and therapeutic targets. Neuron 2025;113:345-379. doi:10.1016/j.neuron.2024.12.006",
       "year": 2025,
       "citedBy": [
@@ -2210,6 +2217,13 @@
       "year": 2019,
       "citedBy": [
         "reference-cards:inpatient-parkinson-disease"
+      ]
+    },
+    {
+      "citation": "Shahan B, Choi EY, Nieves G. Cerebrospinal fluid analysis. Am Fam Physician 2021;103(7):422-428",
+      "year": 2021,
+      "citedBy": [
+        "reference-cards:csf-interpretation"
       ]
     },
     {
@@ -2795,6 +2809,13 @@
       "year": 2022,
       "citedBy": [
         "neural-antibodies:anna3-dach1"
+      ]
+    },
+    {
+      "citation": "Zhou RW, Sangam K, Budhram A. Clinical utility of CSF correction factors for traumatic lumbar puncture in adults. Neurol Clin Pract 2024;14(6):e200350. doi:10.1212/CPJ.0000000000200350",
+      "year": 2024,
+      "citedBy": [
+        "reference-cards:csf-interpretation"
       ]
     },
     {
