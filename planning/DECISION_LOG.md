@@ -1306,3 +1306,10 @@ Jason, in chat: chose the scope (rituximab and high-dose steroids only), asked f
 - New `reference-cards:immunotherapy-screening`. Rituximab rows come from the Rituxan label (SPL v36, effective 2025-01-06). Steroid rows come from EULAR 2022 (paraphrased; © BMJ), ATS 2011 and ACR 2022. Strongyloides appears only as EULAR's "no recommendation". No glucose row (no source). The Shams 2022 case series was dropped.
 - On encoding, the draft's "→ LEVEL" mapping notes went into evidenceLevel/evidenceNote, not the row notes. relatedIds: acute-neuro:autoimmune-encephalitis (holds "Screen HBV before").
 - reference-cards 1.8.1 → 1.9.0 (MINOR). Signed (standing instruction): 1.9.1. Released: content 2.2.1+9b9627ae (343 unique sources).
+
+## Audit 2026-11-12 content draft 3j: gabapentin and pregabalin renal dosing (2026-11-13)
+
+Jason, in chat: confirmed the rebuilt Neurontin Table 1 "15" row (100/125/150/200/300 mg QD), supplied the LYRICA label (Pfizer, revised 6/2020), and approved `planning/drafts/audit-2026-11-12/03j-asm-gabapentinoid-renal.md` as written (role ALTERNATIVE for both).
+- New `antiseizure-medications:gabapentin` (Neurontin label, Viatris 4/2025) and `pregabalin` (LYRICA label). Renal bands use crclBasis CG_ML_MIN; the dose levels are in doseText, with no structured dose per band. The repackaged generic pregabalin label matched LYRICA in every cell and is not cited.
+- Not specified in the draft, set on encoding: formularyStatus INSTITUTION_VARIES; structured start/maintenance doses taken from the doseText; hepatic/ivPo/enteral/levels/interactions left empty; no relatedIds (no gabapentinoid entries remain elsewhere).
+- antiseizure-medications 1.1.1 → 1.2.0 (MINOR). Signed (standing instruction): 1.2.1. Released: content 2.2.1+728203b1 (345 unique sources).
