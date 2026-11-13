@@ -5,9 +5,9 @@
     "CRRT dosing not covered — no institutional or published source supplied; ask pharmacy",
     "Phenobarbital: no current FDA-approved adult label; card sourced from the AES 2024 ASM summary"
   ],
-  "version": "1.1.1",
+  "version": "1.2.0",
   "schemaVersion": "1.0.0",
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-13",
   "entries": [
     {
       "id": "levetiracetam",
@@ -2173,6 +2173,269 @@
         "Zonegran (zonisamide) capsules US prescribing information. Advanz Pharma; revised 9/2026 (user-supplied label)"
       ],
       "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "gabapentin",
+      "title": "Gabapentin (Neurontin) — maintenance dosing and renal bands",
+      "searchTerms": [
+        "Neurontin",
+        "gabapentin renal dose",
+        "gabapentin dialysis",
+        "gabapentin CrCl"
+      ],
+      "maintenance": [
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Gabapentin",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Partial-onset seizures (≥12 y): start 300 mg TID; maintenance 300–600 mg TID; up to 2400 mg/day long term, 3600 mg/day briefly in a few patients. No more than 12 h between doses (§2.2)",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 300,
+              "amountMax": 300,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "TID"
+              ],
+              "duration": []
+            },
+            {
+              "label": "Maintenance",
+              "amountMin": 300,
+              "amountMax": 600,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DOSE",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [],
+              "frequency": [
+                "TID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Neurontin label §2.2"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": [
+            "cockcroft-gault"
+          ]
+        }
+      ],
+      "renal": [
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 60,
+          "crclMax": null,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl ≥60 mL/min",
+          "doseText": "900–3600 mg/day: 300 / 400 / 600 / 800 / 1200 mg TID",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 30,
+          "crclMax": 59,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl >30 to 59 mL/min",
+          "doseText": "400–1400 mg/day: 200 / 300 / 400 / 500 / 700 mg BID",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 15,
+          "crclMax": 29,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl >15 to 29 mL/min",
+          "doseText": "200–700 mg/day: 200 / 300 / 400 / 500 / 700 mg QD",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": null,
+          "crclMax": 15,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl 15 mL/min (see <15 note)",
+          "doseText": "100–300 mg/day: 100 / 125 / 150 / 200 / 300 mg QD",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "Intermittent hemodialysis",
+          "doseText": "Maintenance from CrCl above, plus 125 / 150 / 200 / 250 / 350 mg after each 4 h of HD",
+          "dose": [],
+          "notes": [
+            "Table 1 note b"
+          ]
+        }
+      ],
+      "renalNotes": [
+        "CrCl <15: reduce the daily dose in proportion to CrCl, e.g. 7.5 mL/min → half the dose at 15 mL/min (Table 1 note a)",
+        "Anuric patients: half-life ~132 h off dialysis, 3.8 h on dialysis (§12.3)",
+        "Elderly: choose the dose by CrCl (§2.4)"
+      ],
+      "hepatic": [],
+      "ivPo": [],
+      "enteral": [],
+      "levels": [],
+      "interactions": [],
+      "pearls": [
+        "Renal dosing not studied in patients <12 y (§2.3)",
+        "Postherpetic neuralgia: titrate to 1800 mg/day; no added benefit shown above 1800 mg/day (§2.1)"
+      ],
+      "calculatorIds": [
+        "cockcroft-gault"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "NEURONTIN (gabapentin) capsules, tablets and oral solution US prescribing information. Viatris; revised 4/2025 (FDA label, Reference ID 5578563)"
+      ],
+      "lastReviewed": "UNREVIEWED"
+    },
+    {
+      "id": "pregabalin",
+      "title": "Pregabalin (Lyrica) — maintenance dosing and renal bands",
+      "searchTerms": [
+        "Lyrica",
+        "pregabalin renal dose",
+        "pregabalin dialysis",
+        "pregabalin CrCl"
+      ],
+      "maintenance": [
+        {
+          "role": "ALTERNATIVE",
+          "agent": "Pregabalin",
+          "routes": [
+            "PO"
+          ],
+          "doseText": "Partial-onset seizures (≥17 y): start 150 mg/day; max 600 mg/day in 2 or 3 divided doses (§2.4, Table 1)",
+          "dose": [
+            {
+              "label": "Start",
+              "amountMin": 150,
+              "amountMax": 150,
+              "unit": "MG",
+              "basis": "FIXED",
+              "timing": "PER_DAY",
+              "weightBasis": "NOT_APPLICABLE",
+              "caps": [
+                {
+                  "amount": 600,
+                  "unit": "MG",
+                  "scope": "PER_DAY"
+                }
+              ],
+              "frequency": [
+                "BID",
+                "TID"
+              ],
+              "duration": []
+            }
+          ],
+          "notes": [],
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Lyrica label §2.4, Table 1"
+          ],
+          "formularyStatus": "INSTITUTION_VARIES",
+          "calculatorIds": [
+            "cockcroft-gault"
+          ]
+        }
+      ],
+      "renal": [
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 60,
+          "crclMax": null,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl ≥60 mL/min",
+          "doseText": "150 / 300 / 450 / 600 mg/day, BID or TID",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 30,
+          "crclMax": 60,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl 30–60 mL/min",
+          "doseText": "75 / 150 / 225 / 300 mg/day, BID or TID",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": 15,
+          "crclMax": 30,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl 15–30 mL/min",
+          "doseText": "25–50 / 75 / 100–150 / 150 mg/day, QD or BID",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "CRCL_BAND",
+          "crclMin": null,
+          "crclMax": 15,
+          "crclBasis": "CG_ML_MIN",
+          "label": "CrCl <15 mL/min",
+          "doseText": "25 / 25–50 / 50–75 / 75 mg/day, QD",
+          "dose": [],
+          "notes": []
+        },
+        {
+          "kind": "INTERMITTENT_HD",
+          "crclMin": null,
+          "crclMax": null,
+          "crclBasis": null,
+          "label": "Intermittent hemodialysis",
+          "doseText": "Daily dose from CrCl, plus one supplemental dose right after every 4 h HD: 25 mg QD → 25 or 50 mg; 25–50 mg QD → 50 or 75 mg; 50–75 mg QD → 75 or 100 mg; 75 mg QD → 100 or 150 mg",
+          "dose": [],
+          "notes": [
+            "Table 2"
+          ]
+        }
+      ],
+      "renalNotes": [
+        "Clearance is nearly proportional to CrCl; 4 h HD lowers plasma levels ~50% (§12.3)",
+        "Renal dosing not studied in pediatric patients (§2.7)"
+      ],
+      "hepatic": [],
+      "ivPo": [],
+      "enteral": [],
+      "levels": [],
+      "interactions": [],
+      "pearls": [
+        "Max by indication: DPN 300 mg/day; PHN 600 mg/day only if 300 mg/day is tolerated with ongoing pain; fibromyalgia 450 mg/day; spinal cord injury 150–600 mg/day (§2.2–2.6)"
+      ],
+      "calculatorIds": [
+        "cockcroft-gault"
+      ],
+      "verify": [],
+      "relatedIds": [],
+      "sources": [
+        "LYRICA (pregabalin) capsules and oral solution US prescribing information. Pfizer (Parke-Davis); revised 6/2020 (user-supplied label)"
+      ],
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }
