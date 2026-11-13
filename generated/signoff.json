@@ -223,6 +223,10 @@
     "date": "2026-11-08",
     "sha256": "78d1e7010b124c374878a73926865feea277540f80de8920a99a474a8691f614"
   },
+  "consult-workups:functional-neurological-disorder": {
+    "date": "2026-11-13",
+    "sha256": "5bda2363a5432ff4aa25eceda19f0be4b64272add75edc4d57d5d39cb640c40a"
+  },
   "consult-workups:ich-etiology-workup": {
     "date": "2026-11-13",
     "sha256": "b2748c03a5eb7c911eebf5952b23a13a00af7de89f8e9657d4de8974937eba53"
@@ -526,6 +530,10 @@
   "reference-cards:boston-criteria-caa": {
     "date": "2026-11-11",
     "sha256": "9e5785411949fc56a23b229191168847e0cb7ac2b85cd85cf901fc5ea997d914"
+  },
+  "reference-cards:eeg-report-terms": {
+    "date": "2026-11-13",
+    "sha256": "03dd935452f7b502205630b084258dd4b3259114fb91593f95098b18322b1fe7"
   },
   "reference-cards:inpatient-parkinson-disease": {
     "date": "2026-11-11",

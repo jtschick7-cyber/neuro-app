@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "3.4.0",
+  "version": "3.4.1",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -5027,7 +5027,7 @@
         "Bennett K, et al. A practical review of functional neurological disorder (FND) for the general physician. Clin Med (Lond) 2021;21(1):28-36. doi:10.7861/clinmed.2020-0987",
         "Dworetzky BA, Baslet G. Functional neurological disorder: practical management. Neurotherapeutics 2025;22(4):e00612. doi:10.1016/j.neurot.2025.e00612"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     }
   ]
 }

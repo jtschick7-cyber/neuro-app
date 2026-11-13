@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -3185,7 +3185,7 @@
         "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806",
         "Struck AF, et al. Association of an electroencephalography-based risk score with seizure probability in hospitalized patients. JAMA Neurol 2017;74(12):1419-1424. doi:10.1001/jamaneurol.2017.2459"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     }
   ]
 }
