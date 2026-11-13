@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -3804,7 +3804,7 @@
       "sources": [
         "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     }
   ]
 }

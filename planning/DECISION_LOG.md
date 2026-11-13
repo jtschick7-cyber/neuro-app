@@ -1293,3 +1293,9 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03g-reference-card-cs
 - New `reference-cards:csf-interpretation` (Seehusen AFP 2003; Shahan AFP 2021; Zhou Neurol Clin Pract 2024, n=195). The ">99% certainty" glucose <34 mg/dL line rests on a primary study Shahan cites, which was not opened; the row says so.
 - Key numbers and relatedIds (bacterial-meningitis, asah-numbers) taken from the draft's rows; no pitfalls.
 - reference-cards 1.6.1 → 1.7.0 (MINOR). Signed (standing instruction): 1.7.1. Released: content 2.2.1+bcfe2e88 (338 unique sources).
+
+## Audit 2026-11-12 content draft 3h: root vs nerve localization card (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/03h-reference-card-root-vs-nerve.md` as an exam-only card.
+- New `reference-cards:root-vs-nerve-localization` (Robblee & Katzberg, Front Neurol 2016, CC BY; Tables 1–5). No EMG/NCS rows: the source has none. C6 vs median and the C5 pairs are left out because the source prints no tables for them.
+- reference-cards 1.7.1 → 1.8.0 (MINOR). Signed (standing instruction): 1.8.1. Released: content 2.2.1+eea8331e (339 unique sources).

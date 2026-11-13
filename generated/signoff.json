@@ -547,6 +547,10 @@
     "date": "2026-11-11",
     "sha256": "a0c33b9d30bd8b43e04fd5c53ff7ebe43994e468e755f877dc00537bdc71f241"
   },
+  "reference-cards:root-vs-nerve-localization": {
+    "date": "2026-11-13",
+    "sha256": "c5d98e06abaea0156dee2c541beef8aada86746eb4b33fa09b7b85b123546fc8"
+  },
   "reference-cards:thrombophilia-test-validity": {
     "date": "2026-11-07",
     "sha256": "db5233edb8043a21f1277d7a0a44d8e007dd7543b387c933f9f6b2e5173a0b3a"
