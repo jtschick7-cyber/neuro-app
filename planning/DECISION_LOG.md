@@ -1299,3 +1299,10 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03g-reference-card-cs
 Jason, in chat: approved `planning/drafts/audit-2026-11-12/03h-reference-card-root-vs-nerve.md` as an exam-only card.
 - New `reference-cards:root-vs-nerve-localization` (Robblee & Katzberg, Front Neurol 2016, CC BY; Tables 1–5). No EMG/NCS rows: the source has none. C6 vs median and the C5 pairs are left out because the source prints no tables for them.
 - reference-cards 1.7.1 → 1.8.0 (MINOR). Signed (standing instruction): 1.8.1. Released: content 2.2.1+eea8331e (339 unique sources).
+
+## Audit 2026-11-12 content draft 3i: immunotherapy screening card (2026-11-13)
+
+Jason, in chat: chose the scope (rituximab and high-dose steroids only), asked for more steroid sources, supplied the EULAR 2022, ATS 2011 and ACR 2022 GIOP PDFs, then approved `planning/drafts/audit-2026-11-12/03i-reference-card-immunotherapy-screening.md` as written, including the grade mapping: EULAR GoR B → MODERATE, C → WEAK, D → EXPERT_OPINION; ACR strong → STRONG, conditional → WEAK; ATS AI → STRONG; remarks → NOT_GRADED.
+- New `reference-cards:immunotherapy-screening`. Rituximab rows come from the Rituxan label (SPL v36, effective 2025-01-06). Steroid rows come from EULAR 2022 (paraphrased; © BMJ), ATS 2011 and ACR 2022. Strongyloides appears only as EULAR's "no recommendation". No glucose row (no source). The Shams 2022 case series was dropped.
+- On encoding, the draft's "→ LEVEL" mapping notes went into evidenceLevel/evidenceNote, not the row notes. relatedIds: acute-neuro:autoimmune-encephalitis (holds "Screen HBV before").
+- reference-cards 1.8.1 → 1.9.0 (MINOR). Signed (standing instruction): 1.9.1. Released: content 2.2.1+9b9627ae (343 unique sources).
