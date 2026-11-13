@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "3.3.1",
+  "version": "3.4.0",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -4908,6 +4908,126 @@
         "Lee PY, et al. Evaluation and Management of Deficiency of Adenosine Deaminase 2: An International Consensus Statement. JAMA Netw Open 2023;6(5):e2315894. doi:10.1001/jamanetworkopen.2023.15894"
       ],
       "lastReviewed": "2026-11-13"
+    },
+    {
+      "id": "functional-neurological-disorder",
+      "title": "Functional neurological disorder (FND): positive signs",
+      "searchTerms": [
+        "FND",
+        "functional weakness",
+        "functional seizures",
+        "dissociative seizures",
+        "PNES",
+        "psychogenic",
+        "conversion disorder",
+        "Hoover sign"
+      ],
+      "category": "FUNCTIONAL",
+      "consultQuestion": "Could this be functional — which positive signs make the diagnosis, and what still needs excluding?",
+      "keyNumbers": [
+        "Hoover sign: sens 60–100%, spec 86–100%",
+        "Drift without pronation: spec 100%",
+        "Functional seizure clue: duration >90 s",
+        "Comorbid neurological disease in ~20%",
+        "New explanation at 18 mo: 4 of 1,030"
+      ],
+      "keyHistory": [
+        "Witness account, or a phone video of a typical attack — expert review of a video may be enough (Bennett 2021; Dworetzky 2025)",
+        "Memory of the event favours a functional seizure (Bennett 2021)"
+      ],
+      "keyExam": [
+        "Hoover sign and hip abductor sign — the most reliable signs of functional leg weakness (Bennett 2021)",
+        "Hoover sign: sensitivity 60–100%, specificity 86–100%; valid for unilateral leg weakness with no lesion in the opposite SMA or parietal lobe (Dworetzky 2025, Table 2)",
+        "Give-way (collapsing) weakness: sensitivity 20–90%, specificity 95–100%; beware pain or difficulty following instructions (Dworetzky 2025, Table 2; Bennett 2021)",
+        "Drift without pronation (palms up, wait 10 s): sensitivity 47–93%, specificity 100% (Dworetzky 2025, Table 2)",
+        "Tremor entrainment: tap the other hand at different rates — functional tremor stops, entrains or disrupts the copying (sensitivity 89.5%, specificity 100%) (Dworetzky 2025, Table 2; Bennett 2021)",
+        "Dragging leg gait: sensitivity 20–100%, specificity 100% (Dworetzky 2025, Table 2)"
+      ],
+      "redFlags": [
+        "Post-ictal confusion or stertorous breathing — favour an epileptic seizure (Bennett 2021)",
+        "Stereotyped, brief, clustered events, or events from EEG-proven sleep — consider frontal lobe seizures (Dworetzky 2025, Table 2)",
+        "Midline-splitting sensory loss is not reliable — seen with thalamic stroke (Dworetzky 2025, Table 2)"
+      ],
+      "differential": [
+        {
+          "dx": "Epileptic seizures, including frontal lobe seizures",
+          "clues": [
+            "Some frontal lobe seizures have a normal ictal EEG (Bennett 2021)",
+            "Pelvic thrusting and asynchronous movements also occur in frontal lobe seizures (Dworetzky 2025)"
+          ],
+          "mustNotMiss": true
+        },
+        {
+          "dx": "Comorbid neurological disease",
+          "clues": [
+            "About 20% of FND patients have one (Bennett 2021)",
+            "Functional tremor can occur in early Parkinson's disease (Bennett 2021)",
+            "Symptoms can look functional before another disorder emerges (Dworetzky 2025)"
+          ],
+          "mustNotMiss": true
+        }
+      ],
+      "workup": [
+        {
+          "test": "Video-EEG capturing a typical event",
+          "priority": "IF_INDICATED",
+          "indication": [
+            "Seizure-like events"
+          ],
+          "notes": [
+            "Still the gold standard (Dworetzky 2025)",
+            "A smartphone recording with expert review may be enough (Dworetzky 2025; Bennett 2021)"
+          ]
+        }
+      ],
+      "decisionRules": [
+        {
+          "order": 1,
+          "condition": "Suspected FND",
+          "recommendation": "Diagnose on positive 'rule in' signs, not by excluding every other cause (DSM-5, 2013)",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "DSM-5 (2013), as summarized in Dworetzky 2025"
+          ]
+        },
+        {
+          "order": 2,
+          "condition": "Eye closure with prolonged side-to-side movements and a negative ictal EEG",
+          "recommendation": "Epileptic seizure very unlikely — but comorbid functional seizures and epilepsy are not excluded",
+          "evidenceLevel": "NOT_GRADED",
+          "evidenceNote": [
+            "Dworetzky 2025"
+          ]
+        }
+      ],
+      "initialSteps": [
+        "Tell the patient what it is, not what it isn't: 'You have FND for the following reasons: a, b and c' (Bennett 2021, Table 1)",
+        "Show how the diagnosis was made, e.g. demonstrate the Hoover sign (Dworetzky 2025, Table 3)",
+        "Mention the diagnosis as soon as history and exam give reasonable suspicion (Dworetzky 2025)"
+      ],
+      "disposition": [],
+      "calculatorIds": [],
+      "institutionVaries": [
+        "Access to video-EEG and to FND therapy services (physiotherapy, psychotherapy)"
+      ],
+      "pearls": [
+        "Ictal eye closure: sensitivity 34–88%, specificity 74–100% (Dworetzky 2025, Table 2)",
+        "Ictal weeping: specificity 100% but sensitivity 3.7–37% — confirm it wasn't postictal (Dworetzky 2025, Table 2)",
+        "Side-to-side head or body movement (convulsive events only): sensitivity 25–63%, specificity 96–100% (Dworetzky 2025, Table 2)",
+        "Urinary incontinence and injury are poor discriminators (Bennett 2021)",
+        "Misdiagnosis is rare: 4 of 1,030 had a better explanation at 18 months, and twice as many were misdiagnosed the other way (Bennett 2021)",
+        "Table 2 figures are Dworetzky 2025's adaptation of Aybek & Perez BMJ 2022"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:convulsive-status-epilepticus",
+        "reference-cards:eeg-report-terms"
+      ],
+      "sources": [
+        "Bennett K, et al. A practical review of functional neurological disorder (FND) for the general physician. Clin Med (Lond) 2021;21(1):28-36. doi:10.7861/clinmed.2020-0987",
+        "Dworetzky BA, Baslet G. Functional neurological disorder: practical management. Neurotherapeutics 2025;22(4):e00612. doi:10.1016/j.neurot.2025.e00612"
+      ],
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }
