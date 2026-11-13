@@ -1,20 +1,20 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+d037c80b",
+  "contentVersion": "2.2.1+3534dd69",
   "builtAt": "2026-11-13",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "2.6.1",
+      "version": "3.0.1",
       "schemaVersion": "1.3.0",
-      "lastUpdated": "2026-11-11",
-      "entries": 22,
-      "reviewed": 22,
+      "lastUpdated": "2026-11-13",
+      "entries": 21,
+      "reviewed": 21,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-11"
+      "newestReview": "2026-11-13"
     },
     {
       "id": "antiseizure-medications",
@@ -45,7 +45,7 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "3.2.3",
+      "version": "3.2.5",
       "schemaVersion": "2.1.0",
       "lastUpdated": "2026-11-13",
       "entries": 20,
@@ -894,13 +894,6 @@
       "year": 2017,
       "citedBy": [
         "neural-antibodies:iglon5"
-      ]
-    },
-    {
-      "citation": "Galvin R, et al. EFNS guidelines for diagnosis, therapy and prevention of Wernicke encephalopathy. Eur J Neurol 2010;17(12):1408-1418. doi:10.1111/j.1468-1331.2010.03153.x",
-      "year": 2010,
-      "citedBy": [
-        "acute-neuro:wernicke-encephalopathy"
       ]
     },
     {
