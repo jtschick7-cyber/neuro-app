@@ -1,8 +1,8 @@
 {
   "title": "Consult workups",
-  "version": "3.2.1",
+  "version": "3.2.3",
   "schemaVersion": "2.1.0",
-  "lastUpdated": "2026-11-12",
+  "lastUpdated": "2026-11-13",
   "entries": [
     {
       "id": "young-stroke-workup",
@@ -4485,10 +4485,10 @@
       "id": "monogenic-csvd-workup",
       "title": "Suspected monogenic small vessel disease (CADASIL and others)",
       "keyNumbers": [
-        "CADASIL (Pescini) scale 0–25: ≥15 suggests CADASIL; use it to select patients for NOTCH3 testing (Manini 2023 p.771)",
-        "AHA 2023: consider NOTCH3 testing for small vessel stroke before 55 y with few vascular risk factors (normotensive, nondiabetic, nonsmoker) or a family history of CADASIL (Table 3)",
-        "CBS deficiency: total homocysteine often >100 µmol/L (normal <15); adult-onset thromboembolic form 50 to >100 µmol/L (GeneReviews 2025, Suggestive Findings, Table 1)",
-        "Pulvinar T1 hyperintensity: 22 of 94 hemizygous males (about 23%); not seen before the third decade (Moore 2003 pp.1097–1098)"
+        "CADASIL scale (0–25) ≥15: test NOTCH3",
+        "NOTCH3: small-vessel stroke <55 y, few risk factors",
+        "CBS deficiency: homocysteine often >100 µmol/L",
+        "Fabry pulvinar T1 sign: ~23% of hemizygous males"
       ],
       "searchTerms": [
         "monogenic small vessel disease",
@@ -4533,11 +4533,11 @@
         "Build: tall, long limbs, without joint hypermobility (homocystinuria)"
       ],
       "redFlags": [
-        "Family history (EAN 2020 Table 1: mean 5, 100%)",
-        "Young age at onset (EAN: mean 4.92, 100%)",
-        "Consanguinity (EAN: mean 4.92, 100%)",
-        "Extracerebral or systemic features (EAN: mean 4.54, 100%)",
-        "Imaging or clinical phenotype characteristic of a specific monogenic disease (EAN: mean 4.54, 84.6%; mean 4.61, 92.8%)"
+        "Family history",
+        "Young age at onset",
+        "Consanguinity",
+        "Extracerebral or systemic features",
+        "Imaging or clinical phenotype characteristic of a specific monogenic disease"
       ],
       "differential": [
         {
@@ -4975,7 +4975,8 @@
         "Fewer than 2% of younger-onset lacunar strokes are genetically confirmed CADASIL (AHA 2023 p.e452)",
         "Fabry disease explains less than 1% of cryptogenic ischemic strokes in young adults (EAN 2020 p.925)",
         "Monogenic small vessel diseases cause 1%–5% of all strokes (Manini 2023 p.766)",
-        "Sources disagree on migraine frequency in CADASIL: about 30% (AHA 2023 p.e452) and up to 45% (Manini 2023 p.771)"
+        "Sources disagree on migraine frequency in CADASIL: about 30% (AHA 2023 p.e452) and up to 45% (Manini 2023 p.771)",
+        "Red flags above are EAN 2020 Delphi consensus items (Table 1): family history mean 5 (100%); young onset 4.92 (100%); consanguinity 4.92 (100%); extracerebral features 4.54 (100%); characteristic phenotype 4.54 (84.6%) and 4.61 (92.8%)"
       ],
       "verify": [],
       "relatedIds": [
@@ -4996,7 +4997,7 @@
         "Testai FD, Gorelick PB. Inherited metabolic disorders and stroke part 2: homocystinuria, organic acidurias, and urea cycle disorders. Arch Neurol 2010;67(2):148-153.",
         "Lee PY, et al. Evaluation and Management of Deficiency of Adenosine Deaminase 2: An International Consensus Statement. JAMA Netw Open 2023;6(5):e2315894. doi:10.1001/jamanetworkopen.2023.15894"
       ],
-      "lastReviewed": "2026-11-12"
+      "lastReviewed": "2026-11-13"
     }
   ]
 }
