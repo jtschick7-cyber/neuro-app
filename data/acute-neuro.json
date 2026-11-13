@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -1197,7 +1197,7 @@
         "Brophy GM, et al. Guidelines for the evaluation and management of status epilepticus (NCS). Neurocrit Care 2012;17(1):3-23. doi:10.1007/s12028-012-9695-z",
         "Husain AM, et al. Randomized trial of lacosamide versus fosphenytoin for nonconvulsive seizures (TRENdS). Ann Neurol 2018;83(6):1174-1185. doi:10.1002/ana.25249"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     },
     {
       "id": "myasthenic-crisis",
@@ -3293,7 +3293,7 @@
         "Tunkel AR, et al. The management of encephalitis: clinical practice guidelines by the IDSA. Clin Infect Dis 2008;47(3):303-327. doi:10.1086/589747",
         "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-13"
     },
     {
       "id": "cns-infection-immunocompromised",

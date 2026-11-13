@@ -1241,3 +1241,11 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/02-p2-16-key-numbers.
 - `thrombolysis-with-prior-antithrombotics`: 5 key numbers shortened; `rules` unchanged.
 - `monogenic-csvd-workup`: 4 key numbers shortened; EAN 2020 Delphi statistics removed from the 5 red flags and kept, numbers unchanged, in one new pearl.
 - vascular-antithrombotics 1.3.1 → 1.3.2, consult-workups 3.2.1 → 3.2.2 (PATCH). Signed by Jason (standing instruction 13 Nov: sign and release once a draft is approved): 1.3.3 and 3.2.3. Released: content 2.2.1+d037c80b.
+
+## Audit 2026-11-12 content draft 3a: acute-neuro scope cut and trims (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/03a-scope-acute-neuro.md` as revised (light viral-encephalitis trim; NCSE pointer row named "Lorazepam, then levetiracetam or valproate").
+- Cut `acute-neuro:wernicke-encephalopathy`; removed its link from `consult-workups:rapidly-progressive-dementia`. EFNS 2010 leaves the app with it (329 unique sources). Sign-off pruned its record from generated/signoff.json.
+- `viral-encephalitis`: removed 2 HSV key numbers, the HSV presentation line and the false-negative PCR pitfall (all duplicated or common knowledge); acyclovir row kept for `bacterial-meningitis`.
+- `nonconvulsive-status-epilepticus`: lorazepam, levetiracetam and valproate rows replaced by one pointer row to convulsive SE (airway note and both calculators moved over); 2 key numbers removed.
+- acute-neuro 2.6.1 → 3.0.0 (MAJOR), consult-workups 3.2.3 → 3.2.4 (PATCH). Signed by Jason (standing instruction): 3.0.1 and 3.2.5. Released: content 2.2.1+3534dd69.

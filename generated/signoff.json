@@ -56,8 +56,8 @@
     "sha256": "4d9ea9d12d8a3ceb66f0157fd06bdcc020ae26426f17e48761f1f3f06b90dc0a"
   },
   "acute-neuro:nonconvulsive-status-epilepticus": {
-    "date": "2026-11-07",
-    "sha256": "cb0cba6d9251de45a64df01b03e584cd7395a83587aa93988edd70b3fef9d2af"
+    "date": "2026-11-13",
+    "sha256": "ec01896bb715f09c1573d9b4bd288b2742dfab5f8ac31acdb2b0558eac065db0"
   },
   "acute-neuro:pres": {
     "date": "2026-11-07",
@@ -80,12 +80,8 @@
     "sha256": "9f634f078b462965a0c4c484bd6858dc92bf3492315a1502a8cc13eeaac7fdff"
   },
   "acute-neuro:viral-encephalitis": {
-    "date": "2026-11-07",
-    "sha256": "0ce9d5660a452b45246ebab62c0ef1fe87a600b876138d7db173203546641631"
-  },
-  "acute-neuro:wernicke-encephalopathy": {
-    "date": "2026-11-07",
-    "sha256": "97a622c17333a22d09c99f67bd3d92aa35c344b06a34b5d76a5e5083498421d2"
+    "date": "2026-11-13",
+    "sha256": "9a9cd7a33b71d56d6f105968177473cf1a55779aee6af9c56ade8be2fc59ed66"
   },
   "antiseizure-medications:brivaracetam": {
     "date": "2026-11-07",
@@ -252,8 +248,8 @@
     "sha256": "153eb4393af1a72710f349fe030c5c9bcb8165ba1d2babdcdea2ad929a23e990"
   },
   "consult-workups:rapidly-progressive-dementia": {
-    "date": "2026-11-07",
-    "sha256": "a87f68ae33ba3003ee84f2d5693fe726d33739a1a9f13070f1b04d9349597378"
+    "date": "2026-11-13",
+    "sha256": "e278a6d76b1c2f3f05e02e96bbccf923b43f0024ad1cdd0f7e65ff3a572b56e3"
   },
   "consult-workups:susac-syndrome": {
     "date": "2026-11-08",
