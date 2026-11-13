@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+96c134ff",
+  "contentVersion": "2.2.1+5987a388",
   "builtAt": "2026-11-13",
   "registries": [
     {
@@ -45,7 +45,7 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "3.2.5",
+      "version": "3.3.1",
       "schemaVersion": "2.1.0",
       "lastUpdated": "2026-11-13",
       "entries": 20,

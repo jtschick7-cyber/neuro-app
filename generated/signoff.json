@@ -224,8 +224,8 @@
     "sha256": "78d1e7010b124c374878a73926865feea277540f80de8920a99a474a8691f614"
   },
   "consult-workups:ich-etiology-workup": {
-    "date": "2026-11-08",
-    "sha256": "4e14ae4de4b86853c6951fbfeb1abee29c936014a2db3c7d688e9d30023b2a10"
+    "date": "2026-11-13",
+    "sha256": "b2748c03a5eb7c911eebf5952b23a13a00af7de89f8e9657d4de8974937eba53"
   },
   "consult-workups:inpatient-neuropathy": {
     "date": "2026-11-08",
@@ -264,16 +264,16 @@
     "sha256": "f04fc7d78c401c1ebeaab22ca76327f3410b5b4c555d9fd7c939d4cc037d738c"
   },
   "consult-workups:thunderclap-headache": {
-    "date": "2026-11-08",
-    "sha256": "3e86491b98e3f7bbb2f1c336f88d84c1aca7d07a9bcdc4d8714a6305dc8cab8c"
+    "date": "2026-11-13",
+    "sha256": "af45b26d2690b367306e1b2f3f17021463dc1d84b5692350dc1b2386191049e1"
   },
   "consult-workups:valproate-hyperammonemic-encephalopathy": {
     "date": "2026-11-07",
     "sha256": "bd43ab550b9ff31dfb962efb3c37805b3acdc6d708a73d742414df1882c2f51c"
   },
   "consult-workups:young-stroke-workup": {
-    "date": "2026-11-08",
-    "sha256": "34178e149875e635e5cad92caa54b7bb6efedeb2d231945086c5b871f63856b0"
+    "date": "2026-11-13",
+    "sha256": "940c7e8030cde6b0db8379cb3171b1943d4c61f784988167ac9ed8fd97a76796"
   },
   "mg-contraindications:aminoglycosides": {
     "date": "2026-11-05",

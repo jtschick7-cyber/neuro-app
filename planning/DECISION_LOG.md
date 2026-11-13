@@ -1255,3 +1255,9 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03a-scope-acute-neuro
 Jason, in chat: approved `planning/drafts/audit-2026-11-12/03b-scope-acute-neuro-adds.md` as revised (name acyclovir via viral-encephalitis; seizure key number instead of the case-series bridge; keep workflow lines; reuse the existing Gablofen source string).
 - New `acute-neuro:ici-neurotoxicity` (SITC 2021) and `acute-neuro:intrathecal-baclofen-withdrawal` (Gablofen label; Gburek-Augustat 2021 case series for bridging only). Sources fetched 13 Nov; ASCO 2021 and the Lioresal label could not be opened and are not cited.
 - acute-neuro 3.0.1 → 3.1.0 (MINOR). Signed by Jason (standing instruction): 3.1.1. Released: content 2.2.1+96c134ff (331 unique sources).
+
+## Audit 2026-11-12 content draft 3c: consult-workups scope trims (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/03c-scope-consult-workups.md` (MINOR; 50-character key numbers on all three cards; keep the fat-sat T1 note as a dissection clue; no removal kept), then approved the five new lines.
+- `thunderclap-headache`, `young-stroke-workup`, `ich-etiology-workup`: standard first-hour items, generic history/exam lines and duplicates removed; scores, thresholds, yields, extended panels and decision rules kept. Decision rules renumbered.
+- consult-workups 3.2.5 → 3.3.0 (MINOR). Signed by Jason (standing instruction): 3.3.1. Released: content 2.2.1+5987a388.
