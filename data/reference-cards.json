@@ -1,8 +1,8 @@
 {
   "title": "Reference Cards",
-  "version": "1.5.1",
+  "version": "1.6.1",
   "schemaVersion": "1.1.0",
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-13",
   "entries": [
     {
       "id": "neuro-icu-targets",
@@ -2837,6 +2837,355 @@
         "Charidimou A, et al. The Boston criteria version 2.0 for cerebral amyloid angiopathy: a multicentre, retrospective, MRI-neuropathology diagnostic accuracy study. Lancet Neurol 2022;21(8):714-725. doi:10.1016/S1474-4422(22)00208-3"
       ],
       "lastReviewed": "2026-11-11"
+    },
+    {
+      "id": "eeg-report-terms",
+      "title": "EEG report terms (ACNS 2021) and 2HELPS2B",
+      "searchTerms": [
+        "EEG",
+        "cEEG",
+        "LPDs",
+        "GPDs",
+        "LRDA",
+        "GRDA",
+        "BIPDs",
+        "BIRDs",
+        "IIC",
+        "ictal-interictal continuum",
+        "triphasic",
+        "SIRPIDs",
+        "burst suppression",
+        "2HELPS2B"
+      ],
+      "scopeNote": "What the terms in an ICU EEG report mean (ACNS 2021) and the 2HELPS2B seizure-risk score. Treatment of seizures and NCSE lives in acute-neuro.",
+      "sections": [
+        {
+          "heading": "How a pattern is named (ACNS 2021 §C)",
+          "rows": [
+            {
+              "parameter": "Name = location + pattern",
+              "condition": "e.g. L + PDs = LPDs",
+              "role": "TARGET",
+              "target": "Location: G, L, BI, UI, Mf. Pattern: PDs, RDA, SW",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "G (generalized)",
+              "condition": "Main term 1",
+              "role": "TARGET",
+              "target": "Bilaterally synchronous and symmetric",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "L (lateralized)",
+              "condition": "Main term 1",
+              "role": "TARGET",
+              "target": "Unilateral, or bilateral but consistently higher on one side or led from one side",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "BI (bilateral independent)",
+              "condition": "Main term 1",
+              "role": "TARGET",
+              "target": "Two independent lateralized patterns, one in each hemisphere, at the same time",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "PDs (periodic discharges)",
+              "condition": "Main term 2",
+              "role": "TARGET",
+              "target": "Repeated uniform waveform with a clear interval between discharges",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "RDA (rhythmic delta)",
+              "condition": "Main term 2",
+              "role": "TARGET",
+              "target": "Rhythmic 0.5–≤4 Hz activity with no interval between waves",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "SW (spike-and-wave)",
+              "condition": "Main term 2",
+              "role": "TARGET",
+              "target": "Spike or sharp wave consistently followed by a slow wave, ≥6 cycles, no interval",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "Plus (+F, +R, +S)",
+              "condition": "PDs and RDA only, not SW",
+              "role": "TARGET",
+              "target": "More ictal-appearing: +F superimposed fast (theta or faster); +R rhythmic delta (PDs only); +S sharp waves or spikes (RDA only)",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "Triphasic morphology",
+              "condition": "PDs and SW, not RDA",
+              "role": "TARGET",
+              "target": "Three phases, negative-positive-negative, each longer than the last, the positive phase highest",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Seizure thresholds (ACNS 2021 §D–F)",
+          "rows": [
+            {
+              "parameter": "Electrographic seizure (ESz)",
+              "condition": "§D.1",
+              "role": "TARGET",
+              "target": "Epileptiform discharges averaging >2.5 Hz for ≥10 s, or any pattern with definite evolution ≥10 s",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "Electrographic status (ESE)",
+              "condition": "§D.2",
+              "role": "TARGET",
+              "target": "ESz for ≥10 continuous min or ≥20% of any 60-min period",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "Ictal-interictal continuum (IIC)",
+              "condition": "§F, not ESz/ESE",
+              "role": "TARGET",
+              "target": "PDs or SW >1.0 to ≤2.5 Hz over 10 s; or ≥0.5 to ≤1.0 Hz with plus or fluctuation; or lateralized RDA >1 Hz for ≥10 s with plus or fluctuation (not GRDA)",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "BIRDs",
+              "condition": "§E",
+              "role": "TARGET",
+              "target": "Rhythmic >4 Hz activity, ≥6 waves, lasting ≥0.5 to <10 s, with no clinical correlate; definite if evolving or matching the patient's epileptiform discharges or seizures",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "SIRPIDs",
+              "condition": "§C.3",
+              "role": "TARGET",
+              "target": "Stimulus-induced or stimulus-exacerbated rhythmic, periodic or ictal-appearing discharges",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Background and how often (ACNS 2021 §A–C)",
+          "rows": [
+            {
+              "parameter": "Burst suppression",
+              "condition": "§A.4d",
+              "role": "TARGET",
+              "target": "Suppression or attenuation alternating with bursts, with 50–99% of the record suppressed or attenuated",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "Suppressed",
+              "condition": "§A.8",
+              "role": "TARGET",
+              "target": "All activity <10 μV",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            },
+            {
+              "parameter": "Prevalence",
+              "condition": "§C.3",
+              "role": "TARGET",
+              "target": "Continuous ≥90% · abundant 50–89% · frequent 10–49% · occasional 1–9% · rare <1% of the record",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACNS 2021: terminology, not a graded recommendation"
+              ],
+              "sources": [
+                "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "2HELPS2B seizure risk (Struck 2017)",
+          "rows": [
+            {
+              "parameter": "Score items",
+              "condition": "1 point each unless stated",
+              "role": "TARGET",
+              "target": "B(I)RDs 2; LPDs, LRDA or BIPDs 1; prior seizure (acute or remote) 1; sporadic epileptiform discharges 1; frequency >2.0 Hz for any periodic or rhythmic pattern 1; plus features 1",
+              "notes": [
+                "Maximum 7"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Struck 2017: derivation cohort, 5,427 cEEG sessions"
+              ],
+              "sources": [
+                "Struck AF, et al. Association of an electroencephalography-based risk score with seizure probability in hospitalized patients. JAMA Neurol 2017;74(12):1419-1424. doi:10.1001/jamaneurol.2017.2459"
+              ]
+            },
+            {
+              "parameter": "Seizure risk",
+              "condition": "By total score",
+              "role": "TARGET",
+              "target": "0: 5% · 1: 12% · 2: 27% · 3: 50% · 4: 73% · 5: 88% · ≥6: >95%",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Struck 2017: derivation cohort, 5,427 cEEG sessions"
+              ],
+              "sources": [
+                "Struck AF, et al. Association of an electroencephalography-based risk score with seizure probability in hospitalized patients. JAMA Neurol 2017;74(12):1419-1424. doi:10.1001/jamaneurol.2017.2459"
+              ]
+            },
+            {
+              "parameter": "When to score",
+              "condition": "§Limitations",
+              "role": "TARGET",
+              "target": "At the first cEEG read (usually within 30 min); re-score at the second read (6–8 h) if new findings",
+              "notes": [
+                "Shorter studies (<6 h) were not included"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Struck 2017: derivation cohort, 5,427 cEEG sessions"
+              ],
+              "sources": [
+                "Struck AF, et al. Association of an electroencephalography-based risk score with seizure probability in hospitalized patients. JAMA Neurol 2017;74(12):1419-1424. doi:10.1001/jamaneurol.2017.2459"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "IIC is a purely electrographic term, not a diagnosis (ACNS 2021 §F)",
+        "2HELPS2B was derived on cEEG sessions ≥6 h; apply with caution to shorter studies (Struck 2017)",
+        "The 2017 paper did not study monitoring duration — it gives no stop-monitoring cutoff (Struck 2017)"
+      ],
+      "keyNumbers": [
+        "ESz: >2.5 Hz for ≥10 s, or evolution ≥10 s",
+        "ESE: ≥10 min continuous or ≥20% of any 60 min",
+        "IIC: PDs or SW >1.0 to ≤2.5 Hz over 10 s",
+        "2HELPS2B: 0 → 5%, 2 → 27%, 4 → 73% seizure risk",
+        "2HELPS2B ≥6: >95% seizure risk"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:nonconvulsive-status-epilepticus",
+        "acute-neuro:convulsive-status-epilepticus"
+      ],
+      "sources": [
+        "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806",
+        "Struck AF, et al. Association of an electroencephalography-based risk score with seizure probability in hospitalized patients. JAMA Neurol 2017;74(12):1419-1424. doi:10.1001/jamaneurol.2017.2459"
+      ],
+      "lastReviewed": "2026-11-13"
     }
   ]
 }

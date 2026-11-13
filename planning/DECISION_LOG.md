@@ -1261,3 +1261,10 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/03b-scope-acute-neuro
 Jason, in chat: approved `planning/drafts/audit-2026-11-12/03c-scope-consult-workups.md` (MINOR; 50-character key numbers on all three cards; keep the fat-sat T1 note as a dissection clue; no removal kept), then approved the five new lines.
 - `thunderclap-headache`, `young-stroke-workup`, `ich-etiology-workup`: standard first-hour items, generic history/exam lines and duplicates removed; scores, thresholds, yields, extended panels and decision rules kept. Decision rules renumbered.
 - consult-workups 3.2.5 → 3.3.0 (MINOR). Signed by Jason (standing instruction): 3.3.1. Released: content 2.2.1+5987a388.
+
+## Audit 2026-11-12 content draft 3d: FND and EEG report terms (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/03d-scope-consult-workups-adds.md` (EEG terms as a reference card; keep the FND key numbers; one PR; NCSE IIC "<2.5" → "≤2.5" handled separately).
+- New `consult-workups:functional-neurological-disorder` (Bennett 2021 Clin Med; Dworetzky 2025 Neurotherapeutics, whose Table 2 adapts Aybek & Perez BMJ 2022, which could not be opened). Misdiagnosis figure is Bennett's 4 of 1,030 at 18 months, not the often-quoted 4%.
+- New `reference-cards:eeg-report-terms` (ACNS 2021; Struck 2017 2HELPS2B). No 1-hour stop rule: the 2017 paper does not state one and the 2020 validation was not opened.
+- consult-workups 3.3.1 → 3.4.0, reference-cards 1.5.1 → 1.6.0 (MINOR). Signed by Jason (standing instruction): 3.4.1 and 1.6.1. Released: content 2.2.1+9dfda3da (334 unique sources).

@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+5987a388",
+  "contentVersion": "2.2.1+9dfda3da",
   "builtAt": "2026-11-13",
   "registries": [
     {
@@ -45,11 +45,11 @@
     {
       "id": "consult-workups",
       "title": "Consult workups",
-      "version": "3.3.1",
+      "version": "3.4.1",
       "schemaVersion": "2.1.0",
       "lastUpdated": "2026-11-13",
-      "entries": 20,
-      "reviewed": 20,
+      "entries": 21,
+      "reviewed": 21,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
@@ -97,15 +97,15 @@
     {
       "id": "reference-cards",
       "title": "Reference Cards",
-      "version": "1.5.1",
+      "version": "1.6.1",
       "schemaVersion": "1.1.0",
-      "lastUpdated": "2026-11-11",
-      "entries": 6,
-      "reviewed": 6,
+      "lastUpdated": "2026-11-13",
+      "entries": 7,
+      "reviewed": 7,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-07",
-      "newestReview": "2026-11-11"
+      "newestReview": "2026-11-13"
     },
     {
       "id": "seizure-threshold",
@@ -317,6 +317,13 @@
       "year": 2018,
       "citedBy": [
         "neural-antibodies:arhgap26"
+      ]
+    },
+    {
+      "citation": "Bennett K, et al. A practical review of functional neurological disorder (FND) for the general physician. Clin Med (Lond) 2021;21(1):28-36. doi:10.7861/clinmed.2020-0987",
+      "year": 2021,
+      "citedBy": [
+        "consult-workups:functional-neurological-disorder"
       ]
     },
     {
@@ -730,6 +737,13 @@
       ]
     },
     {
+      "citation": "Dworetzky BA, Baslet G. Functional neurological disorder: practical management. Neurotherapeutics 2025;22(4):e00612. doi:10.1016/j.neurot.2025.e00612",
+      "year": 2025,
+      "citedBy": [
+        "consult-workups:functional-neurological-disorder"
+      ]
+    },
+    {
       "citation": "Eggenberger E. Optic Neuritis. Continuum (Minneap Minn) 2025;31(2, Neuro-ophthalmology):407-435",
       "year": 2025,
       "citedBy": [
@@ -1128,7 +1142,8 @@
       "year": 2021,
       "citedBy": [
         "acute-neuro:convulsive-status-epilepticus",
-        "acute-neuro:nonconvulsive-status-epilepticus"
+        "acute-neuro:nonconvulsive-status-epilepticus",
+        "reference-cards:eeg-report-terms"
       ]
     },
     {
@@ -2324,6 +2339,13 @@
       "year": 2016,
       "citedBy": [
         "reference-cards:thrombophilia-test-validity"
+      ]
+    },
+    {
+      "citation": "Struck AF, et al. Association of an electroencephalography-based risk score with seizure probability in hospitalized patients. JAMA Neurol 2017;74(12):1419-1424. doi:10.1001/jamaneurol.2017.2459",
+      "year": 2017,
+      "citedBy": [
+        "reference-cards:eeg-report-terms"
       ]
     },
     {
