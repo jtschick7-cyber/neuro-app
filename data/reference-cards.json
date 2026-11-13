@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.8.1",
+  "version": "1.9.0",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -3805,6 +3805,449 @@
         "Robblee J, Katzberg H. Distinguishing radiculopathies from mononeuropathies. Front Neurol 2016;7:111. doi:10.3389/fneur.2016.00111"
       ],
       "lastReviewed": "2026-11-13"
+    },
+    {
+      "id": "immunotherapy-screening",
+      "title": "Before immunotherapy: screening and prophylaxis (rituximab, steroids)",
+      "searchTerms": [
+        "rituximab",
+        "Rituxan",
+        "HBV",
+        "hepatitis B",
+        "HBsAg",
+        "anti-HBc",
+        "PML",
+        "vaccine",
+        "PJP",
+        "PCP",
+        "Pneumocystis",
+        "prophylaxis",
+        "steroids",
+        "prednisone",
+        "hypogammaglobulinemia"
+      ],
+      "scopeNote": "Screening and prophylaxis before rituximab (label) and the PJP threshold for prolonged steroids. IVIG, PLEX and complement inhibitors are not covered.",
+      "sections": [
+        {
+          "heading": "Rituximab: HBV",
+          "rows": [
+            {
+              "parameter": "Screen",
+              "condition": "Before the first infusion",
+              "role": "RECOMMENDED",
+              "target": "HBsAg and anti-HBc in all patients",
+              "notes": [
+                "Boxed warning: reactivation can cause fulminant hepatitis, liver failure and death (label §5.3)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            },
+            {
+              "parameter": "Prior HBV infection",
+              "condition": "HBsAg+ or anti-HBc+",
+              "role": "RECOMMENDED",
+              "target": "Consult a hepatitis B expert on monitoring and antivirals",
+              "notes": [
+                "(label §5.3)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            },
+            {
+              "parameter": "Monitoring",
+              "condition": "Current or prior HBV",
+              "role": "RECOMMENDED",
+              "target": "During therapy and for several months after",
+              "notes": [
+                "Reactivation reported up to 24 months after the last dose (label §5.3)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            },
+            {
+              "parameter": "Reactivation",
+              "condition": "During or after therapy",
+              "role": "RECOMMENDED",
+              "target": "Stop rituximab and treat",
+              "notes": [
+                "Too few data on restarting (label §5.3)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Rituximab: vaccines",
+          "rows": [
+            {
+              "parameter": "Live vaccines",
+              "condition": "Before or during treatment",
+              "role": "NOT_RECOMMENDED",
+              "target": "Do not give",
+              "notes": [
+                "Review vaccination status first (label §5.10)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            },
+            {
+              "parameter": "Non-live vaccines",
+              "condition": "Before a course",
+              "role": "RECOMMENDED",
+              "target": "≥4 weeks before the first infusion",
+              "notes": [
+                "(label §5.10)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Rituximab: premedication",
+          "rows": [
+            {
+              "parameter": "Methylprednisolone",
+              "condition": "GPA/MPA (and RA, PV)",
+              "role": "RECOMMENDED",
+              "target": "100 mg IV 30 min before each infusion",
+              "notes": [
+                "(label §2.8)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Rituximab: PJP",
+          "rows": [
+            {
+              "parameter": "PJP prophylaxis",
+              "condition": "GPA/MPA",
+              "role": "RECOMMENDED",
+              "target": "During treatment and ≥6 months after the last infusion",
+              "notes": [
+                "Label names no agent. \"Should be considered\" in PV (label §2.8)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Rituximab: infection",
+          "rows": [
+            {
+              "parameter": "Prolonged hypogammaglobulinemia",
+              "condition": ">11 months after rituximab",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Infections reported",
+              "notes": [
+                "IgG/IgM fell in 14% on NHL monotherapy (label §6.1). No IgG monitoring rule in the parts read"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Rituximab: PML",
+          "rows": [
+            {
+              "parameter": "New neurological signs",
+              "condition": "On or after therapy",
+              "role": "RECOMMENDED",
+              "target": "Stop rituximab if PML",
+              "notes": [
+                "Boxed warning (label §5.4)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "FDA label"
+              ],
+              "sources": [
+                "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Rituximab: HBV (EULAR)",
+          "rows": [
+            {
+              "parameter": "Resolved HBV",
+              "condition": "Anti-HBc+, HBsAg−",
+              "role": "RECOMMENDED",
+              "target": "HBV DNA and LFTs at baseline, then every 3–6 months",
+              "notes": [
+                "Anti-CD20 is high risk: antiviral prophylaxis regardless of HBV DNA \"might be considered\". Also consider referral for prophylaxis if anti-HBs titres are low (EULAR 2022, Figure 1)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "EULAR 2022 rec 4: LoE 2a, GoR C"
+              ],
+              "sources": [
+                "Fragoulis GE, et al. 2022 EULAR recommendations for screening and prophylaxis of chronic and opportunistic infections in adults with autoimmune inflammatory rheumatic diseases. Ann Rheum Dis 2023;82(6):742-753. doi:10.1136/ard-2022-223335"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Steroids: PJP",
+          "rows": [
+            {
+              "parameter": "PJP prophylaxis",
+              "condition": "High-dose glucocorticoids, especially with other immunosuppressants",
+              "role": "RECOMMENDED",
+              "target": "Consider prophylaxis",
+              "notes": [
+                "Benefit shown at prednisolone >15–30 mg/day for >2–4 weeks; no minimum dose or duration is defined. Lymphopenia, older age and lung disease add risk (EULAR 2022 rec 8, GoR B)"
+              ],
+              "evidenceLevel": "MODERATE",
+              "evidenceNote": [
+                "EULAR 2022 rec 8: LoE 2b, GoR B"
+              ],
+              "sources": [
+                "Fragoulis GE, et al. 2022 EULAR recommendations for screening and prophylaxis of chronic and opportunistic infections in adults with autoimmune inflammatory rheumatic diseases. Ann Rheum Dis 2023;82(6):742-753. doi:10.1136/ard-2022-223335"
+              ]
+            },
+            {
+              "parameter": "ATS threshold",
+              "condition": "Non-HIV immunosuppression",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Prednisone >20 mg/day for >1 month",
+              "notes": [
+                "Especially with T-cell defects or other cytotoxic or anti-TNF drugs (ATS 2011 Remark, ungraded)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ATS 2011 Remark, ungraded"
+              ],
+              "sources": [
+                "Limper AH, et al. An official American Thoracic Society statement: treatment of fungal infections in adult pulmonary and critical care patients. Am J Respir Crit Care Med 2011;183(1):96-128. doi:10.1164/rccm.2008-740ST"
+              ]
+            },
+            {
+              "parameter": "Agent",
+              "condition": "Prophylaxis chosen",
+              "role": "RECOMMENDED",
+              "target": "TMP-SMX 1 DS or 1 SS daily, or 1 DS 3×/week",
+              "notes": [
+                "Alternatives: atovaquone 1,500 mg/day in 2 doses; dapsone 100 mg/day (check G6PD) (ATS 2011, AI). TMP-SMX side effects in about 20% (EULAR 2022)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "ATS 2011: AI"
+              ],
+              "sources": [
+                "Limper AH, et al. An official American Thoracic Society statement: treatment of fungal infections in adult pulmonary and critical care patients. Am J Respir Crit Care Med 2011;183(1):96-128. doi:10.1164/rccm.2008-740ST",
+                "Fragoulis GE, et al. 2022 EULAR recommendations for screening and prophylaxis of chronic and opportunistic infections in adults with autoimmune inflammatory rheumatic diseases. Ann Rheum Dis 2023;82(6):742-753. doi:10.1136/ard-2022-223335"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Steroids: TB",
+          "rows": [
+            {
+              "parameter": "Latent TB screening",
+              "condition": "Increased TB risk, before glucocorticoids",
+              "role": "RECOMMENDED",
+              "target": "Consider screening",
+              "notes": [
+                "Suggested mainly for >15 mg prednisolone/day for longer periods (e.g. >4 weeks); the minimum dose is unknown. Chest X-ray and IGRA (preferred over TST) (EULAR 2022 recs 1–2; glucocorticoid part GoR D)"
+              ],
+              "evidenceLevel": "EXPERT_OPINION",
+              "evidenceNote": [
+                "EULAR 2022 recs 1–2, glucocorticoid part: LoE 5, GoR D"
+              ],
+              "sources": [
+                "Fragoulis GE, et al. 2022 EULAR recommendations for screening and prophylaxis of chronic and opportunistic infections in adults with autoimmune inflammatory rheumatic diseases. Ann Rheum Dis 2023;82(6):742-753. doi:10.1136/ard-2022-223335"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Steroids: HBV",
+          "rows": [
+            {
+              "parameter": "HBV screening",
+              "condition": "Before glucocorticoids (by dose and duration)",
+              "role": "RECOMMENDED",
+              "target": "HBsAg, anti-HBc, anti-HBs",
+              "notes": [
+                "HBsAg+ → hepatologist for antiviral prophylaxis. AGA high-risk group: ≥10 mg prednisolone for ≥4 weeks (EULAR 2022 rec 4, GoR C)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "EULAR 2022 rec 4: LoE 2a, GoR C"
+              ],
+              "sources": [
+                "Fragoulis GE, et al. 2022 EULAR recommendations for screening and prophylaxis of chronic and opportunistic infections in adults with autoimmune inflammatory rheumatic diseases. Ann Rheum Dis 2023;82(6):742-753. doi:10.1136/ard-2022-223335"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Steroids: bone",
+          "rows": [
+            {
+              "parameter": "Fracture-risk assessment",
+              "condition": "≥2.5 mg/day for >3 months",
+              "role": "RECOMMENDED",
+              "target": "Within 6 months of starting: fracture history, BMD with VFA or spine X-ray, FRAX if ≥40",
+              "notes": [
+                "FRAX GC correction if >7.5 mg/day: major fracture ×1.15, hip ×1.2 (ACR 2022, strong)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "ACR 2022: strong (good clinical practice)"
+              ],
+              "sources": [
+                "Humphrey MB, et al. 2022 American College of Rheumatology guideline for the prevention and treatment of glucocorticoid-induced osteoporosis. Arthritis Care Res 2023;75(12):2405-2419. doi:10.1002/acr.25240"
+              ]
+            },
+            {
+              "parameter": "Very high fracture risk",
+              "condition": "≥30 mg/day for >30 days, or ≥5 g/year",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Counts as very high risk",
+              "notes": [
+                "Also prior fracture, T-score ≤−3.5, or high FRAX (ACR 2022 Table 1)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "ACR 2022 Table 1 definition"
+              ],
+              "sources": [
+                "Humphrey MB, et al. 2022 American College of Rheumatology guideline for the prevention and treatment of glucocorticoid-induced osteoporosis. Arthritis Care Res 2023;75(12):2405-2419. doi:10.1002/acr.25240"
+              ]
+            },
+            {
+              "parameter": "Treatment",
+              "condition": "Moderate, high or very high risk",
+              "role": "RECOMMENDED",
+              "target": "Offer osteoporosis therapy",
+              "notes": [
+                "Oral bisphosphonate over none if high risk (ACR 2022, strong)"
+              ],
+              "evidenceLevel": "STRONG",
+              "evidenceNote": [
+                "ACR 2022: strong"
+              ],
+              "sources": [
+                "Humphrey MB, et al. 2022 American College of Rheumatology guideline for the prevention and treatment of glucocorticoid-induced osteoporosis. Arthritis Care Res 2023;75(12):2405-2419. doi:10.1002/acr.25240"
+              ]
+            },
+            {
+              "parameter": "Calcium and vitamin D",
+              "condition": "≥2.5 mg/day for >3 months",
+              "role": "RECOMMENDED",
+              "target": "Optimize intake; calcium up to 1,000–1,200 mg/day in adults",
+              "notes": [
+                "Evidence low to very low (ACR 2022, conditional)"
+              ],
+              "evidenceLevel": "WEAK",
+              "evidenceNote": [
+                "ACR 2022: conditional; evidence low to very low"
+              ],
+              "sources": [
+                "Humphrey MB, et al. 2022 American College of Rheumatology guideline for the prevention and treatment of glucocorticoid-induced osteoporosis. Arthritis Care Res 2023;75(12):2405-2419. doi:10.1002/acr.25240"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Steroids: rare pathogens",
+          "rows": [
+            {
+              "parameter": "Strongyloides",
+              "condition": "Before immunosuppression",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "No EULAR recommendation",
+              "notes": [
+                "82% voted that none could be made; be aware of regional pathogens (EULAR 2022)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "EULAR 2022: no recommendation (82% vote)"
+              ],
+              "sources": [
+                "Fragoulis GE, et al. 2022 EULAR recommendations for screening and prophylaxis of chronic and opportunistic infections in adults with autoimmune inflammatory rheumatic diseases. Ann Rheum Dis 2023;82(6):742-753. doi:10.1136/ard-2022-223335"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [
+        "The rituximab label names no PJP prophylaxis agent (label §2.8)",
+        "HBV reactivation can occur up to 24 months after the last rituximab dose (label §5.3)"
+      ],
+      "keyNumbers": [
+        "Rituximab: HBsAg + anti-HBc before dose 1",
+        "HBV reactivation up to 24 mo after rituximab",
+        "Non-live vaccines ≥4 wk before rituximab",
+        "GPA/MPA: PJP prophylaxis ≥6 mo after last dose",
+        "PJP ppx: prednisone >20 mg/day for >1 month"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:autoimmune-encephalitis"
+      ],
+      "sources": [
+        "Genentech. RITUXAN (rituximab) injection, US prescribing information. SPL set ID b172773b-3905-4a1c-ad95-bab4b6126563, version 36, effective 2025",
+        "Fragoulis GE, et al. 2022 EULAR recommendations for screening and prophylaxis of chronic and opportunistic infections in adults with autoimmune inflammatory rheumatic diseases. Ann Rheum Dis 2023;82(6):742-753. doi:10.1136/ard-2022-223335",
+        "Limper AH, et al. An official American Thoracic Society statement: treatment of fungal infections in adult pulmonary and critical care patients. Am J Respir Crit Care Med 2011;183(1):96-128. doi:10.1164/rccm.2008-740ST",
+        "Humphrey MB, et al. 2022 American College of Rheumatology guideline for the prevention and treatment of glucocorticoid-induced osteoporosis. Arthritis Care Res 2023;75(12):2405-2419. doi:10.1002/acr.25240"
+      ],
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }
