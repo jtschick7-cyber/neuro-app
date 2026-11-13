@@ -527,6 +527,10 @@
     "date": "2026-11-11",
     "sha256": "9e5785411949fc56a23b229191168847e0cb7ac2b85cd85cf901fc5ea997d914"
   },
+  "reference-cards:csf-interpretation": {
+    "date": "2026-11-13",
+    "sha256": "28d125ff805fd953746763b9e6e7f02023d4778e22cfd11ff57923944180d086"
+  },
   "reference-cards:eeg-report-terms": {
     "date": "2026-11-13",
     "sha256": "03dd935452f7b502205630b084258dd4b3259114fb91593f95098b18322b1fe7"

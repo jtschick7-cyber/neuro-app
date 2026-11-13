@@ -1,6 +1,6 @@
 {
   "title": "Reference Cards",
-  "version": "1.6.1",
+  "version": "1.7.1",
   "schemaVersion": "1.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -3184,6 +3184,286 @@
       "sources": [
         "Hirsch LJ, et al. ACNS standardized critical care EEG terminology: 2021 version. J Clin Neurophysiol 2021;38(1):1-29. doi:10.1097/WNP.0000000000000806",
         "Struck AF, et al. Association of an electroencephalography-based risk score with seizure probability in hospitalized patients. JAMA Neurol 2017;74(12):1419-1424. doi:10.1001/jamaneurol.2017.2459"
+      ],
+      "lastReviewed": "2026-11-13"
+    },
+    {
+      "id": "csf-interpretation",
+      "title": "CSF interpretation and traumatic-tap correction",
+      "searchTerms": [
+        "CSF",
+        "lumbar puncture",
+        "LP",
+        "traumatic tap",
+        "bloody tap",
+        "pleocytosis",
+        "xanthochromia",
+        "opening pressure",
+        "meningitis"
+      ],
+      "scopeNote": "Normal adult CSF values, traumatic-tap correction and typical meningitis patterns. Empiric meningitis treatment lives elsewhere.",
+      "sections": [
+        {
+          "heading": "Normal adult values",
+          "rows": [
+            {
+              "parameter": "Opening pressure",
+              "condition": "Adult, >8 years",
+              "role": "TARGET",
+              "target": "60–200 mm H2O",
+              "notes": [
+                "Up to 250 in obesity",
+                ">250 = raised ICP"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP review"
+              ],
+              "sources": [
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            },
+            {
+              "parameter": "WBC",
+              "condition": "Adult",
+              "role": "TARGET",
+              "target": "≤5/mm³",
+              "notes": [
+                "Newborn up to 20/mm³"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP review"
+              ],
+              "sources": [
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            },
+            {
+              "parameter": "Protein",
+              "condition": "Adult",
+              "role": "TARGET",
+              "target": "18–58 mg/dL",
+              "notes": [
+                "Range depends on lab technique"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP review"
+              ],
+              "sources": [
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            },
+            {
+              "parameter": "CSF:serum glucose ratio",
+              "condition": "Adult",
+              "role": "TARGET",
+              "target": "0.44–0.90",
+              "notes": [
+                "Rule of thumb: about 2/3 of serum glucose from the prior 2–4 h (Seehusen 2003)",
+                "Ranges vary by lab (Shahan 2021)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP reviews (Shahan 2021 Table 1; Seehusen 2003)"
+              ],
+              "sources": [
+                "Shahan B, Choi EY, Nieves G. Cerebrospinal fluid analysis. Am Fam Physician 2021;103(7):422-428",
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Traumatic tap",
+          "rows": [
+            {
+              "parameter": "WBC correction",
+              "condition": "Bloody tap",
+              "role": "TARGET",
+              "target": "Subtract 1 WBC per 500–1,500 RBC",
+              "notes": [
+                "Predicted WBC = CSF RBC × blood WBC / blood RBC is more accurate (Shahan 2021)",
+                "Rule fails if the blood WBC count is very high or low (Seehusen 2003)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP reviews (Shahan 2021; Seehusen 2003)"
+              ],
+              "sources": [
+                "Shahan B, Choi EY, Nieves G. Cerebrospinal fluid analysis. Am Fam Physician 2021;103(7):422-428",
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            },
+            {
+              "parameter": "Which ratio",
+              "condition": "Adult, 4-tube LP",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "1:500 most specific; 1:1500 most sensitive",
+              "notes": [
+                "1:500 spec 71.7%, sens 84.3%; 1:1000 spec 50.9%, sens 94.4%; 1:1500 spec 29.2%, sens 97.8% (Zhou 2024, Table 2)",
+                "No ratio was named optimal"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Retrospective, single centre, n=195"
+              ],
+              "sources": [
+                "Zhou RW, Sangam K, Budhram A. Clinical utility of CSF correction factors for traumatic lumbar puncture in adults. Neurol Clin Pract 2024;14(6):e200350. doi:10.1212/CPJ.0000000000200350"
+              ]
+            },
+            {
+              "parameter": "Mild corrected pleocytosis",
+              "condition": "Corrected WBC ≤20/μL",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Interpret with caution; consider repeat LP with 4 tubes",
+              "notes": [
+                "Errors were usually ≤20 WBC/μL",
+                "Moderate-to-severe pleocytosis is rarely misclassified (Zhou 2024)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Retrospective, single centre, n=195"
+              ],
+              "sources": [
+                "Zhou RW, Sangam K, Budhram A. Clinical utility of CSF correction factors for traumatic lumbar puncture in adults. Neurol Clin Pract 2024;14(6):e200350. doi:10.1212/CPJ.0000000000200350"
+              ]
+            },
+            {
+              "parameter": "Protein correction",
+              "condition": "Same tube for protein and cell count",
+              "role": "TARGET",
+              "target": "Subtract 1 mg/dL per 1,000 RBC/mm³",
+              "notes": [
+                "Inaccurate if different tubes"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP: evidence level B, observational"
+              ],
+              "sources": [
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Traumatic tap vs SAH",
+          "rows": [
+            {
+              "parameter": "Xanthochromia",
+              "condition": "Suspected SAH",
+              "role": "TARGET",
+              "target": "Present in >90% within 12 h of SAH onset",
+              "notes": [
+                "Starts ~2 h after blood enters CSF, lasts 2–4 weeks",
+                "More reliable than RBC count",
+                "Bloody tap <12 h → repeat one interspace up (Seehusen 2003)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP review"
+              ],
+              "sources": [
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Meningitis patterns (AFP Table 2)",
+          "rows": [
+            {
+              "parameter": "Bacterial",
+              "condition": "Typical",
+              "role": "TARGET",
+              "target": "WBC ≥1,000/mm³, PMN; glucose ratio normal to very low",
+              "notes": [
+                "Opening pressure raised",
+                "Protein mildly to markedly raised",
+                "Lymphocytes predominate in 10%"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP review"
+              ],
+              "sources": [
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            },
+            {
+              "parameter": "Glucose ratio cutoff",
+              "condition": "Suspected bacterial",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Ratio <0.4: sens 80%, spec 98%",
+              "notes": [
+                "Glucose <40 mg/dL in only 50–60%",
+                "Glucose <34 mg/dL → bacterial with >99% certainty (Shahan 2021, citing a primary study not opened)",
+                "Ratio depends on pathogen, timing and IV dextrose (Shahan 2021)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP review, not graded (Shahan 2021 Table 2)"
+              ],
+              "sources": [
+                "Shahan B, Choi EY, Nieves G. Cerebrospinal fluid analysis. Am Fam Physician 2021;103(7):422-428"
+              ]
+            },
+            {
+              "parameter": "Viral",
+              "condition": "Typical",
+              "role": "TARGET",
+              "target": "WBC <100/mm³, lymphocytes; glucose ratio usually normal",
+              "notes": [
+                "PMN may predominate early",
+                "Protein normal to raised"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP review"
+              ],
+              "sources": [
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            },
+            {
+              "parameter": "Fungal or TB",
+              "condition": "Typical",
+              "role": "TARGET",
+              "target": "WBC variable, lymphocytes; glucose ratio low",
+              "notes": [
+                "Protein raised",
+                "Opening pressure variable"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "AFP review"
+              ],
+              "sources": [
+                "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [],
+      "keyNumbers": [
+        "Normal CSF WBC: ≤5/mm³",
+        "Bloody tap: −1 WBC per 500–1,500 RBC",
+        "Protein: −1 mg/dL per 1,000 RBC/mm³",
+        "Glucose ratio <0.4: sens 80%, spec 98%",
+        "Xanthochromia: >90% within 12 h of SAH"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "acute-neuro:bacterial-meningitis",
+        "reference-cards:asah-numbers"
+      ],
+      "sources": [
+        "Seehusen DA, Reeves MM, Fomin DA. Cerebrospinal fluid analysis. Am Fam Physician 2003;68(6):1103-1109",
+        "Shahan B, Choi EY, Nieves G. Cerebrospinal fluid analysis. Am Fam Physician 2021;103(7):422-428",
+        "Zhou RW, Sangam K, Budhram A. Clinical utility of CSF correction factors for traumatic lumbar puncture in adults. Neurol Clin Pract 2024;14(6):e200350. doi:10.1212/CPJ.0000000000200350"
       ],
       "lastReviewed": "2026-11-13"
     }
