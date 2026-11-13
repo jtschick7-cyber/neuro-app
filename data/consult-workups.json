@@ -1,6 +1,6 @@
 {
   "title": "Consult workups",
-  "version": "3.2.3",
+  "version": "3.2.4",
   "schemaVersion": "2.1.0",
   "lastUpdated": "2026-11-13",
   "entries": [
@@ -1018,7 +1018,6 @@
       "relatedIds": [
         "acute-neuro:autoimmune-encephalitis",
         "acute-neuro:nonconvulsive-status-epilepticus",
-        "acute-neuro:wernicke-encephalopathy",
         "neural-antibodies:lgi1",
         "neural-antibodies:nmdar"
       ],
@@ -1026,7 +1025,7 @@
         "Hermann P, et al. Biomarkers and diagnostic guidelines for sporadic Creutzfeldt-Jakob disease. Lancet Neurol 2021;20:235-246. doi:10.1016/S1474-4422(20)30477-4",
         "Satyadev N, et al. Standardizing 'Rapid': Applying the CDR to Define Rapidly Progressive Dementia. Neurology 2026;106:e214439. doi:10.1212/WNL.0000000000214439"
       ],
-      "lastReviewed": "2026-11-07"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "valproate-hyperammonemic-encephalopathy",
