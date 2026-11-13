@@ -1,8 +1,8 @@
 {
   "title": "Vascular antithrombotics",
-  "version": "1.2.1",
+  "version": "1.3.1",
   "schemaVersion": "1.2.0",
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-13",
   "entries": [
     {
       "kind": "DECISION",
@@ -118,7 +118,7 @@
       "title": "Four-factor prothrombin complex concentrate (4F-PCC)",
       "keyNumbers": [
         "4F-PCC — warfarin (VKA) with ICH, INR ≥2.0: By pre-treatment INR and weight (weight capped at 100 kg): INR 2–<4: 25 U/kg (max 2,500 U); INR 4–6: 35 U/kg (max 3,500 U); INR >6: 50 U/kg (max 5,000 U)",
-        "4F-PCC — factor Xa inhibitor ICH (apixaban, rivaroxaban, edoxaban): 50 U/kg IV (NCS 2016)",
+        "4F-PCC — factor Xa inhibitor ICH (apixaban, rivaroxaban, edoxaban): 50 U/kg IV (NCS 2016), max 2,000 U; repeat 500 U once for ongoing bleeding (local pharmacy)",
         "4F-PCC — dabigatran ICH when idarucizumab unavailable: 50 U/kg IV (NCS 2016)",
         "Infuse 0.12 mL/kg/min (~3 U/kg/min), max 8.4 mL/min (label)",
         "If INR still ≥1.4 at 24–48 h, NCS suggests FFP rather than more PCC"
@@ -235,7 +235,7 @@
           "routes": [
             "IV"
           ],
-          "doseText": "50 U/kg IV (NCS 2016)",
+          "doseText": "50 U/kg IV (NCS 2016), max 2,000 U; repeat 500 U once for ongoing bleeding (local pharmacy)",
           "dose": [
             {
               "label": "Dose",
@@ -245,6 +245,24 @@
               "basis": "PER_KG",
               "timing": "SINGLE",
               "weightBasis": "ACTUAL",
+              "caps": [
+                {
+                  "amount": 2000,
+                  "unit": "UNITS",
+                  "scope": "PER_DOSE"
+                }
+              ],
+              "frequency": [],
+              "duration": []
+            },
+            {
+              "label": "Repeat once for ongoing bleeding (local)",
+              "amountMin": 500,
+              "amountMax": 500,
+              "unit": "UNITS",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
               "caps": [],
               "frequency": [],
               "duration": []
@@ -311,7 +329,8 @@
       "calculatorIds": [],
       "institutionVaries": [
         "INR-based vs fixed-dose protocol",
-        "Weight used for >100 kg"
+        "Weight used for >100 kg",
+        "Factor Xa reversal: local pharmacy caps 4F-PCC at 2,000 U, with one 500 U repeat for ongoing bleeding"
       ],
       "pearls": [
         "Boxed warning: arterial and venous thromboembolism; contraindicated in DIC and heparin-induced thrombocytopenia (contains heparin) (label)",
@@ -328,7 +347,7 @@
         "Kcentra (prothrombin complex concentrate, human) US prescribing information. CSL Behring (label text via Drugs.com, accessed 2026-11-04)",
         "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "2026-11-13"
     },
     {
       "kind": "AGENT",
@@ -522,7 +541,7 @@
       "id": "apixaban",
       "title": "Apixaban (Eliquis)",
       "keyNumbers": [
-        "4F-PCC — apixaban-associated ICH: 50 U/kg IV (NCS 2016)",
+        "4F-PCC — apixaban-associated ICH: 50 U/kg IV (NCS 2016), max 2,000 U; repeat 500 U once for ongoing bleeding (local pharmacy)",
         "Last dose <48 h (or unknown) with normal renal function: IVT generally not given; may be considered after individualized review",
         "Moderate/high bleeding risk: stop ≥48 h before",
         "Low bleeding risk: stop ≥24 h before",
@@ -662,7 +681,7 @@
           "routes": [
             "IV"
           ],
-          "doseText": "50 U/kg IV (NCS 2016)",
+          "doseText": "50 U/kg IV (NCS 2016), max 2,000 U; repeat 500 U once for ongoing bleeding (local pharmacy)",
           "dose": [
             {
               "label": "4F-PCC",
@@ -672,6 +691,24 @@
               "basis": "PER_KG",
               "timing": "SINGLE",
               "weightBasis": "ACTUAL",
+              "caps": [
+                {
+                  "amount": 2000,
+                  "unit": "UNITS",
+                  "scope": "PER_DOSE"
+                }
+              ],
+              "frequency": [],
+              "duration": []
+            },
+            {
+              "label": "Repeat once for ongoing bleeding (local)",
+              "amountMin": 500,
+              "amountMax": 500,
+              "unit": "UNITS",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
               "caps": [],
               "frequency": [],
               "duration": []
@@ -746,7 +783,8 @@
       "calculatorIds": [],
       "institutionVaries": [
         "LP/neuraxial holds: see periprocedural-holds-lp-evd (ASRA 2025); label intervals are for surgery",
-        "Anti-Xa assay calibrated for apixaban may not be available"
+        "Anti-Xa assay calibrated for apixaban may not be available",
+        "Factor Xa reversal: local pharmacy caps 4F-PCC at 2,000 U, with one 500 U repeat for ongoing bleeding"
       ],
       "pearls": [
         "Boxed warning: spinal/epidural hematoma with neuraxial anesthesia or spinal puncture — weigh before LP; risk up with indwelling catheters, NSAIDs/antiplatelets, traumatic or repeated punctures",
@@ -770,14 +808,14 @@
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
         "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "2026-11-13"
     },
     {
       "kind": "AGENT",
       "id": "rivaroxaban",
       "title": "Rivaroxaban (Xarelto)",
       "keyNumbers": [
-        "4F-PCC — rivaroxaban-associated ICH: 50 U/kg IV (NCS 2016)",
+        "4F-PCC — rivaroxaban-associated ICH: 50 U/kg IV (NCS 2016), max 2,000 U; repeat 500 U once for ongoing bleeding (local pharmacy)",
         "Last dose <48 h (or unknown) with normal renal function: IVT generally not given; may be considered after individualized review",
         "Stop ≥24 h before surgery or other procedures (label)",
         "Rivaroxaban — AF (secondary stroke prevention): CrCl >50: 20 mg daily; CrCl ≤50: 15 mg daily — with the evening meal",
@@ -916,7 +954,7 @@
           "routes": [
             "IV"
           ],
-          "doseText": "50 U/kg IV (NCS 2016)",
+          "doseText": "50 U/kg IV (NCS 2016), max 2,000 U; repeat 500 U once for ongoing bleeding (local pharmacy)",
           "dose": [
             {
               "label": "4F-PCC",
@@ -926,6 +964,24 @@
               "basis": "PER_KG",
               "timing": "SINGLE",
               "weightBasis": "ACTUAL",
+              "caps": [
+                {
+                  "amount": 2000,
+                  "unit": "UNITS",
+                  "scope": "PER_DOSE"
+                }
+              ],
+              "frequency": [],
+              "duration": []
+            },
+            {
+              "label": "Repeat once for ongoing bleeding (local)",
+              "amountMin": 500,
+              "amountMax": 500,
+              "unit": "UNITS",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
               "caps": [],
               "frequency": [],
               "duration": []
@@ -1001,7 +1057,8 @@
       ],
       "institutionVaries": [
         "LP/neuraxial holds: see periprocedural-holds-lp-evd (ASRA 2025); label intervals are for surgery",
-        "Formulary DOAC may differ — confirm with pharmacy"
+        "Formulary DOAC may differ — confirm with pharmacy",
+        "Factor Xa reversal: local pharmacy caps 4F-PCC at 2,000 U, with one 500 U repeat for ongoing bleeding"
       ],
       "pearls": [
         "Boxed warning: spinal/epidural hematoma with neuraxial anesthesia or spinal puncture — weigh before LP; risk up with indwelling catheters, NSAIDs/antiplatelets, traumatic or repeated punctures",
@@ -1024,14 +1081,14 @@
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
         "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "2026-11-13"
     },
     {
       "kind": "AGENT",
       "id": "edoxaban",
       "title": "Edoxaban (Savaysa)",
       "keyNumbers": [
-        "4F-PCC — edoxaban-associated ICH: 50 U/kg IV (NCS 2016)",
+        "4F-PCC — edoxaban-associated ICH: 50 U/kg IV (NCS 2016), max 2,000 U; repeat 500 U once for ongoing bleeding (local pharmacy)",
         "Last dose <48 h (or unknown) with normal renal function: IVT generally not given; may be considered after individualized review",
         "Stop ≥24 h before invasive or surgical procedures (label)",
         "Edoxaban — AF (secondary stroke prevention): CrCl >50 to ≤95: 60 mg daily; CrCl 15–50: 30 mg daily; do not use if CrCl >95",
@@ -1169,7 +1226,7 @@
           "routes": [
             "IV"
           ],
-          "doseText": "50 U/kg IV (NCS 2016)",
+          "doseText": "50 U/kg IV (NCS 2016), max 2,000 U; repeat 500 U once for ongoing bleeding (local pharmacy)",
           "dose": [
             {
               "label": "4F-PCC",
@@ -1179,6 +1236,24 @@
               "basis": "PER_KG",
               "timing": "SINGLE",
               "weightBasis": "ACTUAL",
+              "caps": [
+                {
+                  "amount": 2000,
+                  "unit": "UNITS",
+                  "scope": "PER_DOSE"
+                }
+              ],
+              "frequency": [],
+              "duration": []
+            },
+            {
+              "label": "Repeat once for ongoing bleeding (local)",
+              "amountMin": 500,
+              "amountMax": 500,
+              "unit": "UNITS",
+              "basis": "FIXED",
+              "timing": "SINGLE",
+              "weightBasis": "NOT_APPLICABLE",
               "caps": [],
               "frequency": [],
               "duration": []
@@ -1253,7 +1328,8 @@
       ],
       "institutionVaries": [
         "LP/neuraxial holds: see periprocedural-holds-lp-evd (ASRA 2025); label intervals are for surgery",
-        "Formulary DOAC may differ — confirm with pharmacy"
+        "Formulary DOAC may differ — confirm with pharmacy",
+        "Factor Xa reversal: local pharmacy caps 4F-PCC at 2,000 U, with one 500 U repeat for ongoing bleeding"
       ],
       "pearls": [
         "Boxed warning: spinal/epidural hematoma with neuraxial anesthesia or spinal puncture — weigh before LP; risk up with indwelling catheters, NSAIDs/antiplatelets, traumatic or repeated punctures",
@@ -1276,7 +1352,7 @@
         "Miller EC, et al. Prevention and Treatment of Maternal Stroke in Pregnancy and Postpartum: A Scientific Statement From the AHA (endorsed by ACOG). Stroke 2026;57:e127-e145. doi:10.1161/STR.0000000000000514",
         "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "2026-11-13"
     },
     {
       "kind": "AGENT",
@@ -4311,7 +4387,7 @@
       "keyNumbers": [
         "Warfarin, INR ≥2.0: 4F-PCC (INR-banded) in preference to FFP, then IV vitamin K right after",
         "Warfarin, INR 1.3–1.9: PCC may be reasonable",
-        "Apixaban, rivaroxaban or edoxaban: 4F-PCC 50 U/kg (local pathway); andexanet was withdrawn from the US market (Dec 2025)",
+        "Apixaban, rivaroxaban or edoxaban: 4F-PCC 50 U/kg, max 2,000 U, repeat 500 U once for ongoing bleeding (local pharmacy); andexanet was withdrawn from the US market (Dec 2025)",
         "Dabigatran: Idarucizumab is not stocked — 4F-PCC (or aPCC) 50 U/kg and consider dialysis; call pharmacy about idarucizumab or transfer",
         "IV or SC unfractionated heparin: Protamine 1 mg per 100 U given in the prior 2–3 h, max 50 mg"
       ],
@@ -4358,7 +4434,7 @@
         {
           "order": 4,
           "condition": "Apixaban, rivaroxaban or edoxaban",
-          "recommendation": "4F-PCC 50 U/kg (local pathway); andexanet was withdrawn from the US market (Dec 2025)",
+          "recommendation": "4F-PCC 50 U/kg, max 2,000 U, repeat 500 U once for ongoing bleeding (local pharmacy); andexanet was withdrawn from the US market (Dec 2025)",
           "evidenceLevel": "WEAK",
           "evidenceNote": [
             "AHA ICH 2022: 4F-PCC/aPCC COR 2b, LOE B-NR; andexanet COR 2a, LOE B-NR (predates the US withdrawal)"
@@ -4406,7 +4482,8 @@
       "esoDiffers": [],
       "institutionVaries": [
         "Who releases PCC (pharmacy vs blood bank) and the time-to-dose target",
-        "Idarucizumab transfer/borrow pathway"
+        "Idarucizumab transfer/borrow pathway",
+        "Factor Xa reversal: local pharmacy caps 4F-PCC at 2,000 U, with one 500 U repeat for ongoing bleeding"
       ],
       "pearls": [
         "PT/INR don't reflect factor Xa reversal after PCC — don't titrate to them (edoxaban label)",
@@ -4429,7 +4506,7 @@
         "Li M, Frontera JA. Emergency reversal of antithrombotics in intracerebral hemorrhage: an update. Curr Neurol Neurosci Rep 2025;25:81. doi:10.1007/s11910-025-01469-9",
         "US Food and Drug Administration. Update on the safety of Andexxa (coagulation factor Xa [recombinant], inactivated-zhzo). FDA safety communication, December 18, 2025. https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "2026-11-13"
     },
     {
       "kind": "DECISION",
