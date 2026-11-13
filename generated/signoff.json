@@ -232,8 +232,8 @@
     "sha256": "56061554b15d4b9a24cc455870c11789553faf2042a0b86cc4778e623a92325b"
   },
   "consult-workups:monogenic-csvd-workup": {
-    "date": "2026-11-12",
-    "sha256": "7142cc8d585c09a5c3970c1b16bbfb47e5e064790c794d5e8dad3e419dd121dd"
+    "date": "2026-11-13",
+    "sha256": "a3966cb7eb6e22853befe041c8fc16ef9d39d5ec2dd76a442a30d1c7eac5040d"
   },
   "consult-workups:myelopathy-workup": {
     "date": "2026-11-08",
@@ -708,8 +708,8 @@
     "sha256": "3f4fc2064692a0cf2436f275ce1361e543c506fc9d11f0678b139e44a2605455"
   },
   "vascular-antithrombotics:thrombolysis-with-prior-antithrombotics": {
-    "date": "2026-11-08",
-    "sha256": "628e892e1e2267c92b358b0557c0573f47b20735bee3b02c816e5eafe2686ea0"
+    "date": "2026-11-13",
+    "sha256": "6e43a0d4c3796096fa1dcaa0a646e0d27e778768fd3ac210930915e9aca07ead"
   },
   "vascular-antithrombotics:ticagrelor": {
     "date": "2026-11-08",

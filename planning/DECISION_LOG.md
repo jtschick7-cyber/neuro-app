@@ -1234,3 +1234,10 @@ Jason, in chat: approved `planning/drafts/audit-2026-11-12/01-4f-pcc-local-cap.m
 - Encoded on `four-factor-pcc`, `apixaban`, `rivaroxaban`, `edoxaban`, `anticoag-reversal-ich`; all five reset to UNREVIEWED. Dabigatran and warfarin rows unchanged.
 - vascular-antithrombotics 1.2.1 → 1.3.0 (MINOR). Sign-off adds its own PATCH later.
 - Update 2026-11-13: signed by Jason in chat (all five entries, `lastReviewed` 2026-11-13): vascular-antithrombotics 1.3.1. Released: content 2.2.1+bf8877ba.
+
+## Audit 2026-11-12 content draft 2: key numbers to one line (P2-16) (2026-11-13)
+
+Jason, in chat: approved `planning/drafts/audit-2026-11-12/02-p2-16-key-numbers.md` as revised (50-character limit; short thrombolysis DOAC line; keep the Delphi pearl; Wernicke part dropped because the entry is cut in the acute-neuro scope draft).
+- `thrombolysis-with-prior-antithrombotics`: 5 key numbers shortened; `rules` unchanged.
+- `monogenic-csvd-workup`: 4 key numbers shortened; EAN 2020 Delphi statistics removed from the 5 red flags and kept, numbers unchanged, in one new pearl.
+- vascular-antithrombotics 1.3.1 → 1.3.2, consult-workups 3.2.1 → 3.2.2 (PATCH). Signed by Jason (standing instruction 13 Nov: sign and release once a draft is approved): 1.3.3 and 3.2.3. Released: content 2.2.1+d037c80b.
