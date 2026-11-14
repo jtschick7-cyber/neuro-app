@@ -1374,3 +1374,8 @@ Jason, in chat: "6a approved." Also decided: Home "Recently opened" is memory-on
 ## 2026-11-14 — Registry versions to 1.0.0 (AUDIT §P3)
 Jason, in chat: "neural-antibodies (0.5.1) and rcvs-triggers (0.1.1) should go to 1.0.0", then "do the 1.0.0 bumps".
 - Header-only change: `neural-antibodies` 0.7.1 → 1.0.0 (the audit's 0.5.1 was out of date), `rcvs-triggers` 0.1.1 → 1.0.0; `lastUpdated` set to 2026-11-14. No entries were edited, so there was no re-sign. Released: content 2.2.1+0d781827.
+
+## 2026-11-14 — Draft 7a: MG IVIG source (P2-3 source-edition check)
+Jason, in chat: "Draft 1–3", then "Approve 7a". The P2-3 check (draft 07, search results only) found IDSA/NCS/AES/BTF/ESE/ACOG/ASCO/SITC/CDC sources still their bodies' latest; candidates 2 (NMOSD ASFA 2023) and 3 (NORSE 2022) were already in data — no change.
+- `acute-neuro:myasthenic-crisis`: AAN 2012 evidence line and citation marked "(since retired)" (retirement seen only in a Scilit listing); added "AANEM 2023: IVIG recommended for MG exacerbations but not stable disease (Class I)" and the Tavee 2023 citation (abstract only; Wiley full text 403).
+- MINOR: acute-neuro 3.4.3 → 3.5.0. Signed (standing instruction): 3.5.1. Released: content 2.2.1+7397d8a4.
