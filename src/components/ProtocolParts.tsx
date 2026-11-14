@@ -183,7 +183,7 @@ export function WorkupList({ items }: { items: { test: string; priority: string;
             <span className="text-slate-100">{w.test}</span>
           </div>
           {w.indication.length > 0 && <p className="text-xs text-slate-400">If: {w.indication.join('; ')}</p>}
-          <Bullets items={w.notes} tone="text-slate-400" />
+          <Bullets items={w.notes} />
         </li>
       ))}
     </ul>
@@ -220,7 +220,7 @@ export function TreatmentList({ items, canonical }: { items: z.infer<typeof Trea
             <span className="text-xs text-slate-400">{t.routes.join(', ')}</span>
           </div>
           <p className={`text-sm ${notMarketed ? 'text-slate-400' : 'text-slate-200'}`}>{t.doseText}</p>
-          <Bullets items={t.notes} tone="text-slate-400" />
+          <Bullets items={t.notes} />
           <div className="mt-1 flex flex-wrap items-center gap-2">
             <EvidenceBadge level={t.evidenceLevel} />
             <FormularyBadge status={t.formularyStatus} />

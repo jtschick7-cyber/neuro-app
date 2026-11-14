@@ -81,7 +81,7 @@ function RenalRows({ rows, crcl }: { rows: RenalRow[]; crcl: number | null }) {
               <div className="font-semibold text-slate-100">{r.label}</div>
               <p className="text-slate-200">{r.doseText}</p>
               {r.crclBasis && <p className="text-xs text-slate-400">{CRCL_BASIS_LABEL[r.crclBasis] ?? r.crclBasis}</p>}
-              <Bullets items={r.notes} tone="text-slate-400" />
+              <Bullets items={r.notes} />
             </li>
           );
         })}
@@ -148,7 +148,7 @@ function TargetRows({ rows }: { rows: TargetRow[] }) {
               <span className="text-xs text-slate-400">{r.condition}</span>
             </div>
             <p className={summary ? 'text-sm italic text-slate-300' : 'text-base font-semibold text-sky-200'}>{r.target}</p>
-            <Bullets items={r.notes} tone="text-slate-400" />
+            <Bullets items={r.notes} />
             <div className="mt-1">
               <EvidenceBadge level={r.evidenceLevel} />
             </div>
