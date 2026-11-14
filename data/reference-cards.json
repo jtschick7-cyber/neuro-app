@@ -1,8 +1,8 @@
 {
   "title": "Reference Cards",
-  "version": "1.10.1",
+  "version": "1.11.0",
   "schemaVersion": "1.1.0",
-  "lastUpdated": "2026-11-13",
+  "lastUpdated": "2026-11-14",
   "entries": [
     {
       "id": "neuro-icu-targets",
@@ -4389,6 +4389,421 @@
         "Humphrey MB, et al. 2022 American College of Rheumatology guideline for the prevention and treatment of glucocorticoid-induced osteoporosis. Arthritis Care Res 2023;75(12):2405-2419. doi:10.1002/acr.25240"
       ],
       "lastReviewed": "2026-11-13"
+    },
+    {
+      "id": "antibody-result-interpretation",
+      "title": "Interpreting low-titer and unexpected neural antibody results",
+      "searchTerms": [
+        "false positive antibody",
+        "low titer",
+        "line blot",
+        "immunoblot",
+        "paraneoplastic panel",
+        "autoimmune encephalitis panel",
+        "MOG low titer",
+        "GAD65 low titer",
+        "antibody misdiagnosis"
+      ],
+      "scopeNote": "How far to trust a positive or negative neural antibody result. Per-antibody detail lives in the neural-antibodies entries.",
+      "sections": [
+        {
+          "heading": "General rules",
+          "rows": [
+            {
+              "parameter": "Specimen",
+              "condition": "Suspected PNS / autoimmune encephalitis",
+              "role": "RECOMMENDED",
+              "target": "Test serum and CSF",
+              "notes": [
+                "Particularly important for surface-antigen antibodies"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Graus 2021, PNS-Care consensus (Table 4)"
+              ],
+              "sources": [
+                "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+              ]
+            },
+            {
+              "parameter": "Panel choice",
+              "condition": "Any",
+              "role": "NOT_RECOMMENDED",
+              "target": "Indiscriminate, unfocused panel testing",
+              "notes": [
+                "Raises both false-positive and false-negative results"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Graus 2021, PNS-Care consensus (Table 4)"
+              ],
+              "sources": [
+                "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+              ]
+            },
+            {
+              "parameter": "IgM or IgA neural antibodies",
+              "condition": "Any",
+              "role": "NOT_RECOMMENDED",
+              "target": "Do not use as diagnostic biomarkers",
+              "notes": [
+                "Only IgG has diagnostic significance"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Graus 2021, PNS-Care consensus (Table 4)"
+              ],
+              "sources": [
+                "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+              ]
+            },
+            {
+              "parameter": "Commercial line blot or CBA positive",
+              "condition": "Serum only, low titer, or phenotype discordant",
+              "role": "RECOMMENDED",
+              "target": "Confirm with brain immunohistochemistry",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Graus 2021, PNS-Care consensus (Table 4)"
+              ],
+              "sources": [
+                "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+              ]
+            },
+            {
+              "parameter": "Surface antibody serum+/CSF−",
+              "condition": "High- or intermediate-risk phenotype",
+              "role": "RECOMMENDED",
+              "target": "Reassess in a reference laboratory",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Graus 2021, PNS-Care consensus (Table 4)"
+              ],
+              "sources": [
+                "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+              ]
+            },
+            {
+              "parameter": "Result incongruent with phenotype or cancer",
+              "condition": "e.g. Yo-positive man with seizures",
+              "role": "RECOMMENDED",
+              "target": "Seek additional expert testing",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Graus 2021, PNS-Care consensus (Table 4)"
+              ],
+              "sources": [
+                "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+              ]
+            },
+            {
+              "parameter": "Negative panel",
+              "condition": "High suspicion of PNS",
+              "role": "RECOMMENDED",
+              "target": "Re-examine serum and CSF in a research laboratory",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Graus 2021, PNS-Care consensus (Table 4)"
+              ],
+              "sources": [
+                "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Commercial line blot (immunodot) for onconeuronal antibodies",
+          "rows": [
+            {
+              "parameter": "Overall confirmation",
+              "condition": "Line-blot positive, 5,300 sera",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Confirmed by other techniques in 103/314 sera (32.8%)",
+              "notes": [
+                "PNS+2 blot 47/128 (36.7%); EUROLINE 56/186 (30.1%)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Déchelotte 2020, lab cohort"
+              ],
+              "sources": [
+                "Déchelotte B, Muñiz-Castrillo S, Joubert B, et al. Diagnostic yield of commercial immunodots to diagnose paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2020;7:e701. doi:10.1212/NXI.0000000000000701"
+              ]
+            },
+            {
+              "parameter": "Weak band",
+              "condition": "EUROLINE intensity 8–14",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "0/27 confirmed",
+              "notes": [
+                "All confirmed Yo (3) and Hu (11) had strong bands (>70)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Déchelotte 2020, lab cohort"
+              ],
+              "sources": [
+                "Déchelotte B, Muñiz-Castrillo S, Joubert B, et al. Diagnostic yield of commercial immunodots to diagnose paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2020;7:e701. doi:10.1212/NXI.0000000000000701"
+              ]
+            },
+            {
+              "parameter": "Anti-Yo",
+              "condition": "Line-blot positive",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Confirmed in 4/55 (PNS+2) and 3/51 (EUROLINE)",
+              "notes": [
+                "Unconfirmed Yo: 26/41 male"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Déchelotte 2020, lab cohort"
+              ],
+              "sources": [
+                "Déchelotte B, Muñiz-Castrillo S, Joubert B, et al. Diagnostic yield of commercial immunodots to diagnose paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2020;7:e701. doi:10.1212/NXI.0000000000000701"
+              ]
+            },
+            {
+              "parameter": "Anti-Hu",
+              "condition": "Line-blot positive",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Confirmed in 15/17 (PNS+2) and 13/20 (EUROLINE)",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Déchelotte 2020, lab cohort"
+              ],
+              "sources": [
+                "Déchelotte B, Muñiz-Castrillo S, Joubert B, et al. Diagnostic yield of commercial immunodots to diagnose paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2020;7:e701. doi:10.1212/NXI.0000000000000701"
+              ]
+            },
+            {
+              "parameter": "Unconfirmed results",
+              "condition": "Clinical data in 90",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Clinical picture incompatible in 76/90 (84.4%); cancer in 6.7%",
+              "notes": [
+                "No cancer in the 14 with a compatible picture"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Déchelotte 2020, lab cohort"
+              ],
+              "sources": [
+                "Déchelotte B, Muñiz-Castrillo S, Joubert B, et al. Diagnostic yield of commercial immunodots to diagnose paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2020;7:e701. doi:10.1212/NXI.0000000000000701"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Commercial cell-based mosaic for surface antibodies",
+          "rows": [
+            {
+              "parameter": "Negative commercial kit",
+              "condition": "Brain IHC-positive samples",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "False-negative: GABABR 39% (7/18), LGI1 17% (11/63), AMPAR 11% (2/18), NMDAR 1.4% (1/69)",
+              "notes": [
+                "Euroimmun AE Mosaic 6 IIFA. Specificity not studied"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Ruiz-García 2021, lab cohort"
+              ],
+              "sources": [
+                "Ruiz-García R, Muñoz-Sánchez G, Naranjo L, et al. Limitations of a commercial assay as diagnostic test of autoimmune encephalitis. Front Immunol 2021;12:691536. doi:10.3389/fimmu.2021.691536"
+              ]
+            },
+            {
+              "parameter": "CSF vs serum",
+              "condition": "GABABR, LGI1, AMPAR",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Missed in 29% (15/51) of CSF vs 10% (5/48) of serum",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Ruiz-García 2021, lab cohort"
+              ],
+              "sources": [
+                "Ruiz-García R, Muñoz-Sánchez G, Naranjo L, et al. Limitations of a commercial assay as diagnostic test of autoimmune encephalitis. Front Immunol 2021;12:691536. doi:10.3389/fimmu.2021.691536"
+              ]
+            },
+            {
+              "parameter": "Negative kit, strong suspicion",
+              "condition": "Any",
+              "role": "RECOMMENDED",
+              "target": "Extend testing with brain IHC and in-house IIFA",
+              "notes": [
+                "Authors' recommendation"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Ruiz-García 2021, lab cohort"
+              ],
+              "sources": [
+                "Ruiz-García R, Muñoz-Sánchez G, Naranjo L, et al. Limitations of a commercial assay as diagnostic test of autoimmune encephalitis. Front Immunol 2021;12:691536. doi:10.3389/fimmu.2021.691536"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "Titer-dependent antibodies",
+          "rows": [
+            {
+              "parameter": "MOG-IgG PPV by titer",
+              "condition": "Live CBA, Mayo 2018–19, 92 positives",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "≥1:1000 100% (17/17); 1:100 82% (27/33); 1:20–40 51% (21/41)",
+              "notes": [
+                "Overall PPV 72%; false positives median 1:40"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Sechi 2021, lab cohort"
+              ],
+              "sources": [
+                "Sechi E, Buciuc M, Pittock SJ, et al. Positive predictive value of myelin oligodendrocyte glycoprotein autoantibody testing. JAMA Neurol 2021;78:741–746. doi:10.1001/jamaneurol.2021.0912"
+              ]
+            },
+            {
+              "parameter": "MOG-IgG low titer",
+              "condition": "Atypical phenotype and titer <1:100",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "PPV 10%",
+              "notes": [
+                "CSF-restricted OCB in 44% of false vs 4% of true positives"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Sechi 2021, lab cohort"
+              ],
+              "sources": [
+                "Sechi E, Buciuc M, Pittock SJ, et al. Positive predictive value of myelin oligodendrocyte glycoprotein autoantibody testing. JAMA Neurol 2021;78:741–746. doi:10.1001/jamaneurol.2021.0912"
+              ]
+            },
+            {
+              "parameter": "MOG-IgG ordering",
+              "condition": "Low pretest probability",
+              "role": "NOT_RECOMMENDED",
+              "target": "Indiscriminate testing",
+              "notes": [
+                "PPV 12% with low vs 85% with high pretest probability (Sechi 2021)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Sechi 2021, lab cohort"
+              ],
+              "sources": [
+                "Sechi E, Buciuc M, Pittock SJ, et al. Positive predictive value of myelin oligodendrocyte glycoprotein autoantibody testing. JAMA Neurol 2021;78:741–746. doi:10.1001/jamaneurol.2021.0912"
+              ]
+            },
+            {
+              "parameter": "GAD65 cut-off",
+              "condition": "Serum or CSF ELISA (Medizym)",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Serum ELISA >10,000 IU/mL or CSF >100 IU/mL marks neurologic significance (Medizym assay; not transferable to nmol/L results)",
+              "notes": [
+                "Below 10,000: tissue IHC negative in 100% (Muñoz-Lopetegi 2020)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Muñoz-Lopetegi 2020, cohort"
+              ],
+              "sources": [
+                "Muñoz-Lopetegi A, et al. Neurologic syndromes related to anti-GAD65: clinical and serologic response to treatment. Neurol Neuroimmunol Neuroinflamm 2020;7(3):e696. doi:10.1212/NXI.0000000000000696"
+              ]
+            },
+            {
+              "parameter": "GAD65 low concentration",
+              "condition": "Neurologic symptoms, serum <10,000 IU/mL",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Alternative diagnosis in 12/20",
+              "notes": [
+                "Low levels common in type 1 diabetes: positive in 35% of 192 samples, median 86 IU/mL, >10,000 in 1.6%"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Muñoz-Lopetegi 2020, cohort"
+              ],
+              "sources": [
+                "Muñoz-Lopetegi A, et al. Neurologic syndromes related to anti-GAD65: clinical and serologic response to treatment. Neurol Neuroimmunol Neuroinflamm 2020;7(3):e696. doi:10.1212/NXI.0000000000000696"
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "What misdiagnosis looks like",
+          "rows": [
+            {
+              "parameter": "Overinterpreted serum antibody",
+              "condition": "107 adults misdiagnosed with AE",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Main contributor in 53 (50%)",
+              "notes": [
+                "Antibodies: GAD65 14; VGKC-complex with LGI1/CASPR2 negative 10; NMDAR by serum CBA only 10 (6 CSF-negative)",
+                "VGKC-complex antibodies without LGI1/CASPR2 are not syndrome-specific and don't prove autoimmunity (Graus 2016)"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Flanagan 2023, multicenter cohort"
+              ],
+              "sources": [
+                "Flanagan EP, Geschwind MD, Lopez-Chiriboga AS, et al. Autoimmune encephalitis misdiagnosis in adults. JAMA Neurol 2023;80:30–39. doi:10.1001/jamaneurol.2022.4251",
+                "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
+              ]
+            },
+            {
+              "parameter": "Antibody in serum vs CSF",
+              "condition": "Same cohort",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Positive in serum 48/105 (46%) vs CSF 7/91 (8%)",
+              "notes": [],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Flanagan 2023, multicenter cohort"
+              ],
+              "sources": [
+                "Flanagan EP, Geschwind MD, Lopez-Chiriboga AS, et al. Autoimmune encephalitis misdiagnosis in adults. JAMA Neurol 2023;80:30–39. doi:10.1001/jamaneurol.2022.4251"
+              ]
+            },
+            {
+              "parameter": "Red flags",
+              "condition": "Suspected AE",
+              "role": "EVIDENCE_SUMMARY",
+              "target": "Insidious onset, positive non-specific serum antibody, AE criteria not met",
+              "notes": [
+                "Correct diagnoses: functional 25%, neurodegenerative 20.5%, psychiatric 18%"
+              ],
+              "evidenceLevel": "NOT_GRADED",
+              "evidenceNote": [
+                "Flanagan 2023, multicenter cohort"
+              ],
+              "sources": [
+                "Flanagan EP, Geschwind MD, Lopez-Chiriboga AS, et al. Autoimmune encephalitis misdiagnosis in adults. JAMA Neurol 2023;80:30–39. doi:10.1001/jamaneurol.2022.4251"
+              ]
+            }
+          ]
+        }
+      ],
+      "pitfalls": [],
+      "keyNumbers": [],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:gad65"
+      ],
+      "sources": [
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014",
+        "Déchelotte B, Muñiz-Castrillo S, Joubert B, et al. Diagnostic yield of commercial immunodots to diagnose paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2020;7:e701. doi:10.1212/NXI.0000000000000701",
+        "Ruiz-García R, Muñoz-Sánchez G, Naranjo L, et al. Limitations of a commercial assay as diagnostic test of autoimmune encephalitis. Front Immunol 2021;12:691536. doi:10.3389/fimmu.2021.691536",
+        "Sechi E, Buciuc M, Pittock SJ, et al. Positive predictive value of myelin oligodendrocyte glycoprotein autoantibody testing. JAMA Neurol 2021;78:741–746. doi:10.1001/jamaneurol.2021.0912",
+        "Muñoz-Lopetegi A, et al. Neurologic syndromes related to anti-GAD65: clinical and serologic response to treatment. Neurol Neuroimmunol Neuroinflamm 2020;7(3):e696. doi:10.1212/NXI.0000000000000696",
+        "Flanagan EP, Geschwind MD, Lopez-Chiriboga AS, et al. Autoimmune encephalitis misdiagnosis in adults. JAMA Neurol 2023;80:30–39. doi:10.1001/jamaneurol.2022.4251",
+        "Graus F, et al. A clinical approach to diagnosis of autoimmune encephalitis. Lancet Neurol 2016;15(4):391-404. doi:10.1016/S1474-4422(15)00401-9"
+      ],
+      "lastReviewed": "UNREVIEWED"
     }
   ]
 }
