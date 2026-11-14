@@ -218,6 +218,12 @@
     {"antibodyId": "septin-7", "syndromeTerm": "cerebellar-ataxia", "typical": false},
     {"antibodyId": "septin-7", "syndromeTerm": "encephalomyelitis", "typical": false},
     {"antibodyId": "septin-7", "syndromeTerm": "myelopathy", "typical": false},
-    {"antibodyId": "septin-7", "syndromeTerm": "neuropathy", "typical": false}
+    {"antibodyId": "septin-7", "syndromeTerm": "neuropathy", "typical": false},
+    {"antibodyId": "nif", "syndromeTerm": "cerebellar-ataxia", "typical": true},
+    {"antibodyId": "nif", "syndromeTerm": "encephalitis-diffuse", "typical": true},
+    {"antibodyId": "nif", "syndromeTerm": "myelopathy", "typical": false},
+    {"antibodyId": "nif", "syndromeTerm": "neuropathy", "typical": false},
+    {"antibodyId": "nif", "syndromeTerm": "autonomic", "typical": false},
+    {"antibodyId": "nif", "syndromeTerm": "post-ici", "typical": false}
   ]
 }
