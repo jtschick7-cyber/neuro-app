@@ -5,6 +5,7 @@ import ReferenceCard from './ReferenceCard';
 import { CAUTION_LISTS, searchCautionEntries } from '../lib/registry';
 import type { CautionListId } from '../lib/nav';
 import { toHash } from '../lib/route';
+import { ENTRY_LAYOUT_COPY } from '../content/copy';
 
 /** Drug caution lists (MG, seizure threshold, RCVS triggers). The list and optional entry come from the route. */
 export default function MgRegistryView({ listId, entryId }: { listId: CautionListId; entryId?: string }) {
@@ -45,7 +46,7 @@ export default function MgRegistryView({ listId, entryId }: { listId: CautionLis
         />
       </div>
       <p className="text-xs text-slate-400">
-        {info.list.condition} · {results.length} of {info.list.entries.length} · v{info.list.version}
+        {info.list.condition} · {results.length} of {info.list.entries.length} · {ENTRY_LAYOUT_COPY.registryVersion}{info.list.version}
       </p>
       {info.list.scopeNotes.map((n) => (
         <p key={n} className="text-xs text-slate-400">

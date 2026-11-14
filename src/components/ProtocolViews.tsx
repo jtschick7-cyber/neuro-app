@@ -120,7 +120,7 @@ export function RegistryScreen<E extends Searchable & { id: string }>({ registry
         />
       </div>
       <p className="text-xs text-slate-400">
-        {shown} of {entries.length} · v{state.data.version}
+        {shown} of {entries.length} · {ENTRY_LAYOUT_COPY.registryVersion}{state.data.version}
       </p>
       {state.data.scopeNotes?.map((n) => (
         <p key={n} className="text-xs text-slate-400">
