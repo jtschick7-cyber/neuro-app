@@ -158,6 +158,8 @@ export const SYNDROME_FILTER = {
 /** Entry layout (task group 4): jump chips, evidence disclosure. */
 export const ENTRY_LAYOUT_COPY = {
   evidence: "Evidence",
+  /** Prefix for a registry's own version in list headers (distinct from the footer content version). */
+  registryVersion: "Registry v",
   jumpTo: "Jump to section",
   sources: "Sources",
 };
