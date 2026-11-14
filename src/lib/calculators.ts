@@ -425,6 +425,27 @@ export function plasmaVolume(weightKg: number, hctPercent: number): CalcResult {
   };
 }
 
+// ---------- 12. mEGRIS (Luijten 2023, Table 4) ----------
+export type MegrisInput = { bulbarWeakness: boolean; daysOnsetToAdmission: number; neckFlexionMrc: number; hipFlexionMrcLeft: number; hipFlexionMrcRight: number };
+export const MEGRIS_SCOPE_WARNING = "Use at hospital admission. Developed excluding patients already ventilated, weakness starting after admission, and children <6 y; not externally validated (Luijten 2023)";
+export const MEGRIS_ICU_FLAG = "≥23: ward → ICU (EAN/PNS 2023 Fig. 2)";
+export const MEGRIS_HIGH_FLAG = "25–32: high risk at presentation, >70% ventilation risk (EAN/PNS 2023 Fig. 2)";
+const MEGRIS_NECK = [10, 8, 6, 4, 2, 0] as const;
+
+/** Bulbar 5; days 0→7 … 6→1, ≥7→0; neck MRC 0–5 → 10,8,6,4,2,0; bilateral hip MRC sum 0–10 → 10 − sum. Total 0–32. */
+export function megris(i: MegrisInput): CalcResult {
+  const int = (n: string, x: number, min: number, max: number) => { req(n, x, min, max); if (!Number.isInteger(x)) throw new RangeError(`${n} must be a whole number`); };
+  int("daysOnsetToAdmission", i.daysOnsetToAdmission, 0, 365); int("neckFlexionMrc", i.neckFlexionMrc, 0, 5);
+  int("hipFlexionMrcLeft", i.hipFlexionMrcLeft, 0, 5); int("hipFlexionMrcRight", i.hipFlexionMrcRight, 0, 5);
+  const bulbar = i.bulbarWeakness ? 5 : 0;
+  const days = Math.max(0, 7 - i.daysOnsetToAdmission);
+  const neck = MEGRIS_NECK[i.neckFlexionMrc];
+  const hip = 10 - (i.hipFlexionMrcLeft + i.hipFlexionMrcRight);
+  const total = bulbar + days + neck + hip;
+  const flags = total >= 25 ? [MEGRIS_HIGH_FLAG] : total >= 23 ? [MEGRIS_ICU_FLAG] : [];
+  return { value: total, unit: "points", display: `mEGRIS ${total} / 32`, capped: false, warnings: [...flags, MEGRIS_SCOPE_WARNING], parts: { bulbar, days, neck, hip } };
+}
+
 // ---------- metadata ----------
 const S = {
   aes2016: "Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48",
@@ -462,4 +483,5 @@ export const CALCULATOR_META: Record<string, CalcMeta> = {
   "sodium-correction": { id: "sodium-correction", title: "Hyponatremia: 3% bolus and correction limits", formula: "ESE 150 mL; SALSA 2 mL/kg (moderate) or 2 mL/kg × 2 (severe); limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)", caps: [], rounding: "nearest 10 mL per bolus", weightBasis: "ACTUAL", sources: [S.ese2014, S.salsa2021, S.verbalis2013], verify: [] },
   "rotigotine-conversion": { id: "rotigotine-conversion", title: "Rotigotine patch (no enteral route, BMJ 2010)", formula: "A = levodopa mg/day (×0.7 if CR), then ×1.3 if on a COMT inhibitor. B = agonist mg/day × factor (ropinirole 20, rotigotine 20, pramipexole base 100, cabergoline 100, bromocriptine 10, apomorphine 10). LEDD = A + B. Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily. BMJ factors, not calc:ledd (Jost 2023)", caps: [], rounding: "nearest 2 mg (exact odd-mg ties round up; app convention); warns above 8 mg/24 h (label) and adjusted LEDD >350 mg", weightBasis: "NOT_APPLICABLE", sources: ["Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718", "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"], verify: [] },
   "plasma-volume": { id: "plasma-volume", title: "Plasma volume for plasma exchange (PLEX)", formula: "EPV (L) = 0.065 × weight (kg) × (1 − Hct) [Kaplan 1990]; Hct entered as %. Exchange volume = EPV × 1.0 and × 1.5", caps: [], rounding: "0.1 L (app convention)", weightBasis: "ACTUAL", sources: ["Kaplan AA. A simple and accurate method for prescribing plasma exchange. ASAIO Trans 1990;36(3):M597-9. PMID 2252761"], verify: [] },
+  megris: { id: "megris", title: "mEGRIS (GBS ventilation risk at admission)", formula: "Bulbar weakness 5; days from weakness onset to admission 0/1/2/3/4/5/6/≥7 → 7/6/5/4/3/2/1/0; neck flexion MRC 0/1/2/3/4/5 → 10/8/6/4/2/0; bilateral hip flexion MRC sum 0–10 → 10 − sum. Total 0–32 (Luijten 2023 Table 4). Flags: ≥23 ward → ICU; 25–32 >70% ventilation risk (EAN/PNS 2023 Fig. 2). Per-score probabilities are plotted only (Fig. 3) and not shown", caps: [], rounding: "integer (whole-number inputs)", weightBasis: "NOT_APPLICABLE", sources: ["Luijten LWG, Doets AY, et al. Modified Erasmus GBS Respiratory Insufficiency Score: a simplified clinical tool to predict the risk of mechanical ventilation in Guillain-Barré syndrome. J Neurol Neurosurg Psychiatry 2023;94(4):300-308. doi:10.1136/jnnp-2022-329937", "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073"], verify: [] },
 };

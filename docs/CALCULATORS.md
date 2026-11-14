@@ -89,3 +89,11 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - Weight: ACTUAL
 - Sources: Kaplan AA. A simple and accurate method for prescribing plasma exchange. ASAIO Trans 1990;36(3):M597-9. PMID 2252761
 - VERIFY: none
+
+## mEGRIS (GBS ventilation risk at admission) (`megris`)
+- Formula: Bulbar weakness 5; days from weakness onset to admission 0/1/2/3/4/5/6/≥7 → 7/6/5/4/3/2/1/0; neck flexion MRC 0/1/2/3/4/5 → 10/8/6/4/2/0; bilateral hip flexion MRC sum 0–10 → 10 − sum. Total 0–32 (Luijten 2023 Table 4). Flags: ≥23 ward → ICU; 25–32 >70% ventilation risk (EAN/PNS 2023 Fig. 2). Per-score probabilities are plotted only (Fig. 3) and not shown
+- Caps: none
+- Rounding: integer (whole-number inputs)
+- Weight: NOT_APPLICABLE
+- Sources: Luijten LWG, Doets AY, et al. Modified Erasmus GBS Respiratory Insufficiency Score: a simplified clinical tool to predict the risk of mechanical ventilation in Guillain-Barré syndrome. J Neurol Neurosurg Psychiatry 2023;94(4):300-308. doi:10.1136/jnnp-2022-329937 | van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073
+- VERIFY: none
