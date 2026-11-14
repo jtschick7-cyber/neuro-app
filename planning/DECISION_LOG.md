@@ -1357,3 +1357,11 @@ Jason, in chat: "Build plasma volume", with the spec defaults in `planning/draft
 - New `calc:plasma-volume`: EPV = 0.065 × weight (kg) × (1 − Hct) (Kaplan 1990 abstract; full text not opened). Hct entered as %, accepted range 15–65% (app convention). Shows 1.0 and 1.5 PV, rounded to 0.1 L. No removal-fraction line (no source opened).
 - Linked from `acute-neuro:myasthenic-crisis`, PLEX treatment row (`calculatorIds`). The GBS entry is not linked: it doses PLEX in litres.
 - acute-neuro 3.2.1 → 3.3.0 (MINOR). Signed (standing instruction): 3.3.1. Released: content 2.2.1+14349f07.
+
+## Audit 2026-11-12 calculator 5b: mEGRIS (2026-11-14)
+
+Jason, in chat: supplied the Luijten 2023 PDF, then said "Build mEGRIS" per the updated spec in `planning/drafts/audit-2026-11-12/05-calculators.md`.
+- New `calc:megris`: Luijten 2023 Table 4 points (total 0–32), whole-number inputs; left and right hip MRC summed.
+- Flags from EAN/PNS 2023 Fig. 2: ≥23 ward → ICU; 25–32 >70% ventilation risk. The paper itself defines no cut-offs. Per-score probabilities are not shown: Figure 3 is a plot only, and its worked example conflicts (35% in the text vs 32% in the legend at <1 week).
+- A scope warning is always shown: admission use; developed excluding patients already ventilated, weakness after admission, and children <6; not externally validated.
+- `acute-neuro:guillain-barre-syndrome` relatedIds + `calc:megris`. acute-neuro 3.3.1 → 3.4.0 (MINOR); signed by name.

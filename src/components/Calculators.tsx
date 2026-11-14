@@ -6,6 +6,7 @@ import { SodiumCard } from './ImmunoSodiumCalculators';
 import { PhenytoinCard } from './PhenytoinCard';
 import { RotigotineCard } from './RotigotineCard';
 import { PlasmaVolumeCard } from './PlasmaVolumeCard';
+import { MegrisCard } from './MegrisCard';
 import {
   COMT_FACTORS,
   LEVODOPA_FACTORS,
@@ -202,6 +203,7 @@ export default function Calculators({
       <RotigotineCard />
       <SodiumCard weightKg={weightKg} />
       <PlasmaVolumeCard weightKg={weightKg} />
+      <MegrisCard />
     </div>
     </FocusContext.Provider>
   );

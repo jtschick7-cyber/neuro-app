@@ -115,6 +115,33 @@ describe("plasma-volume (Kaplan 1990)", () => {
     expect(() => C.plasmaVolume(kg, hct)).toThrow(RangeError));
 });
 
+describe("megris (Luijten 2023 Table 4)", () => {
+  const base = { bulbarWeakness: false, daysOnsetToAdmission: 7, neckFlexionMrc: 5, hipFlexionMrcLeft: 5, hipFlexionMrcRight: 5 };
+  it("paper example: bulbar, day 1, neck 4, hips 3+3 → 17", () => {
+    const r = C.megris({ bulbarWeakness: true, daysOnsetToAdmission: 1, neckFlexionMrc: 4, hipFlexionMrcLeft: 3, hipFlexionMrcRight: 3 });
+    expect(r.value).toBe(17);
+    expect(r.parts).toEqual({ bulbar: 5, days: 6, neck: 2, hip: 4 });
+    expect(r.warnings).toEqual([C.MEGRIS_SCOPE_WARNING]);
+  });
+  it("minimum 0", () => expect(C.megris(base).value).toBe(0));
+  it("≥7 days scores 0", () => expect(C.megris({ ...base, daysOnsetToAdmission: 12 }).value).toBe(0));
+  it("maximum 32 with the high-risk flag", () => {
+    const r = C.megris({ bulbarWeakness: true, daysOnsetToAdmission: 0, neckFlexionMrc: 0, hipFlexionMrcLeft: 0, hipFlexionMrcRight: 0 });
+    expect(r.value).toBe(32);
+    expect(r.warnings).toEqual([C.MEGRIS_HIGH_FLAG, C.MEGRIS_SCOPE_WARNING]);
+  });
+  it.each([[0, 10], [1, 8], [2, 6], [3, 4], [4, 2], [5, 0]])("neck MRC %d → %d", (mrc, pts) => expect(C.megris({ ...base, neckFlexionMrc: mrc }).parts?.neck).toBe(pts));
+  it("23–24 → ICU flag only", () => {
+    const r = C.megris({ bulbarWeakness: true, daysOnsetToAdmission: 1, neckFlexionMrc: 2, hipFlexionMrcLeft: 3, hipFlexionMrcRight: 3 }); // 5+6+6+4=21
+    expect(r.value).toBe(21);
+    expect(C.megris({ bulbarWeakness: true, daysOnsetToAdmission: 1, neckFlexionMrc: 2, hipFlexionMrcLeft: 2, hipFlexionMrcRight: 2 }).warnings).toEqual([C.MEGRIS_ICU_FLAG, C.MEGRIS_SCOPE_WARNING]); // 23
+    expect(C.megris({ bulbarWeakness: true, daysOnsetToAdmission: 1, neckFlexionMrc: 2, hipFlexionMrcLeft: 2, hipFlexionMrcRight: 1 }).value).toBe(24);
+    expect(C.megris({ bulbarWeakness: true, daysOnsetToAdmission: 1, neckFlexionMrc: 2, hipFlexionMrcLeft: 1, hipFlexionMrcRight: 1 }).warnings[0]).toBe(C.MEGRIS_HIGH_FLAG); // 25
+  });
+  it.each([{ neckFlexionMrc: 6 }, { neckFlexionMrc: 2.5 }, { hipFlexionMrcLeft: -1 }, { daysOnsetToAdmission: 1.5 }, { hipFlexionMrcRight: Number.NaN }])("%j throws RangeError", (bad) =>
+    expect(() => C.megris({ ...base, ...bad })).toThrow(RangeError));
+});
+
 describe("cockcroft-gault", () => {
   it.each([[60, 70, 1.0, false, 78], [60, 70, 1.0, true, 66], [80, 50, 2.0, false, 21], [40, 100, 0.8, false, 174], [90, 45, 1.5, true, 18]])(
     "age %d wt %d SCr %d female %s → %d", (age, wt, scr, f, out) => expect(C.cockcroftGault(age, wt, scr, f).value).toBe(out));

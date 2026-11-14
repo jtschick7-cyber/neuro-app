@@ -84,4 +84,5 @@ export const CALC_CARD: Record<string, string> = {
   'sodium-correction': 'calc-sodium',
   'rotigotine-conversion': 'calc-rotigotine',
   'plasma-volume': 'calc-plasma-volume',
+  megris: 'calc-megris',
 };

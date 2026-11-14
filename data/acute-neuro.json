@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "3.3.1",
+  "version": "3.4.0",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-14",
   "entries": [
@@ -1952,7 +1952,8 @@
       "verify": [],
       "relatedIds": [
         "acute-neuro:neuromuscular-respiratory-failure",
-        "consult-workups:acute-hepatic-porphyria"
+        "consult-workups:acute-hepatic-porphyria",
+        "calc:megris"
       ],
       "sources": [
         "van Doorn PA, et al. EAN/PNS guideline on diagnosis and treatment of Guillain-Barré syndrome. Eur J Neurol 2023;30(12):3646-3674. doi:10.1111/ene.16073",
@@ -1960,7 +1961,7 @@
         "Leonhard SE, et al. Diagnosis and management of Guillain-Barré syndrome in ten steps. Nat Rev Neurol 2019;15:671-683. doi:10.1038/s41582-019-0250-9",
         "Willison HJ, Yuki N. Peripheral neuropathies and anti-glycolipid antibodies. Brain 2002;125:2591-2625"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "UNREVIEWED"
     },
     {
       "id": "neuromuscular-respiratory-failure",
