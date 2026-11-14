@@ -24,26 +24,46 @@ const PRIORITY_TONE: Record<string, string> = {
   IF_INDICATED: 'border border-slate-500 text-slate-300',
 };
 
-function Pill({ tone, title, children }: { tone: string; title?: string; children: ReactNode }) {
+function Pill({ tone, children }: { tone: string; children: ReactNode }) {
+  return <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${tone}`}>{children}</span>;
+}
+
+/** Badge whose meaning shows inline on tap (phones never show `title` tooltips). */
+function HelpPill({ tone, help, children }: { tone: string; help?: string; children: ReactNode }) {
+  const [open, setOpen] = useState(false);
+  if (!help) return <Pill tone={tone}>{children}</Pill>;
   return (
-    <span title={title} className={`rounded-full px-2 py-0.5 text-xs font-semibold ${tone}`}>
-      {children}
-    </span>
+    <>
+      <button
+        type="button"
+        title={help}
+        aria-expanded={open}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          setOpen((o) => !o);
+        }}
+        className={`rounded-full px-2 py-0.5 text-xs font-semibold ${tone}`}
+      >
+        {children}
+      </button>
+      {open && <span className="text-xs text-slate-300">{help}</span>}
+    </>
   );
 }
 
 export const EvidenceBadge = ({ level }: { level: string }) => (
-  <Pill tone={EVIDENCE_TONE[level] ?? EVIDENCE_TONE.NOT_GRADED} title={EVIDENCE_HELP[level]}>
+  <HelpPill tone={EVIDENCE_TONE[level] ?? EVIDENCE_TONE.NOT_GRADED} help={EVIDENCE_HELP[level]}>
     {EVIDENCE_LABEL[level] ?? level}
-  </Pill>
+  </HelpPill>
 );
 export const PriorityBadge = ({ priority }: { priority: string }) => (
   <Pill tone={PRIORITY_TONE[priority] ?? PRIORITY_TONE.ROUTINE}>{PRIORITY_LABEL[priority] ?? priority}</Pill>
 );
 export const FormularyBadge = ({ status }: { status: string }) => (
-  <Pill tone="border border-slate-600 text-slate-300" title={FORMULARY_HELP[status]}>
+  <HelpPill tone="border border-slate-600 text-slate-300" help={FORMULARY_HELP[status]}>
     {FORMULARY_LABEL[status] ?? status}
-  </Pill>
+  </HelpPill>
 );
 export const RoleBadge = ({ role }: { role: string }) => (
   <Pill tone={role === 'NOT_RECOMMENDED' ? 'bg-red-900 text-red-100' : 'bg-sky-900 text-sky-100'}>{ROLE_LABEL[role] ?? role}</Pill>
@@ -215,9 +235,9 @@ export function TreatmentList({ items, canonical }: { items: z.infer<typeof Trea
   );
 }
 
-/** Generic enum badge with optional legend tooltip. */
+/** Generic enum badge; its legend text shows on tap when `help` is given. */
 export const EnumBadge = ({ label, help, tone = 'border border-slate-600 text-slate-300' }: { label: string; help?: string; tone?: string }) => (
-  <Pill tone={tone} title={help}>
+  <HelpPill tone={tone} help={help}>
     {label}
-  </Pill>
+  </HelpPill>
 );
