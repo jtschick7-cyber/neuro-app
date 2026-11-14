@@ -1,12 +1,12 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+b191153a",
+  "contentVersion": "2.2.1+d93180e3",
   "builtAt": "2026-11-14",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "3.4.1",
+      "version": "3.4.3",
       "schemaVersion": "1.3.0",
       "lastUpdated": "2026-11-14",
       "entries": 23,
