@@ -1,6 +1,6 @@
 {
   "title": "Neural antibodies",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-14",
   "entries": [
@@ -3438,7 +3438,7 @@
         "McKeon A, Shelly S, Zivelonghi C, et al. Neuronal intermediate filament IgGs in CSF: autoimmune axonopathy biomarkers. Ann Clin Transl Neurol 2021;8:425–439. doi:10.1002/acn3.51284",
         "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-14"
     }
   ]
 }

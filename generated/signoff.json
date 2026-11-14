@@ -459,6 +459,10 @@
     "date": "2026-11-14",
     "sha256": "4bb253c4053ac4cbcad9a40131c6162aa5093f1e0d6eb3c797d0fa556e0a3ae0"
   },
+  "neural-antibodies:nif": {
+    "date": "2026-11-14",
+    "sha256": "720ff8b805693c9770050f515e38ce549754955b183e7e26daa505b1b432ee70"
+  },
   "neural-antibodies:nmdar": {
     "date": "2026-11-05",
     "sha256": "3d57d8ad64ced9f5828b0a6a446dd4d28bbd4303b166714d34bdfe086442ef84"

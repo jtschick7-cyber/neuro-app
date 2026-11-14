@@ -1327,3 +1327,10 @@ Jason, in chat: approved the trim rules and caps, then the per-entry cut list, i
 - itpr1, ap3b2, septin-5, septin-7, neurochondrin, trim46, arhgap26, ak5, pde10a, anna3-dach1: lines deleted by index (none reworded), titles shortened to core style. Septin-7 and AK5 keep 5 pearls; high-risk entries keep extra screening lines (approved).
 - On encoding, sources cited by no kept line were dropped by script (15 citations across 9 entries; list in PR #76).
 - neural-antibodies 0.5.1 → 0.6.0 (MINOR). Signed (standing instruction): 0.6.1. Released: content 2.2.1+a7363e0b (340 unique sources).
+
+## Audit 2026-11-12 content draft 4b: neuronal intermediate filament (NIF) entry (2026-11-14)
+
+Jason, in chat: supplied the Graus 2021 PDF (NIF is in none of its three risk tables), chose immunotherapyResponse USUALLY_GOOD, approved `planning/drafts/audit-2026-11-12/04b-neural-antibodies-nif.md` (NfL-negative group kept as one line), then approved the 6 syndrome-vocabulary rows in its addendum.
+- New `neural-antibodies:nif` (Basal 2018 and McKeon 2021, full text via PMC; Graus 2021). pnsRisk NOT_CLASSIFIED. Encoded with exact-match asserts against the draft.
+- `data/syndrome-vocabulary.json`: 6 nif rows (typical: cerebellar-ataxia, encephalitis-diffuse).
+- neural-antibodies 0.6.1 → 0.7.0 (MINOR). Signed (standing instruction): 0.7.1. Released: content 2.2.1+4b05708e (342 unique sources).

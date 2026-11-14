@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+a7363e0b",
+  "contentVersion": "2.2.1+4b05708e",
   "builtAt": "2026-11-14",
   "registries": [
     {
@@ -71,11 +71,11 @@
     {
       "id": "neural-antibodies",
       "title": "Neural antibodies",
-      "version": "0.6.1",
+      "version": "0.7.1",
       "schemaVersion": "1.0.0",
       "lastUpdated": "2026-11-14",
-      "entries": 36,
-      "reviewed": 36,
+      "entries": 37,
+      "reviewed": 37,
       "unreviewedIds": [],
       "openVerify": 0,
       "oldestReview": "2026-11-05",
@@ -315,6 +315,13 @@
         "acute-neuro:nmosd-mogad-attack",
         "neural-antibodies:aqp4",
         "neural-antibodies:mog"
+      ]
+    },
+    {
+      "citation": "Basal E, Zalewski N, Kryzer TJ, et al. Paraneoplastic neuronal intermediate filament autoimmunity. Neurology 2018;91:e1677–e1689. doi:10.1212/WNL.0000000000006435",
+      "year": 2018,
+      "citedBy": [
+        "neural-antibodies:nif"
       ]
     },
     {
@@ -1021,6 +1028,7 @@
         "neural-antibodies:arhgap26",
         "neural-antibodies:itpr1",
         "neural-antibodies:neurochondrin",
+        "neural-antibodies:nif",
         "neural-antibodies:pde10a",
         "neural-antibodies:septin-5",
         "neural-antibodies:septin-7",
@@ -1550,6 +1558,13 @@
       "year": 2019,
       "citedBy": [
         "neural-antibodies:gabab-r"
+      ]
+    },
+    {
+      "citation": "McKeon A, Shelly S, Zivelonghi C, et al. Neuronal intermediate filament IgGs in CSF: autoimmune axonopathy biomarkers. Ann Clin Transl Neurol 2021;8:425–439. doi:10.1002/acn3.51284",
+      "year": 2021,
+      "citedBy": [
+        "neural-antibodies:nif"
       ]
     },
     {
