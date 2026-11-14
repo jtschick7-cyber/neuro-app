@@ -1,12 +1,12 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+0d781827",
+  "contentVersion": "2.2.1+7397d8a4",
   "builtAt": "2026-11-14",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "3.4.3",
+      "version": "3.5.1",
       "schemaVersion": "1.3.0",
       "lastUpdated": "2026-11-14",
       "entries": 23,
@@ -1910,7 +1910,7 @@
       ]
     },
     {
-      "citation": "Patwa HS, et al. Evidence-based guideline: intravenous immunoglobulin in the treatment of neuromuscular disorders (AAN). Neurology 2012;78(13):1009-1015.",
+      "citation": "Patwa HS, et al. Evidence-based guideline: intravenous immunoglobulin in the treatment of neuromuscular disorders (AAN; since retired). Neurology 2012;78(13):1009-1015.",
       "year": 2012,
       "citedBy": [
         "acute-neuro:myasthenic-crisis"
@@ -2464,6 +2464,13 @@
       "year": 2026,
       "citedBy": [
         "acute-neuro:spinal-cord-compression"
+      ]
+    },
+    {
+      "citation": "Tavee J, et al. Updated consensus statement: intravenous immunoglobulin in the treatment of neuromuscular disorders. Report of the AANEM ad hoc committee. Muscle Nerve 2023;68(4):356-374. doi:10.1002/mus.27922 (abstract)",
+      "year": 2023,
+      "citedBy": [
+        "acute-neuro:myasthenic-crisis"
       ]
     },
     {
