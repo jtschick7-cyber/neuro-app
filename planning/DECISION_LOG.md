@@ -1320,3 +1320,10 @@ Jason, in chat: supplied the ProvayBlue label, then approved `planning/drafts/au
 - `reference-cards:inpatient-parkinson-disease`: new section "MAO-B inhibitors: drugs to avoid in hospital" (7 rows: opioids, linezolid, methylene blue, other MAOIs, dextromethorphan/cyclobenzaprine/St John's wort, antidepressants, sympathomimetics) and a rasagiline + CYP1A2 inhibitor pitfall. Sources: the Azilect, Xadago and Zelapar labels (openFDA records, read verbatim) and the ProvayBlue label. Nothing existing was changed.
 - On encoding, each row's label-section references went into its evidenceNote, after "FDA labels".
 - reference-cards 1.9.1 → 1.10.0 (MINOR). Re-signed (standing instruction): 1.10.1. Released: content 2.2.1+20ed0c73 (349 unique sources).
+
+## Audit 2026-11-12 content draft 4a: trim the 10 rarest neural antibodies (2026-11-14)
+
+Jason, in chat: approved the trim rules and caps, then the per-entry cut list, in `planning/drafts/audit-2026-11-12/04a-neural-antibodies-trim.md`.
+- itpr1, ap3b2, septin-5, septin-7, neurochondrin, trim46, arhgap26, ak5, pde10a, anna3-dach1: lines deleted by index (none reworded), titles shortened to core style. Septin-7 and AK5 keep 5 pearls; high-risk entries keep extra screening lines (approved).
+- On encoding, sources cited by no kept line were dropped by script (15 citations across 9 entries; list in PR #76).
+- neural-antibodies 0.5.1 → 0.6.0 (MINOR). Signed (standing instruction): 0.6.1. Released: content 2.2.1+a7363e0b (340 unique sources).
