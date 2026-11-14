@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+0bd42e00",
+  "contentVersion": "2.2.1+872c2985",
   "builtAt": "2026-11-14",
   "registries": [
     {
@@ -178,6 +178,11 @@
     {
       "id": "sodium-correction",
       "title": "Hyponatremia: 3% bolus and correction limits",
+      "openVerify": 0
+    },
+    {
+      "id": "rotigotine-conversion",
+      "title": "Rotigotine patch (no enteral route, BMJ 2010)",
       "openVerify": 0
     }
   ],
@@ -380,6 +385,7 @@
       "year": 2010,
       "citedBy": [
         "acute-neuro:nms-parkinsonism-hyperpyrexia",
+        "calc:rotigotine-conversion",
         "reference-cards:inpatient-parkinson-disease"
       ]
     },
@@ -1755,6 +1761,7 @@
       "citation": "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026",
       "year": 2026,
       "citedBy": [
+        "calc:rotigotine-conversion",
         "reference-cards:inpatient-parkinson-disease"
       ]
     },

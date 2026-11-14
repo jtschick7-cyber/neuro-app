@@ -362,6 +362,55 @@ export function sodiumCorrectionCheck(i: { startNa: number; currentNa: number; p
   };
 }
 
+// ---------- 10. Rotigotine conversion (BMJ 2010) ----------
+// Encodes reference-cards:inpatient-parkinson-disease, section "No reliable enteral route → rotigotine (BMJ 2010 algorithm)".
+// BMJ's own factors — deliberately separate from ledd() (Jost 2023); never pass one result into the other.
+export const BMJ_AGONIST_FACTORS = {
+  ropinirole: 20,
+  rotigotine: 20,
+  "pramipexole-base": 100,
+  cabergoline: 100,
+  bromocriptine: 10,
+  apomorphine: 10,
+} as const;
+export type BmjAgonist = keyof typeof BMJ_AGONIST_FACTORS;
+export type RotigotineInput = {
+  levodopaIrMgPerDay?: number;
+  levodopaCrMgPerDay?: number;
+  onComtInhibitor?: boolean;
+  agonists?: Partial<Record<BmjAgonist, number>>;
+};
+export const ROTIGOTINE_LABEL_MAX_WARNING = "Neupro US label maximum: 6 mg/24 h (early PD), 8 mg/24 h (advanced PD) — doses above 8 mg exceed the label";
+export const ROTIGOTINE_OVER_350_WARNING = "Adjusted LEDD above 350 mg — the BMJ rotigotine row applies only at ≤350 mg; BMJ's >350 mg branch (continuous SC apomorphine) is not in this app";
+export const ROTIGOTINE_ZERO_WARNING = "Rounds to 0 mg — below the BMJ 2 mg rounding step";
+
+/** A = levodopa (×0.7 if CR) ×1.3 if COMT; B = Σ agonist × factor; adjusted = (A + B) × 0.55; mg/24 h = adjusted ÷ 20, nearest 2 mg. */
+export function rotigotineConversion(i: RotigotineInput): CalcResult {
+  const ir = i.levodopaIrMgPerDay ?? 0, cr = i.levodopaCrMgPerDay ?? 0;
+  req("levodopaIrMgPerDay", ir, 0, 5000); req("levodopaCrMgPerDay", cr, 0, 5000);
+  let b = 0;
+  for (const [drug, mg] of Object.entries(i.agonists ?? {})) {
+    if (!(drug in BMJ_AGONIST_FACTORS)) throw new RangeError(`unknown agonist ${drug}`);
+    if (mg === undefined) continue;
+    req(`${drug} mgPerDay`, mg, 0, 5000);
+    b += mg * BMJ_AGONIST_FACTORS[drug as BmjAgonist];
+  }
+  const a = (ir + cr * 0.7) * (i.onComtInhibitor ? 1.3 : 1);
+  const leddBmj = roundTo(a + b, 0.1);
+  if (leddBmj <= 0) throw new RangeError("enter at least one levodopa or agonist dose");
+  const adjusted = roundTo((a + b) * 0.55, 0.1);
+  const mg = roundTo((a + b) * 0.55 / 20, 2);
+  const warnings = [
+    ...(adjusted > 350 ? [ROTIGOTINE_OVER_350_WARNING] : []),
+    ...(mg > 8 ? [ROTIGOTINE_LABEL_MAX_WARNING] : []),
+    ...(mg === 0 ? [ROTIGOTINE_ZERO_WARNING] : []),
+  ];
+  return {
+    value: mg, unit: "mg/24 h", display: `${fmt(mg)} mg/24 h rotigotine, once daily (adjusted LEDD ${fmt(adjusted)} mg)`,
+    capped: false, warnings, parts: { leddBmj, adjustedLedd: adjusted, unrounded: roundTo((a + b) * 0.55 / 20, 0.01) },
+  };
+}
+
 // ---------- metadata ----------
 const S = {
   aes2016: "Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48",
@@ -397,4 +446,5 @@ export const CALCULATOR_META: Record<string, CalcMeta> = {
   ledd: { id: "ledd", title: "Levodopa equivalent daily dose", formula: "Σ (daily dose × factor) for levodopa, agonists, MAO-B, amantadine; + COMT LED = covered levodopa LED × 0.33 (entacapone) or 0.5 (tolcapone, opicapone); + istradefylline = (levodopa + COMT LED) × 0.2; safinamide 50/100 mg = 150", caps: [], rounding: "0.1 mg", weightBasis: "NOT_APPLICABLE", sources: ["Jost ST, et al. Levodopa dose equivalency in Parkinson's disease: updated systematic review and proposals. Mov Disord 2023;38(7):1236-1252"], verify: [] },
   "cockcroft-gault": { id: "cockcroft-gault", title: "Creatinine clearance (Cockcroft-Gault)", formula: "(140 − age) × weight / (72 × SCr) × 0.85 if female", caps: [], rounding: "nearest 1 mL/min", weightBasis: "ACTUAL", sources: [S.xarelto, "Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron 1976;16:31-41"], verify: [] },
   "sodium-correction": { id: "sodium-correction", title: "Hyponatremia: 3% bolus and correction limits", formula: "ESE 150 mL; SALSA 2 mL/kg (moderate) or 2 mL/kg × 2 (severe); limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)", caps: [], rounding: "nearest 10 mL per bolus", weightBasis: "ACTUAL", sources: [S.ese2014, S.salsa2021, S.verbalis2013], verify: [] },
+  "rotigotine-conversion": { id: "rotigotine-conversion", title: "Rotigotine patch (no enteral route, BMJ 2010)", formula: "A = levodopa mg/day (×0.7 if CR), then ×1.3 if on a COMT inhibitor. B = agonist mg/day × factor (ropinirole 20, rotigotine 20, pramipexole base 100, cabergoline 100, bromocriptine 10, apomorphine 10). LEDD = A + B. Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily. BMJ factors, not calc:ledd (Jost 2023)", caps: [], rounding: "nearest 2 mg (exact odd-mg ties round up; app convention); warns above 8 mg/24 h (label) and adjusted LEDD >350 mg", weightBasis: "NOT_APPLICABLE", sources: ["Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718", "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"], verify: [] },
 };
