@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "3.4.1",
+  "version": "3.4.3",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-14",
   "entries": [
@@ -1969,6 +1969,7 @@
       "keyNumbers": [
         "20/30/40 rule (GBS cohort): VC <20 mL/kg, MIP weaker than −30 cmH2O, MEP <40 cmH2O predict need for ventilation (Lawn 2001)",
         "EAN/PNS 2023 (GBS): consider elective ventilation at FVC ≤20 mL/kg, MEP <30 cmH2O, or MIP <40 cmH2O; SBC <20 → ICU",
+        "Note: Lawn 2001 and EAN/PNS 2023 assign 30 and 40 to MIP and MEP in opposite order; both are transcribed as published",
         "Michigan: MDHHS 517-335-8165 (office hours); 517-335-9030 (after hours)",
         "Poison Control 1-800-222-1222"
       ],
@@ -1989,7 +1990,8 @@
       ],
       "definitions": [
         "20/30/40 rule (GBS cohort): VC <20 mL/kg, MIP weaker than −30 cmH2O, MEP <40 cmH2O predict need for ventilation (Lawn 2001)",
-        "EAN/PNS 2023 (GBS): consider elective ventilation at FVC ≤20 mL/kg, MEP <30 cmH2O, or MIP <40 cmH2O; SBC <20 → ICU"
+        "EAN/PNS 2023 (GBS): consider elective ventilation at FVC ≤20 mL/kg, MEP <30 cmH2O, or MIP <40 cmH2O; SBC <20 → ICU",
+        "Note: Lawn 2001 and EAN/PNS 2023 assign 30 and 40 to MIP and MEP in opposite order; both are transcribed as published"
       ],
       "immediateActions": [
         {
@@ -2187,7 +2189,7 @@
         "Rao AK, et al. Clinical guidelines for diagnosis and treatment of botulism, 2021. MMWR Recomm Rep 2021;70(2):1-30. doi:10.15585/mmwr.rr7002a1",
         "Michigan Department of Health and Human Services. Notification requirements for communicable disease reporting (reportable conditions pyramid), rev. 2024-03. https://www.michigan.gov/documents/mdch/ReportableCDPyramid_317048_7.pdf"
       ],
-      "lastReviewed": "2026-11-08"
+      "lastReviewed": "2026-11-14"
     },
     {
       "id": "autoimmune-encephalitis",

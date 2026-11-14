@@ -1365,3 +1365,8 @@ Jason, in chat: supplied the Luijten 2023 PDF, then said "Build mEGRIS" per the 
 - Flags from EAN/PNS 2023 Fig. 2: ≥23 ward → ICU; 25–32 >70% ventilation risk. The paper itself defines no cut-offs. Per-score probabilities are not shown: Figure 3 is a plot only, and its worked example conflicts (35% in the text vs 32% in the legend at <1 week).
 - A scope warning is always shown: admission use; developed excluding patients already ventilated, weakness after admission, and children <6; not externally validated.
 - `acute-neuro:guillain-barre-syndrome` relatedIds + `calc:megris`. acute-neuro 3.3.1 → 3.4.0 (MINOR). Signed (standing instruction): 3.4.1. Released: content 2.2.1+b191153a.
+
+## 2026-11-14 — Draft 6a: GBS threshold note (AUDIT §P3)
+Jason, in chat: "6a approved." Also decided: Home "Recently opened" is memory-only; `neural-antibodies` and `rcvs-triggers` go to 1.0.0 (separate PR).
+- `acute-neuro:neuromuscular-respiratory-failure` keyNumbers and definitions: after the EAN/PNS 2023 row, added "Note: Lawn 2001 and EAN/PNS 2023 assign 30 and 40 to MIP and MEP in opposite order; both are transcribed as published".
+- Level PATCH (the note changes no clinical meaning; the draft gave no level): acute-neuro 3.4.1 → 3.4.2. Signed (standing instruction): 3.4.3. Released: content 2.2.1+d93180e3.
