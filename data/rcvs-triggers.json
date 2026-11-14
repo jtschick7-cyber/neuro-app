@@ -5,9 +5,9 @@
     "Drug and substance triggers only — postpartum, procedural and physiologic triggers are in the thunderclap headache workup",
     "Evidence is mostly case reports and series (Sousa 2026 Table 1)"
   ],
-  "version": "0.1.1",
+  "version": "1.0.0",
   "schemaVersion": "3.0.0",
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-14",
   "entries": [
     {
       "id": "sympathomimetics",
