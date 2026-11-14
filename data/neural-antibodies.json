@@ -1,6 +1,6 @@
 {
   "title": "Neural antibodies",
-  "version": "0.6.1",
+  "version": "0.7.1",
   "schemaVersion": "1.0.0",
   "lastUpdated": "2026-11-14",
   "entries": [
@@ -3320,6 +3320,122 @@
       "sources": [
         "Hinson SR, Honorat JA, Grund EM, et al. Septin-5 and -7-IgGs: neurologic, serologic, and pathophysiologic characteristics. Ann Neurol 2022;92:1090-1101. doi:10.1002/ana.26482",
         "Gaebler AJ, Arlt FA, Scharf M, et al. Seeing elephants and drinking water from a porcelain vase - a case of septin-7 antibody-associated encephalitis presenting as a severe disorganized psychosis. Transl Psychiatry 2026;16:71. doi:10.1038/s41398-026-03877-y",
+        "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
+      ],
+      "lastReviewed": "2026-11-14"
+    },
+    {
+      "id": "nif",
+      "antigen": "Neuronal intermediate filament (NIF: α-internexin, NfL, NfM, NfH)",
+      "searchTerms": [
+        "NIF-IgG",
+        "neurofilament antibody",
+        "neurofilament light chain IgG",
+        "NfL-IgG",
+        "NfH-IgG",
+        "alpha-internexin IgG",
+        "peripherin IgG"
+      ],
+      "antigenClass": "INTRACELLULAR",
+      "pnsRisk": "NOT_CLASSIFIED",
+      "syndromes": [
+        {
+          "syndrome": "Cerebellar ataxia",
+          "typical": true
+        },
+        {
+          "syndrome": "Encephalopathy (subacute delirium and memory difficulty; classical limbic encephalitis rare)",
+          "typical": true
+        },
+        {
+          "syndrome": "Myelopathy / myelopolyradiculoneuropathy",
+          "typical": false
+        },
+        {
+          "syndrome": "Other: cranial neuropathies, peripheral neuropathy, dysautonomia",
+          "typical": false
+        }
+      ],
+      "demographics": [
+        "Median onset 62 y (range 18–88); 33/65 female (51%) (Basal 2018)",
+        "CSF-positive cohort: median 61 y (range 21–88); 25/41 male (61%) (McKeon 2021)"
+      ],
+      "tumors": [
+        {
+          "tumor": "Small-cell carcinoma",
+          "frequencyText": "5/21 NfL-IgG-positive pts (Basal 2018)"
+        },
+        {
+          "tumor": "Merkel cell carcinoma",
+          "frequencyText": "3/21 (2 metastatic, unknown skin primary) (Basal 2018)"
+        },
+        {
+          "tumor": "Other neuroendocrine (pancreatic NET 1, metastatic NE of unknown primary 1)",
+          "frequencyText": "2/21 (Basal 2018)"
+        },
+        {
+          "tumor": "Other: hepatocellular 2, non-Hodgkin lymphoma 2, uterine leiomyosarcoma 1, NSCLC 1",
+          "frequencyText": "6/21 (Basal 2018)"
+        }
+      ],
+      "cancerScreening": [
+        "With NfL-IgG: cancer in 16/21 (77%), found around neuro onset; neuroendocrine lineage in 10/21 (Basal 2018)",
+        "Without NfL-IgG: cancer in 15/44, neuroendocrine in only 1/44; authors call this profile of uncertain clinical significance (Basal 2018)",
+        "CSF-positive cohort: neuroendocrine-lineage carcinoma in 12 (small cell 6, Merkel cell 5, pancreatic 1); NfL-IgG in 11/12 of them vs 8/29 others (McKeon 2021)",
+        "Other triggers: systemic infection (incl. ehrlichiosis) in 7 and checkpoint-inhibitor therapy in 4 of 41 (McKeon 2021)"
+      ],
+      "testing": {
+        "preferredSpecimen": "BOTH",
+        "rationale": [
+          "CSF-positive cohort: companion serum NIF-IgG negative in 20/27; authors state serum was neither sensitive nor specific (McKeon 2021)",
+          "Serum-defined cohort: of 7 with paired samples, positive in both 2, CSF only 5 (Basal 2018)"
+        ],
+        "methodNotes": [
+          "Tissue IFA filamentous pattern, confirmed by CBA panel (α-internexin, NfL, NfM, NfH ± peripherin) (Basal 2018; McKeon 2021)",
+          "Serum CBA alone is not specific: CBA-positive in 19/257 controls (7%), but IFA + CBA positive in only 2 (both small-cell carcinoma) (Basal 2018)"
+        ]
+      },
+      "csf": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Inflammatory in 7/10 with data (Basal 2018)",
+          "Inflammatory CSF in 75% (McKeon 2021)"
+        ],
+        "typicalFindings": [
+          "Lymphocytic pleocytosis or CSF-restricted oligoclonal bands (Basal 2018)",
+          "CSF NfL protein raised in NfL-IgG-positive pts (median 6,718 ng/L, n=8) vs controls (McKeon 2021)"
+        ]
+      },
+      "mri": {
+        "normalLikelihood": "SOMETIMES_NORMAL",
+        "normalPercentText": [
+          "Normal at presentation in 4/9 (Basal 2018)",
+          "Normal in 12/36 (35%), all imaged outside Mayo (McKeon 2021)"
+        ],
+        "typicalFindings": [
+          "Cerebellar atrophy in ataxic pts; hippocampal T2 signal (limbic); cranial nerve enhancement (Basal 2018)",
+          "Confluent hazy deep white-matter T2 change, usually non-enhancing; longitudinally extensive cord T2 change in 3; nerve-root enhancement in 2 (McKeon 2021)"
+        ]
+      },
+      "otherTests": [
+        "EEG abnormal in 4/6 with encephalopathy, generalized slowing in all (McKeon 2021)"
+      ],
+      "immunotherapyResponse": "USUALLY_GOOD",
+      "pearls": [
+        "Not tiered in PNS-Care 2021 (Graus 2021); cancer in 16/21 (77%) with NfL-IgG (Basal 2018)",
+        "NfL-IgG is the key result: it marks the paraneoplastic CNS phenotype (ataxia or encephalopathy) with neuroendocrine cancer (Basal 2018)",
+        "Improvement in 5/7 with immunotherapy data, but 4 died with progressive symptoms; median follow-up only 2 mo (Basal 2018)",
+        "CSF-positive cohort: immunotherapy response 77%; authors frame NIF-IgG as treatable axonopathy, sometimes paraneoplastic or parainfectious (McKeon 2021)",
+        "Very rare: 0.03% of 118,599 CSF specimens (McKeon 2021)"
+      ],
+      "verify": [],
+      "relatedIds": [
+        "neural-antibodies:anti-hu",
+        "neural-antibodies:cv2-crmp5"
+      ],
+      "sources": [
+        "Basal E, Zalewski N, Kryzer TJ, et al. Paraneoplastic neuronal intermediate filament autoimmunity. Neurology 2018;91:e1677–e1689. doi:10.1212/WNL.0000000000006435",
+        "McKeon A, Shelly S, Zivelonghi C, et al. Neuronal intermediate filament IgGs in CSF: autoimmune axonopathy biomarkers. Ann Clin Transl Neurol 2021;8:425–439. doi:10.1002/acn3.51284",
         "Graus F, Vogrig A, Muñiz-Castrillo S, et al. Updated diagnostic criteria for paraneoplastic neurologic syndromes. Neurol Neuroimmunol Neuroinflamm 2021;8:e1014. doi:10.1212/NXI.0000000000001014"
       ],
       "lastReviewed": "2026-11-14"
