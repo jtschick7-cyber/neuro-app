@@ -1385,3 +1385,11 @@ Jason, in chat: chose a central tag file over inline tags, then "Approve 08".
 - New `data/source-types.json` 1.0.0: all 344 unique citations tagged (GUIDELINE 103, LABEL 87, TRIAL 12, REVIEW 46, OTHER 96) as listed in draft 08. `validate` fails on an untagged citation or a tag that matches none.
 - Banner: OLD_SOURCES when current year − newest GUIDELINE/LABEL citation year ≥ 10 (`OLD_SOURCE_YEARS` in copy.ts). Years are precomputed at release into `generated/source-years.json` (173 entries), so the tag file doesn't ship in the bundle. Flags today: viral-encephalitis, serotonin-syndrome, nms-parkinsonism-hyperpyrexia, susac-syndrome, flumazenil.
 - No entries edited, so nothing was re-signed. Released: content 2.2.1+80727800.
+
+## 2026-11-14 — Draft 09: P2-14 calculator wording
+Jason, in chat: "Proceed to P2-14", then "Approve 09" (choices decided 13 Nov; osmolar gap >20 already done 12 Nov).
+- phenytoin-correction META: states no 0.92 salt factor is applied (~8% lower).
+- hypertonic-saline-bolus: 23.4% display drops mL/h ("30 mL 23.4% NaCl over 5 min; …"); 3% keeps its rate. Volume math unchanged.
+- sodium-correction: non-integer period number now throws; META explains the period number.
+- cockcroft-gault META: actual weight (Xarelto PI §2.1); edema/obesity and low muscle mass caveats; KDIGO 2024 PP 4.2.3–4.2.4 and Fig. 11 (full PDF read). KDIGO 2024 added to sources. No creatinine floor (neither source gives one).
+- App 2.2.1 → 2.3.0. Released: content 2.3.0+c4816792. Tests 310 passed.
