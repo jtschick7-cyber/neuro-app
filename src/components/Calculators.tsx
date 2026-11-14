@@ -22,7 +22,7 @@ import {
   type CalcResult,
   type LeddDrug,
 } from '../lib/calculators';
-import { BANNERS } from '../content/copy';
+import { BANNERS, CALC_COPY } from '../content/copy';
 import { parsePositive, type Sex } from '../lib/patientContext';
 import { CALC_CARD } from '../lib/nav';
 
@@ -130,12 +130,25 @@ const LEDD_LABELS: Record<LeddDrug, string> = {
   safinamide: 'Safinamide',
 };
 const LEDD_DRUGS = [...Object.keys(LEVODOPA_FACTORS), ...Object.keys(OTHER_FACTORS), 'safinamide'] as LeddDrug[];
+/** Less-used agents, behind "More drugs" (decided 13 Nov 2026). Their factors are unchanged and still count when entered. */
+export const LEDD_MORE: LeddDrug[] = [
+  'selegiline-odt', 'levodopa-inhaled', 'levodopa-carbidopa-intestinal-gel', 'foslevodopa-foscarbidopa-sc',
+  'apomorphine-sl', 'bromocriptine', 'cabergoline', 'amantadine-er-osmolex', 'pramipexole-base',
+];
+const LEDD_MAIN = LEDD_DRUGS.filter((d) => !LEDD_MORE.includes(d));
 type Comt = keyof typeof COMT_FACTORS | '';
 
 function LeddCard() {
   const [doses, setDoses] = useState<Partial<Record<LeddDrug, string>>>({});
   const [comt, setComt] = useState<Comt>('');
   const [istra, setIstra] = useState(false);
+  const [showMore, setShowMore] = useState(false);
+  // Never hide a field that holds a dose: an entered "more" drug keeps the section open.
+  const moreHasDose = LEDD_MORE.some((d) => (doses[d] ?? '') !== '');
+  const moreOpen = showMore || moreHasDose;
+  const field = (d: LeddDrug) => (
+    <NumberField key={d} label={LEDD_LABELS[d]} value={doses[d] ?? ''} onChange={(v) => setDoses((p) => ({ ...p, [d]: v }))} />
+  );
 
   const items = LEDD_DRUGS.flatMap((drug) => {
     const v = parseNonNegative(doses[drug] ?? '');
@@ -145,11 +158,18 @@ function LeddCard() {
 
   return (
     <Card noteId="calc-ledd" title="Levodopa equivalent daily dose" subtitle="Total daily doses (mg/day) — Jost 2023" icon={<Pill size={18} />} metaIds={['ledd']}>
-      <div className="grid grid-cols-2 gap-2">
-        {LEDD_DRUGS.map((d) => (
-          <NumberField key={d} label={LEDD_LABELS[d]} value={doses[d] ?? ''} onChange={(v) => setDoses((p) => ({ ...p, [d]: v }))} />
-        ))}
-      </div>
+      <div className="grid grid-cols-2 gap-2">{LEDD_MAIN.map(field)}</div>
+      {!moreHasDose && (
+      <button
+        type="button"
+        aria-expanded={moreOpen}
+        onClick={() => setShowMore((o) => !o)}
+        className="mt-2 text-sm font-medium text-sky-400"
+      >
+        {moreOpen ? CALC_COPY.leddFewer : CALC_COPY.leddMore}
+      </button>
+      )}
+      {moreOpen && <div className="mt-2 grid grid-cols-2 gap-2">{LEDD_MORE.map(field)}</div>}
       <div className="mt-2 grid grid-cols-2 gap-2">
         <label className="block text-xs text-slate-400">
           COMT inhibitor
