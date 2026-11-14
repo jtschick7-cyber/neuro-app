@@ -531,6 +531,10 @@
     "date": "2026-11-05",
     "sha256": "6e821109521dd496f8afb58197ea0ec1c41ea00530dbd2055c195f52c4c65d19"
   },
+  "reference-cards:antibody-result-interpretation": {
+    "date": "2026-11-14",
+    "sha256": "a92d79b91da28cf6d29e309b92d2c120b79d073260aec6fb0733b84b7e68ef5a"
+  },
   "reference-cards:asah-numbers": {
     "date": "2026-11-08",
     "sha256": "53135a2d4e6e9f75b7d4f7b9f5c94550e12ce66ee7309c33775bc15e91d3df00"
