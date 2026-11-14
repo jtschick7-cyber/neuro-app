@@ -73,3 +73,11 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - Weight: ACTUAL
 - Sources: Spasovski G, et al. Clinical practice guideline on diagnosis and treatment of hyponatraemia. Eur J Endocrinol 2014;170(3):G1-G47. doi:10.1530/EJE-13-1020 | Baek SH, et al. Risk of overcorrection in rapid intermittent bolus vs slow continuous infusion therapies of hypertonic saline for symptomatic hyponatremia (SALSA). JAMA Intern Med 2021;181(1):81-92. doi:10.1001/jamainternmed.2020.5519 | Verbalis JG, et al. Diagnosis, evaluation, and treatment of hyponatremia: expert panel recommendations. Am J Med 2013;126(10 Suppl 1):S1-S42. doi:10.1016/j.amjmed.2013.07.006
 - VERIFY: none
+
+## Rotigotine patch (no enteral route, BMJ 2010) (`rotigotine-conversion`)
+- Formula: A = levodopa mg/day (×0.7 if CR), then ×1.3 if on a COMT inhibitor. B = agonist mg/day × factor (ropinirole 20, rotigotine 20, pramipexole base 100, cabergoline 100, bromocriptine 10, apomorphine 10). LEDD = A + B. Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily. BMJ factors, not calc:ledd (Jost 2023)
+- Caps: none
+- Rounding: nearest 2 mg (exact odd-mg ties round up; app convention); warns above 8 mg/24 h (label) and adjusted LEDD >350 mg
+- Weight: NOT_APPLICABLE
+- Sources: Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718 | Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026
+- VERIFY: none

@@ -66,6 +66,38 @@ describe("ledd", () => {
   ] as const)("%j %j → %d", (items, opts, total) => expect(C.ledd(items as any, opts as any).value).toBe(total));
 });
 
+describe("rotigotine-conversion (BMJ 2010, reference-cards:inpatient-parkinson-disease)", () => {
+  it("card example: levodopa IR 300 mg/day → 8 mg/24 h", () => {
+    const r = C.rotigotineConversion({ levodopaIrMgPerDay: 300 });
+    expect(r.value).toBe(8);
+    expect(r.parts?.adjustedLedd).toBe(165);
+    expect(r.warnings).toEqual([]);
+  });
+  it("card example: levodopa IR 600 mg/day → 16 mg/24 h with the label warning", () => {
+    const r = C.rotigotineConversion({ levodopaIrMgPerDay: 600 });
+    expect(r.value).toBe(16);
+    expect(r.parts?.adjustedLedd).toBe(330);
+    expect(r.warnings).toEqual([C.ROTIGOTINE_LABEL_MAX_WARNING]);
+  });
+  it.each([
+    [{ levodopaCrMgPerDay: 400 }, 154, 8], // 400×0.7=280 → 154 → 7.7
+    [{ levodopaIrMgPerDay: 400, onComtInhibitor: true }, 286, 14], // 520 → 286 → 14.3
+    [{ agonists: { ropinirole: 8 } }, 88, 4], // 160 → 88 → 4.4
+    [{ levodopaIrMgPerDay: 200, agonists: { "pramipexole-base": 1 } }, 165, 8], // 200+100
+    [{ levodopaIrMgPerDay: 200, levodopaCrMgPerDay: 200, onComtInhibitor: true, agonists: { rotigotine: 4 } }, 287.1, 14], // (200+140)×1.3=442 +80=522 → 14.355
+  ] as const)("%j → adjusted %d, %d mg", (input, adj, mg) => {
+    const r = C.rotigotineConversion(input);
+    expect(r.parts?.adjustedLedd).toBe(adj);
+    expect(r.value).toBe(mg);
+  });
+  it("exact tie (IR 400 → 220 → 11.0 mg) rounds up to 12 (app convention)", () => expect(C.rotigotineConversion({ levodopaIrMgPerDay: 400 }).value).toBe(12));
+  it("warns above adjusted LEDD 350", () =>
+    expect(C.rotigotineConversion({ levodopaIrMgPerDay: 700 }).warnings).toEqual([C.ROTIGOTINE_OVER_350_WARNING, C.ROTIGOTINE_LABEL_MAX_WARNING]));
+  it("warns when it rounds to 0", () => expect(C.rotigotineConversion({ levodopaIrMgPerDay: 30 }).warnings).toEqual([C.ROTIGOTINE_ZERO_WARNING]));
+  it.each([[{}], [{ levodopaIrMgPerDay: -1 }], [{ levodopaIrMgPerDay: 5001 }], [{ agonists: { ropinirole: Number.NaN } }]])("%j throws RangeError", (input) =>
+    expect(() => C.rotigotineConversion(input)).toThrow(RangeError));
+});
+
 describe("cockcroft-gault", () => {
   it.each([[60, 70, 1.0, false, 78], [60, 70, 1.0, true, 66], [80, 50, 2.0, false, 21], [40, 100, 0.8, false, 174], [90, 45, 1.5, true, 18]])(
     "age %d wt %d SCr %d female %s → %d", (age, wt, scr, f, out) => expect(C.cockcroftGault(age, wt, scr, f).value).toBe(out));

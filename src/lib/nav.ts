@@ -82,4 +82,5 @@ export const CALC_CARD: Record<string, string> = {
   'cockcroft-gault': 'calc-crcl',
   ledd: 'calc-ledd',
   'sodium-correction': 'calc-sodium',
+  'rotigotine-conversion': 'calc-rotigotine',
 };
