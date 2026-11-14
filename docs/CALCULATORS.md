@@ -27,7 +27,7 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - VERIFY: none
 
 ## Phenytoin level: albumin correction and reload estimate (`phenytoin-correction`)
-- Formula: Corrected total = measured total / (0.2 × albumin + 0.1) [Sheiner-Tozer]; on dialysis: / (0.1 × albumin + 0.1) [Mauro 1989]. Albumin g/dL, phenytoin mcg/mL. Not corrected if albumin not entered, or albumin ≥4.4 g/dL on the standard equation. Estimated free = corrected × 0.1. Reload (mg PE) = (target − corrected) × 0.7 L/kg × actual weight; target default 15 (10–20)
+- Formula: Corrected total = measured total / (0.2 × albumin + 0.1) [Sheiner-Tozer]; on dialysis: / (0.1 × albumin + 0.1) [Mauro 1989]. Albumin g/dL, phenytoin mcg/mL. Not corrected if albumin not entered, or albumin ≥4.4 g/dL on the standard equation. Estimated free = corrected × 0.1. Reload (mg PE) = (target − corrected) × 0.7 L/kg × actual weight; target default 15 (10–20). No 0.92 phenytoin sodium salt factor is applied (reload about 8% lower than a salt-adjusted dose).
 - Caps: 10 mg PE/kg (rounded down to 50 mg PE); 1500 mg PE; 150 mg PE/min
 - Rounding: Corrected total and estimated free to 0.1 mcg/mL; reload to nearest 50 mg PE (= whole mL at 50 mg PE/mL), then cap (app convention)
 - Weight: ACTUAL
@@ -59,15 +59,15 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - VERIFY: none
 
 ## Creatinine clearance (Cockcroft-Gault) (`cockcroft-gault`)
-- Formula: (140 − age) × weight / (72 × SCr) × 0.85 if female
+- Formula: (140 − age) × weight / (72 × SCr) × 0.85 if female. Uses actual body weight (Xarelto PI §2.1: "Calculate CrCl based on actual weight"). Weight can be affected by edema or obesity, and creatinine-based estimates may be misleading with very low muscle mass (KDIGO 2024 ch. 4 and Fig. 11). In extremes of body weight, KDIGO suggests nonindexed eGFR (PP 4.2.4); where accuracy matters, creatinine + cystatin C or measured GFR (PP 4.2.3).
 - Caps: none
 - Rounding: nearest 1 mL/min
 - Weight: ACTUAL
-- Sources: Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label) | Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron 1976;16:31-41
+- Sources: Xarelto (rivaroxaban) US prescribing information. Janssen; revised 3/2026 (user-supplied label) | Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron 1976;16:31-41 | Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease. Kidney Int 2024;105(4S):S117-S314 (ch. 4, PP 4.2.3–4.2.4; Fig. 11)
 - VERIFY: none
 
 ## Hyponatremia: 3% bolus and correction limits (`sodium-correction`)
-- Formula: ESE 150 mL; SALSA 2 mL/kg (moderate) or 2 mL/kg × 2 (severe); limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)
+- Formula: ESE 150 mL; SALSA 2 mL/kg (moderate) or 2 mL/kg × 2 (severe); limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis). Period number = whole 24-h periods since the first correction (1 = first 24 h).
 - Caps: none
 - Rounding: nearest 10 mL per bolus
 - Weight: ACTUAL

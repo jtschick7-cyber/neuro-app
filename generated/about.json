@@ -1,6 +1,6 @@
 {
-  "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+80727800",
+  "appVersion": "2.3.0",
+  "contentVersion": "2.3.0+c4816792",
   "builtAt": "2026-11-14",
   "registries": [
     {
@@ -1369,6 +1369,13 @@
       "citedBy": [
         "antiseizure-medications:phenytoin-fosphenytoin",
         "calc:phenytoin-correction"
+      ]
+    },
+    {
+      "citation": "Kidney Disease: Improving Global Outcomes (KDIGO) CKD Work Group. KDIGO 2024 clinical practice guideline for the evaluation and management of chronic kidney disease. Kidney Int 2024;105(4S):S117-S314 (ch. 4, PP 4.2.3–4.2.4; Fig. 11)",
+      "year": 2024,
+      "citedBy": [
+        "calc:cockcroft-gault"
       ]
     },
     {

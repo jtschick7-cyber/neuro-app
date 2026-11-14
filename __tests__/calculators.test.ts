@@ -332,3 +332,18 @@ describe("phenytoin-correction (worked cases, planning/drafts/calc-phenytoin-cor
     ["total NaN", { measuredTotal: Number.NaN }],
   ])("case 14: %s throws RangeError", (_l, input) => expect(() => C.phenytoinCorrection(input)).toThrow(RangeError));
 });
+
+describe("audit P2-14 (draft 09)", () => {
+  it("23.4% push shows duration without mL/h; 3% keeps its rate", () => {
+    expect(C.hypertonicSalineIcp("23.4%").display).toBe("30 mL 23.4% NaCl over 5 min; 120.1 mEq Na");
+    expect(C.hypertonicSalineIcp("3%").display).toMatch(/over 30 min \(500 mL\/h\)/);
+  });
+  it("period number must be a whole number", () => {
+    expect(() => C.sodiumCorrectionCheck({ startNa: 115, currentNa: 120, periodNumber: 1.5, odsRisk: false })).toThrow("periodNumber must be a whole number between 1 and 10");
+  });
+  it("META states the salt factor, period meaning and Cockcroft-Gault cautions", () => {
+    expect(C.CALCULATOR_META["phenytoin-correction"].formula).toContain("No 0.92 phenytoin sodium salt factor is applied");
+    expect(C.CALCULATOR_META["sodium-correction"].formula).toContain("Period number = whole 24-h periods");
+    expect(C.CALCULATOR_META["cockcroft-gault"].formula).toContain("KDIGO suggests nonindexed eGFR (PP 4.2.4)");
+  });
+});
