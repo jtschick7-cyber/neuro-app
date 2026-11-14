@@ -14,6 +14,7 @@ import UpdateBar from './components/UpdateBar';
 import ErrorBoundary from './components/ErrorBoundary';
 import { usePatientContext, type PatientContext } from './lib/patientContext';
 import { useRoute } from './lib/useRoute';
+import { recordRecent } from './lib/recent';
 import { sectionOf, toHash, type Route } from './lib/route';
 import { getRegistry, isCautionListId } from './lib/nav';
 import about from '../generated/about.json';
@@ -34,6 +35,7 @@ export default function App() {
   const hash = toHash(route);
   useEffect(() => {
     if (!(route.kind === 'calc' && route.calcId)) window.scrollTo(0, 0);
+    if (route.kind === 'registry' && route.entryId) recordRecent(`${route.registry}:${route.entryId}`);
   }, [hash]);
 
   // UpdateBar sits outside the gate so the service worker registers (and precaches) on first load.
