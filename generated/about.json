@@ -1,6 +1,6 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+d93180e3",
+  "contentVersion": "2.2.1+0d781827",
   "builtAt": "2026-11-14",
   "registries": [
     {
@@ -71,7 +71,7 @@
     {
       "id": "neural-antibodies",
       "title": "Neural antibodies",
-      "version": "0.7.1",
+      "version": "1.0.0",
       "schemaVersion": "1.0.0",
       "lastUpdated": "2026-11-14",
       "entries": 37,
@@ -84,9 +84,9 @@
     {
       "id": "rcvs-triggers",
       "title": "RCVS triggers to avoid",
-      "version": "0.1.1",
+      "version": "1.0.0",
       "schemaVersion": "3.0.0",
-      "lastUpdated": "2026-11-05",
+      "lastUpdated": "2026-11-14",
       "entries": 8,
       "reviewed": 8,
       "unreviewedIds": [],

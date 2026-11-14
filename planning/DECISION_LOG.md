@@ -1370,3 +1370,7 @@ Jason, in chat: supplied the Luijten 2023 PDF, then said "Build mEGRIS" per the 
 Jason, in chat: "6a approved." Also decided: Home "Recently opened" is memory-only; `neural-antibodies` and `rcvs-triggers` go to 1.0.0 (separate PR).
 - `acute-neuro:neuromuscular-respiratory-failure` keyNumbers and definitions: after the EAN/PNS 2023 row, added "Note: Lawn 2001 and EAN/PNS 2023 assign 30 and 40 to MIP and MEP in opposite order; both are transcribed as published".
 - Level PATCH (the note changes no clinical meaning; the draft gave no level): acute-neuro 3.4.1 → 3.4.2. Signed (standing instruction): 3.4.3. Released: content 2.2.1+d93180e3.
+
+## 2026-11-14 — Registry versions to 1.0.0 (AUDIT §P3)
+Jason, in chat: "neural-antibodies (0.5.1) and rcvs-triggers (0.1.1) should go to 1.0.0", then "do the 1.0.0 bumps".
+- Header-only change: `neural-antibodies` 0.7.1 → 1.0.0 (the audit's 0.5.1 was out of date), `rcvs-triggers` 0.1.1 → 1.0.0; `lastUpdated` set to 2026-11-14. No entries were edited, so there was no re-sign. Released: content 2.2.1+0d781827.
