@@ -1,6 +1,6 @@
 {
   "title": "Acute Non-Vascular Neurologic Emergencies",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "schemaVersion": "1.3.0",
   "lastUpdated": "2026-11-14",
   "entries": [
@@ -1671,7 +1671,7 @@
         "Imaavy (nipocalimab-aahu) injection US prescribing information. Janssen Biotech; revised 8/2026",
         "Uplizna (inebilizumab-cdon) injection US prescribing information. Horizon Therapeutics (Amgen); revised 9/2026"
       ],
-      "lastReviewed": "UNREVIEWED"
+      "lastReviewed": "2026-11-14"
     },
     {
       "id": "guillain-barre-syndrome",
