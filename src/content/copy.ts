@@ -245,3 +245,9 @@ export const ERROR_BOUNDARY_COPY = {
   reload: "Reload",
   home: "Back to home",
 };
+
+/** Calculator UI labels. */
+export const CALC_COPY = {
+  leddMore: "More drugs",
+  leddFewer: "Fewer drugs",
+};
