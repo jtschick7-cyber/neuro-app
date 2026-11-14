@@ -155,7 +155,7 @@ export function EntryShell({
         <PinButton registryId={registry} entryId={entry.id} />
       </div>
       <p className="text-xs text-slate-400">{CATEGORY_LABEL[entry.category] ?? entry.category}</p>
-      <BannerList entry={entry} />
+      <BannerList entry={entry} registry={registry} />
       <KeyNumbers items={entry.keyNumbers} />
       <JumpChips targets={jump} />
       {children}

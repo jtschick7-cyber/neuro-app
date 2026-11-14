@@ -6,8 +6,8 @@
  */
 import { execSync } from "node:child_process";
 
-const PATHS = ["schema", "docs/CALCULATORS.md", "generated/about.json"];
-for (const s of ["build:schema", "build:calc-doc", "build:about"]) execSync(`npm run -s ${s}`, { stdio: "inherit" });
+const PATHS = ["schema", "docs/CALCULATORS.md", "generated/about.json", "generated/source-years.json"];
+for (const s of ["build:schema", "build:calc-doc", "build:source-years", "build:about"]) execSync(`npm run -s ${s}`, { stdio: "inherit" });
 
 const dirty = execSync(`git status --porcelain -- ${PATHS.join(" ")}`).toString().trim();
 if (dirty) {

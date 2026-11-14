@@ -24,6 +24,8 @@ import { CautionListRegistry, CAUTION_LIST_SCHEMA_VERSION, type CautionEntry } f
 import { DrugInteractionsRegistry, DRUG_INTERACTIONS_SCHEMA_VERSION } from "../schema/drug-interactions";
 import { AntiseizureMedicationsRegistry, ANTISEIZURE_MEDICATIONS_SCHEMA_VERSION } from "../schema/antiseizure-medications";
 import { ReferenceCardsRegistry, REFERENCE_CARDS_SCHEMA_VERSION } from "../schema/reference-cards";
+import { SourceTypes } from "../schema/source-types";
+import { collectSources } from "./source-years";
 import { CALCULATOR_META } from "../src/lib/calculators";
 import { findPlaceholderText } from "./placeholder-text";
 import { SIGNOFF_FILE, checkSignoffs, collectCalculatorIds, findProseRefProblems, readSignoffs, type RawEntry } from "./integrity";
@@ -42,6 +44,7 @@ const SCHEMAS: Record<string, ZodTypeAny> = {
   "asm-interactions": DrugInteractionsRegistry,
   "antiseizure-medications": AntiseizureMedicationsRegistry,
   "reference-cards": ReferenceCardsRegistry,
+  "source-types": SourceTypes, // not an entries registry; coverage checked below
 };
 
 // data/*.json schemaVersion must equal the constant in its schema file (syndrome-vocabulary has none).
@@ -79,6 +82,8 @@ const warn = (m: string) => (warnings++, console.warn(`WARN   ${m}`));
 type Entry = { id: string; relatedIds?: string[]; verify?: string[]; lastReviewed?: string };
 const loaded = new Map<string, Entry[]>();
 let syndromes: SyndromeVocabularyData | null = null;
+let sourceTypes: Record<string, string> | null = null;
+const rawEntries = new Map<string, unknown[]>();
 
 for (const file of files) {
   const reg = basename(file, ".json");
@@ -106,6 +111,11 @@ for (const file of files) {
     syndromes = res.data as SyndromeVocabularyData;
     continue;
   }
+  if (reg === "source-types") {
+    sourceTypes = (res.data as { types: Record<string, string> }).types;
+    continue;
+  }
+  rawEntries.set(reg, (raw as { entries: unknown[] }).entries);
   const entries = (res.data as { entries: Entry[] }).entries;
   const seen = new Set<string>();
   for (const e of entries) {
@@ -120,6 +130,13 @@ for (const file of files) {
   for (const p of checkSignoffs(reg, (raw as { entries: RawEntry[] }).entries, signoffs, release)) (p.level === "error" ? err : warn)(p.message);
   loaded.set(reg, entries);
 }
+
+// P2-2: every citation has exactly one source-type tag, and every tag matches a citation (full runs only).
+if (sourceTypes && fileArgs.length === 0) {
+  const cited = collectSources([...rawEntries.values()]);
+  for (const s of cited) if (!(s in sourceTypes)) err(`source-types: no tag for citation "${s.slice(0, 100)}"`);
+  for (const s of Object.keys(sourceTypes)) if (!cited.has(s)) err(`source-types: tag matches no citation "${s.slice(0, 100)}"`);
+} else if (!sourceTypes && fileArgs.length === 0) err("data/source-types.json missing");
 
 // Cross-reference integrity
 const manifestPath = files.length ? join(dirname(files[0]), "calculators.manifest.json") : "";

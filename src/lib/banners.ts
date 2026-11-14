@@ -1,8 +1,8 @@
 // Entry banners and footer text. Wording lives in src/content/copy.ts; this file only decides which apply.
 
-import { BANNERS, CALC_FOOTER, FOOTER, STALE_AFTER_MONTHS } from '../content/copy';
+import { BANNERS, CALC_FOOTER, FOOTER, OLD_SOURCE_YEARS, STALE_AFTER_MONTHS } from '../content/copy';
 
-export type EntryBannerKey = 'UNREVIEWED' | 'VERIFY' | 'STALE' | 'NOT_US_MARKETED';
+export type EntryBannerKey = 'UNREVIEWED' | 'VERIFY' | 'STALE' | 'OLD_SOURCES' | 'NOT_US_MARKETED';
 
 export interface EntryBanner {
   key: EntryBannerKey;
@@ -28,6 +28,13 @@ export interface BannerInput {
   verify: string[];
   /** Omit for registries without a US-market flag. */
   usMarketed?: boolean;
+  /** Newest GUIDELINE/LABEL citation year (generated/source-years.json); omit when the entry cites none. */
+  newestSourceYear?: number;
+}
+
+/** P2-2: true when the newest GUIDELINE/LABEL source is OLD_SOURCE_YEARS or more calendar years old. */
+export function hasOldSources(year: number | undefined, now: Date, years: number = OLD_SOURCE_YEARS): boolean {
+  return year !== undefined && now.getUTCFullYear() - year >= years;
 }
 
 /** Banners in display order. NOT_US_MARKETED is always last (grey, never hides the entry). */
@@ -36,6 +43,7 @@ export function entryBanners(e: BannerInput, now: Date = new Date()): EntryBanne
   if (e.lastReviewed === 'UNREVIEWED') out.push({ key: 'UNREVIEWED', text: BANNERS.UNREVIEWED });
   if (e.verify.length > 0) out.push({ key: 'VERIFY', text: BANNERS.VERIFY });
   if (isStale(e.lastReviewed, now)) out.push({ key: 'STALE', text: fillTemplate(BANNERS.STALE, { months: STALE_AFTER_MONTHS }) });
+  if (hasOldSources(e.newestSourceYear, now)) out.push({ key: 'OLD_SOURCES', text: fillTemplate(BANNERS.OLD_SOURCES, { year: e.newestSourceYear ?? '' }) });
   if (e.usMarketed === false) out.push({ key: 'NOT_US_MARKETED', text: BANNERS.NOT_US_MARKETED });
   return out;
 }
