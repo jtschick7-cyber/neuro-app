@@ -1334,3 +1334,12 @@ Jason, in chat: supplied the Graus 2021 PDF (NIF is in none of its three risk ta
 - New `neural-antibodies:nif` (Basal 2018 and McKeon 2021, full text via PMC; Graus 2021). pnsRisk NOT_CLASSIFIED. Encoded with exact-match asserts against the draft.
 - `data/syndrome-vocabulary.json`: 6 nif rows (typical: cerebellar-ataxia, encephalitis-diffuse).
 - neural-antibodies 0.6.1 → 0.7.0 (MINOR). Signed (standing instruction): 0.7.1. Released: content 2.2.1+4b05708e (342 unique sources).
+
+## Audit 2026-11-12 content draft 4c: antibody result interpretation card (2026-11-14)
+
+Jason, in chat: approved the title and id, accepted Claude's recommendations on Q2 and Q3, then asked to encode, sign and release `planning/drafts/audit-2026-11-12/04c-reference-card-low-titer-antibodies.md`.
+- New `reference-cards:antibody-result-interpretation`, 5 sections and 23 rows: Graus 2021 Table 4; Déchelotte 2020; Ruiz-García 2021; Sechi 2021; Muñoz-Lopetegi 2020; Flanagan 2023 (opened via PMC; Flanagan's Table 2 and discussion not read).
+- Q2: the GAD65 cut-off is EVIDENCE_SUMMARY, assay-specific (Medizym, IU/mL; not transferable to nmol/L), and its ">" matches the signed gad65 entry; relatedIds neural-antibodies:gad65.
+- Q3: no VGKC row. The signed LGI1-entry line is reused verbatim as a note, with Graus 2016 (Lancet Neurol) as a source.
+- Encoded by parsing the draft tables with count asserts; existing source strings reused verbatim.
+- reference-cards 1.10.1 → 1.11.0 (MINOR). Signed (standing instruction): 1.11.1. Released: content 2.2.1+0bd42e00 (346 unique sources).
