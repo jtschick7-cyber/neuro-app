@@ -352,8 +352,8 @@
     "sha256": "46fdce3e26399d05de402057d05620708be4bc6d27f3c13a2726e25e46e768e2"
   },
   "neural-antibodies:ak5": {
-    "date": "2026-11-05",
-    "sha256": "224b846a637dedcfb09d57e18bfb77579d65a9e0f4e129b44b1b61484ede4b22"
+    "date": "2026-11-14",
+    "sha256": "4f3c672d2d659e4849ff0f0396c72f1586e5b55450ee1183650be658dc87181d"
   },
   "neural-antibodies:ampar": {
     "date": "2026-11-05",
@@ -364,8 +364,8 @@
     "sha256": "acf6025cec3641e04eb77d9f624b637a67d5020e05c977c44becac2714fdfb2b"
   },
   "neural-antibodies:anna3-dach1": {
-    "date": "2026-11-05",
-    "sha256": "5d6ca6965a896f14f1a8882bf080ab63d02b012a116ee104b801c6a192857aae"
+    "date": "2026-11-14",
+    "sha256": "90b0fe0216cba35756f6a509473effc037d930d7bd3ddb2644ef3273e95dda4d"
   },
   "neural-antibodies:anti-hu": {
     "date": "2026-11-05",
@@ -380,16 +380,16 @@
     "sha256": "22efd92cef44e7710daacc82e2974142f74a3a8b83868ac7305338edfaf803ce"
   },
   "neural-antibodies:ap3b2": {
-    "date": "2026-11-05",
-    "sha256": "601cf374fea310723b6cde06a1cd34ae919bbf1f7da3570cca831741c091cd0e"
+    "date": "2026-11-14",
+    "sha256": "13fec2d15688f42af6c5b8231b04fb127aabde108cebe0161953cd9e4e772bb1"
   },
   "neural-antibodies:aqp4": {
     "date": "2026-11-05",
     "sha256": "cac16f0552d83c7710e894fc2bda94befc112df68dbb9b85d4aae8ab68ce5d45"
   },
   "neural-antibodies:arhgap26": {
-    "date": "2026-11-05",
-    "sha256": "a6d8ae235f5b2523013f8401e5928b2d72be4724f29222689640bfc29292c2e3"
+    "date": "2026-11-14",
+    "sha256": "dd5a7f178862f510482632726ca5577413d511eb99030fccf791ad3705b508a3"
   },
   "neural-antibodies:caspr2": {
     "date": "2026-11-05",
@@ -428,8 +428,8 @@
     "sha256": "bc9fb2b20bc4fee507e19a1ce5d235ad5171796e9a9322b50a6c9ad21c01c7ce"
   },
   "neural-antibodies:itpr1": {
-    "date": "2026-11-05",
-    "sha256": "7eaae95017996f5aaa4738385569050ef427a7b89014c51d8043cbb85f07fa7a"
+    "date": "2026-11-14",
+    "sha256": "9a6c0be412dbfaf764fde0d920f45e0a0baeb568768a6d2080df1dc8cd577215"
   },
   "neural-antibodies:klhl11": {
     "date": "2026-11-05",
@@ -456,8 +456,8 @@
     "sha256": "b4cd23fda90552933fc9d9df9b009290bf83d62dd0bf38e7db024d774f48e95c"
   },
   "neural-antibodies:neurochondrin": {
-    "date": "2026-11-05",
-    "sha256": "1ebbc9e86384350df231fc9b890dc2adbfe955b1013f0b2bb57d3b526f9a1a89"
+    "date": "2026-11-14",
+    "sha256": "4bb253c4053ac4cbcad9a40131c6162aa5093f1e0d6eb3c797d0fa556e0a3ae0"
   },
   "neural-antibodies:nmdar": {
     "date": "2026-11-05",
@@ -472,16 +472,16 @@
     "sha256": "29c795df1bcb580b63d9373e9bcb751150e3b1ccd89fe20f7aef4b7d0dbaf67c"
   },
   "neural-antibodies:pde10a": {
-    "date": "2026-11-05",
-    "sha256": "418c78075c719301873dd3d4b52ed564dab55a24b936e8e603b0625d9b7bf769"
+    "date": "2026-11-14",
+    "sha256": "a4d56b03d5d4995a865c74aa17686dbab605eb74d732fcfdee9f2a91e04f3a96"
   },
   "neural-antibodies:septin-5": {
-    "date": "2026-11-05",
-    "sha256": "69ccabefd47faf7e5032b610b8c747fb58159a0e1fe43c9778e21f76db646361"
+    "date": "2026-11-14",
+    "sha256": "a909bd41a94662227a8522c3e0c07e25d4f255469e2bacbecf7cb4759bf8e091"
   },
   "neural-antibodies:septin-7": {
-    "date": "2026-11-05",
-    "sha256": "b18124d4b88681c0ec77781ffdcb90c8d6aedcd5cf6165f73560d72fd4d920c3"
+    "date": "2026-11-14",
+    "sha256": "979d9a568f2b45d2a1366dbc5313b266dc5886838d7301f546175535141c89b8"
   },
   "neural-antibodies:sox1": {
     "date": "2026-11-05",
@@ -492,8 +492,8 @@
     "sha256": "9742d23fe9c3234e81330e63b488e5e3ffb784f0b1d9b9435959318a21d5767d"
   },
   "neural-antibodies:trim46": {
-    "date": "2026-11-05",
-    "sha256": "e0f6a1e6a534964b0c5dff226f8f422f4c487e7ef033a16de414b984162fef15"
+    "date": "2026-11-14",
+    "sha256": "42e5510370df6c53524eaa3dcee3faa6520166f9ce753ca91262cb5b429914aa"
   },
   "rcvs-triggers:ergots-dopamine-agonists": {
     "date": "2026-11-05",
