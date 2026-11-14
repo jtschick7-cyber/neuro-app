@@ -1,12 +1,12 @@
 {
   "appVersion": "2.2.1",
-  "contentVersion": "2.2.1+14349f07",
+  "contentVersion": "2.2.1+b191153a",
   "builtAt": "2026-11-14",
   "registries": [
     {
       "id": "acute-neuro",
       "title": "Acute Non-Vascular Neurologic Emergencies",
-      "version": "3.3.1",
+      "version": "3.4.1",
       "schemaVersion": "1.3.0",
       "lastUpdated": "2026-11-14",
       "entries": 23,
@@ -188,6 +188,11 @@
     {
       "id": "plasma-volume",
       "title": "Plasma volume for plasma exchange (PLEX)",
+      "openVerify": 0
+    },
+    {
+      "id": "megris",
+      "title": "mEGRIS (GBS ventilation risk at admission)",
       "openVerify": 0
     }
   ],
@@ -1539,6 +1544,13 @@
       ]
     },
     {
+      "citation": "Luijten LWG, Doets AY, et al. Modified Erasmus GBS Respiratory Insufficiency Score: a simplified clinical tool to predict the risk of mechanical ventilation in Guillain-Barré syndrome. J Neurol Neurosurg Psychiatry 2023;94(4):300-308. doi:10.1136/jnnp-2022-329937",
+      "year": 2023,
+      "citedBy": [
+        "calc:megris"
+      ]
+    },
+    {
       "citation": "Luijten LWG, et al. Modified Erasmus GBS Respiratory Insufficiency Score: a simplified clinical tool to predict the risk of mechanical ventilation in GBS. J Neurol Neurosurg Psychiatry 2023;94:300-308",
       "year": 2023,
       "citedBy": [
@@ -2674,6 +2686,7 @@
       "citedBy": [
         "acute-neuro:guillain-barre-syndrome",
         "acute-neuro:neuromuscular-respiratory-failure",
+        "calc:megris",
         "consult-workups:inpatient-neuropathy"
       ]
     },
