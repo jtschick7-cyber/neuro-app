@@ -51,7 +51,7 @@ export default function ReferenceCard({ entry, listId, detail = false }: { entry
           <span className="rounded-full border border-red-400 px-2 py-0.5 text-xs font-semibold text-red-300">FDA boxed warning</span>
         )}
       </div>
-      <BannerList entry={entry} />
+      <BannerList entry={entry} registry={listId} />
       <p className="text-sm text-slate-300">
         {entry.generics.join(', ')}
         {entry.brands.length > 0 && <span className="text-slate-400"> ({entry.brands.join(', ')})</span>}

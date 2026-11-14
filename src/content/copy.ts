@@ -33,12 +33,16 @@ export const BANNERS = {
   VERIFY: "Open items flagged VERIFY below are unconfirmed. Don't rely on them.",
   NOT_US_MARKETED: "Not marketed in the US — listed for outside or international medication lists.",
   STALE: "Last reviewed more than {months} months ago — newer guidance may exist.",
+  OLD_SOURCES: "Newest guideline or label cited is from {year} — check for a newer edition.",
   CALC_INSTITUTIONAL: "Uses a local protocol value, not a guideline value.",
   CALC_LABEL_DIFFERS: "The FDA label dose differs — both are shown.",
 };
 
 /** Months after which an entry shows the STALE banner. */
 export const STALE_AFTER_MONTHS = 24;
+
+/** P2-2: OLD_SOURCES banner when the newest GUIDELINE/LABEL source is at least this many years old. */
+export const OLD_SOURCE_YEARS = 10;
 
 /** Evidence badge legend (shown on the About page and as tooltip text). */
 export const EVIDENCE_LEGEND = [

@@ -1,16 +1,20 @@
 import { entryBanners, type BannerInput, type EntryBannerKey } from '../lib/banners';
+import sourceYears from '../../generated/source-years.json';
+
+const SOURCE_YEARS: Record<string, number> = sourceYears;
 
 const TONE: Record<EntryBannerKey, string> = {
   UNREVIEWED: 'border-red-500/60 bg-red-950/40 text-red-200',
   VERIFY: 'border-amber-500/60 bg-amber-950/30 text-amber-200',
   STALE: 'border-amber-500/60 bg-amber-950/30 text-amber-200',
+  OLD_SOURCES: 'border-amber-500/60 bg-amber-950/30 text-amber-200',
   // Grey on purpose: informational, never hides the entry.
   NOT_US_MARKETED: 'border-slate-600 bg-slate-800/60 text-slate-400',
 };
 
-/** Banners for one entry (UNREVIEWED, VERIFY, STALE, NOT_US_MARKETED), in that order. */
-export default function BannerList({ entry }: { entry: BannerInput }) {
-  const banners = entryBanners(entry);
+/** Banners for one entry (UNREVIEWED, VERIFY, STALE, OLD_SOURCES, NOT_US_MARKETED), in that order. */
+export default function BannerList({ entry, registry }: { entry: BannerInput & { id: string }; registry: string }) {
+  const banners = entryBanners({ ...entry, newestSourceYear: SOURCE_YEARS[`${registry}:${entry.id}`] });
   if (banners.length === 0) return null;
   return (
     <div className="my-2 space-y-1">

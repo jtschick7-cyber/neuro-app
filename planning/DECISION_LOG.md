@@ -1379,3 +1379,9 @@ Jason, in chat: "neural-antibodies (0.5.1) and rcvs-triggers (0.1.1) should go t
 Jason, in chat: "Draft 1–3", then "Approve 7a". The P2-3 check (draft 07, search results only) found IDSA/NCS/AES/BTF/ESE/ACOG/ASCO/SITC/CDC sources still their bodies' latest; candidates 2 (NMOSD ASFA 2023) and 3 (NORSE 2022) were already in data — no change.
 - `acute-neuro:myasthenic-crisis`: AAN 2012 evidence line and citation marked "(since retired)" (retirement seen only in a Scilit listing); added "AANEM 2023: IVIG recommended for MG exacerbations but not stable disease (Class I)" and the Tavee 2023 citation (abstract only; Wiley full text 403).
 - MINOR: acute-neuro 3.4.3 → 3.5.0. Signed (standing instruction): 3.5.1. Released: content 2.2.1+7397d8a4.
+
+## 2026-11-14 — Draft 08: P2-2 source types and OLD_SOURCES banner
+Jason, in chat: chose a central tag file over inline tags, then "Approve 08".
+- New `data/source-types.json` 1.0.0: all 344 unique citations tagged (GUIDELINE 103, LABEL 87, TRIAL 12, REVIEW 46, OTHER 96) as listed in draft 08. `validate` fails on an untagged citation or a tag that matches none.
+- Banner: OLD_SOURCES when current year − newest GUIDELINE/LABEL citation year ≥ 10 (`OLD_SOURCE_YEARS` in copy.ts). Years are precomputed at release into `generated/source-years.json` (173 entries), so the tag file doesn't ship in the bundle. Flags today: viral-encephalitis, serotonin-syndrome, nms-parkinsonism-hyperpyrexia, susac-syndrome, flumazenil.
+- No entries edited, so nothing was re-signed. Released: content 2.2.1+80727800.
