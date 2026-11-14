@@ -175,6 +175,7 @@ export const SPECIMEN_BADGE = {
 /** 4.4: pinned favorites (entry ids only). */
 export const PINS_COPY = {
   heading: "Pinned",
+  recent: "Recently opened",
   pin: "Pin to Home",
   unpin: "Unpin from Home",
 };

@@ -28,16 +28,16 @@ export function pinTitle(id: string): string {
   return words.charAt(0).toUpperCase() + words.slice(1);
 }
 
-/** Pinned list at the top of Home; hidden when nothing is pinned. */
-export function PinnedList() {
-  const pins = loadPins().filter((p) => getRegistry(p.split(':')[0])?.built);
-  const titles = useEntryTitles(pins.length > 0);
-  if (pins.length === 0) return null;
+/** Linked list of entries ("registry:id") with real titles; hidden when empty. */
+function EntryList({ heading, tone, ids }: { heading: string; tone: string; ids: string[] }) {
+  const shown = ids.filter((p) => getRegistry(p.split(':')[0])?.built);
+  const titles = useEntryTitles(shown.length > 0);
+  if (shown.length === 0) return null;
   return (
     <section>
-      <h2 className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-amber-400">{PINS_COPY.heading}</h2>
+      <h2 className={`mb-1.5 text-xs font-semibold uppercase tracking-wider ${tone}`}>{heading}</h2>
       <ul className="space-y-1.5">
-        {pins.map((p) => {
+        {shown.map((p) => {
           const [reg, entry] = p.split(':');
           return (
             <li key={p}>
@@ -57,6 +57,16 @@ export function PinnedList() {
       </ul>
     </section>
   );
+}
+
+/** Pinned list at the top of Home; hidden when nothing is pinned. */
+export function PinnedList({ ids = loadPins() }: { ids?: string[] }) {
+  return <EntryList heading={PINS_COPY.heading} tone="text-amber-400" ids={ids} />;
+}
+
+/** Recently opened entries (memory only, this session), minus any already pinned. */
+export function RecentList({ ids, exclude = [] }: { ids: string[]; exclude?: string[] }) {
+  return <EntryList heading={PINS_COPY.recent} tone="text-sky-400" ids={ids.filter((r) => !exclude.includes(r))} />;
 }
 
 /** Entry titles by href, from the search index (already lazy and precached), so pins read "NMOSD / MOGAD attack" (audit P2-19). */
