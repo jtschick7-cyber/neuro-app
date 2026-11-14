@@ -40,6 +40,8 @@ export default defineConfig({
       manifest: {
         name: 'NeuroHospitalist Pocket Companion',
         short_name: 'NeuroHosp',
+        // Stable app identity; equals the default (start_url) so existing installs keep their identity.
+        id: '/neuro-app/',
         description: 'Offline neurohospitalist dosing calculators and reference registries.',
         theme_color: '#0f172a',
         background_color: '#0f172a',
