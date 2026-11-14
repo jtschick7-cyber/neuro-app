@@ -1343,3 +1343,17 @@ Jason, in chat: approved the title and id, accepted Claude's recommendations on 
 - Q3: no VGKC row. The signed LGI1-entry line is reused verbatim as a note, with Graus 2016 (Lancet Neurol) as a source.
 - Encoded by parsing the draft tables with count asserts; existing source strings reused verbatim.
 - reference-cards 1.10.1 → 1.11.0 (MINOR). Signed (standing instruction): 1.11.1. Released: content 2.2.1+0bd42e00 (346 unique sources).
+
+## Audit 2026-11-12 calculator 5c: rotigotine patch conversion (2026-11-14)
+
+Jason, in chat: asked for "Rotigotine first" from `planning/drafts/audit-2026-11-12/05-calculators.md`, then approved the PR #79 defaults ("Defaults OK").
+- New `calc:rotigotine-conversion`, which encodes the signed PD card rows (BMJ 2010 factors, ×0.55, ÷20, nearest 2 mg). It is kept separate from calc:ledd.
+- Defaults: warn (don't block) above 8 mg/24 h; exact ties round up; adjusted LEDD >350 mg shows the dose with a warning (BMJ apomorphine branch not in the app); a 0 mg result warns.
+- Added to data/calculators.manifest.json. No registry entries changed. Content hash 2.2.1+872c2985.
+
+## Audit 2026-11-12 calculator 5a: plasma volume for PLEX (2026-11-14)
+
+Jason, in chat: "Build plasma volume", with the spec defaults in `planning/drafts/audit-2026-11-12/05-calculators.md`.
+- New `calc:plasma-volume`: EPV = 0.065 × weight (kg) × (1 − Hct) (Kaplan 1990 abstract; full text not opened). Hct entered as %, accepted range 15–65% (app convention). Shows 1.0 and 1.5 PV, rounded to 0.1 L. No removal-fraction line (no source opened).
+- Linked from `acute-neuro:myasthenic-crisis`, PLEX treatment row (`calculatorIds`). The GBS entry is not linked: it doses PLEX in litres.
+- acute-neuro 3.2.1 → 3.3.0 (MINOR). Signed (standing instruction): 3.3.1. Released: content 2.2.1+14349f07.

@@ -98,6 +98,23 @@ describe("rotigotine-conversion (BMJ 2010, reference-cards:inpatient-parkinson-d
     expect(() => C.rotigotineConversion(input)).toThrow(RangeError));
 });
 
+describe("plasma-volume (Kaplan 1990)", () => {
+  it.each([
+    [70, 40, 2.7, 4.1], // 0.065×70×0.6 = 2.73 → 4.095
+    [80, 45, 2.9, 4.3], // 2.86 → 4.29
+    [60, 30, 2.7, 4.1], // 2.73 → 4.095
+    [100, 35, 4.2, 6.3], // 4.225 → 6.3375
+  ])("%d kg, Hct %d%% → %d L (1.5 PV %d L)", (kg, hct, pv1, pv15) => {
+    const r = C.plasmaVolume(kg, hct);
+    expect(r.value).toBe(pv1);
+    expect(r.parts).toEqual({ pv1, pv15 });
+    expect(r.range).toEqual([pv1, pv15]);
+  });
+  it("weight caution above 150 kg", () => expect(C.plasmaVolume(151, 40).warnings).toEqual([C.WEIGHT_CAUTION]));
+  it.each([[70, 14], [70, 66], [29, 40], [70, Number.NaN]])("%d kg, Hct %d throws RangeError", (kg, hct) =>
+    expect(() => C.plasmaVolume(kg, hct)).toThrow(RangeError));
+});
+
 describe("cockcroft-gault", () => {
   it.each([[60, 70, 1.0, false, 78], [60, 70, 1.0, true, 66], [80, 50, 2.0, false, 21], [40, 100, 0.8, false, 174], [90, 45, 1.5, true, 18]])(
     "age %d wt %d SCr %d female %s → %d", (age, wt, scr, f, out) => expect(C.cockcroftGault(age, wt, scr, f).value).toBe(out));

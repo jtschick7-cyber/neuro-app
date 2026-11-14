@@ -411,6 +411,20 @@ export function rotigotineConversion(i: RotigotineInput): CalcResult {
   };
 }
 
+// ---------- 11. Plasma volume for PLEX (Kaplan 1990) ----------
+/** EPV (L) = 0.065 × weight (kg) × (1 − Hct). Hct entered as % (÷100). Exchange volume shown for 1.0 and 1.5 plasma volumes. */
+export function plasmaVolume(weightKg: number, hctPercent: number): CalcResult {
+  reqWeight(weightKg); req("hctPercent", hctPercent, 15, 65);
+  const raw = 0.065 * weightKg * (1 - hctPercent / 100);
+  const epv = roundTo(raw, 0.1);
+  const pv15 = roundTo(raw * 1.5, 0.1);
+  return {
+    value: epv, unit: "L", range: [epv, pv15],
+    display: `Plasma volume ${fmt(epv)} L · exchange 1–1.5 PV = ${fmt(epv)}–${fmt(pv15)} L`,
+    capped: false, warnings: weightCaution(weightKg), parts: { pv1: epv, pv15 },
+  };
+}
+
 // ---------- metadata ----------
 const S = {
   aes2016: "Glauser T, et al. Evidence-based guideline: treatment of convulsive status epilepticus in children and adults (AES). Epilepsy Curr 2016;16(1):48-61. doi:10.5698/1535-7597-16.1.48",
@@ -447,4 +461,5 @@ export const CALCULATOR_META: Record<string, CalcMeta> = {
   "cockcroft-gault": { id: "cockcroft-gault", title: "Creatinine clearance (Cockcroft-Gault)", formula: "(140 − age) × weight / (72 × SCr) × 0.85 if female", caps: [], rounding: "nearest 1 mL/min", weightBasis: "ACTUAL", sources: [S.xarelto, "Cockcroft DW, Gault MH. Prediction of creatinine clearance from serum creatinine. Nephron 1976;16:31-41"], verify: [] },
   "sodium-correction": { id: "sodium-correction", title: "Hyponatremia: 3% bolus and correction limits", formula: "ESE 150 mL; SALSA 2 mL/kg (moderate) or 2 mL/kg × 2 (severe); limit ≤10 first 24 h, then ≤8 (ESE); ≤8 in any 24 h if ODS risk (Verbalis)", caps: [], rounding: "nearest 10 mL per bolus", weightBasis: "ACTUAL", sources: [S.ese2014, S.salsa2021, S.verbalis2013], verify: [] },
   "rotigotine-conversion": { id: "rotigotine-conversion", title: "Rotigotine patch (no enteral route, BMJ 2010)", formula: "A = levodopa mg/day (×0.7 if CR), then ×1.3 if on a COMT inhibitor. B = agonist mg/day × factor (ropinirole 20, rotigotine 20, pramipexole base 100, cabergoline 100, bromocriptine 10, apomorphine 10). LEDD = A + B. Adjusted LEDD = LEDD × 0.55; rotigotine mg/24 h = adjusted LEDD ÷ 20, rounded to the nearest 2 mg, once daily. BMJ factors, not calc:ledd (Jost 2023)", caps: [], rounding: "nearest 2 mg (exact odd-mg ties round up; app convention); warns above 8 mg/24 h (label) and adjusted LEDD >350 mg", weightBasis: "NOT_APPLICABLE", sources: ["Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718", "Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026"], verify: [] },
+  "plasma-volume": { id: "plasma-volume", title: "Plasma volume for plasma exchange (PLEX)", formula: "EPV (L) = 0.065 × weight (kg) × (1 − Hct) [Kaplan 1990]; Hct entered as %. Exchange volume = EPV × 1.0 and × 1.5", caps: [], rounding: "0.1 L (app convention)", weightBasis: "ACTUAL", sources: ["Kaplan AA. A simple and accurate method for prescribing plasma exchange. ASAIO Trans 1990;36(3):M597-9. PMID 2252761"], verify: [] },
 };

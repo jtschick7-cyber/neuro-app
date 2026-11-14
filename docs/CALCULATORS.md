@@ -81,3 +81,11 @@ Generated from src/lib/calculators.ts — do not edit by hand. Rounding marked "
 - Weight: NOT_APPLICABLE
 - Sources: Brennan KA, Genever RW. Managing Parkinson's disease during surgery. BMJ 2010;341:c5718. doi:10.1136/bmj.c5718 | Neupro (rotigotine transdermal system) US prescribing information. UCB; revised 9/2026
 - VERIFY: none
+
+## Plasma volume for plasma exchange (PLEX) (`plasma-volume`)
+- Formula: EPV (L) = 0.065 × weight (kg) × (1 − Hct) [Kaplan 1990]; Hct entered as %. Exchange volume = EPV × 1.0 and × 1.5
+- Caps: none
+- Rounding: 0.1 L (app convention)
+- Weight: ACTUAL
+- Sources: Kaplan AA. A simple and accurate method for prescribing plasma exchange. ASAIO Trans 1990;36(3):M597-9. PMID 2252761
+- VERIFY: none

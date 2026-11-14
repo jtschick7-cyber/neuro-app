@@ -83,4 +83,5 @@ export const CALC_CARD: Record<string, string> = {
   ledd: 'calc-ledd',
   'sodium-correction': 'calc-sodium',
   'rotigotine-conversion': 'calc-rotigotine',
+  'plasma-volume': 'calc-plasma-volume',
 };

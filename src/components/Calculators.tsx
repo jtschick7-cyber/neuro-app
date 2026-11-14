@@ -5,6 +5,7 @@ import { Card, FocusContext, Result, loadBadge, parseNonNegative, safe } from '.
 import { SodiumCard } from './ImmunoSodiumCalculators';
 import { PhenytoinCard } from './PhenytoinCard';
 import { RotigotineCard } from './RotigotineCard';
+import { PlasmaVolumeCard } from './PlasmaVolumeCard';
 import {
   COMT_FACTORS,
   LEVODOPA_FACTORS,
@@ -200,6 +201,7 @@ export default function Calculators({
       <LeddCard />
       <RotigotineCard />
       <SodiumCard weightKg={weightKg} />
+      <PlasmaVolumeCard weightKg={weightKg} />
     </div>
     </FocusContext.Provider>
   );
